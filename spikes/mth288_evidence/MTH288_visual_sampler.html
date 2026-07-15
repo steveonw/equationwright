@@ -1,0 +1,383 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>MTH 288 Visual Sampler</title>
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<style>
+body{font-family:system-ui,sans-serif;max-width:1000px;margin:2rem auto;padding:0 1rem;line-height:1.45}
+section{border:1px solid #bbb;border-radius:10px;padding:1rem;margin:1rem 0;break-inside:avoid}
+h1{margin-bottom:.25rem} h2{font-size:1.1rem} code{white-space:pre-wrap}
+.seed{font-size:.85rem;color:#555} details{margin:.6rem 0}
+@media print{section{page-break-inside:avoid}}
+</style></head><body>
+<h1>MTH 288 Visual Sampler</h1>
+<p>One deterministic example from each of the 46 MTH 288 generators. This is for human rendering and wording review; the independent audit covers 9,200 generated records.</p>
+
+<section>
+<h2>DM_Counting · Generator 1 · dm_count_product_rule</h2>
+<p><strong>Question:</strong> A student has \(4\) shirts, \(3\) pairs of pants, and \(4\) pairs of shoes. How many outfits choose one of each?</p>
+<p><strong>Answer:</strong> \(48\)</p>
+<details><summary>Worked steps</summary><ol><li>Apply the product rule because one independent choice is made from each category.</li><li>\(4\cdot3\cdot4=48\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(11\)</code> — The sum rule is not used when all three choices are made together.</li><li><code>\(16\)</code> — All independent stages must be multiplied.</li></ul></details>
+<p class="seed">Seed: 596027496</p>
+</section>
+<section>
+<h2>DM_Counting · Generator 2 · dm_count_permutation</h2>
+<p><strong>Question:</strong> How many ordered arrangements of \(3\) objects can be chosen from \(5\) distinct objects?</p>
+<p><strong>Answer:</strong> \(60\)</p>
+<details><summary>Worked steps</summary><ol><li>Order matters, so use \(P(5,3)=\dfrac{5!}{(5-3)!}\).</li><li>The value is \(60\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(10\)</code> — This is a combination and ignores order.</li><li><code>\(125\)</code> — This would allow repetition; the objects are chosen without replacement.</li><li><code>\(6\)</code> — This arranges only a fixed set of r objects and ignores which objects were selected.</li></ul></details>
+<p class="seed">Seed: 2182994995</p>
+</section>
+<section>
+<h2>DM_Counting · Generator 3 · dm_count_combination</h2>
+<p><strong>Question:</strong> A committee of \(5\) people is selected from \(7\) people. How many committees are possible?</p>
+<p><strong>Answer:</strong> \(21\)</p>
+<details><summary>Worked steps</summary><ol><li>Order does not matter, so use \(\binom{7}{5}\).</li><li>\(\binom{7}{5}=21\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(2520\)</code> — This counts different orders of the same committee separately.</li><li><code>\(16807\)</code> — This allows repeated selections and ordered slots.</li><li><code>\(5040\)</code> — This orders all n people rather than choosing a committee.</li></ul></details>
+<p class="seed">Seed: 4078701174</p>
+</section>
+<section>
+<h2>DM_Counting · Generator 4 · dm_count_repeated_letters</h2>
+<p><strong>Question:</strong> How many distinct arrangements of the letters in LEVEL are possible?</p>
+<p><strong>Answer:</strong> \(30\)</p>
+<details><summary>Worked steps</summary><ol><li>Begin with \(5!\) arrangements and divide by a factorial for each repeated-letter count.</li><li>\(\dfrac{5!}{2!\,2!}=30\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(120\)</code> — This treats repeated copies of the same letter as distinct.</li><li><code>\(60\)</code> — Repeated objects require division by factorials, not merely by their counts.</li><li><code>\(4\)</code> — The product of repetition factorials is the divisor, not the final count.</li></ul></details>
+<p class="seed">Seed: 3785295417</p>
+</section>
+<section>
+<h2>DM_Counting · Generator 5 · dm_count_stars_bars</h2>
+<p><strong>Question:</strong> How many ways can \(11\) identical items be distributed among \(4\) distinct boxes if boxes may be empty?</p>
+<p><strong>Answer:</strong> \(364\)</p>
+<details><summary>Worked steps</summary><ol><li>Use nonnegative stars and bars: \(\binom{11+4-1}{4-1}\).</li><li>The count is \(364\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(120\)</code> — This formula forces every box to be nonempty.</li><li><code>\(1365\)</code> — This uses one extra star and one extra bar.</li><li><code>\(4194304\)</code> — This treats the identical items as distinct.</li></ul></details>
+<p class="seed">Seed: 2036606164</p>
+</section>
+<section>
+<h2>DM_Counting · Generator 6 · dm_count_pigeonhole</h2>
+<p><strong>Question:</strong> What is the minimum number of objects placed into \(3\) boxes that guarantees at least one box contains \(4\) objects?</p>
+<p><strong>Answer:</strong> \(10\)</p>
+<details><summary>Worked steps</summary><ol><li>To avoid 4 in any box, place at most 3 in each box.</li><li>That allows \(3(3)=9\) objects, so one more gives \(10\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(12\)</code> — The guarantee occurs one before filling every box to the target.</li><li><code>\(7\)</code> — The pigeonhole bound multiplies the maximum safe occupancy by the number of boxes.</li><li><code>\(9\)</code> — At this many objects, every box could still contain only the safe maximum.</li></ul></details>
+<p class="seed">Seed: 3623573663</p>
+</section>
+<section>
+<h2>DM_Counting · Generator 7 · dm_count_binary_exact</h2>
+<p><strong>Question:</strong> How many binary strings of length \(5\) contain exactly \(2\) ones?</p>
+<p><strong>Answer:</strong> \(10\)</p>
+<details><summary>Worked steps</summary><ol><li>Choose the 2 positions occupied by ones.</li><li>\(\binom{5}{2}=10\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(32\)</code> — This counts all binary strings, not only those with exactly k ones.</li><li><code>\(20\)</code> — The selected positions form an unordered subset.</li><li><code>\(9\)</code> — This omits one valid choice of positions.</li></ul></details>
+<p class="seed">Seed: 1182735842</p>
+</section>
+<section>
+<h2>DM_Counting · Generator 8 · dm_count_codes</h2>
+<p><strong>Question:</strong> A code has \(5\) letters followed by \(3\) digits. No character may repeat within its section. How many codes are possible?</p>
+<p><strong>Answer:</strong> \(5683392000\)</p>
+<details><summary>Worked steps</summary><ol><li>Use falling products: \(P(26,5)P(10,3)\).</li><li>The count is \(5683392000\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(11881376000\)</code> — This allows repetition, but the question forbids it.</li><li><code>\(7893600\)</code> — This ignores the order of positions.</li><li><code>\(160\)</code> — Independent slot choices multiply; they do not add.</li></ul></details>
+<p class="seed">Seed: 3036865317</p>
+</section>
+<section>
+<h2>DM_Graphs · Generator 1 · dm_graph_handshake_missing</h2>
+<p><strong>Question:</strong> A graph has \(9\) edges. The degrees of all but one vertex are \(2, 2, 2, 2, 2, 2, 2, 2\). Find the missing degree.</p>
+<p><strong>Answer:</strong> \(2\)</p>
+<details><summary>Worked steps</summary><ol><li>The degree sum is twice the number of edges: \(2|E|=18\).</li><li>Subtract the known degrees: \(18-16=2\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(18\)</code> — This is the total degree sum, not the missing degree.</li><li><code>\(3\)</code> — Subtract the known degree sum exactly; do not add one.</li><li><code>\(1\)</code> — The handshake calculation determines the missing degree exactly.</li></ul></details>
+<p class="seed">Seed: 2029644344</p>
+</section>
+<section>
+<h2>DM_Graphs · Generator 2 · dm_graph_edges_degree_sum</h2>
+<p><strong>Question:</strong> A graph has \(7\) vertices, each of degree \(4\). How many edges does it have?</p>
+<p><strong>Answer:</strong> \(14\)</p>
+<details><summary>Worked steps</summary><ol><li>The degree sum is \(7\cdot4=28\).</li><li>By the handshake lemma, \(|E|=28/2=14\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(28\)</code> — Each edge contributes two to the degree sum.</li><li><code>\(11\)</code> — Vertex count and degree do not add to give edges.</li><li><code>\(15\)</code> — Apply the exact half-degree-sum formula.</li></ul></details>
+<p class="seed">Seed: 3616611843</p>
+</section>
+<section>
+<h2>DM_Graphs · Generator 3 · dm_graph_euler_classify</h2>
+<p><strong>Question:</strong> A connected graph has degree sequence \(3, 1, 1, 1\). Does it have an Euler path, an Euler circuit, or neither?</p>
+<p><strong>Answer:</strong> \(\text{neither}\)</p>
+<details><summary>Worked steps</summary><ol><li>Count odd-degree vertices: 4.</li><li>A connected graph with more than two odd vertices has neither.</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(\text{Euler circuit}\)</code> — Euler classification is determined by connectedness and the number of odd-degree vertices.</li><li><code>\(\text{Euler path but no Euler circuit}\)</code> — Euler classification is determined by connectedness and the number of odd-degree vertices.</li><li><code>\(\text{Hamilton circuit}\)</code> — Euler classification is determined by connectedness and the number of odd-degree vertices.</li></ul></details>
+<p class="seed">Seed: 1175774022</p>
+</section>
+<section>
+<h2>DM_Graphs · Generator 4 · dm_graph_tree_edges</h2>
+<p><strong>Question:</strong> How many edges does a tree with \(12\) vertices have?</p>
+<p><strong>Answer:</strong> \(11\)</p>
+<details><summary>Worked steps</summary><ol><li>Every finite tree with n vertices has exactly n−1 edges.</li><li>\(12-1=11\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(12\)</code> — A connected graph with one cycle may have n edges; a tree has no cycles.</li><li><code>\(13\)</code> — Adding extra edges would create cycles.</li><li><code>\(66\)</code> — This is the number of edges in a complete graph.</li></ul></details>
+<p class="seed">Seed: 3029903497</p>
+</section>
+<section>
+<h2>DM_Graphs · Generator 5 · dm_graph_complete_edges</h2>
+<p><strong>Question:</strong> How many edges are in the complete graph \(K_5\)?</p>
+<p><strong>Answer:</strong> \(10\)</p>
+<details><summary>Worked steps</summary><ol><li>Every pair of distinct vertices determines one edge.</li><li>\(|E|=\binom{5}{2}=10\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(25\)</code> — Loops and duplicate directions are not edges of a simple complete graph.</li><li><code>\(20\)</code> — This counts each undirected edge twice.</li><li><code>\(4\)</code> — That is the edge count of a tree, not a complete graph.</li></ul></details>
+<p class="seed">Seed: 3428646308</p>
+</section>
+<section>
+<h2>DM_Graphs · Generator 6 · dm_graph_bipartite_edges</h2>
+<p><strong>Question:</strong> How many edges are in the complete bipartite graph \(K_{5,6}\)?</p>
+<p><strong>Answer:</strong> \(30\)</p>
+<details><summary>Worked steps</summary><ol><li>Each of the 5 vertices in one part connects to all 6 vertices in the other part.</li><li>\(|E|=5\cdot6=30\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(11\)</code> — The part sizes add to the vertex count, not the edge count.</li><li><code>\(25\)</code> — Complete bipartite graphs have no edges within either part.</li><li><code>\(55\)</code> — This is the complete graph on all vertices, including forbidden within-part edges.</li></ul></details>
+<p class="seed">Seed: 2868181743</p>
+</section>
+<section>
+<h2>DM_Graphs · Generator 7 · dm_graph_complement_edges</h2>
+<p><strong>Question:</strong> A simple graph on \(11\) vertices has \(36\) edges. How many edges does its complement have?</p>
+<p><strong>Answer:</strong> \(19\)</p>
+<details><summary>Worked steps</summary><ol><li>There are \(\binom{11}{2}=55\) possible edges.</li><li>The complement has \(55-36=19\) edges.</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(55\)</code> — This is the total possible number of edges before removing the original graph’s edges.</li><li><code>\(36\)</code> — The complement need not have the same edge count as the original.</li><li><code>\(91\)</code> — Complement edges are the missing edges, so subtract.</li></ul></details>
+<p class="seed">Seed: 2616352690</p>
+</section>
+<section>
+<h2>DM_Graphs · Generator 8 · dm_graph_cycle_color</h2>
+<p><strong>Question:</strong> Classify the cycle graph \(C_3\): is it bipartite, and what is its chromatic number?</p>
+<p><strong>Answer:</strong> \(\text{not bipartite with chromatic number 3}\)</p>
+<details><summary>Worked steps</summary><ol><li>An odd cycle cannot be two-colored without a conflict.</li><li>\(\chi(C_n)=3\) for odd n.</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(\text{bipartite with chromatic number 3}\)</code> — A bipartite graph with at least one edge has chromatic number 2.</li><li><code>\(\text{not bipartite with chromatic number 2}\)</code> — A graph is bipartite exactly when it is two-colorable.</li><li><code>\(\text{bipartite with chromatic number 2}\)</code> — Cycle parity determines bipartiteness.</li></ul></details>
+<p class="seed">Seed: 175514869</p>
+</section>
+<section>
+<h2>DM_Logic · Generator 1 · dm_logic_truth4</h2>
+<p><strong>Question:</strong> Complete the final truth-table column for \(\neg\left(\left(p \lor q\right)\right)\).</p>
+<p><strong>Answer:</strong> F F F T</p>
+<details><summary>Worked steps</summary><ol><li>Use row order \(p, q\): TT, TF, FT, FF.</li><li>\(p=T\), \(q=T\) gives \(\neg\left(\left(p \lor q\right)\right)=F\).</li><li>\(p=T\), \(q=F\) gives \(\neg\left(\left(p \lor q\right)\right)=F\).</li><li>\(p=F\), \(q=T\) gives \(\neg\left(\left(p \lor q\right)\right)=F\).</li><li>\(p=F\), \(q=F\) gives \(\neg\left(\left(p \lor q\right)\right)=T\).</li><li>Final column: \(F F F T\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul></ul></details>
+<p class="seed">Seed: 509404965</p>
+</section>
+<section>
+<h2>DM_Logic · Generator 2 · dm_logic_truth8</h2>
+<p><strong>Question:</strong> Complete the final truth-table column for \(\left(\left(p \lor \negq\right) \to \negr\right)\).</p>
+<p><strong>Answer:</strong> F T F T T T F T</p>
+<details><summary>Worked steps</summary><ol><li>Use row order \(p, q, r\): TTT, TTF, TFT, TFF, FTT, FTF, FFT, FFF.</li><li>\(p=T\), \(q=T\), \(r=T\) gives \(\left(\left(p \lor \negq\right) \to \negr\right)=F\).</li><li>\(p=T\), \(q=T\), \(r=F\) gives \(\left(\left(p \lor \negq\right) \to \negr\right)=T\).</li><li>\(p=T\), \(q=F\), \(r=T\) gives \(\left(\left(p \lor \negq\right) \to \negr\right)=F\).</li><li>\(p=T\), \(q=F\), \(r=F\) gives \(\left(\left(p \lor \negq\right) \to \negr\right)=T\).</li><li>\(p=F\), \(q=T\), \(r=T\) gives \(\left(\left(p \lor \negq\right) \to \negr\right)=T\).</li><li>\(p=F\), \(q=T\), \(r=F\) gives \(\left(\left(p \lor \negq\right) \to \negr\right)=T\).</li><li>\(p=F\), \(q=F\), \(r=T\) gives \(\left(\left(p \lor \negq\right) \to \negr\right)=F\).</li><li>\(p=F\), \(q=F\), \(r=F\) gives \(\left(\left(p \lor \negq\right) \to \negr\right)=T\).</li><li>Final column: \(F T F T T T F T\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul></ul></details>
+<p class="seed">Seed: 2950242786</p>
+</section>
+<section>
+<h2>DM_Logic · Generator 3 · dm_logic_classify</h2>
+<p><strong>Question:</strong> Classify \(\left(p \leftrightarrow q\right)\) and give its final truth-table column in row order \(TT,TF,FT,FF\).</p>
+<p><strong>Answer:</strong> \(\text{Contingency};\ T F F T\)</p>
+<details><summary>Worked steps</summary><ol><li>Evaluate the expression in the standard row order \(TT,TF,FT,FF\).</li><li>The final column is \(T F F T\).</li><li>The column contains both true and false values, so the expression is a contingency.</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(\text{Tautology};\ T F F T\)</code> — The truth values may be right, but the classification does not match the entire column.</li><li><code>\(\text{Contradiction};\ T F F T\)</code> — Classification depends on whether all, none, or only some rows are true.</li></ul></details>
+<p class="seed">Seed: 1096113311</p>
+</section>
+<section>
+<h2>DM_Logic · Generator 4 · dm_logic_main_connective</h2>
+<p><strong>Question:</strong> Identify the main connective of \(\left(\negp \leftrightarrow \left(q \lor r\right)\right)\).</p>
+<p><strong>Answer:</strong> \(\leftrightarrow\) — biconditional</p>
+<details><summary>Worked steps</summary><ol><li>Work from the outside inward.</li><li>The entire expression joins its two largest parts with \(\leftrightarrow\), so the main connective is biconditional.</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(\land\) — conjunction</code> — The main connective is the outermost operator, not one nested inside a parenthesized part.</li><li><code>\(\lor\) — disjunction</code> — The main connective is the outermost operator, not one nested inside a parenthesized part.</li><li><code>\(\to\) — implication</code> — The main connective is the outermost operator, not one nested inside a parenthesized part.</li></ul></details>
+<p class="seed">Seed: 3804113108</p>
+</section>
+<section>
+<h2>DM_Logic · Generator 5 · dm_logic_quantifier_negation</h2>
+<p><strong>Question:</strong> Write the logical negation of \(\forall x\,P(x)\).</p>
+<p><strong>Answer:</strong> \(\exists x\,\neg P(x)\)</p>
+<details><summary>Worked steps</summary><ol><li>Negating a universal statement changes \(\forall\) to \(\exists\) and negates the predicate.</li><li>Therefore the negation is \(\exists x\,\neg P(x)\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(\forall x\,\neg P(x)\)</code> — A correct quantifier negation switches the quantifier and pushes the negation through the predicate correctly.</li><li><code>\(\exists x\,P(x)\)</code> — A correct quantifier negation switches the quantifier and pushes the negation through the predicate correctly.</li><li><code>\(\neg\exists x\,P(x)\)</code> — A correct quantifier negation switches the quantifier and pushes the negation through the predicate correctly.</li></ul></details>
+<p class="seed">Seed: 1257835065</p>
+</section>
+<section>
+<h2>DM_Logic · Generator 6 · dm_logic_equivalence_law</h2>
+<p><strong>Question:</strong> Which equivalence correctly simplifies \(\neg(p\land q)\)?</p>
+<p><strong>Answer:</strong> \(\neg p\lor\neg q\) — De Morgan’s law</p>
+<details><summary>Worked steps</summary><ol><li>Apply the De Morgan’s law.</li><li>\(\neg(p\land q)\equiv \neg p\lor\neg q\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(\neg p\lor q\) — implication law</code> — This is a valid law in another setting, but it does not match the given expression.</li><li><code>\((p\to q)\land(q\to p)\) — biconditional law</code> — This is a valid law in another setting, but it does not match the given expression.</li><li><code>\(p\) — double-negation law</code> — This is a valid law in another setting, but it does not match the given expression.</li></ul></details>
+<p class="seed">Seed: 1551240822</p>
+</section>
+<section>
+<h2>DM_Logic · Generator 7 · dm_logic_translation</h2>
+<p><strong>Question:</strong> Translate into symbols: \(p\) is necessary for \(q\).</p>
+<p><strong>Answer:</strong> \(q\to p\)</p>
+<details><summary>Worked steps</summary><ol><li>If p is necessary for q, then q cannot occur without p.</li><li>The translation is \(q\to p\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(p\to q\)</code> — Check the direction of the implication and the meanings of “if,” “only if,” “necessary,” and “sufficient.”</li><li><code>\(p\land q\)</code> — Check the direction of the implication and the meanings of “if,” “only if,” “necessary,” and “sufficient.”</li><li><code>\(p\leftrightarrow q\)</code> — Check the direction of the implication and the meanings of “if,” “only if,” “necessary,” and “sufficient.”</li></ul></details>
+<p class="seed">Seed: 3950501939</p>
+</section>
+<section>
+<h2>DM_Logic · Generator 8 · dm_logic_equivalence_check</h2>
+<p><strong>Question:</strong> Determine whether \(\left(p \leftrightarrow q\right)\) and \(\left(\left(p \to q\right) \land \left(q \to p\right)\right)\) are logically equivalent. Include both final columns.</p>
+<p><strong>Answer:</strong> \(\text{Equivalent};\ T F F T=T F F T\)</p>
+<details><summary>Worked steps</summary><ol><li>Left column: \(T F F T\).</li><li>Right column: \(T F F T\).</li><li>The columns match in every row, so the expressions are equivalent.</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(\text{Not equivalent};\ T F F T=T F F T\)</code> — Equivalence is determined by whether every corresponding truth-table entry matches.</li><li><code>\(\text{Not equivalent};\ T F F T\ne T F F T\)</code> — Use the standard row order TT, TF, FT, FF.</li></ul></details>
+<p class="seed">Seed: 2363534440</p>
+</section>
+<section>
+<h2>DM_ProofRec · Generator 1 · dm_proof_method</h2>
+<p><strong>Question:</strong> Identify the proof method: Assume the conclusion is false and derive a contradiction.</p>
+<p><strong>Answer:</strong> \(\text{proof by contradiction}\)</p>
+<details><summary>Worked steps</summary><ol><li>The described structure matches proof by contradiction.</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(\text{direct proof}\)</code> — Match the defining structure of the method, not merely the topic of the statement.</li><li><code>\(\text{proof by contrapositive}\)</code> — Match the defining structure of the method, not merely the topic of the statement.</li><li><code>\(\text{mathematical induction}\)</code> — Match the defining structure of the method, not merely the topic of the statement.</li></ul></details>
+<p class="seed">Seed: 3374410353</p>
+</section>
+<section>
+<h2>DM_ProofRec · Generator 2 · dm_proof_base_case</h2>
+<p><strong>Question:</strong> For the claim \(1+2+\cdots+n=\dfrac{n(n+1)}2\), verify the statement at \(n=1\).</p>
+<p><strong>Answer:</strong> \(1=1\)</p>
+<details><summary>Worked steps</summary><ol><li>The left side is \(1+\cdots+1=1\).</li><li>The right side is \(\dfrac{1(2)}{2}=1\), so the case holds.</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(1=2\)</code> — Evaluate the formula exactly at the stated value of n.</li><li><code>\(2=1\)</code> — Do not include the next term when checking the current case.</li></ul></details>
+<p class="seed">Seed: 1520280878</p>
+</section>
+<section>
+<h2>DM_ProofRec · Generator 3 · dm_proof_induction_step</h2>
+<p><strong>Question:</strong> In an induction proof of \(1+3+\cdots+(2n-1)=n^2\), assume the claim holds for \(n=k\). Which step correctly proves the \(k+1\) case?</p>
+<p><strong>Answer:</strong> \(1+3+\cdots+(2k-1)+(2k+1)=k^2+2k+1=(k+1)^2\)</p>
+<details><summary>Worked steps</summary><ol><li>The next odd term is \(2(k+1)-1=2k+1\).</li><li>Use the hypothesis \(1+3+\cdots+(2k-1)=k^2\).</li><li>\(k^2+(2k+1)=(k+1)^2\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(1+3+\cdots+(2k-1)+2k=k^2+2k\)</code> — The next odd term is 2k+1, not 2k.</li><li><code>\(1+3+\cdots+(2k+1)=(k+1)^2\) by assuming the statement for \(k+1\)</code> — This assumes the conclusion instead of using the induction hypothesis at k.</li><li><code>\(k^2+(2k-1)=(k+1)^2\)</code> — The term 2k−1 is already included in the induction hypothesis.</li></ul></details>
+<p class="seed">Seed: 3961118699</p>
+</section>
+<section>
+<h2>DM_ProofRec · Generator 4 · dm_recurrence_iterate</h2>
+<p><strong>Question:</strong> Let \(a_0=5\) and \(a_n=-1a_{n-1}+3\). Find \(a_1,a_2,a_3\).</p>
+<p><strong>Answer:</strong> \((-2, 5, -2)\)</p>
+<details><summary>Worked steps</summary><ol><li>\(a_1=-1(5)+3=-2\).</li><li>\(a_2=-1(-2)+3=5\).</li><li>\(a_3=-1(5)+3=-2\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\((5, -2, 5)\)</code> — The question asks for a1 through a3, not a0 through a2.</li><li><code>\((-5, 2, -5)\)</code> — The constant term b must be included at every step.</li><li><code>\((-5, 5, -5)\)</code> — This ignores the added constant b.</li></ul></details>
+<p class="seed">Seed: 1837267392</p>
+</section>
+<section>
+<h2>DM_ProofRec · Generator 5 · dm_recurrence_first_order_solve</h2>
+<p><strong>Question:</strong> Solve the recurrence \(a_n=2a_{n-1}+4\) with \(a_0=-1\).</p>
+<p><strong>Answer:</strong> \(a_n=-4+3(2)^n\)</p>
+<details><summary>Worked steps</summary><ol><li>The equilibrium L satisfies \(L=2L+4\), so \(L=-4\).</li><li>Then \(a_n-L=2(a_{n-1}-L)\).</li><li>Therefore \(a_n=-4+(-1+ 4)(2)^n=a_n=-4+3(2)^n\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(a_n=-1(2)^n\)</code> — This omits the equilibrium shift caused by the constant term.</li><li><code>\(a_n=-4+3n\)</code> — The homogeneous part is geometric, not linear in n.</li><li><code>\(a_n=-4+3(4)^n\)</code> — The geometric rate is r, not the added constant b.</li></ul></details>
+<p class="seed">Seed: 520021725</p>
+</section>
+<section>
+<h2>DM_ProofRec · Generator 6 · dm_recurrence_characteristic_roots</h2>
+<p><strong>Question:</strong> Find the characteristic roots of \(a_n=5a_{n-1}-6a_{n-2}\).</p>
+<p><strong>Answer:</strong> \(r=2,\ 3\)</p>
+<details><summary>Worked steps</summary><ol><li>The characteristic equation is \(r^2-5r+6=0\).</li><li>Factor as \((r-3)(r-2)=0\).</li><li>The roots are \(2\) and \(3\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(r=-2,\ -3\)</code> — Watch the signs when converting factors to roots.</li><li><code>\(r=5,\ 6\)</code> — The recurrence coefficients are not themselves the roots.</li><li><code>\(r=3,\ 4\)</code> — Substitute candidate roots into the characteristic polynomial.</li></ul></details>
+<p class="seed">Seed: 813427482</p>
+</section>
+<section>
+<h2>DM_ProofRec · Generator 7 · dm_growth_theta</h2>
+<p><strong>Question:</strong> Give the tight asymptotic order of \(f(n)=3n^2+7n+4\).</p>
+<p><strong>Answer:</strong> \(\Theta(n^2)\)</p>
+<details><summary>Worked steps</summary><ol><li>For large n, retain the fastest-growing term and ignore constant factors and lower-order terms.</li><li>The dominant growth rate is \(\Theta(n^2)\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(\Theta(n^3)\)</code> — Tight Θ notation is determined by the dominant term of the given function.</li><li><code>\(\Theta(n\log n)\)</code> — Tight Θ notation is determined by the dominant term of the given function.</li><li><code>\(\Theta(2^n)\)</code> — Tight Θ notation is determined by the dominant term of the given function.</li></ul></details>
+<p class="seed">Seed: 3212688599</p>
+</section>
+<section>
+<h2>DM_ProofRec · Generator 8 · dm_boolean_simplify</h2>
+<p><strong>Question:</strong> Simplify the Boolean expression \(x\land\neg x\) and identify the law used.</p>
+<p><strong>Answer:</strong> \(0\) — complement law</p>
+<details><summary>Worked steps</summary><ol><li>Apply the complement law.</li><li>\(x\land\neg x=0\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(0\) — domination law</code> — This would require an AND with 0 or a direct contradiction.</li><li><code>\(1\) — domination law</code> — This would require an OR with 1 or a direct tautology.</li><li><code>\(x\) — identity law</code> — The expression simplifies to x only when the matching identity or absorption pattern applies.</li></ul></details>
+<p class="seed">Seed: 1088837292</p>
+</section>
+<section>
+<h2>DM_RelFunc · Generator 1 · dm_relation_properties</h2>
+<p><strong>Question:</strong> On \(A=\{1, 2, 3\}\), let \(R=\{(1,2), (2,3), (3,1)\}\). Which properties does \(R\) have?</p>
+<p><strong>Answer:</strong> \(\text{antisymmetric}\)</p>
+<details><summary>Worked steps</summary><ol><li>Check every diagonal pair for reflexivity, reversed pairs for symmetry, two-way distinct pairs for antisymmetry, and composable pairs for transitivity.</li><li>The correct property list is: antisymmetric.</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(\text{reflexive, symmetric, transitive}\)</code> — Test each relation property from its definition; one counterexample is enough to disprove a property.</li><li><code>\(\text{reflexive, antisymmetric, transitive}\)</code> — Test each relation property from its definition; one counterexample is enough to disprove a property.</li><li><code>\(\text{reflexive, symmetric}\)</code> — Test each relation property from its definition; one counterexample is enough to disprove a property.</li></ul></details>
+<p class="seed">Seed: 2633814310</p>
+</section>
+<section>
+<h2>DM_RelFunc · Generator 2 · dm_relation_equivalence_class</h2>
+<p><strong>Question:</strong> On \(U=\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15\}\), use congruence modulo \(2\). List the equivalence class \([1]_2\).</p>
+<p><strong>Answer:</strong> \(\{1, 3, 5, 7, 9, 11, 13, 15\}\)</p>
+<details><summary>Worked steps</summary><ol><li>Numbers are equivalent when they have the same remainder modulo 2.</li><li>Select the elements of U congruent to 1: \(\{1, 3, 5, 7, 9, 11, 13, 15\}\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(\{0, 2, 4, 6, 8, 10, 12, 14\}\)</code> — This is the next residue class, not the requested one.</li><li><code>\(\{0, 1\}\)</code> — An equivalence class is determined by congruence, not by being less than a.</li><li><code>\(\{1\}\)</code> — The class contains every element of U with the same remainder, not only its representative.</li></ul></details>
+<p class="seed">Seed: 192976489</p>
+</section>
+<section>
+<h2>DM_RelFunc · Generator 3 · dm_function_mod_classify</h2>
+<p><strong>Question:</strong> Define \(f:\mathbb Z_6\to\mathbb Z_6\) by \(f(x)\equiv x+4\pmod{6}\). Classify \(f\).</p>
+<p><strong>Answer:</strong> \(\text{bijective}\)</p>
+<details><summary>Worked steps</summary><ol><li>An affine map modulo n is bijective exactly when \(\gcd(a,n)=1\).</li><li>\(\gcd(1,6)=1\), so the map is bijective.</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(\text{injective but not surjective}\)</code> — For finite sets of equal size, injective and surjective are equivalent.</li><li><code>\(\text{surjective but not injective}\)</code> — For a finite function from a set to itself, surjectivity implies injectivity.</li><li><code>\(\text{neither injective nor surjective}\)</code> — The gcd of the multiplier and the modulus decides whether multiplication is invertible.</li></ul></details>
+<p class="seed">Seed: 3487684632</p>
+</section>
+<section>
+<h2>DM_RelFunc · Generator 4 · dm_function_composition</h2>
+<p><strong>Question:</strong> Let \(f(x)=-3x+5\) and \(g(x)=-x-4\). Find \((f\circ g)(3)\).</p>
+<p><strong>Answer:</strong> \(26\)</p>
+<details><summary>Worked steps</summary><ol><li>First, \(g(3)=-1(3)-4=-7\).</li><li>Then \(f(-7)=-3(-7)+5=26\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(0\)</code> — This computes g∘f instead of f∘g.</li><li><code>\(-11\)</code> — Function composition is substitution, not addition of formulas.</li><li><code>\(25\)</code> — A substitution or arithmetic step is off by one.</li></ul></details>
+<p class="seed">Seed: 2927220067</p>
+</section>
+<section>
+<h2>DM_RelFunc · Generator 5 · dm_function_inverse</h2>
+<p><strong>Question:</strong> Find the inverse of \(f(x)=3x+4\).</p>
+<p><strong>Answer:</strong> \(f^{-1}(x)=\dfrac{x-4}{3}\)</p>
+<details><summary>Worked steps</summary><ol><li>Write \(y=3x+4\), interchange x and y, and solve for y.</li><li>\(x=3y+4\Rightarrow y=\dfrac{x-4}{3}\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(f^{-1}(x)=\dfrac{x+4}{3}\)</code> — The constant must be moved with the opposite sign before dividing by a.</li><li><code>\(f^{-1}(x)=\dfrac{-x+4}{3}\)</code> — This reverses the slope as well as moving the constant.</li><li><code>\(f^{-1}(x)=\dfrac{3}{x-4}\)</code> — An inverse function is not the reciprocal of the original formula.</li><li><code>\(f^{-1}(x)=4\)</code> — Keeping only the constant does not undo the original function.</li></ul></details>
+<p class="seed">Seed: 1885384210</p>
+</section>
+<section>
+<h2>DM_RelFunc · Generator 6 · dm_relation_pair_count</h2>
+<p><strong>Question:</strong> On \(A=\{1,2,\dots,4\}\), define \(iRj\) when \(i+j\) is even. How many ordered pairs are in \(R\)?</p>
+<p><strong>Answer:</strong> \(8\)</p>
+<details><summary>Worked steps</summary><ol><li>A sum is even when the two numbers have the same parity.</li><li>Count odd–odd pairs and even–even pairs to obtain \(8\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(16\)</code> — Not every ordered pair has an even sum.</li><li><code>\(4\)</code> — The relation includes many off-diagonal pairs as well as diagonal pairs.</li></ul></details>
+<p class="seed">Seed: 3781090389</p>
+</section>
+<section>
+<h2>DM_Sets · Generator 1 · dm_sets_union</h2>
+<p><strong>Question:</strong> Let \(A=\{1, 4, 5, 7\}\) and \(B=\{3, 4, 6, 7\}\). Find \(A\cup B\).</p>
+<p><strong>Answer:</strong> \(\{1, 3, 4, 5, 6, 7\}\)</p>
+<details><summary>Worked steps</summary><ol><li>A union contains every element appearing in either set.</li><li>\(A\cup B=\{1, 3, 4, 5, 6, 7\}\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(\{4, 7\}\)</code> — This is the intersection, which keeps only elements common to both sets.</li><li><code>\(\{1, 5\}\)</code> — This is A minus B, not the union.</li><li><code>\(\{1, 3, 5, 6\}\)</code> — This omits elements shared by both sets; union includes them.</li></ul></details>
+<p class="seed">Seed: 1356759604</p>
+</section>
+<section>
+<h2>DM_Sets · Generator 2 · dm_sets_intersection</h2>
+<p><strong>Question:</strong> Let \(A=\{1, 2, 6, 8\}\) and \(B=\{2, 4, 5, 8\}\). Find \(A\cap B\).</p>
+<p><strong>Answer:</strong> \(\{2, 8\}\)</p>
+<details><summary>Worked steps</summary><ol><li>Intersection keeps only elements that occur in both sets.</li><li>\(A\cap B=\{2, 8\}\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(\{1, 2, 4, 5, 6, 8\}\)</code> — This is the union, which includes elements from either set.</li><li><code>\(\{1, 6\}\)</code> — This is A minus B.</li><li><code>\(\{4, 5\}\)</code> — This is B minus A.</li></ul></details>
+<p class="seed">Seed: 2985303807</p>
+</section>
+<section>
+<h2>DM_Sets · Generator 3 · dm_sets_difference</h2>
+<p><strong>Question:</strong> Let \(A=\{2, 3, 5, 6\}\) and \(B=\{1, 3, 6, 8\}\). Find \(A\setminus B\).</p>
+<p><strong>Answer:</strong> \(\{2, 5\}\)</p>
+<details><summary>Worked steps</summary><ol><li>Start with A and remove every element that also belongs to B.</li><li>\(A\setminus B=\{2, 5\}\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(\{1, 8\}\)</code> — Set difference is directional; this computes B minus A.</li><li><code>\(\{3, 6\}\)</code> — This keeps the shared elements instead of removing them.</li><li><code>\(\{1, 2, 3, 5, 6, 8\}\)</code> — This combines both sets rather than subtracting.</li></ul></details>
+<p class="seed">Seed: 544465986</p>
+</section>
+<section>
+<h2>DM_Sets · Generator 4 · dm_sets_complement</h2>
+<p><strong>Question:</strong> In universe \(U=\{1, 2, 3, 4, 5, 6, 7, 8\}\), let \(A=\{1, 4, 5, 7\}\). Find \(A^c\).</p>
+<p><strong>Answer:</strong> \(\{2, 3, 6, 8\}\)</p>
+<details><summary>Worked steps</summary><ol><li>The complement contains the elements of U that are not in A.</li><li>\(A^c=U\setminus A=\{2, 3, 6, 8\}\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(\{1, 4, 5, 7\}\)</code> — The complement is what remains outside A within the stated universe.</li><li><code>\(\{1, 2, 3, 4, 5, 6, 7, 8\}\)</code> — The whole universe includes elements that are in A.</li><li><code>\(\varnothing\)</code> — A is contained in U, so A minus U is empty; the subtraction order is reversed.</li></ul></details>
+<p class="seed">Seed: 251060229</p>
+</section>
+<section>
+<h2>DM_Sets · Generator 5 · dm_sets_power_count</h2>
+<p><strong>Question:</strong> A finite set has \(2\) elements. How many elements are in its power set?</p>
+<p><strong>Answer:</strong> \(4\)</p>
+<details><summary>Worked steps</summary><ol><li>Each original element has two choices: included or not included.</li><li>Therefore \(|\mathcal P(A)|=2^{2}=4\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(2\)</code> — Factorials count orderings, not subsets.</li><li><code>\(3\)</code> — This omits one of the subsets.</li><li><code>\(5\)</code> — The number of subsets is exactly a power of two.</li></ul></details>
+<p class="seed">Seed: 2105189704</p>
+</section>
+<section>
+<h2>DM_Sets · Generator 6 · dm_sets_power_list</h2>
+<p><strong>Question:</strong> List the power set of \(A=\{a, b\}\).</p>
+<p><strong>Answer:</strong> \(\{\varnothing, \{a\}, \{b\}, \{a, b\}\}\)</p>
+<details><summary>Worked steps</summary><ol><li>A set with \(2\) elements has \(2^{2}=4\) subsets.</li><li>Include the empty set, every singleton, all larger subsets, and the original set.</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(\{\{a\}, \{b\}, \{a, b\}\}\)</code> — The empty set is always an element of the power set.</li><li><code>\(\{\{a\}, \{b\}\}\)</code> — The power set contains all subsets, not only singletons.</li><li><code>\(\{a, b\}\)</code> — The original set is one element of its power set, not the entire power set.</li></ul></details>
+<p class="seed">Seed: 3692157203</p>
+</section>
+<section>
+<h2>DM_Sets · Generator 7 · dm_sets_inclusion_exclusion</h2>
+<p><strong>Question:</strong> In a survey, \(23\) students study Java, \(22\) study Python, and \(16\) study both. How many study at least one of the two languages?</p>
+<p><strong>Answer:</strong> \(29\)</p>
+<details><summary>Worked steps</summary><ol><li>Use inclusion–exclusion: \(|A\cup B|=|A|+|B|-|A\cap B|\).</li><li>\(23+22-16=29\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(45\)</code> — Adding both totals double-counts students in the overlap.</li><li><code>\(13\)</code> — This omits the students who study both languages.</li><li><code>\(61\)</code> — The overlap must be subtracted once, not added.</li></ul></details>
+<p class="seed">Seed: 1251319382</p>
+</section>
+<section>
+<h2>DM_Sets · Generator 8 · dm_sets_cartesian_size</h2>
+<p><strong>Question:</strong> If \(|A|=3\) and \(|B|=7\), find \(|A\times B|\).</p>
+<p><strong>Answer:</strong> \(21\)</p>
+<details><summary>Worked steps</summary><ol><li>For each element of A, there are |B| choices for the second coordinate.</li><li>\(|A\times B|=3\cdot7=21\).</li></ol></details>
+<details><summary>Curated mistake choices</summary><ul><li><code>\(10\)</code> — Cartesian-product choices multiply rather than add.</li><li><code>\(7\)</code> — The product contains one ordered pair for every combination of coordinates.</li><li><code>\(42\)</code> — A×B already accounts for ordered pairs in the specified direction; do not double it.</li></ul></details>
+<p class="seed">Seed: 3105448857</p>
+</section>
+</body></html>

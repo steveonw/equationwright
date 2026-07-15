@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Audit outputs
+*_audit_report.json
+audit_summary.json
+
+# Local gateway configuration and logs
+gateway/gateway.json
+gateway/*.log
+
+# Local model files
+*.gguf
+*.onnx
+models/
+
+# Generated releases
+build/
+dist/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

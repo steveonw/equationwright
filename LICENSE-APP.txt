@@ -1,0 +1,10 @@
+Math Worksheet Builder
+Copyright (c) 2026 Steveon William Walker
+All rights reserved.
+
+No permission is granted to copy, modify, distribute, sublicense, sell, or
+create derivative works from the Math Worksheet Builder application or its
+course-content generator banks except with prior written permission from the
+copyright holder.
+
+Third-party components retain their own licenses. See THIRD_PARTY_NOTICES.md.

@@ -1,0 +1,2744 @@
+[
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 3419936034,
+    "key": "qr_prop_solve",
+    "q": "Solve the proportion \\(\\dfrac{60}{10} = \\dfrac{x}{16}\\).",
+    "a": "\\(x = 96\\)",
+    "steps": [
+      "Cross-multiply: \\(10x = 60\\cdot16 = 960\\).",
+      "Divide: \\(x = 960/10 = 96\\).",
+      "Sense check: \\(60/10 = 6\\) per unit, and \\(96/16 = 6\\) too. \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(x = 60\\)",
+        "why": "Cross-multiply means multiplying the DIAGONAL pair, then dividing by the remaining number."
+      },
+      {
+        "ans": "\\(x = 66\\)",
+        "why": "Proportions scale by multiplication, not by adding the same difference to both parts."
+      }
+    ],
+    "vec": [
+      11,
+      1,
+      60,
+      10,
+      16,
+      96
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 3436713653,
+    "key": "qr_prop_solve",
+    "q": "Solve the proportion \\(\\dfrac{12}{4} = \\dfrac{x}{25}\\).",
+    "a": "\\(x = 75\\)",
+    "steps": [
+      "Cross-multiply: \\(4x = 12\\cdot25 = 300\\).",
+      "Divide: \\(x = 300/4 = 75\\).",
+      "Sense check: \\(12/4 = 3\\) per unit, and \\(75/25 = 3\\) too. \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(x = 12\\)",
+        "why": "Cross-multiply means multiplying the DIAGONAL pair, then dividing by the remaining number."
+      },
+      {
+        "ans": "\\(x = 33\\)",
+        "why": "Proportions scale by multiplication, not by adding the same difference to both parts."
+      }
+    ],
+    "vec": [
+      11,
+      1,
+      12,
+      4,
+      25,
+      75
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 3386380796,
+    "key": "qr_prop_solve",
+    "q": "Solve the proportion \\(\\dfrac{16}{8} = \\dfrac{x}{20}\\).",
+    "a": "\\(x = 40\\)",
+    "steps": [
+      "Cross-multiply: \\(8x = 16\\cdot20 = 320\\).",
+      "Divide: \\(x = 320/8 = 40\\).",
+      "Sense check: \\(16/8 = 2\\) per unit, and \\(40/20 = 2\\) too. \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(x = 16\\)",
+        "why": "Cross-multiply means multiplying the DIAGONAL pair, then dividing by the remaining number."
+      },
+      {
+        "ans": "\\(x = 28\\)",
+        "why": "Proportions scale by multiplication, not by adding the same difference to both parts."
+      }
+    ],
+    "vec": [
+      11,
+      1,
+      16,
+      8,
+      20,
+      40
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 3403158415,
+    "key": "qr_prop_solve",
+    "q": "Solve the proportion \\(\\dfrac{30}{10} = \\dfrac{x}{20}\\).",
+    "a": "\\(x = 60\\)",
+    "steps": [
+      "Cross-multiply: \\(10x = 30\\cdot20 = 600\\).",
+      "Divide: \\(x = 600/10 = 60\\).",
+      "Sense check: \\(30/10 = 3\\) per unit, and \\(60/20 = 3\\) too. \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(x = 30\\)",
+        "why": "Cross-multiply means multiplying the DIAGONAL pair, then dividing by the remaining number."
+      },
+      {
+        "ans": "\\(x = 40\\)",
+        "why": "Proportions scale by multiplication, not by adding the same difference to both parts."
+      }
+    ],
+    "vec": [
+      11,
+      1,
+      30,
+      10,
+      20,
+      60
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 3352825558,
+    "key": "qr_prop_solve",
+    "q": "Solve the proportion \\(\\dfrac{20}{4} = \\dfrac{x}{16}\\).",
+    "a": "\\(x = 80\\)",
+    "steps": [
+      "Cross-multiply: \\(4x = 20\\cdot16 = 320\\).",
+      "Divide: \\(x = 320/4 = 80\\).",
+      "Sense check: \\(20/4 = 5\\) per unit, and \\(80/16 = 5\\) too. \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(x = 81\\)",
+        "why": "Cross-multiply means multiplying the DIAGONAL pair, then dividing by the remaining number."
+      },
+      {
+        "ans": "\\(x = 32\\)",
+        "why": "Proportions scale by multiplication, not by adding the same difference to both parts."
+      }
+    ],
+    "vec": [
+      11,
+      1,
+      20,
+      4,
+      16,
+      80
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 3369603177,
+    "key": "qr_prop_solve",
+    "q": "Solve the proportion \\(\\dfrac{24}{8} = \\dfrac{x}{20}\\).",
+    "a": "\\(x = 60\\)",
+    "steps": [
+      "Cross-multiply: \\(8x = 24\\cdot20 = 480\\).",
+      "Divide: \\(x = 480/8 = 60\\).",
+      "Sense check: \\(24/8 = 3\\) per unit, and \\(60/20 = 3\\) too. \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(x = 24\\)",
+        "why": "Cross-multiply means multiplying the DIAGONAL pair, then dividing by the remaining number."
+      },
+      {
+        "ans": "\\(x = 36\\)",
+        "why": "Proportions scale by multiplication, not by adding the same difference to both parts."
+      }
+    ],
+    "vec": [
+      11,
+      1,
+      24,
+      8,
+      20,
+      60
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 1020674917,
+    "key": "qr_prop_unitprice",
+    "q": "Brand A: 10 oz for 400\u00a2. Brand B: 20 oz for 900\u00a2. Which is the better buy (lower unit price)?",
+    "a": "Brand A (40\u00a2 per oz vs 45\u00a2 per oz)",
+    "steps": [
+      "Unit prices: A = 400/10 = 40\u00a2 per oz; B = 900/20 = 45\u00a2 per oz.",
+      "Lower unit price wins: Brand A."
+    ],
+    "traps": [
+      {
+        "ans": "Brand B (45\u00a2 per oz vs 40\u00a2 per oz)",
+        "why": "Compare PER-UNIT prices, and pick the LOWER one \u2014 the bigger package is not automatically the better buy."
+      },
+      {
+        "ans": "They cost the same per ounce",
+        "why": "Divide each price by its own size before comparing \u2014 the unit prices differ here."
+      }
+    ],
+    "vec": [
+      11,
+      2,
+      10,
+      400,
+      20,
+      900,
+      0
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 1003897298,
+    "key": "qr_prop_unitprice",
+    "q": "Brand A: 10 oz for 400\u00a2. Brand B: 20 oz for 700\u00a2. Which is the better buy (lower unit price)?",
+    "a": "Brand B (35\u00a2 per oz vs 40\u00a2 per oz)",
+    "steps": [
+      "Unit prices: A = 400/10 = 40\u00a2 per oz; B = 700/20 = 35\u00a2 per oz.",
+      "Lower unit price wins: Brand B."
+    ],
+    "traps": [
+      {
+        "ans": "Brand A (40\u00a2 per oz vs 35\u00a2 per oz)",
+        "why": "Compare PER-UNIT prices, and pick the LOWER one \u2014 the bigger package is not automatically the better buy."
+      },
+      {
+        "ans": "They cost the same per ounce",
+        "why": "Divide each price by its own size before comparing \u2014 the unit prices differ here."
+      }
+    ],
+    "vec": [
+      11,
+      2,
+      10,
+      400,
+      20,
+      700,
+      1
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 987119679,
+    "key": "qr_prop_unitprice",
+    "q": "Brand A: 10 oz for 250\u00a2. Brand B: 20 oz for 600\u00a2. Which is the better buy (lower unit price)?",
+    "a": "Brand A (25\u00a2 per oz vs 30\u00a2 per oz)",
+    "steps": [
+      "Unit prices: A = 250/10 = 25\u00a2 per oz; B = 600/20 = 30\u00a2 per oz.",
+      "Lower unit price wins: Brand A."
+    ],
+    "traps": [
+      {
+        "ans": "Brand B (30\u00a2 per oz vs 25\u00a2 per oz)",
+        "why": "Compare PER-UNIT prices, and pick the LOWER one \u2014 the bigger package is not automatically the better buy."
+      },
+      {
+        "ans": "They cost the same per ounce",
+        "why": "Divide each price by its own size before comparing \u2014 the unit prices differ here."
+      }
+    ],
+    "vec": [
+      11,
+      2,
+      10,
+      250,
+      20,
+      600,
+      0
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 970342060,
+    "key": "qr_prop_unitprice",
+    "q": "Brand A: 8 oz for 240\u00a2. Brand B: 16 oz for 400\u00a2. Which is the better buy (lower unit price)?",
+    "a": "Brand B (25\u00a2 per oz vs 30\u00a2 per oz)",
+    "steps": [
+      "Unit prices: A = 240/8 = 30\u00a2 per oz; B = 400/16 = 25\u00a2 per oz.",
+      "Lower unit price wins: Brand B."
+    ],
+    "traps": [
+      {
+        "ans": "Brand A (30\u00a2 per oz vs 25\u00a2 per oz)",
+        "why": "Compare PER-UNIT prices, and pick the LOWER one \u2014 the bigger package is not automatically the better buy."
+      },
+      {
+        "ans": "They cost the same per ounce",
+        "why": "Divide each price by its own size before comparing \u2014 the unit prices differ here."
+      }
+    ],
+    "vec": [
+      11,
+      2,
+      8,
+      240,
+      16,
+      400,
+      1
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 953564441,
+    "key": "qr_prop_unitprice",
+    "q": "Brand A: 8 oz for 320\u00a2. Brand B: 16 oz for 560\u00a2. Which is the better buy (lower unit price)?",
+    "a": "Brand B (35\u00a2 per oz vs 40\u00a2 per oz)",
+    "steps": [
+      "Unit prices: A = 320/8 = 40\u00a2 per oz; B = 560/16 = 35\u00a2 per oz.",
+      "Lower unit price wins: Brand B."
+    ],
+    "traps": [
+      {
+        "ans": "Brand A (40\u00a2 per oz vs 35\u00a2 per oz)",
+        "why": "Compare PER-UNIT prices, and pick the LOWER one \u2014 the bigger package is not automatically the better buy."
+      },
+      {
+        "ans": "They cost the same per ounce",
+        "why": "Divide each price by its own size before comparing \u2014 the unit prices differ here."
+      }
+    ],
+    "vec": [
+      11,
+      2,
+      8,
+      320,
+      16,
+      560,
+      1
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 936786822,
+    "key": "qr_prop_unitprice",
+    "q": "Brand A: 16 oz for 400\u00a2. Brand B: 32 oz for 960\u00a2. Which is the better buy (lower unit price)?",
+    "a": "Brand A (25\u00a2 per oz vs 30\u00a2 per oz)",
+    "steps": [
+      "Unit prices: A = 400/16 = 25\u00a2 per oz; B = 960/32 = 30\u00a2 per oz.",
+      "Lower unit price wins: Brand A."
+    ],
+    "traps": [
+      {
+        "ans": "Brand B (30\u00a2 per oz vs 25\u00a2 per oz)",
+        "why": "Compare PER-UNIT prices, and pick the LOWER one \u2014 the bigger package is not automatically the better buy."
+      },
+      {
+        "ans": "They cost the same per ounce",
+        "why": "Divide each price by its own size before comparing \u2014 the unit prices differ here."
+      }
+    ],
+    "vec": [
+      11,
+      2,
+      16,
+      400,
+      32,
+      960,
+      0
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 4273806356,
+    "key": "qr_percent_change",
+    "q": "A price changes from \\$200 to \\$180. What is the percent change?",
+    "a": "-10\\%",
+    "steps": [
+      "Percent change \\(= \\dfrac{\\text{new} - \\text{old}}{\\text{old}}\\times 100\\).",
+      "\\(= \\dfrac{180 - 200}{200}\\times 100 = -10\\%\\)."
+    ],
+    "traps": [
+      {
+        "ans": "-11\\%",
+        "why": "Divide by the ORIGINAL value (old), not the new one \u2014 the base of a percent change is where you started."
+      },
+      {
+        "ans": "-\\$20",
+        "why": "That is the dollar change; percent change divides it by the original and multiplies by 100."
+      }
+    ],
+    "vec": [
+      11,
+      3,
+      200,
+      180,
+      -10
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 4290583975,
+    "key": "qr_percent_change",
+    "q": "A price changes from \\$200 to \\$250. What is the percent change?",
+    "a": "+25\\%",
+    "steps": [
+      "Percent change \\(= \\dfrac{\\text{new} - \\text{old}}{\\text{old}}\\times 100\\).",
+      "\\(= \\dfrac{250 - 200}{200}\\times 100 = +25\\%\\)."
+    ],
+    "traps": [
+      {
+        "ans": "+20\\%",
+        "why": "Divide by the ORIGINAL value (old), not the new one \u2014 the base of a percent change is where you started."
+      },
+      {
+        "ans": "+\\$50",
+        "why": "That is the dollar change; percent change divides it by the original and multiplies by 100."
+      }
+    ],
+    "vec": [
+      11,
+      3,
+      200,
+      250,
+      25
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 12394298,
+    "key": "qr_percent_change",
+    "q": "A price changes from \\$200 to \\$100. What is the percent change?",
+    "a": "-50\\%",
+    "steps": [
+      "Percent change \\(= \\dfrac{\\text{new} - \\text{old}}{\\text{old}}\\times 100\\).",
+      "\\(= \\dfrac{100 - 200}{200}\\times 100 = -50\\%\\)."
+    ],
+    "traps": [
+      {
+        "ans": "-100\\%",
+        "why": "Divide by the ORIGINAL value (old), not the new one \u2014 the base of a percent change is where you started."
+      },
+      {
+        "ans": "-\\$100",
+        "why": "That is the dollar change; percent change divides it by the original and multiplies by 100."
+      }
+    ],
+    "vec": [
+      11,
+      3,
+      200,
+      100,
+      -50
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 29171917,
+    "key": "qr_percent_change",
+    "q": "A price changes from \\$40 to \\$30. What is the percent change?",
+    "a": "-25\\%",
+    "steps": [
+      "Percent change \\(= \\dfrac{\\text{new} - \\text{old}}{\\text{old}}\\times 100\\).",
+      "\\(= \\dfrac{30 - 40}{40}\\times 100 = -25\\%\\)."
+    ],
+    "traps": [
+      {
+        "ans": "-33\\%",
+        "why": "Divide by the ORIGINAL value (old), not the new one \u2014 the base of a percent change is where you started."
+      },
+      {
+        "ans": "-\\$10",
+        "why": "That is the dollar change; percent change divides it by the original and multiplies by 100."
+      }
+    ],
+    "vec": [
+      11,
+      3,
+      40,
+      30,
+      -25
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 4206695880,
+    "key": "qr_percent_change",
+    "q": "A price changes from \\$50 to \\$55. What is the percent change?",
+    "a": "+10\\%",
+    "steps": [
+      "Percent change \\(= \\dfrac{\\text{new} - \\text{old}}{\\text{old}}\\times 100\\).",
+      "\\(= \\dfrac{55 - 50}{50}\\times 100 = +10\\%\\)."
+    ],
+    "traps": [
+      {
+        "ans": "+9\\%",
+        "why": "Divide by the ORIGINAL value (old), not the new one \u2014 the base of a percent change is where you started."
+      },
+      {
+        "ans": "+\\$5",
+        "why": "That is the dollar change; percent change divides it by the original and multiplies by 100."
+      }
+    ],
+    "vec": [
+      11,
+      3,
+      50,
+      55,
+      10
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 4223473499,
+    "key": "qr_percent_change",
+    "q": "A price changes from \\$50 to \\$55. What is the percent change?",
+    "a": "+10\\%",
+    "steps": [
+      "Percent change \\(= \\dfrac{\\text{new} - \\text{old}}{\\text{old}}\\times 100\\).",
+      "\\(= \\dfrac{55 - 50}{50}\\times 100 = +10\\%\\)."
+    ],
+    "traps": [
+      {
+        "ans": "+9\\%",
+        "why": "Divide by the ORIGINAL value (old), not the new one \u2014 the base of a percent change is where you started."
+      },
+      {
+        "ans": "+\\$5",
+        "why": "That is the dollar change; percent change divides it by the original and multiplies by 100."
+      }
+    ],
+    "vec": [
+      11,
+      3,
+      50,
+      55,
+      10
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 3,
+    "sample": 0,
+    "seed": 1565806559,
+    "key": "qr_prop_scale",
+    "q": "A map's scale is 1 inch = 25 miles. Two cities are 4 inches apart on the map. What is the real distance?",
+    "a": "100 miles",
+    "steps": [
+      "Scale is a rate: 25 miles per inch.",
+      "\\(4\\times25 = 100\\) miles."
+    ],
+    "traps": [
+      {
+        "ans": "29 miles",
+        "why": "Scales multiply \u2014 each inch stands for 25 miles, so 4 inches is 4 groups of 25."
+      },
+      {
+        "ans": "6 miles",
+        "why": "Multiply by the map distance; dividing would shrink the real distance as the map distance grows."
+      }
+    ],
+    "vec": [
+      11,
+      4,
+      25,
+      4
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 3,
+    "sample": 1,
+    "seed": 1549028940,
+    "key": "qr_prop_scale",
+    "q": "A map's scale is 1 inch = 40 miles. Two cities are 4 inches apart on the map. What is the real distance?",
+    "a": "160 miles",
+    "steps": [
+      "Scale is a rate: 40 miles per inch.",
+      "\\(4\\times40 = 160\\) miles."
+    ],
+    "traps": [
+      {
+        "ans": "44 miles",
+        "why": "Scales multiply \u2014 each inch stands for 40 miles, so 4 inches is 4 groups of 40."
+      },
+      {
+        "ans": "10 miles",
+        "why": "Multiply by the map distance; dividing would shrink the real distance as the map distance grows."
+      }
+    ],
+    "vec": [
+      11,
+      4,
+      40,
+      4
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 3,
+    "sample": 2,
+    "seed": 1599361797,
+    "key": "qr_prop_scale",
+    "q": "A map's scale is 1 inch = 40 miles. Two cities are 4 inches apart on the map. What is the real distance?",
+    "a": "160 miles",
+    "steps": [
+      "Scale is a rate: 40 miles per inch.",
+      "\\(4\\times40 = 160\\) miles."
+    ],
+    "traps": [
+      {
+        "ans": "44 miles",
+        "why": "Scales multiply \u2014 each inch stands for 40 miles, so 4 inches is 4 groups of 40."
+      },
+      {
+        "ans": "10 miles",
+        "why": "Multiply by the map distance; dividing would shrink the real distance as the map distance grows."
+      }
+    ],
+    "vec": [
+      11,
+      4,
+      40,
+      4
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 3,
+    "sample": 3,
+    "seed": 1582584178,
+    "key": "qr_prop_scale",
+    "q": "A map's scale is 1 inch = 40 miles. Two cities are 6 inches apart on the map. What is the real distance?",
+    "a": "240 miles",
+    "steps": [
+      "Scale is a rate: 40 miles per inch.",
+      "\\(6\\times40 = 240\\) miles."
+    ],
+    "traps": [
+      {
+        "ans": "46 miles",
+        "why": "Scales multiply \u2014 each inch stands for 40 miles, so 6 inches is 6 groups of 40."
+      },
+      {
+        "ans": "7 miles",
+        "why": "Multiply by the map distance; dividing would shrink the real distance as the map distance grows."
+      }
+    ],
+    "vec": [
+      11,
+      4,
+      40,
+      6
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 3,
+    "sample": 4,
+    "seed": 1498696083,
+    "key": "qr_prop_scale",
+    "q": "A map's scale is 1 inch = 50 miles. Two cities are 3 inches apart on the map. What is the real distance?",
+    "a": "150 miles",
+    "steps": [
+      "Scale is a rate: 50 miles per inch.",
+      "\\(3\\times50 = 150\\) miles."
+    ],
+    "traps": [
+      {
+        "ans": "53 miles",
+        "why": "Scales multiply \u2014 each inch stands for 50 miles, so 3 inches is 3 groups of 50."
+      },
+      {
+        "ans": "17 miles",
+        "why": "Multiply by the map distance; dividing would shrink the real distance as the map distance grows."
+      }
+    ],
+    "vec": [
+      11,
+      4,
+      50,
+      3
+    ]
+  },
+  {
+    "unitId": "QR_Proportion",
+    "genIndex": 3,
+    "sample": 5,
+    "seed": 1481918464,
+    "key": "qr_prop_scale",
+    "q": "A map's scale is 1 inch = 50 miles. Two cities are 3 inches apart on the map. What is the real distance?",
+    "a": "150 miles",
+    "steps": [
+      "Scale is a rate: 50 miles per inch.",
+      "\\(3\\times50 = 150\\) miles."
+    ],
+    "traps": [
+      {
+        "ans": "53 miles",
+        "why": "Scales multiply \u2014 each inch stands for 50 miles, so 3 inches is 3 groups of 50."
+      },
+      {
+        "ans": "17 miles",
+        "why": "Multiply by the map distance; dividing would shrink the real distance as the map distance grows."
+      }
+    ],
+    "vec": [
+      11,
+      4,
+      50,
+      3
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 4025749590,
+    "key": "qr_fin_simple",
+    "q": "\\$2000 is deposited at 3\\% simple interest for 3 years. How much interest is earned?",
+    "a": "\\$180",
+    "steps": [
+      "Simple interest: \\(I = Prt\\).",
+      "\\(I = 2000\\times0.03\\times3 = 180\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\$18000",
+        "why": "Convert the percent: 3% = 0.03. Skipping the conversion inflates the interest 100\u00d7."
+      },
+      {
+        "ans": "\\$60",
+        "why": "Simple interest accrues EACH year \u2014 multiply by t = 3 years, not just one."
+      }
+    ],
+    "vec": [
+      12,
+      1,
+      2000,
+      3,
+      3,
+      180
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 4042527209,
+    "key": "qr_fin_simple",
+    "q": "\\$500 is deposited at 3\\% simple interest for 2 years. How much interest is earned?",
+    "a": "\\$30",
+    "steps": [
+      "Simple interest: \\(I = Prt\\).",
+      "\\(I = 500\\times0.03\\times2 = 30\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\$3000",
+        "why": "Convert the percent: 3% = 0.03. Skipping the conversion inflates the interest 100\u00d7."
+      },
+      {
+        "ans": "\\$15",
+        "why": "Simple interest accrues EACH year \u2014 multiply by t = 2 years, not just one."
+      }
+    ],
+    "vec": [
+      12,
+      1,
+      500,
+      3,
+      2,
+      30
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 3992194352,
+    "key": "qr_fin_simple",
+    "q": "\\$2000 is deposited at 6\\% simple interest for 2 years. How much interest is earned?",
+    "a": "\\$240",
+    "steps": [
+      "Simple interest: \\(I = Prt\\).",
+      "\\(I = 2000\\times0.06\\times2 = 240\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\$24000",
+        "why": "Convert the percent: 6% = 0.06. Skipping the conversion inflates the interest 100\u00d7."
+      },
+      {
+        "ans": "\\$120",
+        "why": "Simple interest accrues EACH year \u2014 multiply by t = 2 years, not just one."
+      }
+    ],
+    "vec": [
+      12,
+      1,
+      2000,
+      6,
+      2,
+      240
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 4008971971,
+    "key": "qr_fin_simple",
+    "q": "\\$1000 is deposited at 6\\% simple interest for 5 years. How much interest is earned?",
+    "a": "\\$300",
+    "steps": [
+      "Simple interest: \\(I = Prt\\).",
+      "\\(I = 1000\\times0.06\\times5 = 300\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\$30000",
+        "why": "Convert the percent: 6% = 0.06. Skipping the conversion inflates the interest 100\u00d7."
+      },
+      {
+        "ans": "\\$60",
+        "why": "Simple interest accrues EACH year \u2014 multiply by t = 5 years, not just one."
+      }
+    ],
+    "vec": [
+      12,
+      1,
+      1000,
+      6,
+      5,
+      300
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 4092860066,
+    "key": "qr_fin_simple",
+    "q": "\\$500 is deposited at 6\\% simple interest for 2 years. How much interest is earned?",
+    "a": "\\$60",
+    "steps": [
+      "Simple interest: \\(I = Prt\\).",
+      "\\(I = 500\\times0.06\\times2 = 60\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\$6000",
+        "why": "Convert the percent: 6% = 0.06. Skipping the conversion inflates the interest 100\u00d7."
+      },
+      {
+        "ans": "\\$30",
+        "why": "Simple interest accrues EACH year \u2014 multiply by t = 2 years, not just one."
+      }
+    ],
+    "vec": [
+      12,
+      1,
+      500,
+      6,
+      2,
+      60
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 4109637685,
+    "key": "qr_fin_simple",
+    "q": "\\$1000 is deposited at 3\\% simple interest for 3 years. How much interest is earned?",
+    "a": "\\$90",
+    "steps": [
+      "Simple interest: \\(I = Prt\\).",
+      "\\(I = 1000\\times0.03\\times3 = 90\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\$9000",
+        "why": "Convert the percent: 3% = 0.03. Skipping the conversion inflates the interest 100\u00d7."
+      },
+      {
+        "ans": "\\$30",
+        "why": "Simple interest accrues EACH year \u2014 multiply by t = 3 years, not just one."
+      }
+    ],
+    "vec": [
+      12,
+      1,
+      1000,
+      3,
+      3,
+      90
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 1584911769,
+    "key": "qr_fin_compound",
+    "q": "\\$100 grows at 20\\% per year, compounded annually, for 2 years. What is the final amount?",
+    "a": "\\$144",
+    "steps": [
+      "Compound growth: \\(A = P(1+r)^t = 100(1.2)^2\\).",
+      "\\((1.2)^2 = 1.44\\), so \\(A = 144\\).",
+      "Note: more than simple interest (\\$140) \u2014 year 2 earns interest on year 1's interest."
+    ],
+    "traps": [
+      {
+        "ans": "\\$140",
+        "why": "That is SIMPLE interest. Compounding multiplies by (1+r) each year, earning interest on interest."
+      },
+      {
+        "ans": "\\$240",
+        "why": "(1+r)^2 means squared, not times 2 \u2014 compounding is repeated multiplication."
+      }
+    ],
+    "vec": [
+      12,
+      2,
+      100,
+      20,
+      144
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 1568134150,
+    "key": "qr_fin_compound",
+    "q": "\\$200 grows at 10\\% per year, compounded annually, for 2 years. What is the final amount?",
+    "a": "\\$242.00000000000006",
+    "steps": [
+      "Compound growth: \\(A = P(1+r)^t = 200(1.1)^2\\).",
+      "\\((1.1)^2 = 1.2100000000000002\\), so \\(A = 242.00000000000006\\).",
+      "Note: more than simple interest (\\$240) \u2014 year 2 earns interest on year 1's interest."
+    ],
+    "traps": [
+      {
+        "ans": "\\$240",
+        "why": "That is SIMPLE interest. Compounding multiplies by (1+r) each year, earning interest on interest."
+      },
+      {
+        "ans": "\\$440.00000000000006",
+        "why": "(1+r)^2 means squared, not times 2 \u2014 compounding is repeated multiplication."
+      }
+    ],
+    "vec": [
+      12,
+      2,
+      200,
+      10,
+      242.00000000000006
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 1551356531,
+    "key": "qr_fin_compound",
+    "q": "\\$200 grows at 20\\% per year, compounded annually, for 2 years. What is the final amount?",
+    "a": "\\$288",
+    "steps": [
+      "Compound growth: \\(A = P(1+r)^t = 200(1.2)^2\\).",
+      "\\((1.2)^2 = 1.44\\), so \\(A = 288\\).",
+      "Note: more than simple interest (\\$280) \u2014 year 2 earns interest on year 1's interest."
+    ],
+    "traps": [
+      {
+        "ans": "\\$280",
+        "why": "That is SIMPLE interest. Compounding multiplies by (1+r) each year, earning interest on interest."
+      },
+      {
+        "ans": "\\$480",
+        "why": "(1+r)^2 means squared, not times 2 \u2014 compounding is repeated multiplication."
+      }
+    ],
+    "vec": [
+      12,
+      2,
+      200,
+      20,
+      288
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 1534578912,
+    "key": "qr_fin_compound",
+    "q": "\\$200 grows at 10\\% per year, compounded annually, for 2 years. What is the final amount?",
+    "a": "\\$242.00000000000006",
+    "steps": [
+      "Compound growth: \\(A = P(1+r)^t = 200(1.1)^2\\).",
+      "\\((1.1)^2 = 1.2100000000000002\\), so \\(A = 242.00000000000006\\).",
+      "Note: more than simple interest (\\$240) \u2014 year 2 earns interest on year 1's interest."
+    ],
+    "traps": [
+      {
+        "ans": "\\$240",
+        "why": "That is SIMPLE interest. Compounding multiplies by (1+r) each year, earning interest on interest."
+      },
+      {
+        "ans": "\\$440.00000000000006",
+        "why": "(1+r)^2 means squared, not times 2 \u2014 compounding is repeated multiplication."
+      }
+    ],
+    "vec": [
+      12,
+      2,
+      200,
+      10,
+      242.00000000000006
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 1652022245,
+    "key": "qr_fin_compound",
+    "q": "\\$1000 grows at 10\\% per year, compounded annually, for 2 years. What is the final amount?",
+    "a": "\\$1210",
+    "steps": [
+      "Compound growth: \\(A = P(1+r)^t = 1000(1.1)^2\\).",
+      "\\((1.1)^2 = 1.2100000000000002\\), so \\(A = 1210\\).",
+      "Note: more than simple interest (\\$1200) \u2014 year 2 earns interest on year 1's interest."
+    ],
+    "traps": [
+      {
+        "ans": "\\$1200",
+        "why": "That is SIMPLE interest. Compounding multiplies by (1+r) each year, earning interest on interest."
+      },
+      {
+        "ans": "\\$2200",
+        "why": "(1+r)^2 means squared, not times 2 \u2014 compounding is repeated multiplication."
+      }
+    ],
+    "vec": [
+      12,
+      2,
+      1000,
+      10,
+      1210
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 1635244626,
+    "key": "qr_fin_compound",
+    "q": "\\$1000 grows at 10\\% per year, compounded annually, for 2 years. What is the final amount?",
+    "a": "\\$1210",
+    "steps": [
+      "Compound growth: \\(A = P(1+r)^t = 1000(1.1)^2\\).",
+      "\\((1.1)^2 = 1.2100000000000002\\), so \\(A = 1210\\).",
+      "Note: more than simple interest (\\$1200) \u2014 year 2 earns interest on year 1's interest."
+    ],
+    "traps": [
+      {
+        "ans": "\\$1200",
+        "why": "That is SIMPLE interest. Compounding multiplies by (1+r) each year, earning interest on interest."
+      },
+      {
+        "ans": "\\$2200",
+        "why": "(1+r)^2 means squared, not times 2 \u2014 compounding is repeated multiplication."
+      }
+    ],
+    "vec": [
+      12,
+      2,
+      1000,
+      10,
+      1210
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 584652616,
+    "key": "qr_fin_downpayment",
+    "q": "A car costs \\$20000. The buyer makes a 10\\% down payment. How much is financed (borrowed)?",
+    "a": "\\$18000",
+    "steps": [
+      "Down payment: \\(10\\%\\) of \\(20000\\) = \\$2000\\.",
+      "Financed = price \u2212 down payment = \\(20000 - 2000 = 18000\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\$2000",
+        "why": "That is the down payment itself \u2014 the amount FINANCED is what remains after it."
+      },
+      {
+        "ans": "\\$22000",
+        "why": "The down payment reduces the loan; it is not added to the price."
+      }
+    ],
+    "vec": [
+      12,
+      3,
+      20000,
+      10,
+      2000
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 601430235,
+    "key": "qr_fin_downpayment",
+    "q": "A car costs \\$20000. The buyer makes a 5\\% down payment. How much is financed (borrowed)?",
+    "a": "\\$19000",
+    "steps": [
+      "Down payment: \\(5\\%\\) of \\(20000\\) = \\$1000\\.",
+      "Financed = price \u2212 down payment = \\(20000 - 1000 = 19000\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\$1000",
+        "why": "That is the down payment itself \u2014 the amount FINANCED is what remains after it."
+      },
+      {
+        "ans": "\\$21000",
+        "why": "The down payment reduces the loan; it is not added to the price."
+      }
+    ],
+    "vec": [
+      12,
+      3,
+      20000,
+      5,
+      1000
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 618207854,
+    "key": "qr_fin_downpayment",
+    "q": "A car costs \\$40000. The buyer makes a 5\\% down payment. How much is financed (borrowed)?",
+    "a": "\\$38000",
+    "steps": [
+      "Down payment: \\(5\\%\\) of \\(40000\\) = \\$2000\\.",
+      "Financed = price \u2212 down payment = \\(40000 - 2000 = 38000\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\$2000",
+        "why": "That is the down payment itself \u2014 the amount FINANCED is what remains after it."
+      },
+      {
+        "ans": "\\$42000",
+        "why": "The down payment reduces the loan; it is not added to the price."
+      }
+    ],
+    "vec": [
+      12,
+      3,
+      40000,
+      5,
+      2000
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 634985473,
+    "key": "qr_fin_downpayment",
+    "q": "A car costs \\$40000. The buyer makes a 20\\% down payment. How much is financed (borrowed)?",
+    "a": "\\$32000",
+    "steps": [
+      "Down payment: \\(20\\%\\) of \\(40000\\) = \\$8000\\.",
+      "Financed = price \u2212 down payment = \\(40000 - 8000 = 32000\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\$8000",
+        "why": "That is the down payment itself \u2014 the amount FINANCED is what remains after it."
+      },
+      {
+        "ans": "\\$48000",
+        "why": "The down payment reduces the loan; it is not added to the price."
+      }
+    ],
+    "vec": [
+      12,
+      3,
+      40000,
+      20,
+      8000
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 651763092,
+    "key": "qr_fin_downpayment",
+    "q": "A car costs \\$30000. The buyer makes a 5\\% down payment. How much is financed (borrowed)?",
+    "a": "\\$28500",
+    "steps": [
+      "Down payment: \\(5\\%\\) of \\(30000\\) = \\$1500\\.",
+      "Financed = price \u2212 down payment = \\(30000 - 1500 = 28500\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\$1500",
+        "why": "That is the down payment itself \u2014 the amount FINANCED is what remains after it."
+      },
+      {
+        "ans": "\\$31500",
+        "why": "The down payment reduces the loan; it is not added to the price."
+      }
+    ],
+    "vec": [
+      12,
+      3,
+      30000,
+      5,
+      1500
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 668540711,
+    "key": "qr_fin_downpayment",
+    "q": "A car costs \\$30000. The buyer makes a 20\\% down payment. How much is financed (borrowed)?",
+    "a": "\\$24000",
+    "steps": [
+      "Down payment: \\(20\\%\\) of \\(30000\\) = \\$6000\\.",
+      "Financed = price \u2212 down payment = \\(30000 - 6000 = 24000\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\$6000",
+        "why": "That is the down payment itself \u2014 the amount FINANCED is what remains after it."
+      },
+      {
+        "ans": "\\$36000",
+        "why": "The down payment reduces the loan; it is not added to the price."
+      }
+    ],
+    "vec": [
+      12,
+      3,
+      30000,
+      20,
+      6000
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 3,
+    "sample": 0,
+    "seed": 2171620115,
+    "key": "qr_fin_loan_interest",
+    "q": "A \\$8000 loan is repaid with 24 monthly payments of \\$300. How much total interest is paid?",
+    "a": "\\$-800",
+    "steps": [
+      "Total paid: \\(300\\times24 = 7200\\).",
+      "Interest = total paid \u2212 amount borrowed = \\(7200 - 8000 = -800\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\$7200",
+        "why": "That is the TOTAL repaid \u2014 interest is the part beyond the original loan."
+      },
+      {
+        "ans": "\\$3600",
+        "why": "One year's payments is neither the total nor the interest \u2014 use all 24 payments, then subtract the principal."
+      }
+    ],
+    "vec": [
+      12,
+      4,
+      8000,
+      300,
+      24,
+      -800
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 3,
+    "sample": 1,
+    "seed": 2154842496,
+    "key": "qr_fin_loan_interest",
+    "q": "A \\$6000 loan is repaid with 24 monthly payments of \\$300. How much total interest is paid?",
+    "a": "\\$1200",
+    "steps": [
+      "Total paid: \\(300\\times24 = 7200\\).",
+      "Interest = total paid \u2212 amount borrowed = \\(7200 - 6000 = 1200\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\$7200",
+        "why": "That is the TOTAL repaid \u2014 interest is the part beyond the original loan."
+      },
+      {
+        "ans": "\\$3600",
+        "why": "One year's payments is neither the total nor the interest \u2014 use all 24 payments, then subtract the principal."
+      }
+    ],
+    "vec": [
+      12,
+      4,
+      6000,
+      300,
+      24,
+      1200
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 3,
+    "sample": 2,
+    "seed": 2205175353,
+    "key": "qr_fin_loan_interest",
+    "q": "A \\$6000 loan is repaid with 24 monthly payments of \\$400. How much total interest is paid?",
+    "a": "\\$3600",
+    "steps": [
+      "Total paid: \\(400\\times24 = 9600\\).",
+      "Interest = total paid \u2212 amount borrowed = \\(9600 - 6000 = 3600\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\$9600",
+        "why": "That is the TOTAL repaid \u2014 interest is the part beyond the original loan."
+      },
+      {
+        "ans": "\\$4800",
+        "why": "One year's payments is neither the total nor the interest \u2014 use all 24 payments, then subtract the principal."
+      }
+    ],
+    "vec": [
+      12,
+      4,
+      6000,
+      400,
+      24,
+      3600
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 3,
+    "sample": 3,
+    "seed": 2188397734,
+    "key": "qr_fin_loan_interest",
+    "q": "A \\$8000 loan is repaid with 24 monthly payments of \\$400. How much total interest is paid?",
+    "a": "\\$1600",
+    "steps": [
+      "Total paid: \\(400\\times24 = 9600\\).",
+      "Interest = total paid \u2212 amount borrowed = \\(9600 - 8000 = 1600\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\$9600",
+        "why": "That is the TOTAL repaid \u2014 interest is the part beyond the original loan."
+      },
+      {
+        "ans": "\\$4800",
+        "why": "One year's payments is neither the total nor the interest \u2014 use all 24 payments, then subtract the principal."
+      }
+    ],
+    "vec": [
+      12,
+      4,
+      8000,
+      400,
+      24,
+      1600
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 3,
+    "sample": 4,
+    "seed": 2238730591,
+    "key": "qr_fin_loan_interest",
+    "q": "A \\$8000 loan is repaid with 48 monthly payments of \\$300. How much total interest is paid?",
+    "a": "\\$6400",
+    "steps": [
+      "Total paid: \\(300\\times48 = 14400\\).",
+      "Interest = total paid \u2212 amount borrowed = \\(14400 - 8000 = 6400\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\$14400",
+        "why": "That is the TOTAL repaid \u2014 interest is the part beyond the original loan."
+      },
+      {
+        "ans": "\\$3600",
+        "why": "One year's payments is neither the total nor the interest \u2014 use all 48 payments, then subtract the principal."
+      }
+    ],
+    "vec": [
+      12,
+      4,
+      8000,
+      300,
+      48,
+      6400
+    ]
+  },
+  {
+    "unitId": "QR_Finance",
+    "genIndex": 3,
+    "sample": 5,
+    "seed": 2221952972,
+    "key": "qr_fin_loan_interest",
+    "q": "A \\$8000 loan is repaid with 24 monthly payments of \\$250. How much total interest is paid?",
+    "a": "\\$-2000",
+    "steps": [
+      "Total paid: \\(250\\times24 = 6000\\).",
+      "Interest = total paid \u2212 amount borrowed = \\(6000 - 8000 = -2000\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\$6000",
+        "why": "That is the TOTAL repaid \u2014 interest is the part beyond the original loan."
+      },
+      {
+        "ans": "\\$3000",
+        "why": "One year's payments is neither the total nor the interest \u2014 use all 24 payments, then subtract the principal."
+      }
+    ],
+    "vec": [
+      12,
+      4,
+      8000,
+      250,
+      24,
+      -2000
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 598890742,
+    "key": "qr_logic_negation",
+    "q": "What is the negation of: \u201cSome phones are cheap\u201d?",
+    "a": "\u201cNo phones are cheap\u201d",
+    "steps": [
+      "Negation must be true exactly when the original is false.",
+      "\u201cAll are\u201d negates to \u201cSome are not\u201d; \u201cSome are\u201d negates to \u201cNone are\u201d \u2014 and vice versa.",
+      "So: \u201cNo phones are cheap\u201d."
+    ],
+    "traps": [
+      {
+        "ans": "\u201cAll phones are cheap\u201d",
+        "why": "The negation of \"All are X\" is \"Some are not X\" \u2014 NOT \"None are X\" (both could be false at once)."
+      },
+      {
+        "ans": "\u201cSome phones are not cheap\u201d",
+        "why": "Check: could this and the original both be true? A real negation can never share a truth value with the original."
+      }
+    ],
+    "vec": [
+      13,
+      1,
+      1
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 615668361,
+    "key": "qr_logic_negation",
+    "q": "What is the negation of: \u201cNo cars are free\u201d?",
+    "a": "\u201cSome cars are free\u201d",
+    "steps": [
+      "Negation must be true exactly when the original is false.",
+      "\u201cAll are\u201d negates to \u201cSome are not\u201d; \u201cSome are\u201d negates to \u201cNone are\u201d \u2014 and vice versa.",
+      "So: \u201cSome cars are free\u201d."
+    ],
+    "traps": [
+      {
+        "ans": "\u201cAll cars are free\u201d",
+        "why": "The negation of \"All are X\" is \"Some are not X\" \u2014 NOT \"None are X\" (both could be false at once)."
+      },
+      {
+        "ans": "\u201cNo cars are not free\u201d",
+        "why": "Check: could this and the original both be true? A real negation can never share a truth value with the original."
+      }
+    ],
+    "vec": [
+      13,
+      1,
+      2
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 565335504,
+    "key": "qr_logic_negation",
+    "q": "What is the negation of: \u201cAll students passed\u201d?",
+    "a": "\u201cSome students did not pass\u201d",
+    "steps": [
+      "Negation must be true exactly when the original is false.",
+      "\u201cAll are\u201d negates to \u201cSome are not\u201d; \u201cSome are\u201d negates to \u201cNone are\u201d \u2014 and vice versa.",
+      "So: \u201cSome students did not pass\u201d."
+    ],
+    "traps": [
+      {
+        "ans": "\u201cNo students passed\u201d",
+        "why": "The negation of \"All are X\" is \"Some are not X\" \u2014 NOT \"None are X\" (both could be false at once)."
+      },
+      {
+        "ans": "\u201cAll students did not pass\u201d",
+        "why": "Check: could this and the original both be true? A real negation can never share a truth value with the original."
+      }
+    ],
+    "vec": [
+      13,
+      1,
+      0
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 582113123,
+    "key": "qr_logic_negation",
+    "q": "What is the negation of: \u201cSome phones are cheap\u201d?",
+    "a": "\u201cNo phones are cheap\u201d",
+    "steps": [
+      "Negation must be true exactly when the original is false.",
+      "\u201cAll are\u201d negates to \u201cSome are not\u201d; \u201cSome are\u201d negates to \u201cNone are\u201d \u2014 and vice versa.",
+      "So: \u201cNo phones are cheap\u201d."
+    ],
+    "traps": [
+      {
+        "ans": "\u201cAll phones are cheap\u201d",
+        "why": "The negation of \"All are X\" is \"Some are not X\" \u2014 NOT \"None are X\" (both could be false at once)."
+      },
+      {
+        "ans": "\u201cSome phones are not cheap\u201d",
+        "why": "Check: could this and the original both be true? A real negation can never share a truth value with the original."
+      }
+    ],
+    "vec": [
+      13,
+      1,
+      1
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 666001218,
+    "key": "qr_logic_negation",
+    "q": "What is the negation of: \u201cSome tests are not hard\u201d?",
+    "a": "\u201cAll tests are hard\u201d",
+    "steps": [
+      "Negation must be true exactly when the original is false.",
+      "\u201cAll are\u201d negates to \u201cSome are not\u201d; \u201cSome are\u201d negates to \u201cNone are\u201d \u2014 and vice versa.",
+      "So: \u201cAll tests are hard\u201d."
+    ],
+    "traps": [
+      {
+        "ans": "\u201cNo tests are hard\u201d",
+        "why": "The negation of \"All are X\" is \"Some are not X\" \u2014 NOT \"None are X\" (both could be false at once)."
+      },
+      {
+        "ans": "\u201cSome tests are hard\u201d",
+        "why": "Check: could this and the original both be true? A real negation can never share a truth value with the original."
+      }
+    ],
+    "vec": [
+      13,
+      1,
+      3
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 682778837,
+    "key": "qr_logic_negation",
+    "q": "What is the negation of: \u201cSome tests are not hard\u201d?",
+    "a": "\u201cAll tests are hard\u201d",
+    "steps": [
+      "Negation must be true exactly when the original is false.",
+      "\u201cAll are\u201d negates to \u201cSome are not\u201d; \u201cSome are\u201d negates to \u201cNone are\u201d \u2014 and vice versa.",
+      "So: \u201cAll tests are hard\u201d."
+    ],
+    "traps": [
+      {
+        "ans": "\u201cNo tests are hard\u201d",
+        "why": "The negation of \"All are X\" is \"Some are not X\" \u2014 NOT \"None are X\" (both could be false at once)."
+      },
+      {
+        "ans": "\u201cSome tests are hard\u201d",
+        "why": "Check: could this and the original both be true? A real negation can never share a truth value with the original."
+      }
+    ],
+    "vec": [
+      13,
+      1,
+      3
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 305484985,
+    "key": "qr_logic_truthvalue",
+    "q": "If \\(p\\) is false and \\(q\\) is true, what is the truth value of \\((p \\land q) \\lor \\neg p\\)?",
+    "a": "True",
+    "steps": [
+      "Substitute: \\(p = F\\), \\(q = T\\).",
+      "Work inside-out: \\(\\neg\\) first, then \\(\\land\\), then \\(\\lor\\).",
+      "Result: True."
+    ],
+    "traps": [
+      {
+        "ans": "False",
+        "why": "\u2227 needs BOTH true; \u2228 needs at least one; \u00ac flips. Evaluate the innermost parentheses first."
+      },
+      {
+        "ans": "Cannot be determined",
+        "why": "With both p and q assigned, every compound statement has a definite truth value."
+      }
+    ],
+    "vec": [
+      13,
+      2,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 288707366,
+    "key": "qr_logic_truthvalue",
+    "q": "If \\(p\\) is false and \\(q\\) is false, what is the truth value of \\(\\neg(p \\lor q)\\)?",
+    "a": "True",
+    "steps": [
+      "Substitute: \\(p = F\\), \\(q = F\\).",
+      "Work inside-out: \\(\\neg\\) first, then \\(\\land\\), then \\(\\lor\\).",
+      "Result: True."
+    ],
+    "traps": [
+      {
+        "ans": "False",
+        "why": "\u2227 needs BOTH true; \u2228 needs at least one; \u00ac flips. Evaluate the innermost parentheses first."
+      },
+      {
+        "ans": "Cannot be determined",
+        "why": "With both p and q assigned, every compound statement has a definite truth value."
+      }
+    ],
+    "vec": [
+      13,
+      2,
+      2,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 271929747,
+    "key": "qr_logic_truthvalue",
+    "q": "If \\(p\\) is false and \\(q\\) is true, what is the truth value of \\((p \\land q) \\lor \\neg p\\)?",
+    "a": "True",
+    "steps": [
+      "Substitute: \\(p = F\\), \\(q = T\\).",
+      "Work inside-out: \\(\\neg\\) first, then \\(\\land\\), then \\(\\lor\\).",
+      "Result: True."
+    ],
+    "traps": [
+      {
+        "ans": "False",
+        "why": "\u2227 needs BOTH true; \u2228 needs at least one; \u00ac flips. Evaluate the innermost parentheses first."
+      },
+      {
+        "ans": "Cannot be determined",
+        "why": "With both p and q assigned, every compound statement has a definite truth value."
+      }
+    ],
+    "vec": [
+      13,
+      2,
+      0,
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 255152128,
+    "key": "qr_logic_truthvalue",
+    "q": "If \\(p\\) is true and \\(q\\) is false, what is the truth value of \\(p \\land (\\neg q \\lor p)\\)?",
+    "a": "True",
+    "steps": [
+      "Substitute: \\(p = T\\), \\(q = F\\).",
+      "Work inside-out: \\(\\neg\\) first, then \\(\\land\\), then \\(\\lor\\).",
+      "Result: True."
+    ],
+    "traps": [
+      {
+        "ans": "False",
+        "why": "\u2227 needs BOTH true; \u2228 needs at least one; \u00ac flips. Evaluate the innermost parentheses first."
+      },
+      {
+        "ans": "Cannot be determined",
+        "why": "With both p and q assigned, every compound statement has a definite truth value."
+      }
+    ],
+    "vec": [
+      13,
+      2,
+      1,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 372595461,
+    "key": "qr_logic_truthvalue",
+    "q": "If \\(p\\) is true and \\(q\\) is false, what is the truth value of \\(\\neg(p \\lor q)\\)?",
+    "a": "False",
+    "steps": [
+      "Substitute: \\(p = T\\), \\(q = F\\).",
+      "Work inside-out: \\(\\neg\\) first, then \\(\\land\\), then \\(\\lor\\).",
+      "Result: False."
+    ],
+    "traps": [
+      {
+        "ans": "True",
+        "why": "\u2227 needs BOTH true; \u2228 needs at least one; \u00ac flips. Evaluate the innermost parentheses first."
+      },
+      {
+        "ans": "Cannot be determined",
+        "why": "With both p and q assigned, every compound statement has a definite truth value."
+      }
+    ],
+    "vec": [
+      13,
+      2,
+      2,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 355817842,
+    "key": "qr_logic_truthvalue",
+    "q": "If \\(p\\) is true and \\(q\\) is false, what is the truth value of \\(\\neg(p \\lor q)\\)?",
+    "a": "False",
+    "steps": [
+      "Substitute: \\(p = T\\), \\(q = F\\).",
+      "Work inside-out: \\(\\neg\\) first, then \\(\\land\\), then \\(\\lor\\).",
+      "Result: False."
+    ],
+    "traps": [
+      {
+        "ans": "True",
+        "why": "\u2227 needs BOTH true; \u2228 needs at least one; \u00ac flips. Evaluate the innermost parentheses first."
+      },
+      {
+        "ans": "Cannot be determined",
+        "why": "With both p and q assigned, every compound statement has a definite truth value."
+      }
+    ],
+    "vec": [
+      13,
+      2,
+      2,
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 1411184360,
+    "key": "qr_logic_valid",
+    "q": "Is this argument valid? \u201cIf it rains, the game is canceled. The game is canceled. Therefore it rained.\u201d",
+    "a": "Invalid",
+    "steps": [
+      "This is the form \u201caffirming the consequent\u201d.",
+      "It is a classic fallacy \u2014 the game could be canceled (or on) for other reasons; the conditional only promises one direction."
+    ],
+    "traps": [
+      {
+        "ans": "Valid",
+        "why": "Valid forms: affirm the IF-part (modus ponens) or deny the THEN-part (modus tollens). Affirming the then-part or denying the if-part proves nothing."
+      },
+      {
+        "ans": "Valid only if it actually rained",
+        "why": "Validity is about FORM, not facts \u2014 a valid argument guarantees the conclusion whenever the premises hold, regardless of the weather."
+      }
+    ],
+    "vec": [
+      13,
+      3,
+      2,
+      0
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 1427961979,
+    "key": "qr_logic_valid",
+    "q": "Is this argument valid? \u201cIf it rains, the game is canceled. The game is canceled. Therefore it rained.\u201d",
+    "a": "Invalid",
+    "steps": [
+      "This is the form \u201caffirming the consequent\u201d.",
+      "It is a classic fallacy \u2014 the game could be canceled (or on) for other reasons; the conditional only promises one direction."
+    ],
+    "traps": [
+      {
+        "ans": "Valid",
+        "why": "Valid forms: affirm the IF-part (modus ponens) or deny the THEN-part (modus tollens). Affirming the then-part or denying the if-part proves nothing."
+      },
+      {
+        "ans": "Valid only if it actually rained",
+        "why": "Validity is about FORM, not facts \u2014 a valid argument guarantees the conclusion whenever the premises hold, regardless of the weather."
+      }
+    ],
+    "vec": [
+      13,
+      3,
+      2,
+      0
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 1444739598,
+    "key": "qr_logic_valid",
+    "q": "Is this argument valid? \u201cIf it rains, the game is canceled. It does not rain. Therefore the game is not canceled.\u201d",
+    "a": "Invalid",
+    "steps": [
+      "This is the form \u201cdenying the antecedent\u201d.",
+      "It is a classic fallacy \u2014 the game could be canceled (or on) for other reasons; the conditional only promises one direction."
+    ],
+    "traps": [
+      {
+        "ans": "Valid",
+        "why": "Valid forms: affirm the IF-part (modus ponens) or deny the THEN-part (modus tollens). Affirming the then-part or denying the if-part proves nothing."
+      },
+      {
+        "ans": "Valid only if it actually rained",
+        "why": "Validity is about FORM, not facts \u2014 a valid argument guarantees the conclusion whenever the premises hold, regardless of the weather."
+      }
+    ],
+    "vec": [
+      13,
+      3,
+      3,
+      0
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 1461517217,
+    "key": "qr_logic_valid",
+    "q": "Is this argument valid? \u201cIf it rains, the game is canceled. It does not rain. Therefore the game is not canceled.\u201d",
+    "a": "Invalid",
+    "steps": [
+      "This is the form \u201cdenying the antecedent\u201d.",
+      "It is a classic fallacy \u2014 the game could be canceled (or on) for other reasons; the conditional only promises one direction."
+    ],
+    "traps": [
+      {
+        "ans": "Valid",
+        "why": "Valid forms: affirm the IF-part (modus ponens) or deny the THEN-part (modus tollens). Affirming the then-part or denying the if-part proves nothing."
+      },
+      {
+        "ans": "Valid only if it actually rained",
+        "why": "Validity is about FORM, not facts \u2014 a valid argument guarantees the conclusion whenever the premises hold, regardless of the weather."
+      }
+    ],
+    "vec": [
+      13,
+      3,
+      3,
+      0
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 1478294836,
+    "key": "qr_logic_valid",
+    "q": "Is this argument valid? \u201cIf it rains, the game is canceled. It rains. Therefore the game is canceled.\u201d",
+    "a": "Valid",
+    "steps": [
+      "This is the form \u201cmodus ponens\u201d.",
+      "It is one of the two valid conditional forms (modus ponens / modus tollens)."
+    ],
+    "traps": [
+      {
+        "ans": "Invalid",
+        "why": "Valid forms: affirm the IF-part (modus ponens) or deny the THEN-part (modus tollens). Affirming the then-part or denying the if-part proves nothing."
+      },
+      {
+        "ans": "Valid only if it actually rained",
+        "why": "Validity is about FORM, not facts \u2014 a valid argument guarantees the conclusion whenever the premises hold, regardless of the weather."
+      }
+    ],
+    "vec": [
+      13,
+      3,
+      0,
+      1
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 1495072455,
+    "key": "qr_logic_valid",
+    "q": "Is this argument valid? \u201cIf it rains, the game is canceled. It rains. Therefore the game is canceled.\u201d",
+    "a": "Valid",
+    "steps": [
+      "This is the form \u201cmodus ponens\u201d.",
+      "It is one of the two valid conditional forms (modus ponens / modus tollens)."
+    ],
+    "traps": [
+      {
+        "ans": "Invalid",
+        "why": "Valid forms: affirm the IF-part (modus ponens) or deny the THEN-part (modus tollens). Affirming the then-part or denying the if-part proves nothing."
+      },
+      {
+        "ans": "Valid only if it actually rained",
+        "why": "Validity is about FORM, not facts \u2014 a valid argument guarantees the conclusion whenever the premises hold, regardless of the weather."
+      }
+    ],
+    "vec": [
+      13,
+      3,
+      0,
+      1
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 3,
+    "sample": 0,
+    "seed": 2998151859,
+    "key": "qr_set_union",
+    "q": "In a class, 30 students take math, 18 take biology, and 5 take both. How many take math or biology (or both)?",
+    "a": "43 students",
+    "steps": [
+      "Inclusion\u2013exclusion: \\(|A \\cup B| = |A| + |B| - |A \\cap B|\\).",
+      "\\(30 + 18 - 5 = 43\\) \u2014 subtracting the overlap so nobody is counted twice."
+    ],
+    "traps": [
+      {
+        "ans": "48 students",
+        "why": "The 5 students in both classes got counted twice \u2014 subtract the overlap once."
+      },
+      {
+        "ans": "53 students",
+        "why": "The overlap is SUBTRACTED, not added: those students already appear in both counts."
+      }
+    ],
+    "vec": [
+      13,
+      4,
+      30,
+      18,
+      5,
+      43
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 3,
+    "sample": 1,
+    "seed": 2981374240,
+    "key": "qr_set_union",
+    "q": "In a class, 25 students take math, 24 take biology, and 5 take both. How many take math or biology (or both)?",
+    "a": "44 students",
+    "steps": [
+      "Inclusion\u2013exclusion: \\(|A \\cup B| = |A| + |B| - |A \\cap B|\\).",
+      "\\(25 + 24 - 5 = 44\\) \u2014 subtracting the overlap so nobody is counted twice."
+    ],
+    "traps": [
+      {
+        "ans": "49 students",
+        "why": "The 5 students in both classes got counted twice \u2014 subtract the overlap once."
+      },
+      {
+        "ans": "54 students",
+        "why": "The overlap is SUBTRACTED, not added: those students already appear in both counts."
+      }
+    ],
+    "vec": [
+      13,
+      4,
+      25,
+      24,
+      5,
+      44
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 3,
+    "sample": 2,
+    "seed": 3031707097,
+    "key": "qr_set_union",
+    "q": "In a class, 20 students take math, 15 take biology, and 5 take both. How many take math or biology (or both)?",
+    "a": "30 students",
+    "steps": [
+      "Inclusion\u2013exclusion: \\(|A \\cup B| = |A| + |B| - |A \\cap B|\\).",
+      "\\(20 + 15 - 5 = 30\\) \u2014 subtracting the overlap so nobody is counted twice."
+    ],
+    "traps": [
+      {
+        "ans": "35 students",
+        "why": "The 5 students in both classes got counted twice \u2014 subtract the overlap once."
+      },
+      {
+        "ans": "40 students",
+        "why": "The overlap is SUBTRACTED, not added: those students already appear in both counts."
+      }
+    ],
+    "vec": [
+      13,
+      4,
+      20,
+      15,
+      5,
+      30
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 3,
+    "sample": 3,
+    "seed": 3014929478,
+    "key": "qr_set_union",
+    "q": "In a class, 30 students take math, 24 take biology, and 8 take both. How many take math or biology (or both)?",
+    "a": "46 students",
+    "steps": [
+      "Inclusion\u2013exclusion: \\(|A \\cup B| = |A| + |B| - |A \\cap B|\\).",
+      "\\(30 + 24 - 8 = 46\\) \u2014 subtracting the overlap so nobody is counted twice."
+    ],
+    "traps": [
+      {
+        "ans": "54 students",
+        "why": "The 8 students in both classes got counted twice \u2014 subtract the overlap once."
+      },
+      {
+        "ans": "62 students",
+        "why": "The overlap is SUBTRACTED, not added: those students already appear in both counts."
+      }
+    ],
+    "vec": [
+      13,
+      4,
+      30,
+      24,
+      8,
+      46
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 3,
+    "sample": 4,
+    "seed": 3065262335,
+    "key": "qr_set_union",
+    "q": "In a class, 20 students take math, 24 take biology, and 8 take both. How many take math or biology (or both)?",
+    "a": "36 students",
+    "steps": [
+      "Inclusion\u2013exclusion: \\(|A \\cup B| = |A| + |B| - |A \\cap B|\\).",
+      "\\(20 + 24 - 8 = 36\\) \u2014 subtracting the overlap so nobody is counted twice."
+    ],
+    "traps": [
+      {
+        "ans": "44 students",
+        "why": "The 8 students in both classes got counted twice \u2014 subtract the overlap once."
+      },
+      {
+        "ans": "52 students",
+        "why": "The overlap is SUBTRACTED, not added: those students already appear in both counts."
+      }
+    ],
+    "vec": [
+      13,
+      4,
+      20,
+      24,
+      8,
+      36
+    ]
+  },
+  {
+    "unitId": "QR_Logic",
+    "genIndex": 3,
+    "sample": 5,
+    "seed": 3048484716,
+    "key": "qr_set_union",
+    "q": "In a class, 20 students take math, 24 take biology, and 10 take both. How many take math or biology (or both)?",
+    "a": "34 students",
+    "steps": [
+      "Inclusion\u2013exclusion: \\(|A \\cup B| = |A| + |B| - |A \\cap B|\\).",
+      "\\(20 + 24 - 10 = 34\\) \u2014 subtracting the overlap so nobody is counted twice."
+    ],
+    "traps": [
+      {
+        "ans": "44 students",
+        "why": "The 10 students in both classes got counted twice \u2014 subtract the overlap once."
+      },
+      {
+        "ans": "54 students",
+        "why": "The overlap is SUBTRACTED, not added: those students already appear in both counts."
+      }
+    ],
+    "vec": [
+      13,
+      4,
+      20,
+      24,
+      10,
+      34
+    ]
+  },
+  {
+    "unitId": "QR_Modeling",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 1449849939,
+    "key": "qr_model_build",
+    "q": "A gym charges a \\$30 joining fee plus \\$5 per visit. Write the cost model and find the cost of 8 visits.",
+    "a": "\\(C(x) = 5x + 30\\); \\(C(8) = 70\\) dollars",
+    "steps": [
+      "Per-visit charge is the slope; the joining fee is the fixed (starting) value: \\(C(x) = 5x + 30\\).",
+      "\\(C(8) = 5(8) + 30 = 70\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(C(x) = 30x + 5\\); \\(C(8) = 245\\) dollars",
+        "why": "Slope and intercept swapped \u2014 the per-visit rate multiplies x; the one-time fee stands alone."
+      },
+      {
+        "ans": "\\(C(x) = 5x + 30\\); \\(C(8) = 40\\) dollars",
+        "why": "The joining fee applies once but it still applies \u2014 add it to the visit charges."
+      }
+    ],
+    "vec": [
+      14,
+      1,
+      30,
+      5,
+      8
+    ]
+  },
+  {
+    "unitId": "QR_Modeling",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 1433072320,
+    "key": "qr_model_build",
+    "q": "A gym charges a \\$50 joining fee plus \\$2 per visit. Write the cost model and find the cost of 12 visits.",
+    "a": "\\(C(x) = 2x + 50\\); \\(C(12) = 74\\) dollars",
+    "steps": [
+      "Per-visit charge is the slope; the joining fee is the fixed (starting) value: \\(C(x) = 2x + 50\\).",
+      "\\(C(12) = 2(12) + 50 = 74\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(C(x) = 50x + 2\\); \\(C(12) = 602\\) dollars",
+        "why": "Slope and intercept swapped \u2014 the per-visit rate multiplies x; the one-time fee stands alone."
+      },
+      {
+        "ans": "\\(C(x) = 2x + 50\\); \\(C(12) = 24\\) dollars",
+        "why": "The joining fee applies once but it still applies \u2014 add it to the visit charges."
+      }
+    ],
+    "vec": [
+      14,
+      1,
+      50,
+      2,
+      12
+    ]
+  },
+  {
+    "unitId": "QR_Modeling",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 1483405177,
+    "key": "qr_model_build",
+    "q": "A gym charges a \\$100 joining fee plus \\$10 per visit. Write the cost model and find the cost of 8 visits.",
+    "a": "\\(C(x) = 10x + 100\\); \\(C(8) = 180\\) dollars",
+    "steps": [
+      "Per-visit charge is the slope; the joining fee is the fixed (starting) value: \\(C(x) = 10x + 100\\).",
+      "\\(C(8) = 10(8) + 100 = 180\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(C(x) = 100x + 10\\); \\(C(8) = 810\\) dollars",
+        "why": "Slope and intercept swapped \u2014 the per-visit rate multiplies x; the one-time fee stands alone."
+      },
+      {
+        "ans": "\\(C(x) = 10x + 100\\); \\(C(8) = 80\\) dollars",
+        "why": "The joining fee applies once but it still applies \u2014 add it to the visit charges."
+      }
+    ],
+    "vec": [
+      14,
+      1,
+      100,
+      10,
+      8
+    ]
+  },
+  {
+    "unitId": "QR_Modeling",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 1466627558,
+    "key": "qr_model_build",
+    "q": "A gym charges a \\$30 joining fee plus \\$2 per visit. Write the cost model and find the cost of 12 visits.",
+    "a": "\\(C(x) = 2x + 30\\); \\(C(12) = 54\\) dollars",
+    "steps": [
+      "Per-visit charge is the slope; the joining fee is the fixed (starting) value: \\(C(x) = 2x + 30\\).",
+      "\\(C(12) = 2(12) + 30 = 54\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(C(x) = 30x + 2\\); \\(C(12) = 362\\) dollars",
+        "why": "Slope and intercept swapped \u2014 the per-visit rate multiplies x; the one-time fee stands alone."
+      },
+      {
+        "ans": "\\(C(x) = 2x + 30\\); \\(C(12) = 24\\) dollars",
+        "why": "The joining fee applies once but it still applies \u2014 add it to the visit charges."
+      }
+    ],
+    "vec": [
+      14,
+      1,
+      30,
+      2,
+      12
+    ]
+  },
+  {
+    "unitId": "QR_Modeling",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 1516960415,
+    "key": "qr_model_build",
+    "q": "A gym charges a \\$50 joining fee plus \\$10 per visit. Write the cost model and find the cost of 8 visits.",
+    "a": "\\(C(x) = 10x + 50\\); \\(C(8) = 130\\) dollars",
+    "steps": [
+      "Per-visit charge is the slope; the joining fee is the fixed (starting) value: \\(C(x) = 10x + 50\\).",
+      "\\(C(8) = 10(8) + 50 = 130\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(C(x) = 50x + 10\\); \\(C(8) = 410\\) dollars",
+        "why": "Slope and intercept swapped \u2014 the per-visit rate multiplies x; the one-time fee stands alone."
+      },
+      {
+        "ans": "\\(C(x) = 10x + 50\\); \\(C(8) = 80\\) dollars",
+        "why": "The joining fee applies once but it still applies \u2014 add it to the visit charges."
+      }
+    ],
+    "vec": [
+      14,
+      1,
+      50,
+      10,
+      8
+    ]
+  },
+  {
+    "unitId": "QR_Modeling",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 1500182796,
+    "key": "qr_model_build",
+    "q": "A gym charges a \\$100 joining fee plus \\$2 per visit. Write the cost model and find the cost of 8 visits.",
+    "a": "\\(C(x) = 2x + 100\\); \\(C(8) = 116\\) dollars",
+    "steps": [
+      "Per-visit charge is the slope; the joining fee is the fixed (starting) value: \\(C(x) = 2x + 100\\).",
+      "\\(C(8) = 2(8) + 100 = 116\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(C(x) = 100x + 2\\); \\(C(8) = 802\\) dollars",
+        "why": "Slope and intercept swapped \u2014 the per-visit rate multiplies x; the one-time fee stands alone."
+      },
+      {
+        "ans": "\\(C(x) = 2x + 100\\); \\(C(8) = 16\\) dollars",
+        "why": "The joining fee applies once but it still applies \u2014 add it to the visit charges."
+      }
+    ],
+    "vec": [
+      14,
+      1,
+      100,
+      2,
+      8
+    ]
+  },
+  {
+    "unitId": "QR_Modeling",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 4157849736,
+    "key": "qr_model_slope",
+    "q": "A phone plan's cost is modeled by \\(C(g) = 25g + 100\\), where \\(g\\) is gigabytes used. What does the 25 represent?",
+    "a": "Each additional gigabyte costs \\$25",
+    "steps": [
+      "In \\(y = mx + b\\), the slope \\(m\\) is the rate of change \u2014 cost per unit of \\(g\\).",
+      "Here: \\$25 per additional gigabyte. (The \\$100 is the fixed base charge.)"
+    ],
+    "traps": [
+      {
+        "ans": "The base monthly charge is \\$25",
+        "why": "The base charge is the intercept 100 (the cost at g = 0). The coefficient on g is the per-gigabyte rate."
+      },
+      {
+        "ans": "The total cost is \\$25",
+        "why": "The total depends on usage: C(g). The 25 is a RATE, dollars per gigabyte."
+      }
+    ],
+    "vec": [
+      14,
+      2,
+      25,
+      100
+    ]
+  },
+  {
+    "unitId": "QR_Modeling",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 4174627355,
+    "key": "qr_model_slope",
+    "q": "A phone plan's cost is modeled by \\(C(g) = 25g + 200\\), where \\(g\\) is gigabytes used. What does the 25 represent?",
+    "a": "Each additional gigabyte costs \\$25",
+    "steps": [
+      "In \\(y = mx + b\\), the slope \\(m\\) is the rate of change \u2014 cost per unit of \\(g\\).",
+      "Here: \\$25 per additional gigabyte. (The \\$200 is the fixed base charge.)"
+    ],
+    "traps": [
+      {
+        "ans": "The base monthly charge is \\$25",
+        "why": "The base charge is the intercept 200 (the cost at g = 0). The coefficient on g is the per-gigabyte rate."
+      },
+      {
+        "ans": "The total cost is \\$25",
+        "why": "The total depends on usage: C(g). The 25 is a RATE, dollars per gigabyte."
+      }
+    ],
+    "vec": [
+      14,
+      2,
+      25,
+      200
+    ]
+  },
+  {
+    "unitId": "QR_Modeling",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 4191404974,
+    "key": "qr_model_slope",
+    "q": "A phone plan's cost is modeled by \\(C(g) = 40g + 100\\), where \\(g\\) is gigabytes used. What does the 40 represent?",
+    "a": "Each additional gigabyte costs \\$40",
+    "steps": [
+      "In \\(y = mx + b\\), the slope \\(m\\) is the rate of change \u2014 cost per unit of \\(g\\).",
+      "Here: \\$40 per additional gigabyte. (The \\$100 is the fixed base charge.)"
+    ],
+    "traps": [
+      {
+        "ans": "The base monthly charge is \\$40",
+        "why": "The base charge is the intercept 100 (the cost at g = 0). The coefficient on g is the per-gigabyte rate."
+      },
+      {
+        "ans": "The total cost is \\$40",
+        "why": "The total depends on usage: C(g). The 40 is a RATE, dollars per gigabyte."
+      }
+    ],
+    "vec": [
+      14,
+      2,
+      40,
+      100
+    ]
+  },
+  {
+    "unitId": "QR_Modeling",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 4208182593,
+    "key": "qr_model_slope",
+    "q": "A phone plan's cost is modeled by \\(C(g) = 40g + 60\\), where \\(g\\) is gigabytes used. What does the 40 represent?",
+    "a": "Each additional gigabyte costs \\$40",
+    "steps": [
+      "In \\(y = mx + b\\), the slope \\(m\\) is the rate of change \u2014 cost per unit of \\(g\\).",
+      "Here: \\$40 per additional gigabyte. (The \\$60 is the fixed base charge.)"
+    ],
+    "traps": [
+      {
+        "ans": "The base monthly charge is \\$40",
+        "why": "The base charge is the intercept 60 (the cost at g = 0). The coefficient on g is the per-gigabyte rate."
+      },
+      {
+        "ans": "The total cost is \\$40",
+        "why": "The total depends on usage: C(g). The 40 is a RATE, dollars per gigabyte."
+      }
+    ],
+    "vec": [
+      14,
+      2,
+      40,
+      60
+    ]
+  },
+  {
+    "unitId": "QR_Modeling",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 4224960212,
+    "key": "qr_model_slope",
+    "q": "A phone plan's cost is modeled by \\(C(g) = 40g + 60\\), where \\(g\\) is gigabytes used. What does the 40 represent?",
+    "a": "Each additional gigabyte costs \\$40",
+    "steps": [
+      "In \\(y = mx + b\\), the slope \\(m\\) is the rate of change \u2014 cost per unit of \\(g\\).",
+      "Here: \\$40 per additional gigabyte. (The \\$60 is the fixed base charge.)"
+    ],
+    "traps": [
+      {
+        "ans": "The base monthly charge is \\$40",
+        "why": "The base charge is the intercept 60 (the cost at g = 0). The coefficient on g is the per-gigabyte rate."
+      },
+      {
+        "ans": "The total cost is \\$40",
+        "why": "The total depends on usage: C(g). The 40 is a RATE, dollars per gigabyte."
+      }
+    ],
+    "vec": [
+      14,
+      2,
+      40,
+      60
+    ]
+  },
+  {
+    "unitId": "QR_Modeling",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 4241737831,
+    "key": "qr_model_slope",
+    "q": "A phone plan's cost is modeled by \\(C(g) = 15g + 60\\), where \\(g\\) is gigabytes used. What does the 15 represent?",
+    "a": "Each additional gigabyte costs \\$15",
+    "steps": [
+      "In \\(y = mx + b\\), the slope \\(m\\) is the rate of change \u2014 cost per unit of \\(g\\).",
+      "Here: \\$15 per additional gigabyte. (The \\$60 is the fixed base charge.)"
+    ],
+    "traps": [
+      {
+        "ans": "The base monthly charge is \\$15",
+        "why": "The base charge is the intercept 60 (the cost at g = 0). The coefficient on g is the per-gigabyte rate."
+      },
+      {
+        "ans": "The total cost is \\$15",
+        "why": "The total depends on usage: C(g). The 15 is a RATE, dollars per gigabyte."
+      }
+    ],
+    "vec": [
+      14,
+      2,
+      15,
+      60
+    ]
+  },
+  {
+    "unitId": "QR_Modeling",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 863141593,
+    "key": "qr_model_solve",
+    "q": "Using the model \\(C(x) = 20x + 100\\), for what \\(x\\) is the cost exactly \\$220?",
+    "a": "\\(x = 6\\)",
+    "steps": [
+      "Set the model equal to the target: \\(20x + 100 = 220\\).",
+      "Subtract 100: \\(20x = 120\\); divide: \\(x = 6\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(x = 11\\)",
+        "why": "Subtract the fixed 100 BEFORE dividing by the rate \u2014 only the variable part scales with x."
+      },
+      {
+        "ans": "\\(x = 120\\)",
+        "why": "After subtracting 100, still divide by the per-unit rate 20."
+      }
+    ],
+    "vec": [
+      14,
+      3,
+      20,
+      100,
+      6,
+      220
+    ]
+  },
+  {
+    "unitId": "QR_Modeling",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 846363974,
+    "key": "qr_model_solve",
+    "q": "Using the model \\(C(x) = 20x + 50\\), for what \\(x\\) is the cost exactly \\$250?",
+    "a": "\\(x = 10\\)",
+    "steps": [
+      "Set the model equal to the target: \\(20x + 50 = 250\\).",
+      "Subtract 50: \\(20x = 200\\); divide: \\(x = 10\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(x = 13\\)",
+        "why": "Subtract the fixed 50 BEFORE dividing by the rate \u2014 only the variable part scales with x."
+      },
+      {
+        "ans": "\\(x = 200\\)",
+        "why": "After subtracting 50, still divide by the per-unit rate 20."
+      }
+    ],
+    "vec": [
+      14,
+      3,
+      20,
+      50,
+      10,
+      250
+    ]
+  },
+  {
+    "unitId": "QR_Modeling",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 829586355,
+    "key": "qr_model_solve",
+    "q": "Using the model \\(C(x) = 20x + 100\\), for what \\(x\\) is the cost exactly \\$300?",
+    "a": "\\(x = 10\\)",
+    "steps": [
+      "Set the model equal to the target: \\(20x + 100 = 300\\).",
+      "Subtract 100: \\(20x = 200\\); divide: \\(x = 10\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(x = 15\\)",
+        "why": "Subtract the fixed 100 BEFORE dividing by the rate \u2014 only the variable part scales with x."
+      },
+      {
+        "ans": "\\(x = 200\\)",
+        "why": "After subtracting 100, still divide by the per-unit rate 20."
+      }
+    ],
+    "vec": [
+      14,
+      3,
+      20,
+      100,
+      10,
+      300
+    ]
+  },
+  {
+    "unitId": "QR_Modeling",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 812808736,
+    "key": "qr_model_solve",
+    "q": "Using the model \\(C(x) = 10x + 100\\), for what \\(x\\) is the cost exactly \\$200?",
+    "a": "\\(x = 10\\)",
+    "steps": [
+      "Set the model equal to the target: \\(10x + 100 = 200\\).",
+      "Subtract 100: \\(10x = 100\\); divide: \\(x = 10\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(x = 20\\)",
+        "why": "Subtract the fixed 100 BEFORE dividing by the rate \u2014 only the variable part scales with x."
+      },
+      {
+        "ans": "\\(x = 100\\)",
+        "why": "After subtracting 100, still divide by the per-unit rate 10."
+      }
+    ],
+    "vec": [
+      14,
+      3,
+      10,
+      100,
+      10,
+      200
+    ]
+  },
+  {
+    "unitId": "QR_Modeling",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 930252069,
+    "key": "qr_model_solve",
+    "q": "Using the model \\(C(x) = 10x + 50\\), for what \\(x\\) is the cost exactly \\$150?",
+    "a": "\\(x = 10\\)",
+    "steps": [
+      "Set the model equal to the target: \\(10x + 50 = 150\\).",
+      "Subtract 50: \\(10x = 100\\); divide: \\(x = 10\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(x = 15\\)",
+        "why": "Subtract the fixed 50 BEFORE dividing by the rate \u2014 only the variable part scales with x."
+      },
+      {
+        "ans": "\\(x = 100\\)",
+        "why": "After subtracting 50, still divide by the per-unit rate 10."
+      }
+    ],
+    "vec": [
+      14,
+      3,
+      10,
+      50,
+      10,
+      150
+    ]
+  },
+  {
+    "unitId": "QR_Modeling",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 913474450,
+    "key": "qr_model_solve",
+    "q": "Using the model \\(C(x) = 10x + 40\\), for what \\(x\\) is the cost exactly \\$80?",
+    "a": "\\(x = 4\\)",
+    "steps": [
+      "Set the model equal to the target: \\(10x + 40 = 80\\).",
+      "Subtract 40: \\(10x = 40\\); divide: \\(x = 4\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(x = 8\\)",
+        "why": "Subtract the fixed 40 BEFORE dividing by the rate \u2014 only the variable part scales with x."
+      },
+      {
+        "ans": "\\(x = 40\\)",
+        "why": "After subtracting 40, still divide by the per-unit rate 10."
+      }
+    ],
+    "vec": [
+      14,
+      3,
+      10,
+      40,
+      4,
+      80
+    ]
+  }
+]

@@ -1,0 +1,3 @@
+-r requirements.txt
+# Optional: used by scripts/generate_audit_corpora.py to run the browser app headlessly.
+playwright>=1.40,<2

@@ -1,0 +1,1095 @@
+{
+ "per_key": {
+  "ca_linear_solve": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_abs_value": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_linear_ineq": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_linear_feasible_triangle": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_linear_optimize_triangle": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_linear_feasible_rectdiag": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_linear_feasible_quad": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_abs_transform": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_abs_piecewise": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_abs_intercepts": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_quad_graph_identify": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_quad_vertex_form": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_complete_square": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_quad_formula": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_quad_app_area": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_poly_end_behavior": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_poly_complex_zeros": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_poly_inequality": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_poly_diff_squares": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_poly_synth_div": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_poly_zeros": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_poly_rational_root": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_poly_radical_solve": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_poly_radical_extraneous": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_poly_radical_bothsides": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_rational_inequality": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_rational_domain": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_rational_vert_asymp": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_rational_horiz_same": {
+   "v": 0,
+   "m": 0,
+   "u": 3
+  },
+  "ca_rational_horiz_lower": {
+   "v": 0,
+   "m": 0,
+   "u": 1
+  },
+  "ca_rational_horiz_higher": {
+   "v": 0,
+   "m": 0,
+   "u": 2
+  },
+  "ca_rational_holes": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_explog_graph_identify": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_log_convert_form": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_exp_solve_simple": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_log_expand": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_log_condense": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_log_solve": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_exp_growth": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_change_base": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_gauss_none_clean": {
+   "v": 0,
+   "m": 0,
+   "u": 1
+  },
+  "ca_gauss_infinite_clean": {
+   "v": 0,
+   "m": 0,
+   "u": 1
+  },
+  "ca_gauss_unique": {
+   "v": 0,
+   "m": 0,
+   "u": 4
+  },
+  "ca_system_sub": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_system_elim": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_system_3var_simple": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_system_app_mixture": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_func_even_odd": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_func_range": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_difference_quotient_quad": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_transformations_generic": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_func_compose": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_func_inverse": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_func_domain_comp": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "ca_func_piecewise": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_deg_to_rad": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_rad_to_deg": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_arc_length": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_unit_circle_eval": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_ref_angle": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_sign_quad": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_coterminal": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_sinusoid_model": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_graph_identify": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_graph_features_abcd": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_pythag_cos_to_sin": {
+   "v": 0,
+   "m": 0,
+   "u": 2
+  },
+  "trig_pythag_sin_to_cos": {
+   "v": 0,
+   "m": 0,
+   "u": 4
+  },
+  "trig_identity_simplify": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_double_angle": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_verify_identity": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_inv_sin_arctan": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_inv_cos_arctan": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_inv_tan_arcsin": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_inv_sin_arccos": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_sumdiff_sin_exact": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_sumdiff_cos_exact": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_sumdiff_tan_exact": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_halfangle_cos_exact": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_halfangle_sin_exact": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_identity_sin_add_pattern": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_solve_basic": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_solve_quadratic": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_solve_identity": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_right_triangle_solve": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_elevation_depression": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_law_sines_angle": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_law_cosines_side": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_area_sas": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_polar_to_rect": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_rect_to_polar": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "trig_polar_curve": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "pc_circle_general_to_standard": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "pc_circle_standard": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "pc_parabola_vertex": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "pc_ellipse_center": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "pc_hyperbola_horiz": {
+   "v": 0,
+   "m": 0,
+   "u": 1
+  },
+  "pc_hyperbola_vert": {
+   "v": 0,
+   "m": 0,
+   "u": 5
+  },
+  "pc_arith_seq_term": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "pc_geom_seq_term": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "pc_arith_series_sum": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "pc_geom_series_infinite": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "pc_vector_magnitude": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "pc_vector_addition": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "pc_vector_scalar": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "pc_vector_unit": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_limit_poly": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_limit_cancel": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_limit_infty": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_limit_one_sided": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_cont_piecewise": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_deriv_product": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_deriv_explog": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_deriv_implicit": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_ftc_basic": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_ftc_chain": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_ftc_leibniz": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_deriv_invtrig": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_deriv_definition": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_tangent_line": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_deriv_quotient": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_deriv_chain": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_deriv_trig": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_linearization_exp": {
+   "v": 0,
+   "m": 0,
+   "u": 2
+  },
+  "c1_linearization_trig": {
+   "v": 0,
+   "m": 0,
+   "u": 1
+  },
+  "c1_linearization_sqrt": {
+   "v": 0,
+   "m": 0,
+   "u": 2
+  },
+  "c1_linearization_poly": {
+   "v": 0,
+   "m": 0,
+   "u": 1
+  },
+  "c1_mvt_x2": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_rr_ladder": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_opt_river_fence": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_opt_open_box": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_opt_cylinder_minSA": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_curve_sketch_cubic": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_curve_sketch_rational": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_rr_second": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_int_riemann": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_int_usub": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_avg_value_poly": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_avg_value_sin": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_net_change": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c1_area_between_curves": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_ibp_x_exp": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_trig_sin2": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_partial_frac": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_trigsub_arcsin": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_de_separable_xyy": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_de_separable_y_over_x": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_numeric_trap_simpson": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_lhopital": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_p_integral": {
+   "v": 0,
+   "m": 0,
+   "u": 4
+  },
+  "c2_p_integral_val": {
+   "v": 0,
+   "m": 0,
+   "u": 2
+  },
+  "c2_improper_0_1": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_limit_comparison_clean": {
+   "v": 0,
+   "m": 0,
+   "u": 4
+  },
+  "c2_root_npqn": {
+   "v": 0,
+   "m": 0,
+   "u": 1
+  },
+  "c2_ratio_cn_over_fact": {
+   "v": 0,
+   "m": 0,
+   "u": 1
+  },
+  "c2_geom_sum": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_ratio_fact": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_alt_p": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_taylor_exp": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_roc_xn_over_n": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_ioc_shifted_harmonic": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_ioc_nrn": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_alt_error_bound": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_maclaurin_cos_4terms": {
+   "v": 0,
+   "m": 0,
+   "u": 3
+  },
+  "c2_maclaurin_sin_4terms": {
+   "v": 0,
+   "m": 0,
+   "u": 3
+  },
+  "c2_geom_power_series": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_sequence_limit": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_taylor_sincos": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_param_dydx": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_polar_area": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_polar_conic": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_volume_washer_poly": {
+   "v": 0,
+   "m": 0,
+   "u": 2
+  },
+  "c2_volume_disk_poly": {
+   "v": 0,
+   "m": 0,
+   "u": 2
+  },
+  "c2_volume_shell_poly": {
+   "v": 0,
+   "m": 0,
+   "u": 1
+  },
+  "c2_volume_disk_fallback_from_washer": {
+   "v": 0,
+   "m": 0,
+   "u": 1
+  },
+  "mth264_volrev_poly": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "mth264_vol_tank": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_arc_param_line": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_arc_polar_circle": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_arc_length_line": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_work_spring": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_area_under_curve": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_surface_area_sphere": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_arc_length_sqrt1x2": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_volume_cross_section": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_work_pumping": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c2_center_of_mass": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_dot": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_plane": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_dist_point_plane": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_sphere_equation": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_quadric_identify": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_vvf_curvature": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_vvf_tnb": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_vvf_motion": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_cross_product": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_projection": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_vvf_arc_length": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_partials_quad": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_tangent_plane": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_lagrange_simple": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_chain_multivar": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_limit_2var": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_gradient_directional": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_extrema_2var": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_polar_jacobian_area_disk": {
+   "v": 0,
+   "m": 0,
+   "u": 4
+  },
+  "c3_polar_jacobian_r2_disk": {
+   "v": 0,
+   "m": 0,
+   "u": 2
+  },
+  "c3_dbl_rect": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_polar_area_disk": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_cyl_volume": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_triple_spherical": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_triple_cartesian": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_lineint_conservative": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_green_circle": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_line_integral_direct": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_surface_flux": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_stokes": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_divergence_theorem": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  },
+  "c3_curl_divergence": {
+   "v": 0,
+   "m": 0,
+   "u": 6
+  }
+ },
+ "mismatches": []
+}

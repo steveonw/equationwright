@@ -1,0 +1,2486 @@
+[
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 2049336749,
+    "key": "la_mat_addscale",
+    "q": "Compute \\(A + 2B\\) where \\(A = \\begin{bmatrix}-1 & 3 \\\\ -1 & -2\\end{bmatrix}\\) and \\(B = \\begin{bmatrix}-3 & 1 \\\\ -3 & -3\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}-7 & 5 \\\\ -7 & -8\\end{bmatrix}\\)",
+    "steps": [
+      "Scale B first: \\(2B = \\begin{bmatrix}-6 & 2 \\\\ -6 & -6\\end{bmatrix}\\).",
+      "Add entrywise: \\(\\begin{bmatrix}-7 & 5 \\\\ -7 & -8\\end{bmatrix}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}-8 & 8 \\\\ -8 & -10\\end{bmatrix}\\)",
+        "why": "The scalar multiplies ONLY B \u2014 that answer computed k(A+B)."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}-4 & 4 \\\\ -4 & -5\\end{bmatrix}\\)",
+        "why": "B must be scaled by 2 before adding."
+      }
+    ],
+    "vec": [
+      28,
+      1,
+      2,
+      -1,
+      3,
+      -1,
+      -2,
+      -3,
+      1,
+      -3,
+      -3
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 2032559130,
+    "key": "la_mat_addscale",
+    "q": "Compute \\(A + 3B\\) where \\(A = \\begin{bmatrix}-3 & 3 \\\\ -3 & 3\\end{bmatrix}\\) and \\(B = \\begin{bmatrix}-3 & 1 \\\\ 3 & -1\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}-12 & 6 \\\\ 6 & 0\\end{bmatrix}\\)",
+    "steps": [
+      "Scale B first: \\(3B = \\begin{bmatrix}-9 & 3 \\\\ 9 & -3\\end{bmatrix}\\).",
+      "Add entrywise: \\(\\begin{bmatrix}-12 & 6 \\\\ 6 & 0\\end{bmatrix}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}-18 & 12 \\\\ 0 & 6\\end{bmatrix}\\)",
+        "why": "The scalar multiplies ONLY B \u2014 that answer computed k(A+B)."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}-6 & 4 \\\\ 0 & 2\\end{bmatrix}\\)",
+        "why": "B must be scaled by 3 before adding."
+      }
+    ],
+    "vec": [
+      28,
+      1,
+      3,
+      -3,
+      3,
+      -3,
+      3,
+      -3,
+      1,
+      3,
+      -1
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 2015781511,
+    "key": "la_mat_addscale",
+    "q": "Compute \\(A + 2B\\) where \\(A = \\begin{bmatrix}-2 & 3 \\\\ 1 & -2\\end{bmatrix}\\) and \\(B = \\begin{bmatrix}-1 & -3 \\\\ -2 & 2\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}-4 & -3 \\\\ -3 & 2\\end{bmatrix}\\)",
+    "steps": [
+      "Scale B first: \\(2B = \\begin{bmatrix}-2 & -6 \\\\ -4 & 4\\end{bmatrix}\\).",
+      "Add entrywise: \\(\\begin{bmatrix}-4 & -3 \\\\ -3 & 2\\end{bmatrix}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}-6 & 0 \\\\ -2 & 0\\end{bmatrix}\\)",
+        "why": "The scalar multiplies ONLY B \u2014 that answer computed k(A+B)."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}-3 & 0 \\\\ -1 & 0\\end{bmatrix}\\)",
+        "why": "B must be scaled by 2 before adding."
+      }
+    ],
+    "vec": [
+      28,
+      1,
+      2,
+      -2,
+      3,
+      1,
+      -2,
+      -1,
+      -3,
+      -2,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 1999003892,
+    "key": "la_mat_addscale",
+    "q": "Compute \\(A + 2B\\) where \\(A = \\begin{bmatrix}3 & 3 \\\\ -1 & -2\\end{bmatrix}\\) and \\(B = \\begin{bmatrix}-1 & -2 \\\\ 3 & 3\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}1 & -1 \\\\ 5 & 4\\end{bmatrix}\\)",
+    "steps": [
+      "Scale B first: \\(2B = \\begin{bmatrix}-2 & -4 \\\\ 6 & 6\\end{bmatrix}\\).",
+      "Add entrywise: \\(\\begin{bmatrix}1 & -1 \\\\ 5 & 4\\end{bmatrix}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}4 & 2 \\\\ 4 & 2\\end{bmatrix}\\)",
+        "why": "The scalar multiplies ONLY B \u2014 that answer computed k(A+B)."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}2 & 1 \\\\ 2 & 1\\end{bmatrix}\\)",
+        "why": "B must be scaled by 2 before adding."
+      }
+    ],
+    "vec": [
+      28,
+      1,
+      2,
+      3,
+      3,
+      -1,
+      -2,
+      -1,
+      -2,
+      3,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 1982226273,
+    "key": "la_mat_addscale",
+    "q": "Compute \\(A + 2B\\) where \\(A = \\begin{bmatrix}-3 & -3 \\\\ -3 & -1\\end{bmatrix}\\) and \\(B = \\begin{bmatrix}-3 & -2 \\\\ -1 & -2\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}-9 & -7 \\\\ -5 & -5\\end{bmatrix}\\)",
+    "steps": [
+      "Scale B first: \\(2B = \\begin{bmatrix}-6 & -4 \\\\ -2 & -4\\end{bmatrix}\\).",
+      "Add entrywise: \\(\\begin{bmatrix}-9 & -7 \\\\ -5 & -5\\end{bmatrix}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}-12 & -10 \\\\ -8 & -6\\end{bmatrix}\\)",
+        "why": "The scalar multiplies ONLY B \u2014 that answer computed k(A+B)."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}-6 & -5 \\\\ -4 & -3\\end{bmatrix}\\)",
+        "why": "B must be scaled by 2 before adding."
+      }
+    ],
+    "vec": [
+      28,
+      1,
+      2,
+      -3,
+      -3,
+      -3,
+      -1,
+      -3,
+      -2,
+      -1,
+      -2
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 1965448654,
+    "key": "la_mat_addscale",
+    "q": "Compute \\(A + 2B\\) where \\(A = \\begin{bmatrix}-1 & 1 \\\\ -3 & -2\\end{bmatrix}\\) and \\(B = \\begin{bmatrix}-1 & -3 \\\\ -1 & -1\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}-3 & -5 \\\\ -5 & -4\\end{bmatrix}\\)",
+    "steps": [
+      "Scale B first: \\(2B = \\begin{bmatrix}-2 & -6 \\\\ -2 & -2\\end{bmatrix}\\).",
+      "Add entrywise: \\(\\begin{bmatrix}-3 & -5 \\\\ -5 & -4\\end{bmatrix}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}-4 & -4 \\\\ -8 & -6\\end{bmatrix}\\)",
+        "why": "The scalar multiplies ONLY B \u2014 that answer computed k(A+B)."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}-2 & -2 \\\\ -4 & -3\\end{bmatrix}\\)",
+        "why": "B must be scaled by 2 before adding."
+      }
+    ],
+    "vec": [
+      28,
+      1,
+      2,
+      -1,
+      1,
+      -3,
+      -2,
+      -1,
+      -3,
+      -1,
+      -1
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 195207274,
+    "key": "la_mat_multiply",
+    "q": "Compute the product \\(AB\\) where \\(A = \\begin{bmatrix}2 & 1 \\\\ 2 & 1\\end{bmatrix}\\) and \\(B = \\begin{bmatrix}1 & 1 \\\\ 2 & 1\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}4 & 3 \\\\ 4 & 3\\end{bmatrix}\\)",
+    "steps": [
+      "Entry \\((i,j)\\) = (row \\(i\\) of A) \u00b7 (column \\(j\\) of B).",
+      "Top-left: \\((2)(1) + (1)(2) = 4\\); repeat for all four entries."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}2 & 1 \\\\ 4 & 1\\end{bmatrix}\\)",
+        "why": "Matrix multiplication is row\u00b7column dot products, NOT entrywise multiplication."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}4 & 4 \\\\ 3 & 3\\end{bmatrix}\\)",
+        "why": "Rows of A pair with COLUMNS of B \u2014 that answer transposed the pairing (computed BA-style)."
+      }
+    ],
+    "vec": [
+      28,
+      2,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 211984893,
+    "key": "la_mat_multiply",
+    "q": "Compute the product \\(AB\\) where \\(A = \\begin{bmatrix}1 & -1 \\\\ 2 & 3\\end{bmatrix}\\) and \\(B = \\begin{bmatrix}2 & -1 \\\\ 2 & 3\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}0 & -4 \\\\ 10 & 7\\end{bmatrix}\\)",
+    "steps": [
+      "Entry \\((i,j)\\) = (row \\(i\\) of A) \u00b7 (column \\(j\\) of B).",
+      "Top-left: \\((1)(2) + (-1)(2) = 0\\); repeat for all four entries."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}2 & 1 \\\\ 4 & 9\\end{bmatrix}\\)",
+        "why": "Matrix multiplication is row\u00b7column dot products, NOT entrywise multiplication."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}0 & 10 \\\\ -4 & 7\\end{bmatrix}\\)",
+        "why": "Rows of A pair with COLUMNS of B \u2014 that answer transposed the pairing (computed BA-style)."
+      }
+    ],
+    "vec": [
+      28,
+      2,
+      1,
+      -1,
+      2,
+      3,
+      2,
+      -1,
+      2,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 161652036,
+    "key": "la_mat_multiply",
+    "q": "Compute the product \\(AB\\) where \\(A = \\begin{bmatrix}1 & -2 \\\\ 1 & 2\\end{bmatrix}\\) and \\(B = \\begin{bmatrix}3 & -2 \\\\ 2 & 1\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}-1 & -4 \\\\ 7 & 0\\end{bmatrix}\\)",
+    "steps": [
+      "Entry \\((i,j)\\) = (row \\(i\\) of A) \u00b7 (column \\(j\\) of B).",
+      "Top-left: \\((1)(3) + (-2)(2) = -1\\); repeat for all four entries."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}3 & 4 \\\\ 2 & 2\\end{bmatrix}\\)",
+        "why": "Matrix multiplication is row\u00b7column dot products, NOT entrywise multiplication."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}-1 & 7 \\\\ -4 & 0\\end{bmatrix}\\)",
+        "why": "Rows of A pair with COLUMNS of B \u2014 that answer transposed the pairing (computed BA-style)."
+      }
+    ],
+    "vec": [
+      28,
+      2,
+      1,
+      -2,
+      1,
+      2,
+      3,
+      -2,
+      2,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 178429655,
+    "key": "la_mat_multiply",
+    "q": "Compute the product \\(AB\\) where \\(A = \\begin{bmatrix}2 & 2 \\\\ -1 & 3\\end{bmatrix}\\) and \\(B = \\begin{bmatrix}1 & 1 \\\\ -2 & 3\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}-2 & 8 \\\\ -7 & 8\\end{bmatrix}\\)",
+    "steps": [
+      "Entry \\((i,j)\\) = (row \\(i\\) of A) \u00b7 (column \\(j\\) of B).",
+      "Top-left: \\((2)(1) + (2)(-2) = -2\\); repeat for all four entries."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}2 & 2 \\\\ 2 & 9\\end{bmatrix}\\)",
+        "why": "Matrix multiplication is row\u00b7column dot products, NOT entrywise multiplication."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}-2 & -7 \\\\ 8 & 8\\end{bmatrix}\\)",
+        "why": "Rows of A pair with COLUMNS of B \u2014 that answer transposed the pairing (computed BA-style)."
+      }
+    ],
+    "vec": [
+      28,
+      2,
+      2,
+      2,
+      -1,
+      3,
+      1,
+      1,
+      -2,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 128096798,
+    "key": "la_mat_multiply",
+    "q": "Compute the product \\(AB\\) where \\(A = \\begin{bmatrix}3 & 1 \\\\ 2 & 3\\end{bmatrix}\\) and \\(B = \\begin{bmatrix}2 & 2 \\\\ 1 & 2\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}7 & 8 \\\\ 7 & 10\\end{bmatrix}\\)",
+    "steps": [
+      "Entry \\((i,j)\\) = (row \\(i\\) of A) \u00b7 (column \\(j\\) of B).",
+      "Top-left: \\((3)(2) + (1)(1) = 7\\); repeat for all four entries."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}6 & 2 \\\\ 2 & 6\\end{bmatrix}\\)",
+        "why": "Matrix multiplication is row\u00b7column dot products, NOT entrywise multiplication."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}7 & 7 \\\\ 8 & 10\\end{bmatrix}\\)",
+        "why": "Rows of A pair with COLUMNS of B \u2014 that answer transposed the pairing (computed BA-style)."
+      }
+    ],
+    "vec": [
+      28,
+      2,
+      3,
+      1,
+      2,
+      3,
+      2,
+      2,
+      1,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 144874417,
+    "key": "la_mat_multiply",
+    "q": "Compute the product \\(AB\\) where \\(A = \\begin{bmatrix}1 & 1 \\\\ -1 & 2\\end{bmatrix}\\) and \\(B = \\begin{bmatrix}3 & 2 \\\\ 1 & 1\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}4 & 3 \\\\ -1 & 0\\end{bmatrix}\\)",
+    "steps": [
+      "Entry \\((i,j)\\) = (row \\(i\\) of A) \u00b7 (column \\(j\\) of B).",
+      "Top-left: \\((1)(3) + (1)(1) = 4\\); repeat for all four entries."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}3 & 2 \\\\ -1 & 2\\end{bmatrix}\\)",
+        "why": "Matrix multiplication is row\u00b7column dot products, NOT entrywise multiplication."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}4 & -1 \\\\ 3 & 0\\end{bmatrix}\\)",
+        "why": "Rows of A pair with COLUMNS of B \u2014 that answer transposed the pairing (computed BA-style)."
+      }
+    ],
+    "vec": [
+      28,
+      2,
+      1,
+      1,
+      -1,
+      2,
+      3,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 2636045095,
+    "key": "la_mat_transpose",
+    "q": "Find \\(A^T\\) for \\(A = \\begin{bmatrix}3 & 1 & 4 \\\\ -3 & -1 & 4\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}3 & -3 \\\\ 1 & -1 \\\\ 4 & 4\\end{bmatrix}\\)",
+    "steps": [
+      "Transpose swaps rows and columns: a 2\u00d73 becomes 3\u00d72.",
+      "Row 1 of A becomes column 1 of \\(A^T\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}4 & 1 & 3 \\\\ 4 & -1 & -3\\end{bmatrix}\\)",
+        "why": "Transposing is not reversing each row \u2014 entry (i,j) moves to (j,i), changing the SHAPE from 2\u00d73 to 3\u00d72."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}3 & 1 & 4 \\\\ -3 & -1 & 4\\end{bmatrix}\\)",
+        "why": "Only symmetric matrices equal their transpose \u2014 this one is not even square."
+      }
+    ],
+    "vec": [
+      28,
+      3,
+      3,
+      1,
+      4,
+      -3,
+      -1,
+      4
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 2619267476,
+    "key": "la_mat_transpose",
+    "q": "Find \\(A^T\\) for \\(A = \\begin{bmatrix}1 & -2 & -2 \\\\ 3 & 2 & 2\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}1 & 3 \\\\ -2 & 2 \\\\ -2 & 2\\end{bmatrix}\\)",
+    "steps": [
+      "Transpose swaps rows and columns: a 2\u00d73 becomes 3\u00d72.",
+      "Row 1 of A becomes column 1 of \\(A^T\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}-2 & -2 & 1 \\\\ 2 & 2 & 3\\end{bmatrix}\\)",
+        "why": "Transposing is not reversing each row \u2014 entry (i,j) moves to (j,i), changing the SHAPE from 2\u00d73 to 3\u00d72."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}1 & -2 & -2 \\\\ 3 & 2 & 2\\end{bmatrix}\\)",
+        "why": "Only symmetric matrices equal their transpose \u2014 this one is not even square."
+      }
+    ],
+    "vec": [
+      28,
+      3,
+      1,
+      -2,
+      -2,
+      3,
+      2,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 2669600333,
+    "key": "la_mat_transpose",
+    "q": "Find \\(A^T\\) for \\(A = \\begin{bmatrix}3 & 3 & 4 \\\\ -2 & 3 & 4\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}3 & -2 \\\\ 3 & 3 \\\\ 4 & 4\\end{bmatrix}\\)",
+    "steps": [
+      "Transpose swaps rows and columns: a 2\u00d73 becomes 3\u00d72.",
+      "Row 1 of A becomes column 1 of \\(A^T\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}4 & 3 & 3 \\\\ 4 & 3 & -2\\end{bmatrix}\\)",
+        "why": "Transposing is not reversing each row \u2014 entry (i,j) moves to (j,i), changing the SHAPE from 2\u00d73 to 3\u00d72."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}3 & 3 & 4 \\\\ -2 & 3 & 4\\end{bmatrix}\\)",
+        "why": "Only symmetric matrices equal their transpose \u2014 this one is not even square."
+      }
+    ],
+    "vec": [
+      28,
+      3,
+      3,
+      3,
+      4,
+      -2,
+      3,
+      4
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 2652822714,
+    "key": "la_mat_transpose",
+    "q": "Find \\(A^T\\) for \\(A = \\begin{bmatrix}4 & -1 & -2 \\\\ -4 & -1 & -4\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}4 & -4 \\\\ -1 & -1 \\\\ -2 & -4\\end{bmatrix}\\)",
+    "steps": [
+      "Transpose swaps rows and columns: a 2\u00d73 becomes 3\u00d72.",
+      "Row 1 of A becomes column 1 of \\(A^T\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}-2 & -1 & 4 \\\\ -4 & -1 & -4\\end{bmatrix}\\)",
+        "why": "Transposing is not reversing each row \u2014 entry (i,j) moves to (j,i), changing the SHAPE from 2\u00d73 to 3\u00d72."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}4 & -1 & -2 \\\\ -4 & -1 & -4\\end{bmatrix}\\)",
+        "why": "Only symmetric matrices equal their transpose \u2014 this one is not even square."
+      }
+    ],
+    "vec": [
+      28,
+      3,
+      4,
+      -1,
+      -2,
+      -4,
+      -1,
+      -4
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 2568934619,
+    "key": "la_mat_transpose",
+    "q": "Find \\(A^T\\) for \\(A = \\begin{bmatrix}-3 & -1 & 2 \\\\ 1 & -3 & 4\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}-3 & 1 \\\\ -1 & -3 \\\\ 2 & 4\\end{bmatrix}\\)",
+    "steps": [
+      "Transpose swaps rows and columns: a 2\u00d73 becomes 3\u00d72.",
+      "Row 1 of A becomes column 1 of \\(A^T\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}2 & -1 & -3 \\\\ 4 & -3 & 1\\end{bmatrix}\\)",
+        "why": "Transposing is not reversing each row \u2014 entry (i,j) moves to (j,i), changing the SHAPE from 2\u00d73 to 3\u00d72."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}-3 & -1 & 2 \\\\ 1 & -3 & 4\\end{bmatrix}\\)",
+        "why": "Only symmetric matrices equal their transpose \u2014 this one is not even square."
+      }
+    ],
+    "vec": [
+      28,
+      3,
+      -3,
+      -1,
+      2,
+      1,
+      -3,
+      4
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 2552157000,
+    "key": "la_mat_transpose",
+    "q": "Find \\(A^T\\) for \\(A = \\begin{bmatrix}-4 & -1 & 1 \\\\ 3 & 1 & -4\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}-4 & 3 \\\\ -1 & 1 \\\\ 1 & -4\\end{bmatrix}\\)",
+    "steps": [
+      "Transpose swaps rows and columns: a 2\u00d73 becomes 3\u00d72.",
+      "Row 1 of A becomes column 1 of \\(A^T\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 & -1 & -4 \\\\ -4 & 1 & 3\\end{bmatrix}\\)",
+        "why": "Transposing is not reversing each row \u2014 entry (i,j) moves to (j,i), changing the SHAPE from 2\u00d73 to 3\u00d72."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}-4 & -1 & 1 \\\\ 3 & 1 & -4\\end{bmatrix}\\)",
+        "why": "Only symmetric matrices equal their transpose \u2014 this one is not even square."
+      }
+    ],
+    "vec": [
+      28,
+      3,
+      -4,
+      -1,
+      1,
+      3,
+      1,
+      -4
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 3,
+    "sample": 0,
+    "seed": 512193788,
+    "key": "la_mat_inverse2",
+    "q": "Find \\(A^{-1}\\) for \\(A = \\begin{bmatrix}1 & 3 \\\\ 3 & 10\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}10 & -3 \\\\ -3 & 1\\end{bmatrix}\\)",
+    "steps": [
+      "\\(\\det A = (1)(10) - (3)(3) = 1\\).",
+      "For 2\u00d72: \\(A^{-1} = \\frac{1}{\\det A}\\begin{bmatrix}d & -b \\\\ -c & a\\end{bmatrix}\\) \u2014 swap the diagonal, negate the off-diagonal.",
+      "With \\(\\det = 1\\): \\(A^{-1} = \\begin{bmatrix}10 & -3 \\\\ -3 & 1\\end{bmatrix}\\). Check: \\(AA^{-1} = I\\). \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 & -3 \\\\ -3 & 10\\end{bmatrix}\\)",
+        "why": "The DIAGONAL entries swap places; only the off-diagonal entries get negated."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}10 & 3 \\\\ 3 & 1\\end{bmatrix}\\)",
+        "why": "Swapping the diagonal is half the formula \u2014 the off-diagonal entries must also change sign."
+      }
+    ],
+    "vec": [
+      28,
+      4,
+      3,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 3,
+    "sample": 1,
+    "seed": 528971407,
+    "key": "la_mat_inverse2",
+    "q": "Find \\(A^{-1}\\) for \\(A = \\begin{bmatrix}1 & 3 \\\\ 2 & 7\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}7 & -3 \\\\ -2 & 1\\end{bmatrix}\\)",
+    "steps": [
+      "\\(\\det A = (1)(7) - (3)(2) = 1\\).",
+      "For 2\u00d72: \\(A^{-1} = \\frac{1}{\\det A}\\begin{bmatrix}d & -b \\\\ -c & a\\end{bmatrix}\\) \u2014 swap the diagonal, negate the off-diagonal.",
+      "With \\(\\det = 1\\): \\(A^{-1} = \\begin{bmatrix}7 & -3 \\\\ -2 & 1\\end{bmatrix}\\). Check: \\(AA^{-1} = I\\). \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 & -3 \\\\ -2 & 7\\end{bmatrix}\\)",
+        "why": "The DIAGONAL entries swap places; only the off-diagonal entries get negated."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}7 & 3 \\\\ 2 & 1\\end{bmatrix}\\)",
+        "why": "Swapping the diagonal is half the formula \u2014 the off-diagonal entries must also change sign."
+      }
+    ],
+    "vec": [
+      28,
+      4,
+      3,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 3,
+    "sample": 2,
+    "seed": 545749026,
+    "key": "la_mat_inverse2",
+    "q": "Find \\(A^{-1}\\) for \\(A = \\begin{bmatrix}1 & 1 \\\\ 2 & 3\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}3 & -1 \\\\ -2 & 1\\end{bmatrix}\\)",
+    "steps": [
+      "\\(\\det A = (1)(3) - (1)(2) = 1\\).",
+      "For 2\u00d72: \\(A^{-1} = \\frac{1}{\\det A}\\begin{bmatrix}d & -b \\\\ -c & a\\end{bmatrix}\\) \u2014 swap the diagonal, negate the off-diagonal.",
+      "With \\(\\det = 1\\): \\(A^{-1} = \\begin{bmatrix}3 & -1 \\\\ -2 & 1\\end{bmatrix}\\). Check: \\(AA^{-1} = I\\). \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 & -1 \\\\ -2 & 3\\end{bmatrix}\\)",
+        "why": "The DIAGONAL entries swap places; only the off-diagonal entries get negated."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}3 & 1 \\\\ 2 & 1\\end{bmatrix}\\)",
+        "why": "Swapping the diagonal is half the formula \u2014 the off-diagonal entries must also change sign."
+      }
+    ],
+    "vec": [
+      28,
+      4,
+      1,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 3,
+    "sample": 3,
+    "seed": 562526645,
+    "key": "la_mat_inverse2",
+    "q": "Find \\(A^{-1}\\) for \\(A = \\begin{bmatrix}1 & 1 \\\\ 1 & 2\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}2 & -1 \\\\ -1 & 1\\end{bmatrix}\\)",
+    "steps": [
+      "\\(\\det A = (1)(2) - (1)(1) = 1\\).",
+      "For 2\u00d72: \\(A^{-1} = \\frac{1}{\\det A}\\begin{bmatrix}d & -b \\\\ -c & a\\end{bmatrix}\\) \u2014 swap the diagonal, negate the off-diagonal.",
+      "With \\(\\det = 1\\): \\(A^{-1} = \\begin{bmatrix}2 & -1 \\\\ -1 & 1\\end{bmatrix}\\). Check: \\(AA^{-1} = I\\). \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 & -1 \\\\ -1 & 2\\end{bmatrix}\\)",
+        "why": "The DIAGONAL entries swap places; only the off-diagonal entries get negated."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}2 & 1 \\\\ 1 & 1\\end{bmatrix}\\)",
+        "why": "Swapping the diagonal is half the formula \u2014 the off-diagonal entries must also change sign."
+      }
+    ],
+    "vec": [
+      28,
+      4,
+      1,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 3,
+    "sample": 4,
+    "seed": 445083312,
+    "key": "la_mat_inverse2",
+    "q": "Find \\(A^{-1}\\) for \\(A = \\begin{bmatrix}1 & 1 \\\\ 1 & 2\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}2 & -1 \\\\ -1 & 1\\end{bmatrix}\\)",
+    "steps": [
+      "\\(\\det A = (1)(2) - (1)(1) = 1\\).",
+      "For 2\u00d72: \\(A^{-1} = \\frac{1}{\\det A}\\begin{bmatrix}d & -b \\\\ -c & a\\end{bmatrix}\\) \u2014 swap the diagonal, negate the off-diagonal.",
+      "With \\(\\det = 1\\): \\(A^{-1} = \\begin{bmatrix}2 & -1 \\\\ -1 & 1\\end{bmatrix}\\). Check: \\(AA^{-1} = I\\). \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 & -1 \\\\ -1 & 2\\end{bmatrix}\\)",
+        "why": "The DIAGONAL entries swap places; only the off-diagonal entries get negated."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}2 & 1 \\\\ 1 & 1\\end{bmatrix}\\)",
+        "why": "Swapping the diagonal is half the formula \u2014 the off-diagonal entries must also change sign."
+      }
+    ],
+    "vec": [
+      28,
+      4,
+      1,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 3,
+    "sample": 5,
+    "seed": 461860931,
+    "key": "la_mat_inverse2",
+    "q": "Find \\(A^{-1}\\) for \\(A = \\begin{bmatrix}1 & 1 \\\\ 2 & 3\\end{bmatrix}\\).",
+    "a": "\\(\\begin{bmatrix}3 & -1 \\\\ -2 & 1\\end{bmatrix}\\)",
+    "steps": [
+      "\\(\\det A = (1)(3) - (1)(2) = 1\\).",
+      "For 2\u00d72: \\(A^{-1} = \\frac{1}{\\det A}\\begin{bmatrix}d & -b \\\\ -c & a\\end{bmatrix}\\) \u2014 swap the diagonal, negate the off-diagonal.",
+      "With \\(\\det = 1\\): \\(A^{-1} = \\begin{bmatrix}3 & -1 \\\\ -2 & 1\\end{bmatrix}\\). Check: \\(AA^{-1} = I\\). \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 & -1 \\\\ -2 & 3\\end{bmatrix}\\)",
+        "why": "The DIAGONAL entries swap places; only the off-diagonal entries get negated."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}3 & 1 \\\\ 2 & 1\\end{bmatrix}\\)",
+        "why": "Swapping the diagonal is half the formula \u2014 the off-diagonal entries must also change sign."
+      }
+    ],
+    "vec": [
+      28,
+      4,
+      1,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 4,
+    "sample": 0,
+    "seed": 2797766849,
+    "key": "la_det2",
+    "q": "Compute \\(\\det\\begin{bmatrix}-4 & -2 \\\\ -3 & 4\\end{bmatrix}\\).",
+    "a": "\\(-22\\)",
+    "steps": [
+      "\\(\\det = ad - bc = (-4)(4) - (-2)(-3) = -16 - 6 = -22\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(-10\\)",
+        "why": "The formula SUBTRACTS bc: ad \u2212 bc. The minus sign is the whole point."
+      },
+      {
+        "ans": "\\(20\\)",
+        "why": "Multiply along the DIAGONALS (a\u00b7d and b\u00b7c), not along the rows."
+      }
+    ],
+    "vec": [
+      28,
+      5,
+      -4,
+      -2,
+      -3,
+      4,
+      -22
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 4,
+    "sample": 1,
+    "seed": 2780989230,
+    "key": "la_det2",
+    "q": "Compute \\(\\det\\begin{bmatrix}-2 & -2 \\\\ -4 & 1\\end{bmatrix}\\).",
+    "a": "\\(-10\\)",
+    "steps": [
+      "\\(\\det = ad - bc = (-2)(1) - (-2)(-4) = -2 - 8 = -10\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(6\\)",
+        "why": "The formula SUBTRACTS bc: ad \u2212 bc. The minus sign is the whole point."
+      },
+      {
+        "ans": "\\(8\\)",
+        "why": "Multiply along the DIAGONALS (a\u00b7d and b\u00b7c), not along the rows."
+      }
+    ],
+    "vec": [
+      28,
+      5,
+      -2,
+      -2,
+      -4,
+      1,
+      -10
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 4,
+    "sample": 2,
+    "seed": 2764211611,
+    "key": "la_det2",
+    "q": "Compute \\(\\det\\begin{bmatrix}3 & 2 \\\\ 2 & 2\\end{bmatrix}\\).",
+    "a": "\\(2\\)",
+    "steps": [
+      "\\(\\det = ad - bc = (3)(2) - (2)(2) = 6 - 4 = 2\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(10\\)",
+        "why": "The formula SUBTRACTS bc: ad \u2212 bc. The minus sign is the whole point."
+      },
+      {
+        "ans": "\\(2\\)",
+        "why": "Multiply along the DIAGONALS (a\u00b7d and b\u00b7c), not along the rows."
+      }
+    ],
+    "vec": [
+      28,
+      5,
+      3,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 4,
+    "sample": 3,
+    "seed": 2747433992,
+    "key": "la_det2",
+    "q": "Compute \\(\\det\\begin{bmatrix}1 & -1 \\\\ 2 & 3\\end{bmatrix}\\).",
+    "a": "\\(5\\)",
+    "steps": [
+      "\\(\\det = ad - bc = (1)(3) - (-1)(2) = 3 - (-2) = 5\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(1\\)",
+        "why": "The formula SUBTRACTS bc: ad \u2212 bc. The minus sign is the whole point."
+      },
+      {
+        "ans": "\\(-7\\)",
+        "why": "Multiply along the DIAGONALS (a\u00b7d and b\u00b7c), not along the rows."
+      }
+    ],
+    "vec": [
+      28,
+      5,
+      1,
+      -1,
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 4,
+    "sample": 4,
+    "seed": 2864877325,
+    "key": "la_det2",
+    "q": "Compute \\(\\det\\begin{bmatrix}1 & -2 \\\\ -4 & -1\\end{bmatrix}\\).",
+    "a": "\\(-9\\)",
+    "steps": [
+      "\\(\\det = ad - bc = (1)(-1) - (-2)(-4) = -1 - 8 = -9\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(7\\)",
+        "why": "The formula SUBTRACTS bc: ad \u2212 bc. The minus sign is the whole point."
+      },
+      {
+        "ans": "\\(-6\\)",
+        "why": "Multiply along the DIAGONALS (a\u00b7d and b\u00b7c), not along the rows."
+      }
+    ],
+    "vec": [
+      28,
+      5,
+      1,
+      -2,
+      -4,
+      -1,
+      -9
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 4,
+    "sample": 5,
+    "seed": 2848099706,
+    "key": "la_det2",
+    "q": "Compute \\(\\det\\begin{bmatrix}4 & -1 \\\\ -4 & 1\\end{bmatrix}\\).",
+    "a": "\\(0\\)",
+    "steps": [
+      "\\(\\det = ad - bc = (4)(1) - (-1)(-4) = 4 - 4 = 0\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(8\\)",
+        "why": "The formula SUBTRACTS bc: ad \u2212 bc. The minus sign is the whole point."
+      },
+      {
+        "ans": "\\(0\\)",
+        "why": "Multiply along the DIAGONALS (a\u00b7d and b\u00b7c), not along the rows."
+      }
+    ],
+    "vec": [
+      28,
+      5,
+      4,
+      -1,
+      -4,
+      1,
+      0
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 5,
+    "sample": 0,
+    "seed": 943637374,
+    "key": "la_det3_cofactor",
+    "q": "Compute \\(\\det\\begin{bmatrix}3 & -2 & -3 \\\\ 0 & 2 & 0 \\\\ -3 & 2 & 3\\end{bmatrix}\\) by cofactor expansion along the second row.",
+    "a": "\\(0\\)",
+    "steps": [
+      "Row 2 has only one nonzero entry (\\(2\\)), so one cofactor survives.",
+      "Position (2,2) has sign \\((+)\\): \\(\\det = 2\\cdot\\det\\begin{bmatrix}3 & -3 \\\\ -3 & 3\\end{bmatrix}\\).",
+      "\\(= 2\\,(3\\cdot3 - -3\\cdot-3) = 0\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(0\\)",
+        "why": "The (2,2) cofactor sign is (\u22121)^{2+2} = +. The checkerboard starts with + at (1,1)."
+      },
+      {
+        "ans": "\\(36\\)",
+        "why": "The 2\u00d72 minor still uses ad \u2212 bc, with the subtraction."
+      }
+    ],
+    "vec": [
+      28,
+      6,
+      3,
+      -3,
+      -3,
+      3,
+      2,
+      0
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 5,
+    "sample": 1,
+    "seed": 960414993,
+    "key": "la_det3_cofactor",
+    "q": "Compute \\(\\det\\begin{bmatrix}3 & -1 & 3 \\\\ 0 & 2 & 0 \\\\ 3 & 2 & 2\\end{bmatrix}\\) by cofactor expansion along the second row.",
+    "a": "\\(-6\\)",
+    "steps": [
+      "Row 2 has only one nonzero entry (\\(2\\)), so one cofactor survives.",
+      "Position (2,2) has sign \\((+)\\): \\(\\det = 2\\cdot\\det\\begin{bmatrix}3 & 3 \\\\ 3 & 2\\end{bmatrix}\\).",
+      "\\(= 2\\,(3\\cdot2 - 3\\cdot3) = -6\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(6\\)",
+        "why": "The (2,2) cofactor sign is (\u22121)^{2+2} = +. The checkerboard starts with + at (1,1)."
+      },
+      {
+        "ans": "\\(30\\)",
+        "why": "The 2\u00d72 minor still uses ad \u2212 bc, with the subtraction."
+      }
+    ],
+    "vec": [
+      28,
+      6,
+      3,
+      3,
+      3,
+      2,
+      2,
+      -6
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 5,
+    "sample": 2,
+    "seed": 910082136,
+    "key": "la_det3_cofactor",
+    "q": "Compute \\(\\det\\begin{bmatrix}1 & -2 & -2 \\\\ 0 & 4 & 0 \\\\ 3 & -3 & 3\\end{bmatrix}\\) by cofactor expansion along the second row.",
+    "a": "\\(36\\)",
+    "steps": [
+      "Row 2 has only one nonzero entry (\\(4\\)), so one cofactor survives.",
+      "Position (2,2) has sign \\((+)\\): \\(\\det = 4\\cdot\\det\\begin{bmatrix}1 & -2 \\\\ 3 & 3\\end{bmatrix}\\).",
+      "\\(= 4\\,(1\\cdot3 - -2\\cdot3) = 36\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(-36\\)",
+        "why": "The (2,2) cofactor sign is (\u22121)^{2+2} = +. The checkerboard starts with + at (1,1)."
+      },
+      {
+        "ans": "\\(-12\\)",
+        "why": "The 2\u00d72 minor still uses ad \u2212 bc, with the subtraction."
+      }
+    ],
+    "vec": [
+      28,
+      6,
+      1,
+      -2,
+      3,
+      3,
+      4,
+      36
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 5,
+    "sample": 3,
+    "seed": 926859755,
+    "key": "la_det3_cofactor",
+    "q": "Compute \\(\\det\\begin{bmatrix}1 & -3 & 1 \\\\ 0 & 4 & 0 \\\\ -2 & -3 & 3\\end{bmatrix}\\) by cofactor expansion along the second row.",
+    "a": "\\(20\\)",
+    "steps": [
+      "Row 2 has only one nonzero entry (\\(4\\)), so one cofactor survives.",
+      "Position (2,2) has sign \\((+)\\): \\(\\det = 4\\cdot\\det\\begin{bmatrix}1 & 1 \\\\ -2 & 3\\end{bmatrix}\\).",
+      "\\(= 4\\,(1\\cdot3 - 1\\cdot-2) = 20\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(-20\\)",
+        "why": "The (2,2) cofactor sign is (\u22121)^{2+2} = +. The checkerboard starts with + at (1,1)."
+      },
+      {
+        "ans": "\\(4\\)",
+        "why": "The 2\u00d72 minor still uses ad \u2212 bc, with the subtraction."
+      }
+    ],
+    "vec": [
+      28,
+      6,
+      1,
+      1,
+      -2,
+      3,
+      4,
+      20
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 5,
+    "sample": 4,
+    "seed": 1010747850,
+    "key": "la_det3_cofactor",
+    "q": "Compute \\(\\det\\begin{bmatrix}1 & 1 & 1 \\\\ 0 & 3 & 0 \\\\ 3 & -2 & 3\\end{bmatrix}\\) by cofactor expansion along the second row.",
+    "a": "\\(0\\)",
+    "steps": [
+      "Row 2 has only one nonzero entry (\\(3\\)), so one cofactor survives.",
+      "Position (2,2) has sign \\((+)\\): \\(\\det = 3\\cdot\\det\\begin{bmatrix}1 & 1 \\\\ 3 & 3\\end{bmatrix}\\).",
+      "\\(= 3\\,(1\\cdot3 - 1\\cdot3) = 0\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(0\\)",
+        "why": "The (2,2) cofactor sign is (\u22121)^{2+2} = +. The checkerboard starts with + at (1,1)."
+      },
+      {
+        "ans": "\\(18\\)",
+        "why": "The 2\u00d72 minor still uses ad \u2212 bc, with the subtraction."
+      }
+    ],
+    "vec": [
+      28,
+      6,
+      1,
+      1,
+      3,
+      3,
+      3,
+      0
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 5,
+    "sample": 5,
+    "seed": 1027525469,
+    "key": "la_det3_cofactor",
+    "q": "Compute \\(\\det\\begin{bmatrix}2 & -2 & 1 \\\\ 0 & 4 & 0 \\\\ 3 & -2 & 2\\end{bmatrix}\\) by cofactor expansion along the second row.",
+    "a": "\\(4\\)",
+    "steps": [
+      "Row 2 has only one nonzero entry (\\(4\\)), so one cofactor survives.",
+      "Position (2,2) has sign \\((+)\\): \\(\\det = 4\\cdot\\det\\begin{bmatrix}2 & 1 \\\\ 3 & 2\\end{bmatrix}\\).",
+      "\\(= 4\\,(2\\cdot2 - 1\\cdot3) = 4\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(-4\\)",
+        "why": "The (2,2) cofactor sign is (\u22121)^{2+2} = +. The checkerboard starts with + at (1,1)."
+      },
+      {
+        "ans": "\\(28\\)",
+        "why": "The 2\u00d72 minor still uses ad \u2212 bc, with the subtraction."
+      }
+    ],
+    "vec": [
+      28,
+      6,
+      2,
+      1,
+      3,
+      2,
+      4,
+      4
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 6,
+    "sample": 0,
+    "seed": 1237043131,
+    "key": "la_det_scale",
+    "q": "A is a \\(2\\times 2\\) matrix with \\(\\det A = -4\\). Find \\(\\det(2A)\\).",
+    "a": "\\(-16\\)",
+    "steps": [
+      "Scaling an \\(n\\times n\\) matrix scales the determinant by \\(k^n\\): every ROW gets multiplied.",
+      "Here \\(n = 2\\): \\(\\det(2A) = 2^2\\det A = 4\\cdot-4 = -16\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(-8\\)",
+        "why": "kA multiplies BOTH rows by k, and each row multiplication scales det by k \u2014 so k\u00b2 total for 2\u00d72."
+      },
+      {
+        "ans": "\\(-4\\)",
+        "why": "Determinants are not scale-invariant \u2014 only row REPLACEMENT operations leave det unchanged."
+      }
+    ],
+    "vec": [
+      28,
+      7,
+      -4,
+      2,
+      -16
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 6,
+    "sample": 1,
+    "seed": 1220265512,
+    "key": "la_det_scale",
+    "q": "A is a \\(2\\times 2\\) matrix with \\(\\det A = -3\\). Find \\(\\det(2A)\\).",
+    "a": "\\(-12\\)",
+    "steps": [
+      "Scaling an \\(n\\times n\\) matrix scales the determinant by \\(k^n\\): every ROW gets multiplied.",
+      "Here \\(n = 2\\): \\(\\det(2A) = 2^2\\det A = 4\\cdot-3 = -12\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(-6\\)",
+        "why": "kA multiplies BOTH rows by k, and each row multiplication scales det by k \u2014 so k\u00b2 total for 2\u00d72."
+      },
+      {
+        "ans": "\\(-3\\)",
+        "why": "Determinants are not scale-invariant \u2014 only row REPLACEMENT operations leave det unchanged."
+      }
+    ],
+    "vec": [
+      28,
+      7,
+      -3,
+      2,
+      -12
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 6,
+    "sample": 2,
+    "seed": 1270598369,
+    "key": "la_det_scale",
+    "q": "A is a \\(2\\times 2\\) matrix with \\(\\det A = -1\\). Find \\(\\det(3A)\\).",
+    "a": "\\(-9\\)",
+    "steps": [
+      "Scaling an \\(n\\times n\\) matrix scales the determinant by \\(k^n\\): every ROW gets multiplied.",
+      "Here \\(n = 2\\): \\(\\det(3A) = 3^2\\det A = 9\\cdot-1 = -9\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(-3\\)",
+        "why": "kA multiplies BOTH rows by k, and each row multiplication scales det by k \u2014 so k\u00b2 total for 2\u00d72."
+      },
+      {
+        "ans": "\\(-1\\)",
+        "why": "Determinants are not scale-invariant \u2014 only row REPLACEMENT operations leave det unchanged."
+      }
+    ],
+    "vec": [
+      28,
+      7,
+      -1,
+      3,
+      -9
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 6,
+    "sample": 3,
+    "seed": 1253820750,
+    "key": "la_det_scale",
+    "q": "A is a \\(2\\times 2\\) matrix with \\(\\det A = -3\\). Find \\(\\det(2A)\\).",
+    "a": "\\(-12\\)",
+    "steps": [
+      "Scaling an \\(n\\times n\\) matrix scales the determinant by \\(k^n\\): every ROW gets multiplied.",
+      "Here \\(n = 2\\): \\(\\det(2A) = 2^2\\det A = 4\\cdot-3 = -12\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(-6\\)",
+        "why": "kA multiplies BOTH rows by k, and each row multiplication scales det by k \u2014 so k\u00b2 total for 2\u00d72."
+      },
+      {
+        "ans": "\\(-3\\)",
+        "why": "Determinants are not scale-invariant \u2014 only row REPLACEMENT operations leave det unchanged."
+      }
+    ],
+    "vec": [
+      28,
+      7,
+      -3,
+      2,
+      -12
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 6,
+    "sample": 4,
+    "seed": 1304153607,
+    "key": "la_det_scale",
+    "q": "A is a \\(2\\times 2\\) matrix with \\(\\det A = 3\\). Find \\(\\det(3A)\\).",
+    "a": "\\(27\\)",
+    "steps": [
+      "Scaling an \\(n\\times n\\) matrix scales the determinant by \\(k^n\\): every ROW gets multiplied.",
+      "Here \\(n = 2\\): \\(\\det(3A) = 3^2\\det A = 9\\cdot3 = 27\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(9\\)",
+        "why": "kA multiplies BOTH rows by k, and each row multiplication scales det by k \u2014 so k\u00b2 total for 2\u00d72."
+      },
+      {
+        "ans": "\\(3\\)",
+        "why": "Determinants are not scale-invariant \u2014 only row REPLACEMENT operations leave det unchanged."
+      }
+    ],
+    "vec": [
+      28,
+      7,
+      3,
+      3,
+      27
+    ]
+  },
+  {
+    "unitId": "LA_MatrixAlg",
+    "genIndex": 6,
+    "sample": 5,
+    "seed": 1287375988,
+    "key": "la_det_scale",
+    "q": "A is a \\(2\\times 2\\) matrix with \\(\\det A = 1\\). Find \\(\\det(2A)\\).",
+    "a": "\\(4\\)",
+    "steps": [
+      "Scaling an \\(n\\times n\\) matrix scales the determinant by \\(k^n\\): every ROW gets multiplied.",
+      "Here \\(n = 2\\): \\(\\det(2A) = 2^2\\det A = 4\\cdot1 = 4\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(2\\)",
+        "why": "kA multiplies BOTH rows by k, and each row multiplication scales det by k \u2014 so k\u00b2 total for 2\u00d72."
+      },
+      {
+        "ans": "\\(1\\)",
+        "why": "Determinants are not scale-invariant \u2014 only row REPLACEMENT operations leave det unchanged."
+      }
+    ],
+    "vec": [
+      28,
+      7,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 551158140,
+    "key": "la_eigen_values",
+    "q": "Find the eigenvalues of \\(A = \\begin{bmatrix}3 & 1 \\\\ 2 & 4\\end{bmatrix}\\).",
+    "a": "\\(\\lambda = 2\\) and \\(\\lambda = 5\\)",
+    "steps": [
+      "Characteristic equation: \\(\\lambda^2 - (\\text{tr}A)\\lambda + \\det A = 0\\).",
+      "\\(\\text{tr}A = 7\\), \\(\\det A = 10 \\Rightarrow \\lambda^2 - 7\\lambda + 10 = 0\\).",
+      "Factor: \\((\\lambda - 2)(\\lambda - 5) = 0\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\lambda = 3\\) and \\(\\lambda = 4\\)",
+        "why": "The diagonal entries are only the eigenvalues for TRIANGULAR matrices \u2014 this one has a nonzero below the diagonal."
+      },
+      {
+        "ans": "\\(\\lambda = -2\\) and \\(\\lambda = -5\\)",
+        "why": "The characteristic polynomial is \u03bb\u00b2 \u2212 (trace)\u03bb + det; sign slips flip the roots."
+      }
+    ],
+    "vec": [
+      29,
+      1,
+      2,
+      5,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 567935759,
+    "key": "la_eigen_values",
+    "q": "Find the eigenvalues of \\(A = \\begin{bmatrix}3 & 1 \\\\ 1 & 3\\end{bmatrix}\\).",
+    "a": "\\(\\lambda = 2\\) and \\(\\lambda = 4\\)",
+    "steps": [
+      "Characteristic equation: \\(\\lambda^2 - (\\text{tr}A)\\lambda + \\det A = 0\\).",
+      "\\(\\text{tr}A = 6\\), \\(\\det A = 8 \\Rightarrow \\lambda^2 - 6\\lambda + 8 = 0\\).",
+      "Factor: \\((\\lambda - 2)(\\lambda - 4) = 0\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\lambda = 3\\) and \\(\\lambda = 3\\)",
+        "why": "The diagonal entries are only the eigenvalues for TRIANGULAR matrices \u2014 this one has a nonzero below the diagonal."
+      },
+      {
+        "ans": "\\(\\lambda = -2\\) and \\(\\lambda = -4\\)",
+        "why": "The characteristic polynomial is \u03bb\u00b2 \u2212 (trace)\u03bb + det; sign slips flip the roots."
+      }
+    ],
+    "vec": [
+      29,
+      1,
+      2,
+      4,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 584713378,
+    "key": "la_eigen_values",
+    "q": "Find the eigenvalues of \\(A = \\begin{bmatrix}2 & 1 \\\\ 1 & 2\\end{bmatrix}\\).",
+    "a": "\\(\\lambda = 1\\) and \\(\\lambda = 3\\)",
+    "steps": [
+      "Characteristic equation: \\(\\lambda^2 - (\\text{tr}A)\\lambda + \\det A = 0\\).",
+      "\\(\\text{tr}A = 4\\), \\(\\det A = 3 \\Rightarrow \\lambda^2 - 4\\lambda + 3 = 0\\).",
+      "Factor: \\((\\lambda - 1)(\\lambda - 3) = 0\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\lambda = 2\\) and \\(\\lambda = 2\\)",
+        "why": "The diagonal entries are only the eigenvalues for TRIANGULAR matrices \u2014 this one has a nonzero below the diagonal."
+      },
+      {
+        "ans": "\\(\\lambda = -1\\) and \\(\\lambda = -3\\)",
+        "why": "The characteristic polynomial is \u03bb\u00b2 \u2212 (trace)\u03bb + det; sign slips flip the roots."
+      }
+    ],
+    "vec": [
+      29,
+      1,
+      1,
+      3,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 601490997,
+    "key": "la_eigen_values",
+    "q": "Find the eigenvalues of \\(A = \\begin{bmatrix}2 & 1 \\\\ 1 & 2\\end{bmatrix}\\).",
+    "a": "\\(\\lambda = 1\\) and \\(\\lambda = 3\\)",
+    "steps": [
+      "Characteristic equation: \\(\\lambda^2 - (\\text{tr}A)\\lambda + \\det A = 0\\).",
+      "\\(\\text{tr}A = 4\\), \\(\\det A = 3 \\Rightarrow \\lambda^2 - 4\\lambda + 3 = 0\\).",
+      "Factor: \\((\\lambda - 1)(\\lambda - 3) = 0\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\lambda = 2\\) and \\(\\lambda = 2\\)",
+        "why": "The diagonal entries are only the eigenvalues for TRIANGULAR matrices \u2014 this one has a nonzero below the diagonal."
+      },
+      {
+        "ans": "\\(\\lambda = -1\\) and \\(\\lambda = -3\\)",
+        "why": "The characteristic polynomial is \u03bb\u00b2 \u2212 (trace)\u03bb + det; sign slips flip the roots."
+      }
+    ],
+    "vec": [
+      29,
+      1,
+      1,
+      3,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 484047664,
+    "key": "la_eigen_values",
+    "q": "Find the eigenvalues of \\(A = \\begin{bmatrix}2 & 1 \\\\ 1 & 2\\end{bmatrix}\\).",
+    "a": "\\(\\lambda = 1\\) and \\(\\lambda = 3\\)",
+    "steps": [
+      "Characteristic equation: \\(\\lambda^2 - (\\text{tr}A)\\lambda + \\det A = 0\\).",
+      "\\(\\text{tr}A = 4\\), \\(\\det A = 3 \\Rightarrow \\lambda^2 - 4\\lambda + 3 = 0\\).",
+      "Factor: \\((\\lambda - 1)(\\lambda - 3) = 0\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\lambda = 2\\) and \\(\\lambda = 2\\)",
+        "why": "The diagonal entries are only the eigenvalues for TRIANGULAR matrices \u2014 this one has a nonzero below the diagonal."
+      },
+      {
+        "ans": "\\(\\lambda = -1\\) and \\(\\lambda = -3\\)",
+        "why": "The characteristic polynomial is \u03bb\u00b2 \u2212 (trace)\u03bb + det; sign slips flip the roots."
+      }
+    ],
+    "vec": [
+      29,
+      1,
+      1,
+      3,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 500825283,
+    "key": "la_eigen_values",
+    "q": "Find the eigenvalues of \\(A = \\begin{bmatrix}3 & 1 \\\\ 2 & 4\\end{bmatrix}\\).",
+    "a": "\\(\\lambda = 2\\) and \\(\\lambda = 5\\)",
+    "steps": [
+      "Characteristic equation: \\(\\lambda^2 - (\\text{tr}A)\\lambda + \\det A = 0\\).",
+      "\\(\\text{tr}A = 7\\), \\(\\det A = 10 \\Rightarrow \\lambda^2 - 7\\lambda + 10 = 0\\).",
+      "Factor: \\((\\lambda - 2)(\\lambda - 5) = 0\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\lambda = 3\\) and \\(\\lambda = 4\\)",
+        "why": "The diagonal entries are only the eigenvalues for TRIANGULAR matrices \u2014 this one has a nonzero below the diagonal."
+      },
+      {
+        "ans": "\\(\\lambda = -2\\) and \\(\\lambda = -5\\)",
+        "why": "The characteristic polynomial is \u03bb\u00b2 \u2212 (trace)\u03bb + det; sign slips flip the roots."
+      }
+    ],
+    "vec": [
+      29,
+      1,
+      2,
+      5,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 2675009447,
+    "key": "la_eigen_vector",
+    "q": "For \\(A = \\begin{bmatrix}3 & 2 \\\\ 0 & 5\\end{bmatrix}\\), find an eigenvector for \\(\\lambda = 5\\).",
+    "a": "\\(\\begin{bmatrix}2 \\\\ 2\\end{bmatrix}\\) (or any nonzero multiple)",
+    "steps": [
+      "Solve \\((A - 5I)\\mathbf{v} = 0\\): \\(A - 5I = \\begin{bmatrix}-2 & 2 \\\\ 0 & 0\\end{bmatrix}\\).",
+      "Row 1: \\(-2x + 2y = 0 \\Rightarrow \\mathbf{v} = (2,\\ 2)\\) works.",
+      "Check: \\(A\\mathbf{v} = 5\\mathbf{v}\\). \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 \\\\ 0\\end{bmatrix}\\)",
+        "why": "That is the eigenvector for \u03bb = 3 (the other eigenvalue) \u2014 each eigenvalue has its own eigenvector direction."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}0 \\\\ 0\\end{bmatrix}\\)",
+        "why": "The zero vector is excluded by definition \u2014 eigenvectors must be nonzero."
+      }
+    ],
+    "vec": [
+      29,
+      2,
+      3,
+      5,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 2658231828,
+    "key": "la_eigen_vector",
+    "q": "For \\(A = \\begin{bmatrix}3 & 3 \\\\ 0 & 7\\end{bmatrix}\\), find an eigenvector for \\(\\lambda = 7\\).",
+    "a": "\\(\\begin{bmatrix}3 \\\\ 4\\end{bmatrix}\\) (or any nonzero multiple)",
+    "steps": [
+      "Solve \\((A - 7I)\\mathbf{v} = 0\\): \\(A - 7I = \\begin{bmatrix}-4 & 3 \\\\ 0 & 0\\end{bmatrix}\\).",
+      "Row 1: \\(-4x + 3y = 0 \\Rightarrow \\mathbf{v} = (3,\\ 4)\\) works.",
+      "Check: \\(A\\mathbf{v} = 7\\mathbf{v}\\). \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 \\\\ 0\\end{bmatrix}\\)",
+        "why": "That is the eigenvector for \u03bb = 3 (the other eigenvalue) \u2014 each eigenvalue has its own eigenvector direction."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}0 \\\\ 0\\end{bmatrix}\\)",
+        "why": "The zero vector is excluded by definition \u2014 eigenvectors must be nonzero."
+      }
+    ],
+    "vec": [
+      29,
+      2,
+      3,
+      7,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 2708564685,
+    "key": "la_eigen_vector",
+    "q": "For \\(A = \\begin{bmatrix}1 & 3 \\\\ 0 & 3\\end{bmatrix}\\), find an eigenvector for \\(\\lambda = 3\\).",
+    "a": "\\(\\begin{bmatrix}3 \\\\ 2\\end{bmatrix}\\) (or any nonzero multiple)",
+    "steps": [
+      "Solve \\((A - 3I)\\mathbf{v} = 0\\): \\(A - 3I = \\begin{bmatrix}-2 & 3 \\\\ 0 & 0\\end{bmatrix}\\).",
+      "Row 1: \\(-2x + 3y = 0 \\Rightarrow \\mathbf{v} = (3,\\ 2)\\) works.",
+      "Check: \\(A\\mathbf{v} = 3\\mathbf{v}\\). \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 \\\\ 0\\end{bmatrix}\\)",
+        "why": "That is the eigenvector for \u03bb = 1 (the other eigenvalue) \u2014 each eigenvalue has its own eigenvector direction."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}0 \\\\ 0\\end{bmatrix}\\)",
+        "why": "The zero vector is excluded by definition \u2014 eigenvectors must be nonzero."
+      }
+    ],
+    "vec": [
+      29,
+      2,
+      1,
+      3,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 2691787066,
+    "key": "la_eigen_vector",
+    "q": "For \\(A = \\begin{bmatrix}1 & 2 \\\\ 0 & 5\\end{bmatrix}\\), find an eigenvector for \\(\\lambda = 5\\).",
+    "a": "\\(\\begin{bmatrix}2 \\\\ 4\\end{bmatrix}\\) (or any nonzero multiple)",
+    "steps": [
+      "Solve \\((A - 5I)\\mathbf{v} = 0\\): \\(A - 5I = \\begin{bmatrix}-4 & 2 \\\\ 0 & 0\\end{bmatrix}\\).",
+      "Row 1: \\(-4x + 2y = 0 \\Rightarrow \\mathbf{v} = (2,\\ 4)\\) works.",
+      "Check: \\(A\\mathbf{v} = 5\\mathbf{v}\\). \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 \\\\ 0\\end{bmatrix}\\)",
+        "why": "That is the eigenvector for \u03bb = 1 (the other eigenvalue) \u2014 each eigenvalue has its own eigenvector direction."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}0 \\\\ 0\\end{bmatrix}\\)",
+        "why": "The zero vector is excluded by definition \u2014 eigenvectors must be nonzero."
+      }
+    ],
+    "vec": [
+      29,
+      2,
+      1,
+      5,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 2607898971,
+    "key": "la_eigen_vector",
+    "q": "For \\(A = \\begin{bmatrix}2 & 3 \\\\ 0 & 6\\end{bmatrix}\\), find an eigenvector for \\(\\lambda = 6\\).",
+    "a": "\\(\\begin{bmatrix}3 \\\\ 4\\end{bmatrix}\\) (or any nonzero multiple)",
+    "steps": [
+      "Solve \\((A - 6I)\\mathbf{v} = 0\\): \\(A - 6I = \\begin{bmatrix}-4 & 3 \\\\ 0 & 0\\end{bmatrix}\\).",
+      "Row 1: \\(-4x + 3y = 0 \\Rightarrow \\mathbf{v} = (3,\\ 4)\\) works.",
+      "Check: \\(A\\mathbf{v} = 6\\mathbf{v}\\). \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 \\\\ 0\\end{bmatrix}\\)",
+        "why": "That is the eigenvector for \u03bb = 2 (the other eigenvalue) \u2014 each eigenvalue has its own eigenvector direction."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}0 \\\\ 0\\end{bmatrix}\\)",
+        "why": "The zero vector is excluded by definition \u2014 eigenvectors must be nonzero."
+      }
+    ],
+    "vec": [
+      29,
+      2,
+      2,
+      6,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 2591121352,
+    "key": "la_eigen_vector",
+    "q": "For \\(A = \\begin{bmatrix}2 & 2 \\\\ 0 & 4\\end{bmatrix}\\), find an eigenvector for \\(\\lambda = 4\\).",
+    "a": "\\(\\begin{bmatrix}2 \\\\ 2\\end{bmatrix}\\) (or any nonzero multiple)",
+    "steps": [
+      "Solve \\((A - 4I)\\mathbf{v} = 0\\): \\(A - 4I = \\begin{bmatrix}-2 & 2 \\\\ 0 & 0\\end{bmatrix}\\).",
+      "Row 1: \\(-2x + 2y = 0 \\Rightarrow \\mathbf{v} = (2,\\ 2)\\) works.",
+      "Check: \\(A\\mathbf{v} = 4\\mathbf{v}\\). \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 \\\\ 0\\end{bmatrix}\\)",
+        "why": "That is the eigenvector for \u03bb = 2 (the other eigenvalue) \u2014 each eigenvalue has its own eigenvector direction."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}0 \\\\ 0\\end{bmatrix}\\)",
+        "why": "The zero vector is excluded by definition \u2014 eigenvectors must be nonzero."
+      }
+    ],
+    "vec": [
+      29,
+      2,
+      2,
+      4,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 234171626,
+    "key": "la_eigen_charpoly",
+    "q": "Write the characteristic polynomial of \\(A = \\begin{bmatrix}3 & -1 \\\\ -2 & 4\\end{bmatrix}\\).",
+    "a": "\\(\\lambda^2 - 7\\lambda + 10\\)",
+    "steps": [
+      "\\(p(\\lambda) = \\det(A - \\lambda I) = \\lambda^2 - (\\text{tr}A)\\lambda + \\det A\\).",
+      "Trace \\(= 3+4 = 7\\); determinant \\(= 3\\cdot4 - (-1)(-2) = 10\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\lambda^2 + 7\\lambda + 10\\)",
+        "why": "The trace term carries a MINUS sign: \u03bb\u00b2 \u2212 (tr)\u03bb + det."
+      },
+      {
+        "ans": "\\(\\lambda^2 - 7\\lambda - 10\\)",
+        "why": "The constant term is det A = ad \u2212 bc, sign included."
+      }
+    ],
+    "vec": [
+      29,
+      3,
+      3,
+      -1,
+      -2,
+      4
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 250949245,
+    "key": "la_eigen_charpoly",
+    "q": "Write the characteristic polynomial of \\(A = \\begin{bmatrix}4 & 3 \\\\ 3 & 2\\end{bmatrix}\\).",
+    "a": "\\(\\lambda^2 - 6\\lambda - 1\\)",
+    "steps": [
+      "\\(p(\\lambda) = \\det(A - \\lambda I) = \\lambda^2 - (\\text{tr}A)\\lambda + \\det A\\).",
+      "Trace \\(= 4+2 = 6\\); determinant \\(= 4\\cdot2 - (3)(3) = -1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\lambda^2 + 6\\lambda - 1\\)",
+        "why": "The trace term carries a MINUS sign: \u03bb\u00b2 \u2212 (tr)\u03bb + det."
+      },
+      {
+        "ans": "\\(\\lambda^2 - 6\\lambda + 1\\)",
+        "why": "The constant term is det A = ad \u2212 bc, sign included."
+      }
+    ],
+    "vec": [
+      29,
+      3,
+      4,
+      3,
+      3,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 200616388,
+    "key": "la_eigen_charpoly",
+    "q": "Write the characteristic polynomial of \\(A = \\begin{bmatrix}2 & 2 \\\\ -2 & 1\\end{bmatrix}\\).",
+    "a": "\\(\\lambda^2 - 3\\lambda + 6\\)",
+    "steps": [
+      "\\(p(\\lambda) = \\det(A - \\lambda I) = \\lambda^2 - (\\text{tr}A)\\lambda + \\det A\\).",
+      "Trace \\(= 2+1 = 3\\); determinant \\(= 2\\cdot1 - (2)(-2) = 6\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\lambda^2 + 3\\lambda + 6\\)",
+        "why": "The trace term carries a MINUS sign: \u03bb\u00b2 \u2212 (tr)\u03bb + det."
+      },
+      {
+        "ans": "\\(\\lambda^2 - 3\\lambda - 6\\)",
+        "why": "The constant term is det A = ad \u2212 bc, sign included."
+      }
+    ],
+    "vec": [
+      29,
+      3,
+      2,
+      2,
+      -2,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 217394007,
+    "key": "la_eigen_charpoly",
+    "q": "Write the characteristic polynomial of \\(A = \\begin{bmatrix}3 & 3 \\\\ 1 & 4\\end{bmatrix}\\).",
+    "a": "\\(\\lambda^2 - 7\\lambda + 9\\)",
+    "steps": [
+      "\\(p(\\lambda) = \\det(A - \\lambda I) = \\lambda^2 - (\\text{tr}A)\\lambda + \\det A\\).",
+      "Trace \\(= 3+4 = 7\\); determinant \\(= 3\\cdot4 - (3)(1) = 9\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\lambda^2 + 7\\lambda + 9\\)",
+        "why": "The trace term carries a MINUS sign: \u03bb\u00b2 \u2212 (tr)\u03bb + det."
+      },
+      {
+        "ans": "\\(\\lambda^2 - 7\\lambda - 9\\)",
+        "why": "The constant term is det A = ad \u2212 bc, sign included."
+      }
+    ],
+    "vec": [
+      29,
+      3,
+      3,
+      3,
+      1,
+      4
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 167061150,
+    "key": "la_eigen_charpoly",
+    "q": "Write the characteristic polynomial of \\(A = \\begin{bmatrix}1 & 3 \\\\ 1 & 1\\end{bmatrix}\\).",
+    "a": "\\(\\lambda^2 - 2\\lambda - 2\\)",
+    "steps": [
+      "\\(p(\\lambda) = \\det(A - \\lambda I) = \\lambda^2 - (\\text{tr}A)\\lambda + \\det A\\).",
+      "Trace \\(= 1+1 = 2\\); determinant \\(= 1\\cdot1 - (3)(1) = -2\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\lambda^2 + 2\\lambda - 2\\)",
+        "why": "The trace term carries a MINUS sign: \u03bb\u00b2 \u2212 (tr)\u03bb + det."
+      },
+      {
+        "ans": "\\(\\lambda^2 - 2\\lambda + 2\\)",
+        "why": "The constant term is det A = ad \u2212 bc, sign included."
+      }
+    ],
+    "vec": [
+      29,
+      3,
+      1,
+      3,
+      1,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 183838769,
+    "key": "la_eigen_charpoly",
+    "q": "Write the characteristic polynomial of \\(A = \\begin{bmatrix}2 & 3 \\\\ -2 & 3\\end{bmatrix}\\).",
+    "a": "\\(\\lambda^2 - 5\\lambda + 12\\)",
+    "steps": [
+      "\\(p(\\lambda) = \\det(A - \\lambda I) = \\lambda^2 - (\\text{tr}A)\\lambda + \\det A\\).",
+      "Trace \\(= 2+3 = 5\\); determinant \\(= 2\\cdot3 - (3)(-2) = 12\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\lambda^2 + 5\\lambda + 12\\)",
+        "why": "The trace term carries a MINUS sign: \u03bb\u00b2 \u2212 (tr)\u03bb + det."
+      },
+      {
+        "ans": "\\(\\lambda^2 - 5\\lambda - 12\\)",
+        "why": "The constant term is det A = ad \u2212 bc, sign included."
+      }
+    ],
+    "vec": [
+      29,
+      3,
+      2,
+      3,
+      -2,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 3,
+    "sample": 0,
+    "seed": 2088301101,
+    "key": "la_indep_check",
+    "q": "Are \\(\\mathbf{v}_1 = (2,\\ -1)\\) and \\(\\mathbf{v}_2 = (6,\\ -3)\\) linearly independent?",
+    "a": "Linearly dependent",
+    "steps": [
+      "Two vectors in \\(\\mathbb{R}^2\\) are dependent exactly when one is a multiple of the other \u2014 equivalently \\(\\det\\begin{bmatrix}2 & 6 \\\\ -1 & -3\\end{bmatrix} = 0\\).",
+      "Determinant \\(= 0\\) \u2014 zero: dependent (\\(\\mathbf{v}_2 = 3\\mathbf{v}_1\\))."
+    ],
+    "traps": [
+      {
+        "ans": "Linearly independent",
+        "why": "Test with the determinant (or look for a scalar multiple): zero \u21d2 dependent, nonzero \u21d2 independent."
+      },
+      {
+        "ans": "Cannot be determined without a third vector",
+        "why": "Independence of TWO vectors is decidable on its own \u2014 a multiple relationship either exists or it does not."
+      }
+    ],
+    "vec": [
+      29,
+      4,
+      1,
+      2,
+      -1,
+      6,
+      -3
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 3,
+    "sample": 1,
+    "seed": 2071523482,
+    "key": "la_indep_check",
+    "q": "Are \\(\\mathbf{v}_1 = (3,\\ 1)\\) and \\(\\mathbf{v}_2 = (4,\\ 4)\\) linearly independent?",
+    "a": "Linearly independent",
+    "steps": [
+      "Two vectors in \\(\\mathbb{R}^2\\) are dependent exactly when one is a multiple of the other \u2014 equivalently \\(\\det\\begin{bmatrix}3 & 4 \\\\ 1 & 4\\end{bmatrix} = 0\\).",
+      "Determinant \\(= 8\\) \u2014 nonzero: independent."
+    ],
+    "traps": [
+      {
+        "ans": "Linearly dependent",
+        "why": "Test with the determinant (or look for a scalar multiple): zero \u21d2 dependent, nonzero \u21d2 independent."
+      },
+      {
+        "ans": "Cannot be determined without a third vector",
+        "why": "Independence of TWO vectors is decidable on its own \u2014 a multiple relationship either exists or it does not."
+      }
+    ],
+    "vec": [
+      29,
+      4,
+      0,
+      3,
+      1,
+      4,
+      4
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 3,
+    "sample": 2,
+    "seed": 2054745863,
+    "key": "la_indep_check",
+    "q": "Are \\(\\mathbf{v}_1 = (2,\\ -1)\\) and \\(\\mathbf{v}_2 = (3,\\ -2)\\) linearly independent?",
+    "a": "Linearly independent",
+    "steps": [
+      "Two vectors in \\(\\mathbb{R}^2\\) are dependent exactly when one is a multiple of the other \u2014 equivalently \\(\\det\\begin{bmatrix}2 & 3 \\\\ -1 & -2\\end{bmatrix} = 0\\).",
+      "Determinant \\(= -1\\) \u2014 nonzero: independent."
+    ],
+    "traps": [
+      {
+        "ans": "Linearly dependent",
+        "why": "Test with the determinant (or look for a scalar multiple): zero \u21d2 dependent, nonzero \u21d2 independent."
+      },
+      {
+        "ans": "Cannot be determined without a third vector",
+        "why": "Independence of TWO vectors is decidable on its own \u2014 a multiple relationship either exists or it does not."
+      }
+    ],
+    "vec": [
+      29,
+      4,
+      0,
+      2,
+      -1,
+      3,
+      -2
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 3,
+    "sample": 3,
+    "seed": 2037968244,
+    "key": "la_indep_check",
+    "q": "Are \\(\\mathbf{v}_1 = (2,\\ -3)\\) and \\(\\mathbf{v}_2 = (3,\\ -4)\\) linearly independent?",
+    "a": "Linearly independent",
+    "steps": [
+      "Two vectors in \\(\\mathbb{R}^2\\) are dependent exactly when one is a multiple of the other \u2014 equivalently \\(\\det\\begin{bmatrix}2 & 3 \\\\ -3 & -4\\end{bmatrix} = 0\\).",
+      "Determinant \\(= 1\\) \u2014 nonzero: independent."
+    ],
+    "traps": [
+      {
+        "ans": "Linearly dependent",
+        "why": "Test with the determinant (or look for a scalar multiple): zero \u21d2 dependent, nonzero \u21d2 independent."
+      },
+      {
+        "ans": "Cannot be determined without a third vector",
+        "why": "Independence of TWO vectors is decidable on its own \u2014 a multiple relationship either exists or it does not."
+      }
+    ],
+    "vec": [
+      29,
+      4,
+      0,
+      2,
+      -3,
+      3,
+      -4
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 3,
+    "sample": 4,
+    "seed": 2021190625,
+    "key": "la_indep_check",
+    "q": "Are \\(\\mathbf{v}_1 = (2,\\ -1)\\) and \\(\\mathbf{v}_2 = (3,\\ -2)\\) linearly independent?",
+    "a": "Linearly independent",
+    "steps": [
+      "Two vectors in \\(\\mathbb{R}^2\\) are dependent exactly when one is a multiple of the other \u2014 equivalently \\(\\det\\begin{bmatrix}2 & 3 \\\\ -1 & -2\\end{bmatrix} = 0\\).",
+      "Determinant \\(= -1\\) \u2014 nonzero: independent."
+    ],
+    "traps": [
+      {
+        "ans": "Linearly dependent",
+        "why": "Test with the determinant (or look for a scalar multiple): zero \u21d2 dependent, nonzero \u21d2 independent."
+      },
+      {
+        "ans": "Cannot be determined without a third vector",
+        "why": "Independence of TWO vectors is decidable on its own \u2014 a multiple relationship either exists or it does not."
+      }
+    ],
+    "vec": [
+      29,
+      4,
+      0,
+      2,
+      -1,
+      3,
+      -2
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 3,
+    "sample": 5,
+    "seed": 2004413006,
+    "key": "la_indep_check",
+    "q": "Are \\(\\mathbf{v}_1 = (1,\\ 1)\\) and \\(\\mathbf{v}_2 = (2,\\ 2)\\) linearly independent?",
+    "a": "Linearly dependent",
+    "steps": [
+      "Two vectors in \\(\\mathbb{R}^2\\) are dependent exactly when one is a multiple of the other \u2014 equivalently \\(\\det\\begin{bmatrix}1 & 2 \\\\ 1 & 2\\end{bmatrix} = 0\\).",
+      "Determinant \\(= 0\\) \u2014 zero: dependent (\\(\\mathbf{v}_2 = 2\\mathbf{v}_1\\))."
+    ],
+    "traps": [
+      {
+        "ans": "Linearly independent",
+        "why": "Test with the determinant (or look for a scalar multiple): zero \u21d2 dependent, nonzero \u21d2 independent."
+      },
+      {
+        "ans": "Cannot be determined without a third vector",
+        "why": "Independence of TWO vectors is decidable on its own \u2014 a multiple relationship either exists or it does not."
+      }
+    ],
+    "vec": [
+      29,
+      4,
+      1,
+      1,
+      1,
+      2,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 4,
+    "sample": 0,
+    "seed": 3405546768,
+    "key": "la_span_dim",
+    "q": "Find the dimension of \\(\\text{span}\\{(1,0,3),\\ (2,0,6),\\ (3,0,9)\\}\\) in \\(\\mathbb{R}^3\\).",
+    "a": "\\(1\\)",
+    "steps": [
+      "Dimension of the span = number of linearly independent vectors (the rank).",
+      "Here all three are multiples of the first \u2014 one direction.",
+      "Dimension \\(= 1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(3\\)",
+        "why": "Three vectors do not guarantee dimension 3 \u2014 dependent vectors add no new directions. Row reduce and count pivots."
+      },
+      {
+        "ans": "\\(2\\)",
+        "why": "Count ALL independent vectors \u2014 check each against combinations of the previous ones."
+      }
+    ],
+    "vec": [
+      29,
+      5,
+      1,
+      3,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 4,
+    "sample": 1,
+    "seed": 3422324387,
+    "key": "la_span_dim",
+    "q": "Find the dimension of \\(\\text{span}\\{(1,0,2),\\ (2,0,4),\\ (3,0,6)\\}\\) in \\(\\mathbb{R}^3\\).",
+    "a": "\\(1\\)",
+    "steps": [
+      "Dimension of the span = number of linearly independent vectors (the rank).",
+      "Here all three are multiples of the first \u2014 one direction.",
+      "Dimension \\(= 1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(3\\)",
+        "why": "Three vectors do not guarantee dimension 3 \u2014 dependent vectors add no new directions. Row reduce and count pivots."
+      },
+      {
+        "ans": "\\(2\\)",
+        "why": "Count ALL independent vectors \u2014 check each against combinations of the previous ones."
+      }
+    ],
+    "vec": [
+      29,
+      5,
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 4,
+    "sample": 2,
+    "seed": 3439102006,
+    "key": "la_span_dim",
+    "q": "Find the dimension of \\(\\text{span}\\{(1,0,0),\\ (0,1,3),\\ (0,0,1)\\}\\) in \\(\\mathbb{R}^3\\).",
+    "a": "\\(3\\)",
+    "steps": [
+      "Dimension of the span = number of linearly independent vectors (the rank).",
+      "Here no vector is a combination of the others (triangular pattern \u2014 three pivots).",
+      "Dimension \\(= 3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(2\\)",
+        "why": "Three vectors do not guarantee dimension 3 \u2014 dependent vectors add no new directions. Row reduce and count pivots."
+      },
+      {
+        "ans": "\\(2\\)",
+        "why": "Count ALL independent vectors \u2014 check each against combinations of the previous ones."
+      }
+    ],
+    "vec": [
+      29,
+      5,
+      3,
+      2,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 4,
+    "sample": 3,
+    "seed": 3455879625,
+    "key": "la_span_dim",
+    "q": "Find the dimension of \\(\\text{span}\\{(1,0,0),\\ (0,1,3),\\ (0,0,1)\\}\\) in \\(\\mathbb{R}^3\\).",
+    "a": "\\(3\\)",
+    "steps": [
+      "Dimension of the span = number of linearly independent vectors (the rank).",
+      "Here no vector is a combination of the others (triangular pattern \u2014 three pivots).",
+      "Dimension \\(= 3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(2\\)",
+        "why": "Three vectors do not guarantee dimension 3 \u2014 dependent vectors add no new directions. Row reduce and count pivots."
+      },
+      {
+        "ans": "\\(2\\)",
+        "why": "Count ALL independent vectors \u2014 check each against combinations of the previous ones."
+      }
+    ],
+    "vec": [
+      29,
+      5,
+      3,
+      1,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 4,
+    "sample": 4,
+    "seed": 3472657244,
+    "key": "la_span_dim",
+    "q": "Find the dimension of \\(\\text{span}\\{(1,0,0),\\ (0,1,2),\\ (0,0,1)\\}\\) in \\(\\mathbb{R}^3\\).",
+    "a": "\\(3\\)",
+    "steps": [
+      "Dimension of the span = number of linearly independent vectors (the rank).",
+      "Here no vector is a combination of the others (triangular pattern \u2014 three pivots).",
+      "Dimension \\(= 3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(2\\)",
+        "why": "Three vectors do not guarantee dimension 3 \u2014 dependent vectors add no new directions. Row reduce and count pivots."
+      },
+      {
+        "ans": "\\(2\\)",
+        "why": "Count ALL independent vectors \u2014 check each against combinations of the previous ones."
+      }
+    ],
+    "vec": [
+      29,
+      5,
+      3,
+      3,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 4,
+    "sample": 5,
+    "seed": 3489434863,
+    "key": "la_span_dim",
+    "q": "Find the dimension of \\(\\text{span}\\{(1,0,1),\\ (0,1,1),\\ (1,1,2)\\}\\) in \\(\\mathbb{R}^3\\).",
+    "a": "\\(2\\)",
+    "steps": [
+      "Dimension of the span = number of linearly independent vectors (the rank).",
+      "Here the third is v\u2081 + v\u2082, so only two are independent.",
+      "Dimension \\(= 2\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(3\\)",
+        "why": "Three vectors do not guarantee dimension 3 \u2014 dependent vectors add no new directions. Row reduce and count pivots."
+      },
+      {
+        "ans": "\\(1\\)",
+        "why": "Count ALL independent vectors \u2014 check each against combinations of the previous ones."
+      }
+    ],
+    "vec": [
+      29,
+      5,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 5,
+    "sample": 0,
+    "seed": 1276007483,
+    "key": "la_eigen_tracedet",
+    "q": "A \\(2\\times 2\\) matrix has eigenvalues \\(\\lambda_1 = -1\\) and \\(\\lambda_2 = 1\\). Find \\(\\det A\\) and \\(\\text{tr}\\,A\\).",
+    "a": "\\(\\det A = -1\\), \\(\\text{tr}\\,A = 0\\)",
+    "steps": [
+      "The determinant is the PRODUCT of the eigenvalues: \\(-1\\cdot1 = -1\\).",
+      "The trace is their SUM: \\(-1+1 = 0\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\det A = 0\\), \\(\\text{tr}\\,A = -1\\)",
+        "why": "Swapped: det = product, trace = sum \u2014 they are the constant and (negated) linear coefficients of the characteristic polynomial."
+      },
+      {
+        "ans": "Cannot be found without the matrix itself",
+        "why": "det and trace are determined BY the eigenvalues \u2014 that is exactly what the characteristic polynomial encodes."
+      }
+    ],
+    "vec": [
+      29,
+      6,
+      -1,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 5,
+    "sample": 1,
+    "seed": 1259229864,
+    "key": "la_eigen_tracedet",
+    "q": "A \\(2\\times 2\\) matrix has eigenvalues \\(\\lambda_1 = 2\\) and \\(\\lambda_2 = 3\\). Find \\(\\det A\\) and \\(\\text{tr}\\,A\\).",
+    "a": "\\(\\det A = 6\\), \\(\\text{tr}\\,A = 5\\)",
+    "steps": [
+      "The determinant is the PRODUCT of the eigenvalues: \\(2\\cdot3 = 6\\).",
+      "The trace is their SUM: \\(2+3 = 5\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\det A = 5\\), \\(\\text{tr}\\,A = 6\\)",
+        "why": "Swapped: det = product, trace = sum \u2014 they are the constant and (negated) linear coefficients of the characteristic polynomial."
+      },
+      {
+        "ans": "Cannot be found without the matrix itself",
+        "why": "det and trace are determined BY the eigenvalues \u2014 that is exactly what the characteristic polynomial encodes."
+      }
+    ],
+    "vec": [
+      29,
+      6,
+      2,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 5,
+    "sample": 2,
+    "seed": 1309562721,
+    "key": "la_eigen_tracedet",
+    "q": "A \\(2\\times 2\\) matrix has eigenvalues \\(\\lambda_1 = -3\\) and \\(\\lambda_2 = 4\\). Find \\(\\det A\\) and \\(\\text{tr}\\,A\\).",
+    "a": "\\(\\det A = -12\\), \\(\\text{tr}\\,A = 1\\)",
+    "steps": [
+      "The determinant is the PRODUCT of the eigenvalues: \\(-3\\cdot4 = -12\\).",
+      "The trace is their SUM: \\(-3+4 = 1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\det A = 1\\), \\(\\text{tr}\\,A = -12\\)",
+        "why": "Swapped: det = product, trace = sum \u2014 they are the constant and (negated) linear coefficients of the characteristic polynomial."
+      },
+      {
+        "ans": "Cannot be found without the matrix itself",
+        "why": "det and trace are determined BY the eigenvalues \u2014 that is exactly what the characteristic polynomial encodes."
+      }
+    ],
+    "vec": [
+      29,
+      6,
+      -3,
+      4
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 5,
+    "sample": 3,
+    "seed": 1292785102,
+    "key": "la_eigen_tracedet",
+    "q": "A \\(2\\times 2\\) matrix has eigenvalues \\(\\lambda_1 = 2\\) and \\(\\lambda_2 = 3\\). Find \\(\\det A\\) and \\(\\text{tr}\\,A\\).",
+    "a": "\\(\\det A = 6\\), \\(\\text{tr}\\,A = 5\\)",
+    "steps": [
+      "The determinant is the PRODUCT of the eigenvalues: \\(2\\cdot3 = 6\\).",
+      "The trace is their SUM: \\(2+3 = 5\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\det A = 5\\), \\(\\text{tr}\\,A = 6\\)",
+        "why": "Swapped: det = product, trace = sum \u2014 they are the constant and (negated) linear coefficients of the characteristic polynomial."
+      },
+      {
+        "ans": "Cannot be found without the matrix itself",
+        "why": "det and trace are determined BY the eigenvalues \u2014 that is exactly what the characteristic polynomial encodes."
+      }
+    ],
+    "vec": [
+      29,
+      6,
+      2,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 5,
+    "sample": 4,
+    "seed": 1343117959,
+    "key": "la_eigen_tracedet",
+    "q": "A \\(2\\times 2\\) matrix has eigenvalues \\(\\lambda_1 = 4\\) and \\(\\lambda_2 = 4\\). Find \\(\\det A\\) and \\(\\text{tr}\\,A\\).",
+    "a": "\\(\\det A = 16\\), \\(\\text{tr}\\,A = 8\\)",
+    "steps": [
+      "The determinant is the PRODUCT of the eigenvalues: \\(4\\cdot4 = 16\\).",
+      "The trace is their SUM: \\(4+4 = 8\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\det A = 8\\), \\(\\text{tr}\\,A = 16\\)",
+        "why": "Swapped: det = product, trace = sum \u2014 they are the constant and (negated) linear coefficients of the characteristic polynomial."
+      },
+      {
+        "ans": "Cannot be found without the matrix itself",
+        "why": "det and trace are determined BY the eigenvalues \u2014 that is exactly what the characteristic polynomial encodes."
+      }
+    ],
+    "vec": [
+      29,
+      6,
+      4,
+      4
+    ]
+  },
+  {
+    "unitId": "LA_Eigen",
+    "genIndex": 5,
+    "sample": 5,
+    "seed": 1326340340,
+    "key": "la_eigen_tracedet",
+    "q": "A \\(2\\times 2\\) matrix has eigenvalues \\(\\lambda_1 = -3\\) and \\(\\lambda_2 = 4\\). Find \\(\\det A\\) and \\(\\text{tr}\\,A\\).",
+    "a": "\\(\\det A = -12\\), \\(\\text{tr}\\,A = 1\\)",
+    "steps": [
+      "The determinant is the PRODUCT of the eigenvalues: \\(-3\\cdot4 = -12\\).",
+      "The trace is their SUM: \\(-3+4 = 1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\det A = 1\\), \\(\\text{tr}\\,A = -12\\)",
+        "why": "Swapped: det = product, trace = sum \u2014 they are the constant and (negated) linear coefficients of the characteristic polynomial."
+      },
+      {
+        "ans": "Cannot be found without the matrix itself",
+        "why": "det and trace are determined BY the eigenvalues \u2014 that is exactly what the characteristic polynomial encodes."
+      }
+    ],
+    "vec": [
+      29,
+      6,
+      -3,
+      4
+    ]
+  }
+]

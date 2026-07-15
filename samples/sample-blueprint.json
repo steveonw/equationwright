@@ -1,0 +1,19 @@
+{
+ "format": "UMWB_BLUEPRINT",
+ "appVersion": "v5.5_class_ai_workflow",
+ "quizMode": true,
+ "variety": 2,
+ "pages": {
+  "answers": false,
+  "workedSolutions": false
+ },
+ "seed": "Steveon-Calc1Review-1",
+ "mode": "C1",
+ "counts": {
+  "C1_Limits": 2,
+  "C1_Continuity": 1,
+  "C1_Derivatives": 4,
+  "C1_Apps": 2,
+  "C1_Integrals": 3
+ }
+}

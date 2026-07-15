@@ -1,0 +1,64 @@
+{
+  "release": "v7.0.0_full_catalog_mth289",
+  "date": "2026-07-15",
+  "appFiles": {
+    "Math_Worksheet_Builder_v7_0_0_FULL_CATALOG.html": {
+      "size": 751969,
+      "nodeCheck": true,
+      "mainScriptBytes": 715015
+    },
+    "Math_Worksheet_Builder_v7_0_0_FULL_CATALOG_OFFLINE.html": {
+      "size": 2858210,
+      "nodeCheck": true,
+      "mainScriptBytes": 715023
+    }
+  },
+  "mth289": {
+    "units": 7,
+    "generators": 35,
+    "corpusRecords": 700,
+    "auditMismatches": 0,
+    "auditUnchecked": 0,
+    "kernelSelfTests": {
+      "passed": 17,
+      "failed": 0
+    },
+    "mutationAudit": {
+      "validModelsAcceptedAndNumericallyConfirmed": 816,
+      "mutatedAnswersRejected": 2448
+    }
+  },
+  "wholeAppStructural": {
+    "units": 81,
+    "generators": 424,
+    "runs": 10600,
+    "failures": 0,
+    "autofixes": 0
+  },
+  "unifiedAudits": {
+    "exitCode": 0,
+    "courseTotalsExcludingGeneralInformational": {
+      "verified": 10752,
+      "mismatches": 0,
+      "unchecked": 0
+    },
+    "generalInformationalParser": {
+      "verified": 0,
+      "mismatches": 0,
+      "unchecked": 1206,
+      "note": "Informational legacy parser coverage; excluded from course-audit acceptance."
+    }
+  },
+  "repositoryCheck": {
+    "failures": 0,
+    "warnings": 0
+  },
+  "humanAcceptanceRemaining": [
+    "Open both editions in a real browser.",
+    "Generate a D289 worksheet and quiz; click traps and hints.",
+    "Replay a blueprint.",
+    "Print or save a worksheet as PDF.",
+    "Inspect the mobile layout.",
+    "Steve personally answers five MTH 289 questions."
+  ]
+}

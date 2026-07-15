@@ -1,0 +1,2384 @@
+[
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 1046115002,
+    "key": "la_sys_solve2",
+    "q": "Solve the system: \\(\\begin{cases}3x + 2y = 1\\\\ x + 3y = 5\\end{cases}\\)",
+    "a": "\\((x,\\,y) = (-1,\\ 2)\\)",
+    "steps": [
+      "Eliminate one variable: multiply the equations so the \\(x\\) (or \\(y\\)) coefficients match, then subtract.",
+      "Solving gives \\(y = 2\\); substitute back to get \\(x = -1\\).",
+      "Check in BOTH original equations: \\(3(-1) + 2(2) = 1\\) \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\((x,\\,y) = (2,\\ -1)\\)",
+        "why": "Variables swapped \u2014 state the answer in the same (x, y) order as the system."
+      },
+      {
+        "ans": "\\((x,\\,y) = (1,\\ -2)\\)",
+        "why": "Sign error during elimination \u2014 subtracting equations flips every sign of the second equation, not just one term."
+      }
+    ],
+    "vec": [
+      25,
+      1,
+      -1,
+      2,
+      3,
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 1062892621,
+    "key": "la_sys_solve2",
+    "q": "Solve the system: \\(\\begin{cases}x - y = 2\\\\ -2x + 3y = -8\\end{cases}\\)",
+    "a": "\\((x,\\,y) = (-2,\\ -4)\\)",
+    "steps": [
+      "Eliminate one variable: multiply the equations so the \\(x\\) (or \\(y\\)) coefficients match, then subtract.",
+      "Solving gives \\(y = -4\\); substitute back to get \\(x = -2\\).",
+      "Check in BOTH original equations: \\(1(-2) - 1(-4) = 2\\) \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\((x,\\,y) = (-4,\\ -2)\\)",
+        "why": "Variables swapped \u2014 state the answer in the same (x, y) order as the system."
+      },
+      {
+        "ans": "\\((x,\\,y) = (2,\\ 4)\\)",
+        "why": "Sign error during elimination \u2014 subtracting equations flips every sign of the second equation, not just one term."
+      }
+    ],
+    "vec": [
+      25,
+      1,
+      -2,
+      -4,
+      1,
+      -1,
+      -2,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 1012559764,
+    "key": "la_sys_solve2",
+    "q": "Solve the system: \\(\\begin{cases}3x - 2y = -4\\\\ -2x + 2y = 2\\end{cases}\\)",
+    "a": "\\((x,\\,y) = (-2,\\ -1)\\)",
+    "steps": [
+      "Eliminate one variable: multiply the equations so the \\(x\\) (or \\(y\\)) coefficients match, then subtract.",
+      "Solving gives \\(y = -1\\); substitute back to get \\(x = -2\\).",
+      "Check in BOTH original equations: \\(3(-2) - 2(-1) = -4\\) \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\((x,\\,y) = (-1,\\ -2)\\)",
+        "why": "Variables swapped \u2014 state the answer in the same (x, y) order as the system."
+      },
+      {
+        "ans": "\\((x,\\,y) = (2,\\ 1)\\)",
+        "why": "Sign error during elimination \u2014 subtracting equations flips every sign of the second equation, not just one term."
+      }
+    ],
+    "vec": [
+      25,
+      1,
+      -2,
+      -1,
+      3,
+      -2,
+      -2,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 1029337383,
+    "key": "la_sys_solve2",
+    "q": "Solve the system: \\(\\begin{cases}x + 2y = -11\\\\ x + 3y = -15\\end{cases}\\)",
+    "a": "\\((x,\\,y) = (-3,\\ -4)\\)",
+    "steps": [
+      "Eliminate one variable: multiply the equations so the \\(x\\) (or \\(y\\)) coefficients match, then subtract.",
+      "Solving gives \\(y = -4\\); substitute back to get \\(x = -3\\).",
+      "Check in BOTH original equations: \\(1(-3) + 2(-4) = -11\\) \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\((x,\\,y) = (-4,\\ -3)\\)",
+        "why": "Variables swapped \u2014 state the answer in the same (x, y) order as the system."
+      },
+      {
+        "ans": "\\((x,\\,y) = (3,\\ 4)\\)",
+        "why": "Sign error during elimination \u2014 subtracting equations flips every sign of the second equation, not just one term."
+      }
+    ],
+    "vec": [
+      25,
+      1,
+      -3,
+      -4,
+      1,
+      2,
+      1,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 979004526,
+    "key": "la_sys_solve2",
+    "q": "Solve the system: \\(\\begin{cases}2x + 2y = 0\\\\ -x + y = 8\\end{cases}\\)",
+    "a": "\\((x,\\,y) = (-4,\\ 4)\\)",
+    "steps": [
+      "Eliminate one variable: multiply the equations so the \\(x\\) (or \\(y\\)) coefficients match, then subtract.",
+      "Solving gives \\(y = 4\\); substitute back to get \\(x = -4\\).",
+      "Check in BOTH original equations: \\(2(-4) + 2(4) = 0\\) \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\((x,\\,y) = (4,\\ -4)\\)",
+        "why": "Variables swapped \u2014 state the answer in the same (x, y) order as the system."
+      },
+      {
+        "ans": "\\((x,\\,y) = (4,\\ -4)\\)",
+        "why": "Sign error during elimination \u2014 subtracting equations flips every sign of the second equation, not just one term."
+      }
+    ],
+    "vec": [
+      25,
+      1,
+      -4,
+      4,
+      2,
+      2,
+      -1,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 995782145,
+    "key": "la_sys_solve2",
+    "q": "Solve the system: \\(\\begin{cases}3x + 2y = 11\\\\ 3x + 3y = 15\\end{cases}\\)",
+    "a": "\\((x,\\,y) = (1,\\ 4)\\)",
+    "steps": [
+      "Eliminate one variable: multiply the equations so the \\(x\\) (or \\(y\\)) coefficients match, then subtract.",
+      "Solving gives \\(y = 4\\); substitute back to get \\(x = 1\\).",
+      "Check in BOTH original equations: \\(3(1) + 2(4) = 11\\) \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\((x,\\,y) = (4,\\ 1)\\)",
+        "why": "Variables swapped \u2014 state the answer in the same (x, y) order as the system."
+      },
+      {
+        "ans": "\\((x,\\,y) = (-1,\\ -4)\\)",
+        "why": "Sign error during elimination \u2014 subtracting equations flips every sign of the second equation, not just one term."
+      }
+    ],
+    "vec": [
+      25,
+      1,
+      1,
+      4,
+      3,
+      2,
+      3,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 2900244477,
+    "key": "la_sys_solve3",
+    "q": "Solve the system: \\(\\begin{cases}x + 3y + 4z = -7\\\\ y + 3z = -5\\\\ z = -2\\end{cases}\\)",
+    "a": "\\((x,\\,y,\\,z) = (-2,\\ 1,\\ -2)\\)",
+    "steps": [
+      "Use row reduction: subtract rows to reach triangular form.",
+      "The last equation gives \\(z=-2\\); back-substitute upward.",
+      "Then \\(y=1\\) and finally \\(x=-2\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\((x,\\,y,\\,z) = (-2,\\ -2,\\ 1)\\)",
+        "why": "y and z swapped during back-substitution \u2014 label each value as you find it."
+      },
+      {
+        "ans": "\\((x,\\,y,\\,z) = (2,\\ 1,\\ -2)\\)",
+        "why": "Sign slip in the final back-substitution for x \u2014 move every known term across with its sign flipped."
+      }
+    ],
+    "vec": [
+      25,
+      2,
+      -2,
+      1,
+      -2,
+      2,
+      2,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 2883466858,
+    "key": "la_sys_solve3",
+    "q": "Solve the system: \\(\\begin{cases}x + 2y + 3z = -11\\\\ y + 2z = -8\\\\ z = -3\\end{cases}\\)",
+    "a": "\\((x,\\,y,\\,z) = (2,\\ -2,\\ -3)\\)",
+    "steps": [
+      "Use row reduction: subtract rows to reach triangular form.",
+      "The last equation gives \\(z=-3\\); back-substitute upward.",
+      "Then \\(y=-2\\) and finally \\(x=2\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\((x,\\,y,\\,z) = (2,\\ -3,\\ -2)\\)",
+        "why": "y and z swapped during back-substitution \u2014 label each value as you find it."
+      },
+      {
+        "ans": "\\((x,\\,y,\\,z) = (-2,\\ -2,\\ -3)\\)",
+        "why": "Sign slip in the final back-substitution for x \u2014 move every known term across with its sign flipped."
+      }
+    ],
+    "vec": [
+      25,
+      2,
+      2,
+      -2,
+      -3,
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 2866689239,
+    "key": "la_sys_solve3",
+    "q": "Solve the system: \\(\\begin{cases}x + 3y + 3z = -3\\\\ y + 3z = -8\\\\ z = -3\\end{cases}\\)",
+    "a": "\\((x,\\,y,\\,z) = (3,\\ 1,\\ -3)\\)",
+    "steps": [
+      "Use row reduction: subtract rows to reach triangular form.",
+      "The last equation gives \\(z=-3\\); back-substitute upward.",
+      "Then \\(y=1\\) and finally \\(x=3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\((x,\\,y,\\,z) = (3,\\ -3,\\ 1)\\)",
+        "why": "y and z swapped during back-substitution \u2014 label each value as you find it."
+      },
+      {
+        "ans": "\\((x,\\,y,\\,z) = (-3,\\ 1,\\ -3)\\)",
+        "why": "Sign slip in the final back-substitution for x \u2014 move every known term across with its sign flipped."
+      }
+    ],
+    "vec": [
+      25,
+      2,
+      3,
+      1,
+      -3,
+      2,
+      1,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 2849911620,
+    "key": "la_sys_solve3",
+    "q": "Solve the system: \\(\\begin{cases}x + 2y + 3z = -12\\\\ y + 3z = -11\\\\ z = -3\\end{cases}\\)",
+    "a": "\\((x,\\,y,\\,z) = (1,\\ -2,\\ -3)\\)",
+    "steps": [
+      "Use row reduction: subtract rows to reach triangular form.",
+      "The last equation gives \\(z=-3\\); back-substitute upward.",
+      "Then \\(y=-2\\) and finally \\(x=1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\((x,\\,y,\\,z) = (1,\\ -3,\\ -2)\\)",
+        "why": "y and z swapped during back-substitution \u2014 label each value as you find it."
+      },
+      {
+        "ans": "\\((x,\\,y,\\,z) = (-1,\\ -2,\\ -3)\\)",
+        "why": "Sign slip in the final back-substitution for x \u2014 move every known term across with its sign flipped."
+      }
+    ],
+    "vec": [
+      25,
+      2,
+      1,
+      -2,
+      -3,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 2833134001,
+    "key": "la_sys_solve3",
+    "q": "Solve the system: \\(\\begin{cases}x + 2y + 2z = 5\\\\ y + 2z = 3\\\\ z = 1\\end{cases}\\)",
+    "a": "\\((x,\\,y,\\,z) = (1,\\ 1,\\ 1)\\)",
+    "steps": [
+      "Use row reduction: subtract rows to reach triangular form.",
+      "The last equation gives \\(z=1\\); back-substitute upward.",
+      "Then \\(y=1\\) and finally \\(x=1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\((x,\\,y,\\,z) = (1,\\ 1,\\ 1)\\)",
+        "why": "y and z swapped during back-substitution \u2014 label each value as you find it."
+      },
+      {
+        "ans": "\\((x,\\,y,\\,z) = (-1,\\ 1,\\ 1)\\)",
+        "why": "Sign slip in the final back-substitution for x \u2014 move every known term across with its sign flipped."
+      }
+    ],
+    "vec": [
+      25,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 2816356382,
+    "key": "la_sys_solve3",
+    "q": "Solve the system: \\(\\begin{cases}x + 2y + 3z = 0\\\\ y + 3z = -1\\\\ z = -1\\end{cases}\\)",
+    "a": "\\((x,\\,y,\\,z) = (-1,\\ 2,\\ -1)\\)",
+    "steps": [
+      "Use row reduction: subtract rows to reach triangular form.",
+      "The last equation gives \\(z=-1\\); back-substitute upward.",
+      "Then \\(y=2\\) and finally \\(x=-1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\((x,\\,y,\\,z) = (-1,\\ -1,\\ 2)\\)",
+        "why": "y and z swapped during back-substitution \u2014 label each value as you find it."
+      },
+      {
+        "ans": "\\((x,\\,y,\\,z) = (1,\\ 2,\\ -1)\\)",
+        "why": "Sign slip in the final back-substitution for x \u2014 move every known term across with its sign flipped."
+      }
+    ],
+    "vec": [
+      25,
+      2,
+      -1,
+      2,
+      -1,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 1363101516,
+    "key": "la_backsub",
+    "q": "The row-reduced system is \\(\\begin{cases}x - 2y + z = 10\\\\ y - 2z = -8\\\\ 3z = 9\\end{cases}\\). Solve by back-substitution.",
+    "a": "\\((x,\\,y,\\,z) = (3,\\ -2,\\ 3)\\)",
+    "steps": [
+      "Bottom up: \\(z = 9/3 = 3\\).",
+      "Middle: \\(y = -8 + 2(3) = -2\\).",
+      "Top: \\(x = 10 + 2(-2) - 1(3) = 3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\((x,\\,y,\\,z) = (10,\\ -8,\\ 3)\\)",
+        "why": "The right-hand sides are not the answers \u2014 each variable still needs the known values substituted and moved across."
+      },
+      {
+        "ans": "\\((x,\\,y,\\,z) = (3,\\ 2,\\ 3)\\)",
+        "why": "Sign slip when moving a term across the equals sign during the middle substitution."
+      }
+    ],
+    "vec": [
+      25,
+      8,
+      3,
+      -2,
+      3,
+      -2,
+      1,
+      -2,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 1379879135,
+    "key": "la_backsub",
+    "q": "The row-reduced system is \\(\\begin{cases}x - 2y + z = 11\\\\ y - 2z = -9\\\\ 2z = 6\\end{cases}\\). Solve by back-substitution.",
+    "a": "\\((x,\\,y,\\,z) = (2,\\ -3,\\ 3)\\)",
+    "steps": [
+      "Bottom up: \\(z = 6/2 = 3\\).",
+      "Middle: \\(y = -9 + 2(3) = -3\\).",
+      "Top: \\(x = 11 + 2(-3) - 1(3) = 2\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\((x,\\,y,\\,z) = (11,\\ -9,\\ 3)\\)",
+        "why": "The right-hand sides are not the answers \u2014 each variable still needs the known values substituted and moved across."
+      },
+      {
+        "ans": "\\((x,\\,y,\\,z) = (2,\\ 3,\\ 3)\\)",
+        "why": "Sign slip when moving a term across the equals sign during the middle substitution."
+      }
+    ],
+    "vec": [
+      25,
+      8,
+      2,
+      -3,
+      3,
+      -2,
+      1,
+      -2,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 1396656754,
+    "key": "la_backsub",
+    "q": "The row-reduced system is \\(\\begin{cases}x - y - z = -7\\\\ y - z = 0\\\\ 2z = 6\\end{cases}\\). Solve by back-substitution.",
+    "a": "\\((x,\\,y,\\,z) = (-1,\\ 3,\\ 3)\\)",
+    "steps": [
+      "Bottom up: \\(z = 6/2 = 3\\).",
+      "Middle: \\(y = 0 + 1(3) = 3\\).",
+      "Top: \\(x = -7 + 1(3) + 1(3) = -1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\((x,\\,y,\\,z) = (-7,\\ 0,\\ 3)\\)",
+        "why": "The right-hand sides are not the answers \u2014 each variable still needs the known values substituted and moved across."
+      },
+      {
+        "ans": "\\((x,\\,y,\\,z) = (-1,\\ -3,\\ 3)\\)",
+        "why": "Sign slip when moving a term across the equals sign during the middle substitution."
+      }
+    ],
+    "vec": [
+      25,
+      8,
+      -1,
+      3,
+      3,
+      -1,
+      -1,
+      -1,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 1413434373,
+    "key": "la_backsub",
+    "q": "The row-reduced system is \\(\\begin{cases}x + 2y - 2z = 11\\\\ y + 2z = -4\\\\ 2z = -6\\end{cases}\\). Solve by back-substitution.",
+    "a": "\\((x,\\,y,\\,z) = (1,\\ 2,\\ -3)\\)",
+    "steps": [
+      "Bottom up: \\(z = -6/2 = -3\\).",
+      "Middle: \\(y = -4 - 2(-3) = 2\\).",
+      "Top: \\(x = 11 - 2(2) + 2(-3) = 1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\((x,\\,y,\\,z) = (11,\\ -4,\\ -3)\\)",
+        "why": "The right-hand sides are not the answers \u2014 each variable still needs the known values substituted and moved across."
+      },
+      {
+        "ans": "\\((x,\\,y,\\,z) = (1,\\ -2,\\ -3)\\)",
+        "why": "Sign slip when moving a term across the equals sign during the middle substitution."
+      }
+    ],
+    "vec": [
+      25,
+      8,
+      1,
+      2,
+      -3,
+      2,
+      -2,
+      2,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 1295991040,
+    "key": "la_backsub",
+    "q": "The row-reduced system is \\(\\begin{cases}x + y + z = 3\\\\ y + z = 0\\\\ 2z = -6\\end{cases}\\). Solve by back-substitution.",
+    "a": "\\((x,\\,y,\\,z) = (3,\\ 3,\\ -3)\\)",
+    "steps": [
+      "Bottom up: \\(z = -6/2 = -3\\).",
+      "Middle: \\(y = 0 - 1(-3) = 3\\).",
+      "Top: \\(x = 3 - 1(3) - 1(-3) = 3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\((x,\\,y,\\,z) = (3,\\ 0,\\ -3)\\)",
+        "why": "The right-hand sides are not the answers \u2014 each variable still needs the known values substituted and moved across."
+      },
+      {
+        "ans": "\\((x,\\,y,\\,z) = (3,\\ -3,\\ -3)\\)",
+        "why": "Sign slip when moving a term across the equals sign during the middle substitution."
+      }
+    ],
+    "vec": [
+      25,
+      8,
+      3,
+      3,
+      -3,
+      1,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 1312768659,
+    "key": "la_backsub",
+    "q": "The row-reduced system is \\(\\begin{cases}x + 2y + z = 2\\\\ y - z = 2\\\\ 2z = -2\\end{cases}\\). Solve by back-substitution.",
+    "a": "\\((x,\\,y,\\,z) = (1,\\ 1,\\ -1)\\)",
+    "steps": [
+      "Bottom up: \\(z = -2/2 = -1\\).",
+      "Middle: \\(y = 2 + 1(-1) = 1\\).",
+      "Top: \\(x = 2 - 2(1) - 1(-1) = 1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\((x,\\,y,\\,z) = (2,\\ 2,\\ -1)\\)",
+        "why": "The right-hand sides are not the answers \u2014 each variable still needs the known values substituted and moved across."
+      },
+      {
+        "ans": "\\((x,\\,y,\\,z) = (1,\\ -1,\\ -1)\\)",
+        "why": "Sign slip when moving a term across the equals sign during the middle substitution."
+      }
+    ],
+    "vec": [
+      25,
+      8,
+      1,
+      1,
+      -1,
+      2,
+      1,
+      -1,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 3,
+    "sample": 0,
+    "seed": 3486952823,
+    "key": "la_sys_word",
+    "q": "A theater sells adult tickets for \\$10 and child tickets for \\$6. It sold 57 tickets for \\$446 total. How many of each were sold?",
+    "a": "26 adult and 31 child tickets",
+    "steps": [
+      "Let \\(a\\) = adult tickets, \\(c\\) = child tickets: \\(a + c = 57\\) and \\(10a + 6c = 446\\).",
+      "From the first equation \\(c = 57 - a\\); substitute into the second.",
+      "\\(10a + 6(57-a) = 446 \\Rightarrow a = 26\\), so \\(c = 31\\)."
+    ],
+    "traps": [
+      {
+        "ans": "31 adult and 26 child tickets",
+        "why": "Answer swapped \u2014 after solving, match each number back to its variable and its meaning."
+      },
+      {
+        "ans": "57 adult and 0 child tickets",
+        "why": "The ticket-count equation and the money equation are different constraints \u2014 both must hold at once."
+      }
+    ],
+    "vec": [
+      25,
+      12,
+      10,
+      6,
+      26,
+      31
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 3,
+    "sample": 1,
+    "seed": 3470175204,
+    "key": "la_sys_word",
+    "q": "A theater sells adult tickets for \\$10 and child tickets for \\$6. It sold 85 tickets for \\$610 total. How many of each were sold?",
+    "a": "25 adult and 60 child tickets",
+    "steps": [
+      "Let \\(a\\) = adult tickets, \\(c\\) = child tickets: \\(a + c = 85\\) and \\(10a + 6c = 610\\).",
+      "From the first equation \\(c = 85 - a\\); substitute into the second.",
+      "\\(10a + 6(85-a) = 610 \\Rightarrow a = 25\\), so \\(c = 60\\)."
+    ],
+    "traps": [
+      {
+        "ans": "60 adult and 25 child tickets",
+        "why": "Answer swapped \u2014 after solving, match each number back to its variable and its meaning."
+      },
+      {
+        "ans": "85 adult and 0 child tickets",
+        "why": "The ticket-count equation and the money equation are different constraints \u2014 both must hold at once."
+      }
+    ],
+    "vec": [
+      25,
+      12,
+      10,
+      6,
+      25,
+      60
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 3,
+    "sample": 2,
+    "seed": 3520508061,
+    "key": "la_sys_word",
+    "q": "A theater sells adult tickets for \\$15 and child tickets for \\$4. It sold 75 tickets for \\$575 total. How many of each were sold?",
+    "a": "25 adult and 50 child tickets",
+    "steps": [
+      "Let \\(a\\) = adult tickets, \\(c\\) = child tickets: \\(a + c = 75\\) and \\(15a + 4c = 575\\).",
+      "From the first equation \\(c = 75 - a\\); substitute into the second.",
+      "\\(15a + 4(75-a) = 575 \\Rightarrow a = 25\\), so \\(c = 50\\)."
+    ],
+    "traps": [
+      {
+        "ans": "50 adult and 25 child tickets",
+        "why": "Answer swapped \u2014 after solving, match each number back to its variable and its meaning."
+      },
+      {
+        "ans": "75 adult and 0 child tickets",
+        "why": "The ticket-count equation and the money equation are different constraints \u2014 both must hold at once."
+      }
+    ],
+    "vec": [
+      25,
+      12,
+      15,
+      4,
+      25,
+      50
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 3,
+    "sample": 3,
+    "seed": 3503730442,
+    "key": "la_sys_word",
+    "q": "A theater sells adult tickets for \\$12 and child tickets for \\$6. It sold 77 tickets for \\$654 total. How many of each were sold?",
+    "a": "32 adult and 45 child tickets",
+    "steps": [
+      "Let \\(a\\) = adult tickets, \\(c\\) = child tickets: \\(a + c = 77\\) and \\(12a + 6c = 654\\).",
+      "From the first equation \\(c = 77 - a\\); substitute into the second.",
+      "\\(12a + 6(77-a) = 654 \\Rightarrow a = 32\\), so \\(c = 45\\)."
+    ],
+    "traps": [
+      {
+        "ans": "45 adult and 32 child tickets",
+        "why": "Answer swapped \u2014 after solving, match each number back to its variable and its meaning."
+      },
+      {
+        "ans": "77 adult and 0 child tickets",
+        "why": "The ticket-count equation and the money equation are different constraints \u2014 both must hold at once."
+      }
+    ],
+    "vec": [
+      25,
+      12,
+      12,
+      6,
+      32,
+      45
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 3,
+    "sample": 4,
+    "seed": 3419842347,
+    "key": "la_sys_word",
+    "q": "A theater sells adult tickets for \\$15 and child tickets for \\$6. It sold 133 tickets for \\$1230 total. How many of each were sold?",
+    "a": "48 adult and 85 child tickets",
+    "steps": [
+      "Let \\(a\\) = adult tickets, \\(c\\) = child tickets: \\(a + c = 133\\) and \\(15a + 6c = 1230\\).",
+      "From the first equation \\(c = 133 - a\\); substitute into the second.",
+      "\\(15a + 6(133-a) = 1230 \\Rightarrow a = 48\\), so \\(c = 85\\)."
+    ],
+    "traps": [
+      {
+        "ans": "85 adult and 48 child tickets",
+        "why": "Answer swapped \u2014 after solving, match each number back to its variable and its meaning."
+      },
+      {
+        "ans": "133 adult and 0 child tickets",
+        "why": "The ticket-count equation and the money equation are different constraints \u2014 both must hold at once."
+      }
+    ],
+    "vec": [
+      25,
+      12,
+      15,
+      6,
+      48,
+      85
+    ]
+  },
+  {
+    "unitId": "LA_Systems",
+    "genIndex": 3,
+    "sample": 5,
+    "seed": 3403064728,
+    "key": "la_sys_word",
+    "q": "A theater sells adult tickets for \\$15 and child tickets for \\$5. It sold 91 tickets for \\$855 total. How many of each were sold?",
+    "a": "40 adult and 51 child tickets",
+    "steps": [
+      "Let \\(a\\) = adult tickets, \\(c\\) = child tickets: \\(a + c = 91\\) and \\(15a + 5c = 855\\).",
+      "From the first equation \\(c = 91 - a\\); substitute into the second.",
+      "\\(15a + 5(91-a) = 855 \\Rightarrow a = 40\\), so \\(c = 51\\)."
+    ],
+    "traps": [
+      {
+        "ans": "51 adult and 40 child tickets",
+        "why": "Answer swapped \u2014 after solving, match each number back to its variable and its meaning."
+      },
+      {
+        "ans": "91 adult and 0 child tickets",
+        "why": "The ticket-count equation and the money equation are different constraints \u2014 both must hold at once."
+      }
+    ],
+    "vec": [
+      25,
+      12,
+      15,
+      5,
+      40,
+      51
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 479129159,
+    "key": "la_rref_identify",
+    "q": "Which matrix is in reduced row echelon form (RREF)? \\(\\begin{bmatrix}1 & 0 & 4 \\\\ 0 & 1 & -1 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+    "a": "\\(\\begin{bmatrix}1 & 0 & 4 \\\\ 0 & 1 & -1 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+    "steps": [
+      "RREF needs all four: leading entry of each nonzero row is 1; each leading 1 is the ONLY nonzero entry in its column; leading 1s move right as you go down; zero rows are at the bottom.",
+      "The correct matrix satisfies all four conditions."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 & 3 & 4 \\\\ 0 & 1 & -1 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+        "why": "That is REF but not RREF \u2014 there is a nonzero entry ABOVE a leading 1. RREF requires zeros above and below each pivot."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}1 & 0 & 4 \\\\ 0 & 3 & -1 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+        "why": "A leading entry other than 1 disqualifies RREF \u2014 pivots must be scaled to 1."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}1 & 0 & 4 \\\\ 0 & 0 & 0 \\\\ 0 & 1 & -1\\end{bmatrix}\\)",
+        "why": "A zero row sitting above a nonzero row violates echelon form \u2014 zero rows go last."
+      }
+    ],
+    "vec": [
+      26,
+      5,
+      4,
+      -1
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 462351540,
+    "key": "la_rref_identify",
+    "q": "Which matrix is in reduced row echelon form (RREF)? \\(\\begin{bmatrix}1 & 0 & -4 \\\\ 0 & 1 & -4 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+    "a": "\\(\\begin{bmatrix}1 & 0 & -4 \\\\ 0 & 1 & -4 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+    "steps": [
+      "RREF needs all four: leading entry of each nonzero row is 1; each leading 1 is the ONLY nonzero entry in its column; leading 1s move right as you go down; zero rows are at the bottom.",
+      "The correct matrix satisfies all four conditions."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 & 1 & -4 \\\\ 0 & 1 & -4 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+        "why": "That is REF but not RREF \u2014 there is a nonzero entry ABOVE a leading 1. RREF requires zeros above and below each pivot."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}1 & 0 & -4 \\\\ 0 & 2 & -4 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+        "why": "A leading entry other than 1 disqualifies RREF \u2014 pivots must be scaled to 1."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}1 & 0 & -4 \\\\ 0 & 0 & 0 \\\\ 0 & 1 & -4\\end{bmatrix}\\)",
+        "why": "A zero row sitting above a nonzero row violates echelon form \u2014 zero rows go last."
+      }
+    ],
+    "vec": [
+      26,
+      5,
+      -4,
+      -4
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 512684397,
+    "key": "la_rref_identify",
+    "q": "Which matrix is in reduced row echelon form (RREF)? \\(\\begin{bmatrix}1 & 0 & 3 \\\\ 0 & 1 & 2 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+    "a": "\\(\\begin{bmatrix}1 & 0 & 3 \\\\ 0 & 1 & 2 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+    "steps": [
+      "RREF needs all four: leading entry of each nonzero row is 1; each leading 1 is the ONLY nonzero entry in its column; leading 1s move right as you go down; zero rows are at the bottom.",
+      "The correct matrix satisfies all four conditions."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 & 3 & 3 \\\\ 0 & 1 & 2 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+        "why": "That is REF but not RREF \u2014 there is a nonzero entry ABOVE a leading 1. RREF requires zeros above and below each pivot."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}1 & 0 & 3 \\\\ 0 & 2 & 2 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+        "why": "A leading entry other than 1 disqualifies RREF \u2014 pivots must be scaled to 1."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}1 & 0 & 3 \\\\ 0 & 0 & 0 \\\\ 0 & 1 & 2\\end{bmatrix}\\)",
+        "why": "A zero row sitting above a nonzero row violates echelon form \u2014 zero rows go last."
+      }
+    ],
+    "vec": [
+      26,
+      5,
+      3,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 495906778,
+    "key": "la_rref_identify",
+    "q": "Which matrix is in reduced row echelon form (RREF)? \\(\\begin{bmatrix}1 & 0 & 3 \\\\ 0 & 1 & -1 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+    "a": "\\(\\begin{bmatrix}1 & 0 & 3 \\\\ 0 & 1 & -1 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+    "steps": [
+      "RREF needs all four: leading entry of each nonzero row is 1; each leading 1 is the ONLY nonzero entry in its column; leading 1s move right as you go down; zero rows are at the bottom.",
+      "The correct matrix satisfies all four conditions."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 & 2 & 3 \\\\ 0 & 1 & -1 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+        "why": "That is REF but not RREF \u2014 there is a nonzero entry ABOVE a leading 1. RREF requires zeros above and below each pivot."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}1 & 0 & 3 \\\\ 0 & 3 & -1 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+        "why": "A leading entry other than 1 disqualifies RREF \u2014 pivots must be scaled to 1."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}1 & 0 & 3 \\\\ 0 & 0 & 0 \\\\ 0 & 1 & -1\\end{bmatrix}\\)",
+        "why": "A zero row sitting above a nonzero row violates echelon form \u2014 zero rows go last."
+      }
+    ],
+    "vec": [
+      26,
+      5,
+      3,
+      -1
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 412018683,
+    "key": "la_rref_identify",
+    "q": "Which matrix is in reduced row echelon form (RREF)? \\(\\begin{bmatrix}1 & 0 & -2 \\\\ 0 & 1 & 3 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+    "a": "\\(\\begin{bmatrix}1 & 0 & -2 \\\\ 0 & 1 & 3 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+    "steps": [
+      "RREF needs all four: leading entry of each nonzero row is 1; each leading 1 is the ONLY nonzero entry in its column; leading 1s move right as you go down; zero rows are at the bottom.",
+      "The correct matrix satisfies all four conditions."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 & 2 & -2 \\\\ 0 & 1 & 3 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+        "why": "That is REF but not RREF \u2014 there is a nonzero entry ABOVE a leading 1. RREF requires zeros above and below each pivot."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}1 & 0 & -2 \\\\ 0 & 3 & 3 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+        "why": "A leading entry other than 1 disqualifies RREF \u2014 pivots must be scaled to 1."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}1 & 0 & -2 \\\\ 0 & 0 & 0 \\\\ 0 & 1 & 3\\end{bmatrix}\\)",
+        "why": "A zero row sitting above a nonzero row violates echelon form \u2014 zero rows go last."
+      }
+    ],
+    "vec": [
+      26,
+      5,
+      -2,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 395241064,
+    "key": "la_rref_identify",
+    "q": "Which matrix is in reduced row echelon form (RREF)? \\(\\begin{bmatrix}1 & 0 & 1 \\\\ 0 & 1 & -2 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+    "a": "\\(\\begin{bmatrix}1 & 0 & 1 \\\\ 0 & 1 & -2 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+    "steps": [
+      "RREF needs all four: leading entry of each nonzero row is 1; each leading 1 is the ONLY nonzero entry in its column; leading 1s move right as you go down; zero rows are at the bottom.",
+      "The correct matrix satisfies all four conditions."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\begin{bmatrix}1 & 3 & 1 \\\\ 0 & 1 & -2 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+        "why": "That is REF but not RREF \u2014 there is a nonzero entry ABOVE a leading 1. RREF requires zeros above and below each pivot."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}1 & 0 & 1 \\\\ 0 & 3 & -2 \\\\ 0 & 0 & 0\\end{bmatrix}\\)",
+        "why": "A leading entry other than 1 disqualifies RREF \u2014 pivots must be scaled to 1."
+      },
+      {
+        "ans": "\\(\\begin{bmatrix}1 & 0 & 1 \\\\ 0 & 0 & 0 \\\\ 0 & 1 & -2\\end{bmatrix}\\)",
+        "why": "A zero row sitting above a nonzero row violates echelon form \u2014 zero rows go last."
+      }
+    ],
+    "vec": [
+      26,
+      5,
+      1,
+      -2
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 2650245148,
+    "key": "la_rowop_apply",
+    "q": "Given the augmented matrix \\(\\left[\\begin{array}{cc|c}3 & -3 & 2 \\\\ -1 & 2 & -2\\end{array}\\right]\\), perform \\(R_2 \\to R_2 - 2 R_1\\). What is the new second row?",
+    "a": "\\([\\begin{array}{cc|c}-7 & 8 & -6\\end{array}]\\)",
+    "steps": [
+      "Multiply row 1 by \\(-2\\): \\((-6,\\ 6,\\ -4)\\).",
+      "Add it entry-by-entry to row 2 \u2014 INCLUDING the constant column.",
+      "New row 2: \\((-7,\\ 8,\\ -6)\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\([\\begin{array}{cc|c}-7 & 8 & 0\\end{array}]\\)",
+        "why": "The constant column gets multiplied by k too \u2014 the row operation applies to the ENTIRE row."
+      },
+      {
+        "ans": "\\([\\begin{array}{cc|c}5 & -4 & 2\\end{array}]\\)",
+        "why": "Sign of k reversed \u2014 R2 + kR1 adds k copies; check whether the operation says + or \u2212."
+      }
+    ],
+    "vec": [
+      26,
+      6,
+      -2,
+      3,
+      -3,
+      2,
+      -1,
+      2,
+      -2
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 2667022767,
+    "key": "la_rowop_apply",
+    "q": "Given the augmented matrix \\(\\left[\\begin{array}{cc|c}2 & -3 & 4 \\\\ 1 & 3 & 3\\end{array}\\right]\\), perform \\(R_2 \\to R_2 + 3 R_1\\). What is the new second row?",
+    "a": "\\([\\begin{array}{cc|c}7 & -6 & 15\\end{array}]\\)",
+    "steps": [
+      "Multiply row 1 by \\(3\\): \\((6,\\ -9,\\ 12)\\).",
+      "Add it entry-by-entry to row 2 \u2014 INCLUDING the constant column.",
+      "New row 2: \\((7,\\ -6,\\ 15)\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\([\\begin{array}{cc|c}7 & -6 & 7\\end{array}]\\)",
+        "why": "The constant column gets multiplied by k too \u2014 the row operation applies to the ENTIRE row."
+      },
+      {
+        "ans": "\\([\\begin{array}{cc|c}-5 & 12 & -9\\end{array}]\\)",
+        "why": "Sign of k reversed \u2014 R2 + kR1 adds k copies; check whether the operation says + or \u2212."
+      }
+    ],
+    "vec": [
+      26,
+      6,
+      3,
+      2,
+      -3,
+      4,
+      1,
+      3,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 2683800386,
+    "key": "la_rowop_apply",
+    "q": "Given the augmented matrix \\(\\left[\\begin{array}{cc|c}3 & 3 & -3 \\\\ -3 & 2 & -3\\end{array}\\right]\\), perform \\(R_2 \\to R_2 - 2 R_1\\). What is the new second row?",
+    "a": "\\([\\begin{array}{cc|c}-9 & -4 & 3\\end{array}]\\)",
+    "steps": [
+      "Multiply row 1 by \\(-2\\): \\((-6,\\ -6,\\ 6)\\).",
+      "Add it entry-by-entry to row 2 \u2014 INCLUDING the constant column.",
+      "New row 2: \\((-9,\\ -4,\\ 3)\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\([\\begin{array}{cc|c}-9 & -4 & -6\\end{array}]\\)",
+        "why": "The constant column gets multiplied by k too \u2014 the row operation applies to the ENTIRE row."
+      },
+      {
+        "ans": "\\([\\begin{array}{cc|c}3 & 8 & -9\\end{array}]\\)",
+        "why": "Sign of k reversed \u2014 R2 + kR1 adds k copies; check whether the operation says + or \u2212."
+      }
+    ],
+    "vec": [
+      26,
+      6,
+      -2,
+      3,
+      3,
+      -3,
+      -3,
+      2,
+      -3
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 2700578005,
+    "key": "la_rowop_apply",
+    "q": "Given the augmented matrix \\(\\left[\\begin{array}{cc|c}2 & -2 & -5 \\\\ -2 & 3 & -4\\end{array}\\right]\\), perform \\(R_2 \\to R_2 - 2 R_1\\). What is the new second row?",
+    "a": "\\([\\begin{array}{cc|c}-6 & 7 & 6\\end{array}]\\)",
+    "steps": [
+      "Multiply row 1 by \\(-2\\): \\((-4,\\ 4,\\ 10)\\).",
+      "Add it entry-by-entry to row 2 \u2014 INCLUDING the constant column.",
+      "New row 2: \\((-6,\\ 7,\\ 6)\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\([\\begin{array}{cc|c}-6 & 7 & -9\\end{array}]\\)",
+        "why": "The constant column gets multiplied by k too \u2014 the row operation applies to the ENTIRE row."
+      },
+      {
+        "ans": "\\([\\begin{array}{cc|c}2 & -1 & -14\\end{array}]\\)",
+        "why": "Sign of k reversed \u2014 R2 + kR1 adds k copies; check whether the operation says + or \u2212."
+      }
+    ],
+    "vec": [
+      26,
+      6,
+      -2,
+      2,
+      -2,
+      -5,
+      -2,
+      3,
+      -4
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 2583134672,
+    "key": "la_rowop_apply",
+    "q": "Given the augmented matrix \\(\\left[\\begin{array}{cc|c}1 & 3 & -2 \\\\ 3 & 2 & -2\\end{array}\\right]\\), perform \\(R_2 \\to R_2 + 3 R_1\\). What is the new second row?",
+    "a": "\\([\\begin{array}{cc|c}6 & 11 & -8\\end{array}]\\)",
+    "steps": [
+      "Multiply row 1 by \\(3\\): \\((3,\\ 9,\\ -6)\\).",
+      "Add it entry-by-entry to row 2 \u2014 INCLUDING the constant column.",
+      "New row 2: \\((6,\\ 11,\\ -8)\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\([\\begin{array}{cc|c}6 & 11 & -4\\end{array}]\\)",
+        "why": "The constant column gets multiplied by k too \u2014 the row operation applies to the ENTIRE row."
+      },
+      {
+        "ans": "\\([\\begin{array}{cc|c}0 & -7 & 4\\end{array}]\\)",
+        "why": "Sign of k reversed \u2014 R2 + kR1 adds k copies; check whether the operation says + or \u2212."
+      }
+    ],
+    "vec": [
+      26,
+      6,
+      3,
+      1,
+      3,
+      -2,
+      3,
+      2,
+      -2
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 2599912291,
+    "key": "la_rowop_apply",
+    "q": "Given the augmented matrix \\(\\left[\\begin{array}{cc|c}1 & -1 & 4 \\\\ -2 & 2 & 2\\end{array}\\right]\\), perform \\(R_2 \\to R_2 - 2 R_1\\). What is the new second row?",
+    "a": "\\([\\begin{array}{cc|c}-4 & 4 & -6\\end{array}]\\)",
+    "steps": [
+      "Multiply row 1 by \\(-2\\): \\((-2,\\ 2,\\ -8)\\).",
+      "Add it entry-by-entry to row 2 \u2014 INCLUDING the constant column.",
+      "New row 2: \\((-4,\\ 4,\\ -6)\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\([\\begin{array}{cc|c}-4 & 4 & 6\\end{array}]\\)",
+        "why": "The constant column gets multiplied by k too \u2014 the row operation applies to the ENTIRE row."
+      },
+      {
+        "ans": "\\([\\begin{array}{cc|c}0 & 0 & 10\\end{array}]\\)",
+        "why": "Sign of k reversed \u2014 R2 + kR1 adds k copies; check whether the operation says + or \u2212."
+      }
+    ],
+    "vec": [
+      26,
+      6,
+      -2,
+      1,
+      -1,
+      4,
+      -2,
+      2,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 2081429581,
+    "key": "la_rowop_identify",
+    "q": "What single row operation transforms \\(\\left[\\begin{array}{cc|c}1 & 1 & 3 \\\\ 2 & 2 & 4\\end{array}\\right]\\) into \\(\\left[\\begin{array}{cc|c}1 & 1 & 3 \\\\ 0 & 0 & -2\\end{array}\\right]\\)?",
+    "a": "\\(R_2 \\to R_2 - 2R_1\\)",
+    "steps": [
+      "Row 1 is unchanged, so the operation acted on row 2.",
+      "The leading entry went from \\(2\\) to \\(0\\): we subtracted \\(2\\) copies of row 1.",
+      "Check another column to confirm the same multiple was used throughout."
+    ],
+    "traps": [
+      {
+        "ans": "\\(R_2 \\to R_2 + 2R_1\\)",
+        "why": "Adding would make the leading entry grow, not vanish \u2014 check the sign by what happened to column 1."
+      },
+      {
+        "ans": "\\(R_1 \\leftrightarrow R_2\\)",
+        "why": "A swap changes BOTH rows \u2014 row 1 is identical in both matrices, so no swap occurred."
+      }
+    ],
+    "vec": [
+      26,
+      7,
+      2,
+      1,
+      3,
+      2,
+      4
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 2064651962,
+    "key": "la_rowop_identify",
+    "q": "What single row operation transforms \\(\\left[\\begin{array}{cc|c}1 & -2 & 1 \\\\ 2 & 2 & 4\\end{array}\\right]\\) into \\(\\left[\\begin{array}{cc|c}1 & -2 & 1 \\\\ 0 & 6 & 2\\end{array}\\right]\\)?",
+    "a": "\\(R_2 \\to R_2 - 2R_1\\)",
+    "steps": [
+      "Row 1 is unchanged, so the operation acted on row 2.",
+      "The leading entry went from \\(2\\) to \\(0\\): we subtracted \\(2\\) copies of row 1.",
+      "Check another column to confirm the same multiple was used throughout."
+    ],
+    "traps": [
+      {
+        "ans": "\\(R_2 \\to R_2 + 2R_1\\)",
+        "why": "Adding would make the leading entry grow, not vanish \u2014 check the sign by what happened to column 1."
+      },
+      {
+        "ans": "\\(R_1 \\leftrightarrow R_2\\)",
+        "why": "A swap changes BOTH rows \u2014 row 1 is identical in both matrices, so no swap occurred."
+      }
+    ],
+    "vec": [
+      26,
+      7,
+      2,
+      -2,
+      1,
+      2,
+      4
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 2047874343,
+    "key": "la_rowop_identify",
+    "q": "What single row operation transforms \\(\\left[\\begin{array}{cc|c}1 & -3 & -4 \\\\ 3 & -3 & 1\\end{array}\\right]\\) into \\(\\left[\\begin{array}{cc|c}1 & -3 & -4 \\\\ 0 & 6 & 13\\end{array}\\right]\\)?",
+    "a": "\\(R_2 \\to R_2 - 3R_1\\)",
+    "steps": [
+      "Row 1 is unchanged, so the operation acted on row 2.",
+      "The leading entry went from \\(3\\) to \\(0\\): we subtracted \\(3\\) copies of row 1.",
+      "Check another column to confirm the same multiple was used throughout."
+    ],
+    "traps": [
+      {
+        "ans": "\\(R_2 \\to R_2 + 3R_1\\)",
+        "why": "Adding would make the leading entry grow, not vanish \u2014 check the sign by what happened to column 1."
+      },
+      {
+        "ans": "\\(R_1 \\leftrightarrow R_2\\)",
+        "why": "A swap changes BOTH rows \u2014 row 1 is identical in both matrices, so no swap occurred."
+      }
+    ],
+    "vec": [
+      26,
+      7,
+      3,
+      -3,
+      -4,
+      -3,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 2031096724,
+    "key": "la_rowop_identify",
+    "q": "What single row operation transforms \\(\\left[\\begin{array}{cc|c}1 & -3 & 2 \\\\ 2 & 1 & 4\\end{array}\\right]\\) into \\(\\left[\\begin{array}{cc|c}1 & -3 & 2 \\\\ 0 & 7 & 0\\end{array}\\right]\\)?",
+    "a": "\\(R_2 \\to R_2 - 2R_1\\)",
+    "steps": [
+      "Row 1 is unchanged, so the operation acted on row 2.",
+      "The leading entry went from \\(2\\) to \\(0\\): we subtracted \\(2\\) copies of row 1.",
+      "Check another column to confirm the same multiple was used throughout."
+    ],
+    "traps": [
+      {
+        "ans": "\\(R_2 \\to R_2 + 2R_1\\)",
+        "why": "Adding would make the leading entry grow, not vanish \u2014 check the sign by what happened to column 1."
+      },
+      {
+        "ans": "\\(R_1 \\leftrightarrow R_2\\)",
+        "why": "A swap changes BOTH rows \u2014 row 1 is identical in both matrices, so no swap occurred."
+      }
+    ],
+    "vec": [
+      26,
+      7,
+      2,
+      -3,
+      2,
+      1,
+      4
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 2014319105,
+    "key": "la_rowop_identify",
+    "q": "What single row operation transforms \\(\\left[\\begin{array}{cc|c}1 & -2 & 2 \\\\ 2 & -3 & -4\\end{array}\\right]\\) into \\(\\left[\\begin{array}{cc|c}1 & -2 & 2 \\\\ 0 & 1 & -8\\end{array}\\right]\\)?",
+    "a": "\\(R_2 \\to R_2 - 2R_1\\)",
+    "steps": [
+      "Row 1 is unchanged, so the operation acted on row 2.",
+      "The leading entry went from \\(2\\) to \\(0\\): we subtracted \\(2\\) copies of row 1.",
+      "Check another column to confirm the same multiple was used throughout."
+    ],
+    "traps": [
+      {
+        "ans": "\\(R_2 \\to R_2 + 2R_1\\)",
+        "why": "Adding would make the leading entry grow, not vanish \u2014 check the sign by what happened to column 1."
+      },
+      {
+        "ans": "\\(R_1 \\leftrightarrow R_2\\)",
+        "why": "A swap changes BOTH rows \u2014 row 1 is identical in both matrices, so no swap occurred."
+      }
+    ],
+    "vec": [
+      26,
+      7,
+      2,
+      -2,
+      2,
+      -3,
+      -4
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 1997541486,
+    "key": "la_rowop_identify",
+    "q": "What single row operation transforms \\(\\left[\\begin{array}{cc|c}1 & 2 & 3 \\\\ 3 & 2 & -4\\end{array}\\right]\\) into \\(\\left[\\begin{array}{cc|c}1 & 2 & 3 \\\\ 0 & -4 & -13\\end{array}\\right]\\)?",
+    "a": "\\(R_2 \\to R_2 - 3R_1\\)",
+    "steps": [
+      "Row 1 is unchanged, so the operation acted on row 2.",
+      "The leading entry went from \\(3\\) to \\(0\\): we subtracted \\(3\\) copies of row 1.",
+      "Check another column to confirm the same multiple was used throughout."
+    ],
+    "traps": [
+      {
+        "ans": "\\(R_2 \\to R_2 + 3R_1\\)",
+        "why": "Adding would make the leading entry grow, not vanish \u2014 check the sign by what happened to column 1."
+      },
+      {
+        "ans": "\\(R_1 \\leftrightarrow R_2\\)",
+        "why": "A swap changes BOTH rows \u2014 row 1 is identical in both matrices, so no swap occurred."
+      }
+    ],
+    "vec": [
+      26,
+      7,
+      3,
+      2,
+      3,
+      2,
+      -4
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 3,
+    "sample": 0,
+    "seed": 185723402,
+    "key": "la_matrix_terms",
+    "q": "Classify the matrix \\(\\begin{bmatrix}1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1\\end{bmatrix}\\) using the most specific term.",
+    "a": "Identity",
+    "steps": [
+      "Check the zero pattern (above/below the diagonal) and whether \\(A = A^T\\).",
+      "Ones on the diagonal, zeros elsewhere \u2014 the identity (which is also diagonal, but identity is more specific)."
+    ],
+    "traps": [
+      {
+        "ans": "Upper triangular",
+        "why": "Check WHICH side of the main diagonal holds the zeros, and test A = A\u1d40 before choosing."
+      },
+      {
+        "ans": "Lower triangular",
+        "why": "Use the most specific correct term \u2014 e.g., the identity is diagonal, but \"identity\" says more."
+      }
+    ],
+    "vec": [
+      26,
+      11,
+      4,
+      4,
+      4,
+      -3,
+      -1
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 3,
+    "sample": 1,
+    "seed": 202501021,
+    "key": "la_matrix_terms",
+    "q": "Classify the matrix \\(\\begin{bmatrix}2 & 1 & -3 \\\\ 0 & 4 & 1 \\\\ 0 & 0 & 2\\end{bmatrix}\\) using the most specific term.",
+    "a": "Upper triangular",
+    "steps": [
+      "Check the zero pattern (above/below the diagonal) and whether \\(A = A^T\\).",
+      "All zeros below the main diagonal."
+    ],
+    "traps": [
+      {
+        "ans": "Lower triangular",
+        "why": "Check WHICH side of the main diagonal holds the zeros, and test A = A\u1d40 before choosing."
+      },
+      {
+        "ans": "Diagonal",
+        "why": "Use the most specific correct term \u2014 e.g., the identity is diagonal, but \"identity\" says more."
+      }
+    ],
+    "vec": [
+      26,
+      11,
+      0,
+      2,
+      4,
+      1,
+      -3
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 3,
+    "sample": 2,
+    "seed": 152168164,
+    "key": "la_matrix_terms",
+    "q": "Classify the matrix \\(\\begin{bmatrix}3 & 0 & 0 \\\\ 0 & 4 & 0 \\\\ 0 & 0 & -3\\end{bmatrix}\\) using the most specific term.",
+    "a": "Diagonal",
+    "steps": [
+      "Check the zero pattern (above/below the diagonal) and whether \\(A = A^T\\).",
+      "Only diagonal entries are nonzero."
+    ],
+    "traps": [
+      {
+        "ans": "Upper triangular",
+        "why": "Check WHICH side of the main diagonal holds the zeros, and test A = A\u1d40 before choosing."
+      },
+      {
+        "ans": "Lower triangular",
+        "why": "Use the most specific correct term \u2014 e.g., the identity is diagonal, but \"identity\" says more."
+      }
+    ],
+    "vec": [
+      26,
+      11,
+      2,
+      3,
+      4,
+      2,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 3,
+    "sample": 3,
+    "seed": 168945783,
+    "key": "la_matrix_terms",
+    "q": "Classify the matrix \\(\\begin{bmatrix}1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1\\end{bmatrix}\\) using the most specific term.",
+    "a": "Identity",
+    "steps": [
+      "Check the zero pattern (above/below the diagonal) and whether \\(A = A^T\\).",
+      "Ones on the diagonal, zeros elsewhere \u2014 the identity (which is also diagonal, but identity is more specific)."
+    ],
+    "traps": [
+      {
+        "ans": "Upper triangular",
+        "why": "Check WHICH side of the main diagonal holds the zeros, and test A = A\u1d40 before choosing."
+      },
+      {
+        "ans": "Lower triangular",
+        "why": "Use the most specific correct term \u2014 e.g., the identity is diagonal, but \"identity\" says more."
+      }
+    ],
+    "vec": [
+      26,
+      11,
+      4,
+      2,
+      3,
+      2,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 3,
+    "sample": 4,
+    "seed": 118612926,
+    "key": "la_matrix_terms",
+    "q": "Classify the matrix \\(\\begin{bmatrix}2 & 0 & 0 \\\\ 3 & 2 & 0 \\\\ 3 & 3 & 2\\end{bmatrix}\\) using the most specific term.",
+    "a": "Lower triangular",
+    "steps": [
+      "Check the zero pattern (above/below the diagonal) and whether \\(A = A^T\\).",
+      "All zeros above the main diagonal."
+    ],
+    "traps": [
+      {
+        "ans": "Upper triangular",
+        "why": "Check WHICH side of the main diagonal holds the zeros, and test A = A\u1d40 before choosing."
+      },
+      {
+        "ans": "Diagonal",
+        "why": "Use the most specific correct term \u2014 e.g., the identity is diagonal, but \"identity\" says more."
+      }
+    ],
+    "vec": [
+      26,
+      11,
+      1,
+      2,
+      2,
+      3,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_RowRed",
+    "genIndex": 3,
+    "sample": 5,
+    "seed": 135390545,
+    "key": "la_matrix_terms",
+    "q": "Classify the matrix \\(\\begin{bmatrix}1 & 3 & 1 \\\\ 3 & 3 & 0 \\\\ 1 & 0 & 1\\end{bmatrix}\\) using the most specific term.",
+    "a": "Symmetric",
+    "steps": [
+      "Check the zero pattern (above/below the diagonal) and whether \\(A = A^T\\).",
+      "Entry \\((i,j)\\) equals entry \\((j,i)\\) everywhere: \\(A = A^T\\)."
+    ],
+    "traps": [
+      {
+        "ans": "Upper triangular",
+        "why": "Check WHICH side of the main diagonal holds the zeros, and test A = A\u1d40 before choosing."
+      },
+      {
+        "ans": "Lower triangular",
+        "why": "Use the most specific correct term \u2014 e.g., the identity is diagonal, but \"identity\" says more."
+      }
+    ],
+    "vec": [
+      26,
+      11,
+      3,
+      1,
+      3,
+      3,
+      1
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 3654483718,
+    "key": "la_sys_classify",
+    "q": "How many solutions does this system have? \\(\\begin{cases}x + y = -5\\\\ 2x - y = 1\\end{cases}\\)",
+    "a": "Exactly one solution",
+    "steps": [
+      "Compare the rows: is one left side a multiple of the other?",
+      "Here the left sides are NOT proportional, so the lines cross exactly once.",
+      "Conclusion: exactly one solution."
+    ],
+    "traps": [
+      {
+        "ans": "No solution",
+        "why": "Test proportionality of the FULL rows: left sides AND right side. Proportional left + matching right = infinite; proportional left + mismatched right = none; non-proportional left = unique."
+      },
+      {
+        "ans": "Infinitely many solutions",
+        "why": "Check whether the constant column follows the same multiple as the coefficients."
+      }
+    ],
+    "vec": [
+      27,
+      3,
+      0,
+      1,
+      1,
+      -5,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 3671261337,
+    "key": "la_sys_classify",
+    "q": "How many solutions does this system have? \\(\\begin{cases}x - 3y = -2\\\\ 3x - 9y = -6\\end{cases}\\)",
+    "a": "Infinitely many solutions",
+    "steps": [
+      "Compare the rows: is one left side a multiple of the other?",
+      "Here row 2 is exactly \\(3\\times\\) row 1 \u2014 the same line twice.",
+      "Conclusion: infinitely many solutions."
+    ],
+    "traps": [
+      {
+        "ans": "Exactly one solution",
+        "why": "Test proportionality of the FULL rows: left sides AND right side. Proportional left + matching right = infinite; proportional left + mismatched right = none; non-proportional left = unique."
+      },
+      {
+        "ans": "No solution",
+        "why": "Check whether the constant column follows the same multiple as the coefficients."
+      }
+    ],
+    "vec": [
+      27,
+      3,
+      2,
+      1,
+      -3,
+      -2,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 3620928480,
+    "key": "la_sys_classify",
+    "q": "How many solutions does this system have? \\(\\begin{cases}x - 2y = -5\\\\ 3x - 6y = -12\\end{cases}\\)",
+    "a": "No solution",
+    "steps": [
+      "Compare the rows: is one left side a multiple of the other?",
+      "Here the left side of row 2 is \\(3\\times\\) row 1 but the right side is not \u2014 parallel lines, no intersection.",
+      "Conclusion: no solution."
+    ],
+    "traps": [
+      {
+        "ans": "Exactly one solution",
+        "why": "Test proportionality of the FULL rows: left sides AND right side. Proportional left + matching right = infinite; proportional left + mismatched right = none; non-proportional left = unique."
+      },
+      {
+        "ans": "Infinitely many solutions",
+        "why": "Check whether the constant column follows the same multiple as the coefficients."
+      }
+    ],
+    "vec": [
+      27,
+      3,
+      1,
+      1,
+      -2,
+      -5,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 3637706099,
+    "key": "la_sys_classify",
+    "q": "How many solutions does this system have? \\(\\begin{cases}2x - y = -2\\\\ 4x - 2y = -2\\end{cases}\\)",
+    "a": "No solution",
+    "steps": [
+      "Compare the rows: is one left side a multiple of the other?",
+      "Here the left side of row 2 is \\(2\\times\\) row 1 but the right side is not \u2014 parallel lines, no intersection.",
+      "Conclusion: no solution."
+    ],
+    "traps": [
+      {
+        "ans": "Exactly one solution",
+        "why": "Test proportionality of the FULL rows: left sides AND right side. Proportional left + matching right = infinite; proportional left + mismatched right = none; non-proportional left = unique."
+      },
+      {
+        "ans": "Infinitely many solutions",
+        "why": "Check whether the constant column follows the same multiple as the coefficients."
+      }
+    ],
+    "vec": [
+      27,
+      3,
+      1,
+      2,
+      -1,
+      -2,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 3721594194,
+    "key": "la_sys_classify",
+    "q": "How many solutions does this system have? \\(\\begin{cases}2x - y = -2\\\\ 3x - 2y = 1\\end{cases}\\)",
+    "a": "Exactly one solution",
+    "steps": [
+      "Compare the rows: is one left side a multiple of the other?",
+      "Here the left sides are NOT proportional, so the lines cross exactly once.",
+      "Conclusion: exactly one solution."
+    ],
+    "traps": [
+      {
+        "ans": "No solution",
+        "why": "Test proportionality of the FULL rows: left sides AND right side. Proportional left + matching right = infinite; proportional left + mismatched right = none; non-proportional left = unique."
+      },
+      {
+        "ans": "Infinitely many solutions",
+        "why": "Check whether the constant column follows the same multiple as the coefficients."
+      }
+    ],
+    "vec": [
+      27,
+      3,
+      0,
+      2,
+      -1,
+      -2,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 3738371813,
+    "key": "la_sys_classify",
+    "q": "How many solutions does this system have? \\(\\begin{cases}2x + 3y = 1\\\\ 6x + 9y = 6\\end{cases}\\)",
+    "a": "No solution",
+    "steps": [
+      "Compare the rows: is one left side a multiple of the other?",
+      "Here the left side of row 2 is \\(3\\times\\) row 1 but the right side is not \u2014 parallel lines, no intersection.",
+      "Conclusion: no solution."
+    ],
+    "traps": [
+      {
+        "ans": "Exactly one solution",
+        "why": "Test proportionality of the FULL rows: left sides AND right side. Proportional left + matching right = infinite; proportional left + mismatched right = none; non-proportional left = unique."
+      },
+      {
+        "ans": "Infinitely many solutions",
+        "why": "Check whether the constant column follows the same multiple as the coefficients."
+      }
+    ],
+    "vec": [
+      27,
+      3,
+      1,
+      2,
+      3,
+      1,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 1213645897,
+    "key": "la_sys_hvalue",
+    "q": "For what value of \\(h\\) does the system have infinitely many solutions? \\(\\begin{cases}2x - 3y = -2\\\\ 6x - 9y = 0\\end{cases}\\) \u2014 where the second right-hand side is \\(h\\) instead of \\(0\\).",
+    "a": "\\(h = -6\\)",
+    "steps": [
+      "The second row's left side is \\(3\\times\\) the first row's.",
+      "For the rows to be the same equation (infinitely many solutions), the right side must scale the same way: \\(h = 3\\cdot-2 = -6\\).",
+      "Any other \\(h\\) makes the system inconsistent (no solution)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(h = -2\\)",
+        "why": "h must be k times the first right-hand side, not equal to it \u2014 the whole row scales."
+      },
+      {
+        "ans": "\\(h = 6\\)",
+        "why": "Watch the sign of the multiplier k when scaling the constant."
+      }
+    ],
+    "vec": [
+      27,
+      4,
+      2,
+      -3,
+      -2,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 1196868278,
+    "key": "la_sys_hvalue",
+    "q": "For what value of \\(h\\) does the system have infinitely many solutions? \\(\\begin{cases}2x - 3y = -4\\\\ 4x - 6y = 0\\end{cases}\\) \u2014 where the second right-hand side is \\(h\\) instead of \\(0\\).",
+    "a": "\\(h = -8\\)",
+    "steps": [
+      "The second row's left side is \\(2\\times\\) the first row's.",
+      "For the rows to be the same equation (infinitely many solutions), the right side must scale the same way: \\(h = 2\\cdot-4 = -8\\).",
+      "Any other \\(h\\) makes the system inconsistent (no solution)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(h = -4\\)",
+        "why": "h must be k times the first right-hand side, not equal to it \u2014 the whole row scales."
+      },
+      {
+        "ans": "\\(h = 8\\)",
+        "why": "Watch the sign of the multiplier k when scaling the constant."
+      }
+    ],
+    "vec": [
+      27,
+      4,
+      2,
+      -3,
+      -4,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 1180090659,
+    "key": "la_sys_hvalue",
+    "q": "For what value of \\(h\\) does the system have infinitely many solutions? \\(\\begin{cases}x - 3y = 4\\\\ 2x - 6y = 0\\end{cases}\\) \u2014 where the second right-hand side is \\(h\\) instead of \\(0\\).",
+    "a": "\\(h = 8\\)",
+    "steps": [
+      "The second row's left side is \\(2\\times\\) the first row's.",
+      "For the rows to be the same equation (infinitely many solutions), the right side must scale the same way: \\(h = 2\\cdot4 = 8\\).",
+      "Any other \\(h\\) makes the system inconsistent (no solution)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(h = 4\\)",
+        "why": "h must be k times the first right-hand side, not equal to it \u2014 the whole row scales."
+      },
+      {
+        "ans": "\\(h = -8\\)",
+        "why": "Watch the sign of the multiplier k when scaling the constant."
+      }
+    ],
+    "vec": [
+      27,
+      4,
+      1,
+      -3,
+      4,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 1163313040,
+    "key": "la_sys_hvalue",
+    "q": "For what value of \\(h\\) does the system have infinitely many solutions? \\(\\begin{cases}3x + 3y = 3\\\\ -6x - 6y = 0\\end{cases}\\) \u2014 where the second right-hand side is \\(h\\) instead of \\(0\\).",
+    "a": "\\(h = -6\\)",
+    "steps": [
+      "The second row's left side is \\(-2\\times\\) the first row's.",
+      "For the rows to be the same equation (infinitely many solutions), the right side must scale the same way: \\(h = -2\\cdot3 = -6\\).",
+      "Any other \\(h\\) makes the system inconsistent (no solution)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(h = 3\\)",
+        "why": "h must be k times the first right-hand side, not equal to it \u2014 the whole row scales."
+      },
+      {
+        "ans": "\\(h = 6\\)",
+        "why": "Watch the sign of the multiplier k when scaling the constant."
+      }
+    ],
+    "vec": [
+      27,
+      4,
+      3,
+      3,
+      3,
+      -2
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 1280756373,
+    "key": "la_sys_hvalue",
+    "q": "For what value of \\(h\\) does the system have infinitely many solutions? \\(\\begin{cases}x - 3y = 1\\\\ 2x - 6y = 0\\end{cases}\\) \u2014 where the second right-hand side is \\(h\\) instead of \\(0\\).",
+    "a": "\\(h = 2\\)",
+    "steps": [
+      "The second row's left side is \\(2\\times\\) the first row's.",
+      "For the rows to be the same equation (infinitely many solutions), the right side must scale the same way: \\(h = 2\\cdot1 = 2\\).",
+      "Any other \\(h\\) makes the system inconsistent (no solution)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(h = 1\\)",
+        "why": "h must be k times the first right-hand side, not equal to it \u2014 the whole row scales."
+      },
+      {
+        "ans": "\\(h = -2\\)",
+        "why": "Watch the sign of the multiplier k when scaling the constant."
+      }
+    ],
+    "vec": [
+      27,
+      4,
+      1,
+      -3,
+      1,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 1263978754,
+    "key": "la_sys_hvalue",
+    "q": "For what value of \\(h\\) does the system have infinitely many solutions? \\(\\begin{cases}3x - 3y = -1\\\\ 9x - 9y = 0\\end{cases}\\) \u2014 where the second right-hand side is \\(h\\) instead of \\(0\\).",
+    "a": "\\(h = -3\\)",
+    "steps": [
+      "The second row's left side is \\(3\\times\\) the first row's.",
+      "For the rows to be the same equation (infinitely many solutions), the right side must scale the same way: \\(h = 3\\cdot-1 = -3\\).",
+      "Any other \\(h\\) makes the system inconsistent (no solution)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(h = -1\\)",
+        "why": "h must be k times the first right-hand side, not equal to it \u2014 the whole row scales."
+      },
+      {
+        "ans": "\\(h = 3\\)",
+        "why": "Watch the sign of the multiplier k when scaling the constant."
+      }
+    ],
+    "vec": [
+      27,
+      4,
+      3,
+      -3,
+      -1,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 171810040,
+    "key": "la_sys_param",
+    "q": "Solve, expressing the solution set with a free parameter: \\(\\begin{cases}x + 2y = -4\\\\ 2x + 4y = -8\\end{cases}\\)",
+    "a": "\\((x,\\,y) = (-4 - 2t,\\ t),\\ t \\in \\mathbb{R}\\)",
+    "steps": [
+      "Row 2 is \\(2\\times\\) row 1 \u2014 only ONE independent equation, so one variable is free.",
+      "Let \\(y = t\\) (the free variable).",
+      "Then \\(x = -4 - 2t\\): every choice of \\(t\\) gives a solution."
+    ],
+    "traps": [
+      {
+        "ans": "No solution",
+        "why": "Proportional rows with MATCHING constants mean the same line twice \u2014 infinitely many solutions, not none. \"No solution\" needs mismatched constants."
+      },
+      {
+        "ans": "\\((x,\\,y) = (-4,\\ 0)\\)",
+        "why": "That is one point on the solution line (t = 0), but the solution SET is the whole line \u2014 express it with the parameter."
+      }
+    ],
+    "vec": [
+      27,
+      9,
+      2,
+      -4,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 188587659,
+    "key": "la_sys_param",
+    "q": "Solve, expressing the solution set with a free parameter: \\(\\begin{cases}x + 2y = 3\\\\ 3x + 6y = 9\\end{cases}\\)",
+    "a": "\\((x,\\,y) = (3 - 2t,\\ t),\\ t \\in \\mathbb{R}\\)",
+    "steps": [
+      "Row 2 is \\(3\\times\\) row 1 \u2014 only ONE independent equation, so one variable is free.",
+      "Let \\(y = t\\) (the free variable).",
+      "Then \\(x = 3 - 2t\\): every choice of \\(t\\) gives a solution."
+    ],
+    "traps": [
+      {
+        "ans": "No solution",
+        "why": "Proportional rows with MATCHING constants mean the same line twice \u2014 infinitely many solutions, not none. \"No solution\" needs mismatched constants."
+      },
+      {
+        "ans": "\\((x,\\,y) = (3,\\ 0)\\)",
+        "why": "That is one point on the solution line (t = 0), but the solution SET is the whole line \u2014 express it with the parameter."
+      }
+    ],
+    "vec": [
+      27,
+      9,
+      2,
+      3,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 205365278,
+    "key": "la_sys_param",
+    "q": "Solve, expressing the solution set with a free parameter: \\(\\begin{cases}x + 3y = 3\\\\ 2x + 6y = 6\\end{cases}\\)",
+    "a": "\\((x,\\,y) = (3 - 3t,\\ t),\\ t \\in \\mathbb{R}\\)",
+    "steps": [
+      "Row 2 is \\(2\\times\\) row 1 \u2014 only ONE independent equation, so one variable is free.",
+      "Let \\(y = t\\) (the free variable).",
+      "Then \\(x = 3 - 3t\\): every choice of \\(t\\) gives a solution."
+    ],
+    "traps": [
+      {
+        "ans": "No solution",
+        "why": "Proportional rows with MATCHING constants mean the same line twice \u2014 infinitely many solutions, not none. \"No solution\" needs mismatched constants."
+      },
+      {
+        "ans": "\\((x,\\,y) = (3,\\ 0)\\)",
+        "why": "That is one point on the solution line (t = 0), but the solution SET is the whole line \u2014 express it with the parameter."
+      }
+    ],
+    "vec": [
+      27,
+      9,
+      3,
+      3,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 222142897,
+    "key": "la_sys_param",
+    "q": "Solve, expressing the solution set with a free parameter: \\(\\begin{cases}x + 2y = -2\\\\ 2x + 4y = -4\\end{cases}\\)",
+    "a": "\\((x,\\,y) = (-2 - 2t,\\ t),\\ t \\in \\mathbb{R}\\)",
+    "steps": [
+      "Row 2 is \\(2\\times\\) row 1 \u2014 only ONE independent equation, so one variable is free.",
+      "Let \\(y = t\\) (the free variable).",
+      "Then \\(x = -2 - 2t\\): every choice of \\(t\\) gives a solution."
+    ],
+    "traps": [
+      {
+        "ans": "No solution",
+        "why": "Proportional rows with MATCHING constants mean the same line twice \u2014 infinitely many solutions, not none. \"No solution\" needs mismatched constants."
+      },
+      {
+        "ans": "\\((x,\\,y) = (-2,\\ 0)\\)",
+        "why": "That is one point on the solution line (t = 0), but the solution SET is the whole line \u2014 express it with the parameter."
+      }
+    ],
+    "vec": [
+      27,
+      9,
+      2,
+      -2,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 238920516,
+    "key": "la_sys_param",
+    "q": "Solve, expressing the solution set with a free parameter: \\(\\begin{cases}x + 3y = -4\\\\ 3x + 9y = -12\\end{cases}\\)",
+    "a": "\\((x,\\,y) = (-4 - 3t,\\ t),\\ t \\in \\mathbb{R}\\)",
+    "steps": [
+      "Row 2 is \\(3\\times\\) row 1 \u2014 only ONE independent equation, so one variable is free.",
+      "Let \\(y = t\\) (the free variable).",
+      "Then \\(x = -4 - 3t\\): every choice of \\(t\\) gives a solution."
+    ],
+    "traps": [
+      {
+        "ans": "No solution",
+        "why": "Proportional rows with MATCHING constants mean the same line twice \u2014 infinitely many solutions, not none. \"No solution\" needs mismatched constants."
+      },
+      {
+        "ans": "\\((x,\\,y) = (-4,\\ 0)\\)",
+        "why": "That is one point on the solution line (t = 0), but the solution SET is the whole line \u2014 express it with the parameter."
+      }
+    ],
+    "vec": [
+      27,
+      9,
+      3,
+      -4,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 255698135,
+    "key": "la_sys_param",
+    "q": "Solve, expressing the solution set with a free parameter: \\(\\begin{cases}x + 3y = -2\\\\ 3x + 9y = -6\\end{cases}\\)",
+    "a": "\\((x,\\,y) = (-2 - 3t,\\ t),\\ t \\in \\mathbb{R}\\)",
+    "steps": [
+      "Row 2 is \\(3\\times\\) row 1 \u2014 only ONE independent equation, so one variable is free.",
+      "Let \\(y = t\\) (the free variable).",
+      "Then \\(x = -2 - 3t\\): every choice of \\(t\\) gives a solution."
+    ],
+    "traps": [
+      {
+        "ans": "No solution",
+        "why": "Proportional rows with MATCHING constants mean the same line twice \u2014 infinitely many solutions, not none. \"No solution\" needs mismatched constants."
+      },
+      {
+        "ans": "\\((x,\\,y) = (-2,\\ 0)\\)",
+        "why": "That is one point on the solution line (t = 0), but the solution SET is the whole line \u2014 express it with the parameter."
+      }
+    ],
+    "vec": [
+      27,
+      9,
+      3,
+      -2,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 3,
+    "sample": 0,
+    "seed": 1800354243,
+    "key": "la_rank_small",
+    "q": "Find the rank of \\(\\begin{bmatrix}1 & -3 & 3 \\\\ 2 & -6 & 6 \\\\ -1 & 3 & -3\\end{bmatrix}\\).",
+    "a": "\\(1\\)",
+    "steps": [
+      "Row reduce and count the nonzero rows (equivalently, the pivots).",
+      "Every row is a multiple of the first \u2014 one independent row.",
+      "Rank \\(= 1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(3\\)",
+        "why": "Count pivots AFTER reducing \u2014 rows that look different can still be multiples of each other."
+      },
+      {
+        "ans": "\\(2\\)",
+        "why": "Do not stop reducing early; a row of zeros only appears once elimination is complete."
+      }
+    ],
+    "vec": [
+      27,
+      10,
+      1,
+      1,
+      -3,
+      3,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 3,
+    "sample": 1,
+    "seed": 1783576624,
+    "key": "la_rank_small",
+    "q": "Find the rank of \\(\\begin{bmatrix}3 & 1 & 3 \\\\ 9 & 3 & 9 \\\\ -3 & -1 & -3\\end{bmatrix}\\).",
+    "a": "\\(1\\)",
+    "steps": [
+      "Row reduce and count the nonzero rows (equivalently, the pivots).",
+      "Every row is a multiple of the first \u2014 one independent row.",
+      "Rank \\(= 1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(3\\)",
+        "why": "Count pivots AFTER reducing \u2014 rows that look different can still be multiples of each other."
+      },
+      {
+        "ans": "\\(2\\)",
+        "why": "Do not stop reducing early; a row of zeros only appears once elimination is complete."
+      }
+    ],
+    "vec": [
+      27,
+      10,
+      1,
+      3,
+      1,
+      3,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 3,
+    "sample": 2,
+    "seed": 1833909481,
+    "key": "la_rank_small",
+    "q": "Find the rank of \\(\\begin{bmatrix}1 & 2 & 3 \\\\ 0 & 1 & 2 \\\\ 0 & 0 & 1\\end{bmatrix}\\).",
+    "a": "\\(3\\)",
+    "steps": [
+      "Row reduce and count the nonzero rows (equivalently, the pivots).",
+      "Already triangular with three nonzero diagonal entries \u2014 three pivots.",
+      "Rank \\(= 3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(2\\)",
+        "why": "Count pivots AFTER reducing \u2014 rows that look different can still be multiples of each other."
+      },
+      {
+        "ans": "\\(2\\)",
+        "why": "Do not stop reducing early; a row of zeros only appears once elimination is complete."
+      }
+    ],
+    "vec": [
+      27,
+      10,
+      3,
+      1,
+      2,
+      3,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 3,
+    "sample": 3,
+    "seed": 1817131862,
+    "key": "la_rank_small",
+    "q": "Find the rank of \\(\\begin{bmatrix}1 & -1 & -1 \\\\ 0 & 1 & 2 \\\\ 0 & 0 & 3\\end{bmatrix}\\).",
+    "a": "\\(3\\)",
+    "steps": [
+      "Row reduce and count the nonzero rows (equivalently, the pivots).",
+      "Already triangular with three nonzero diagonal entries \u2014 three pivots.",
+      "Rank \\(= 3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(2\\)",
+        "why": "Count pivots AFTER reducing \u2014 rows that look different can still be multiples of each other."
+      },
+      {
+        "ans": "\\(2\\)",
+        "why": "Do not stop reducing early; a row of zeros only appears once elimination is complete."
+      }
+    ],
+    "vec": [
+      27,
+      10,
+      3,
+      3,
+      -1,
+      -1,
+      3
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 3,
+    "sample": 4,
+    "seed": 1867464719,
+    "key": "la_rank_small",
+    "q": "Find the rank of \\(\\begin{bmatrix}3 & 1 & -2 \\\\ 0 & 1 & -3 \\\\ 6 & 2 & -4\\end{bmatrix}\\).",
+    "a": "\\(2\\)",
+    "steps": [
+      "Row reduce and count the nonzero rows (equivalently, the pivots).",
+      "Row 3 is a multiple of row 1, so only two rows are independent.",
+      "Rank \\(= 2\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(3\\)",
+        "why": "Count pivots AFTER reducing \u2014 rows that look different can still be multiples of each other."
+      },
+      {
+        "ans": "\\(1\\)",
+        "why": "Do not stop reducing early; a row of zeros only appears once elimination is complete."
+      }
+    ],
+    "vec": [
+      27,
+      10,
+      2,
+      3,
+      1,
+      -2,
+      2
+    ]
+  },
+  {
+    "unitId": "LA_SolutionSets",
+    "genIndex": 3,
+    "sample": 5,
+    "seed": 1850687100,
+    "key": "la_rank_small",
+    "q": "Find the rank of \\(\\begin{bmatrix}1 & -2 & -3 \\\\ 0 & 1 & -1 \\\\ 0 & 0 & 1\\end{bmatrix}\\).",
+    "a": "\\(3\\)",
+    "steps": [
+      "Row reduce and count the nonzero rows (equivalently, the pivots).",
+      "Already triangular with three nonzero diagonal entries \u2014 three pivots.",
+      "Rank \\(= 3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(2\\)",
+        "why": "Count pivots AFTER reducing \u2014 rows that look different can still be multiples of each other."
+      },
+      {
+        "ans": "\\(2\\)",
+        "why": "Do not stop reducing early; a row of zeros only appears once elimination is complete."
+      }
+    ],
+    "vec": [
+      27,
+      10,
+      3,
+      3,
+      -2,
+      -3,
+      2
+    ]
+  }
+]

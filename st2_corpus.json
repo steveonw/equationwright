@@ -1,0 +1,2540 @@
+[
+  {
+    "unitId": "ST2_ChiSquare",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 1329417857,
+    "key": "st2_chi_stat",
+    "q": "A die-style experiment has 4 categories, each with expected count \\(E = 10\\). Observed counts: 10, 10, 12, 8. Compute the chi-square statistic \\(\\chi^2 = \\sum \\frac{(O-E)^2}{E}\\).",
+    "a": "\\(\\chi^2 = 0.8\\)",
+    "steps": [
+      "Deviations: \\(0, -0, 2, -2\\) \u2014 square each: \\(0, 0, 4, 4\\).",
+      "Sum of squares: \\(8\\); divide each by \\(E=10\\) (same here): \\(\\chi^2 = 0.8\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\chi^2 = 4\\)",
+        "why": "Square the deviations before dividing \u2014 (O\u2212E)\u00b2/E, not (O\u2212E)/E. Unsquared deviations sum to zero."
+      },
+      {
+        "ans": "\\(\\chi^2 = 8\\)",
+        "why": "Each squared deviation is divided by its expected count E \u2014 that scaling is what makes \u03c7\u00b2 comparable across studies."
+      }
+    ],
+    "vec": [
+      7,
+      1,
+      10,
+      0,
+      2,
+      0.8
+    ]
+  },
+  {
+    "unitId": "ST2_ChiSquare",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 1312640238,
+    "key": "st2_chi_stat",
+    "q": "A die-style experiment has 4 categories, each with expected count \\(E = 10\\). Observed counts: 12, 8, 11, 9. Compute the chi-square statistic \\(\\chi^2 = \\sum \\frac{(O-E)^2}{E}\\).",
+    "a": "\\(\\chi^2 = 1\\)",
+    "steps": [
+      "Deviations: \\(2, -2, 1, -1\\) \u2014 square each: \\(4, 4, 1, 1\\).",
+      "Sum of squares: \\(10\\); divide each by \\(E=10\\) (same here): \\(\\chi^2 = 1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\chi^2 = 6\\)",
+        "why": "Square the deviations before dividing \u2014 (O\u2212E)\u00b2/E, not (O\u2212E)/E. Unsquared deviations sum to zero."
+      },
+      {
+        "ans": "\\(\\chi^2 = 10\\)",
+        "why": "Each squared deviation is divided by its expected count E \u2014 that scaling is what makes \u03c7\u00b2 comparable across studies."
+      }
+    ],
+    "vec": [
+      7,
+      1,
+      10,
+      2,
+      1,
+      1
+    ]
+  },
+  {
+    "unitId": "ST2_ChiSquare",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 1295862619,
+    "key": "st2_chi_stat",
+    "q": "A die-style experiment has 4 categories, each with expected count \\(E = 20\\). Observed counts: 24, 16, 24, 16. Compute the chi-square statistic \\(\\chi^2 = \\sum \\frac{(O-E)^2}{E}\\).",
+    "a": "\\(\\chi^2 = 3.2\\)",
+    "steps": [
+      "Deviations: \\(4, -4, 4, -4\\) \u2014 square each: \\(16, 16, 16, 16\\).",
+      "Sum of squares: \\(64\\); divide each by \\(E=20\\) (same here): \\(\\chi^2 = 3.2\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\chi^2 = 16\\)",
+        "why": "Square the deviations before dividing \u2014 (O\u2212E)\u00b2/E, not (O\u2212E)/E. Unsquared deviations sum to zero."
+      },
+      {
+        "ans": "\\(\\chi^2 = 64\\)",
+        "why": "Each squared deviation is divided by its expected count E \u2014 that scaling is what makes \u03c7\u00b2 comparable across studies."
+      }
+    ],
+    "vec": [
+      7,
+      1,
+      20,
+      4,
+      4,
+      3.2
+    ]
+  },
+  {
+    "unitId": "ST2_ChiSquare",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 1279085000,
+    "key": "st2_chi_stat",
+    "q": "A die-style experiment has 4 categories, each with expected count \\(E = 10\\). Observed counts: 12, 8, 12, 8. Compute the chi-square statistic \\(\\chi^2 = \\sum \\frac{(O-E)^2}{E}\\).",
+    "a": "\\(\\chi^2 = 1.6\\)",
+    "steps": [
+      "Deviations: \\(2, -2, 2, -2\\) \u2014 square each: \\(4, 4, 4, 4\\).",
+      "Sum of squares: \\(16\\); divide each by \\(E=10\\) (same here): \\(\\chi^2 = 1.6\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\chi^2 = 8\\)",
+        "why": "Square the deviations before dividing \u2014 (O\u2212E)\u00b2/E, not (O\u2212E)/E. Unsquared deviations sum to zero."
+      },
+      {
+        "ans": "\\(\\chi^2 = 16\\)",
+        "why": "Each squared deviation is divided by its expected count E \u2014 that scaling is what makes \u03c7\u00b2 comparable across studies."
+      }
+    ],
+    "vec": [
+      7,
+      1,
+      10,
+      2,
+      2,
+      1.6
+    ]
+  },
+  {
+    "unitId": "ST2_ChiSquare",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 1396528333,
+    "key": "st2_chi_stat",
+    "q": "A die-style experiment has 4 categories, each with expected count \\(E = 25\\). Observed counts: 30, 20, 30, 20. Compute the chi-square statistic \\(\\chi^2 = \\sum \\frac{(O-E)^2}{E}\\).",
+    "a": "\\(\\chi^2 = 4\\)",
+    "steps": [
+      "Deviations: \\(5, -5, 5, -5\\) \u2014 square each: \\(25, 25, 25, 25\\).",
+      "Sum of squares: \\(100\\); divide each by \\(E=25\\) (same here): \\(\\chi^2 = 4\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\chi^2 = 20\\)",
+        "why": "Square the deviations before dividing \u2014 (O\u2212E)\u00b2/E, not (O\u2212E)/E. Unsquared deviations sum to zero."
+      },
+      {
+        "ans": "\\(\\chi^2 = 100\\)",
+        "why": "Each squared deviation is divided by its expected count E \u2014 that scaling is what makes \u03c7\u00b2 comparable across studies."
+      }
+    ],
+    "vec": [
+      7,
+      1,
+      25,
+      5,
+      5,
+      4
+    ]
+  },
+  {
+    "unitId": "ST2_ChiSquare",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 1379750714,
+    "key": "st2_chi_stat",
+    "q": "A die-style experiment has 4 categories, each with expected count \\(E = 25\\). Observed counts: 25, 25, 30, 20. Compute the chi-square statistic \\(\\chi^2 = \\sum \\frac{(O-E)^2}{E}\\).",
+    "a": "\\(\\chi^2 = 2\\)",
+    "steps": [
+      "Deviations: \\(0, -0, 5, -5\\) \u2014 square each: \\(0, 0, 25, 25\\).",
+      "Sum of squares: \\(50\\); divide each by \\(E=25\\) (same here): \\(\\chi^2 = 2\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\chi^2 = 10\\)",
+        "why": "Square the deviations before dividing \u2014 (O\u2212E)\u00b2/E, not (O\u2212E)/E. Unsquared deviations sum to zero."
+      },
+      {
+        "ans": "\\(\\chi^2 = 50\\)",
+        "why": "Each squared deviation is divided by its expected count E \u2014 that scaling is what makes \u03c7\u00b2 comparable across studies."
+      }
+    ],
+    "vec": [
+      7,
+      1,
+      25,
+      0,
+      5,
+      2
+    ]
+  },
+  {
+    "unitId": "ST2_ChiSquare",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 3770255678,
+    "key": "st2_chi_expected",
+    "q": "In a two-way table, Row 1 total = 60, Column 1 total = 50, grand total = 100. What is the expected count for the Row 1\u2013Column 1 cell (assuming independence)?",
+    "a": "\\(E = \\dfrac{60\\times50}{100} = 30\\)",
+    "steps": [
+      "Expected count = (row total \u00d7 column total) / grand total.",
+      "\\(E = 60\\cdot50/100 = 30\\).",
+      "Independence predicts the cell in proportion to its row and column shares."
+    ],
+    "traps": [
+      {
+        "ans": "\\(E = 30\\)",
+        "why": "Divide by the GRAND total of the table, not 100 \u2014 this is a count, not a percent."
+      },
+      {
+        "ans": "\\(E = 55\\)",
+        "why": "Expected counts multiply the marginal totals and divide by n \u2014 averaging the margins is not the independence model."
+      }
+    ],
+    "vec": [
+      7,
+      2,
+      60,
+      50,
+      100,
+      3000
+    ]
+  },
+  {
+    "unitId": "ST2_ChiSquare",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 3787033297,
+    "key": "st2_chi_expected",
+    "q": "In a two-way table, Row 1 total = 60, Column 1 total = 50, grand total = 100. What is the expected count for the Row 1\u2013Column 1 cell (assuming independence)?",
+    "a": "\\(E = \\dfrac{60\\times50}{100} = 30\\)",
+    "steps": [
+      "Expected count = (row total \u00d7 column total) / grand total.",
+      "\\(E = 60\\cdot50/100 = 30\\).",
+      "Independence predicts the cell in proportion to its row and column shares."
+    ],
+    "traps": [
+      {
+        "ans": "\\(E = 30\\)",
+        "why": "Divide by the GRAND total of the table, not 100 \u2014 this is a count, not a percent."
+      },
+      {
+        "ans": "\\(E = 55\\)",
+        "why": "Expected counts multiply the marginal totals and divide by n \u2014 averaging the margins is not the independence model."
+      }
+    ],
+    "vec": [
+      7,
+      2,
+      60,
+      50,
+      100,
+      3000
+    ]
+  },
+  {
+    "unitId": "ST2_ChiSquare",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 3736700440,
+    "key": "st2_chi_expected",
+    "q": "In a two-way table, Row 1 total = 30, Column 1 total = 25, grand total = 90. What is the expected count for the Row 1\u2013Column 1 cell (assuming independence)?",
+    "a": "\\(E = \\dfrac{30\\times25}{90} = 8.33\\)",
+    "steps": [
+      "Expected count = (row total \u00d7 column total) / grand total.",
+      "\\(E = 30\\cdot25/90 = 8.33\\).",
+      "Independence predicts the cell in proportion to its row and column shares."
+    ],
+    "traps": [
+      {
+        "ans": "\\(E = 8\\)",
+        "why": "Divide by the GRAND total of the table, not 100 \u2014 this is a count, not a percent."
+      },
+      {
+        "ans": "\\(E = 27.5\\)",
+        "why": "Expected counts multiply the marginal totals and divide by n \u2014 averaging the margins is not the independence model."
+      }
+    ],
+    "vec": [
+      7,
+      2,
+      30,
+      25,
+      90,
+      833
+    ]
+  },
+  {
+    "unitId": "ST2_ChiSquare",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 3753478059,
+    "key": "st2_chi_expected",
+    "q": "In a two-way table, Row 1 total = 30, Column 1 total = 50, grand total = 50. What is the expected count for the Row 1\u2013Column 1 cell (assuming independence)?",
+    "a": "\\(E = \\dfrac{30\\times50}{50} = 30\\)",
+    "steps": [
+      "Expected count = (row total \u00d7 column total) / grand total.",
+      "\\(E = 30\\cdot50/50 = 30\\).",
+      "Independence predicts the cell in proportion to its row and column shares."
+    ],
+    "traps": [
+      {
+        "ans": "\\(E = 15\\)",
+        "why": "Divide by the GRAND total of the table, not 100 \u2014 this is a count, not a percent."
+      },
+      {
+        "ans": "\\(E = 40\\)",
+        "why": "Expected counts multiply the marginal totals and divide by n \u2014 averaging the margins is not the independence model."
+      }
+    ],
+    "vec": [
+      7,
+      2,
+      30,
+      50,
+      50,
+      3000
+    ]
+  },
+  {
+    "unitId": "ST2_ChiSquare",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 3837366154,
+    "key": "st2_chi_expected",
+    "q": "In a two-way table, Row 1 total = 40, Column 1 total = 50, grand total = 80. What is the expected count for the Row 1\u2013Column 1 cell (assuming independence)?",
+    "a": "\\(E = \\dfrac{40\\times50}{80} = 25\\)",
+    "steps": [
+      "Expected count = (row total \u00d7 column total) / grand total.",
+      "\\(E = 40\\cdot50/80 = 25\\).",
+      "Independence predicts the cell in proportion to its row and column shares."
+    ],
+    "traps": [
+      {
+        "ans": "\\(E = 20\\)",
+        "why": "Divide by the GRAND total of the table, not 100 \u2014 this is a count, not a percent."
+      },
+      {
+        "ans": "\\(E = 45\\)",
+        "why": "Expected counts multiply the marginal totals and divide by n \u2014 averaging the margins is not the independence model."
+      }
+    ],
+    "vec": [
+      7,
+      2,
+      40,
+      50,
+      80,
+      2500
+    ]
+  },
+  {
+    "unitId": "ST2_ChiSquare",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 3854143773,
+    "key": "st2_chi_expected",
+    "q": "In a two-way table, Row 1 total = 30, Column 1 total = 25, grand total = 70. What is the expected count for the Row 1\u2013Column 1 cell (assuming independence)?",
+    "a": "\\(E = \\dfrac{30\\times25}{70} = 10.71\\)",
+    "steps": [
+      "Expected count = (row total \u00d7 column total) / grand total.",
+      "\\(E = 30\\cdot25/70 = 10.71\\).",
+      "Independence predicts the cell in proportion to its row and column shares."
+    ],
+    "traps": [
+      {
+        "ans": "\\(E = 8\\)",
+        "why": "Divide by the GRAND total of the table, not 100 \u2014 this is a count, not a percent."
+      },
+      {
+        "ans": "\\(E = 27.5\\)",
+        "why": "Expected counts multiply the marginal totals and divide by n \u2014 averaging the margins is not the independence model."
+      }
+    ],
+    "vec": [
+      7,
+      2,
+      30,
+      25,
+      70,
+      1071
+    ]
+  },
+  {
+    "unitId": "ST2_ChiSquare",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 4063661435,
+    "key": "st2_chi_decision",
+    "q": "A chi-square test of independence on a 2\u00d72 table gives \\(\\chi^2 = 9\\). The critical value at \\(\\alpha = 0.05\\) is 8. State the degrees of freedom and the decision.",
+    "a": "\\(df = 1\\); Reject \\(H_0\\)",
+    "steps": [
+      "\\(df = (r-1)(c-1) = (2-1)(2-1) = 1\\).",
+      "Decision rule: reject \\(H_0\\) (independence) when \\(\\chi^2 >\\) critical value.",
+      "\\(9 > 8\\): reject \u2014 evidence of association."
+    ],
+    "traps": [
+      {
+        "ans": "\\(df = 3\\); Reject \\(H_0\\)",
+        "why": "For a TWO-WAY table, df = (r\u22121)(c\u22121). The rc\u22121 formula belongs to one-way goodness-of-fit."
+      },
+      {
+        "ans": "\\(df = 1\\); Fail to reject \\(H_0\\)",
+        "why": "Large \u03c7\u00b2 is evidence AGAINST independence \u2014 reject when the statistic EXCEEDS the critical value."
+      }
+    ],
+    "vec": [
+      7,
+      3,
+      2,
+      2,
+      9,
+      8,
+      1
+    ]
+  },
+  {
+    "unitId": "ST2_ChiSquare",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 4046883816,
+    "key": "st2_chi_decision",
+    "q": "A chi-square test of independence on a 2\u00d73 table gives \\(\\chi^2 = 5\\). The critical value at \\(\\alpha = 0.05\\) is 7. State the degrees of freedom and the decision.",
+    "a": "\\(df = 2\\); Fail to reject \\(H_0\\)",
+    "steps": [
+      "\\(df = (r-1)(c-1) = (2-1)(3-1) = 2\\).",
+      "Decision rule: reject \\(H_0\\) (independence) when \\(\\chi^2 >\\) critical value.",
+      "\\(5 < 7\\): fail to reject \u2014 no significant association shown."
+    ],
+    "traps": [
+      {
+        "ans": "\\(df = 5\\); Fail to reject \\(H_0\\)",
+        "why": "For a TWO-WAY table, df = (r\u22121)(c\u22121). The rc\u22121 formula belongs to one-way goodness-of-fit."
+      },
+      {
+        "ans": "\\(df = 2\\); Reject \\(H_0\\)",
+        "why": "Large \u03c7\u00b2 is evidence AGAINST independence \u2014 reject when the statistic EXCEEDS the critical value."
+      }
+    ],
+    "vec": [
+      7,
+      3,
+      2,
+      3,
+      5,
+      7,
+      0
+    ]
+  },
+  {
+    "unitId": "ST2_ChiSquare",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 4097216673,
+    "key": "st2_chi_decision",
+    "q": "A chi-square test of independence on a 4\u00d72 table gives \\(\\chi^2 = 11\\). The critical value at \\(\\alpha = 0.05\\) is 13. State the degrees of freedom and the decision.",
+    "a": "\\(df = 3\\); Fail to reject \\(H_0\\)",
+    "steps": [
+      "\\(df = (r-1)(c-1) = (4-1)(2-1) = 3\\).",
+      "Decision rule: reject \\(H_0\\) (independence) when \\(\\chi^2 >\\) critical value.",
+      "\\(11 < 13\\): fail to reject \u2014 no significant association shown."
+    ],
+    "traps": [
+      {
+        "ans": "\\(df = 7\\); Fail to reject \\(H_0\\)",
+        "why": "For a TWO-WAY table, df = (r\u22121)(c\u22121). The rc\u22121 formula belongs to one-way goodness-of-fit."
+      },
+      {
+        "ans": "\\(df = 3\\); Reject \\(H_0\\)",
+        "why": "Large \u03c7\u00b2 is evidence AGAINST independence \u2014 reject when the statistic EXCEEDS the critical value."
+      }
+    ],
+    "vec": [
+      7,
+      3,
+      4,
+      2,
+      11,
+      13,
+      0
+    ]
+  },
+  {
+    "unitId": "ST2_ChiSquare",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 4080439054,
+    "key": "st2_chi_decision",
+    "q": "A chi-square test of independence on a 3\u00d73 table gives \\(\\chi^2 = 7\\). The critical value at \\(\\alpha = 0.05\\) is 6. State the degrees of freedom and the decision.",
+    "a": "\\(df = 4\\); Reject \\(H_0\\)",
+    "steps": [
+      "\\(df = (r-1)(c-1) = (3-1)(3-1) = 4\\).",
+      "Decision rule: reject \\(H_0\\) (independence) when \\(\\chi^2 >\\) critical value.",
+      "\\(7 > 6\\): reject \u2014 evidence of association."
+    ],
+    "traps": [
+      {
+        "ans": "\\(df = 8\\); Reject \\(H_0\\)",
+        "why": "For a TWO-WAY table, df = (r\u22121)(c\u22121). The rc\u22121 formula belongs to one-way goodness-of-fit."
+      },
+      {
+        "ans": "\\(df = 4\\); Fail to reject \\(H_0\\)",
+        "why": "Large \u03c7\u00b2 is evidence AGAINST independence \u2014 reject when the statistic EXCEEDS the critical value."
+      }
+    ],
+    "vec": [
+      7,
+      3,
+      3,
+      3,
+      7,
+      6,
+      1
+    ]
+  },
+  {
+    "unitId": "ST2_ChiSquare",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 4130771911,
+    "key": "st2_chi_decision",
+    "q": "A chi-square test of independence on a 4\u00d72 table gives \\(\\chi^2 = 8\\). The critical value at \\(\\alpha = 0.05\\) is 7. State the degrees of freedom and the decision.",
+    "a": "\\(df = 3\\); Reject \\(H_0\\)",
+    "steps": [
+      "\\(df = (r-1)(c-1) = (4-1)(2-1) = 3\\).",
+      "Decision rule: reject \\(H_0\\) (independence) when \\(\\chi^2 >\\) critical value.",
+      "\\(8 > 7\\): reject \u2014 evidence of association."
+    ],
+    "traps": [
+      {
+        "ans": "\\(df = 7\\); Reject \\(H_0\\)",
+        "why": "For a TWO-WAY table, df = (r\u22121)(c\u22121). The rc\u22121 formula belongs to one-way goodness-of-fit."
+      },
+      {
+        "ans": "\\(df = 3\\); Fail to reject \\(H_0\\)",
+        "why": "Large \u03c7\u00b2 is evidence AGAINST independence \u2014 reject when the statistic EXCEEDS the critical value."
+      }
+    ],
+    "vec": [
+      7,
+      3,
+      4,
+      2,
+      8,
+      7,
+      1
+    ]
+  },
+  {
+    "unitId": "ST2_ChiSquare",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 4113994292,
+    "key": "st2_chi_decision",
+    "q": "A chi-square test of independence on a 4\u00d72 table gives \\(\\chi^2 = 11\\). The critical value at \\(\\alpha = 0.05\\) is 13. State the degrees of freedom and the decision.",
+    "a": "\\(df = 3\\); Fail to reject \\(H_0\\)",
+    "steps": [
+      "\\(df = (r-1)(c-1) = (4-1)(2-1) = 3\\).",
+      "Decision rule: reject \\(H_0\\) (independence) when \\(\\chi^2 >\\) critical value.",
+      "\\(11 < 13\\): fail to reject \u2014 no significant association shown."
+    ],
+    "traps": [
+      {
+        "ans": "\\(df = 7\\); Fail to reject \\(H_0\\)",
+        "why": "For a TWO-WAY table, df = (r\u22121)(c\u22121). The rc\u22121 formula belongs to one-way goodness-of-fit."
+      },
+      {
+        "ans": "\\(df = 3\\); Reject \\(H_0\\)",
+        "why": "Large \u03c7\u00b2 is evidence AGAINST independence \u2014 reject when the statistic EXCEEDS the critical value."
+      }
+    ],
+    "vec": [
+      7,
+      3,
+      4,
+      2,
+      11,
+      13,
+      0
+    ]
+  },
+  {
+    "unitId": "ST2_ANOVA",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 3047434189,
+    "key": "st2_anova_df",
+    "q": "An ANOVA compares \\(k = 3\\) groups with \\(6\\) observations each (total \\(N = 18\\)). Find the degrees of freedom (between, within).",
+    "a": "\\(df_{between} = 2\\), \\(df_{within} = 15\\)",
+    "steps": [
+      "Between groups: \\(k - 1 = 2\\).",
+      "Within groups: \\(N - k = 18 - 3 = 15\\).",
+      "(They sum to \\(N - 1 = 17\\), the total df.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(df_{between} = 3\\), \\(df_{within} = 16\\)",
+        "why": "Each df loses one for an estimated mean: k\u22121 between, N\u2212k within."
+      },
+      {
+        "ans": "\\(df_{between} = 2\\), \\(df_{within} = 17\\)",
+        "why": "Within-groups df subtracts ALL k group means: N\u2212k, not N\u22121."
+      }
+    ],
+    "vec": [
+      8,
+      1,
+      3,
+      6,
+      18
+    ]
+  },
+  {
+    "unitId": "ST2_ANOVA",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 3030656570,
+    "key": "st2_anova_df",
+    "q": "An ANOVA compares \\(k = 3\\) groups with \\(10\\) observations each (total \\(N = 30\\)). Find the degrees of freedom (between, within).",
+    "a": "\\(df_{between} = 2\\), \\(df_{within} = 27\\)",
+    "steps": [
+      "Between groups: \\(k - 1 = 2\\).",
+      "Within groups: \\(N - k = 30 - 3 = 27\\).",
+      "(They sum to \\(N - 1 = 29\\), the total df.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(df_{between} = 3\\), \\(df_{within} = 28\\)",
+        "why": "Each df loses one for an estimated mean: k\u22121 between, N\u2212k within."
+      },
+      {
+        "ans": "\\(df_{between} = 2\\), \\(df_{within} = 29\\)",
+        "why": "Within-groups df subtracts ALL k group means: N\u2212k, not N\u22121."
+      }
+    ],
+    "vec": [
+      8,
+      1,
+      3,
+      10,
+      30
+    ]
+  },
+  {
+    "unitId": "ST2_ANOVA",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 3013878951,
+    "key": "st2_anova_df",
+    "q": "An ANOVA compares \\(k = 5\\) groups with \\(8\\) observations each (total \\(N = 40\\)). Find the degrees of freedom (between, within).",
+    "a": "\\(df_{between} = 4\\), \\(df_{within} = 35\\)",
+    "steps": [
+      "Between groups: \\(k - 1 = 4\\).",
+      "Within groups: \\(N - k = 40 - 5 = 35\\).",
+      "(They sum to \\(N - 1 = 39\\), the total df.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(df_{between} = 5\\), \\(df_{within} = 36\\)",
+        "why": "Each df loses one for an estimated mean: k\u22121 between, N\u2212k within."
+      },
+      {
+        "ans": "\\(df_{between} = 4\\), \\(df_{within} = 39\\)",
+        "why": "Within-groups df subtracts ALL k group means: N\u2212k, not N\u22121."
+      }
+    ],
+    "vec": [
+      8,
+      1,
+      5,
+      8,
+      40
+    ]
+  },
+  {
+    "unitId": "ST2_ANOVA",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 2997101332,
+    "key": "st2_anova_df",
+    "q": "An ANOVA compares \\(k = 5\\) groups with \\(10\\) observations each (total \\(N = 50\\)). Find the degrees of freedom (between, within).",
+    "a": "\\(df_{between} = 4\\), \\(df_{within} = 45\\)",
+    "steps": [
+      "Between groups: \\(k - 1 = 4\\).",
+      "Within groups: \\(N - k = 50 - 5 = 45\\).",
+      "(They sum to \\(N - 1 = 49\\), the total df.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(df_{between} = 5\\), \\(df_{within} = 46\\)",
+        "why": "Each df loses one for an estimated mean: k\u22121 between, N\u2212k within."
+      },
+      {
+        "ans": "\\(df_{between} = 4\\), \\(df_{within} = 49\\)",
+        "why": "Within-groups df subtracts ALL k group means: N\u2212k, not N\u22121."
+      }
+    ],
+    "vec": [
+      8,
+      1,
+      5,
+      10,
+      50
+    ]
+  },
+  {
+    "unitId": "ST2_ANOVA",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 2980323713,
+    "key": "st2_anova_df",
+    "q": "An ANOVA compares \\(k = 4\\) groups with \\(6\\) observations each (total \\(N = 24\\)). Find the degrees of freedom (between, within).",
+    "a": "\\(df_{between} = 3\\), \\(df_{within} = 20\\)",
+    "steps": [
+      "Between groups: \\(k - 1 = 3\\).",
+      "Within groups: \\(N - k = 24 - 4 = 20\\).",
+      "(They sum to \\(N - 1 = 23\\), the total df.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(df_{between} = 4\\), \\(df_{within} = 21\\)",
+        "why": "Each df loses one for an estimated mean: k\u22121 between, N\u2212k within."
+      },
+      {
+        "ans": "\\(df_{between} = 3\\), \\(df_{within} = 23\\)",
+        "why": "Within-groups df subtracts ALL k group means: N\u2212k, not N\u22121."
+      }
+    ],
+    "vec": [
+      8,
+      1,
+      4,
+      6,
+      24
+    ]
+  },
+  {
+    "unitId": "ST2_ANOVA",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 2963546094,
+    "key": "st2_anova_df",
+    "q": "An ANOVA compares \\(k = 4\\) groups with \\(6\\) observations each (total \\(N = 24\\)). Find the degrees of freedom (between, within).",
+    "a": "\\(df_{between} = 3\\), \\(df_{within} = 20\\)",
+    "steps": [
+      "Between groups: \\(k - 1 = 3\\).",
+      "Within groups: \\(N - k = 24 - 4 = 20\\).",
+      "(They sum to \\(N - 1 = 23\\), the total df.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(df_{between} = 4\\), \\(df_{within} = 21\\)",
+        "why": "Each df loses one for an estimated mean: k\u22121 between, N\u2212k within."
+      },
+      {
+        "ans": "\\(df_{between} = 3\\), \\(df_{within} = 23\\)",
+        "why": "Within-groups df subtracts ALL k group means: N\u2212k, not N\u22121."
+      }
+    ],
+    "vec": [
+      8,
+      1,
+      4,
+      6,
+      24
+    ]
+  },
+  {
+    "unitId": "ST2_ANOVA",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 1151728010,
+    "key": "st2_anova_f",
+    "q": "An ANOVA gives \\(SS_{between} = 36\\) with \\(df_{between} = 3\\), and \\(SS_{within} = 48\\) with \\(df_{within} = 12\\). Compute the F statistic.",
+    "a": "\\(F = 3\\)",
+    "steps": [
+      "Mean squares: \\(MS_B = 36/3 = 12\\); \\(MS_W = 48/12 = 4\\).",
+      "\\(F = MS_B / MS_W = 12/4 = 3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(F = 0.75\\)",
+        "why": "F compares MEAN squares (SS \u00f7 df), not raw sums of squares \u2014 the df scaling is the point."
+      },
+      {
+        "ans": "\\(F = 0.333\\)",
+        "why": "Between-groups variance goes on TOP: F = MS_B / MS_W. Large F = groups differ more than noise explains."
+      }
+    ],
+    "vec": [
+      8,
+      2,
+      36,
+      3,
+      48,
+      12,
+      3
+    ]
+  },
+  {
+    "unitId": "ST2_ANOVA",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 1168505629,
+    "key": "st2_anova_f",
+    "q": "An ANOVA gives \\(SS_{between} = 36\\) with \\(df_{between} = 3\\), and \\(SS_{within} = 48\\) with \\(df_{within} = 12\\). Compute the F statistic.",
+    "a": "\\(F = 3\\)",
+    "steps": [
+      "Mean squares: \\(MS_B = 36/3 = 12\\); \\(MS_W = 48/12 = 4\\).",
+      "\\(F = MS_B / MS_W = 12/4 = 3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(F = 0.75\\)",
+        "why": "F compares MEAN squares (SS \u00f7 df), not raw sums of squares \u2014 the df scaling is the point."
+      },
+      {
+        "ans": "\\(F = 0.333\\)",
+        "why": "Between-groups variance goes on TOP: F = MS_B / MS_W. Large F = groups differ more than noise explains."
+      }
+    ],
+    "vec": [
+      8,
+      2,
+      36,
+      3,
+      48,
+      12,
+      3
+    ]
+  },
+  {
+    "unitId": "ST2_ANOVA",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 1118172772,
+    "key": "st2_anova_f",
+    "q": "An ANOVA gives \\(SS_{between} = 72\\) with \\(df_{between} = 3\\), and \\(SS_{within} = 48\\) with \\(df_{within} = 12\\). Compute the F statistic.",
+    "a": "\\(F = 6\\)",
+    "steps": [
+      "Mean squares: \\(MS_B = 72/3 = 24\\); \\(MS_W = 48/12 = 4\\).",
+      "\\(F = MS_B / MS_W = 24/4 = 6\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(F = 1.5\\)",
+        "why": "F compares MEAN squares (SS \u00f7 df), not raw sums of squares \u2014 the df scaling is the point."
+      },
+      {
+        "ans": "\\(F = 0.167\\)",
+        "why": "Between-groups variance goes on TOP: F = MS_B / MS_W. Large F = groups differ more than noise explains."
+      }
+    ],
+    "vec": [
+      8,
+      2,
+      72,
+      3,
+      48,
+      12,
+      6
+    ]
+  },
+  {
+    "unitId": "ST2_ANOVA",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 1134950391,
+    "key": "st2_anova_f",
+    "q": "An ANOVA gives \\(SS_{between} = 72\\) with \\(df_{between} = 3\\), and \\(SS_{within} = 48\\) with \\(df_{within} = 12\\). Compute the F statistic.",
+    "a": "\\(F = 6\\)",
+    "steps": [
+      "Mean squares: \\(MS_B = 72/3 = 24\\); \\(MS_W = 48/12 = 4\\).",
+      "\\(F = MS_B / MS_W = 24/4 = 6\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(F = 1.5\\)",
+        "why": "F compares MEAN squares (SS \u00f7 df), not raw sums of squares \u2014 the df scaling is the point."
+      },
+      {
+        "ans": "\\(F = 0.167\\)",
+        "why": "Between-groups variance goes on TOP: F = MS_B / MS_W. Large F = groups differ more than noise explains."
+      }
+    ],
+    "vec": [
+      8,
+      2,
+      72,
+      3,
+      48,
+      12,
+      6
+    ]
+  },
+  {
+    "unitId": "ST2_ANOVA",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 1084617534,
+    "key": "st2_anova_f",
+    "q": "An ANOVA gives \\(SS_{between} = 32\\) with \\(df_{between} = 2\\), and \\(SS_{within} = 80\\) with \\(df_{within} = 20\\). Compute the F statistic.",
+    "a": "\\(F = 4\\)",
+    "steps": [
+      "Mean squares: \\(MS_B = 32/2 = 16\\); \\(MS_W = 80/20 = 4\\).",
+      "\\(F = MS_B / MS_W = 16/4 = 4\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(F = 0.4\\)",
+        "why": "F compares MEAN squares (SS \u00f7 df), not raw sums of squares \u2014 the df scaling is the point."
+      },
+      {
+        "ans": "\\(F = 0.25\\)",
+        "why": "Between-groups variance goes on TOP: F = MS_B / MS_W. Large F = groups differ more than noise explains."
+      }
+    ],
+    "vec": [
+      8,
+      2,
+      32,
+      2,
+      80,
+      20,
+      4
+    ]
+  },
+  {
+    "unitId": "ST2_ANOVA",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 1101395153,
+    "key": "st2_anova_f",
+    "q": "An ANOVA gives \\(SS_{between} = 12\\) with \\(df_{between} = 2\\), and \\(SS_{within} = 24\\) with \\(df_{within} = 12\\). Compute the F statistic.",
+    "a": "\\(F = 3\\)",
+    "steps": [
+      "Mean squares: \\(MS_B = 12/2 = 6\\); \\(MS_W = 24/12 = 2\\).",
+      "\\(F = MS_B / MS_W = 6/2 = 3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(F = 0.5\\)",
+        "why": "F compares MEAN squares (SS \u00f7 df), not raw sums of squares \u2014 the df scaling is the point."
+      },
+      {
+        "ans": "\\(F = 0.333\\)",
+        "why": "Between-groups variance goes on TOP: F = MS_B / MS_W. Large F = groups differ more than noise explains."
+      }
+    ],
+    "vec": [
+      8,
+      2,
+      12,
+      2,
+      24,
+      12,
+      3
+    ]
+  },
+  {
+    "unitId": "ST2_ANOVA",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 1445133767,
+    "key": "st2_anova_decision",
+    "q": "A one-way ANOVA yields \\(F = 2\\); the critical value at \\(\\alpha = 0.05\\) is 4. What is the correct conclusion?",
+    "a": "Fail to reject H\u2080: no significant difference among the means",
+    "steps": [
+      "\\(H_0\\): all group means are equal. Reject when \\(F >\\) critical value.",
+      "\\(2 < 4\\): fail to reject.",
+      "The variation between groups is within what chance would produce."
+    ],
+    "traps": [
+      {
+        "ans": "Reject H\u2080: at least one group mean differs",
+        "why": "Reject only when F exceeds the critical value."
+      },
+      {
+        "ans": "Accept H\u2080: the means are proven equal",
+        "why": "\u201cFail to reject\u201d is not proof of equality \u2014 absence of evidence, not evidence of absence."
+      }
+    ],
+    "vec": [
+      8,
+      3,
+      2,
+      4,
+      0
+    ]
+  },
+  {
+    "unitId": "ST2_ANOVA",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 1428356148,
+    "key": "st2_anova_decision",
+    "q": "A one-way ANOVA yields \\(F = 5\\); the critical value at \\(\\alpha = 0.05\\) is 4. What is the correct conclusion?",
+    "a": "Reject H\u2080: at least one group mean differs",
+    "steps": [
+      "\\(H_0\\): all group means are equal. Reject when \\(F >\\) critical value.",
+      "\\(5 > 4\\): reject.",
+      "ANOVA says SOME mean differs \u2014 it does not say which (that needs follow-up comparisons)."
+    ],
+    "traps": [
+      {
+        "ans": "Reject H\u2080: all group means differ from each other",
+        "why": "A significant F says AT LEAST ONE mean differs \u2014 not that every pair differs."
+      },
+      {
+        "ans": "Fail to reject H\u2080: no significant difference among the means",
+        "why": "F exceeds the critical value \u2014 that IS the rejection region."
+      }
+    ],
+    "vec": [
+      8,
+      3,
+      5,
+      4,
+      1
+    ]
+  },
+  {
+    "unitId": "ST2_ANOVA",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 1478689005,
+    "key": "st2_anova_decision",
+    "q": "A one-way ANOVA yields \\(F = 2\\); the critical value at \\(\\alpha = 0.05\\) is 3. What is the correct conclusion?",
+    "a": "Fail to reject H\u2080: no significant difference among the means",
+    "steps": [
+      "\\(H_0\\): all group means are equal. Reject when \\(F >\\) critical value.",
+      "\\(2 < 3\\): fail to reject.",
+      "The variation between groups is within what chance would produce."
+    ],
+    "traps": [
+      {
+        "ans": "Reject H\u2080: at least one group mean differs",
+        "why": "Reject only when F exceeds the critical value."
+      },
+      {
+        "ans": "Accept H\u2080: the means are proven equal",
+        "why": "\u201cFail to reject\u201d is not proof of equality \u2014 absence of evidence, not evidence of absence."
+      }
+    ],
+    "vec": [
+      8,
+      3,
+      2,
+      3,
+      0
+    ]
+  },
+  {
+    "unitId": "ST2_ANOVA",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 1461911386,
+    "key": "st2_anova_decision",
+    "q": "A one-way ANOVA yields \\(F = 2\\); the critical value at \\(\\alpha = 0.05\\) is 4. What is the correct conclusion?",
+    "a": "Fail to reject H\u2080: no significant difference among the means",
+    "steps": [
+      "\\(H_0\\): all group means are equal. Reject when \\(F >\\) critical value.",
+      "\\(2 < 4\\): fail to reject.",
+      "The variation between groups is within what chance would produce."
+    ],
+    "traps": [
+      {
+        "ans": "Reject H\u2080: at least one group mean differs",
+        "why": "Reject only when F exceeds the critical value."
+      },
+      {
+        "ans": "Accept H\u2080: the means are proven equal",
+        "why": "\u201cFail to reject\u201d is not proof of equality \u2014 absence of evidence, not evidence of absence."
+      }
+    ],
+    "vec": [
+      8,
+      3,
+      2,
+      4,
+      0
+    ]
+  },
+  {
+    "unitId": "ST2_ANOVA",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 1378023291,
+    "key": "st2_anova_decision",
+    "q": "A one-way ANOVA yields \\(F = 5\\); the critical value at \\(\\alpha = 0.05\\) is 3. What is the correct conclusion?",
+    "a": "Reject H\u2080: at least one group mean differs",
+    "steps": [
+      "\\(H_0\\): all group means are equal. Reject when \\(F >\\) critical value.",
+      "\\(5 > 3\\): reject.",
+      "ANOVA says SOME mean differs \u2014 it does not say which (that needs follow-up comparisons)."
+    ],
+    "traps": [
+      {
+        "ans": "Reject H\u2080: all group means differ from each other",
+        "why": "A significant F says AT LEAST ONE mean differs \u2014 not that every pair differs."
+      },
+      {
+        "ans": "Fail to reject H\u2080: no significant difference among the means",
+        "why": "F exceeds the critical value \u2014 that IS the rejection region."
+      }
+    ],
+    "vec": [
+      8,
+      3,
+      5,
+      3,
+      1
+    ]
+  },
+  {
+    "unitId": "ST2_ANOVA",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 1361245672,
+    "key": "st2_anova_decision",
+    "q": "A one-way ANOVA yields \\(F = 7\\); the critical value at \\(\\alpha = 0.05\\) is 4. What is the correct conclusion?",
+    "a": "Reject H\u2080: at least one group mean differs",
+    "steps": [
+      "\\(H_0\\): all group means are equal. Reject when \\(F >\\) critical value.",
+      "\\(7 > 4\\): reject.",
+      "ANOVA says SOME mean differs \u2014 it does not say which (that needs follow-up comparisons)."
+    ],
+    "traps": [
+      {
+        "ans": "Reject H\u2080: all group means differ from each other",
+        "why": "A significant F says AT LEAST ONE mean differs \u2014 not that every pair differs."
+      },
+      {
+        "ans": "Fail to reject H\u2080: no significant difference among the means",
+        "why": "F exceeds the critical value \u2014 that IS the rejection region."
+      }
+    ],
+    "vec": [
+      8,
+      3,
+      7,
+      4,
+      1
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 1682972649,
+    "key": "st2_reg_predict",
+    "q": "A regression line is \\(\\hat{y} = 20 + 3x\\). Predict \\(y\\) when \\(x = 4\\).",
+    "a": "\\(\\hat{y} = 32\\)",
+    "steps": [
+      "Substitute: \\(\\hat{y} = 20 + 3(4) = 32\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\hat{y} = 92\\)",
+        "why": "Only the slope multiplies x; the intercept 20 is added afterward."
+      },
+      {
+        "ans": "\\(\\hat{y} = 83\\)",
+        "why": "Intercept and slope swapped \u2014 the coefficient ON x is 3."
+      }
+    ],
+    "vec": [
+      9,
+      1,
+      20,
+      3,
+      4
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 1666195030,
+    "key": "st2_reg_predict",
+    "q": "A regression line is \\(\\hat{y} = 20 + 3x\\). Predict \\(y\\) when \\(x = 4\\).",
+    "a": "\\(\\hat{y} = 32\\)",
+    "steps": [
+      "Substitute: \\(\\hat{y} = 20 + 3(4) = 32\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\hat{y} = 92\\)",
+        "why": "Only the slope multiplies x; the intercept 20 is added afterward."
+      },
+      {
+        "ans": "\\(\\hat{y} = 83\\)",
+        "why": "Intercept and slope swapped \u2014 the coefficient ON x is 3."
+      }
+    ],
+    "vec": [
+      9,
+      1,
+      20,
+      3,
+      4
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 1649417411,
+    "key": "st2_reg_predict",
+    "q": "A regression line is \\(\\hat{y} = 20 + 3x\\). Predict \\(y\\) when \\(x = 4\\).",
+    "a": "\\(\\hat{y} = 32\\)",
+    "steps": [
+      "Substitute: \\(\\hat{y} = 20 + 3(4) = 32\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\hat{y} = 92\\)",
+        "why": "Only the slope multiplies x; the intercept 20 is added afterward."
+      },
+      {
+        "ans": "\\(\\hat{y} = 83\\)",
+        "why": "Intercept and slope swapped \u2014 the coefficient ON x is 3."
+      }
+    ],
+    "vec": [
+      9,
+      1,
+      20,
+      3,
+      4
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 1632639792,
+    "key": "st2_reg_predict",
+    "q": "A regression line is \\(\\hat{y} = 10 + 3x\\). Predict \\(y\\) when \\(x = 6\\).",
+    "a": "\\(\\hat{y} = 28\\)",
+    "steps": [
+      "Substitute: \\(\\hat{y} = 10 + 3(6) = 28\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\hat{y} = 78\\)",
+        "why": "Only the slope multiplies x; the intercept 10 is added afterward."
+      },
+      {
+        "ans": "\\(\\hat{y} = 63\\)",
+        "why": "Intercept and slope swapped \u2014 the coefficient ON x is 3."
+      }
+    ],
+    "vec": [
+      9,
+      1,
+      10,
+      3,
+      6
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 1750083125,
+    "key": "st2_reg_predict",
+    "q": "A regression line is \\(\\hat{y} = 50 + 5x\\). Predict \\(y\\) when \\(x = 6\\).",
+    "a": "\\(\\hat{y} = 80\\)",
+    "steps": [
+      "Substitute: \\(\\hat{y} = 50 + 5(6) = 80\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\hat{y} = 330\\)",
+        "why": "Only the slope multiplies x; the intercept 50 is added afterward."
+      },
+      {
+        "ans": "\\(\\hat{y} = 305\\)",
+        "why": "Intercept and slope swapped \u2014 the coefficient ON x is 5."
+      }
+    ],
+    "vec": [
+      9,
+      1,
+      50,
+      5,
+      6
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 1733305506,
+    "key": "st2_reg_predict",
+    "q": "A regression line is \\(\\hat{y} = 10 + 3x\\). Predict \\(y\\) when \\(x = 4\\).",
+    "a": "\\(\\hat{y} = 22\\)",
+    "steps": [
+      "Substitute: \\(\\hat{y} = 10 + 3(4) = 22\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\hat{y} = 52\\)",
+        "why": "Only the slope multiplies x; the intercept 10 is added afterward."
+      },
+      {
+        "ans": "\\(\\hat{y} = 43\\)",
+        "why": "Intercept and slope swapped \u2014 the coefficient ON x is 3."
+      }
+    ],
+    "vec": [
+      9,
+      1,
+      10,
+      3,
+      4
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 4123810470,
+    "key": "st2_reg_residual",
+    "q": "With regression line \\(\\hat{y} = 10 + 4x\\), a data point is \\((5, 28)\\). Find the residual.",
+    "a": "\\(-2\\)",
+    "steps": [
+      "Predicted: \\(\\hat{y} = 10 + 4(5) = 30\\).",
+      "Residual = observed \u2212 predicted = \\(28 - 30 = -2\\).",
+      "Negative: the point sits BELOW the line."
+    ],
+    "traps": [
+      {
+        "ans": "\\(2\\)",
+        "why": "Residual = observed MINUS predicted (y \u2212 \u0177). Reversing the order flips the sign and the above/below interpretation."
+      },
+      {
+        "ans": "\\(28\\)",
+        "why": "The residual is the GAP between the point and the line, not the observed value itself."
+      }
+    ],
+    "vec": [
+      9,
+      2,
+      10,
+      4,
+      5,
+      28,
+      -2
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 4140588089,
+    "key": "st2_reg_residual",
+    "q": "With regression line \\(\\hat{y} = 10 + 2x\\), a data point is \\((5, 23)\\). Find the residual.",
+    "a": "\\(3\\)",
+    "steps": [
+      "Predicted: \\(\\hat{y} = 10 + 2(5) = 20\\).",
+      "Residual = observed \u2212 predicted = \\(23 - 20 = 3\\).",
+      "Positive: the point sits ABOVE the line."
+    ],
+    "traps": [
+      {
+        "ans": "\\(-3\\)",
+        "why": "Residual = observed MINUS predicted (y \u2212 \u0177). Reversing the order flips the sign and the above/below interpretation."
+      },
+      {
+        "ans": "\\(23\\)",
+        "why": "The residual is the GAP between the point and the line, not the observed value itself."
+      }
+    ],
+    "vec": [
+      9,
+      2,
+      10,
+      2,
+      5,
+      23,
+      3
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 4090255232,
+    "key": "st2_reg_residual",
+    "q": "With regression line \\(\\hat{y} = 5 + 4x\\), a data point is \\((3, 22)\\). Find the residual.",
+    "a": "\\(5\\)",
+    "steps": [
+      "Predicted: \\(\\hat{y} = 5 + 4(3) = 17\\).",
+      "Residual = observed \u2212 predicted = \\(22 - 17 = 5\\).",
+      "Positive: the point sits ABOVE the line."
+    ],
+    "traps": [
+      {
+        "ans": "\\(-5\\)",
+        "why": "Residual = observed MINUS predicted (y \u2212 \u0177). Reversing the order flips the sign and the above/below interpretation."
+      },
+      {
+        "ans": "\\(22\\)",
+        "why": "The residual is the GAP between the point and the line, not the observed value itself."
+      }
+    ],
+    "vec": [
+      9,
+      2,
+      5,
+      4,
+      3,
+      22,
+      5
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 4107032851,
+    "key": "st2_reg_residual",
+    "q": "With regression line \\(\\hat{y} = 10 + 2x\\), a data point is \\((5, 16)\\). Find the residual.",
+    "a": "\\(-4\\)",
+    "steps": [
+      "Predicted: \\(\\hat{y} = 10 + 2(5) = 20\\).",
+      "Residual = observed \u2212 predicted = \\(16 - 20 = -4\\).",
+      "Negative: the point sits BELOW the line."
+    ],
+    "traps": [
+      {
+        "ans": "\\(4\\)",
+        "why": "Residual = observed MINUS predicted (y \u2212 \u0177). Reversing the order flips the sign and the above/below interpretation."
+      },
+      {
+        "ans": "\\(16\\)",
+        "why": "The residual is the GAP between the point and the line, not the observed value itself."
+      }
+    ],
+    "vec": [
+      9,
+      2,
+      10,
+      2,
+      5,
+      16,
+      -4
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 4190920946,
+    "key": "st2_reg_residual",
+    "q": "With regression line \\(\\hat{y} = 10 + 2x\\), a data point is \\((3, 19)\\). Find the residual.",
+    "a": "\\(3\\)",
+    "steps": [
+      "Predicted: \\(\\hat{y} = 10 + 2(3) = 16\\).",
+      "Residual = observed \u2212 predicted = \\(19 - 16 = 3\\).",
+      "Positive: the point sits ABOVE the line."
+    ],
+    "traps": [
+      {
+        "ans": "\\(-3\\)",
+        "why": "Residual = observed MINUS predicted (y \u2212 \u0177). Reversing the order flips the sign and the above/below interpretation."
+      },
+      {
+        "ans": "\\(19\\)",
+        "why": "The residual is the GAP between the point and the line, not the observed value itself."
+      }
+    ],
+    "vec": [
+      9,
+      2,
+      10,
+      2,
+      3,
+      19,
+      3
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 4207698565,
+    "key": "st2_reg_residual",
+    "q": "With regression line \\(\\hat{y} = 10 + 2x\\), a data point is \\((3, 14)\\). Find the residual.",
+    "a": "\\(-2\\)",
+    "steps": [
+      "Predicted: \\(\\hat{y} = 10 + 2(3) = 16\\).",
+      "Residual = observed \u2212 predicted = \\(14 - 16 = -2\\).",
+      "Negative: the point sits BELOW the line."
+    ],
+    "traps": [
+      {
+        "ans": "\\(2\\)",
+        "why": "Residual = observed MINUS predicted (y \u2212 \u0177). Reversing the order flips the sign and the above/below interpretation."
+      },
+      {
+        "ans": "\\(14\\)",
+        "why": "The residual is the GAP between the point and the line, not the observed value itself."
+      }
+    ],
+    "vec": [
+      9,
+      2,
+      10,
+      2,
+      3,
+      14,
+      -2
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 122248931,
+    "key": "st2_reg_slope_meaning",
+    "q": "In the model \\(\\hat{y} = 40 + 8x\\) (y = exam score, x = hours studied), what does the 8 mean?",
+    "a": "Each additional hour of study is associated with about 8 more points, on average",
+    "steps": [
+      "The slope is the predicted change in \\(y\\) per one-unit increase in \\(x\\).",
+      "Here: +8 points per extra hour \u2014 an average association, not a guarantee for any single student."
+    ],
+    "traps": [
+      {
+        "ans": "Studying 8 hours guarantees passing",
+        "why": "Regression describes an average trend with scatter \u2014 it cannot guarantee an individual outcome."
+      },
+      {
+        "ans": "A student who studies zero hours scores 8",
+        "why": "The zero-hours prediction is the INTERCEPT (40 here); the 8 is a rate of change."
+      }
+    ],
+    "vec": [
+      9,
+      3,
+      8
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 105471312,
+    "key": "st2_reg_slope_meaning",
+    "q": "In the model \\(\\hat{y} = 40 + 5x\\) (y = exam score, x = hours studied), what does the 5 mean?",
+    "a": "Each additional hour of study is associated with about 5 more points, on average",
+    "steps": [
+      "The slope is the predicted change in \\(y\\) per one-unit increase in \\(x\\).",
+      "Here: +5 points per extra hour \u2014 an average association, not a guarantee for any single student."
+    ],
+    "traps": [
+      {
+        "ans": "Studying 5 hours guarantees passing",
+        "why": "Regression describes an average trend with scatter \u2014 it cannot guarantee an individual outcome."
+      },
+      {
+        "ans": "A student who studies zero hours scores 5",
+        "why": "The zero-hours prediction is the INTERCEPT (40 here); the 5 is a rate of change."
+      }
+    ],
+    "vec": [
+      9,
+      3,
+      5
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 155804169,
+    "key": "st2_reg_slope_meaning",
+    "q": "In the model \\(\\hat{y} = 40 + 5x\\) (y = exam score, x = hours studied), what does the 5 mean?",
+    "a": "Each additional hour of study is associated with about 5 more points, on average",
+    "steps": [
+      "The slope is the predicted change in \\(y\\) per one-unit increase in \\(x\\).",
+      "Here: +5 points per extra hour \u2014 an average association, not a guarantee for any single student."
+    ],
+    "traps": [
+      {
+        "ans": "Studying 5 hours guarantees passing",
+        "why": "Regression describes an average trend with scatter \u2014 it cannot guarantee an individual outcome."
+      },
+      {
+        "ans": "A student who studies zero hours scores 5",
+        "why": "The zero-hours prediction is the INTERCEPT (40 here); the 5 is a rate of change."
+      }
+    ],
+    "vec": [
+      9,
+      3,
+      5
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 139026550,
+    "key": "st2_reg_slope_meaning",
+    "q": "In the model \\(\\hat{y} = 40 + 8x\\) (y = exam score, x = hours studied), what does the 8 mean?",
+    "a": "Each additional hour of study is associated with about 8 more points, on average",
+    "steps": [
+      "The slope is the predicted change in \\(y\\) per one-unit increase in \\(x\\).",
+      "Here: +8 points per extra hour \u2014 an average association, not a guarantee for any single student."
+    ],
+    "traps": [
+      {
+        "ans": "Studying 8 hours guarantees passing",
+        "why": "Regression describes an average trend with scatter \u2014 it cannot guarantee an individual outcome."
+      },
+      {
+        "ans": "A student who studies zero hours scores 8",
+        "why": "The zero-hours prediction is the INTERCEPT (40 here); the 8 is a rate of change."
+      }
+    ],
+    "vec": [
+      9,
+      3,
+      8
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 189359407,
+    "key": "st2_reg_slope_meaning",
+    "q": "In the model \\(\\hat{y} = 40 + 8x\\) (y = exam score, x = hours studied), what does the 8 mean?",
+    "a": "Each additional hour of study is associated with about 8 more points, on average",
+    "steps": [
+      "The slope is the predicted change in \\(y\\) per one-unit increase in \\(x\\).",
+      "Here: +8 points per extra hour \u2014 an average association, not a guarantee for any single student."
+    ],
+    "traps": [
+      {
+        "ans": "Studying 8 hours guarantees passing",
+        "why": "Regression describes an average trend with scatter \u2014 it cannot guarantee an individual outcome."
+      },
+      {
+        "ans": "A student who studies zero hours scores 8",
+        "why": "The zero-hours prediction is the INTERCEPT (40 here); the 8 is a rate of change."
+      }
+    ],
+    "vec": [
+      9,
+      3,
+      8
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 172581788,
+    "key": "st2_reg_slope_meaning",
+    "q": "In the model \\(\\hat{y} = 40 + 8x\\) (y = exam score, x = hours studied), what does the 8 mean?",
+    "a": "Each additional hour of study is associated with about 8 more points, on average",
+    "steps": [
+      "The slope is the predicted change in \\(y\\) per one-unit increase in \\(x\\).",
+      "Here: +8 points per extra hour \u2014 an average association, not a guarantee for any single student."
+    ],
+    "traps": [
+      {
+        "ans": "Studying 8 hours guarantees passing",
+        "why": "Regression describes an average trend with scatter \u2014 it cannot guarantee an individual outcome."
+      },
+      {
+        "ans": "A student who studies zero hours scores 8",
+        "why": "The zero-hours prediction is the INTERCEPT (40 here); the 8 is a rate of change."
+      }
+    ],
+    "vec": [
+      9,
+      3,
+      8
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 3,
+    "sample": 0,
+    "seed": 682713496,
+    "key": "st2_reg_r2",
+    "q": "A regression has \\(r^2 = 0.64\\). What is the correct interpretation?",
+    "a": "About 64\\% of the variation in y is explained by the linear relationship with x",
+    "steps": [
+      "\\(r^2\\) is the coefficient of determination: the fraction of the variance in \\(y\\) accounted for by the model.",
+      "\\(0.64 \\Rightarrow 64\\%\\) explained; the remaining 36\\% is scatter/other factors."
+    ],
+    "traps": [
+      {
+        "ans": "64\\% of predictions are correct",
+        "why": "r\u00b2 measures explained VARIATION, not an accuracy rate for individual predictions."
+      },
+      {
+        "ans": "The correlation between x and y is 0.64",
+        "why": "The correlation r is the square ROOT: |r| = 0.8 here (sign from the slope)."
+      }
+    ],
+    "vec": [
+      9,
+      4,
+      64
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 3,
+    "sample": 1,
+    "seed": 699491115,
+    "key": "st2_reg_r2",
+    "q": "A regression has \\(r^2 = 0.64\\). What is the correct interpretation?",
+    "a": "About 64\\% of the variation in y is explained by the linear relationship with x",
+    "steps": [
+      "\\(r^2\\) is the coefficient of determination: the fraction of the variance in \\(y\\) accounted for by the model.",
+      "\\(0.64 \\Rightarrow 64\\%\\) explained; the remaining 36\\% is scatter/other factors."
+    ],
+    "traps": [
+      {
+        "ans": "64\\% of predictions are correct",
+        "why": "r\u00b2 measures explained VARIATION, not an accuracy rate for individual predictions."
+      },
+      {
+        "ans": "The correlation between x and y is 0.64",
+        "why": "The correlation r is the square ROOT: |r| = 0.8 here (sign from the slope)."
+      }
+    ],
+    "vec": [
+      9,
+      4,
+      64
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 3,
+    "sample": 2,
+    "seed": 716268734,
+    "key": "st2_reg_r2",
+    "q": "A regression has \\(r^2 = 0.81\\). What is the correct interpretation?",
+    "a": "About 81\\% of the variation in y is explained by the linear relationship with x",
+    "steps": [
+      "\\(r^2\\) is the coefficient of determination: the fraction of the variance in \\(y\\) accounted for by the model.",
+      "\\(0.81 \\Rightarrow 81\\%\\) explained; the remaining 19\\% is scatter/other factors."
+    ],
+    "traps": [
+      {
+        "ans": "81\\% of predictions are correct",
+        "why": "r\u00b2 measures explained VARIATION, not an accuracy rate for individual predictions."
+      },
+      {
+        "ans": "The correlation between x and y is 0.81",
+        "why": "The correlation r is the square ROOT: |r| = 0.9 here (sign from the slope)."
+      }
+    ],
+    "vec": [
+      9,
+      4,
+      81
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 3,
+    "sample": 3,
+    "seed": 733046353,
+    "key": "st2_reg_r2",
+    "q": "A regression has \\(r^2 = 0.81\\). What is the correct interpretation?",
+    "a": "About 81\\% of the variation in y is explained by the linear relationship with x",
+    "steps": [
+      "\\(r^2\\) is the coefficient of determination: the fraction of the variance in \\(y\\) accounted for by the model.",
+      "\\(0.81 \\Rightarrow 81\\%\\) explained; the remaining 19\\% is scatter/other factors."
+    ],
+    "traps": [
+      {
+        "ans": "81\\% of predictions are correct",
+        "why": "r\u00b2 measures explained VARIATION, not an accuracy rate for individual predictions."
+      },
+      {
+        "ans": "The correlation between x and y is 0.81",
+        "why": "The correlation r is the square ROOT: |r| = 0.9 here (sign from the slope)."
+      }
+    ],
+    "vec": [
+      9,
+      4,
+      81
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 3,
+    "sample": 4,
+    "seed": 749823972,
+    "key": "st2_reg_r2",
+    "q": "A regression has \\(r^2 = 0.36\\). What is the correct interpretation?",
+    "a": "About 36\\% of the variation in y is explained by the linear relationship with x",
+    "steps": [
+      "\\(r^2\\) is the coefficient of determination: the fraction of the variance in \\(y\\) accounted for by the model.",
+      "\\(0.36 \\Rightarrow 36\\%\\) explained; the remaining 64\\% is scatter/other factors."
+    ],
+    "traps": [
+      {
+        "ans": "36\\% of predictions are correct",
+        "why": "r\u00b2 measures explained VARIATION, not an accuracy rate for individual predictions."
+      },
+      {
+        "ans": "The correlation between x and y is 0.36",
+        "why": "The correlation r is the square ROOT: |r| = 0.6 here (sign from the slope)."
+      }
+    ],
+    "vec": [
+      9,
+      4,
+      36
+    ]
+  },
+  {
+    "unitId": "ST2_Regression",
+    "genIndex": 3,
+    "sample": 5,
+    "seed": 766601591,
+    "key": "st2_reg_r2",
+    "q": "A regression has \\(r^2 = 0.36\\). What is the correct interpretation?",
+    "a": "About 36\\% of the variation in y is explained by the linear relationship with x",
+    "steps": [
+      "\\(r^2\\) is the coefficient of determination: the fraction of the variance in \\(y\\) accounted for by the model.",
+      "\\(0.36 \\Rightarrow 36\\%\\) explained; the remaining 64\\% is scatter/other factors."
+    ],
+    "traps": [
+      {
+        "ans": "36\\% of predictions are correct",
+        "why": "r\u00b2 measures explained VARIATION, not an accuracy rate for individual predictions."
+      },
+      {
+        "ans": "The correlation between x and y is 0.36",
+        "why": "The correlation r is the square ROOT: |r| = 0.6 here (sign from the slope)."
+      }
+    ],
+    "vec": [
+      9,
+      4,
+      36
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 4162249858,
+    "key": "st2_design_identify",
+    "q": "Identify the experimental design: \u201cEach subject receives both treatments in random order, serving as their own control.\u201d",
+    "a": "Matched pairs design",
+    "steps": [
+      "Each subject compared against themselves = matched pairs \u2014 the strongest control of subject-to-subject variation."
+    ],
+    "traps": [
+      {
+        "ans": "Completely randomized design",
+        "why": "Look for the structure BEFORE randomization: none = completely randomized; grouped first = blocked; self-paired = matched pairs."
+      },
+      {
+        "ans": "Randomized block design",
+        "why": "Blocking is deliberate pre-grouping by a nuisance variable; matched pairs is the special case where the \"block\" is one subject."
+      }
+    ],
+    "vec": [
+      10,
+      1,
+      2
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 4179027477,
+    "key": "st2_design_identify",
+    "q": "Identify the experimental design: \u201cSubjects are first grouped by age bracket, then randomly assigned to treatments within each bracket.\u201d",
+    "a": "Randomized block design",
+    "steps": [
+      "Grouping by a known factor FIRST (blocking), then randomizing within blocks, controls that factor's noise."
+    ],
+    "traps": [
+      {
+        "ans": "Completely randomized design",
+        "why": "Look for the structure BEFORE randomization: none = completely randomized; grouped first = blocked; self-paired = matched pairs."
+      },
+      {
+        "ans": "Matched pairs design",
+        "why": "Blocking is deliberate pre-grouping by a nuisance variable; matched pairs is the special case where the \"block\" is one subject."
+      }
+    ],
+    "vec": [
+      10,
+      1,
+      1
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 4128694620,
+    "key": "st2_design_identify",
+    "q": "Identify the experimental design: \u201cSubjects are first grouped by age bracket, then randomly assigned to treatments within each bracket.\u201d",
+    "a": "Randomized block design",
+    "steps": [
+      "Grouping by a known factor FIRST (blocking), then randomizing within blocks, controls that factor's noise."
+    ],
+    "traps": [
+      {
+        "ans": "Completely randomized design",
+        "why": "Look for the structure BEFORE randomization: none = completely randomized; grouped first = blocked; self-paired = matched pairs."
+      },
+      {
+        "ans": "Matched pairs design",
+        "why": "Blocking is deliberate pre-grouping by a nuisance variable; matched pairs is the special case where the \"block\" is one subject."
+      }
+    ],
+    "vec": [
+      10,
+      1,
+      1
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 4145472239,
+    "key": "st2_design_identify",
+    "q": "Identify the experimental design: \u201cSubjects are randomly assigned to one of the treatment groups with no other structure.\u201d",
+    "a": "Completely randomized design",
+    "steps": [
+      "Randomization with no pre-grouping = completely randomized."
+    ],
+    "traps": [
+      {
+        "ans": "Randomized block design",
+        "why": "Look for the structure BEFORE randomization: none = completely randomized; grouped first = blocked; self-paired = matched pairs."
+      },
+      {
+        "ans": "Matched pairs design",
+        "why": "Blocking is deliberate pre-grouping by a nuisance variable; matched pairs is the special case where the \"block\" is one subject."
+      }
+    ],
+    "vec": [
+      10,
+      1,
+      0
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 4095139382,
+    "key": "st2_design_identify",
+    "q": "Identify the experimental design: \u201cEach subject receives both treatments in random order, serving as their own control.\u201d",
+    "a": "Matched pairs design",
+    "steps": [
+      "Each subject compared against themselves = matched pairs \u2014 the strongest control of subject-to-subject variation."
+    ],
+    "traps": [
+      {
+        "ans": "Completely randomized design",
+        "why": "Look for the structure BEFORE randomization: none = completely randomized; grouped first = blocked; self-paired = matched pairs."
+      },
+      {
+        "ans": "Randomized block design",
+        "why": "Blocking is deliberate pre-grouping by a nuisance variable; matched pairs is the special case where the \"block\" is one subject."
+      }
+    ],
+    "vec": [
+      10,
+      1,
+      2
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 4111917001,
+    "key": "st2_design_identify",
+    "q": "Identify the experimental design: \u201cEach subject receives both treatments in random order, serving as their own control.\u201d",
+    "a": "Matched pairs design",
+    "steps": [
+      "Each subject compared against themselves = matched pairs \u2014 the strongest control of subject-to-subject variation."
+    ],
+    "traps": [
+      {
+        "ans": "Completely randomized design",
+        "why": "Look for the structure BEFORE randomization: none = completely randomized; grouped first = blocked; self-paired = matched pairs."
+      },
+      {
+        "ans": "Randomized block design",
+        "why": "Blocking is deliberate pre-grouping by a nuisance variable; matched pairs is the special case where the \"block\" is one subject."
+      }
+    ],
+    "vec": [
+      10,
+      1,
+      2
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 3868844101,
+    "key": "st2_design_confound",
+    "q": "Cities with more ice cream sales have more drownings. Hot weather increases both swimming and ice cream sales. What is the likely confounding (lurking) variable?",
+    "a": "Hot weather (temperature)",
+    "steps": [
+      "A confounder influences BOTH the explanatory and response variables, creating an association without causation.",
+      "Here, hot weather (temperature) drives both measured variables."
+    ],
+    "traps": [
+      {
+        "ans": "Ice cream sales",
+        "why": "That is the explanatory variable itself \u2014 a confounder is a THIRD variable acting on both."
+      },
+      {
+        "ans": "There is no confounding; the relationship is causal",
+        "why": "Observational associations with a plausible third-variable driver cannot establish causation \u2014 that requires a randomized experiment."
+      }
+    ],
+    "vec": [
+      10,
+      2,
+      1
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 3852066482,
+    "key": "st2_design_confound",
+    "q": "Students who eat breakfast score higher on exams. Family income affects both breakfast habits and school resources. What is the likely confounding (lurking) variable?",
+    "a": "Family income",
+    "steps": [
+      "A confounder influences BOTH the explanatory and response variables, creating an association without causation.",
+      "Here, family income drives both measured variables."
+    ],
+    "traps": [
+      {
+        "ans": "Breakfast",
+        "why": "That is the explanatory variable itself \u2014 a confounder is a THIRD variable acting on both."
+      },
+      {
+        "ans": "There is no confounding; the relationship is causal",
+        "why": "Observational associations with a plausible third-variable driver cannot establish causation \u2014 that requires a randomized experiment."
+      }
+    ],
+    "vec": [
+      10,
+      2,
+      0
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 3835288863,
+    "key": "st2_design_confound",
+    "q": "Students who eat breakfast score higher on exams. Family income affects both breakfast habits and school resources. What is the likely confounding (lurking) variable?",
+    "a": "Family income",
+    "steps": [
+      "A confounder influences BOTH the explanatory and response variables, creating an association without causation.",
+      "Here, family income drives both measured variables."
+    ],
+    "traps": [
+      {
+        "ans": "Breakfast",
+        "why": "That is the explanatory variable itself \u2014 a confounder is a THIRD variable acting on both."
+      },
+      {
+        "ans": "There is no confounding; the relationship is causal",
+        "why": "Observational associations with a plausible third-variable driver cannot establish causation \u2014 that requires a randomized experiment."
+      }
+    ],
+    "vec": [
+      10,
+      2,
+      0
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 3818511244,
+    "key": "st2_design_confound",
+    "q": "Cities with more ice cream sales have more drownings. Hot weather increases both swimming and ice cream sales. What is the likely confounding (lurking) variable?",
+    "a": "Hot weather (temperature)",
+    "steps": [
+      "A confounder influences BOTH the explanatory and response variables, creating an association without causation.",
+      "Here, hot weather (temperature) drives both measured variables."
+    ],
+    "traps": [
+      {
+        "ans": "Ice cream sales",
+        "why": "That is the explanatory variable itself \u2014 a confounder is a THIRD variable acting on both."
+      },
+      {
+        "ans": "There is no confounding; the relationship is causal",
+        "why": "Observational associations with a plausible third-variable driver cannot establish causation \u2014 that requires a randomized experiment."
+      }
+    ],
+    "vec": [
+      10,
+      2,
+      1
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 3801733625,
+    "key": "st2_design_confound",
+    "q": "Cities with more ice cream sales have more drownings. Hot weather increases both swimming and ice cream sales. What is the likely confounding (lurking) variable?",
+    "a": "Hot weather (temperature)",
+    "steps": [
+      "A confounder influences BOTH the explanatory and response variables, creating an association without causation.",
+      "Here, hot weather (temperature) drives both measured variables."
+    ],
+    "traps": [
+      {
+        "ans": "Ice cream sales",
+        "why": "That is the explanatory variable itself \u2014 a confounder is a THIRD variable acting on both."
+      },
+      {
+        "ans": "There is no confounding; the relationship is causal",
+        "why": "Observational associations with a plausible third-variable driver cannot establish causation \u2014 that requires a randomized experiment."
+      }
+    ],
+    "vec": [
+      10,
+      2,
+      1
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 3784956006,
+    "key": "st2_design_confound",
+    "q": "Cities with more ice cream sales have more drownings. Hot weather increases both swimming and ice cream sales. What is the likely confounding (lurking) variable?",
+    "a": "Hot weather (temperature)",
+    "steps": [
+      "A confounder influences BOTH the explanatory and response variables, creating an association without causation.",
+      "Here, hot weather (temperature) drives both measured variables."
+    ],
+    "traps": [
+      {
+        "ans": "Ice cream sales",
+        "why": "That is the explanatory variable itself \u2014 a confounder is a THIRD variable acting on both."
+      },
+      {
+        "ans": "There is no confounding; the relationship is causal",
+        "why": "Observational associations with a plausible third-variable driver cannot establish causation \u2014 that requires a randomized experiment."
+      }
+    ],
+    "vec": [
+      10,
+      2,
+      1
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 721152884,
+    "key": "st2_nonparam_sign",
+    "q": "In a matched-pairs study, 8 of 11 pairs improved (+) and 3 got worse (\u2212), with no ties. What is the sign test statistic (number of + signs), and its expected value if the treatment has no effect?",
+    "a": "Statistic = 8; expected under \\(H_0\\) = 11/2 = \\frac{11}{2}",
+    "steps": [
+      "The sign test just counts positive differences: 8.",
+      "Under \"no effect,\" + and \u2212 are equally likely: expected \\(= n/2 = 11/2\\).",
+      "8 is well above 5.5 \u2014 the data lean toward improvement (a p-value would quantify how unusual)."
+    ],
+    "traps": [
+      {
+        "ans": "Statistic = 5; expected = 0",
+        "why": "The sign test statistic is the COUNT of + signs, compared to n/2 \u2014 not the difference of counts."
+      },
+      {
+        "ans": "Statistic = 8; expected = 8",
+        "why": "The expectation comes from H\u2080 (no effect \u21d2 50/50), not from the observed data."
+      }
+    ],
+    "vec": [
+      10,
+      3,
+      8,
+      3,
+      11
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 737930503,
+    "key": "st2_nonparam_sign",
+    "q": "In a matched-pairs study, 8 of 10 pairs improved (+) and 2 got worse (\u2212), with no ties. What is the sign test statistic (number of + signs), and its expected value if the treatment has no effect?",
+    "a": "Statistic = 8; expected under \\(H_0\\) = 10/2 = 5",
+    "steps": [
+      "The sign test just counts positive differences: 8.",
+      "Under \"no effect,\" + and \u2212 are equally likely: expected \\(= n/2 = 10/2\\).",
+      "8 is well above 5.0 \u2014 the data lean toward improvement (a p-value would quantify how unusual)."
+    ],
+    "traps": [
+      {
+        "ans": "Statistic = 6; expected = 0",
+        "why": "The sign test statistic is the COUNT of + signs, compared to n/2 \u2014 not the difference of counts."
+      },
+      {
+        "ans": "Statistic = 8; expected = 8",
+        "why": "The expectation comes from H\u2080 (no effect \u21d2 50/50), not from the observed data."
+      }
+    ],
+    "vec": [
+      10,
+      3,
+      8,
+      2,
+      10
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 754708122,
+    "key": "st2_nonparam_sign",
+    "q": "In a matched-pairs study, 8 of 11 pairs improved (+) and 3 got worse (\u2212), with no ties. What is the sign test statistic (number of + signs), and its expected value if the treatment has no effect?",
+    "a": "Statistic = 8; expected under \\(H_0\\) = 11/2 = \\frac{11}{2}",
+    "steps": [
+      "The sign test just counts positive differences: 8.",
+      "Under \"no effect,\" + and \u2212 are equally likely: expected \\(= n/2 = 11/2\\).",
+      "8 is well above 5.5 \u2014 the data lean toward improvement (a p-value would quantify how unusual)."
+    ],
+    "traps": [
+      {
+        "ans": "Statistic = 5; expected = 0",
+        "why": "The sign test statistic is the COUNT of + signs, compared to n/2 \u2014 not the difference of counts."
+      },
+      {
+        "ans": "Statistic = 8; expected = 8",
+        "why": "The expectation comes from H\u2080 (no effect \u21d2 50/50), not from the observed data."
+      }
+    ],
+    "vec": [
+      10,
+      3,
+      8,
+      3,
+      11
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 771485741,
+    "key": "st2_nonparam_sign",
+    "q": "In a matched-pairs study, 7 of 10 pairs improved (+) and 3 got worse (\u2212), with no ties. What is the sign test statistic (number of + signs), and its expected value if the treatment has no effect?",
+    "a": "Statistic = 7; expected under \\(H_0\\) = 10/2 = 5",
+    "steps": [
+      "The sign test just counts positive differences: 7.",
+      "Under \"no effect,\" + and \u2212 are equally likely: expected \\(= n/2 = 10/2\\).",
+      "7 is well above 5.0 \u2014 the data lean toward improvement (a p-value would quantify how unusual)."
+    ],
+    "traps": [
+      {
+        "ans": "Statistic = 4; expected = 0",
+        "why": "The sign test statistic is the COUNT of + signs, compared to n/2 \u2014 not the difference of counts."
+      },
+      {
+        "ans": "Statistic = 7; expected = 7",
+        "why": "The expectation comes from H\u2080 (no effect \u21d2 50/50), not from the observed data."
+      }
+    ],
+    "vec": [
+      10,
+      3,
+      7,
+      3,
+      10
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 654042408,
+    "key": "st2_nonparam_sign",
+    "q": "In a matched-pairs study, 7 of 10 pairs improved (+) and 3 got worse (\u2212), with no ties. What is the sign test statistic (number of + signs), and its expected value if the treatment has no effect?",
+    "a": "Statistic = 7; expected under \\(H_0\\) = 10/2 = 5",
+    "steps": [
+      "The sign test just counts positive differences: 7.",
+      "Under \"no effect,\" + and \u2212 are equally likely: expected \\(= n/2 = 10/2\\).",
+      "7 is well above 5.0 \u2014 the data lean toward improvement (a p-value would quantify how unusual)."
+    ],
+    "traps": [
+      {
+        "ans": "Statistic = 4; expected = 0",
+        "why": "The sign test statistic is the COUNT of + signs, compared to n/2 \u2014 not the difference of counts."
+      },
+      {
+        "ans": "Statistic = 7; expected = 7",
+        "why": "The expectation comes from H\u2080 (no effect \u21d2 50/50), not from the observed data."
+      }
+    ],
+    "vec": [
+      10,
+      3,
+      7,
+      3,
+      10
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 670820027,
+    "key": "st2_nonparam_sign",
+    "q": "In a matched-pairs study, 7 of 10 pairs improved (+) and 3 got worse (\u2212), with no ties. What is the sign test statistic (number of + signs), and its expected value if the treatment has no effect?",
+    "a": "Statistic = 7; expected under \\(H_0\\) = 10/2 = 5",
+    "steps": [
+      "The sign test just counts positive differences: 7.",
+      "Under \"no effect,\" + and \u2212 are equally likely: expected \\(= n/2 = 10/2\\).",
+      "7 is well above 5.0 \u2014 the data lean toward improvement (a p-value would quantify how unusual)."
+    ],
+    "traps": [
+      {
+        "ans": "Statistic = 4; expected = 0",
+        "why": "The sign test statistic is the COUNT of + signs, compared to n/2 \u2014 not the difference of counts."
+      },
+      {
+        "ans": "Statistic = 7; expected = 7",
+        "why": "The expectation comes from H\u2080 (no effect \u21d2 50/50), not from the observed data."
+      }
+    ],
+    "vec": [
+      10,
+      3,
+      7,
+      3,
+      10
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 3,
+    "sample": 0,
+    "seed": 2308120383,
+    "key": "st2_nonparam_when",
+    "q": "Data: Reaction times with several extreme outliers and strong skew. Why would a non-parametric test (e.g., a rank-based test) be preferred over a t-test?",
+    "a": "Because the data are strongly non-normal \u2014 non-parametric tests do not require normally distributed interval data",
+    "steps": [
+      "t-procedures assume roughly normal, interval-scale data.",
+      "Here: heavy skew/outliers break the normality that t-procedures lean on.",
+      "Rank-based methods trade a little power for validity under these conditions."
+    ],
+    "traps": [
+      {
+        "ans": "Because non-parametric tests always have more power",
+        "why": "When normality actually holds, the t-test is MORE powerful \u2014 non-parametrics are the robust fallback, not a free upgrade."
+      },
+      {
+        "ans": "Because the sample size is too large for a t-test",
+        "why": "Large samples HELP t-procedures (CLT); the issue here is the data scale/shape, not the size."
+      }
+    ],
+    "vec": [
+      10,
+      4,
+      1
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 3,
+    "sample": 1,
+    "seed": 2291342764,
+    "key": "st2_nonparam_when",
+    "q": "Data: Reaction times with several extreme outliers and strong skew. Why would a non-parametric test (e.g., a rank-based test) be preferred over a t-test?",
+    "a": "Because the data are strongly non-normal \u2014 non-parametric tests do not require normally distributed interval data",
+    "steps": [
+      "t-procedures assume roughly normal, interval-scale data.",
+      "Here: heavy skew/outliers break the normality that t-procedures lean on.",
+      "Rank-based methods trade a little power for validity under these conditions."
+    ],
+    "traps": [
+      {
+        "ans": "Because non-parametric tests always have more power",
+        "why": "When normality actually holds, the t-test is MORE powerful \u2014 non-parametrics are the robust fallback, not a free upgrade."
+      },
+      {
+        "ans": "Because the sample size is too large for a t-test",
+        "why": "Large samples HELP t-procedures (CLT); the issue here is the data scale/shape, not the size."
+      }
+    ],
+    "vec": [
+      10,
+      4,
+      1
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 3,
+    "sample": 2,
+    "seed": 2341675621,
+    "key": "st2_nonparam_when",
+    "q": "Data: Customer satisfaction rated on a 1\u20135 ordinal scale. Why would a non-parametric test (e.g., a rank-based test) be preferred over a t-test?",
+    "a": "Because the data are ordinal \u2014 non-parametric tests do not require normally distributed interval data",
+    "steps": [
+      "t-procedures assume roughly normal, interval-scale data.",
+      "Here: ordinal data \u2014 differences between ranks are not meaningful distances.",
+      "Rank-based methods trade a little power for validity under these conditions."
+    ],
+    "traps": [
+      {
+        "ans": "Because non-parametric tests always have more power",
+        "why": "When normality actually holds, the t-test is MORE powerful \u2014 non-parametrics are the robust fallback, not a free upgrade."
+      },
+      {
+        "ans": "Because the sample size is too large for a t-test",
+        "why": "Large samples HELP t-procedures (CLT); the issue here is the data scale/shape, not the size."
+      }
+    ],
+    "vec": [
+      10,
+      4,
+      0
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 3,
+    "sample": 3,
+    "seed": 2324898002,
+    "key": "st2_nonparam_when",
+    "q": "Data: Customer satisfaction rated on a 1\u20135 ordinal scale. Why would a non-parametric test (e.g., a rank-based test) be preferred over a t-test?",
+    "a": "Because the data are ordinal \u2014 non-parametric tests do not require normally distributed interval data",
+    "steps": [
+      "t-procedures assume roughly normal, interval-scale data.",
+      "Here: ordinal data \u2014 differences between ranks are not meaningful distances.",
+      "Rank-based methods trade a little power for validity under these conditions."
+    ],
+    "traps": [
+      {
+        "ans": "Because non-parametric tests always have more power",
+        "why": "When normality actually holds, the t-test is MORE powerful \u2014 non-parametrics are the robust fallback, not a free upgrade."
+      },
+      {
+        "ans": "Because the sample size is too large for a t-test",
+        "why": "Large samples HELP t-procedures (CLT); the issue here is the data scale/shape, not the size."
+      }
+    ],
+    "vec": [
+      10,
+      4,
+      0
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 3,
+    "sample": 4,
+    "seed": 2241009907,
+    "key": "st2_nonparam_when",
+    "q": "Data: Customer satisfaction rated on a 1\u20135 ordinal scale. Why would a non-parametric test (e.g., a rank-based test) be preferred over a t-test?",
+    "a": "Because the data are ordinal \u2014 non-parametric tests do not require normally distributed interval data",
+    "steps": [
+      "t-procedures assume roughly normal, interval-scale data.",
+      "Here: ordinal data \u2014 differences between ranks are not meaningful distances.",
+      "Rank-based methods trade a little power for validity under these conditions."
+    ],
+    "traps": [
+      {
+        "ans": "Because non-parametric tests always have more power",
+        "why": "When normality actually holds, the t-test is MORE powerful \u2014 non-parametrics are the robust fallback, not a free upgrade."
+      },
+      {
+        "ans": "Because the sample size is too large for a t-test",
+        "why": "Large samples HELP t-procedures (CLT); the issue here is the data scale/shape, not the size."
+      }
+    ],
+    "vec": [
+      10,
+      4,
+      0
+    ]
+  },
+  {
+    "unitId": "ST2_Design",
+    "genIndex": 3,
+    "sample": 5,
+    "seed": 2224232288,
+    "key": "st2_nonparam_when",
+    "q": "Data: Customer satisfaction rated on a 1\u20135 ordinal scale. Why would a non-parametric test (e.g., a rank-based test) be preferred over a t-test?",
+    "a": "Because the data are ordinal \u2014 non-parametric tests do not require normally distributed interval data",
+    "steps": [
+      "t-procedures assume roughly normal, interval-scale data.",
+      "Here: ordinal data \u2014 differences between ranks are not meaningful distances.",
+      "Rank-based methods trade a little power for validity under these conditions."
+    ],
+    "traps": [
+      {
+        "ans": "Because non-parametric tests always have more power",
+        "why": "When normality actually holds, the t-test is MORE powerful \u2014 non-parametrics are the robust fallback, not a free upgrade."
+      },
+      {
+        "ans": "Because the sample size is too large for a t-test",
+        "why": "Large samples HELP t-procedures (CLT); the issue here is the data scale/shape, not the size."
+      }
+    ],
+    "vec": [
+      10,
+      4,
+      0
+    ]
+  }
+]

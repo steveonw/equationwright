@@ -1,0 +1,11 @@
+{
+  "host": "127.0.0.1",
+  "port": 8090,
+  "gateway_key": "54",
+  "backend_url": "http://127.0.0.1:11434/v1/chat/completions",
+  "backend_key": "",
+  "llama_server": "C:\\LocalChatBox\\runtime\\win\\llama-server.exe",
+  "model_path": "C:\\LocalChatBox\\models\\your-model.gguf",
+  "llama_port": 8080,
+  "llama_ctx": 8192
+}

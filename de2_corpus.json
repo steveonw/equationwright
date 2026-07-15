@@ -1,0 +1,2156 @@
+[
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 1006409580,
+    "key": "de2_char_roots",
+    "q": "Find the roots of the characteristic equation for \\(y'' + y' - 2y = 0\\).",
+    "a": "\\(r = -2\\) and \\(r = 1\\)",
+    "steps": [
+      "Characteristic equation: \\(r^2 + 1r - 2 = 0\\).",
+      "Factor: \\((r - (-2))(r - (1)) = 0 \\Rightarrow r = -2,\\ 1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(r = 2\\) and \\(r = -1\\)",
+        "why": "The factors are (r \u2212 root): sign slips while factoring flip both roots."
+      },
+      {
+        "ans": "\\(r = 1\\) and \\(r = -2\\)",
+        "why": "The coefficients are not the roots \u2014 b is minus their SUM and c their PRODUCT."
+      }
+    ],
+    "vec": [
+      23,
+      1,
+      -2,
+      1,
+      1,
+      -2
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 1023187199,
+    "key": "de2_char_roots",
+    "q": "Find the roots of the characteristic equation for \\(y'' - y' - 12y = 0\\).",
+    "a": "\\(r = -3\\) and \\(r = 4\\)",
+    "steps": [
+      "Characteristic equation: \\(r^2 - 1r - 12 = 0\\).",
+      "Factor: \\((r - (-3))(r - (4)) = 0 \\Rightarrow r = -3,\\ 4\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(r = 3\\) and \\(r = -4\\)",
+        "why": "The factors are (r \u2212 root): sign slips while factoring flip both roots."
+      },
+      {
+        "ans": "\\(r = -1\\) and \\(r = -12\\)",
+        "why": "The coefficients are not the roots \u2014 b is minus their SUM and c their PRODUCT."
+      }
+    ],
+    "vec": [
+      23,
+      1,
+      -3,
+      4,
+      -1,
+      -12
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 1039964818,
+    "key": "de2_char_roots",
+    "q": "Find the roots of the characteristic equation for \\(y'' + 2y' - 3y = 0\\).",
+    "a": "\\(r = -3\\) and \\(r = 1\\)",
+    "steps": [
+      "Characteristic equation: \\(r^2 + 2r - 3 = 0\\).",
+      "Factor: \\((r - (-3))(r - (1)) = 0 \\Rightarrow r = -3,\\ 1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(r = 3\\) and \\(r = -1\\)",
+        "why": "The factors are (r \u2212 root): sign slips while factoring flip both roots."
+      },
+      {
+        "ans": "\\(r = 2\\) and \\(r = -3\\)",
+        "why": "The coefficients are not the roots \u2014 b is minus their SUM and c their PRODUCT."
+      }
+    ],
+    "vec": [
+      23,
+      1,
+      -3,
+      1,
+      2,
+      -3
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 1056742437,
+    "key": "de2_char_roots",
+    "q": "Find the roots of the characteristic equation for \\(y'' + 3y' - 4y = 0\\).",
+    "a": "\\(r = -4\\) and \\(r = 1\\)",
+    "steps": [
+      "Characteristic equation: \\(r^2 + 3r - 4 = 0\\).",
+      "Factor: \\((r - (-4))(r - (1)) = 0 \\Rightarrow r = -4,\\ 1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(r = 4\\) and \\(r = -1\\)",
+        "why": "The factors are (r \u2212 root): sign slips while factoring flip both roots."
+      },
+      {
+        "ans": "\\(r = 3\\) and \\(r = -4\\)",
+        "why": "The coefficients are not the roots \u2014 b is minus their SUM and c their PRODUCT."
+      }
+    ],
+    "vec": [
+      23,
+      1,
+      -4,
+      1,
+      3,
+      -4
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 939299104,
+    "key": "de2_char_roots",
+    "q": "Find the roots of the characteristic equation for \\(y'' + 3y' - 4y = 0\\).",
+    "a": "\\(r = -4\\) and \\(r = 1\\)",
+    "steps": [
+      "Characteristic equation: \\(r^2 + 3r - 4 = 0\\).",
+      "Factor: \\((r - (-4))(r - (1)) = 0 \\Rightarrow r = -4,\\ 1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(r = 4\\) and \\(r = -1\\)",
+        "why": "The factors are (r \u2212 root): sign slips while factoring flip both roots."
+      },
+      {
+        "ans": "\\(r = 3\\) and \\(r = -4\\)",
+        "why": "The coefficients are not the roots \u2014 b is minus their SUM and c their PRODUCT."
+      }
+    ],
+    "vec": [
+      23,
+      1,
+      -4,
+      1,
+      3,
+      -4
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 956076723,
+    "key": "de2_char_roots",
+    "q": "Find the roots of the characteristic equation for \\(y'' - 2y' - 3y = 0\\).",
+    "a": "\\(r = -1\\) and \\(r = 3\\)",
+    "steps": [
+      "Characteristic equation: \\(r^2 - 2r - 3 = 0\\).",
+      "Factor: \\((r - (-1))(r - (3)) = 0 \\Rightarrow r = -1,\\ 3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(r = 1\\) and \\(r = -3\\)",
+        "why": "The factors are (r \u2212 root): sign slips while factoring flip both roots."
+      },
+      {
+        "ans": "\\(r = -2\\) and \\(r = -3\\)",
+        "why": "The coefficients are not the roots \u2014 b is minus their SUM and c their PRODUCT."
+      }
+    ],
+    "vec": [
+      23,
+      1,
+      -1,
+      3,
+      -2,
+      -3
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 3130260887,
+    "key": "de2_gen_real",
+    "q": "Write the general solution of \\(y'' + 0y' - 9y = 0\\).",
+    "a": "\\(y = C_1 e^{-3x} + C_2 e^{3x}\\)",
+    "steps": [
+      "Characteristic roots: \\(r = -3,\\ 3\\) (real and distinct).",
+      "Each root contributes an exponential: \\(y = C_1 e^{-3x} + C_2 e^{3x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = C_1 e^{3x} + C_2 e^{-3x}\\)",
+        "why": "The exponents ARE the roots, signs included \u2014 check by substituting e^{rx} back."
+      },
+      {
+        "ans": "\\(y = (C_1 + C_2 x)e^{-3x}\\)",
+        "why": "The (C\u2081 + C\u2082x) form is for a REPEATED root; these roots are distinct."
+      }
+    ],
+    "vec": [
+      23,
+      2,
+      -3,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 3113483268,
+    "key": "de2_gen_real",
+    "q": "Write the general solution of \\(y'' + 2y' - 8y = 0\\).",
+    "a": "\\(y = C_1 e^{-4x} + C_2 e^{2x}\\)",
+    "steps": [
+      "Characteristic roots: \\(r = -4,\\ 2\\) (real and distinct).",
+      "Each root contributes an exponential: \\(y = C_1 e^{-4x} + C_2 e^{2x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = C_1 e^{4x} + C_2 e^{-2x}\\)",
+        "why": "The exponents ARE the roots, signs included \u2014 check by substituting e^{rx} back."
+      },
+      {
+        "ans": "\\(y = (C_1 + C_2 x)e^{-4x}\\)",
+        "why": "The (C\u2081 + C\u2082x) form is for a REPEATED root; these roots are distinct."
+      }
+    ],
+    "vec": [
+      23,
+      2,
+      -4,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 3163816125,
+    "key": "de2_gen_real",
+    "q": "Write the general solution of \\(y'' + y' - 2y = 0\\).",
+    "a": "\\(y = C_1 e^{-2x} + C_2 e^{x}\\)",
+    "steps": [
+      "Characteristic roots: \\(r = -2,\\ 1\\) (real and distinct).",
+      "Each root contributes an exponential: \\(y = C_1 e^{-2x} + C_2 e^{1x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = C_1 e^{2x} + C_2 e^{-1x}\\)",
+        "why": "The exponents ARE the roots, signs included \u2014 check by substituting e^{rx} back."
+      },
+      {
+        "ans": "\\(y = (C_1 + C_2 x)e^{-2x}\\)",
+        "why": "The (C\u2081 + C\u2082x) form is for a REPEATED root; these roots are distinct."
+      }
+    ],
+    "vec": [
+      23,
+      2,
+      -2,
+      1
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 3147038506,
+    "key": "de2_gen_real",
+    "q": "Write the general solution of \\(y'' + 2y' - 3y = 0\\).",
+    "a": "\\(y = C_1 e^{-3x} + C_2 e^{x}\\)",
+    "steps": [
+      "Characteristic roots: \\(r = -3,\\ 1\\) (real and distinct).",
+      "Each root contributes an exponential: \\(y = C_1 e^{-3x} + C_2 e^{1x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = C_1 e^{3x} + C_2 e^{-1x}\\)",
+        "why": "The exponents ARE the roots, signs included \u2014 check by substituting e^{rx} back."
+      },
+      {
+        "ans": "\\(y = (C_1 + C_2 x)e^{-3x}\\)",
+        "why": "The (C\u2081 + C\u2082x) form is for a REPEATED root; these roots are distinct."
+      }
+    ],
+    "vec": [
+      23,
+      2,
+      -3,
+      1
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 3063150411,
+    "key": "de2_gen_real",
+    "q": "Write the general solution of \\(y'' - 2y' - 3y = 0\\).",
+    "a": "\\(y = C_1 e^{-x} + C_2 e^{3x}\\)",
+    "steps": [
+      "Characteristic roots: \\(r = -1,\\ 3\\) (real and distinct).",
+      "Each root contributes an exponential: \\(y = C_1 e^{-1x} + C_2 e^{3x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = C_1 e^{1x} + C_2 e^{-3x}\\)",
+        "why": "The exponents ARE the roots, signs included \u2014 check by substituting e^{rx} back."
+      },
+      {
+        "ans": "\\(y = (C_1 + C_2 x)e^{-1x}\\)",
+        "why": "The (C\u2081 + C\u2082x) form is for a REPEATED root; these roots are distinct."
+      }
+    ],
+    "vec": [
+      23,
+      2,
+      -1,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 3046372792,
+    "key": "de2_gen_real",
+    "q": "Write the general solution of \\(y'' - y' - 6y = 0\\).",
+    "a": "\\(y = C_1 e^{-2x} + C_2 e^{3x}\\)",
+    "steps": [
+      "Characteristic roots: \\(r = -2,\\ 3\\) (real and distinct).",
+      "Each root contributes an exponential: \\(y = C_1 e^{-2x} + C_2 e^{3x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = C_1 e^{2x} + C_2 e^{-3x}\\)",
+        "why": "The exponents ARE the roots, signs included \u2014 check by substituting e^{rx} back."
+      },
+      {
+        "ans": "\\(y = (C_1 + C_2 x)e^{-2x}\\)",
+        "why": "The (C\u2081 + C\u2082x) form is for a REPEATED root; these roots are distinct."
+      }
+    ],
+    "vec": [
+      23,
+      2,
+      -2,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 689423066,
+    "key": "de2_gen_repeated",
+    "q": "Write the general solution of \\(y'' + 2y' + y = 0\\).",
+    "a": "\\(y = (C_1 + C_2 x)e^{-x}\\)",
+    "steps": [
+      "Characteristic: \\(r^2 - -2r + 1 = (r - (-1))^2 = 0\\) \u2014 a REPEATED root \\(r = -1\\).",
+      "A repeated root needs the extra factor of \\(x\\): \\(y = (C_1 + C_2 x)e^{-1x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = C_1 e^{-1x} + C_2 e^{-1x}\\)",
+        "why": "Those two terms collapse into one constant \u2014 a repeated root needs x\u00b7e^{rx} as the independent second solution."
+      },
+      {
+        "ans": "\\(y = C_1 e^{-1x} + C_2 e^{1x}\\)",
+        "why": "The discriminant is zero: one root, twice. There is no second distinct root."
+      }
+    ],
+    "vec": [
+      23,
+      3,
+      -1
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 706200685,
+    "key": "de2_gen_repeated",
+    "q": "Write the general solution of \\(y'' + 4y' + 4y = 0\\).",
+    "a": "\\(y = (C_1 + C_2 x)e^{-2x}\\)",
+    "steps": [
+      "Characteristic: \\(r^2 - -4r + 4 = (r - (-2))^2 = 0\\) \u2014 a REPEATED root \\(r = -2\\).",
+      "A repeated root needs the extra factor of \\(x\\): \\(y = (C_1 + C_2 x)e^{-2x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = C_1 e^{-2x} + C_2 e^{-2x}\\)",
+        "why": "Those two terms collapse into one constant \u2014 a repeated root needs x\u00b7e^{rx} as the independent second solution."
+      },
+      {
+        "ans": "\\(y = C_1 e^{-2x} + C_2 e^{2x}\\)",
+        "why": "The discriminant is zero: one root, twice. There is no second distinct root."
+      }
+    ],
+    "vec": [
+      23,
+      3,
+      -2
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 655867828,
+    "key": "de2_gen_repeated",
+    "q": "Write the general solution of \\(y'' + 2y' + y = 0\\).",
+    "a": "\\(y = (C_1 + C_2 x)e^{-x}\\)",
+    "steps": [
+      "Characteristic: \\(r^2 - -2r + 1 = (r - (-1))^2 = 0\\) \u2014 a REPEATED root \\(r = -1\\).",
+      "A repeated root needs the extra factor of \\(x\\): \\(y = (C_1 + C_2 x)e^{-1x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = C_1 e^{-1x} + C_2 e^{-1x}\\)",
+        "why": "Those two terms collapse into one constant \u2014 a repeated root needs x\u00b7e^{rx} as the independent second solution."
+      },
+      {
+        "ans": "\\(y = C_1 e^{-1x} + C_2 e^{1x}\\)",
+        "why": "The discriminant is zero: one root, twice. There is no second distinct root."
+      }
+    ],
+    "vec": [
+      23,
+      3,
+      -1
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 672645447,
+    "key": "de2_gen_repeated",
+    "q": "Write the general solution of \\(y'' + 2y' + y = 0\\).",
+    "a": "\\(y = (C_1 + C_2 x)e^{-x}\\)",
+    "steps": [
+      "Characteristic: \\(r^2 - -2r + 1 = (r - (-1))^2 = 0\\) \u2014 a REPEATED root \\(r = -1\\).",
+      "A repeated root needs the extra factor of \\(x\\): \\(y = (C_1 + C_2 x)e^{-1x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = C_1 e^{-1x} + C_2 e^{-1x}\\)",
+        "why": "Those two terms collapse into one constant \u2014 a repeated root needs x\u00b7e^{rx} as the independent second solution."
+      },
+      {
+        "ans": "\\(y = C_1 e^{-1x} + C_2 e^{1x}\\)",
+        "why": "The discriminant is zero: one root, twice. There is no second distinct root."
+      }
+    ],
+    "vec": [
+      23,
+      3,
+      -1
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 622312590,
+    "key": "de2_gen_repeated",
+    "q": "Write the general solution of \\(y'' + 4y' + 4y = 0\\).",
+    "a": "\\(y = (C_1 + C_2 x)e^{-2x}\\)",
+    "steps": [
+      "Characteristic: \\(r^2 - -4r + 4 = (r - (-2))^2 = 0\\) \u2014 a REPEATED root \\(r = -2\\).",
+      "A repeated root needs the extra factor of \\(x\\): \\(y = (C_1 + C_2 x)e^{-2x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = C_1 e^{-2x} + C_2 e^{-2x}\\)",
+        "why": "Those two terms collapse into one constant \u2014 a repeated root needs x\u00b7e^{rx} as the independent second solution."
+      },
+      {
+        "ans": "\\(y = C_1 e^{-2x} + C_2 e^{2x}\\)",
+        "why": "The discriminant is zero: one root, twice. There is no second distinct root."
+      }
+    ],
+    "vec": [
+      23,
+      3,
+      -2
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 639090209,
+    "key": "de2_gen_repeated",
+    "q": "Write the general solution of \\(y'' + 2y' + y = 0\\).",
+    "a": "\\(y = (C_1 + C_2 x)e^{-x}\\)",
+    "steps": [
+      "Characteristic: \\(r^2 - -2r + 1 = (r - (-1))^2 = 0\\) \u2014 a REPEATED root \\(r = -1\\).",
+      "A repeated root needs the extra factor of \\(x\\): \\(y = (C_1 + C_2 x)e^{-1x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = C_1 e^{-1x} + C_2 e^{-1x}\\)",
+        "why": "Those two terms collapse into one constant \u2014 a repeated root needs x\u00b7e^{rx} as the independent second solution."
+      },
+      {
+        "ans": "\\(y = C_1 e^{-1x} + C_2 e^{1x}\\)",
+        "why": "The discriminant is zero: one root, twice. There is no second distinct root."
+      }
+    ],
+    "vec": [
+      23,
+      3,
+      -1
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 3,
+    "sample": 0,
+    "seed": 396017309,
+    "key": "de2_gen_complex",
+    "q": "Write the general solution of \\(y'' + 9y = 0\\).",
+    "a": "\\(y = C_1\\cos(3x) + C_2\\sin(3x)\\)",
+    "steps": [
+      "Characteristic: \\(r^2 + 9 = 0 \\Rightarrow r = \\pm 3i\\) (pure imaginary).",
+      "Complex roots \\(\\pm\\omega i\\) give oscillation: \\(y = C_1\\cos(3x) + C_2\\sin(3x)\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = C_1 e^{3x} + C_2 e^{-3x}\\)",
+        "why": "r\u00b2 = \u22129 has IMAGINARY roots \u2014 real exponentials come from r\u00b2 = +9."
+      },
+      {
+        "ans": "\\(y = C_1\\cos(9x) + C_2\\sin(9x)\\)",
+        "why": "The frequency is \u221a9 = 3, not 9 \u2014 the root of the characteristic equation, not the coefficient."
+      }
+    ],
+    "vec": [
+      23,
+      4,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 3,
+    "sample": 1,
+    "seed": 379239690,
+    "key": "de2_gen_complex",
+    "q": "Write the general solution of \\(y'' + 9y = 0\\).",
+    "a": "\\(y = C_1\\cos(3x) + C_2\\sin(3x)\\)",
+    "steps": [
+      "Characteristic: \\(r^2 + 9 = 0 \\Rightarrow r = \\pm 3i\\) (pure imaginary).",
+      "Complex roots \\(\\pm\\omega i\\) give oscillation: \\(y = C_1\\cos(3x) + C_2\\sin(3x)\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = C_1 e^{3x} + C_2 e^{-3x}\\)",
+        "why": "r\u00b2 = \u22129 has IMAGINARY roots \u2014 real exponentials come from r\u00b2 = +9."
+      },
+      {
+        "ans": "\\(y = C_1\\cos(9x) + C_2\\sin(9x)\\)",
+        "why": "The frequency is \u221a9 = 3, not 9 \u2014 the root of the characteristic equation, not the coefficient."
+      }
+    ],
+    "vec": [
+      23,
+      4,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 3,
+    "sample": 2,
+    "seed": 362462071,
+    "key": "de2_gen_complex",
+    "q": "Write the general solution of \\(y'' + 4y = 0\\).",
+    "a": "\\(y = C_1\\cos(2x) + C_2\\sin(2x)\\)",
+    "steps": [
+      "Characteristic: \\(r^2 + 4 = 0 \\Rightarrow r = \\pm 2i\\) (pure imaginary).",
+      "Complex roots \\(\\pm\\omega i\\) give oscillation: \\(y = C_1\\cos(2x) + C_2\\sin(2x)\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = C_1 e^{2x} + C_2 e^{-2x}\\)",
+        "why": "r\u00b2 = \u22124 has IMAGINARY roots \u2014 real exponentials come from r\u00b2 = +4."
+      },
+      {
+        "ans": "\\(y = C_1\\cos(4x) + C_2\\sin(4x)\\)",
+        "why": "The frequency is \u221a4 = 2, not 4 \u2014 the root of the characteristic equation, not the coefficient."
+      }
+    ],
+    "vec": [
+      23,
+      4,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 3,
+    "sample": 3,
+    "seed": 345684452,
+    "key": "de2_gen_complex",
+    "q": "Write the general solution of \\(y'' + 4y = 0\\).",
+    "a": "\\(y = C_1\\cos(2x) + C_2\\sin(2x)\\)",
+    "steps": [
+      "Characteristic: \\(r^2 + 4 = 0 \\Rightarrow r = \\pm 2i\\) (pure imaginary).",
+      "Complex roots \\(\\pm\\omega i\\) give oscillation: \\(y = C_1\\cos(2x) + C_2\\sin(2x)\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = C_1 e^{2x} + C_2 e^{-2x}\\)",
+        "why": "r\u00b2 = \u22124 has IMAGINARY roots \u2014 real exponentials come from r\u00b2 = +4."
+      },
+      {
+        "ans": "\\(y = C_1\\cos(4x) + C_2\\sin(4x)\\)",
+        "why": "The frequency is \u221a4 = 2, not 4 \u2014 the root of the characteristic equation, not the coefficient."
+      }
+    ],
+    "vec": [
+      23,
+      4,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 3,
+    "sample": 4,
+    "seed": 328906833,
+    "key": "de2_gen_complex",
+    "q": "Write the general solution of \\(y'' + 25y = 0\\).",
+    "a": "\\(y = C_1\\cos(5x) + C_2\\sin(5x)\\)",
+    "steps": [
+      "Characteristic: \\(r^2 + 25 = 0 \\Rightarrow r = \\pm 5i\\) (pure imaginary).",
+      "Complex roots \\(\\pm\\omega i\\) give oscillation: \\(y = C_1\\cos(5x) + C_2\\sin(5x)\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = C_1 e^{5x} + C_2 e^{-5x}\\)",
+        "why": "r\u00b2 = \u221225 has IMAGINARY roots \u2014 real exponentials come from r\u00b2 = +25."
+      },
+      {
+        "ans": "\\(y = C_1\\cos(25x) + C_2\\sin(25x)\\)",
+        "why": "The frequency is \u221a25 = 5, not 25 \u2014 the root of the characteristic equation, not the coefficient."
+      }
+    ],
+    "vec": [
+      23,
+      4,
+      5
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 3,
+    "sample": 5,
+    "seed": 312129214,
+    "key": "de2_gen_complex",
+    "q": "Write the general solution of \\(y'' + 25y = 0\\).",
+    "a": "\\(y = C_1\\cos(5x) + C_2\\sin(5x)\\)",
+    "steps": [
+      "Characteristic: \\(r^2 + 25 = 0 \\Rightarrow r = \\pm 5i\\) (pure imaginary).",
+      "Complex roots \\(\\pm\\omega i\\) give oscillation: \\(y = C_1\\cos(5x) + C_2\\sin(5x)\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = C_1 e^{5x} + C_2 e^{-5x}\\)",
+        "why": "r\u00b2 = \u221225 has IMAGINARY roots \u2014 real exponentials come from r\u00b2 = +25."
+      },
+      {
+        "ans": "\\(y = C_1\\cos(25x) + C_2\\sin(25x)\\)",
+        "why": "The frequency is \u221a25 = 5, not 25 \u2014 the root of the characteristic equation, not the coefficient."
+      }
+    ],
+    "vec": [
+      23,
+      4,
+      5
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 4,
+    "sample": 0,
+    "seed": 1713262976,
+    "key": "de2_ivp",
+    "q": "Solve the IVP \\(y'' + 0y' - y = 0\\), \\(y(0) = 3\\), \\(y'(0) = 1\\).",
+    "a": "\\(y = e^{-x} + 2e^{x}\\)",
+    "steps": [
+      "Roots \\(r = -1, 1\\): general solution \\(y = C_1 e^{-x} + C_2 e^{1x}\\).",
+      "\\(y(0) = C_1 + C_2 = 3\\); \\(y'(0) = -C_1 + 1C_2 = 1\\).",
+      "Solve the 2\u00d72 system: \\(C_1 = 1\\), \\(C_2 = 2\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 3e^{-x} + 1e^{1x}\\)",
+        "why": "y(0) and y\u2032(0) are CONDITIONS, not the constants \u2014 solve the two-equation system for C\u2081, C\u2082."
+      },
+      {
+        "ans": "\\(y = 2e^{-x} + 1e^{1x}\\)",
+        "why": "Each constant pairs with its own root \u2014 keep C\u2081 with e^{\u2212x} and C\u2082 with e^{1x} when solving."
+      }
+    ],
+    "vec": [
+      23,
+      5,
+      1,
+      1,
+      2,
+      3,
+      1
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 4,
+    "sample": 1,
+    "seed": 1730040595,
+    "key": "de2_ivp",
+    "q": "Solve the IVP \\(y'' + 0y' - y = 0\\), \\(y(0) = 4\\), \\(y'(0) = 2\\).",
+    "a": "\\(y = e^{-x} + 3e^{x}\\)",
+    "steps": [
+      "Roots \\(r = -1, 1\\): general solution \\(y = C_1 e^{-x} + C_2 e^{1x}\\).",
+      "\\(y(0) = C_1 + C_2 = 4\\); \\(y'(0) = -C_1 + 1C_2 = 2\\).",
+      "Solve the 2\u00d72 system: \\(C_1 = 1\\), \\(C_2 = 3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 4e^{-x} + 2e^{1x}\\)",
+        "why": "y(0) and y\u2032(0) are CONDITIONS, not the constants \u2014 solve the two-equation system for C\u2081, C\u2082."
+      },
+      {
+        "ans": "\\(y = 3e^{-x} + 1e^{1x}\\)",
+        "why": "Each constant pairs with its own root \u2014 keep C\u2081 with e^{\u2212x} and C\u2082 with e^{1x} when solving."
+      }
+    ],
+    "vec": [
+      23,
+      5,
+      1,
+      1,
+      3,
+      4,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 4,
+    "sample": 2,
+    "seed": 1746818214,
+    "key": "de2_ivp",
+    "q": "Solve the IVP \\(y'' - 2y' - 3y = 0\\), \\(y(0) = 3\\), \\(y'(0) = 5\\).",
+    "a": "\\(y = e^{-x} + 2e^{3x}\\)",
+    "steps": [
+      "Roots \\(r = -1, 3\\): general solution \\(y = C_1 e^{-x} + C_2 e^{3x}\\).",
+      "\\(y(0) = C_1 + C_2 = 3\\); \\(y'(0) = -C_1 + 3C_2 = 5\\).",
+      "Solve the 2\u00d72 system: \\(C_1 = 1\\), \\(C_2 = 2\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 3e^{-x} + 5e^{3x}\\)",
+        "why": "y(0) and y\u2032(0) are CONDITIONS, not the constants \u2014 solve the two-equation system for C\u2081, C\u2082."
+      },
+      {
+        "ans": "\\(y = 2e^{-x} + 1e^{3x}\\)",
+        "why": "Each constant pairs with its own root \u2014 keep C\u2081 with e^{\u2212x} and C\u2082 with e^{3x} when solving."
+      }
+    ],
+    "vec": [
+      23,
+      5,
+      3,
+      1,
+      2,
+      3,
+      5
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 4,
+    "sample": 3,
+    "seed": 1763595833,
+    "key": "de2_ivp",
+    "q": "Solve the IVP \\(y'' - 2y' - 3y = 0\\), \\(y(0) = 2\\), \\(y'(0) = 2\\).",
+    "a": "\\(y = e^{-x} + e^{3x}\\)",
+    "steps": [
+      "Roots \\(r = -1, 3\\): general solution \\(y = C_1 e^{-x} + C_2 e^{3x}\\).",
+      "\\(y(0) = C_1 + C_2 = 2\\); \\(y'(0) = -C_1 + 3C_2 = 2\\).",
+      "Solve the 2\u00d72 system: \\(C_1 = 1\\), \\(C_2 = 1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 2e^{-x} + 2e^{3x}\\)",
+        "why": "y(0) and y\u2032(0) are CONDITIONS, not the constants \u2014 solve the two-equation system for C\u2081, C\u2082."
+      },
+      {
+        "ans": "\\(y = 1e^{-x} + 1e^{3x}\\)",
+        "why": "Each constant pairs with its own root \u2014 keep C\u2081 with e^{\u2212x} and C\u2082 with e^{3x} when solving."
+      }
+    ],
+    "vec": [
+      23,
+      5,
+      3,
+      1,
+      1,
+      2,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 4,
+    "sample": 4,
+    "seed": 1780373452,
+    "key": "de2_ivp",
+    "q": "Solve the IVP \\(y'' - 2y' - 3y = 0\\), \\(y(0) = 2\\), \\(y'(0) = 2\\).",
+    "a": "\\(y = e^{-x} + e^{3x}\\)",
+    "steps": [
+      "Roots \\(r = -1, 3\\): general solution \\(y = C_1 e^{-x} + C_2 e^{3x}\\).",
+      "\\(y(0) = C_1 + C_2 = 2\\); \\(y'(0) = -C_1 + 3C_2 = 2\\).",
+      "Solve the 2\u00d72 system: \\(C_1 = 1\\), \\(C_2 = 1\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 2e^{-x} + 2e^{3x}\\)",
+        "why": "y(0) and y\u2032(0) are CONDITIONS, not the constants \u2014 solve the two-equation system for C\u2081, C\u2082."
+      },
+      {
+        "ans": "\\(y = 1e^{-x} + 1e^{3x}\\)",
+        "why": "Each constant pairs with its own root \u2014 keep C\u2081 with e^{\u2212x} and C\u2082 with e^{3x} when solving."
+      }
+    ],
+    "vec": [
+      23,
+      5,
+      3,
+      1,
+      1,
+      2,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 4,
+    "sample": 5,
+    "seed": 1797151071,
+    "key": "de2_ivp",
+    "q": "Solve the IVP \\(y'' - y' - 2y = 0\\), \\(y(0) = 5\\), \\(y'(0) = 4\\).",
+    "a": "\\(y = 2e^{-x} + 3e^{2x}\\)",
+    "steps": [
+      "Roots \\(r = -1, 2\\): general solution \\(y = C_1 e^{-x} + C_2 e^{2x}\\).",
+      "\\(y(0) = C_1 + C_2 = 5\\); \\(y'(0) = -C_1 + 2C_2 = 4\\).",
+      "Solve the 2\u00d72 system: \\(C_1 = 2\\), \\(C_2 = 3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 5e^{-x} + 4e^{2x}\\)",
+        "why": "y(0) and y\u2032(0) are CONDITIONS, not the constants \u2014 solve the two-equation system for C\u2081, C\u2082."
+      },
+      {
+        "ans": "\\(y = 3e^{-x} + 2e^{2x}\\)",
+        "why": "Each constant pairs with its own root \u2014 keep C\u2081 with e^{\u2212x} and C\u2082 with e^{2x} when solving."
+      }
+    ],
+    "vec": [
+      23,
+      5,
+      2,
+      2,
+      3,
+      5,
+      4
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 5,
+    "sample": 0,
+    "seed": 3837114283,
+    "key": "de2_undetermined_form",
+    "q": "For \\(y'' + 5y' + 6y = e^{2x}\\), what is the correct FORM of the particular solution (undetermined coefficients)? (Note: the characteristic roots are \\(-2, -3\\).)",
+    "a": "\\(y_p = Ae^{2x}\\)",
+    "steps": [
+      "Match the guess to the forcing term: exponential \u2192 \\(Ae^{kx}\\); polynomial \u2192 same-degree polynomial; sine/cosine \u2192 BOTH \\(A\\cos + B\\sin\\).",
+      "No resonance here: 2 is not a characteristic root \\((-2, -3)\\), so no extra factor of \\(x\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y_p = Ax + B\\)",
+        "why": "The guess mirrors the forcing function\u2019s family \u2014 exponential begets exponential, sine begets sine AND cosine."
+      },
+      {
+        "ans": "\\(y_p = Axe^{2x}\\)",
+        "why": "The x-factor is only added when the forcing matches a characteristic root (resonance) \u2014 not the case here."
+      }
+    ],
+    "vec": [
+      23,
+      6,
+      0,
+      2,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 5,
+    "sample": 1,
+    "seed": 3820336664,
+    "key": "de2_undetermined_form",
+    "q": "For \\(y'' + 5y' + 6y = \\sin(3x)\\), what is the correct FORM of the particular solution (undetermined coefficients)? (Note: the characteristic roots are \\(-2, -3\\).)",
+    "a": "\\(y_p = A\\cos(3x) + B\\sin(3x)\\)",
+    "steps": [
+      "Match the guess to the forcing term: exponential \u2192 \\(Ae^{kx}\\); polynomial \u2192 same-degree polynomial; sine/cosine \u2192 BOTH \\(A\\cos + B\\sin\\).",
+      "No resonance here: \\(\\pm 3i\\) is not a characteristic root \\((-2, -3)\\), so no extra factor of \\(x\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y_p = Ae^{2x}\\)",
+        "why": "The guess mirrors the forcing function\u2019s family \u2014 exponential begets exponential, sine begets sine AND cosine."
+      },
+      {
+        "ans": "\\(y_p = A\\sin(3x)\\)",
+        "why": "Sine forcing needs BOTH sin and cos in the guess \u2014 differentiation mixes them."
+      }
+    ],
+    "vec": [
+      23,
+      6,
+      2,
+      2,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 5,
+    "sample": 2,
+    "seed": 3870669521,
+    "key": "de2_undetermined_form",
+    "q": "For \\(y'' + 5y' + 6y = 3x\\), what is the correct FORM of the particular solution (undetermined coefficients)? (Note: the characteristic roots are \\(-2, -3\\).)",
+    "a": "\\(y_p = Ax + B\\)",
+    "steps": [
+      "Match the guess to the forcing term: exponential \u2192 \\(Ae^{kx}\\); polynomial \u2192 same-degree polynomial; sine/cosine \u2192 BOTH \\(A\\cos + B\\sin\\).",
+      "No resonance here: 0 is not a characteristic root \\((-2, -3)\\), so no extra factor of \\(x\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y_p = Ae^{2x}\\)",
+        "why": "The guess mirrors the forcing function\u2019s family \u2014 exponential begets exponential, sine begets sine AND cosine."
+      },
+      {
+        "ans": "\\(y_p = Axe^{2x}\\)",
+        "why": "The x-factor is only added when the forcing matches a characteristic root (resonance) \u2014 not the case here."
+      }
+    ],
+    "vec": [
+      23,
+      6,
+      1,
+      2,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 5,
+    "sample": 3,
+    "seed": 3853891902,
+    "key": "de2_undetermined_form",
+    "q": "For \\(y'' + 5y' + 6y = e^{3x}\\), what is the correct FORM of the particular solution (undetermined coefficients)? (Note: the characteristic roots are \\(-2, -3\\).)",
+    "a": "\\(y_p = Ae^{3x}\\)",
+    "steps": [
+      "Match the guess to the forcing term: exponential \u2192 \\(Ae^{kx}\\); polynomial \u2192 same-degree polynomial; sine/cosine \u2192 BOTH \\(A\\cos + B\\sin\\).",
+      "No resonance here: 3 is not a characteristic root \\((-2, -3)\\), so no extra factor of \\(x\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y_p = Ax + B\\)",
+        "why": "The guess mirrors the forcing function\u2019s family \u2014 exponential begets exponential, sine begets sine AND cosine."
+      },
+      {
+        "ans": "\\(y_p = Axe^{3x}\\)",
+        "why": "The x-factor is only added when the forcing matches a characteristic root (resonance) \u2014 not the case here."
+      }
+    ],
+    "vec": [
+      23,
+      6,
+      0,
+      3,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 5,
+    "sample": 4,
+    "seed": 3904224759,
+    "key": "de2_undetermined_form",
+    "q": "For \\(y'' + 5y' + 6y = \\sin(3x)\\), what is the correct FORM of the particular solution (undetermined coefficients)? (Note: the characteristic roots are \\(-2, -3\\).)",
+    "a": "\\(y_p = A\\cos(3x) + B\\sin(3x)\\)",
+    "steps": [
+      "Match the guess to the forcing term: exponential \u2192 \\(Ae^{kx}\\); polynomial \u2192 same-degree polynomial; sine/cosine \u2192 BOTH \\(A\\cos + B\\sin\\).",
+      "No resonance here: \\(\\pm 3i\\) is not a characteristic root \\((-2, -3)\\), so no extra factor of \\(x\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y_p = Ae^{2x}\\)",
+        "why": "The guess mirrors the forcing function\u2019s family \u2014 exponential begets exponential, sine begets sine AND cosine."
+      },
+      {
+        "ans": "\\(y_p = A\\sin(3x)\\)",
+        "why": "Sine forcing needs BOTH sin and cos in the guess \u2014 differentiation mixes them."
+      }
+    ],
+    "vec": [
+      23,
+      6,
+      2,
+      2,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 5,
+    "sample": 5,
+    "seed": 3887447140,
+    "key": "de2_undetermined_form",
+    "q": "For \\(y'' + 5y' + 6y = 4x\\), what is the correct FORM of the particular solution (undetermined coefficients)? (Note: the characteristic roots are \\(-2, -3\\).)",
+    "a": "\\(y_p = Ax + B\\)",
+    "steps": [
+      "Match the guess to the forcing term: exponential \u2192 \\(Ae^{kx}\\); polynomial \u2192 same-degree polynomial; sine/cosine \u2192 BOTH \\(A\\cos + B\\sin\\).",
+      "No resonance here: 0 is not a characteristic root \\((-2, -3)\\), so no extra factor of \\(x\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y_p = Ae^{4x}\\)",
+        "why": "The guess mirrors the forcing function\u2019s family \u2014 exponential begets exponential, sine begets sine AND cosine."
+      },
+      {
+        "ans": "\\(y_p = Axe^{4x}\\)",
+        "why": "The x-factor is only added when the forcing matches a characteristic root (resonance) \u2014 not the case here."
+      }
+    ],
+    "vec": [
+      23,
+      6,
+      1,
+      4,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 6,
+    "sample": 0,
+    "seed": 1437853166,
+    "key": "de2_spring",
+    "q": "A spring-mass system satisfies \\(y'' + 9y = 0\\) (mass 1, spring constant 9). Find the angular frequency of oscillation.",
+    "a": "\\(\\omega = 3\\)",
+    "steps": [
+      "Standard form: \\(y'' + \\frac{k}{m}y = 0\\) with \\(\\omega = \\sqrt{k/m}\\).",
+      "\\(\\omega = \\sqrt{9/1} = \\sqrt{9} = 3\\).",
+      "Solutions oscillate as \\(\\cos(3t)\\), \\(\\sin(3t)\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\omega = 9\\)",
+        "why": "\u03c9 is the SQUARE ROOT of k/m \u2014 the characteristic roots are \u00b1\u221a(k/m)\u00b7i."
+      },
+      {
+        "ans": "\\(\\omega = 9\\)",
+        "why": "Divide by the mass first: \u03c9\u00b2 = k/m, then take the root."
+      }
+    ],
+    "vec": [
+      23,
+      7,
+      1,
+      9,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 6,
+    "sample": 1,
+    "seed": 1454630785,
+    "key": "de2_spring",
+    "q": "A spring-mass system satisfies \\(y'' + 4y = 0\\) (mass 1, spring constant 4). Find the angular frequency of oscillation.",
+    "a": "\\(\\omega = 2\\)",
+    "steps": [
+      "Standard form: \\(y'' + \\frac{k}{m}y = 0\\) with \\(\\omega = \\sqrt{k/m}\\).",
+      "\\(\\omega = \\sqrt{4/1} = \\sqrt{4} = 2\\).",
+      "Solutions oscillate as \\(\\cos(2t)\\), \\(\\sin(2t)\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\omega = 4\\)",
+        "why": "\u03c9 is the SQUARE ROOT of k/m \u2014 the characteristic roots are \u00b1\u221a(k/m)\u00b7i."
+      },
+      {
+        "ans": "\\(\\omega = 4\\)",
+        "why": "Divide by the mass first: \u03c9\u00b2 = k/m, then take the root."
+      }
+    ],
+    "vec": [
+      23,
+      7,
+      1,
+      4,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 6,
+    "sample": 2,
+    "seed": 1404297928,
+    "key": "de2_spring",
+    "q": "A spring-mass system satisfies \\(4y'' + 16y = 0\\) (mass 4, spring constant 16). Find the angular frequency of oscillation.",
+    "a": "\\(\\omega = 2\\)",
+    "steps": [
+      "Standard form: \\(y'' + \\frac{k}{m}y = 0\\) with \\(\\omega = \\sqrt{k/m}\\).",
+      "\\(\\omega = \\sqrt{16/4} = \\sqrt{4} = 2\\).",
+      "Solutions oscillate as \\(\\cos(2t)\\), \\(\\sin(2t)\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\omega = 4\\)",
+        "why": "\u03c9 is the SQUARE ROOT of k/m \u2014 the characteristic roots are \u00b1\u221a(k/m)\u00b7i."
+      },
+      {
+        "ans": "\\(\\omega = 16\\)",
+        "why": "Divide by the mass first: \u03c9\u00b2 = k/m, then take the root."
+      }
+    ],
+    "vec": [
+      23,
+      7,
+      4,
+      16,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 6,
+    "sample": 3,
+    "seed": 1421075547,
+    "key": "de2_spring",
+    "q": "A spring-mass system satisfies \\(y'' + 25y = 0\\) (mass 1, spring constant 25). Find the angular frequency of oscillation.",
+    "a": "\\(\\omega = 5\\)",
+    "steps": [
+      "Standard form: \\(y'' + \\frac{k}{m}y = 0\\) with \\(\\omega = \\sqrt{k/m}\\).",
+      "\\(\\omega = \\sqrt{25/1} = \\sqrt{25} = 5\\).",
+      "Solutions oscillate as \\(\\cos(5t)\\), \\(\\sin(5t)\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\omega = 25\\)",
+        "why": "\u03c9 is the SQUARE ROOT of k/m \u2014 the characteristic roots are \u00b1\u221a(k/m)\u00b7i."
+      },
+      {
+        "ans": "\\(\\omega = 25\\)",
+        "why": "Divide by the mass first: \u03c9\u00b2 = k/m, then take the root."
+      }
+    ],
+    "vec": [
+      23,
+      7,
+      1,
+      25,
+      5
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 6,
+    "sample": 4,
+    "seed": 1504963642,
+    "key": "de2_spring",
+    "q": "A spring-mass system satisfies \\(4y'' + 36y = 0\\) (mass 4, spring constant 36). Find the angular frequency of oscillation.",
+    "a": "\\(\\omega = 3\\)",
+    "steps": [
+      "Standard form: \\(y'' + \\frac{k}{m}y = 0\\) with \\(\\omega = \\sqrt{k/m}\\).",
+      "\\(\\omega = \\sqrt{36/4} = \\sqrt{9} = 3\\).",
+      "Solutions oscillate as \\(\\cos(3t)\\), \\(\\sin(3t)\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\omega = 9\\)",
+        "why": "\u03c9 is the SQUARE ROOT of k/m \u2014 the characteristic roots are \u00b1\u221a(k/m)\u00b7i."
+      },
+      {
+        "ans": "\\(\\omega = 36\\)",
+        "why": "Divide by the mass first: \u03c9\u00b2 = k/m, then take the root."
+      }
+    ],
+    "vec": [
+      23,
+      7,
+      4,
+      36,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_SecondOrder",
+    "genIndex": 6,
+    "sample": 5,
+    "seed": 1521741261,
+    "key": "de2_spring",
+    "q": "A spring-mass system satisfies \\(4y'' + 36y = 0\\) (mass 4, spring constant 36). Find the angular frequency of oscillation.",
+    "a": "\\(\\omega = 3\\)",
+    "steps": [
+      "Standard form: \\(y'' + \\frac{k}{m}y = 0\\) with \\(\\omega = \\sqrt{k/m}\\).",
+      "\\(\\omega = \\sqrt{36/4} = \\sqrt{9} = 3\\).",
+      "Solutions oscillate as \\(\\cos(3t)\\), \\(\\sin(3t)\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\omega = 9\\)",
+        "why": "\u03c9 is the SQUARE ROOT of k/m \u2014 the characteristic roots are \u00b1\u221a(k/m)\u00b7i."
+      },
+      {
+        "ans": "\\(\\omega = 36\\)",
+        "why": "Divide by the mass first: \u03c9\u00b2 = k/m, then take the root."
+      }
+    ],
+    "vec": [
+      23,
+      7,
+      4,
+      36,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 4174433558,
+    "key": "de3_laplace_basic",
+    "q": "Find the Laplace transform \\(\\mathcal{L}\\{\\sin(2t)\\}\\).",
+    "a": "\\(\\dfrac{2}{s^2+4}\\)",
+    "steps": [
+      "Standard table: \\(\\mathcal{L}\\{e^{at}\\} = \\frac{1}{s-a}\\), \\(\\mathcal{L}\\{t^n\\} = \\frac{n!}{s^{n+1}}\\), \\(\\mathcal{L}\\{\\sin bt\\} = \\frac{b}{s^2+b^2}\\).",
+      "Apply with the given constants."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\dfrac{s}{s^2+4}\\)",
+        "why": "s/(s\u00b2+b\u00b2) is COSINE; sine has the constant b on top."
+      },
+      {
+        "ans": "\\(\\dfrac{2}{s^2-4}\\)",
+        "why": "Trig transforms have s\u00b2 PLUS b\u00b2; the minus version belongs to hyperbolic functions."
+      }
+    ],
+    "vec": [
+      24,
+      1,
+      2,
+      3,
+      3,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 4191211177,
+    "key": "de3_laplace_basic",
+    "q": "Find the Laplace transform \\(\\mathcal{L}\\{\\sin(3t)\\}\\).",
+    "a": "\\(\\dfrac{3}{s^2+9}\\)",
+    "steps": [
+      "Standard table: \\(\\mathcal{L}\\{e^{at}\\} = \\frac{1}{s-a}\\), \\(\\mathcal{L}\\{t^n\\} = \\frac{n!}{s^{n+1}}\\), \\(\\mathcal{L}\\{\\sin bt\\} = \\frac{b}{s^2+b^2}\\).",
+      "Apply with the given constants."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\dfrac{s}{s^2+9}\\)",
+        "why": "s/(s\u00b2+b\u00b2) is COSINE; sine has the constant b on top."
+      },
+      {
+        "ans": "\\(\\dfrac{3}{s^2-9}\\)",
+        "why": "Trig transforms have s\u00b2 PLUS b\u00b2; the minus version belongs to hyperbolic functions."
+      }
+    ],
+    "vec": [
+      24,
+      1,
+      2,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 4140878320,
+    "key": "de3_laplace_basic",
+    "q": "Find the Laplace transform \\(\\mathcal{L}\\{e^{3t}\\}\\).",
+    "a": "\\(\\dfrac{1}{s-3}\\)",
+    "steps": [
+      "Standard table: \\(\\mathcal{L}\\{e^{at}\\} = \\frac{1}{s-a}\\), \\(\\mathcal{L}\\{t^n\\} = \\frac{n!}{s^{n+1}}\\), \\(\\mathcal{L}\\{\\sin bt\\} = \\frac{b}{s^2+b^2}\\).",
+      "Apply with the given constants."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\dfrac{1}{s+3}\\)",
+        "why": "L{e^{at}} = 1/(s \u2212 a): the sign of a carries through \u2014 s MINUS a for positive exponent."
+      },
+      {
+        "ans": "\\(\\dfrac{3}{s}\\)",
+        "why": "1/s is the transform of the constant 1; an exponential shifts s by a."
+      }
+    ],
+    "vec": [
+      24,
+      1,
+      0,
+      3,
+      2,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 4157655939,
+    "key": "de3_laplace_basic",
+    "q": "Find the Laplace transform \\(\\mathcal{L}\\{e^{t}\\}\\).",
+    "a": "\\(\\dfrac{1}{s-1}\\)",
+    "steps": [
+      "Standard table: \\(\\mathcal{L}\\{e^{at}\\} = \\frac{1}{s-a}\\), \\(\\mathcal{L}\\{t^n\\} = \\frac{n!}{s^{n+1}}\\), \\(\\mathcal{L}\\{\\sin bt\\} = \\frac{b}{s^2+b^2}\\).",
+      "Apply with the given constants."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\dfrac{1}{s+1}\\)",
+        "why": "L{e^{at}} = 1/(s \u2212 a): the sign of a carries through \u2014 s MINUS a for positive exponent."
+      },
+      {
+        "ans": "\\(\\dfrac{1}{s}\\)",
+        "why": "1/s is the transform of the constant 1; an exponential shifts s by a."
+      }
+    ],
+    "vec": [
+      24,
+      1,
+      0,
+      1,
+      3,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 4241544034,
+    "key": "de3_laplace_basic",
+    "q": "Find the Laplace transform \\(\\mathcal{L}\\{e^{3t}\\}\\).",
+    "a": "\\(\\dfrac{1}{s-3}\\)",
+    "steps": [
+      "Standard table: \\(\\mathcal{L}\\{e^{at}\\} = \\frac{1}{s-a}\\), \\(\\mathcal{L}\\{t^n\\} = \\frac{n!}{s^{n+1}}\\), \\(\\mathcal{L}\\{\\sin bt\\} = \\frac{b}{s^2+b^2}\\).",
+      "Apply with the given constants."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\dfrac{1}{s+3}\\)",
+        "why": "L{e^{at}} = 1/(s \u2212 a): the sign of a carries through \u2014 s MINUS a for positive exponent."
+      },
+      {
+        "ans": "\\(\\dfrac{3}{s}\\)",
+        "why": "1/s is the transform of the constant 1; an exponential shifts s by a."
+      }
+    ],
+    "vec": [
+      24,
+      1,
+      0,
+      3,
+      2,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 4258321653,
+    "key": "de3_laplace_basic",
+    "q": "Find the Laplace transform \\(\\mathcal{L}\\{e^{3t}\\}\\).",
+    "a": "\\(\\dfrac{1}{s-3}\\)",
+    "steps": [
+      "Standard table: \\(\\mathcal{L}\\{e^{at}\\} = \\frac{1}{s-a}\\), \\(\\mathcal{L}\\{t^n\\} = \\frac{n!}{s^{n+1}}\\), \\(\\mathcal{L}\\{\\sin bt\\} = \\frac{b}{s^2+b^2}\\).",
+      "Apply with the given constants."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\dfrac{1}{s+3}\\)",
+        "why": "L{e^{at}} = 1/(s \u2212 a): the sign of a carries through \u2014 s MINUS a for positive exponent."
+      },
+      {
+        "ans": "\\(\\dfrac{3}{s}\\)",
+        "why": "1/s is the transform of the constant 1; an exponential shifts s by a."
+      }
+    ],
+    "vec": [
+      24,
+      1,
+      0,
+      3,
+      3,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 1733595737,
+    "key": "de3_laplace_linear",
+    "q": "Find \\(\\mathcal{L}\\{3 + 2e^{3t}\\}\\).",
+    "a": "\\(\\dfrac{3}{s} + \\dfrac{2}{s-3}\\)",
+    "steps": [
+      "Laplace is linear: transform each term and keep the constants.",
+      "\\(\\mathcal{L}\\{3\\} = \\frac{3}{s}\\); \\(\\mathcal{L}\\{2e^{3t}\\} = \\frac{2}{s-3}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\dfrac{5}{s-3}\\)",
+        "why": "Transform term by term \u2014 the constant 3 transforms to 3/s, not into the exponential\u2019s fraction."
+      },
+      {
+        "ans": "\\(\\dfrac{3}{s} + \\dfrac{2}{s+3}\\)",
+        "why": "e^{+at} shifts to s \u2212 a; the s + a version is e^{\u2212at}."
+      }
+    ],
+    "vec": [
+      24,
+      2,
+      3,
+      2,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 1716818118,
+    "key": "de3_laplace_linear",
+    "q": "Find \\(\\mathcal{L}\\{3 + 2e^{t}\\}\\).",
+    "a": "\\(\\dfrac{3}{s} + \\dfrac{2}{s-1}\\)",
+    "steps": [
+      "Laplace is linear: transform each term and keep the constants.",
+      "\\(\\mathcal{L}\\{3\\} = \\frac{3}{s}\\); \\(\\mathcal{L}\\{2e^{1t}\\} = \\frac{2}{s-1}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\dfrac{5}{s-1}\\)",
+        "why": "Transform term by term \u2014 the constant 3 transforms to 3/s, not into the exponential\u2019s fraction."
+      },
+      {
+        "ans": "\\(\\dfrac{3}{s} + \\dfrac{2}{s+1}\\)",
+        "why": "e^{+at} shifts to s \u2212 a; the s + a version is e^{\u2212at}."
+      }
+    ],
+    "vec": [
+      24,
+      2,
+      3,
+      2,
+      1
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 1700040499,
+    "key": "de3_laplace_linear",
+    "q": "Find \\(\\mathcal{L}\\{3 + 4e^{t}\\}\\).",
+    "a": "\\(\\dfrac{3}{s} + \\dfrac{4}{s-1}\\)",
+    "steps": [
+      "Laplace is linear: transform each term and keep the constants.",
+      "\\(\\mathcal{L}\\{3\\} = \\frac{3}{s}\\); \\(\\mathcal{L}\\{4e^{1t}\\} = \\frac{4}{s-1}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\dfrac{7}{s-1}\\)",
+        "why": "Transform term by term \u2014 the constant 3 transforms to 3/s, not into the exponential\u2019s fraction."
+      },
+      {
+        "ans": "\\(\\dfrac{3}{s} + \\dfrac{4}{s+1}\\)",
+        "why": "e^{+at} shifts to s \u2212 a; the s + a version is e^{\u2212at}."
+      }
+    ],
+    "vec": [
+      24,
+      2,
+      3,
+      4,
+      1
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 1683262880,
+    "key": "de3_laplace_linear",
+    "q": "Find \\(\\mathcal{L}\\{3 + 4e^{2t}\\}\\).",
+    "a": "\\(\\dfrac{3}{s} + \\dfrac{4}{s-2}\\)",
+    "steps": [
+      "Laplace is linear: transform each term and keep the constants.",
+      "\\(\\mathcal{L}\\{3\\} = \\frac{3}{s}\\); \\(\\mathcal{L}\\{4e^{2t}\\} = \\frac{4}{s-2}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\dfrac{7}{s-2}\\)",
+        "why": "Transform term by term \u2014 the constant 3 transforms to 3/s, not into the exponential\u2019s fraction."
+      },
+      {
+        "ans": "\\(\\dfrac{3}{s} + \\dfrac{4}{s+2}\\)",
+        "why": "e^{+at} shifts to s \u2212 a; the s + a version is e^{\u2212at}."
+      }
+    ],
+    "vec": [
+      24,
+      2,
+      3,
+      4,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 1800706213,
+    "key": "de3_laplace_linear",
+    "q": "Find \\(\\mathcal{L}\\{5 + 4e^{4t}\\}\\).",
+    "a": "\\(\\dfrac{5}{s} + \\dfrac{4}{s-4}\\)",
+    "steps": [
+      "Laplace is linear: transform each term and keep the constants.",
+      "\\(\\mathcal{L}\\{5\\} = \\frac{5}{s}\\); \\(\\mathcal{L}\\{4e^{4t}\\} = \\frac{4}{s-4}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\dfrac{9}{s-4}\\)",
+        "why": "Transform term by term \u2014 the constant 5 transforms to 5/s, not into the exponential\u2019s fraction."
+      },
+      {
+        "ans": "\\(\\dfrac{5}{s} + \\dfrac{4}{s+4}\\)",
+        "why": "e^{+at} shifts to s \u2212 a; the s + a version is e^{\u2212at}."
+      }
+    ],
+    "vec": [
+      24,
+      2,
+      5,
+      4,
+      4
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 1783928594,
+    "key": "de3_laplace_linear",
+    "q": "Find \\(\\mathcal{L}\\{5 + 2e^{2t}\\}\\).",
+    "a": "\\(\\dfrac{5}{s} + \\dfrac{2}{s-2}\\)",
+    "steps": [
+      "Laplace is linear: transform each term and keep the constants.",
+      "\\(\\mathcal{L}\\{5\\} = \\frac{5}{s}\\); \\(\\mathcal{L}\\{2e^{2t}\\} = \\frac{2}{s-2}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\dfrac{7}{s-2}\\)",
+        "why": "Transform term by term \u2014 the constant 5 transforms to 5/s, not into the exponential\u2019s fraction."
+      },
+      {
+        "ans": "\\(\\dfrac{5}{s} + \\dfrac{2}{s+2}\\)",
+        "why": "e^{+at} shifts to s \u2212 a; the s + a version is e^{\u2212at}."
+      }
+    ],
+    "vec": [
+      24,
+      2,
+      5,
+      2,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 733336584,
+    "key": "de3_inverse",
+    "q": "Find the inverse Laplace transform \\(\\mathcal{L}^{-1}\\left\\{\\dfrac{4}{s^2+16}\\right\\}\\).",
+    "a": "\\(\\sin(4t)\\)",
+    "steps": [
+      "\\(\\frac{b}{s^2+b^2}\\) is exactly the sine pattern with \\(b = 4\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\cos(4t)\\)",
+        "why": "Cosine has s in the numerator; a constant on top is sine."
+      },
+      {
+        "ans": "\\(\\sin(16t)\\)",
+        "why": "The frequency is b = 4 (from b\u00b2 = 16 in the denominator), matching the numerator."
+      }
+    ],
+    "vec": [
+      24,
+      3,
+      1,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 750114203,
+    "key": "de3_inverse",
+    "q": "Find the inverse Laplace transform \\(\\mathcal{L}^{-1}\\left\\{\\dfrac{2}{s-3}\\right\\}\\).",
+    "a": "\\(2e^{3t}\\)",
+    "steps": [
+      "\\(\\frac{1}{s-a}\\) inverts to \\(e^{at}\\); the constant 2 rides along."
+    ],
+    "traps": [
+      {
+        "ans": "\\(2e^{-3t}\\)",
+        "why": "s \u2212 3 in the denominator means e^{+3t} \u2014 the sign flips only for s + a."
+      },
+      {
+        "ans": "\\(2t e^{3t}\\)",
+        "why": "The t-factor appears for (s\u2212a)\u00b2 (a squared denominator); first power inverts to a plain exponential."
+      }
+    ],
+    "vec": [
+      24,
+      3,
+      0,
+      2,
+      3,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 766891822,
+    "key": "de3_inverse",
+    "q": "Find the inverse Laplace transform \\(\\mathcal{L}^{-1}\\left\\{\\dfrac{4}{s-1}\\right\\}\\).",
+    "a": "\\(4e^{t}\\)",
+    "steps": [
+      "\\(\\frac{1}{s-a}\\) inverts to \\(e^{at}\\); the constant 4 rides along."
+    ],
+    "traps": [
+      {
+        "ans": "\\(4e^{-1t}\\)",
+        "why": "s \u2212 1 in the denominator means e^{+1t} \u2014 the sign flips only for s + a."
+      },
+      {
+        "ans": "\\(4t e^{1t}\\)",
+        "why": "The t-factor appears for (s\u2212a)\u00b2 (a squared denominator); first power inverts to a plain exponential."
+      }
+    ],
+    "vec": [
+      24,
+      3,
+      0,
+      4,
+      1,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 783669441,
+    "key": "de3_inverse",
+    "q": "Find the inverse Laplace transform \\(\\mathcal{L}^{-1}\\left\\{\\dfrac{4}{s-1}\\right\\}\\).",
+    "a": "\\(4e^{t}\\)",
+    "steps": [
+      "\\(\\frac{1}{s-a}\\) inverts to \\(e^{at}\\); the constant 4 rides along."
+    ],
+    "traps": [
+      {
+        "ans": "\\(4e^{-1t}\\)",
+        "why": "s \u2212 1 in the denominator means e^{+1t} \u2014 the sign flips only for s + a."
+      },
+      {
+        "ans": "\\(4t e^{1t}\\)",
+        "why": "The t-factor appears for (s\u2212a)\u00b2 (a squared denominator); first power inverts to a plain exponential."
+      }
+    ],
+    "vec": [
+      24,
+      3,
+      0,
+      4,
+      1,
+      4
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 800447060,
+    "key": "de3_inverse",
+    "q": "Find the inverse Laplace transform \\(\\mathcal{L}^{-1}\\left\\{\\dfrac{4}{s-1}\\right\\}\\).",
+    "a": "\\(4e^{t}\\)",
+    "steps": [
+      "\\(\\frac{1}{s-a}\\) inverts to \\(e^{at}\\); the constant 4 rides along."
+    ],
+    "traps": [
+      {
+        "ans": "\\(4e^{-1t}\\)",
+        "why": "s \u2212 1 in the denominator means e^{+1t} \u2014 the sign flips only for s + a."
+      },
+      {
+        "ans": "\\(4t e^{1t}\\)",
+        "why": "The t-factor appears for (s\u2212a)\u00b2 (a squared denominator); first power inverts to a plain exponential."
+      }
+    ],
+    "vec": [
+      24,
+      3,
+      0,
+      4,
+      1,
+      4
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 817224679,
+    "key": "de3_inverse",
+    "q": "Find the inverse Laplace transform \\(\\mathcal{L}^{-1}\\left\\{\\dfrac{2}{s^2+4}\\right\\}\\).",
+    "a": "\\(\\sin(2t)\\)",
+    "steps": [
+      "\\(\\frac{b}{s^2+b^2}\\) is exactly the sine pattern with \\(b = 2\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\cos(2t)\\)",
+        "why": "Cosine has s in the numerator; a constant on top is sine."
+      },
+      {
+        "ans": "\\(\\sin(4t)\\)",
+        "why": "The frequency is b = 2 (from b\u00b2 = 4 in the denominator), matching the numerator."
+      }
+    ],
+    "vec": [
+      24,
+      3,
+      1,
+      4,
+      3,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 3,
+    "sample": 0,
+    "seed": 2320304083,
+    "key": "de3_laplace_deriv",
+    "q": "If \\(\\mathcal{L}\\{y(t)\\} = Y(s)\\) and \\(y(0) = 2\\), express \\(\\mathcal{L}\\{y'(t)\\}\\).",
+    "a": "\\(sY(s) - 2\\)",
+    "steps": [
+      "Derivative rule: \\(\\mathcal{L}\\{y'\\} = sY(s) - y(0)\\).",
+      "This is what converts a differential equation into ALGEBRA in s."
+    ],
+    "traps": [
+      {
+        "ans": "\\(sY(s) + 2\\)",
+        "why": "The initial value is SUBTRACTED \u2014 it comes from the boundary term of integration by parts."
+      },
+      {
+        "ans": "\\(\\dfrac{Y(s)}{s} - 2\\)",
+        "why": "Differentiation MULTIPLIES by s; dividing by s corresponds to integration."
+      }
+    ],
+    "vec": [
+      24,
+      4,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 3,
+    "sample": 1,
+    "seed": 2303526464,
+    "key": "de3_laplace_deriv",
+    "q": "If \\(\\mathcal{L}\\{y(t)\\} = Y(s)\\) and \\(y(0) = 1\\), express \\(\\mathcal{L}\\{y'(t)\\}\\).",
+    "a": "\\(sY(s) - 1\\)",
+    "steps": [
+      "Derivative rule: \\(\\mathcal{L}\\{y'\\} = sY(s) - y(0)\\).",
+      "This is what converts a differential equation into ALGEBRA in s."
+    ],
+    "traps": [
+      {
+        "ans": "\\(sY(s) + 1\\)",
+        "why": "The initial value is SUBTRACTED \u2014 it comes from the boundary term of integration by parts."
+      },
+      {
+        "ans": "\\(\\dfrac{Y(s)}{s} - 1\\)",
+        "why": "Differentiation MULTIPLIES by s; dividing by s corresponds to integration."
+      }
+    ],
+    "vec": [
+      24,
+      4,
+      1
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 3,
+    "sample": 2,
+    "seed": 2353859321,
+    "key": "de3_laplace_deriv",
+    "q": "If \\(\\mathcal{L}\\{y(t)\\} = Y(s)\\) and \\(y(0) = 3\\), express \\(\\mathcal{L}\\{y'(t)\\}\\).",
+    "a": "\\(sY(s) - 3\\)",
+    "steps": [
+      "Derivative rule: \\(\\mathcal{L}\\{y'\\} = sY(s) - y(0)\\).",
+      "This is what converts a differential equation into ALGEBRA in s."
+    ],
+    "traps": [
+      {
+        "ans": "\\(sY(s) + 3\\)",
+        "why": "The initial value is SUBTRACTED \u2014 it comes from the boundary term of integration by parts."
+      },
+      {
+        "ans": "\\(\\dfrac{Y(s)}{s} - 3\\)",
+        "why": "Differentiation MULTIPLIES by s; dividing by s corresponds to integration."
+      }
+    ],
+    "vec": [
+      24,
+      4,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 3,
+    "sample": 3,
+    "seed": 2337081702,
+    "key": "de3_laplace_deriv",
+    "q": "If \\(\\mathcal{L}\\{y(t)\\} = Y(s)\\) and \\(y(0) = 2\\), express \\(\\mathcal{L}\\{y'(t)\\}\\).",
+    "a": "\\(sY(s) - 2\\)",
+    "steps": [
+      "Derivative rule: \\(\\mathcal{L}\\{y'\\} = sY(s) - y(0)\\).",
+      "This is what converts a differential equation into ALGEBRA in s."
+    ],
+    "traps": [
+      {
+        "ans": "\\(sY(s) + 2\\)",
+        "why": "The initial value is SUBTRACTED \u2014 it comes from the boundary term of integration by parts."
+      },
+      {
+        "ans": "\\(\\dfrac{Y(s)}{s} - 2\\)",
+        "why": "Differentiation MULTIPLIES by s; dividing by s corresponds to integration."
+      }
+    ],
+    "vec": [
+      24,
+      4,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 3,
+    "sample": 4,
+    "seed": 2387414559,
+    "key": "de3_laplace_deriv",
+    "q": "If \\(\\mathcal{L}\\{y(t)\\} = Y(s)\\) and \\(y(0) = 4\\), express \\(\\mathcal{L}\\{y'(t)\\}\\).",
+    "a": "\\(sY(s) - 4\\)",
+    "steps": [
+      "Derivative rule: \\(\\mathcal{L}\\{y'\\} = sY(s) - y(0)\\).",
+      "This is what converts a differential equation into ALGEBRA in s."
+    ],
+    "traps": [
+      {
+        "ans": "\\(sY(s) + 4\\)",
+        "why": "The initial value is SUBTRACTED \u2014 it comes from the boundary term of integration by parts."
+      },
+      {
+        "ans": "\\(\\dfrac{Y(s)}{s} - 4\\)",
+        "why": "Differentiation MULTIPLIES by s; dividing by s corresponds to integration."
+      }
+    ],
+    "vec": [
+      24,
+      4,
+      4
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 3,
+    "sample": 5,
+    "seed": 2370636940,
+    "key": "de3_laplace_deriv",
+    "q": "If \\(\\mathcal{L}\\{y(t)\\} = Y(s)\\) and \\(y(0) = 3\\), express \\(\\mathcal{L}\\{y'(t)\\}\\).",
+    "a": "\\(sY(s) - 3\\)",
+    "steps": [
+      "Derivative rule: \\(\\mathcal{L}\\{y'\\} = sY(s) - y(0)\\).",
+      "This is what converts a differential equation into ALGEBRA in s."
+    ],
+    "traps": [
+      {
+        "ans": "\\(sY(s) + 3\\)",
+        "why": "The initial value is SUBTRACTED \u2014 it comes from the boundary term of integration by parts."
+      },
+      {
+        "ans": "\\(\\dfrac{Y(s)}{s} - 3\\)",
+        "why": "Differentiation MULTIPLIES by s; dividing by s corresponds to integration."
+      }
+    ],
+    "vec": [
+      24,
+      4,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 4,
+    "sample": 0,
+    "seed": 3426003458,
+    "key": "de3_laplace_solve",
+    "q": "Use Laplace transforms on \\(y' + 2y = 0\\), \\(y(0) = 2\\): find \\(Y(s)\\).",
+    "a": "\\(Y(s) = \\dfrac{2}{s+2}\\)",
+    "steps": [
+      "Transform: \\(sY - 2 + 2Y = 0\\).",
+      "Solve for Y: \\((s + 2)Y = 2 \\Rightarrow Y = \\frac{2}{s+2}\\).",
+      "(Inverting gives \\(y = 2e^{-2t}\\) \u2014 matching the separable-method answer.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(Y(s) = \\dfrac{2}{s-2}\\)",
+        "why": "The +2y term joins s as (s + 2) \u2014 the sign follows the equation."
+      },
+      {
+        "ans": "\\(Y(s) = \\dfrac{1}{s(s+2)}\\)",
+        "why": "The initial condition y(0) = 2 enters through L{y\u2032} = sY \u2212 y(0) \u2014 it becomes the numerator."
+      }
+    ],
+    "vec": [
+      24,
+      5,
+      2,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 4,
+    "sample": 1,
+    "seed": 3442781077,
+    "key": "de3_laplace_solve",
+    "q": "Use Laplace transforms on \\(y' + 2y = 0\\), \\(y(0) = 2\\): find \\(Y(s)\\).",
+    "a": "\\(Y(s) = \\dfrac{2}{s+2}\\)",
+    "steps": [
+      "Transform: \\(sY - 2 + 2Y = 0\\).",
+      "Solve for Y: \\((s + 2)Y = 2 \\Rightarrow Y = \\frac{2}{s+2}\\).",
+      "(Inverting gives \\(y = 2e^{-2t}\\) \u2014 matching the separable-method answer.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(Y(s) = \\dfrac{2}{s-2}\\)",
+        "why": "The +2y term joins s as (s + 2) \u2014 the sign follows the equation."
+      },
+      {
+        "ans": "\\(Y(s) = \\dfrac{1}{s(s+2)}\\)",
+        "why": "The initial condition y(0) = 2 enters through L{y\u2032} = sY \u2212 y(0) \u2014 it becomes the numerator."
+      }
+    ],
+    "vec": [
+      24,
+      5,
+      2,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 4,
+    "sample": 2,
+    "seed": 3392448220,
+    "key": "de3_laplace_solve",
+    "q": "Use Laplace transforms on \\(y' + 3y = 0\\), \\(y(0) = 5\\): find \\(Y(s)\\).",
+    "a": "\\(Y(s) = \\dfrac{5}{s+3}\\)",
+    "steps": [
+      "Transform: \\(sY - 5 + 3Y = 0\\).",
+      "Solve for Y: \\((s + 3)Y = 5 \\Rightarrow Y = \\frac{5}{s+3}\\).",
+      "(Inverting gives \\(y = 5e^{-3t}\\) \u2014 matching the separable-method answer.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(Y(s) = \\dfrac{5}{s-3}\\)",
+        "why": "The +3y term joins s as (s + 3) \u2014 the sign follows the equation."
+      },
+      {
+        "ans": "\\(Y(s) = \\dfrac{1}{s(s+3)}\\)",
+        "why": "The initial condition y(0) = 5 enters through L{y\u2032} = sY \u2212 y(0) \u2014 it becomes the numerator."
+      }
+    ],
+    "vec": [
+      24,
+      5,
+      3,
+      5
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 4,
+    "sample": 3,
+    "seed": 3409225839,
+    "key": "de3_laplace_solve",
+    "q": "Use Laplace transforms on \\(y' + 3y = 0\\), \\(y(0) = 1\\): find \\(Y(s)\\).",
+    "a": "\\(Y(s) = \\dfrac{1}{s+3}\\)",
+    "steps": [
+      "Transform: \\(sY - 1 + 3Y = 0\\).",
+      "Solve for Y: \\((s + 3)Y = 1 \\Rightarrow Y = \\frac{1}{s+3}\\).",
+      "(Inverting gives \\(y = 1e^{-3t}\\) \u2014 matching the separable-method answer.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(Y(s) = \\dfrac{1}{s-3}\\)",
+        "why": "The +3y term joins s as (s + 3) \u2014 the sign follows the equation."
+      },
+      {
+        "ans": "\\(Y(s) = \\dfrac{1}{s(s+3)}\\)",
+        "why": "The initial condition y(0) = 1 enters through L{y\u2032} = sY \u2212 y(0) \u2014 it becomes the numerator."
+      }
+    ],
+    "vec": [
+      24,
+      5,
+      3,
+      1
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 4,
+    "sample": 4,
+    "seed": 3358892982,
+    "key": "de3_laplace_solve",
+    "q": "Use Laplace transforms on \\(y' + 4y = 0\\), \\(y(0) = 5\\): find \\(Y(s)\\).",
+    "a": "\\(Y(s) = \\dfrac{5}{s+4}\\)",
+    "steps": [
+      "Transform: \\(sY - 5 + 4Y = 0\\).",
+      "Solve for Y: \\((s + 4)Y = 5 \\Rightarrow Y = \\frac{5}{s+4}\\).",
+      "(Inverting gives \\(y = 5e^{-4t}\\) \u2014 matching the separable-method answer.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(Y(s) = \\dfrac{5}{s-4}\\)",
+        "why": "The +4y term joins s as (s + 4) \u2014 the sign follows the equation."
+      },
+      {
+        "ans": "\\(Y(s) = \\dfrac{1}{s(s+4)}\\)",
+        "why": "The initial condition y(0) = 5 enters through L{y\u2032} = sY \u2212 y(0) \u2014 it becomes the numerator."
+      }
+    ],
+    "vec": [
+      24,
+      5,
+      4,
+      5
+    ]
+  },
+  {
+    "unitId": "DE_Laplace",
+    "genIndex": 4,
+    "sample": 5,
+    "seed": 3375670601,
+    "key": "de3_laplace_solve",
+    "q": "Use Laplace transforms on \\(y' + 4y = 0\\), \\(y(0) = 2\\): find \\(Y(s)\\).",
+    "a": "\\(Y(s) = \\dfrac{2}{s+4}\\)",
+    "steps": [
+      "Transform: \\(sY - 2 + 4Y = 0\\).",
+      "Solve for Y: \\((s + 4)Y = 2 \\Rightarrow Y = \\frac{2}{s+4}\\).",
+      "(Inverting gives \\(y = 2e^{-4t}\\) \u2014 matching the separable-method answer.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(Y(s) = \\dfrac{2}{s-4}\\)",
+        "why": "The +4y term joins s as (s + 4) \u2014 the sign follows the equation."
+      },
+      {
+        "ans": "\\(Y(s) = \\dfrac{1}{s(s+4)}\\)",
+        "why": "The initial condition y(0) = 2 enters through L{y\u2032} = sY \u2212 y(0) \u2014 it becomes the numerator."
+      }
+    ],
+    "vec": [
+      24,
+      5,
+      4,
+      2
+    ]
+  }
+]

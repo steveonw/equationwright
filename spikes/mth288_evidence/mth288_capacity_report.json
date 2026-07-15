@@ -1,0 +1,320 @@
+{
+  "course": "MTH 288",
+  "samplesPerGenerator": 200,
+  "generators": {
+    "DM_Logic#0": {
+      "key": "dm_logic_truth4",
+      "samples": 200,
+      "distinct": 10,
+      "errors": []
+    },
+    "DM_Logic#1": {
+      "key": "dm_logic_truth8",
+      "samples": 200,
+      "distinct": 25,
+      "errors": []
+    },
+    "DM_Logic#2": {
+      "key": "dm_logic_classify",
+      "samples": 200,
+      "distinct": 6,
+      "errors": []
+    },
+    "DM_Logic#3": {
+      "key": "dm_logic_main_connective",
+      "samples": 200,
+      "distinct": 4,
+      "errors": []
+    },
+    "DM_Logic#4": {
+      "key": "dm_logic_quantifier_negation",
+      "samples": 200,
+      "distinct": 4,
+      "errors": []
+    },
+    "DM_Logic#5": {
+      "key": "dm_logic_equivalence_law",
+      "samples": 200,
+      "distinct": 5,
+      "errors": []
+    },
+    "DM_Logic#6": {
+      "key": "dm_logic_translation",
+      "samples": 200,
+      "distinct": 2,
+      "errors": []
+    },
+    "DM_Logic#7": {
+      "key": "dm_logic_equivalence_check",
+      "samples": 200,
+      "distinct": 5,
+      "errors": []
+    },
+    "DM_Sets#0": {
+      "key": "dm_sets_union",
+      "samples": 200,
+      "distinct": 5,
+      "errors": []
+    },
+    "DM_Sets#1": {
+      "key": "dm_sets_intersection",
+      "samples": 200,
+      "distinct": 6,
+      "errors": []
+    },
+    "DM_Sets#2": {
+      "key": "dm_sets_difference",
+      "samples": 200,
+      "distinct": 5,
+      "errors": []
+    },
+    "DM_Sets#3": {
+      "key": "dm_sets_complement",
+      "samples": 200,
+      "distinct": 6,
+      "errors": []
+    },
+    "DM_Sets#4": {
+      "key": "dm_sets_power_count",
+      "samples": 200,
+      "distinct": 7,
+      "errors": []
+    },
+    "DM_Sets#5": {
+      "key": "dm_sets_power_list",
+      "samples": 200,
+      "distinct": 6,
+      "errors": []
+    },
+    "DM_Sets#6": {
+      "key": "dm_sets_inclusion_exclusion",
+      "samples": 200,
+      "distinct": 44,
+      "errors": []
+    },
+    "DM_Sets#7": {
+      "key": "dm_sets_cartesian_size",
+      "samples": 200,
+      "distinct": 20,
+      "errors": []
+    },
+    "DM_Counting#0": {
+      "key": "dm_count_product_rule",
+      "samples": 200,
+      "distinct": 53,
+      "errors": []
+    },
+    "DM_Counting#1": {
+      "key": "dm_count_permutation",
+      "samples": 200,
+      "distinct": 21,
+      "errors": []
+    },
+    "DM_Counting#2": {
+      "key": "dm_count_combination",
+      "samples": 200,
+      "distinct": 35,
+      "errors": []
+    },
+    "DM_Counting#3": {
+      "key": "dm_count_repeated_letters",
+      "samples": 200,
+      "distinct": 4,
+      "errors": []
+    },
+    "DM_Counting#4": {
+      "key": "dm_count_stars_bars",
+      "samples": 200,
+      "distinct": 46,
+      "errors": []
+    },
+    "DM_Counting#5": {
+      "key": "dm_count_pigeonhole",
+      "samples": 200,
+      "distinct": 25,
+      "errors": []
+    },
+    "DM_Counting#6": {
+      "key": "dm_count_binary_exact",
+      "samples": 200,
+      "distinct": 31,
+      "errors": []
+    },
+    "DM_Counting#7": {
+      "key": "dm_count_codes",
+      "samples": 200,
+      "distinct": 24,
+      "errors": []
+    },
+    "DM_RelFunc#0": {
+      "key": "dm_relation_properties",
+      "samples": 200,
+      "distinct": 5,
+      "errors": []
+    },
+    "DM_RelFunc#1": {
+      "key": "dm_relation_equivalence_class",
+      "samples": 200,
+      "distinct": 14,
+      "errors": []
+    },
+    "DM_RelFunc#2": {
+      "key": "dm_function_mod_classify",
+      "samples": 200,
+      "distinct": 2,
+      "errors": []
+    },
+    "DM_RelFunc#3": {
+      "key": "dm_function_composition",
+      "samples": 200,
+      "distinct": 53,
+      "errors": []
+    },
+    "DM_RelFunc#4": {
+      "key": "dm_function_inverse",
+      "samples": 200,
+      "distinct": 91,
+      "errors": []
+    },
+    "DM_RelFunc#5": {
+      "key": "dm_relation_pair_count",
+      "samples": 200,
+      "distinct": 5,
+      "errors": []
+    },
+    "DM_Graphs#0": {
+      "key": "dm_graph_handshake_missing",
+      "samples": 200,
+      "distinct": 8,
+      "errors": []
+    },
+    "DM_Graphs#1": {
+      "key": "dm_graph_edges_degree_sum",
+      "samples": 200,
+      "distinct": 17,
+      "errors": []
+    },
+    "DM_Graphs#2": {
+      "key": "dm_graph_euler_classify",
+      "samples": 200,
+      "distinct": 3,
+      "errors": []
+    },
+    "DM_Graphs#3": {
+      "key": "dm_graph_tree_edges",
+      "samples": 200,
+      "distinct": 15,
+      "errors": []
+    },
+    "DM_Graphs#4": {
+      "key": "dm_graph_complete_edges",
+      "samples": 200,
+      "distinct": 9,
+      "errors": []
+    },
+    "DM_Graphs#5": {
+      "key": "dm_graph_bipartite_edges",
+      "samples": 200,
+      "distinct": 25,
+      "errors": []
+    },
+    "DM_Graphs#6": {
+      "key": "dm_graph_complement_edges",
+      "samples": 200,
+      "distinct": 47,
+      "errors": []
+    },
+    "DM_Graphs#7": {
+      "key": "dm_graph_cycle_color",
+      "samples": 200,
+      "distinct": 2,
+      "errors": []
+    },
+    "DM_ProofRec#0": {
+      "key": "dm_proof_method",
+      "samples": 200,
+      "distinct": 4,
+      "errors": []
+    },
+    "DM_ProofRec#1": {
+      "key": "dm_proof_base_case",
+      "samples": 200,
+      "distinct": 6,
+      "errors": []
+    },
+    "DM_ProofRec#2": {
+      "key": "dm_proof_induction_step",
+      "samples": 200,
+      "distinct": 1,
+      "errors": []
+    },
+    "DM_ProofRec#3": {
+      "key": "dm_recurrence_iterate",
+      "samples": 200,
+      "distinct": 164,
+      "errors": []
+    },
+    "DM_ProofRec#4": {
+      "key": "dm_recurrence_first_order_solve",
+      "samples": 200,
+      "distinct": 150,
+      "errors": []
+    },
+    "DM_ProofRec#5": {
+      "key": "dm_recurrence_characteristic_roots",
+      "samples": 200,
+      "distinct": 16,
+      "errors": []
+    },
+    "DM_ProofRec#6": {
+      "key": "dm_growth_theta",
+      "samples": 200,
+      "distinct": 6,
+      "errors": []
+    },
+    "DM_ProofRec#7": {
+      "key": "dm_boolean_simplify",
+      "samples": 200,
+      "distinct": 4,
+      "errors": []
+    }
+  },
+  "lowSemanticCapacity": [
+    {
+      "id": "DM_Logic#6",
+      "key": "dm_logic_translation",
+      "samples": 200,
+      "distinct": 2,
+      "errors": []
+    },
+    {
+      "id": "DM_RelFunc#2",
+      "key": "dm_function_mod_classify",
+      "samples": 200,
+      "distinct": 2,
+      "errors": []
+    },
+    {
+      "id": "DM_Graphs#2",
+      "key": "dm_graph_euler_classify",
+      "samples": 200,
+      "distinct": 3,
+      "errors": []
+    },
+    {
+      "id": "DM_Graphs#7",
+      "key": "dm_graph_cycle_color",
+      "samples": 200,
+      "distinct": 2,
+      "errors": []
+    },
+    {
+      "id": "DM_ProofRec#2",
+      "key": "dm_proof_induction_step",
+      "samples": 200,
+      "distinct": 1,
+      "errors": []
+    }
+  ],
+  "note": "Low distinct-answer families are conceptual and supply at least three curated, distinct traps; all 4-choice quiz builds passed."
+}

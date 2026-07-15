@@ -1,0 +1,283 @@
+{
+  "runs": 4600,
+  "failures": [],
+  "semanticRuns": 200,
+  "byGenerator": {
+    "DM_Logic#0": {
+      "key": "dm_logic_truth4",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 100
+    },
+    "DM_Logic#1": {
+      "key": "dm_logic_truth8",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 100
+    },
+    "DM_Logic#2": {
+      "key": "dm_logic_classify",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Logic#3": {
+      "key": "dm_logic_main_connective",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Logic#4": {
+      "key": "dm_logic_quantifier_negation",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Logic#5": {
+      "key": "dm_logic_equivalence_law",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Logic#6": {
+      "key": "dm_logic_translation",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Logic#7": {
+      "key": "dm_logic_equivalence_check",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Sets#0": {
+      "key": "dm_sets_union",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Sets#1": {
+      "key": "dm_sets_intersection",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Sets#2": {
+      "key": "dm_sets_difference",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Sets#3": {
+      "key": "dm_sets_complement",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Sets#4": {
+      "key": "dm_sets_power_count",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Sets#5": {
+      "key": "dm_sets_power_list",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Sets#6": {
+      "key": "dm_sets_inclusion_exclusion",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Sets#7": {
+      "key": "dm_sets_cartesian_size",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Counting#0": {
+      "key": "dm_count_product_rule",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Counting#1": {
+      "key": "dm_count_permutation",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Counting#2": {
+      "key": "dm_count_combination",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Counting#3": {
+      "key": "dm_count_repeated_letters",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Counting#4": {
+      "key": "dm_count_stars_bars",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Counting#5": {
+      "key": "dm_count_pigeonhole",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Counting#6": {
+      "key": "dm_count_binary_exact",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Counting#7": {
+      "key": "dm_count_codes",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_RelFunc#0": {
+      "key": "dm_relation_properties",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_RelFunc#1": {
+      "key": "dm_relation_equivalence_class",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_RelFunc#2": {
+      "key": "dm_function_mod_classify",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_RelFunc#3": {
+      "key": "dm_function_composition",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_RelFunc#4": {
+      "key": "dm_function_inverse",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_RelFunc#5": {
+      "key": "dm_relation_pair_count",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Graphs#0": {
+      "key": "dm_graph_handshake_missing",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Graphs#1": {
+      "key": "dm_graph_edges_degree_sum",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Graphs#2": {
+      "key": "dm_graph_euler_classify",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Graphs#3": {
+      "key": "dm_graph_tree_edges",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Graphs#4": {
+      "key": "dm_graph_complete_edges",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Graphs#5": {
+      "key": "dm_graph_bipartite_edges",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Graphs#6": {
+      "key": "dm_graph_complement_edges",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_Graphs#7": {
+      "key": "dm_graph_cycle_color",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_ProofRec#0": {
+      "key": "dm_proof_method",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_ProofRec#1": {
+      "key": "dm_proof_base_case",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_ProofRec#2": {
+      "key": "dm_proof_induction_step",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_ProofRec#3": {
+      "key": "dm_recurrence_iterate",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_ProofRec#4": {
+      "key": "dm_recurrence_first_order_solve",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_ProofRec#5": {
+      "key": "dm_recurrence_characteristic_roots",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_ProofRec#6": {
+      "key": "dm_growth_theta",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    },
+    "DM_ProofRec#7": {
+      "key": "dm_boolean_simplify",
+      "runs": 100,
+      "failures": 0,
+      "semantic": 0
+    }
+  }
+}

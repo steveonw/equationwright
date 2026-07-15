@@ -1,0 +1,3176 @@
+[
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 3827777995,
+    "key": "ac1_marg_cost",
+    "q": "A firm's cost function is \\(C(x) = 2x^2 + 30x + 500\\) dollars. Find the marginal cost at \\(x = 5\\).",
+    "a": "\\(C'(5) = 50\\) dollars per unit",
+    "steps": [
+      "Marginal cost is the derivative: \\(C'(x) = 4x + 30\\).",
+      "Evaluate: \\(C'(5) = 4(5) + 30 = 50\\).",
+      "Interpretation: producing the next unit after the 5th costs about \\$50."
+    ],
+    "traps": [
+      {
+        "ans": "\\(C'(5) = 700\\) dollars per unit",
+        "why": "That is C(5) \u2014 the TOTAL cost. Marginal cost is the derivative C\u2032, the rate per additional unit."
+      },
+      {
+        "ans": "\\(C'(5) = 20\\) dollars per unit",
+        "why": "The linear term 30x differentiates to 30 \u2014 do not drop it; only the constant 500 vanishes."
+      }
+    ],
+    "vec": [
+      15,
+      1,
+      2,
+      30,
+      500,
+      5
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 3811000376,
+    "key": "ac1_marg_cost",
+    "q": "A firm's cost function is \\(C(x) = 2x^2 + 30x + 100\\) dollars. Find the marginal cost at \\(x = 5\\).",
+    "a": "\\(C'(5) = 50\\) dollars per unit",
+    "steps": [
+      "Marginal cost is the derivative: \\(C'(x) = 4x + 30\\).",
+      "Evaluate: \\(C'(5) = 4(5) + 30 = 50\\).",
+      "Interpretation: producing the next unit after the 5th costs about \\$50."
+    ],
+    "traps": [
+      {
+        "ans": "\\(C'(5) = 300\\) dollars per unit",
+        "why": "That is C(5) \u2014 the TOTAL cost. Marginal cost is the derivative C\u2032, the rate per additional unit."
+      },
+      {
+        "ans": "\\(C'(5) = 20\\) dollars per unit",
+        "why": "The linear term 30x differentiates to 30 \u2014 do not drop it; only the constant 100 vanishes."
+      }
+    ],
+    "vec": [
+      15,
+      1,
+      2,
+      30,
+      100,
+      5
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 3861333233,
+    "key": "ac1_marg_cost",
+    "q": "A firm's cost function is \\(C(x) = 3x^2 + 20x + 200\\) dollars. Find the marginal cost at \\(x = 10\\).",
+    "a": "\\(C'(10) = 80\\) dollars per unit",
+    "steps": [
+      "Marginal cost is the derivative: \\(C'(x) = 6x + 20\\).",
+      "Evaluate: \\(C'(10) = 6(10) + 20 = 80\\).",
+      "Interpretation: producing the next unit after the 10th costs about \\$80."
+    ],
+    "traps": [
+      {
+        "ans": "\\(C'(10) = 700\\) dollars per unit",
+        "why": "That is C(10) \u2014 the TOTAL cost. Marginal cost is the derivative C\u2032, the rate per additional unit."
+      },
+      {
+        "ans": "\\(C'(10) = 60\\) dollars per unit",
+        "why": "The linear term 20x differentiates to 20 \u2014 do not drop it; only the constant 200 vanishes."
+      }
+    ],
+    "vec": [
+      15,
+      1,
+      3,
+      20,
+      200,
+      10
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 3844555614,
+    "key": "ac1_marg_cost",
+    "q": "A firm's cost function is \\(C(x) = 2x^2 + 30x + 500\\) dollars. Find the marginal cost at \\(x = 5\\).",
+    "a": "\\(C'(5) = 50\\) dollars per unit",
+    "steps": [
+      "Marginal cost is the derivative: \\(C'(x) = 4x + 30\\).",
+      "Evaluate: \\(C'(5) = 4(5) + 30 = 50\\).",
+      "Interpretation: producing the next unit after the 5th costs about \\$50."
+    ],
+    "traps": [
+      {
+        "ans": "\\(C'(5) = 700\\) dollars per unit",
+        "why": "That is C(5) \u2014 the TOTAL cost. Marginal cost is the derivative C\u2032, the rate per additional unit."
+      },
+      {
+        "ans": "\\(C'(5) = 20\\) dollars per unit",
+        "why": "The linear term 30x differentiates to 30 \u2014 do not drop it; only the constant 500 vanishes."
+      }
+    ],
+    "vec": [
+      15,
+      1,
+      2,
+      30,
+      500,
+      5
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 3894888471,
+    "key": "ac1_marg_cost",
+    "q": "A firm's cost function is \\(C(x) = x^2 + 30x + 100\\) dollars. Find the marginal cost at \\(x = 10\\).",
+    "a": "\\(C'(10) = 50\\) dollars per unit",
+    "steps": [
+      "Marginal cost is the derivative: \\(C'(x) = 2x + 30\\).",
+      "Evaluate: \\(C'(10) = 2(10) + 30 = 50\\).",
+      "Interpretation: producing the next unit after the 10th costs about \\$50."
+    ],
+    "traps": [
+      {
+        "ans": "\\(C'(10) = 500\\) dollars per unit",
+        "why": "That is C(10) \u2014 the TOTAL cost. Marginal cost is the derivative C\u2032, the rate per additional unit."
+      },
+      {
+        "ans": "\\(C'(10) = 20\\) dollars per unit",
+        "why": "The linear term 30x differentiates to 30 \u2014 do not drop it; only the constant 100 vanishes."
+      }
+    ],
+    "vec": [
+      15,
+      1,
+      1,
+      30,
+      100,
+      10
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 3878110852,
+    "key": "ac1_marg_cost",
+    "q": "A firm's cost function is \\(C(x) = 3x^2 + 40x + 200\\) dollars. Find the marginal cost at \\(x = 20\\).",
+    "a": "\\(C'(20) = 160\\) dollars per unit",
+    "steps": [
+      "Marginal cost is the derivative: \\(C'(x) = 6x + 40\\).",
+      "Evaluate: \\(C'(20) = 6(20) + 40 = 160\\).",
+      "Interpretation: producing the next unit after the 20th costs about \\$160."
+    ],
+    "traps": [
+      {
+        "ans": "\\(C'(20) = 2200\\) dollars per unit",
+        "why": "That is C(20) \u2014 the TOTAL cost. Marginal cost is the derivative C\u2032, the rate per additional unit."
+      },
+      {
+        "ans": "\\(C'(20) = 120\\) dollars per unit",
+        "why": "The linear term 40x differentiates to 40 \u2014 do not drop it; only the constant 200 vanishes."
+      }
+    ],
+    "vec": [
+      15,
+      1,
+      3,
+      40,
+      200,
+      20
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 1703926688,
+    "key": "ac1_marg_revenue",
+    "q": "The demand price is \\(p = 80 - 2x\\). Revenue is \\(R(x) = xp\\). Find the marginal revenue at \\(x = 10\\).",
+    "a": "\\(R'(10) = 40\\)",
+    "steps": [
+      "Revenue: \\(R(x) = x(80 - 2x) = 80x - 2x^2\\).",
+      "Marginal revenue: \\(R'(x) = 80 - 4x\\).",
+      "Evaluate: \\(R'(10) = 80 - 4(10) = 40\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(R'(10) = 60\\)",
+        "why": "R(x) = 80x \u2212 2x\u00b2 \u2014 the squared term differentiates to 4x, doubling the coefficient. You differentiated the PRICE, not the revenue."
+      },
+      {
+        "ans": "\\(R'(10) = 600\\)",
+        "why": "That is total revenue R(10), not the marginal (derivative) value."
+      }
+    ],
+    "vec": [
+      15,
+      2,
+      80,
+      2,
+      10
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 1720704307,
+    "key": "ac1_marg_revenue",
+    "q": "The demand price is \\(p = 60 - 3x\\). Revenue is \\(R(x) = xp\\). Find the marginal revenue at \\(x = 5\\).",
+    "a": "\\(R'(5) = 30\\)",
+    "steps": [
+      "Revenue: \\(R(x) = x(60 - 3x) = 60x - 3x^2\\).",
+      "Marginal revenue: \\(R'(x) = 60 - 6x\\).",
+      "Evaluate: \\(R'(5) = 60 - 6(5) = 30\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(R'(5) = 45\\)",
+        "why": "R(x) = 60x \u2212 3x\u00b2 \u2014 the squared term differentiates to 6x, doubling the coefficient. You differentiated the PRICE, not the revenue."
+      },
+      {
+        "ans": "\\(R'(5) = 225\\)",
+        "why": "That is total revenue R(5), not the marginal (derivative) value."
+      }
+    ],
+    "vec": [
+      15,
+      2,
+      60,
+      3,
+      5
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 1737481926,
+    "key": "ac1_marg_revenue",
+    "q": "The demand price is \\(p = 60 - 2x\\). Revenue is \\(R(x) = xp\\). Find the marginal revenue at \\(x = 5\\).",
+    "a": "\\(R'(5) = 40\\)",
+    "steps": [
+      "Revenue: \\(R(x) = x(60 - 2x) = 60x - 2x^2\\).",
+      "Marginal revenue: \\(R'(x) = 60 - 4x\\).",
+      "Evaluate: \\(R'(5) = 60 - 4(5) = 40\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(R'(5) = 50\\)",
+        "why": "R(x) = 60x \u2212 2x\u00b2 \u2014 the squared term differentiates to 4x, doubling the coefficient. You differentiated the PRICE, not the revenue."
+      },
+      {
+        "ans": "\\(R'(5) = 250\\)",
+        "why": "That is total revenue R(5), not the marginal (derivative) value."
+      }
+    ],
+    "vec": [
+      15,
+      2,
+      60,
+      2,
+      5
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 1754259545,
+    "key": "ac1_marg_revenue",
+    "q": "The demand price is \\(p = 60 - x\\). Revenue is \\(R(x) = xp\\). Find the marginal revenue at \\(x = 15\\).",
+    "a": "\\(R'(15) = 30\\)",
+    "steps": [
+      "Revenue: \\(R(x) = x(60 - 1x) = 60x - 1x^2\\).",
+      "Marginal revenue: \\(R'(x) = 60 - 2x\\).",
+      "Evaluate: \\(R'(15) = 60 - 2(15) = 30\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(R'(15) = 45\\)",
+        "why": "R(x) = 60x \u2212 1x\u00b2 \u2014 the squared term differentiates to 2x, doubling the coefficient. You differentiated the PRICE, not the revenue."
+      },
+      {
+        "ans": "\\(R'(15) = 675\\)",
+        "why": "That is total revenue R(15), not the marginal (derivative) value."
+      }
+    ],
+    "vec": [
+      15,
+      2,
+      60,
+      1,
+      15
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 1771037164,
+    "key": "ac1_marg_revenue",
+    "q": "The demand price is \\(p = 60 - 2x\\). Revenue is \\(R(x) = xp\\). Find the marginal revenue at \\(x = 5\\).",
+    "a": "\\(R'(5) = 40\\)",
+    "steps": [
+      "Revenue: \\(R(x) = x(60 - 2x) = 60x - 2x^2\\).",
+      "Marginal revenue: \\(R'(x) = 60 - 4x\\).",
+      "Evaluate: \\(R'(5) = 60 - 4(5) = 40\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(R'(5) = 50\\)",
+        "why": "R(x) = 60x \u2212 2x\u00b2 \u2014 the squared term differentiates to 4x, doubling the coefficient. You differentiated the PRICE, not the revenue."
+      },
+      {
+        "ans": "\\(R'(5) = 250\\)",
+        "why": "That is total revenue R(5), not the marginal (derivative) value."
+      }
+    ],
+    "vec": [
+      15,
+      2,
+      60,
+      2,
+      5
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 1787814783,
+    "key": "ac1_marg_revenue",
+    "q": "The demand price is \\(p = 80 - x\\). Revenue is \\(R(x) = xp\\). Find the marginal revenue at \\(x = 10\\).",
+    "a": "\\(R'(10) = 60\\)",
+    "steps": [
+      "Revenue: \\(R(x) = x(80 - 1x) = 80x - 1x^2\\).",
+      "Marginal revenue: \\(R'(x) = 80 - 2x\\).",
+      "Evaluate: \\(R'(10) = 80 - 2(10) = 60\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(R'(10) = 70\\)",
+        "why": "R(x) = 80x \u2212 1x\u00b2 \u2014 the squared term differentiates to 2x, doubling the coefficient. You differentiated the PRICE, not the revenue."
+      },
+      {
+        "ans": "\\(R'(10) = 700\\)",
+        "why": "That is total revenue R(10), not the marginal (derivative) value."
+      }
+    ],
+    "vec": [
+      15,
+      2,
+      80,
+      1,
+      10
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 1093534417,
+    "key": "ac1_profit_max",
+    "q": "Revenue is \\(R(x) = 150x - 3x^2\\) and cost is \\(C(x) = 30x + 50\\). What production level \\(x\\) maximizes profit?",
+    "a": "\\(x = 20\\)",
+    "steps": [
+      "Profit is maximized where marginal revenue equals marginal cost: \\(R'(x) = C'(x)\\).",
+      "\\(R'(x) = 150 - 6x\\) and \\(C'(x) = 30\\).",
+      "Set equal: \\(150 - 6x = 30 \\Rightarrow x = 20\\). (\\(R'' = -6 < 0\\): a maximum.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(x = 40\\)",
+        "why": "R\u2032 has coefficient 2n = 6 on x \u2014 dividing by n instead of 2n doubles the answer."
+      },
+      {
+        "ans": "\\(x = 150\\)",
+        "why": "Set R\u2032 = C\u2032 and SOLVE for x; the answer is not a coefficient from the problem."
+      }
+    ],
+    "vec": [
+      15,
+      3,
+      150,
+      3,
+      30,
+      20
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 1076756798,
+    "key": "ac1_profit_max",
+    "q": "Revenue is \\(R(x) = 90x - 2x^2\\) and cost is \\(C(x) = 10x + 100\\). What production level \\(x\\) maximizes profit?",
+    "a": "\\(x = 20\\)",
+    "steps": [
+      "Profit is maximized where marginal revenue equals marginal cost: \\(R'(x) = C'(x)\\).",
+      "\\(R'(x) = 90 - 4x\\) and \\(C'(x) = 10\\).",
+      "Set equal: \\(90 - 4x = 10 \\Rightarrow x = 20\\). (\\(R'' = -4 < 0\\): a maximum.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(x = 40\\)",
+        "why": "R\u2032 has coefficient 2n = 4 on x \u2014 dividing by n instead of 2n doubles the answer."
+      },
+      {
+        "ans": "\\(x = 90\\)",
+        "why": "Set R\u2032 = C\u2032 and SOLVE for x; the answer is not a coefficient from the problem."
+      }
+    ],
+    "vec": [
+      15,
+      3,
+      90,
+      2,
+      10,
+      20
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 1059979179,
+    "key": "ac1_profit_max",
+    "q": "Revenue is \\(R(x) = 90x - 2x^2\\) and cost is \\(C(x) = 10x + 50\\). What production level \\(x\\) maximizes profit?",
+    "a": "\\(x = 20\\)",
+    "steps": [
+      "Profit is maximized where marginal revenue equals marginal cost: \\(R'(x) = C'(x)\\).",
+      "\\(R'(x) = 90 - 4x\\) and \\(C'(x) = 10\\).",
+      "Set equal: \\(90 - 4x = 10 \\Rightarrow x = 20\\). (\\(R'' = -4 < 0\\): a maximum.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(x = 40\\)",
+        "why": "R\u2032 has coefficient 2n = 4 on x \u2014 dividing by n instead of 2n doubles the answer."
+      },
+      {
+        "ans": "\\(x = 90\\)",
+        "why": "Set R\u2032 = C\u2032 and SOLVE for x; the answer is not a coefficient from the problem."
+      }
+    ],
+    "vec": [
+      15,
+      3,
+      90,
+      2,
+      10,
+      20
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 1043201560,
+    "key": "ac1_profit_max",
+    "q": "Revenue is \\(R(x) = 80x - 3x^2\\) and cost is \\(C(x) = 20x + 50\\). What production level \\(x\\) maximizes profit?",
+    "a": "\\(x = 10\\)",
+    "steps": [
+      "Profit is maximized where marginal revenue equals marginal cost: \\(R'(x) = C'(x)\\).",
+      "\\(R'(x) = 80 - 6x\\) and \\(C'(x) = 20\\).",
+      "Set equal: \\(80 - 6x = 20 \\Rightarrow x = 10\\). (\\(R'' = -6 < 0\\): a maximum.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(x = 20\\)",
+        "why": "R\u2032 has coefficient 2n = 6 on x \u2014 dividing by n instead of 2n doubles the answer."
+      },
+      {
+        "ans": "\\(x = 80\\)",
+        "why": "Set R\u2032 = C\u2032 and SOLVE for x; the answer is not a coefficient from the problem."
+      }
+    ],
+    "vec": [
+      15,
+      3,
+      80,
+      3,
+      20,
+      10
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 1160644893,
+    "key": "ac1_profit_max",
+    "q": "Revenue is \\(R(x) = 30x - x^2\\) and cost is \\(C(x) = 20x + 200\\). What production level \\(x\\) maximizes profit?",
+    "a": "\\(x = 5\\)",
+    "steps": [
+      "Profit is maximized where marginal revenue equals marginal cost: \\(R'(x) = C'(x)\\).",
+      "\\(R'(x) = 30 - 2x\\) and \\(C'(x) = 20\\).",
+      "Set equal: \\(30 - 2x = 20 \\Rightarrow x = 5\\). (\\(R'' = -2 < 0\\): a maximum.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(x = 10\\)",
+        "why": "R\u2032 has coefficient 2n = 2 on x \u2014 dividing by n instead of 2n doubles the answer."
+      },
+      {
+        "ans": "\\(x = 30\\)",
+        "why": "Set R\u2032 = C\u2032 and SOLVE for x; the answer is not a coefficient from the problem."
+      }
+    ],
+    "vec": [
+      15,
+      3,
+      30,
+      1,
+      20,
+      5
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 1143867274,
+    "key": "ac1_profit_max",
+    "q": "Revenue is \\(R(x) = 70x - x^2\\) and cost is \\(C(x) = 30x + 100\\). What production level \\(x\\) maximizes profit?",
+    "a": "\\(x = 20\\)",
+    "steps": [
+      "Profit is maximized where marginal revenue equals marginal cost: \\(R'(x) = C'(x)\\).",
+      "\\(R'(x) = 70 - 2x\\) and \\(C'(x) = 30\\).",
+      "Set equal: \\(70 - 2x = 30 \\Rightarrow x = 20\\). (\\(R'' = -2 < 0\\): a maximum.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(x = 40\\)",
+        "why": "R\u2032 has coefficient 2n = 2 on x \u2014 dividing by n instead of 2n doubles the answer."
+      },
+      {
+        "ans": "\\(x = 70\\)",
+        "why": "Set R\u2032 = C\u2032 and SOLVE for x; the answer is not a coefficient from the problem."
+      }
+    ],
+    "vec": [
+      15,
+      3,
+      70,
+      1,
+      30,
+      20
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 3,
+    "sample": 0,
+    "seed": 1386940174,
+    "key": "ac1_marg_interpret",
+    "q": "A cost function satisfies \\(C'(50) = 12\\). What is the best interpretation?",
+    "a": "Producing the 51th unit costs approximately \\$12",
+    "steps": [
+      "\\(C'(x)\\) is the RATE of change of cost \u2014 dollars per additional unit.",
+      "So \\(C'(50) = 12\\) estimates the cost of one more unit beyond 50."
+    ],
+    "traps": [
+      {
+        "ans": "The total cost of 50 units is \\$12",
+        "why": "C\u2032 is a rate, not a total. Total cost is C(50), a different (usually much larger) number."
+      },
+      {
+        "ans": "The average cost per unit is \\$12",
+        "why": "Average cost is C(x)/x. Marginal cost is the derivative \u2014 the cost of the NEXT unit, not the average so far."
+      }
+    ],
+    "vec": [
+      15,
+      4,
+      50,
+      12
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 3,
+    "sample": 1,
+    "seed": 1403717793,
+    "key": "ac1_marg_interpret",
+    "q": "A cost function satisfies \\(C'(50) = 25\\). What is the best interpretation?",
+    "a": "Producing the 51th unit costs approximately \\$25",
+    "steps": [
+      "\\(C'(x)\\) is the RATE of change of cost \u2014 dollars per additional unit.",
+      "So \\(C'(50) = 25\\) estimates the cost of one more unit beyond 50."
+    ],
+    "traps": [
+      {
+        "ans": "The total cost of 50 units is \\$25",
+        "why": "C\u2032 is a rate, not a total. Total cost is C(50), a different (usually much larger) number."
+      },
+      {
+        "ans": "The average cost per unit is \\$25",
+        "why": "Average cost is C(x)/x. Marginal cost is the derivative \u2014 the cost of the NEXT unit, not the average so far."
+      }
+    ],
+    "vec": [
+      15,
+      4,
+      50,
+      25
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 3,
+    "sample": 2,
+    "seed": 1353384936,
+    "key": "ac1_marg_interpret",
+    "q": "A cost function satisfies \\(C'(20) = 12\\). What is the best interpretation?",
+    "a": "Producing the 21th unit costs approximately \\$12",
+    "steps": [
+      "\\(C'(x)\\) is the RATE of change of cost \u2014 dollars per additional unit.",
+      "So \\(C'(20) = 12\\) estimates the cost of one more unit beyond 20."
+    ],
+    "traps": [
+      {
+        "ans": "The total cost of 20 units is \\$12",
+        "why": "C\u2032 is a rate, not a total. Total cost is C(20), a different (usually much larger) number."
+      },
+      {
+        "ans": "The average cost per unit is \\$12",
+        "why": "Average cost is C(x)/x. Marginal cost is the derivative \u2014 the cost of the NEXT unit, not the average so far."
+      }
+    ],
+    "vec": [
+      15,
+      4,
+      20,
+      12
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 3,
+    "sample": 3,
+    "seed": 1370162555,
+    "key": "ac1_marg_interpret",
+    "q": "A cost function satisfies \\(C'(20) = 12\\). What is the best interpretation?",
+    "a": "Producing the 21th unit costs approximately \\$12",
+    "steps": [
+      "\\(C'(x)\\) is the RATE of change of cost \u2014 dollars per additional unit.",
+      "So \\(C'(20) = 12\\) estimates the cost of one more unit beyond 20."
+    ],
+    "traps": [
+      {
+        "ans": "The total cost of 20 units is \\$12",
+        "why": "C\u2032 is a rate, not a total. Total cost is C(20), a different (usually much larger) number."
+      },
+      {
+        "ans": "The average cost per unit is \\$12",
+        "why": "Average cost is C(x)/x. Marginal cost is the derivative \u2014 the cost of the NEXT unit, not the average so far."
+      }
+    ],
+    "vec": [
+      15,
+      4,
+      20,
+      12
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 3,
+    "sample": 4,
+    "seed": 1454050650,
+    "key": "ac1_marg_interpret",
+    "q": "A cost function satisfies \\(C'(100) = 12\\). What is the best interpretation?",
+    "a": "Producing the 101th unit costs approximately \\$12",
+    "steps": [
+      "\\(C'(x)\\) is the RATE of change of cost \u2014 dollars per additional unit.",
+      "So \\(C'(100) = 12\\) estimates the cost of one more unit beyond 100."
+    ],
+    "traps": [
+      {
+        "ans": "The total cost of 100 units is \\$12",
+        "why": "C\u2032 is a rate, not a total. Total cost is C(100), a different (usually much larger) number."
+      },
+      {
+        "ans": "The average cost per unit is \\$12",
+        "why": "Average cost is C(x)/x. Marginal cost is the derivative \u2014 the cost of the NEXT unit, not the average so far."
+      }
+    ],
+    "vec": [
+      15,
+      4,
+      100,
+      12
+    ]
+  },
+  {
+    "unitId": "AC1_Marginal",
+    "genIndex": 3,
+    "sample": 5,
+    "seed": 1470828269,
+    "key": "ac1_marg_interpret",
+    "q": "A cost function satisfies \\(C'(100) = 25\\). What is the best interpretation?",
+    "a": "Producing the 101th unit costs approximately \\$25",
+    "steps": [
+      "\\(C'(x)\\) is the RATE of change of cost \u2014 dollars per additional unit.",
+      "So \\(C'(100) = 25\\) estimates the cost of one more unit beyond 100."
+    ],
+    "traps": [
+      {
+        "ans": "The total cost of 100 units is \\$25",
+        "why": "C\u2032 is a rate, not a total. Total cost is C(100), a different (usually much larger) number."
+      },
+      {
+        "ans": "The average cost per unit is \\$25",
+        "why": "Average cost is C(x)/x. Marginal cost is the derivative \u2014 the cost of the NEXT unit, not the average so far."
+      }
+    ],
+    "vec": [
+      15,
+      4,
+      100,
+      25
+    ]
+  },
+  {
+    "unitId": "AC1_Elasticity",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 3734695197,
+    "key": "ac1_elast_value",
+    "q": "Demand is \\(q = 60 - 3p\\). Find the elasticity of demand \\(E = \\dfrac{-p}{q}\\cdot\\dfrac{dq}{dp}\\) at \\(p = 15\\).",
+    "a": "\\(E = 3\\)",
+    "steps": [
+      "\\(\\frac{dq}{dp} = -3\\), and at \\(p = 15\\): \\(q = 60 - 3(15) = 15\\).",
+      "\\(E = \\dfrac{-15}{15}(-3) = \\dfrac{45}{15} = 3\\).",
+      "\\(E > 1\\): demand is elastic at this price."
+    ],
+    "traps": [
+      {
+        "ans": "\\(E = \\frac{15}{45}\\)",
+        "why": "E = (p/q)\u00b7|dq/dp| \u2014 the price goes on TOP. Flipping the ratio flips the elastic/inelastic conclusion."
+      },
+      {
+        "ans": "\\(E = 3\\)",
+        "why": "The slope dq/dp alone is not elasticity \u2014 E rescales it by p/q, so it changes along the demand curve."
+      }
+    ],
+    "vec": [
+      16,
+      1,
+      60,
+      3,
+      15
+    ]
+  },
+  {
+    "unitId": "AC1_Elasticity",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 3717917578,
+    "key": "ac1_elast_value",
+    "q": "Demand is \\(q = 80 - 2p\\). Find the elasticity of demand \\(E = \\dfrac{-p}{q}\\cdot\\dfrac{dq}{dp}\\) at \\(p = 15\\).",
+    "a": "\\(E = \\frac{3}{5}\\)",
+    "steps": [
+      "\\(\\frac{dq}{dp} = -2\\), and at \\(p = 15\\): \\(q = 80 - 2(15) = 50\\).",
+      "\\(E = \\dfrac{-15}{50}(-2) = \\dfrac{30}{50} = \\\\frac{3}{5}\\).",
+      "\\(E < 1\\): demand is inelastic at this price."
+    ],
+    "traps": [
+      {
+        "ans": "\\(E = \\frac{50}{30}\\)",
+        "why": "E = (p/q)\u00b7|dq/dp| \u2014 the price goes on TOP. Flipping the ratio flips the elastic/inelastic conclusion."
+      },
+      {
+        "ans": "\\(E = 2\\)",
+        "why": "The slope dq/dp alone is not elasticity \u2014 E rescales it by p/q, so it changes along the demand curve."
+      }
+    ],
+    "vec": [
+      16,
+      1,
+      80,
+      2,
+      15
+    ]
+  },
+  {
+    "unitId": "AC1_Elasticity",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 3701139959,
+    "key": "ac1_elast_value",
+    "q": "Demand is \\(q = 60 - 3p\\). Find the elasticity of demand \\(E = \\dfrac{-p}{q}\\cdot\\dfrac{dq}{dp}\\) at \\(p = 5\\).",
+    "a": "\\(E = \\frac{1}{3}\\)",
+    "steps": [
+      "\\(\\frac{dq}{dp} = -3\\), and at \\(p = 5\\): \\(q = 60 - 3(5) = 45\\).",
+      "\\(E = \\dfrac{-5}{45}(-3) = \\dfrac{15}{45} = \\\\frac{1}{3}\\).",
+      "\\(E < 1\\): demand is inelastic at this price."
+    ],
+    "traps": [
+      {
+        "ans": "\\(E = \\frac{45}{15}\\)",
+        "why": "E = (p/q)\u00b7|dq/dp| \u2014 the price goes on TOP. Flipping the ratio flips the elastic/inelastic conclusion."
+      },
+      {
+        "ans": "\\(E = 3\\)",
+        "why": "The slope dq/dp alone is not elasticity \u2014 E rescales it by p/q, so it changes along the demand curve."
+      }
+    ],
+    "vec": [
+      16,
+      1,
+      60,
+      3,
+      5
+    ]
+  },
+  {
+    "unitId": "AC1_Elasticity",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 3684362340,
+    "key": "ac1_elast_value",
+    "q": "Demand is \\(q = 40 - p\\). Find the elasticity of demand \\(E = \\dfrac{-p}{q}\\cdot\\dfrac{dq}{dp}\\) at \\(p = 15\\).",
+    "a": "\\(E = \\frac{3}{5}\\)",
+    "steps": [
+      "\\(\\frac{dq}{dp} = -1\\), and at \\(p = 15\\): \\(q = 40 - 1(15) = 25\\).",
+      "\\(E = \\dfrac{-15}{25}(-1) = \\dfrac{15}{25} = \\\\frac{3}{5}\\).",
+      "\\(E < 1\\): demand is inelastic at this price."
+    ],
+    "traps": [
+      {
+        "ans": "\\(E = \\frac{25}{15}\\)",
+        "why": "E = (p/q)\u00b7|dq/dp| \u2014 the price goes on TOP. Flipping the ratio flips the elastic/inelastic conclusion."
+      },
+      {
+        "ans": "\\(E = 1\\)",
+        "why": "The slope dq/dp alone is not elasticity \u2014 E rescales it by p/q, so it changes along the demand curve."
+      }
+    ],
+    "vec": [
+      16,
+      1,
+      40,
+      1,
+      15
+    ]
+  },
+  {
+    "unitId": "AC1_Elasticity",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 3667584721,
+    "key": "ac1_elast_value",
+    "q": "Demand is \\(q = 30 - p\\). Find the elasticity of demand \\(E = \\dfrac{-p}{q}\\cdot\\dfrac{dq}{dp}\\) at \\(p = 10\\).",
+    "a": "\\(E = \\frac{1}{2}\\)",
+    "steps": [
+      "\\(\\frac{dq}{dp} = -1\\), and at \\(p = 10\\): \\(q = 30 - 1(10) = 20\\).",
+      "\\(E = \\dfrac{-10}{20}(-1) = \\dfrac{10}{20} = \\\\frac{1}{2}\\).",
+      "\\(E < 1\\): demand is inelastic at this price."
+    ],
+    "traps": [
+      {
+        "ans": "\\(E = \\frac{20}{10}\\)",
+        "why": "E = (p/q)\u00b7|dq/dp| \u2014 the price goes on TOP. Flipping the ratio flips the elastic/inelastic conclusion."
+      },
+      {
+        "ans": "\\(E = 1\\)",
+        "why": "The slope dq/dp alone is not elasticity \u2014 E rescales it by p/q, so it changes along the demand curve."
+      }
+    ],
+    "vec": [
+      16,
+      1,
+      30,
+      1,
+      10
+    ]
+  },
+  {
+    "unitId": "AC1_Elasticity",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 3650807102,
+    "key": "ac1_elast_value",
+    "q": "Demand is \\(q = 20 - p\\). Find the elasticity of demand \\(E = \\dfrac{-p}{q}\\cdot\\dfrac{dq}{dp}\\) at \\(p = 15\\).",
+    "a": "\\(E = 3\\)",
+    "steps": [
+      "\\(\\frac{dq}{dp} = -1\\), and at \\(p = 15\\): \\(q = 20 - 1(15) = 5\\).",
+      "\\(E = \\dfrac{-15}{5}(-1) = \\dfrac{15}{5} = 3\\).",
+      "\\(E > 1\\): demand is elastic at this price."
+    ],
+    "traps": [
+      {
+        "ans": "\\(E = \\frac{5}{15}\\)",
+        "why": "E = (p/q)\u00b7|dq/dp| \u2014 the price goes on TOP. Flipping the ratio flips the elastic/inelastic conclusion."
+      },
+      {
+        "ans": "\\(E = 1\\)",
+        "why": "The slope dq/dp alone is not elasticity \u2014 E rescales it by p/q, so it changes along the demand curve."
+      }
+    ],
+    "vec": [
+      16,
+      1,
+      20,
+      1,
+      15
+    ]
+  },
+  {
+    "unitId": "AC1_Elasticity",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 4028100954,
+    "key": "ac1_elast_classify",
+    "q": "For demand \\(q = 60 - 3p\\), is demand elastic or inelastic at \\(p = 2\\)?",
+    "a": "Inelastic",
+    "steps": [
+      "For linear demand \\(q = a - bp\\), \\(E = 1\\) exactly at \\(p = \\frac{a}{2b} = 10\\).",
+      "Above that price demand is elastic (\\(E > 1\\)); below it, inelastic.",
+      "\\(2 < 10\\), so demand is inelastic."
+    ],
+    "traps": [
+      {
+        "ans": "Elastic",
+        "why": "HIGH prices are the elastic region: at high p, q is small and E = bp/q is large. The intuition \"expensive = customers react strongly\" points the right way."
+      },
+      {
+        "ans": "Unit elastic",
+        "why": "E = 1 only at exactly p = a/(2b) = 10; the given price is not that value."
+      }
+    ],
+    "vec": [
+      16,
+      2,
+      60,
+      3,
+      2,
+      0
+    ]
+  },
+  {
+    "unitId": "AC1_Elasticity",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 4044878573,
+    "key": "ac1_elast_classify",
+    "q": "For demand \\(q = 180 - 3p\\), is demand elastic or inelastic at \\(p = 22\\)?",
+    "a": "Inelastic",
+    "steps": [
+      "For linear demand \\(q = a - bp\\), \\(E = 1\\) exactly at \\(p = \\frac{a}{2b} = 30\\).",
+      "Above that price demand is elastic (\\(E > 1\\)); below it, inelastic.",
+      "\\(22 < 30\\), so demand is inelastic."
+    ],
+    "traps": [
+      {
+        "ans": "Elastic",
+        "why": "HIGH prices are the elastic region: at high p, q is small and E = bp/q is large. The intuition \"expensive = customers react strongly\" points the right way."
+      },
+      {
+        "ans": "Unit elastic",
+        "why": "E = 1 only at exactly p = a/(2b) = 30; the given price is not that value."
+      }
+    ],
+    "vec": [
+      16,
+      2,
+      180,
+      3,
+      22,
+      0
+    ]
+  },
+  {
+    "unitId": "AC1_Elasticity",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 3994545716,
+    "key": "ac1_elast_classify",
+    "q": "For demand \\(q = 80 - 2p\\), is demand elastic or inelastic at \\(p = 26\\)?",
+    "a": "Elastic",
+    "steps": [
+      "For linear demand \\(q = a - bp\\), \\(E = 1\\) exactly at \\(p = \\frac{a}{2b} = 20\\).",
+      "Above that price demand is elastic (\\(E > 1\\)); below it, inelastic.",
+      "\\(26 > 20\\), so demand is elastic."
+    ],
+    "traps": [
+      {
+        "ans": "Inelastic",
+        "why": "HIGH prices are the elastic region: at high p, q is small and E = bp/q is large. The intuition \"expensive = customers react strongly\" points the right way."
+      },
+      {
+        "ans": "Unit elastic",
+        "why": "E = 1 only at exactly p = a/(2b) = 20; the given price is not that value."
+      }
+    ],
+    "vec": [
+      16,
+      2,
+      80,
+      2,
+      26,
+      1
+    ]
+  },
+  {
+    "unitId": "AC1_Elasticity",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 4011323335,
+    "key": "ac1_elast_classify",
+    "q": "For demand \\(q = 20 - p\\), is demand elastic or inelastic at \\(p = 4\\)?",
+    "a": "Inelastic",
+    "steps": [
+      "For linear demand \\(q = a - bp\\), \\(E = 1\\) exactly at \\(p = \\frac{a}{2b} = 10\\).",
+      "Above that price demand is elastic (\\(E > 1\\)); below it, inelastic.",
+      "\\(4 < 10\\), so demand is inelastic."
+    ],
+    "traps": [
+      {
+        "ans": "Elastic",
+        "why": "HIGH prices are the elastic region: at high p, q is small and E = bp/q is large. The intuition \"expensive = customers react strongly\" points the right way."
+      },
+      {
+        "ans": "Unit elastic",
+        "why": "E = 1 only at exactly p = a/(2b) = 10; the given price is not that value."
+      }
+    ],
+    "vec": [
+      16,
+      2,
+      20,
+      1,
+      4,
+      0
+    ]
+  },
+  {
+    "unitId": "AC1_Elasticity",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 3960990478,
+    "key": "ac1_elast_classify",
+    "q": "For demand \\(q = 60 - p\\), is demand elastic or inelastic at \\(p = 26\\)?",
+    "a": "Inelastic",
+    "steps": [
+      "For linear demand \\(q = a - bp\\), \\(E = 1\\) exactly at \\(p = \\frac{a}{2b} = 30\\).",
+      "Above that price demand is elastic (\\(E > 1\\)); below it, inelastic.",
+      "\\(26 < 30\\), so demand is inelastic."
+    ],
+    "traps": [
+      {
+        "ans": "Elastic",
+        "why": "HIGH prices are the elastic region: at high p, q is small and E = bp/q is large. The intuition \"expensive = customers react strongly\" points the right way."
+      },
+      {
+        "ans": "Unit elastic",
+        "why": "E = 1 only at exactly p = a/(2b) = 30; the given price is not that value."
+      }
+    ],
+    "vec": [
+      16,
+      2,
+      60,
+      1,
+      26,
+      0
+    ]
+  },
+  {
+    "unitId": "AC1_Elasticity",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 3977768097,
+    "key": "ac1_elast_classify",
+    "q": "For demand \\(q = 20 - p\\), is demand elastic or inelastic at \\(p = 6\\)?",
+    "a": "Inelastic",
+    "steps": [
+      "For linear demand \\(q = a - bp\\), \\(E = 1\\) exactly at \\(p = \\frac{a}{2b} = 10\\).",
+      "Above that price demand is elastic (\\(E > 1\\)); below it, inelastic.",
+      "\\(6 < 10\\), so demand is inelastic."
+    ],
+    "traps": [
+      {
+        "ans": "Elastic",
+        "why": "HIGH prices are the elastic region: at high p, q is small and E = bp/q is large. The intuition \"expensive = customers react strongly\" points the right way."
+      },
+      {
+        "ans": "Unit elastic",
+        "why": "E = 1 only at exactly p = a/(2b) = 10; the given price is not that value."
+      }
+    ],
+    "vec": [
+      16,
+      2,
+      20,
+      1,
+      6,
+      0
+    ]
+  },
+  {
+    "unitId": "AC1_Elasticity",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 2173971479,
+    "key": "ac1_elast_revmax",
+    "q": "Demand is \\(q = 120 - 3p\\). What price maximizes revenue?",
+    "a": "\\(p = 20\\)",
+    "steps": [
+      "Revenue: \\(R(p) = pq = 120p - 3p^2\\).",
+      "\\(R'(p) = 120 - 6p = 0 \\Rightarrow p = \\frac{120}{6} = 20\\).",
+      "(Equivalently: revenue peaks where elasticity \\(E = 1\\).)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(p = 40\\)",
+        "why": "That is a/b \u2014 the price where demand hits ZERO (and revenue too). Revenue peaks at half that: a/(2b)."
+      },
+      {
+        "ans": "\\(p = 120\\)",
+        "why": "Differentiate R(p) = ap \u2212 bp\u00b2 and solve R\u2032 = 0; the intercept a is a quantity, not the optimal price."
+      }
+    ],
+    "vec": [
+      16,
+      3,
+      120,
+      3,
+      20
+    ]
+  },
+  {
+    "unitId": "AC1_Elasticity",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 2157193860,
+    "key": "ac1_elast_revmax",
+    "q": "Demand is \\(q = 150 - 3p\\). What price maximizes revenue?",
+    "a": "\\(p = 25\\)",
+    "steps": [
+      "Revenue: \\(R(p) = pq = 150p - 3p^2\\).",
+      "\\(R'(p) = 150 - 6p = 0 \\Rightarrow p = \\frac{150}{6} = 25\\).",
+      "(Equivalently: revenue peaks where elasticity \\(E = 1\\).)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(p = 50\\)",
+        "why": "That is a/b \u2014 the price where demand hits ZERO (and revenue too). Revenue peaks at half that: a/(2b)."
+      },
+      {
+        "ans": "\\(p = 150\\)",
+        "why": "Differentiate R(p) = ap \u2212 bp\u00b2 and solve R\u2032 = 0; the intercept a is a quantity, not the optimal price."
+      }
+    ],
+    "vec": [
+      16,
+      3,
+      150,
+      3,
+      25
+    ]
+  },
+  {
+    "unitId": "AC1_Elasticity",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 2207526717,
+    "key": "ac1_elast_revmax",
+    "q": "Demand is \\(q = 200 - 4p\\). What price maximizes revenue?",
+    "a": "\\(p = 25\\)",
+    "steps": [
+      "Revenue: \\(R(p) = pq = 200p - 4p^2\\).",
+      "\\(R'(p) = 200 - 8p = 0 \\Rightarrow p = \\frac{200}{8} = 25\\).",
+      "(Equivalently: revenue peaks where elasticity \\(E = 1\\).)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(p = 50\\)",
+        "why": "That is a/b \u2014 the price where demand hits ZERO (and revenue too). Revenue peaks at half that: a/(2b)."
+      },
+      {
+        "ans": "\\(p = 200\\)",
+        "why": "Differentiate R(p) = ap \u2212 bp\u00b2 and solve R\u2032 = 0; the intercept a is a quantity, not the optimal price."
+      }
+    ],
+    "vec": [
+      16,
+      3,
+      200,
+      4,
+      25
+    ]
+  },
+  {
+    "unitId": "AC1_Elasticity",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 2190749098,
+    "key": "ac1_elast_revmax",
+    "q": "Demand is \\(q = 200 - 4p\\). What price maximizes revenue?",
+    "a": "\\(p = 25\\)",
+    "steps": [
+      "Revenue: \\(R(p) = pq = 200p - 4p^2\\).",
+      "\\(R'(p) = 200 - 8p = 0 \\Rightarrow p = \\frac{200}{8} = 25\\).",
+      "(Equivalently: revenue peaks where elasticity \\(E = 1\\).)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(p = 50\\)",
+        "why": "That is a/b \u2014 the price where demand hits ZERO (and revenue too). Revenue peaks at half that: a/(2b)."
+      },
+      {
+        "ans": "\\(p = 200\\)",
+        "why": "Differentiate R(p) = ap \u2212 bp\u00b2 and solve R\u2032 = 0; the intercept a is a quantity, not the optimal price."
+      }
+    ],
+    "vec": [
+      16,
+      3,
+      200,
+      4,
+      25
+    ]
+  },
+  {
+    "unitId": "AC1_Elasticity",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 2106861003,
+    "key": "ac1_elast_revmax",
+    "q": "Demand is \\(q = 120 - 4p\\). What price maximizes revenue?",
+    "a": "\\(p = 15\\)",
+    "steps": [
+      "Revenue: \\(R(p) = pq = 120p - 4p^2\\).",
+      "\\(R'(p) = 120 - 8p = 0 \\Rightarrow p = \\frac{120}{8} = 15\\).",
+      "(Equivalently: revenue peaks where elasticity \\(E = 1\\).)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(p = 30\\)",
+        "why": "That is a/b \u2014 the price where demand hits ZERO (and revenue too). Revenue peaks at half that: a/(2b)."
+      },
+      {
+        "ans": "\\(p = 120\\)",
+        "why": "Differentiate R(p) = ap \u2212 bp\u00b2 and solve R\u2032 = 0; the intercept a is a quantity, not the optimal price."
+      }
+    ],
+    "vec": [
+      16,
+      3,
+      120,
+      4,
+      15
+    ]
+  },
+  {
+    "unitId": "AC1_Elasticity",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 2090083384,
+    "key": "ac1_elast_revmax",
+    "q": "Demand is \\(q = 200 - 4p\\). What price maximizes revenue?",
+    "a": "\\(p = 25\\)",
+    "steps": [
+      "Revenue: \\(R(p) = pq = 200p - 4p^2\\).",
+      "\\(R'(p) = 200 - 8p = 0 \\Rightarrow p = \\frac{200}{8} = 25\\).",
+      "(Equivalently: revenue peaks where elasticity \\(E = 1\\).)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(p = 50\\)",
+        "why": "That is a/b \u2014 the price where demand hits ZERO (and revenue too). Revenue peaks at half that: a/(2b)."
+      },
+      {
+        "ans": "\\(p = 200\\)",
+        "why": "Differentiate R(p) = ap \u2212 bp\u00b2 and solve R\u2032 = 0; the intercept a is a quantity, not the optimal price."
+      }
+    ],
+    "vec": [
+      16,
+      3,
+      200,
+      4,
+      25
+    ]
+  },
+  {
+    "unitId": "AC1_Finance",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 1482429950,
+    "key": "ac1_fin_amount",
+    "q": "\\$2000 is invested at 5\\% annual interest, compounded continuously. What is the balance after 10 years? (Exact form.)",
+    "a": "\\(A = 2000e^{0.50}\\)",
+    "steps": [
+      "Continuous compounding: \\(A = Pe^{rt}\\).",
+      "\\(r = 5\\% = 0.05\\), so \\(rt = 0.05\\times10 = 0.50\\).",
+      "\\(A = 2000e^{0.50}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(A = 2000e^{50}\\)",
+        "why": "Convert the percent: r = 5% = 0.05. Using 5 raw makes the exponent 100\u00d7 too large."
+      },
+      {
+        "ans": "\\(A = 2000(1 + 0.05)^{10}\\)",
+        "why": "That is ANNUAL compounding. Continuous compounding uses Pe^{rt}."
+      }
+    ],
+    "vec": [
+      17,
+      1,
+      2000,
+      5,
+      10
+    ]
+  },
+  {
+    "unitId": "AC1_Finance",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 1499207569,
+    "key": "ac1_fin_amount",
+    "q": "\\$5000 is invested at 8\\% annual interest, compounded continuously. What is the balance after 5 years? (Exact form.)",
+    "a": "\\(A = 5000e^{0.40}\\)",
+    "steps": [
+      "Continuous compounding: \\(A = Pe^{rt}\\).",
+      "\\(r = 8\\% = 0.08\\), so \\(rt = 0.08\\times5 = 0.40\\).",
+      "\\(A = 5000e^{0.40}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(A = 5000e^{40}\\)",
+        "why": "Convert the percent: r = 8% = 0.08. Using 8 raw makes the exponent 100\u00d7 too large."
+      },
+      {
+        "ans": "\\(A = 5000(1 + 0.08)^{5}\\)",
+        "why": "That is ANNUAL compounding. Continuous compounding uses Pe^{rt}."
+      }
+    ],
+    "vec": [
+      17,
+      1,
+      5000,
+      8,
+      5
+    ]
+  },
+  {
+    "unitId": "AC1_Finance",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 1448874712,
+    "key": "ac1_fin_amount",
+    "q": "\\$1000 is invested at 5\\% annual interest, compounded continuously. What is the balance after 5 years? (Exact form.)",
+    "a": "\\(A = 1000e^{0.25}\\)",
+    "steps": [
+      "Continuous compounding: \\(A = Pe^{rt}\\).",
+      "\\(r = 5\\% = 0.05\\), so \\(rt = 0.05\\times5 = 0.25\\).",
+      "\\(A = 1000e^{0.25}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(A = 1000e^{25}\\)",
+        "why": "Convert the percent: r = 5% = 0.05. Using 5 raw makes the exponent 100\u00d7 too large."
+      },
+      {
+        "ans": "\\(A = 1000(1 + 0.05)^{5}\\)",
+        "why": "That is ANNUAL compounding. Continuous compounding uses Pe^{rt}."
+      }
+    ],
+    "vec": [
+      17,
+      1,
+      1000,
+      5,
+      5
+    ]
+  },
+  {
+    "unitId": "AC1_Finance",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 1465652331,
+    "key": "ac1_fin_amount",
+    "q": "\\$2000 is invested at 10\\% annual interest, compounded continuously. What is the balance after 10 years? (Exact form.)",
+    "a": "\\(A = 2000e\\)",
+    "steps": [
+      "Continuous compounding: \\(A = Pe^{rt}\\).",
+      "\\(r = 10\\% = 0.1\\), so \\(rt = 0.1\\times10 = 1\\).",
+      "\\(A = 2000e^{1}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(A = 2000e^{100}\\)",
+        "why": "Convert the percent: r = 10% = 0.1. Using 10 raw makes the exponent 100\u00d7 too large."
+      },
+      {
+        "ans": "\\(A = 2000(1 + 0.1)^{10}\\)",
+        "why": "That is ANNUAL compounding. Continuous compounding uses Pe^{rt}."
+      }
+    ],
+    "vec": [
+      17,
+      1,
+      2000,
+      10,
+      10
+    ]
+  },
+  {
+    "unitId": "AC1_Finance",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 1549540426,
+    "key": "ac1_fin_amount",
+    "q": "\\$1000 is invested at 10\\% annual interest, compounded continuously. What is the balance after 5 years? (Exact form.)",
+    "a": "\\(A = 1000e^{0.50}\\)",
+    "steps": [
+      "Continuous compounding: \\(A = Pe^{rt}\\).",
+      "\\(r = 10\\% = 0.1\\), so \\(rt = 0.1\\times5 = 0.50\\).",
+      "\\(A = 1000e^{0.50}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(A = 1000e^{50}\\)",
+        "why": "Convert the percent: r = 10% = 0.1. Using 10 raw makes the exponent 100\u00d7 too large."
+      },
+      {
+        "ans": "\\(A = 1000(1 + 0.1)^{5}\\)",
+        "why": "That is ANNUAL compounding. Continuous compounding uses Pe^{rt}."
+      }
+    ],
+    "vec": [
+      17,
+      1,
+      1000,
+      10,
+      5
+    ]
+  },
+  {
+    "unitId": "AC1_Finance",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 1566318045,
+    "key": "ac1_fin_amount",
+    "q": "\\$1000 is invested at 10\\% annual interest, compounded continuously. What is the balance after 5 years? (Exact form.)",
+    "a": "\\(A = 1000e^{0.50}\\)",
+    "steps": [
+      "Continuous compounding: \\(A = Pe^{rt}\\).",
+      "\\(r = 10\\% = 0.1\\), so \\(rt = 0.1\\times5 = 0.50\\).",
+      "\\(A = 1000e^{0.50}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(A = 1000e^{50}\\)",
+        "why": "Convert the percent: r = 10% = 0.1. Using 10 raw makes the exponent 100\u00d7 too large."
+      },
+      {
+        "ans": "\\(A = 1000(1 + 0.1)^{5}\\)",
+        "why": "That is ANNUAL compounding. Continuous compounding uses Pe^{rt}."
+      }
+    ],
+    "vec": [
+      17,
+      1,
+      1000,
+      10,
+      5
+    ]
+  },
+  {
+    "unitId": "AC1_Finance",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 3336559425,
+    "key": "ac1_fin_time",
+    "q": "Money grows continuously at rate \\(r = \\frac{1}{25}\\) per year. How long until an investment triples?",
+    "a": "\\(t = 25\\ln 3\\)",
+    "steps": [
+      "\\(A = Pe^{t/25}\\); we need \\(A = 3P\\).",
+      "\\(e^{t/25} = 3 \\Rightarrow t/25 = \\ln 3\\).",
+      "\\(t = 25\\ln 3 \\approx 27.5\\) years."
+    ],
+    "traps": [
+      {
+        "ans": "\\(t = \\dfrac{\\ln 3}{25}\\)",
+        "why": "t = ln(3)/r, and dividing by r = 1/25 means multiplying by 25."
+      },
+      {
+        "ans": "\\(t = 75\\)",
+        "why": "Exponential growth is not linear \u2014 the answer involves ln 3 \u2248 1.10, not the factor itself."
+      }
+    ],
+    "vec": [
+      17,
+      2,
+      25,
+      3
+    ]
+  },
+  {
+    "unitId": "AC1_Finance",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 3319781806,
+    "key": "ac1_fin_time",
+    "q": "Money grows continuously at rate \\(r = \\frac{1}{50}\\) per year. How long until an investment triples?",
+    "a": "\\(t = 50\\ln 3\\)",
+    "steps": [
+      "\\(A = Pe^{t/50}\\); we need \\(A = 3P\\).",
+      "\\(e^{t/50} = 3 \\Rightarrow t/50 = \\ln 3\\).",
+      "\\(t = 50\\ln 3 \\approx 54.9\\) years."
+    ],
+    "traps": [
+      {
+        "ans": "\\(t = \\dfrac{\\ln 3}{50}\\)",
+        "why": "t = ln(3)/r, and dividing by r = 1/50 means multiplying by 50."
+      },
+      {
+        "ans": "\\(t = 150\\)",
+        "why": "Exponential growth is not linear \u2014 the answer involves ln 3 \u2248 1.10, not the factor itself."
+      }
+    ],
+    "vec": [
+      17,
+      2,
+      50,
+      3
+    ]
+  },
+  {
+    "unitId": "AC1_Finance",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 3303004187,
+    "key": "ac1_fin_time",
+    "q": "Money grows continuously at rate \\(r = \\frac{1}{50}\\) per year. How long until an investment doubles?",
+    "a": "\\(t = 50\\ln 2\\)",
+    "steps": [
+      "\\(A = Pe^{t/50}\\); we need \\(A = 2P\\).",
+      "\\(e^{t/50} = 2 \\Rightarrow t/50 = \\ln 2\\).",
+      "\\(t = 50\\ln 2 \\approx 34.7\\) years."
+    ],
+    "traps": [
+      {
+        "ans": "\\(t = \\dfrac{\\ln 2}{50}\\)",
+        "why": "t = ln(2)/r, and dividing by r = 1/50 means multiplying by 50."
+      },
+      {
+        "ans": "\\(t = 100\\)",
+        "why": "Exponential growth is not linear \u2014 the answer involves ln 2 \u2248 0.69, not the factor itself."
+      }
+    ],
+    "vec": [
+      17,
+      2,
+      50,
+      2
+    ]
+  },
+  {
+    "unitId": "AC1_Finance",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 3286226568,
+    "key": "ac1_fin_time",
+    "q": "Money grows continuously at rate \\(r = \\frac{1}{20}\\) per year. How long until an investment triples?",
+    "a": "\\(t = 20\\ln 3\\)",
+    "steps": [
+      "\\(A = Pe^{t/20}\\); we need \\(A = 3P\\).",
+      "\\(e^{t/20} = 3 \\Rightarrow t/20 = \\ln 3\\).",
+      "\\(t = 20\\ln 3 \\approx 22.0\\) years."
+    ],
+    "traps": [
+      {
+        "ans": "\\(t = \\dfrac{\\ln 3}{20}\\)",
+        "why": "t = ln(3)/r, and dividing by r = 1/20 means multiplying by 20."
+      },
+      {
+        "ans": "\\(t = 60\\)",
+        "why": "Exponential growth is not linear \u2014 the answer involves ln 3 \u2248 1.10, not the factor itself."
+      }
+    ],
+    "vec": [
+      17,
+      2,
+      20,
+      3
+    ]
+  },
+  {
+    "unitId": "AC1_Finance",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 3403669901,
+    "key": "ac1_fin_time",
+    "q": "Money grows continuously at rate \\(r = \\frac{1}{50}\\) per year. How long until an investment doubles?",
+    "a": "\\(t = 50\\ln 2\\)",
+    "steps": [
+      "\\(A = Pe^{t/50}\\); we need \\(A = 2P\\).",
+      "\\(e^{t/50} = 2 \\Rightarrow t/50 = \\ln 2\\).",
+      "\\(t = 50\\ln 2 \\approx 34.7\\) years."
+    ],
+    "traps": [
+      {
+        "ans": "\\(t = \\dfrac{\\ln 2}{50}\\)",
+        "why": "t = ln(2)/r, and dividing by r = 1/50 means multiplying by 50."
+      },
+      {
+        "ans": "\\(t = 100\\)",
+        "why": "Exponential growth is not linear \u2014 the answer involves ln 2 \u2248 0.69, not the factor itself."
+      }
+    ],
+    "vec": [
+      17,
+      2,
+      50,
+      2
+    ]
+  },
+  {
+    "unitId": "AC1_Finance",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 3386892282,
+    "key": "ac1_fin_time",
+    "q": "Money grows continuously at rate \\(r = \\frac{1}{25}\\) per year. How long until an investment triples?",
+    "a": "\\(t = 25\\ln 3\\)",
+    "steps": [
+      "\\(A = Pe^{t/25}\\); we need \\(A = 3P\\).",
+      "\\(e^{t/25} = 3 \\Rightarrow t/25 = \\ln 3\\).",
+      "\\(t = 25\\ln 3 \\approx 27.5\\) years."
+    ],
+    "traps": [
+      {
+        "ans": "\\(t = \\dfrac{\\ln 3}{25}\\)",
+        "why": "t = ln(3)/r, and dividing by r = 1/25 means multiplying by 25."
+      },
+      {
+        "ans": "\\(t = 75\\)",
+        "why": "Exponential growth is not linear \u2014 the answer involves ln 3 \u2248 1.10, not the factor itself."
+      }
+    ],
+    "vec": [
+      17,
+      2,
+      25,
+      3
+    ]
+  },
+  {
+    "unitId": "AC1_Finance",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 3905374992,
+    "key": "ac1_fin_rate",
+    "q": "An investment quadrupled in 10 years under continuous compounding. Find the rate \\(r\\). (Exact form.)",
+    "a": "\\(r = \\dfrac{\\ln 4}{10}\\)",
+    "steps": [
+      "\\(4P = Pe^{r(10)} \\Rightarrow e^{10r} = 4\\).",
+      "\\(10r = \\ln 4 \\Rightarrow r = \\dfrac{\\ln 4}{10} \\approx 13.9\\%\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(r = 10\\ln 4\\)",
+        "why": "Divide by the time: r = ln(4)/t. Multiplying gives a rate over 100\u00d7 too large."
+      },
+      {
+        "ans": "\\(r = \\dfrac{4}{10}\\)",
+        "why": "Undo the exponential with a logarithm first \u2014 the growth factor 4 enters as ln 4."
+      }
+    ],
+    "vec": [
+      17,
+      3,
+      10,
+      4
+    ]
+  },
+  {
+    "unitId": "AC1_Finance",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 3922152611,
+    "key": "ac1_fin_rate",
+    "q": "An investment tripled in 10 years under continuous compounding. Find the rate \\(r\\). (Exact form.)",
+    "a": "\\(r = \\dfrac{\\ln 3}{10}\\)",
+    "steps": [
+      "\\(3P = Pe^{r(10)} \\Rightarrow e^{10r} = 3\\).",
+      "\\(10r = \\ln 3 \\Rightarrow r = \\dfrac{\\ln 3}{10} \\approx 11.0\\%\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(r = 10\\ln 3\\)",
+        "why": "Divide by the time: r = ln(3)/t. Multiplying gives a rate over 100\u00d7 too large."
+      },
+      {
+        "ans": "\\(r = \\dfrac{3}{10}\\)",
+        "why": "Undo the exponential with a logarithm first \u2014 the growth factor 3 enters as ln 3."
+      }
+    ],
+    "vec": [
+      17,
+      3,
+      10,
+      3
+    ]
+  },
+  {
+    "unitId": "AC1_Finance",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 3938930230,
+    "key": "ac1_fin_rate",
+    "q": "An investment quadrupled in 20 years under continuous compounding. Find the rate \\(r\\). (Exact form.)",
+    "a": "\\(r = \\dfrac{\\ln 4}{20}\\)",
+    "steps": [
+      "\\(4P = Pe^{r(20)} \\Rightarrow e^{20r} = 4\\).",
+      "\\(20r = \\ln 4 \\Rightarrow r = \\dfrac{\\ln 4}{20} \\approx 6.9\\%\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(r = 20\\ln 4\\)",
+        "why": "Divide by the time: r = ln(4)/t. Multiplying gives a rate over 400\u00d7 too large."
+      },
+      {
+        "ans": "\\(r = \\dfrac{4}{20}\\)",
+        "why": "Undo the exponential with a logarithm first \u2014 the growth factor 4 enters as ln 4."
+      }
+    ],
+    "vec": [
+      17,
+      3,
+      20,
+      4
+    ]
+  },
+  {
+    "unitId": "AC1_Finance",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 3955707849,
+    "key": "ac1_fin_rate",
+    "q": "An investment tripled in 10 years under continuous compounding. Find the rate \\(r\\). (Exact form.)",
+    "a": "\\(r = \\dfrac{\\ln 3}{10}\\)",
+    "steps": [
+      "\\(3P = Pe^{r(10)} \\Rightarrow e^{10r} = 3\\).",
+      "\\(10r = \\ln 3 \\Rightarrow r = \\dfrac{\\ln 3}{10} \\approx 11.0\\%\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(r = 10\\ln 3\\)",
+        "why": "Divide by the time: r = ln(3)/t. Multiplying gives a rate over 100\u00d7 too large."
+      },
+      {
+        "ans": "\\(r = \\dfrac{3}{10}\\)",
+        "why": "Undo the exponential with a logarithm first \u2014 the growth factor 3 enters as ln 3."
+      }
+    ],
+    "vec": [
+      17,
+      3,
+      10,
+      3
+    ]
+  },
+  {
+    "unitId": "AC1_Finance",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 3972485468,
+    "key": "ac1_fin_rate",
+    "q": "An investment doubled in 25 years under continuous compounding. Find the rate \\(r\\). (Exact form.)",
+    "a": "\\(r = \\dfrac{\\ln 2}{25}\\)",
+    "steps": [
+      "\\(2P = Pe^{r(25)} \\Rightarrow e^{25r} = 2\\).",
+      "\\(25r = \\ln 2 \\Rightarrow r = \\dfrac{\\ln 2}{25} \\approx 2.8\\%\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(r = 25\\ln 2\\)",
+        "why": "Divide by the time: r = ln(2)/t. Multiplying gives a rate over 625\u00d7 too large."
+      },
+      {
+        "ans": "\\(r = \\dfrac{2}{25}\\)",
+        "why": "Undo the exponential with a logarithm first \u2014 the growth factor 2 enters as ln 2."
+      }
+    ],
+    "vec": [
+      17,
+      3,
+      25,
+      2
+    ]
+  },
+  {
+    "unitId": "AC1_Finance",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 3989263087,
+    "key": "ac1_fin_rate",
+    "q": "An investment tripled in 25 years under continuous compounding. Find the rate \\(r\\). (Exact form.)",
+    "a": "\\(r = \\dfrac{\\ln 3}{25}\\)",
+    "steps": [
+      "\\(3P = Pe^{r(25)} \\Rightarrow e^{25r} = 3\\).",
+      "\\(25r = \\ln 3 \\Rightarrow r = \\dfrac{\\ln 3}{25} \\approx 4.4\\%\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(r = 25\\ln 3\\)",
+        "why": "Divide by the time: r = ln(3)/t. Multiplying gives a rate over 625\u00d7 too large."
+      },
+      {
+        "ans": "\\(r = \\dfrac{3}{25}\\)",
+        "why": "Undo the exponential with a logarithm first \u2014 the growth factor 3 enters as ln 3."
+      }
+    ],
+    "vec": [
+      17,
+      3,
+      25,
+      3
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 384120920,
+    "key": "ac2_consumer_surplus",
+    "q": "The demand curve is \\(p = 110 - 4q\\) and the market price is \\(p_0 = 30\\) (so \\(q_0 = 20\\)). Find the consumer surplus.",
+    "a": "\\(CS = 800\\)",
+    "steps": [
+      "\\(CS = \\int_0^{20} (110 - 4q)\\,dq - p_0 q_0\\).",
+      "\\(= \\left[110q - 2q^2\\right]_0^{20} - 30\\cdot20 = 1400 - 600\\).",
+      "\\(CS = 800\\) \u2014 the triangle between the demand curve and the price line."
+    ],
+    "traps": [
+      {
+        "ans": "\\(CS = 1400\\)",
+        "why": "That is the WHOLE area under demand \u2014 subtract what consumers actually paid (p\u2080q\u2080) to get the surplus."
+      },
+      {
+        "ans": "\\(CS = 1600\\)",
+        "why": "The surplus triangle has area \u00bd\u00b7base\u00b7height = \u00bd\u00b7q\u2080\u00b7(d\u2080\u2212p\u2080); the \u00bd is not optional."
+      }
+    ],
+    "vec": [
+      18,
+      1,
+      110,
+      4,
+      30,
+      20
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 400898539,
+    "key": "ac2_consumer_surplus",
+    "q": "The demand curve is \\(p = 60 - 4q\\) and the market price is \\(p_0 = 20\\) (so \\(q_0 = 10\\)). Find the consumer surplus.",
+    "a": "\\(CS = 200\\)",
+    "steps": [
+      "\\(CS = \\int_0^{10} (60 - 4q)\\,dq - p_0 q_0\\).",
+      "\\(= \\left[60q - 2q^2\\right]_0^{10} - 20\\cdot10 = 400 - 200\\).",
+      "\\(CS = 200\\) \u2014 the triangle between the demand curve and the price line."
+    ],
+    "traps": [
+      {
+        "ans": "\\(CS = 400\\)",
+        "why": "That is the WHOLE area under demand \u2014 subtract what consumers actually paid (p\u2080q\u2080) to get the surplus."
+      },
+      {
+        "ans": "\\(CS = 400\\)",
+        "why": "The surplus triangle has area \u00bd\u00b7base\u00b7height = \u00bd\u00b7q\u2080\u00b7(d\u2080\u2212p\u2080); the \u00bd is not optional."
+      }
+    ],
+    "vec": [
+      18,
+      1,
+      60,
+      4,
+      20,
+      10
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 417676158,
+    "key": "ac2_consumer_surplus",
+    "q": "The demand curve is \\(p = 70 - 2q\\) and the market price is \\(p_0 = 30\\) (so \\(q_0 = 20\\)). Find the consumer surplus.",
+    "a": "\\(CS = 400\\)",
+    "steps": [
+      "\\(CS = \\int_0^{20} (70 - 2q)\\,dq - p_0 q_0\\).",
+      "\\(= \\left[70q - q^2\\right]_0^{20} - 30\\cdot20 = 1000 - 600\\).",
+      "\\(CS = 400\\) \u2014 the triangle between the demand curve and the price line."
+    ],
+    "traps": [
+      {
+        "ans": "\\(CS = 1000\\)",
+        "why": "That is the WHOLE area under demand \u2014 subtract what consumers actually paid (p\u2080q\u2080) to get the surplus."
+      },
+      {
+        "ans": "\\(CS = 800\\)",
+        "why": "The surplus triangle has area \u00bd\u00b7base\u00b7height = \u00bd\u00b7q\u2080\u00b7(d\u2080\u2212p\u2080); the \u00bd is not optional."
+      }
+    ],
+    "vec": [
+      18,
+      1,
+      70,
+      2,
+      30,
+      20
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 434453777,
+    "key": "ac2_consumer_surplus",
+    "q": "The demand curve is \\(p = 50 - 2q\\) and the market price is \\(p_0 = 30\\) (so \\(q_0 = 10\\)). Find the consumer surplus.",
+    "a": "\\(CS = 100\\)",
+    "steps": [
+      "\\(CS = \\int_0^{10} (50 - 2q)\\,dq - p_0 q_0\\).",
+      "\\(= \\left[50q - q^2\\right]_0^{10} - 30\\cdot10 = 400 - 300\\).",
+      "\\(CS = 100\\) \u2014 the triangle between the demand curve and the price line."
+    ],
+    "traps": [
+      {
+        "ans": "\\(CS = 400\\)",
+        "why": "That is the WHOLE area under demand \u2014 subtract what consumers actually paid (p\u2080q\u2080) to get the surplus."
+      },
+      {
+        "ans": "\\(CS = 200\\)",
+        "why": "The surplus triangle has area \u00bd\u00b7base\u00b7height = \u00bd\u00b7q\u2080\u00b7(d\u2080\u2212p\u2080); the \u00bd is not optional."
+      }
+    ],
+    "vec": [
+      18,
+      1,
+      50,
+      2,
+      30,
+      10
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 451231396,
+    "key": "ac2_consumer_surplus",
+    "q": "The demand curve is \\(p = 60 - 2q\\) and the market price is \\(p_0 = 20\\) (so \\(q_0 = 20\\)). Find the consumer surplus.",
+    "a": "\\(CS = 400\\)",
+    "steps": [
+      "\\(CS = \\int_0^{20} (60 - 2q)\\,dq - p_0 q_0\\).",
+      "\\(= \\left[60q - q^2\\right]_0^{20} - 20\\cdot20 = 800 - 400\\).",
+      "\\(CS = 400\\) \u2014 the triangle between the demand curve and the price line."
+    ],
+    "traps": [
+      {
+        "ans": "\\(CS = 800\\)",
+        "why": "That is the WHOLE area under demand \u2014 subtract what consumers actually paid (p\u2080q\u2080) to get the surplus."
+      },
+      {
+        "ans": "\\(CS = 800\\)",
+        "why": "The surplus triangle has area \u00bd\u00b7base\u00b7height = \u00bd\u00b7q\u2080\u00b7(d\u2080\u2212p\u2080); the \u00bd is not optional."
+      }
+    ],
+    "vec": [
+      18,
+      1,
+      60,
+      2,
+      20,
+      20
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 468009015,
+    "key": "ac2_consumer_surplus",
+    "q": "The demand curve is \\(p = 100 - 4q\\) and the market price is \\(p_0 = 20\\) (so \\(q_0 = 20\\)). Find the consumer surplus.",
+    "a": "\\(CS = 800\\)",
+    "steps": [
+      "\\(CS = \\int_0^{20} (100 - 4q)\\,dq - p_0 q_0\\).",
+      "\\(= \\left[100q - 2q^2\\right]_0^{20} - 20\\cdot20 = 1200 - 400\\).",
+      "\\(CS = 800\\) \u2014 the triangle between the demand curve and the price line."
+    ],
+    "traps": [
+      {
+        "ans": "\\(CS = 1200\\)",
+        "why": "That is the WHOLE area under demand \u2014 subtract what consumers actually paid (p\u2080q\u2080) to get the surplus."
+      },
+      {
+        "ans": "\\(CS = 1600\\)",
+        "why": "The surplus triangle has area \u00bd\u00b7base\u00b7height = \u00bd\u00b7q\u2080\u00b7(d\u2080\u2212p\u2080); the \u00bd is not optional."
+      }
+    ],
+    "vec": [
+      18,
+      1,
+      100,
+      4,
+      20,
+      20
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 4118623651,
+    "key": "ac2_producer_surplus",
+    "q": "The supply curve is \\(p = 5 + q\\) and the market price is \\(p_0 = 15\\) (so \\(q_0 = 10\\)). Find the producer surplus.",
+    "a": "\\(PS = 50\\)",
+    "steps": [
+      "\\(PS = p_0 q_0 - \\int_0^{10} (5 + 1q)\\,dq\\).",
+      "\\(= 150 - (100) = 50\\).",
+      "Producers receive \\(p_0\\) but were willing to sell for less \u2014 the triangle above supply, below price."
+    ],
+    "traps": [
+      {
+        "ans": "\\(PS = 100\\)",
+        "why": "That is the integral under SUPPLY (minimum acceptable revenue). Surplus is receipts p\u2080q\u2080 MINUS that."
+      },
+      {
+        "ans": "\\(PS = 100\\)",
+        "why": "The surplus triangle is \u00bd\u00b7q\u2080\u00b7(p\u2080\u2212s\u2080) \u2014 half the rectangle, not all of it."
+      }
+    ],
+    "vec": [
+      18,
+      2,
+      5,
+      1,
+      15,
+      10
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 4101846032,
+    "key": "ac2_producer_surplus",
+    "q": "The supply curve is \\(p = 10 + q\\) and the market price is \\(p_0 = 30\\) (so \\(q_0 = 20\\)). Find the producer surplus.",
+    "a": "\\(PS = 200\\)",
+    "steps": [
+      "\\(PS = p_0 q_0 - \\int_0^{20} (10 + 1q)\\,dq\\).",
+      "\\(= 600 - (400) = 200\\).",
+      "Producers receive \\(p_0\\) but were willing to sell for less \u2014 the triangle above supply, below price."
+    ],
+    "traps": [
+      {
+        "ans": "\\(PS = 400\\)",
+        "why": "That is the integral under SUPPLY (minimum acceptable revenue). Surplus is receipts p\u2080q\u2080 MINUS that."
+      },
+      {
+        "ans": "\\(PS = 400\\)",
+        "why": "The surplus triangle is \u00bd\u00b7q\u2080\u00b7(p\u2080\u2212s\u2080) \u2014 half the rectangle, not all of it."
+      }
+    ],
+    "vec": [
+      18,
+      2,
+      10,
+      1,
+      30,
+      20
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 4152178889,
+    "key": "ac2_producer_surplus",
+    "q": "The supply curve is \\(p = 10 + 2q\\) and the market price is \\(p_0 = 30\\) (so \\(q_0 = 10\\)). Find the producer surplus.",
+    "a": "\\(PS = 100\\)",
+    "steps": [
+      "\\(PS = p_0 q_0 - \\int_0^{10} (10 + 2q)\\,dq\\).",
+      "\\(= 300 - (200) = 100\\).",
+      "Producers receive \\(p_0\\) but were willing to sell for less \u2014 the triangle above supply, below price."
+    ],
+    "traps": [
+      {
+        "ans": "\\(PS = 200\\)",
+        "why": "That is the integral under SUPPLY (minimum acceptable revenue). Surplus is receipts p\u2080q\u2080 MINUS that."
+      },
+      {
+        "ans": "\\(PS = 200\\)",
+        "why": "The surplus triangle is \u00bd\u00b7q\u2080\u00b7(p\u2080\u2212s\u2080) \u2014 half the rectangle, not all of it."
+      }
+    ],
+    "vec": [
+      18,
+      2,
+      10,
+      2,
+      30,
+      10
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 4135401270,
+    "key": "ac2_producer_surplus",
+    "q": "The supply curve is \\(p = 10 + q\\) and the market price is \\(p_0 = 30\\) (so \\(q_0 = 20\\)). Find the producer surplus.",
+    "a": "\\(PS = 200\\)",
+    "steps": [
+      "\\(PS = p_0 q_0 - \\int_0^{20} (10 + 1q)\\,dq\\).",
+      "\\(= 600 - (400) = 200\\).",
+      "Producers receive \\(p_0\\) but were willing to sell for less \u2014 the triangle above supply, below price."
+    ],
+    "traps": [
+      {
+        "ans": "\\(PS = 400\\)",
+        "why": "That is the integral under SUPPLY (minimum acceptable revenue). Surplus is receipts p\u2080q\u2080 MINUS that."
+      },
+      {
+        "ans": "\\(PS = 400\\)",
+        "why": "The surplus triangle is \u00bd\u00b7q\u2080\u00b7(p\u2080\u2212s\u2080) \u2014 half the rectangle, not all of it."
+      }
+    ],
+    "vec": [
+      18,
+      2,
+      10,
+      1,
+      30,
+      20
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 4185734127,
+    "key": "ac2_producer_surplus",
+    "q": "The supply curve is \\(p = 5 + 2q\\) and the market price is \\(p_0 = 25\\) (so \\(q_0 = 10\\)). Find the producer surplus.",
+    "a": "\\(PS = 100\\)",
+    "steps": [
+      "\\(PS = p_0 q_0 - \\int_0^{10} (5 + 2q)\\,dq\\).",
+      "\\(= 250 - (150) = 100\\).",
+      "Producers receive \\(p_0\\) but were willing to sell for less \u2014 the triangle above supply, below price."
+    ],
+    "traps": [
+      {
+        "ans": "\\(PS = 150\\)",
+        "why": "That is the integral under SUPPLY (minimum acceptable revenue). Surplus is receipts p\u2080q\u2080 MINUS that."
+      },
+      {
+        "ans": "\\(PS = 200\\)",
+        "why": "The surplus triangle is \u00bd\u00b7q\u2080\u00b7(p\u2080\u2212s\u2080) \u2014 half the rectangle, not all of it."
+      }
+    ],
+    "vec": [
+      18,
+      2,
+      5,
+      2,
+      25,
+      10
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 4168956508,
+    "key": "ac2_producer_surplus",
+    "q": "The supply curve is \\(p = 10 + 3q\\) and the market price is \\(p_0 = 70\\) (so \\(q_0 = 20\\)). Find the producer surplus.",
+    "a": "\\(PS = 600\\)",
+    "steps": [
+      "\\(PS = p_0 q_0 - \\int_0^{20} (10 + 3q)\\,dq\\).",
+      "\\(= 1400 - (800) = 600\\).",
+      "Producers receive \\(p_0\\) but were willing to sell for less \u2014 the triangle above supply, below price."
+    ],
+    "traps": [
+      {
+        "ans": "\\(PS = 800\\)",
+        "why": "That is the integral under SUPPLY (minimum acceptable revenue). Surplus is receipts p\u2080q\u2080 MINUS that."
+      },
+      {
+        "ans": "\\(PS = 1200\\)",
+        "why": "The surplus triangle is \u00bd\u00b7q\u2080\u00b7(p\u2080\u2212s\u2080) \u2014 half the rectangle, not all of it."
+      }
+    ],
+    "vec": [
+      18,
+      2,
+      10,
+      3,
+      70,
+      20
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 3825217894,
+    "key": "ac2_present_value",
+    "q": "Income flows continuously at \\$2000 per year for 20 years, with continuous discount rate \\(r = \\frac{1}{20}\\). Find the present value \\(PV = \\int_0^{20} 2000e^{-t/20}\\,dt\\). (Exact form.)",
+    "a": "\\(PV = 40000(1 - e^{-1})\\)",
+    "steps": [
+      "\\(\\int 2000e^{-t/20}dt = -40000\\,e^{-t/20}\\).",
+      "Evaluate 0 to 20: \\(-40000e^{-1} + 40000e^{0} = 40000(1 - e^{-1})\\).",
+      "\\(\\approx 25285\\) \u2014 less than the raw \\$40000 because future dollars are discounted."
+    ],
+    "traps": [
+      {
+        "ans": "\\(PV = 40000\\)",
+        "why": "That is the undiscounted total R\u00b7T. The e^{\u2212rt} factor shrinks future income \u2014 PV must be smaller."
+      },
+      {
+        "ans": "\\(PV = 2000(1 - e^{-1})\\)",
+        "why": "Integrating e^{\u2212t/20} multiplies by 20 (the reciprocal of the rate): the antiderivative is \u221220e^{\u2212t/20} times R."
+      }
+    ],
+    "vec": [
+      18,
+      3,
+      2000,
+      20
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 3841995513,
+    "key": "ac2_present_value",
+    "q": "Income flows continuously at \\$2000 per year for 20 years, with continuous discount rate \\(r = \\frac{1}{20}\\). Find the present value \\(PV = \\int_0^{20} 2000e^{-t/20}\\,dt\\). (Exact form.)",
+    "a": "\\(PV = 40000(1 - e^{-1})\\)",
+    "steps": [
+      "\\(\\int 2000e^{-t/20}dt = -40000\\,e^{-t/20}\\).",
+      "Evaluate 0 to 20: \\(-40000e^{-1} + 40000e^{0} = 40000(1 - e^{-1})\\).",
+      "\\(\\approx 25285\\) \u2014 less than the raw \\$40000 because future dollars are discounted."
+    ],
+    "traps": [
+      {
+        "ans": "\\(PV = 40000\\)",
+        "why": "That is the undiscounted total R\u00b7T. The e^{\u2212rt} factor shrinks future income \u2014 PV must be smaller."
+      },
+      {
+        "ans": "\\(PV = 2000(1 - e^{-1})\\)",
+        "why": "Integrating e^{\u2212t/20} multiplies by 20 (the reciprocal of the rate): the antiderivative is \u221220e^{\u2212t/20} times R."
+      }
+    ],
+    "vec": [
+      18,
+      3,
+      2000,
+      20
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 3791662656,
+    "key": "ac2_present_value",
+    "q": "Income flows continuously at \\$1000 per year for 10 years, with continuous discount rate \\(r = \\frac{1}{10}\\). Find the present value \\(PV = \\int_0^{10} 1000e^{-t/10}\\,dt\\). (Exact form.)",
+    "a": "\\(PV = 10000(1 - e^{-1})\\)",
+    "steps": [
+      "\\(\\int 1000e^{-t/10}dt = -10000\\,e^{-t/10}\\).",
+      "Evaluate 0 to 10: \\(-10000e^{-1} + 10000e^{0} = 10000(1 - e^{-1})\\).",
+      "\\(\\approx 6321\\) \u2014 less than the raw \\$10000 because future dollars are discounted."
+    ],
+    "traps": [
+      {
+        "ans": "\\(PV = 10000\\)",
+        "why": "That is the undiscounted total R\u00b7T. The e^{\u2212rt} factor shrinks future income \u2014 PV must be smaller."
+      },
+      {
+        "ans": "\\(PV = 1000(1 - e^{-1})\\)",
+        "why": "Integrating e^{\u2212t/10} multiplies by 10 (the reciprocal of the rate): the antiderivative is \u221210e^{\u2212t/10} times R."
+      }
+    ],
+    "vec": [
+      18,
+      3,
+      1000,
+      10
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 3808440275,
+    "key": "ac2_present_value",
+    "q": "Income flows continuously at \\$1000 per year for 10 years, with continuous discount rate \\(r = \\frac{1}{10}\\). Find the present value \\(PV = \\int_0^{10} 1000e^{-t/10}\\,dt\\). (Exact form.)",
+    "a": "\\(PV = 10000(1 - e^{-1})\\)",
+    "steps": [
+      "\\(\\int 1000e^{-t/10}dt = -10000\\,e^{-t/10}\\).",
+      "Evaluate 0 to 10: \\(-10000e^{-1} + 10000e^{0} = 10000(1 - e^{-1})\\).",
+      "\\(\\approx 6321\\) \u2014 less than the raw \\$10000 because future dollars are discounted."
+    ],
+    "traps": [
+      {
+        "ans": "\\(PV = 10000\\)",
+        "why": "That is the undiscounted total R\u00b7T. The e^{\u2212rt} factor shrinks future income \u2014 PV must be smaller."
+      },
+      {
+        "ans": "\\(PV = 1000(1 - e^{-1})\\)",
+        "why": "Integrating e^{\u2212t/10} multiplies by 10 (the reciprocal of the rate): the antiderivative is \u221210e^{\u2212t/10} times R."
+      }
+    ],
+    "vec": [
+      18,
+      3,
+      1000,
+      10
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 3892328370,
+    "key": "ac2_present_value",
+    "q": "Income flows continuously at \\$1000 per year for 20 years, with continuous discount rate \\(r = \\frac{1}{20}\\). Find the present value \\(PV = \\int_0^{20} 1000e^{-t/20}\\,dt\\). (Exact form.)",
+    "a": "\\(PV = 20000(1 - e^{-1})\\)",
+    "steps": [
+      "\\(\\int 1000e^{-t/20}dt = -20000\\,e^{-t/20}\\).",
+      "Evaluate 0 to 20: \\(-20000e^{-1} + 20000e^{0} = 20000(1 - e^{-1})\\).",
+      "\\(\\approx 12642\\) \u2014 less than the raw \\$20000 because future dollars are discounted."
+    ],
+    "traps": [
+      {
+        "ans": "\\(PV = 20000\\)",
+        "why": "That is the undiscounted total R\u00b7T. The e^{\u2212rt} factor shrinks future income \u2014 PV must be smaller."
+      },
+      {
+        "ans": "\\(PV = 1000(1 - e^{-1})\\)",
+        "why": "Integrating e^{\u2212t/20} multiplies by 20 (the reciprocal of the rate): the antiderivative is \u221220e^{\u2212t/20} times R."
+      }
+    ],
+    "vec": [
+      18,
+      3,
+      1000,
+      20
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 3909105989,
+    "key": "ac2_present_value",
+    "q": "Income flows continuously at \\$1000 per year for 10 years, with continuous discount rate \\(r = \\frac{1}{10}\\). Find the present value \\(PV = \\int_0^{10} 1000e^{-t/10}\\,dt\\). (Exact form.)",
+    "a": "\\(PV = 10000(1 - e^{-1})\\)",
+    "steps": [
+      "\\(\\int 1000e^{-t/10}dt = -10000\\,e^{-t/10}\\).",
+      "Evaluate 0 to 10: \\(-10000e^{-1} + 10000e^{0} = 10000(1 - e^{-1})\\).",
+      "\\(\\approx 6321\\) \u2014 less than the raw \\$10000 because future dollars are discounted."
+    ],
+    "traps": [
+      {
+        "ans": "\\(PV = 10000\\)",
+        "why": "That is the undiscounted total R\u00b7T. The e^{\u2212rt} factor shrinks future income \u2014 PV must be smaller."
+      },
+      {
+        "ans": "\\(PV = 1000(1 - e^{-1})\\)",
+        "why": "Integrating e^{\u2212t/10} multiplies by 10 (the reciprocal of the rate): the antiderivative is \u221210e^{\u2212t/10} times R."
+      }
+    ],
+    "vec": [
+      18,
+      3,
+      1000,
+      10
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 3,
+    "sample": 0,
+    "seed": 1425956777,
+    "key": "ac2_avg_revenue",
+    "q": "Revenue is \\(R(x) = 6x - 2x^2\\) (thousands of dollars). Find the average revenue over \\(x \\in [0, 6]\\).",
+    "a": "\\(-6\\) thousand dollars",
+    "steps": [
+      "Average value: \\(\\dfrac{1}{6-0}\\int_0^{6} (6x - 2x^2)\\,dx\\).",
+      "\\(\\int_0^{6} = \\left[3x^2 - \\frac{2}{3}x^3\\right]_0^{6} = -36\\).",
+      "Divide by 6: average \\(= -6\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(-36\\) thousand dollars",
+        "why": "That is the integral (total) \u2014 the AVERAGE divides by the interval length 6."
+      },
+      {
+        "ans": "\\(-36\\) thousand dollars",
+        "why": "That is R(6), the endpoint value \u2014 average value integrates over the whole interval."
+      }
+    ],
+    "vec": [
+      18,
+      4,
+      6,
+      2,
+      6
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 3,
+    "sample": 1,
+    "seed": 1409179158,
+    "key": "ac2_avg_revenue",
+    "q": "Revenue is \\(R(x) = 12x - 2x^2\\) (thousands of dollars). Find the average revenue over \\(x \\in [0, 6]\\).",
+    "a": "\\(12\\) thousand dollars",
+    "steps": [
+      "Average value: \\(\\dfrac{1}{6-0}\\int_0^{6} (12x - 2x^2)\\,dx\\).",
+      "\\(\\int_0^{6} = \\left[6x^2 - \\frac{2}{3}x^3\\right]_0^{6} = 72\\).",
+      "Divide by 6: average \\(= 12\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(72\\) thousand dollars",
+        "why": "That is the integral (total) \u2014 the AVERAGE divides by the interval length 6."
+      },
+      {
+        "ans": "\\(0\\) thousand dollars",
+        "why": "That is R(6), the endpoint value \u2014 average value integrates over the whole interval."
+      }
+    ],
+    "vec": [
+      18,
+      4,
+      12,
+      2,
+      6
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 3,
+    "sample": 2,
+    "seed": 1392401539,
+    "key": "ac2_avg_revenue",
+    "q": "Revenue is \\(R(x) = 12x - 2x^2\\) (thousands of dollars). Find the average revenue over \\(x \\in [0, 6]\\).",
+    "a": "\\(12\\) thousand dollars",
+    "steps": [
+      "Average value: \\(\\dfrac{1}{6-0}\\int_0^{6} (12x - 2x^2)\\,dx\\).",
+      "\\(\\int_0^{6} = \\left[6x^2 - \\frac{2}{3}x^3\\right]_0^{6} = 72\\).",
+      "Divide by 6: average \\(= 12\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(72\\) thousand dollars",
+        "why": "That is the integral (total) \u2014 the AVERAGE divides by the interval length 6."
+      },
+      {
+        "ans": "\\(0\\) thousand dollars",
+        "why": "That is R(6), the endpoint value \u2014 average value integrates over the whole interval."
+      }
+    ],
+    "vec": [
+      18,
+      4,
+      12,
+      2,
+      6
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 3,
+    "sample": 3,
+    "seed": 1375623920,
+    "key": "ac2_avg_revenue",
+    "q": "Revenue is \\(R(x) = 12x - 2x^2\\) (thousands of dollars). Find the average revenue over \\(x \\in [0, 6]\\).",
+    "a": "\\(12\\) thousand dollars",
+    "steps": [
+      "Average value: \\(\\dfrac{1}{6-0}\\int_0^{6} (12x - 2x^2)\\,dx\\).",
+      "\\(\\int_0^{6} = \\left[6x^2 - \\frac{2}{3}x^3\\right]_0^{6} = 72\\).",
+      "Divide by 6: average \\(= 12\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(72\\) thousand dollars",
+        "why": "That is the integral (total) \u2014 the AVERAGE divides by the interval length 6."
+      },
+      {
+        "ans": "\\(0\\) thousand dollars",
+        "why": "That is R(6), the endpoint value \u2014 average value integrates over the whole interval."
+      }
+    ],
+    "vec": [
+      18,
+      4,
+      12,
+      2,
+      6
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 3,
+    "sample": 4,
+    "seed": 1493067253,
+    "key": "ac2_avg_revenue",
+    "q": "Revenue is \\(R(x) = 6x - x^2\\) (thousands of dollars). Find the average revenue over \\(x \\in [0, 6]\\).",
+    "a": "\\(6\\) thousand dollars",
+    "steps": [
+      "Average value: \\(\\dfrac{1}{6-0}\\int_0^{6} (6x - 1x^2)\\,dx\\).",
+      "\\(\\int_0^{6} = \\left[3x^2 - \\frac{1}{3}x^3\\right]_0^{6} = 36\\).",
+      "Divide by 6: average \\(= 6\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(36\\) thousand dollars",
+        "why": "That is the integral (total) \u2014 the AVERAGE divides by the interval length 6."
+      },
+      {
+        "ans": "\\(0\\) thousand dollars",
+        "why": "That is R(6), the endpoint value \u2014 average value integrates over the whole interval."
+      }
+    ],
+    "vec": [
+      18,
+      4,
+      6,
+      1,
+      6
+    ]
+  },
+  {
+    "unitId": "AC2_IntApps",
+    "genIndex": 3,
+    "sample": 5,
+    "seed": 1476289634,
+    "key": "ac2_avg_revenue",
+    "q": "Revenue is \\(R(x) = 12x - 2x^2\\) (thousands of dollars). Find the average revenue over \\(x \\in [0, 6]\\).",
+    "a": "\\(12\\) thousand dollars",
+    "steps": [
+      "Average value: \\(\\dfrac{1}{6-0}\\int_0^{6} (12x - 2x^2)\\,dx\\).",
+      "\\(\\int_0^{6} = \\left[6x^2 - \\frac{2}{3}x^3\\right]_0^{6} = 72\\).",
+      "Divide by 6: average \\(= 12\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(72\\) thousand dollars",
+        "why": "That is the integral (total) \u2014 the AVERAGE divides by the interval length 6."
+      },
+      {
+        "ans": "\\(0\\) thousand dollars",
+        "why": "That is R(6), the endpoint value \u2014 average value integrates over the whole interval."
+      }
+    ],
+    "vec": [
+      18,
+      4,
+      12,
+      2,
+      6
+    ]
+  },
+  {
+    "unitId": "AC2_Multivar",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 2171942969,
+    "key": "ac2_partial_eval",
+    "q": "Let \\(f(x,y) = 4x^2 + 2xy + 2y^2\\). Compute \\(f_x(3, 3)\\).",
+    "a": "\\(30\\)",
+    "steps": [
+      "Treat \\(y\\) as a constant: \\(f_x = 8x + 2y\\).",
+      "Evaluate: \\(f_x(3,3) = 8(3) + 2(3) = 30\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(42\\)",
+        "why": "The 2y\u00b2 term has NO x \u2014 it differentiates to 0 with respect to x. Only x-bearing terms survive."
+      },
+      {
+        "ans": "\\(18\\)",
+        "why": "That is f_y \u2014 the partial with respect to y. Check which variable the subscript names."
+      }
+    ],
+    "vec": [
+      19,
+      1,
+      4,
+      2,
+      2,
+      3,
+      3
+    ]
+  },
+  {
+    "unitId": "AC2_Multivar",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 2155165350,
+    "key": "ac2_partial_eval",
+    "q": "Let \\(f(x,y) = 4x^2 + 3xy + y^2\\). Compute \\(f_x(1, 2)\\).",
+    "a": "\\(14\\)",
+    "steps": [
+      "Treat \\(y\\) as a constant: \\(f_x = 8x + 3y\\).",
+      "Evaluate: \\(f_x(1,2) = 8(1) + 3(2) = 14\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(18\\)",
+        "why": "The 1y\u00b2 term has NO x \u2014 it differentiates to 0 with respect to x. Only x-bearing terms survive."
+      },
+      {
+        "ans": "\\(7\\)",
+        "why": "That is f_y \u2014 the partial with respect to y. Check which variable the subscript names."
+      }
+    ],
+    "vec": [
+      19,
+      1,
+      4,
+      3,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "unitId": "AC2_Multivar",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 2138387731,
+    "key": "ac2_partial_eval",
+    "q": "Let \\(f(x,y) = 4x^2 + 4xy + y^2\\). Compute \\(f_x(1, 2)\\).",
+    "a": "\\(16\\)",
+    "steps": [
+      "Treat \\(y\\) as a constant: \\(f_x = 8x + 4y\\).",
+      "Evaluate: \\(f_x(1,2) = 8(1) + 4(2) = 16\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(20\\)",
+        "why": "The 1y\u00b2 term has NO x \u2014 it differentiates to 0 with respect to x. Only x-bearing terms survive."
+      },
+      {
+        "ans": "\\(8\\)",
+        "why": "That is f_y \u2014 the partial with respect to y. Check which variable the subscript names."
+      }
+    ],
+    "vec": [
+      19,
+      1,
+      4,
+      4,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "unitId": "AC2_Multivar",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 2121610112,
+    "key": "ac2_partial_eval",
+    "q": "Let \\(f(x,y) = 4x^2 + 4xy + y^2\\). Compute \\(f_x(2, 1)\\).",
+    "a": "\\(20\\)",
+    "steps": [
+      "Treat \\(y\\) as a constant: \\(f_x = 8x + 4y\\).",
+      "Evaluate: \\(f_x(2,1) = 8(2) + 4(1) = 20\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(22\\)",
+        "why": "The 1y\u00b2 term has NO x \u2014 it differentiates to 0 with respect to x. Only x-bearing terms survive."
+      },
+      {
+        "ans": "\\(10\\)",
+        "why": "That is f_y \u2014 the partial with respect to y. Check which variable the subscript names."
+      }
+    ],
+    "vec": [
+      19,
+      1,
+      4,
+      4,
+      1,
+      2,
+      1
+    ]
+  },
+  {
+    "unitId": "AC2_Multivar",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 2239053445,
+    "key": "ac2_partial_eval",
+    "q": "Let \\(f(x,y) = 2x^2 + 5xy + 4y^2\\). Compute \\(f_x(2, 1)\\).",
+    "a": "\\(13\\)",
+    "steps": [
+      "Treat \\(y\\) as a constant: \\(f_x = 4x + 5y\\).",
+      "Evaluate: \\(f_x(2,1) = 4(2) + 5(1) = 13\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(21\\)",
+        "why": "The 4y\u00b2 term has NO x \u2014 it differentiates to 0 with respect to x. Only x-bearing terms survive."
+      },
+      {
+        "ans": "\\(18\\)",
+        "why": "That is f_y \u2014 the partial with respect to y. Check which variable the subscript names."
+      }
+    ],
+    "vec": [
+      19,
+      1,
+      2,
+      5,
+      4,
+      2,
+      1
+    ]
+  },
+  {
+    "unitId": "AC2_Multivar",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 2222275826,
+    "key": "ac2_partial_eval",
+    "q": "Let \\(f(x,y) = 2x^2 + 3xy + y^2\\). Compute \\(f_x(1, 2)\\).",
+    "a": "\\(10\\)",
+    "steps": [
+      "Treat \\(y\\) as a constant: \\(f_x = 4x + 3y\\).",
+      "Evaluate: \\(f_x(1,2) = 4(1) + 3(2) = 10\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(14\\)",
+        "why": "The 1y\u00b2 term has NO x \u2014 it differentiates to 0 with respect to x. Only x-bearing terms survive."
+      },
+      {
+        "ans": "\\(7\\)",
+        "why": "That is f_y \u2014 the partial with respect to y. Check which variable the subscript names."
+      }
+    ],
+    "vec": [
+      19,
+      1,
+      2,
+      3,
+      1,
+      1,
+      2
+    ]
+  },
+  {
+    "unitId": "AC2_Multivar",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 2465348726,
+    "key": "ac2_critical_point",
+    "q": "Find the critical point of \\(f(x,y) = x^2 + y^2 - 4x - 8y + 3\\).",
+    "a": "\\((2,\\ 4)\\)",
+    "steps": [
+      "Set both partials to zero: \\(f_x = 2x - 4 = 0\\) and \\(f_y = 2y - 8 = 0\\).",
+      "\\(x = 2\\), \\(y = 4\\).",
+      "(Both second partials are \\(+2\\) with \\(f_{xy}=0\\): \\(D = 4 > 0\\), a minimum.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\((4,\\ 8)\\)",
+        "why": "f_x = 2x \u2212 4 = 0 gives x = 4/2 = 2 \u2014 do not forget the 2 from differentiating x\u00b2."
+      },
+      {
+        "ans": "\\((-2,\\ -4)\\)",
+        "why": "Moving \u22124x across: 2x = +4. Watch the sign."
+      }
+    ],
+    "vec": [
+      19,
+      2,
+      4,
+      8,
+      2,
+      4
+    ]
+  },
+  {
+    "unitId": "AC2_Multivar",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 2482126345,
+    "key": "ac2_critical_point",
+    "q": "Find the critical point of \\(f(x,y) = x^2 + y^2 - 4x - 4y + 3\\).",
+    "a": "\\((2,\\ 2)\\)",
+    "steps": [
+      "Set both partials to zero: \\(f_x = 2x - 4 = 0\\) and \\(f_y = 2y - 4 = 0\\).",
+      "\\(x = 2\\), \\(y = 2\\).",
+      "(Both second partials are \\(+2\\) with \\(f_{xy}=0\\): \\(D = 4 > 0\\), a minimum.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\((4,\\ 4)\\)",
+        "why": "f_x = 2x \u2212 4 = 0 gives x = 4/2 = 2 \u2014 do not forget the 2 from differentiating x\u00b2."
+      },
+      {
+        "ans": "\\((-2,\\ -2)\\)",
+        "why": "Moving \u22124x across: 2x = +4. Watch the sign."
+      }
+    ],
+    "vec": [
+      19,
+      2,
+      4,
+      4,
+      2,
+      2
+    ]
+  },
+  {
+    "unitId": "AC2_Multivar",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 2431793488,
+    "key": "ac2_critical_point",
+    "q": "Find the critical point of \\(f(x,y) = x^2 + y^2 - 2x - 8y + 5\\).",
+    "a": "\\((1,\\ 4)\\)",
+    "steps": [
+      "Set both partials to zero: \\(f_x = 2x - 2 = 0\\) and \\(f_y = 2y - 8 = 0\\).",
+      "\\(x = 1\\), \\(y = 4\\).",
+      "(Both second partials are \\(+2\\) with \\(f_{xy}=0\\): \\(D = 4 > 0\\), a minimum.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\((2,\\ 8)\\)",
+        "why": "f_x = 2x \u2212 2 = 0 gives x = 2/2 = 1 \u2014 do not forget the 2 from differentiating x\u00b2."
+      },
+      {
+        "ans": "\\((-1,\\ -4)\\)",
+        "why": "Moving \u22122x across: 2x = +2. Watch the sign."
+      }
+    ],
+    "vec": [
+      19,
+      2,
+      2,
+      8,
+      1,
+      4
+    ]
+  },
+  {
+    "unitId": "AC2_Multivar",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 2448571107,
+    "key": "ac2_critical_point",
+    "q": "Find the critical point of \\(f(x,y) = x^2 + y^2 - 2x - 4y + 5\\).",
+    "a": "\\((1,\\ 2)\\)",
+    "steps": [
+      "Set both partials to zero: \\(f_x = 2x - 2 = 0\\) and \\(f_y = 2y - 4 = 0\\).",
+      "\\(x = 1\\), \\(y = 2\\).",
+      "(Both second partials are \\(+2\\) with \\(f_{xy}=0\\): \\(D = 4 > 0\\), a minimum.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\((2,\\ 4)\\)",
+        "why": "f_x = 2x \u2212 2 = 0 gives x = 2/2 = 1 \u2014 do not forget the 2 from differentiating x\u00b2."
+      },
+      {
+        "ans": "\\((-1,\\ -2)\\)",
+        "why": "Moving \u22122x across: 2x = +2. Watch the sign."
+      }
+    ],
+    "vec": [
+      19,
+      2,
+      2,
+      4,
+      1,
+      2
+    ]
+  },
+  {
+    "unitId": "AC2_Multivar",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 2532459202,
+    "key": "ac2_critical_point",
+    "q": "Find the critical point of \\(f(x,y) = x^2 + y^2 - 2x - 8y + 3\\).",
+    "a": "\\((1,\\ 4)\\)",
+    "steps": [
+      "Set both partials to zero: \\(f_x = 2x - 2 = 0\\) and \\(f_y = 2y - 8 = 0\\).",
+      "\\(x = 1\\), \\(y = 4\\).",
+      "(Both second partials are \\(+2\\) with \\(f_{xy}=0\\): \\(D = 4 > 0\\), a minimum.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\((2,\\ 8)\\)",
+        "why": "f_x = 2x \u2212 2 = 0 gives x = 2/2 = 1 \u2014 do not forget the 2 from differentiating x\u00b2."
+      },
+      {
+        "ans": "\\((-1,\\ -4)\\)",
+        "why": "Moving \u22122x across: 2x = +2. Watch the sign."
+      }
+    ],
+    "vec": [
+      19,
+      2,
+      2,
+      8,
+      1,
+      4
+    ]
+  },
+  {
+    "unitId": "AC2_Multivar",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 2549236821,
+    "key": "ac2_critical_point",
+    "q": "Find the critical point of \\(f(x,y) = x^2 + y^2 - 2x - 8y + 3\\).",
+    "a": "\\((1,\\ 4)\\)",
+    "steps": [
+      "Set both partials to zero: \\(f_x = 2x - 2 = 0\\) and \\(f_y = 2y - 8 = 0\\).",
+      "\\(x = 1\\), \\(y = 4\\).",
+      "(Both second partials are \\(+2\\) with \\(f_{xy}=0\\): \\(D = 4 > 0\\), a minimum.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\((2,\\ 8)\\)",
+        "why": "f_x = 2x \u2212 2 = 0 gives x = 2/2 = 1 \u2014 do not forget the 2 from differentiating x\u00b2."
+      },
+      {
+        "ans": "\\((-1,\\ -4)\\)",
+        "why": "Moving \u22122x across: 2x = +2. Watch the sign."
+      }
+    ],
+    "vec": [
+      19,
+      2,
+      2,
+      8,
+      1,
+      4
+    ]
+  },
+  {
+    "unitId": "AC2_Multivar",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 569642547,
+    "key": "ac2_dtest",
+    "q": "\\(f(x,y) = -x^2 + xy - 2y^2\\) has a critical point at \\((0,0)\\). Classify it using \\(D = f_{xx}f_{yy} - f_{xy}^2\\).",
+    "a": "Local maximum",
+    "steps": [
+      "\\(f_{xx} = -2\\), \\(f_{yy} = -4\\), \\(f_{xy} = 1\\).",
+      "\\(D = (-2)(-4) - (1)^2 = 7\\).",
+      "\\(D > 0\\) and \\(f_{xx} < 0\\): local maximum."
+    ],
+    "traps": [
+      {
+        "ans": "Local minimum",
+        "why": "D < 0 always means saddle; D > 0 means an extremum whose TYPE is read from the sign of f_xx."
+      },
+      {
+        "ans": "Saddle point",
+        "why": "Compute D first \u2014 f_xx alone cannot distinguish a max/min from a saddle."
+      }
+    ],
+    "vec": [
+      19,
+      3,
+      1,
+      -1,
+      1,
+      -2
+    ]
+  },
+  {
+    "unitId": "AC2_Multivar",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 552864928,
+    "key": "ac2_dtest",
+    "q": "\\(f(x,y) = -x^2 + xy - 3y^2\\) has a critical point at \\((0,0)\\). Classify it using \\(D = f_{xx}f_{yy} - f_{xy}^2\\).",
+    "a": "Local maximum",
+    "steps": [
+      "\\(f_{xx} = -2\\), \\(f_{yy} = -6\\), \\(f_{xy} = 1\\).",
+      "\\(D = (-2)(-6) - (1)^2 = 11\\).",
+      "\\(D > 0\\) and \\(f_{xx} < 0\\): local maximum."
+    ],
+    "traps": [
+      {
+        "ans": "Local minimum",
+        "why": "D < 0 always means saddle; D > 0 means an extremum whose TYPE is read from the sign of f_xx."
+      },
+      {
+        "ans": "Saddle point",
+        "why": "Compute D first \u2014 f_xx alone cannot distinguish a max/min from a saddle."
+      }
+    ],
+    "vec": [
+      19,
+      3,
+      1,
+      -1,
+      1,
+      -3
+    ]
+  },
+  {
+    "unitId": "AC2_Multivar",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 603197785,
+    "key": "ac2_dtest",
+    "q": "\\(f(x,y) = -3x^2 + xy - 3y^2\\) has a critical point at \\((0,0)\\). Classify it using \\(D = f_{xx}f_{yy} - f_{xy}^2\\).",
+    "a": "Local maximum",
+    "steps": [
+      "\\(f_{xx} = -6\\), \\(f_{yy} = -6\\), \\(f_{xy} = 1\\).",
+      "\\(D = (-6)(-6) - (1)^2 = 35\\).",
+      "\\(D > 0\\) and \\(f_{xx} < 0\\): local maximum."
+    ],
+    "traps": [
+      {
+        "ans": "Local minimum",
+        "why": "D < 0 always means saddle; D > 0 means an extremum whose TYPE is read from the sign of f_xx."
+      },
+      {
+        "ans": "Saddle point",
+        "why": "Compute D first \u2014 f_xx alone cannot distinguish a max/min from a saddle."
+      }
+    ],
+    "vec": [
+      19,
+      3,
+      1,
+      -3,
+      1,
+      -3
+    ]
+  },
+  {
+    "unitId": "AC2_Multivar",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 586420166,
+    "key": "ac2_dtest",
+    "q": "\\(f(x,y) = x^2 + xy - 2y^2\\) has a critical point at \\((0,0)\\). Classify it using \\(D = f_{xx}f_{yy} - f_{xy}^2\\).",
+    "a": "Saddle point",
+    "steps": [
+      "\\(f_{xx} = 2\\), \\(f_{yy} = -4\\), \\(f_{xy} = 1\\).",
+      "\\(D = (2)(-4) - (1)^2 = -9\\).",
+      "\\(D < 0\\): saddle point."
+    ],
+    "traps": [
+      {
+        "ans": "Local minimum",
+        "why": "D < 0 always means saddle; D > 0 means an extremum whose TYPE is read from the sign of f_xx."
+      },
+      {
+        "ans": "Local maximum",
+        "why": "Compute D first \u2014 f_xx alone cannot distinguish a max/min from a saddle."
+      }
+    ],
+    "vec": [
+      19,
+      3,
+      2,
+      1,
+      1,
+      -2
+    ]
+  },
+  {
+    "unitId": "AC2_Multivar",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 636753023,
+    "key": "ac2_dtest",
+    "q": "\\(f(x,y) = 3x^2 + xy + 2y^2\\) has a critical point at \\((0,0)\\). Classify it using \\(D = f_{xx}f_{yy} - f_{xy}^2\\).",
+    "a": "Local minimum",
+    "steps": [
+      "\\(f_{xx} = 6\\), \\(f_{yy} = 4\\), \\(f_{xy} = 1\\).",
+      "\\(D = (6)(4) - (1)^2 = 23\\).",
+      "\\(D > 0\\) and \\(f_{xx} > 0\\): local minimum."
+    ],
+    "traps": [
+      {
+        "ans": "Local maximum",
+        "why": "D < 0 always means saddle; D > 0 means an extremum whose TYPE is read from the sign of f_xx."
+      },
+      {
+        "ans": "Saddle point",
+        "why": "Compute D first \u2014 f_xx alone cannot distinguish a max/min from a saddle."
+      }
+    ],
+    "vec": [
+      19,
+      3,
+      0,
+      3,
+      1,
+      2
+    ]
+  },
+  {
+    "unitId": "AC2_Multivar",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 619975404,
+    "key": "ac2_dtest",
+    "q": "\\(f(x,y) = -3x^2 + xy - 2y^2\\) has a critical point at \\((0,0)\\). Classify it using \\(D = f_{xx}f_{yy} - f_{xy}^2\\).",
+    "a": "Local maximum",
+    "steps": [
+      "\\(f_{xx} = -6\\), \\(f_{yy} = -4\\), \\(f_{xy} = 1\\).",
+      "\\(D = (-6)(-4) - (1)^2 = 23\\).",
+      "\\(D > 0\\) and \\(f_{xx} < 0\\): local maximum."
+    ],
+    "traps": [
+      {
+        "ans": "Local minimum",
+        "why": "D < 0 always means saddle; D > 0 means an extremum whose TYPE is read from the sign of f_xx."
+      },
+      {
+        "ans": "Saddle point",
+        "why": "Compute D first \u2014 f_xx alone cannot distinguish a max/min from a saddle."
+      }
+    ],
+    "vec": [
+      19,
+      3,
+      1,
+      -3,
+      1,
+      -2
+    ]
+  }
+]

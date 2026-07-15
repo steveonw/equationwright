@@ -1,0 +1,669 @@
+{
+ "format": "mw-quiz-results-v1",
+ "exportedAt": "2026-07-03T05:53:14.493Z",
+ "percent": 75,
+ "seed": "Jordan-W3-11",
+ "mode": "C1",
+ "score": 9,
+ "total": 12,
+ "answered": 12,
+ "questions": [
+  {
+   "n": 1,
+   "unit": "C1_Limits",
+   "unitLabel": "Limits",
+   "topicKey": "poly",
+   "topicLabel": "Poly",
+   "generatorKey": "c1_limit_poly",
+   "question": "Compute \\(\\lim_{x\\to 2}(x^2+1x+2)\\).",
+   "correctAnswer": "\\(8\\)",
+   "chosenAnswer": "\\(8\\)",
+   "result": "correct",
+   "mistakeType": null
+  },
+  {
+   "n": 2,
+   "unit": "C1_Limits",
+   "unitLabel": "Limits",
+   "topicKey": "one",
+   "topicLabel": "One",
+   "generatorKey": "c1_limit_one_sided",
+   "question": "Let \\(f(x)=\\begin{cases} x+3 & x<2\\\\ -x+3 & x\\ge 2\\end{cases}\\). Compute \\(\\displaystyle\\lim_{x\\to 2^+} f(x)\\).",
+   "correctAnswer": "\\(1\\)",
+   "chosenAnswer": "\\(1\\)",
+   "result": "correct",
+   "mistakeType": null
+  },
+  {
+   "n": 3,
+   "unit": "C1_Derivatives",
+   "unitLabel": "Derivatives",
+   "topicKey": "ftc",
+   "topicLabel": "Ftc",
+   "generatorKey": "c1_ftc_basic",
+   "question": "Let \\(F(x)=\\int_{1}^{x} (t^2+6)\\,dt\\). Find \\(F'(x)\\).",
+   "correctAnswer": "\\(F'(x)=x^2+6\\)",
+   "chosenAnswer": "\\(F'(x)=x^2+6\\)",
+   "result": "correct",
+   "mistakeType": null
+  },
+  {
+   "n": 4,
+   "unit": "C1_Derivatives",
+   "unitLabel": "Derivatives",
+   "topicKey": "deriv",
+   "topicLabel": "Deriv",
+   "generatorKey": "c1_deriv_trig",
+   "question": "Differentiate \\(f(x)=4\\sin x-5\\cos x\\).",
+   "correctAnswer": "\\(f'(x)=4\\cos x+5\\sin x\\)",
+   "chosenAnswer": "\\(f'(x)=-4\\cos x-5\\sin x\\)",
+   "result": "incorrect",
+   "mistakeType": "Both signs are off \u2014 d/dx sin x = cos x, d/dx cos x = -sin x."
+  },
+  {
+   "n": 5,
+   "unit": "C1_Derivatives",
+   "unitLabel": "Derivatives",
+   "topicKey": "deriv",
+   "topicLabel": "Deriv",
+   "generatorKey": "c1_deriv_chain",
+   "question": "Differentiate \\(f(x)=(-2x+5)^{5}\\).",
+   "correctAnswer": "\\(f'(x)=-10(-2x+5)^{4}\\)",
+   "chosenAnswer": "\\(f'(x)=-10(-2x+5)^{4}\\)",
+   "result": "correct",
+   "mistakeType": null
+  },
+  {
+   "n": 6,
+   "unit": "C1_Derivatives",
+   "unitLabel": "Derivatives",
+   "topicKey": "deriv",
+   "topicLabel": "Deriv",
+   "generatorKey": "c1_deriv_definition",
+   "question": "Use the limit definition \\(f'(x)=\\displaystyle\\lim_{h\\to 0}\\frac{f(x+h)-f(x)}{h}\\) to find \\(f'(x)\\) for \\(f(x)=x^2-3x\\).",
+   "correctAnswer": "\\(f'(x)=2x-3\\)",
+   "chosenAnswer": "\\(f'(x)=2x+3\\)",
+   "result": "incorrect",
+   "mistakeType": "Sign slip on the linear term: the derivative of bx is b."
+  },
+  {
+   "n": 7,
+   "unit": "C1_Derivatives",
+   "unitLabel": "Derivatives",
+   "topicKey": "deriv",
+   "topicLabel": "Deriv",
+   "generatorKey": "c1_deriv_quotient",
+   "question": "Differentiate \\(f(x)=\\dfrac{-x+1}{-4x-5}\\).",
+   "correctAnswer": "\\(f'(x)=\\dfrac{9}{(-4x-5)^2}\\)",
+   "chosenAnswer": "\\(f'(x)=\\dfrac{9}{(-4x-5)^2}\\)",
+   "result": "correct",
+   "mistakeType": null
+  },
+  {
+   "n": 8,
+   "unit": "C1_Derivatives",
+   "unitLabel": "Derivatives",
+   "topicKey": "deriv",
+   "topicLabel": "Deriv",
+   "generatorKey": "c1_deriv_product",
+   "question": "Find \\(\\frac{d}{dx}\\big(x^{3}\\sin(6x)\\big)\\).",
+   "correctAnswer": "\\(3x^{2}\\sin(6x)+6x^{3}\\cos(6x)\\)",
+   "chosenAnswer": "\\(3x^{2}\\sin(6x)+6x^{3}\\cos(6x)\\)",
+   "result": "correct",
+   "mistakeType": null
+  },
+  {
+   "n": 9,
+   "unit": "C1_Apps",
+   "unitLabel": "Derivative Applications",
+   "topicKey": "opt",
+   "topicLabel": "Opt",
+   "generatorKey": "c1_opt_cylinder_minSA",
+   "question": "A closed cylinder must have volume \\(V=250\\pi\\). Find the radius and height that minimize surface area.",
+   "correctAnswer": "Minimum surface area occurs at \\(r=5\\) and \\(h=10\\).",
+   "chosenAnswer": "Minimum surface area occurs at \\(r=5\\) and \\(h=10\\).",
+   "result": "correct",
+   "mistakeType": null
+  },
+  {
+   "n": 10,
+   "unit": "C1_Apps",
+   "unitLabel": "Derivative Applications",
+   "topicKey": "linearization",
+   "topicLabel": "Linearization",
+   "generatorKey": "c1_linearization_trig",
+   "question": "Find the linearization of \\(f(x)=\\sin x\\) at \\(x=\\frac{\\pi}{6}\\). Use it to approximate \\(\\sin(\\frac{\\pi}{6}+0.1)\\).",
+   "correctAnswer": "\\(L(x)=0.500+0.866(x-\\frac{\\pi}{6})\\), so \\(\\sin(\\frac{\\pi}{6}+0.1)\\approx 0.587\\).",
+   "chosenAnswer": "\\(L(x)=0.500+0.866(x-\\frac{\\pi}{6})\\), so \\(\\sin(\\frac{\\pi}{6}+0.1)\\approx 0.587\\).",
+   "result": "correct",
+   "mistakeType": null
+  },
+  {
+   "n": 11,
+   "unit": "C1_Integrals",
+   "unitLabel": "Integrals (Intro)",
+   "topicKey": "avg",
+   "topicLabel": "Avg",
+   "generatorKey": "c1_avg_value_poly",
+   "question": "Find the average value of \\(f(x)=2x^2+2\\) on the interval \\([0,3]\\).",
+   "correctAnswer": "\\(f_{avg}=\\frac{1}{3-0}\\int_0^{3} (2x^2+2)\\,dx = 8\\)",
+   "chosenAnswer": "\\(f_{avg}=\\frac{1}{3-0}\\int_0^{3} (2x^2+2)\\,dx = 8\\)",
+   "result": "correct",
+   "mistakeType": null
+  },
+  {
+   "n": 12,
+   "unit": "C1_Integrals",
+   "unitLabel": "Integrals (Intro)",
+   "topicKey": "net",
+   "topicLabel": "Net",
+   "generatorKey": "c1_net_change",
+   "question": "A particle moves with velocity \\(v(t)=6t+1\\) m/s. Use the Net Change Theorem to find its displacement over \\([0, 4]\\).",
+   "correctAnswer": "\\(52\\) m",
+   "chosenAnswer": "\\(44\\) m",
+   "result": "incorrect",
+   "mistakeType": "Sign of the constant term: it integrates to bt with the same sign."
+  }
+ ],
+ "summary": {
+  "missedByUnit": {
+   "C1_Derivatives": 2,
+   "C1_Integrals": 1
+  },
+  "missedByTopic": {
+   "deriv": 2,
+   "net": 1
+  },
+  "mistakePatterns": {
+   "Both signs are off \u2014 d/dx sin x = cos x, d/dx cos x = -sin x.": 1,
+   "Sign slip on the linear term: the derivative of bx is b.": 1,
+   "Sign of the constant term: it integrates to bt with the same sign.": 1
+  }
+ },
+ "blueprint": {
+  "format": "UMWB_BLUEPRINT",
+  "appVersion": "v5.4_class_submit",
+  "generatedAt": "2026-07-03T05:53:10.999Z",
+  "seed": "Jordan-W3-11",
+  "mode": "C1",
+  "quizMode": true,
+  "counts": {
+   "C1_Limits": 2,
+   "C1_Continuity": 0,
+   "C1_Derivatives": 6,
+   "C1_Apps": 2,
+   "C1_Integrals": 2
+  },
+  "topics": {
+   "C1_Limits": {
+    "list": [],
+    "none": false
+   },
+   "C1_Continuity": {
+    "list": [],
+    "none": false
+   },
+   "C1_Derivatives": {
+    "list": [],
+    "none": false
+   },
+   "C1_Apps": {
+    "list": [],
+    "none": false
+   },
+   "C1_Integrals": {
+    "list": [],
+    "none": false
+   },
+   "C2_Tech": {
+    "list": [],
+    "none": false
+   },
+   "C2_Improper": {
+    "list": [],
+    "none": false
+   },
+   "C2_Series": {
+    "list": [],
+    "none": false
+   },
+   "C2_ParamPolar": {
+    "list": [],
+    "none": false
+   },
+   "C2_AppsInt": {
+    "list": [],
+    "none": false
+   }
+  },
+  "variety": 2,
+  "pages": {
+   "answers": true,
+   "workedSolutions": true
+  },
+  "submitUrl": "http://127.0.0.1:8787/",
+  "classId": "MTH263-Spring-A",
+  "assignmentId": "Derivs-Quiz-2",
+  "picks": [
+   {
+    "num": 1,
+    "unit": "C1_Limits",
+    "key": "c1_limit_poly",
+    "seed": "Jordan-W3-11|C1_Limits|slot0|try0",
+    "vec": [
+     16,
+     1,
+     2,
+     1,
+     2
+    ],
+    "type": "mc",
+    "genIdx": 0,
+    "topic": "poly",
+    "mc": {
+     "correctIndex": 2,
+     "shuffleOrder": [
+      1,
+      3,
+      0,
+      2
+     ],
+     "distractorSeeds": [
+      "Jordan-W3-11|C1_Limits|slot0|try0|mc|g0|d1|r0",
+      "Jordan-W3-11|C1_Limits|slot0|try0|mc|g0|d2|r0",
+      "Jordan-W3-11|C1_Limits|slot0|try0|mc|g0|d3|r0"
+     ],
+     "distractorGenIdxs": [
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   {
+    "num": 2,
+    "unit": "C1_Limits",
+    "key": "c1_limit_one_sided",
+    "seed": "Jordan-W3-11|C1_Limits|slot1|try17",
+    "vec": [
+     16,
+     20,
+     2,
+     3,
+     -1,
+     3,
+     1
+    ],
+    "type": "mc",
+    "genIdx": 3,
+    "topic": "one",
+    "mc": {
+     "correctIndex": 3,
+     "shuffleOrder": [
+      3,
+      1,
+      2,
+      0
+     ],
+     "distractorSeeds": [
+      "Jordan-W3-11|C1_Limits|slot1|try17|mc|trap1",
+      "Jordan-W3-11|C1_Limits|slot1|try17|mc|trap2",
+      "Jordan-W3-11|C1_Limits|slot1|try17|mc|g3|d3|r0"
+     ],
+     "distractorGenIdxs": [
+      3,
+      3,
+      3
+     ]
+    }
+   },
+   {
+    "num": 3,
+    "unit": "C1_Derivatives",
+    "key": "c1_ftc_basic",
+    "seed": "Jordan-W3-11|C1_Derivatives|slot0|try7",
+    "vec": [
+     18,
+     301,
+     6
+    ],
+    "type": "mc",
+    "genIdx": 3,
+    "topic": "ftc",
+    "mc": {
+     "correctIndex": 2,
+     "shuffleOrder": [
+      3,
+      1,
+      0,
+      2
+     ],
+     "distractorSeeds": [
+      "Jordan-W3-11|C1_Derivatives|slot0|try7|mc|g3|d1|r1",
+      "Jordan-W3-11|C1_Derivatives|slot0|try7|mc|g3|d2|r0",
+      "Jordan-W3-11|C1_Derivatives|slot0|try7|mc|g3|d3|r0"
+     ],
+     "distractorGenIdxs": [
+      3,
+      3,
+      3
+     ]
+    }
+   },
+   {
+    "num": 4,
+    "unit": "C1_Derivatives",
+    "key": "c1_deriv_trig",
+    "seed": "Jordan-W3-11|C1_Derivatives|slot1|try0",
+    "vec": [
+     18,
+     24,
+     4,
+     -5
+    ],
+    "type": "mc",
+    "genIdx": 11,
+    "topic": "deriv",
+    "mc": {
+     "correctIndex": 1,
+     "shuffleOrder": [
+      3,
+      0,
+      1,
+      2
+     ],
+     "distractorSeeds": [
+      "Jordan-W3-11|C1_Derivatives|slot1|try0|mc|trap1",
+      "Jordan-W3-11|C1_Derivatives|slot1|try0|mc|trap2",
+      "Jordan-W3-11|C1_Derivatives|slot1|try0|mc|trap3"
+     ],
+     "distractorGenIdxs": [
+      11,
+      11,
+      11
+     ]
+    }
+   },
+   {
+    "num": 5,
+    "unit": "C1_Derivatives",
+    "key": "c1_deriv_chain",
+    "seed": "Jordan-W3-11|C1_Derivatives|slot2|try14",
+    "vec": [
+     18,
+     23,
+     -2,
+     5,
+     5
+    ],
+    "type": "mc",
+    "genIdx": 10,
+    "topic": "deriv",
+    "mc": {
+     "correctIndex": 1,
+     "shuffleOrder": [
+      2,
+      0,
+      1,
+      3
+     ],
+     "distractorSeeds": [
+      "Jordan-W3-11|C1_Derivatives|slot2|try14|mc|trap1",
+      "Jordan-W3-11|C1_Derivatives|slot2|try14|mc|trap2",
+      "Jordan-W3-11|C1_Derivatives|slot2|try14|mc|trap3"
+     ],
+     "distractorGenIdxs": [
+      10,
+      10,
+      10
+     ]
+    }
+   },
+   {
+    "num": 6,
+    "unit": "C1_Derivatives",
+    "key": "c1_deriv_definition",
+    "seed": "Jordan-W3-11|C1_Derivatives|slot3|try2",
+    "vec": [
+     18,
+     20,
+     -3
+    ],
+    "type": "mc",
+    "genIdx": 7,
+    "topic": "deriv",
+    "mc": {
+     "correctIndex": 1,
+     "shuffleOrder": [
+      2,
+      0,
+      3,
+      1
+     ],
+     "distractorSeeds": [
+      "Jordan-W3-11|C1_Derivatives|slot3|try2|mc|trap1",
+      "Jordan-W3-11|C1_Derivatives|slot3|try2|mc|trap2",
+      "Jordan-W3-11|C1_Derivatives|slot3|try2|mc|trap3"
+     ],
+     "distractorGenIdxs": [
+      7,
+      7,
+      7
+     ]
+    }
+   },
+   {
+    "num": 7,
+    "unit": "C1_Derivatives",
+    "key": "c1_deriv_quotient",
+    "seed": "Jordan-W3-11|C1_Derivatives|slot4|try12",
+    "vec": [
+     18,
+     22,
+     -1,
+     1,
+     -4,
+     -5
+    ],
+    "type": "mc",
+    "genIdx": 9,
+    "topic": "deriv",
+    "mc": {
+     "correctIndex": 2,
+     "shuffleOrder": [
+      2,
+      1,
+      0,
+      3
+     ],
+     "distractorSeeds": [
+      "Jordan-W3-11|C1_Derivatives|slot4|try12|mc|trap1",
+      "Jordan-W3-11|C1_Derivatives|slot4|try12|mc|trap2",
+      "Jordan-W3-11|C1_Derivatives|slot4|try12|mc|trap3"
+     ],
+     "distractorGenIdxs": [
+      9,
+      9,
+      9
+     ]
+    }
+   },
+   {
+    "num": 8,
+    "unit": "C1_Derivatives",
+    "key": "c1_deriv_product",
+    "seed": "Jordan-W3-11|C1_Derivatives|slot5|try21",
+    "vec": [
+     18,
+     1,
+     3,
+     6
+    ],
+    "type": "mc",
+    "genIdx": 0,
+    "topic": "deriv",
+    "mc": {
+     "correctIndex": 0,
+     "shuffleOrder": [
+      0,
+      2,
+      1,
+      3
+     ],
+     "distractorSeeds": [
+      "Jordan-W3-11|C1_Derivatives|slot5|try21|mc|g0|d1|r0",
+      "Jordan-W3-11|C1_Derivatives|slot5|try21|mc|g0|d2|r0",
+      "Jordan-W3-11|C1_Derivatives|slot5|try21|mc|g0|d3|r0"
+     ],
+     "distractorGenIdxs": [
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   {
+    "num": 9,
+    "unit": "C1_Apps",
+    "key": "c1_opt_cylinder_minSA",
+    "seed": "Jordan-W3-11|C1_Apps|slot0|try4",
+    "vec": [
+     19,
+     313,
+     250
+    ],
+    "type": "mc",
+    "genIdx": 5,
+    "topic": "opt",
+    "mc": {
+     "correctIndex": 0,
+     "shuffleOrder": [
+      0,
+      3,
+      1,
+      2
+     ],
+     "distractorSeeds": [
+      "Jordan-W3-11|C1_Apps|slot0|try4|mc|g5|d1|r0",
+      "Jordan-W3-11|C1_Apps|slot0|try4|mc|g5|d2|r0",
+      "Jordan-W3-11|C1_Apps|slot0|try4|mc|g5|d3|r2"
+     ],
+     "distractorGenIdxs": [
+      5,
+      5,
+      5
+     ]
+    }
+   },
+   {
+    "num": 10,
+    "unit": "C1_Apps",
+    "key": "c1_linearization_trig",
+    "seed": "Jordan-W3-11|C1_Apps|slot1|try7",
+    "vec": [
+     19,
+     93,
+     1,
+     0,
+     0,
+     0
+    ],
+    "type": "mc",
+    "genIdx": 0,
+    "topic": "linearization",
+    "mc": {
+     "correctIndex": 2,
+     "shuffleOrder": [
+      3,
+      1,
+      0,
+      2
+     ],
+     "distractorSeeds": [
+      "Jordan-W3-11|C1_Apps|slot1|try7|mc|g0|d1|r0",
+      "Jordan-W3-11|C1_Apps|slot1|try7|mc|g0|d2|r0",
+      "Jordan-W3-11|C1_Apps|slot1|try7|mc|g0|d3|r0"
+     ],
+     "distractorGenIdxs": [
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   {
+    "num": 11,
+    "unit": "C1_Integrals",
+    "key": "c1_avg_value_poly",
+    "seed": "Jordan-W3-11|C1_Integrals|slot0|try19",
+    "vec": [
+     20,
+     321,
+     2,
+     3,
+     2
+    ],
+    "type": "mc",
+    "genIdx": 2,
+    "topic": "avg",
+    "mc": {
+     "correctIndex": 0,
+     "shuffleOrder": [
+      0,
+      3,
+      1,
+      2
+     ],
+     "distractorSeeds": [
+      "Jordan-W3-11|C1_Integrals|slot0|try19|mc|g2|d1|r0",
+      "Jordan-W3-11|C1_Integrals|slot0|try19|mc|g2|d2|r0",
+      "Jordan-W3-11|C1_Integrals|slot0|try19|mc|g2|d3|r0"
+     ],
+     "distractorGenIdxs": [
+      2,
+      2,
+      2
+     ]
+    }
+   },
+   {
+    "num": 12,
+    "unit": "C1_Integrals",
+    "key": "c1_net_change",
+    "seed": "Jordan-W3-11|C1_Integrals|slot1|try17",
+    "vec": [
+     20,
+     21,
+     6,
+     1,
+     4
+    ],
+    "type": "mc",
+    "genIdx": 4,
+    "topic": "net",
+    "mc": {
+     "correctIndex": 0,
+     "shuffleOrder": [
+      0,
+      2,
+      1,
+      3
+     ],
+     "distractorSeeds": [
+      "Jordan-W3-11|C1_Integrals|slot1|try17|mc|trap1",
+      "Jordan-W3-11|C1_Integrals|slot1|try17|mc|trap2",
+      "Jordan-W3-11|C1_Integrals|slot1|try17|mc|trap3"
+     ],
+     "distractorGenIdxs": [
+      4,
+      4,
+      4
+     ]
+    }
+   }
+  ]
+ },
+ "studentAlias": "Student-07",
+ "classId": "MTH263-Spring-A",
+ "assignmentId": "Derivs-Quiz-2"
+}

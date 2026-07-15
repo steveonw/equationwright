@@ -1,0 +1,2180 @@
+[
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 126914215,
+    "key": "de_classify",
+    "q": "Classify the differential equation \\(y\\,y' = 3x + 4\\) by order and linearity.",
+    "a": "First order, nonlinear",
+    "steps": [
+      "Order = highest derivative present.",
+      "Linear = expressible as \\(y' + P(x)y = Q(x)\\) (or its higher-order analog): \\(y\\) and its derivatives only to the first power, never multiplied together.",
+      "Here the product \\(y\\,y'\\) is nonlinear. So: first order, nonlinear."
+    ],
+    "traps": [
+      {
+        "ans": "First order, linear",
+        "why": "Order counts the HIGHEST derivative; linearity fails the moment y or a derivative is squared or multiplied by another."
+      },
+      {
+        "ans": "Second order, linear",
+        "why": "Coefficients may depend on x freely \u2014 that does not break linearity. Powers/products of y do."
+      }
+    ],
+    "vec": [
+      20,
+      1,
+      3,
+      3,
+      4
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 110136596,
+    "key": "de_classify",
+    "q": "Classify the differential equation \\(y\\,y' = 5x + 3\\) by order and linearity.",
+    "a": "First order, nonlinear",
+    "steps": [
+      "Order = highest derivative present.",
+      "Linear = expressible as \\(y' + P(x)y = Q(x)\\) (or its higher-order analog): \\(y\\) and its derivatives only to the first power, never multiplied together.",
+      "Here the product \\(y\\,y'\\) is nonlinear. So: first order, nonlinear."
+    ],
+    "traps": [
+      {
+        "ans": "First order, linear",
+        "why": "Order counts the HIGHEST derivative; linearity fails the moment y or a derivative is squared or multiplied by another."
+      },
+      {
+        "ans": "Second order, linear",
+        "why": "Coefficients may depend on x freely \u2014 that does not break linearity. Powers/products of y do."
+      }
+    ],
+    "vec": [
+      20,
+      1,
+      3,
+      5,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 160469453,
+    "key": "de_classify",
+    "q": "Classify the differential equation \\(y'' + 4y' + 6y = 0\\) by order and linearity.",
+    "a": "Second order, linear",
+    "steps": [
+      "Order = highest derivative present.",
+      "Linear = expressible as \\(y' + P(x)y = Q(x)\\) (or its higher-order analog): \\(y\\) and its derivatives only to the first power, never multiplied together.",
+      "Here highest derivative is \\(y''\\); every \\(y\\)-term is first power. So: second order, linear."
+    ],
+    "traps": [
+      {
+        "ans": "First order, linear",
+        "why": "Order counts the HIGHEST derivative; linearity fails the moment y or a derivative is squared or multiplied by another."
+      },
+      {
+        "ans": "First order, nonlinear",
+        "why": "Coefficients may depend on x freely \u2014 that does not break linearity. Powers/products of y do."
+      }
+    ],
+    "vec": [
+      20,
+      1,
+      1,
+      4,
+      6
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 143691834,
+    "key": "de_classify",
+    "q": "Classify the differential equation \\(y'' + 2y' + 2y = 0\\) by order and linearity.",
+    "a": "Second order, linear",
+    "steps": [
+      "Order = highest derivative present.",
+      "Linear = expressible as \\(y' + P(x)y = Q(x)\\) (or its higher-order analog): \\(y\\) and its derivatives only to the first power, never multiplied together.",
+      "Here highest derivative is \\(y''\\); every \\(y\\)-term is first power. So: second order, linear."
+    ],
+    "traps": [
+      {
+        "ans": "First order, linear",
+        "why": "Order counts the HIGHEST derivative; linearity fails the moment y or a derivative is squared or multiplied by another."
+      },
+      {
+        "ans": "First order, nonlinear",
+        "why": "Coefficients may depend on x freely \u2014 that does not break linearity. Powers/products of y do."
+      }
+    ],
+    "vec": [
+      20,
+      1,
+      1,
+      2,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 59803739,
+    "key": "de_classify",
+    "q": "Classify the differential equation \\(y'' + 4y' + 6y = 0\\) by order and linearity.",
+    "a": "Second order, linear",
+    "steps": [
+      "Order = highest derivative present.",
+      "Linear = expressible as \\(y' + P(x)y = Q(x)\\) (or its higher-order analog): \\(y\\) and its derivatives only to the first power, never multiplied together.",
+      "Here highest derivative is \\(y''\\); every \\(y\\)-term is first power. So: second order, linear."
+    ],
+    "traps": [
+      {
+        "ans": "First order, linear",
+        "why": "Order counts the HIGHEST derivative; linearity fails the moment y or a derivative is squared or multiplied by another."
+      },
+      {
+        "ans": "First order, nonlinear",
+        "why": "Coefficients may depend on x freely \u2014 that does not break linearity. Powers/products of y do."
+      }
+    ],
+    "vec": [
+      20,
+      1,
+      1,
+      4,
+      6
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 43026120,
+    "key": "de_classify",
+    "q": "Classify the differential equation \\(y'' + 5y' + 3y = 0\\) by order and linearity.",
+    "a": "Second order, linear",
+    "steps": [
+      "Order = highest derivative present.",
+      "Linear = expressible as \\(y' + P(x)y = Q(x)\\) (or its higher-order analog): \\(y\\) and its derivatives only to the first power, never multiplied together.",
+      "Here highest derivative is \\(y''\\); every \\(y\\)-term is first power. So: second order, linear."
+    ],
+    "traps": [
+      {
+        "ans": "First order, linear",
+        "why": "Order counts the HIGHEST derivative; linearity fails the moment y or a derivative is squared or multiplied by another."
+      },
+      {
+        "ans": "First order, nonlinear",
+        "why": "Coefficients may depend on x freely \u2014 that does not break linearity. Powers/products of y do."
+      }
+    ],
+    "vec": [
+      20,
+      1,
+      1,
+      5,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 2298030204,
+    "key": "de_which_solution",
+    "q": "Which function is a solution of \\(\\frac{dy}{dx} = 2y\\)?",
+    "a": "\\(y = 4e^{2x}\\)",
+    "steps": [
+      "Test by substitution: if \\(y = 4e^{2x}\\), then \\(y' = 8e^{2x} = 2\\cdot(4e^{2x}) = 2y\\). \u2713",
+      "Any constant multiple \\(Ce^{2x}\\) works \u2014 exponentials are the functions whose derivative is proportional to themselves."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 4e^{-2x}\\)",
+        "why": "Sign of the exponent must MATCH k: differentiating e^{-kx} brings down \u2212k, giving y\u2032 = \u2212ky."
+      },
+      {
+        "ans": "\\(y = 4x^{2}\\)",
+        "why": "Power functions give y\u2032 = kx^{k\u22121}, which is k\u00b7y/x, not k\u00b7y \u2014 the proportionality constant would depend on x."
+      }
+    ],
+    "vec": [
+      20,
+      2,
+      2,
+      4
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 2314807823,
+    "key": "de_which_solution",
+    "q": "Which function is a solution of \\(\\frac{dy}{dx} = 2y\\)?",
+    "a": "\\(y = 3e^{2x}\\)",
+    "steps": [
+      "Test by substitution: if \\(y = 3e^{2x}\\), then \\(y' = 6e^{2x} = 2\\cdot(3e^{2x}) = 2y\\). \u2713",
+      "Any constant multiple \\(Ce^{2x}\\) works \u2014 exponentials are the functions whose derivative is proportional to themselves."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 3e^{-2x}\\)",
+        "why": "Sign of the exponent must MATCH k: differentiating e^{-kx} brings down \u2212k, giving y\u2032 = \u2212ky."
+      },
+      {
+        "ans": "\\(y = 3x^{2}\\)",
+        "why": "Power functions give y\u2032 = kx^{k\u22121}, which is k\u00b7y/x, not k\u00b7y \u2014 the proportionality constant would depend on x."
+      }
+    ],
+    "vec": [
+      20,
+      2,
+      2,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 2331585442,
+    "key": "de_which_solution",
+    "q": "Which function is a solution of \\(\\frac{dy}{dx} = 3y\\)?",
+    "a": "\\(y = 2e^{3x}\\)",
+    "steps": [
+      "Test by substitution: if \\(y = 2e^{3x}\\), then \\(y' = 6e^{3x} = 3\\cdot(2e^{3x}) = 3y\\). \u2713",
+      "Any constant multiple \\(Ce^{3x}\\) works \u2014 exponentials are the functions whose derivative is proportional to themselves."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 2e^{-3x}\\)",
+        "why": "Sign of the exponent must MATCH k: differentiating e^{-kx} brings down \u2212k, giving y\u2032 = \u2212ky."
+      },
+      {
+        "ans": "\\(y = 2x^{3}\\)",
+        "why": "Power functions give y\u2032 = kx^{k\u22121}, which is k\u00b7y/x, not k\u00b7y \u2014 the proportionality constant would depend on x."
+      }
+    ],
+    "vec": [
+      20,
+      2,
+      3,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 2348363061,
+    "key": "de_which_solution",
+    "q": "Which function is a solution of \\(\\frac{dy}{dx} = 3y\\)?",
+    "a": "\\(y = 2e^{3x}\\)",
+    "steps": [
+      "Test by substitution: if \\(y = 2e^{3x}\\), then \\(y' = 6e^{3x} = 3\\cdot(2e^{3x}) = 3y\\). \u2713",
+      "Any constant multiple \\(Ce^{3x}\\) works \u2014 exponentials are the functions whose derivative is proportional to themselves."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 2e^{-3x}\\)",
+        "why": "Sign of the exponent must MATCH k: differentiating e^{-kx} brings down \u2212k, giving y\u2032 = \u2212ky."
+      },
+      {
+        "ans": "\\(y = 2x^{3}\\)",
+        "why": "Power functions give y\u2032 = kx^{k\u22121}, which is k\u00b7y/x, not k\u00b7y \u2014 the proportionality constant would depend on x."
+      }
+    ],
+    "vec": [
+      20,
+      2,
+      3,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 2230919728,
+    "key": "de_which_solution",
+    "q": "Which function is a solution of \\(\\frac{dy}{dx} = 4y\\)?",
+    "a": "\\(y = 3e^{4x}\\)",
+    "steps": [
+      "Test by substitution: if \\(y = 3e^{4x}\\), then \\(y' = 12e^{4x} = 4\\cdot(3e^{4x}) = 4y\\). \u2713",
+      "Any constant multiple \\(Ce^{4x}\\) works \u2014 exponentials are the functions whose derivative is proportional to themselves."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 3e^{-4x}\\)",
+        "why": "Sign of the exponent must MATCH k: differentiating e^{-kx} brings down \u2212k, giving y\u2032 = \u2212ky."
+      },
+      {
+        "ans": "\\(y = 3x^{4}\\)",
+        "why": "Power functions give y\u2032 = kx^{k\u22121}, which is k\u00b7y/x, not k\u00b7y \u2014 the proportionality constant would depend on x."
+      }
+    ],
+    "vec": [
+      20,
+      2,
+      4,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 2247697347,
+    "key": "de_which_solution",
+    "q": "Which function is a solution of \\(\\frac{dy}{dx} = 4y\\)?",
+    "a": "\\(y = 2e^{4x}\\)",
+    "steps": [
+      "Test by substitution: if \\(y = 2e^{4x}\\), then \\(y' = 8e^{4x} = 4\\cdot(2e^{4x}) = 4y\\). \u2713",
+      "Any constant multiple \\(Ce^{4x}\\) works \u2014 exponentials are the functions whose derivative is proportional to themselves."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 2e^{-4x}\\)",
+        "why": "Sign of the exponent must MATCH k: differentiating e^{-kx} brings down \u2212k, giving y\u2032 = \u2212ky."
+      },
+      {
+        "ans": "\\(y = 2x^{4}\\)",
+        "why": "Power functions give y\u2032 = kx^{k\u22121}, which is k\u00b7y/x, not k\u00b7y \u2014 the proportionality constant would depend on x."
+      }
+    ],
+    "vec": [
+      20,
+      2,
+      4,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 3835173165,
+    "key": "de_exact_test",
+    "q": "Is the equation \\((2x + 5y)\\,dx + (7x + 5y)\\,dy = 0\\) exact?",
+    "a": "Not exact",
+    "steps": [
+      "Test: exact \\(\\iff \\dfrac{\\partial M}{\\partial y} = \\dfrac{\\partial N}{\\partial x}\\).",
+      "\\(M_y = 5\\) and \\(N_x = 7\\).",
+      "\\(5 \\ne 7\\) \u2014 not exact."
+    ],
+    "traps": [
+      {
+        "ans": "Exact",
+        "why": "Compare M_y with N_x (cross partials) \u2014 not M_x with N_y."
+      },
+      {
+        "ans": "Cannot be determined",
+        "why": "The test is decisive for continuously differentiable M, N: check the two partials."
+      }
+    ],
+    "vec": [
+      20,
+      11,
+      0,
+      2,
+      5,
+      7,
+      5
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 3818395546,
+    "key": "de_exact_test",
+    "q": "Is the equation \\((5x + 4y)\\,dx + (7x + 5y)\\,dy = 0\\) exact?",
+    "a": "Not exact",
+    "steps": [
+      "Test: exact \\(\\iff \\dfrac{\\partial M}{\\partial y} = \\dfrac{\\partial N}{\\partial x}\\).",
+      "\\(M_y = 4\\) and \\(N_x = 7\\).",
+      "\\(4 \\ne 7\\) \u2014 not exact."
+    ],
+    "traps": [
+      {
+        "ans": "Exact",
+        "why": "Compare M_y with N_x (cross partials) \u2014 not M_x with N_y."
+      },
+      {
+        "ans": "Cannot be determined",
+        "why": "The test is decisive for continuously differentiable M, N: check the two partials."
+      }
+    ],
+    "vec": [
+      20,
+      11,
+      0,
+      5,
+      4,
+      7,
+      5
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 3801617927,
+    "key": "de_exact_test",
+    "q": "Is the equation \\((5x + 4y)\\,dx + (7x + 2y)\\,dy = 0\\) exact?",
+    "a": "Not exact",
+    "steps": [
+      "Test: exact \\(\\iff \\dfrac{\\partial M}{\\partial y} = \\dfrac{\\partial N}{\\partial x}\\).",
+      "\\(M_y = 4\\) and \\(N_x = 7\\).",
+      "\\(4 \\ne 7\\) \u2014 not exact."
+    ],
+    "traps": [
+      {
+        "ans": "Exact",
+        "why": "Compare M_y with N_x (cross partials) \u2014 not M_x with N_y."
+      },
+      {
+        "ans": "Cannot be determined",
+        "why": "The test is decisive for continuously differentiable M, N: check the two partials."
+      }
+    ],
+    "vec": [
+      20,
+      11,
+      0,
+      5,
+      4,
+      7,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 3784840308,
+    "key": "de_exact_test",
+    "q": "Is the equation \\((4x + 4y)\\,dx + (6x + 3y)\\,dy = 0\\) exact?",
+    "a": "Not exact",
+    "steps": [
+      "Test: exact \\(\\iff \\dfrac{\\partial M}{\\partial y} = \\dfrac{\\partial N}{\\partial x}\\).",
+      "\\(M_y = 4\\) and \\(N_x = 6\\).",
+      "\\(4 \\ne 6\\) \u2014 not exact."
+    ],
+    "traps": [
+      {
+        "ans": "Exact",
+        "why": "Compare M_y with N_x (cross partials) \u2014 not M_x with N_y."
+      },
+      {
+        "ans": "Cannot be determined",
+        "why": "The test is decisive for continuously differentiable M, N: check the two partials."
+      }
+    ],
+    "vec": [
+      20,
+      11,
+      0,
+      4,
+      4,
+      6,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 3768062689,
+    "key": "de_exact_test",
+    "q": "Is the equation \\((4x + 4y)\\,dx + (4x + 2y)\\,dy = 0\\) exact?",
+    "a": "Exact",
+    "steps": [
+      "Test: exact \\(\\iff \\dfrac{\\partial M}{\\partial y} = \\dfrac{\\partial N}{\\partial x}\\).",
+      "\\(M_y = 4\\) and \\(N_x = 4\\).",
+      "They match \u2014 exact."
+    ],
+    "traps": [
+      {
+        "ans": "Not exact",
+        "why": "Compare M_y with N_x (cross partials) \u2014 not M_x with N_y."
+      },
+      {
+        "ans": "Cannot be determined",
+        "why": "The test is decisive for continuously differentiable M, N: check the two partials."
+      }
+    ],
+    "vec": [
+      20,
+      11,
+      1,
+      4,
+      4,
+      4,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 3751285070,
+    "key": "de_exact_test",
+    "q": "Is the equation \\((3x + 5y)\\,dx + (5x + 4y)\\,dy = 0\\) exact?",
+    "a": "Exact",
+    "steps": [
+      "Test: exact \\(\\iff \\dfrac{\\partial M}{\\partial y} = \\dfrac{\\partial N}{\\partial x}\\).",
+      "\\(M_y = 5\\) and \\(N_x = 5\\).",
+      "They match \u2014 exact."
+    ],
+    "traps": [
+      {
+        "ans": "Not exact",
+        "why": "Compare M_y with N_x (cross partials) \u2014 not M_x with N_y."
+      },
+      {
+        "ans": "Cannot be determined",
+        "why": "The test is decisive for continuously differentiable M, N: check the two partials."
+      }
+    ],
+    "vec": [
+      20,
+      11,
+      1,
+      3,
+      5,
+      5,
+      4
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 3,
+    "sample": 0,
+    "seed": 1981043690,
+    "key": "de_equilibria",
+    "q": "Find all equilibrium solutions of the autonomous equation \\(\\frac{dy}{dt} = y(4 - y)\\).",
+    "a": "\\(y = 0\\) and \\(y = 4\\)",
+    "steps": [
+      "Equilibria are constant solutions: set \\(\\frac{dy}{dt} = 0\\).",
+      "\\(y(4 - y) = 0 \\Rightarrow y = 0\\) or \\(y = 4\\).",
+      "(Direction-field check: \\(y' > 0\\) between them, so \\(y = 4\\) is the stable one \u2014 solutions flow toward it.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 4\\) only",
+        "why": "y = 0 also makes the product zero \u2014 a factor set to zero is still a solution even when it looks trivial."
+      },
+      {
+        "ans": "\\(y = 0\\) and \\(y = -4\\)",
+        "why": "Solve a \u2212 y = 0 carefully: y = +4. Watch the sign when moving y across."
+      }
+    ],
+    "vec": [
+      20,
+      12,
+      4
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 3,
+    "sample": 1,
+    "seed": 1997821309,
+    "key": "de_equilibria",
+    "q": "Find all equilibrium solutions of the autonomous equation \\(\\frac{dy}{dt} = y(3 - y)\\).",
+    "a": "\\(y = 0\\) and \\(y = 3\\)",
+    "steps": [
+      "Equilibria are constant solutions: set \\(\\frac{dy}{dt} = 0\\).",
+      "\\(y(3 - y) = 0 \\Rightarrow y = 0\\) or \\(y = 3\\).",
+      "(Direction-field check: \\(y' > 0\\) between them, so \\(y = 3\\) is the stable one \u2014 solutions flow toward it.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 3\\) only",
+        "why": "y = 0 also makes the product zero \u2014 a factor set to zero is still a solution even when it looks trivial."
+      },
+      {
+        "ans": "\\(y = 0\\) and \\(y = -3\\)",
+        "why": "Solve a \u2212 y = 0 carefully: y = +3. Watch the sign when moving y across."
+      }
+    ],
+    "vec": [
+      20,
+      12,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 3,
+    "sample": 2,
+    "seed": 1947488452,
+    "key": "de_equilibria",
+    "q": "Find all equilibrium solutions of the autonomous equation \\(\\frac{dy}{dt} = y(3 - y)\\).",
+    "a": "\\(y = 0\\) and \\(y = 3\\)",
+    "steps": [
+      "Equilibria are constant solutions: set \\(\\frac{dy}{dt} = 0\\).",
+      "\\(y(3 - y) = 0 \\Rightarrow y = 0\\) or \\(y = 3\\).",
+      "(Direction-field check: \\(y' > 0\\) between them, so \\(y = 3\\) is the stable one \u2014 solutions flow toward it.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 3\\) only",
+        "why": "y = 0 also makes the product zero \u2014 a factor set to zero is still a solution even when it looks trivial."
+      },
+      {
+        "ans": "\\(y = 0\\) and \\(y = -3\\)",
+        "why": "Solve a \u2212 y = 0 carefully: y = +3. Watch the sign when moving y across."
+      }
+    ],
+    "vec": [
+      20,
+      12,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 3,
+    "sample": 3,
+    "seed": 1964266071,
+    "key": "de_equilibria",
+    "q": "Find all equilibrium solutions of the autonomous equation \\(\\frac{dy}{dt} = y(2 - y)\\).",
+    "a": "\\(y = 0\\) and \\(y = 2\\)",
+    "steps": [
+      "Equilibria are constant solutions: set \\(\\frac{dy}{dt} = 0\\).",
+      "\\(y(2 - y) = 0 \\Rightarrow y = 0\\) or \\(y = 2\\).",
+      "(Direction-field check: \\(y' > 0\\) between them, so \\(y = 2\\) is the stable one \u2014 solutions flow toward it.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 2\\) only",
+        "why": "y = 0 also makes the product zero \u2014 a factor set to zero is still a solution even when it looks trivial."
+      },
+      {
+        "ans": "\\(y = 0\\) and \\(y = -2\\)",
+        "why": "Solve a \u2212 y = 0 carefully: y = +2. Watch the sign when moving y across."
+      }
+    ],
+    "vec": [
+      20,
+      12,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 3,
+    "sample": 4,
+    "seed": 1913933214,
+    "key": "de_equilibria",
+    "q": "Find all equilibrium solutions of the autonomous equation \\(\\frac{dy}{dt} = y(4 - y)\\).",
+    "a": "\\(y = 0\\) and \\(y = 4\\)",
+    "steps": [
+      "Equilibria are constant solutions: set \\(\\frac{dy}{dt} = 0\\).",
+      "\\(y(4 - y) = 0 \\Rightarrow y = 0\\) or \\(y = 4\\).",
+      "(Direction-field check: \\(y' > 0\\) between them, so \\(y = 4\\) is the stable one \u2014 solutions flow toward it.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 4\\) only",
+        "why": "y = 0 also makes the product zero \u2014 a factor set to zero is still a solution even when it looks trivial."
+      },
+      {
+        "ans": "\\(y = 0\\) and \\(y = -4\\)",
+        "why": "Solve a \u2212 y = 0 carefully: y = +4. Watch the sign when moving y across."
+      }
+    ],
+    "vec": [
+      20,
+      12,
+      4
+    ]
+  },
+  {
+    "unitId": "DE_Basics",
+    "genIndex": 3,
+    "sample": 5,
+    "seed": 1930710833,
+    "key": "de_equilibria",
+    "q": "Find all equilibrium solutions of the autonomous equation \\(\\frac{dy}{dt} = y(5 - y)\\).",
+    "a": "\\(y = 0\\) and \\(y = 5\\)",
+    "steps": [
+      "Equilibria are constant solutions: set \\(\\frac{dy}{dt} = 0\\).",
+      "\\(y(5 - y) = 0 \\Rightarrow y = 0\\) or \\(y = 5\\).",
+      "(Direction-field check: \\(y' > 0\\) between them, so \\(y = 5\\) is the stable one \u2014 solutions flow toward it.)"
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 5\\) only",
+        "why": "y = 0 also makes the product zero \u2014 a factor set to zero is still a solution even when it looks trivial."
+      },
+      {
+        "ans": "\\(y = 0\\) and \\(y = -5\\)",
+        "why": "Solve a \u2212 y = 0 carefully: y = +5. Watch the sign when moving y across."
+      }
+    ],
+    "vec": [
+      20,
+      12,
+      5
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 2572981038,
+    "key": "de_sep_general",
+    "q": "Solve the separable equation \\(y\\,\\frac{dy}{dx} = 4x\\). Give the general solution.",
+    "a": "\\(y^2 = 4x^2 + C\\)",
+    "steps": [
+      "Separate: \\(y\\,dy = 4x\\,dx\\).",
+      "Integrate both sides: \\(\\frac{y^2}{2} = \\frac{4x^2}{2} + C_1\\).",
+      "Multiply by 2 and absorb the constant: \\(y^2 = 4x^2 + C\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y^2 = 2x^2 + C\\)",
+        "why": "Both sides get divided by 2 when integrating \u2014 the 2s cancel, so the coefficient of x\u00b2 stays 4."
+      },
+      {
+        "ans": "\\(y = 4x + C\\)",
+        "why": "You cannot just \"cancel\" dy/dx \u2014 separate the variables and integrate each side."
+      }
+    ],
+    "vec": [
+      21,
+      3,
+      4
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 2589758657,
+    "key": "de_sep_general",
+    "q": "Solve the separable equation \\(y\\,\\frac{dy}{dx} = 2x\\). Give the general solution.",
+    "a": "\\(y^2 = 2x^2 + C\\)",
+    "steps": [
+      "Separate: \\(y\\,dy = 2x\\,dx\\).",
+      "Integrate both sides: \\(\\frac{y^2}{2} = \\frac{2x^2}{2} + C_1\\).",
+      "Multiply by 2 and absorb the constant: \\(y^2 = 2x^2 + C\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y^2 = 1x^2 + C\\)",
+        "why": "Both sides get divided by 2 when integrating \u2014 the 2s cancel, so the coefficient of x\u00b2 stays 2."
+      },
+      {
+        "ans": "\\(y = 2x + C\\)",
+        "why": "You cannot just \"cancel\" dy/dx \u2014 separate the variables and integrate each side."
+      }
+    ],
+    "vec": [
+      21,
+      3,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 2539425800,
+    "key": "de_sep_general",
+    "q": "Solve the separable equation \\(y\\,\\frac{dy}{dx} = 6x\\). Give the general solution.",
+    "a": "\\(y^2 = 6x^2 + C\\)",
+    "steps": [
+      "Separate: \\(y\\,dy = 6x\\,dx\\).",
+      "Integrate both sides: \\(\\frac{y^2}{2} = \\frac{6x^2}{2} + C_1\\).",
+      "Multiply by 2 and absorb the constant: \\(y^2 = 6x^2 + C\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y^2 = 3x^2 + C\\)",
+        "why": "Both sides get divided by 2 when integrating \u2014 the 2s cancel, so the coefficient of x\u00b2 stays 6."
+      },
+      {
+        "ans": "\\(y = 6x + C\\)",
+        "why": "You cannot just \"cancel\" dy/dx \u2014 separate the variables and integrate each side."
+      }
+    ],
+    "vec": [
+      21,
+      3,
+      6
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 2556203419,
+    "key": "de_sep_general",
+    "q": "Solve the separable equation \\(y\\,\\frac{dy}{dx} = 4x\\). Give the general solution.",
+    "a": "\\(y^2 = 4x^2 + C\\)",
+    "steps": [
+      "Separate: \\(y\\,dy = 4x\\,dx\\).",
+      "Integrate both sides: \\(\\frac{y^2}{2} = \\frac{4x^2}{2} + C_1\\).",
+      "Multiply by 2 and absorb the constant: \\(y^2 = 4x^2 + C\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y^2 = 2x^2 + C\\)",
+        "why": "Both sides get divided by 2 when integrating \u2014 the 2s cancel, so the coefficient of x\u00b2 stays 4."
+      },
+      {
+        "ans": "\\(y = 4x + C\\)",
+        "why": "You cannot just \"cancel\" dy/dx \u2014 separate the variables and integrate each side."
+      }
+    ],
+    "vec": [
+      21,
+      3,
+      4
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 2640091514,
+    "key": "de_sep_general",
+    "q": "Solve the separable equation \\(y\\,\\frac{dy}{dx} = 8x\\). Give the general solution.",
+    "a": "\\(y^2 = 8x^2 + C\\)",
+    "steps": [
+      "Separate: \\(y\\,dy = 8x\\,dx\\).",
+      "Integrate both sides: \\(\\frac{y^2}{2} = \\frac{8x^2}{2} + C_1\\).",
+      "Multiply by 2 and absorb the constant: \\(y^2 = 8x^2 + C\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y^2 = 4x^2 + C\\)",
+        "why": "Both sides get divided by 2 when integrating \u2014 the 2s cancel, so the coefficient of x\u00b2 stays 8."
+      },
+      {
+        "ans": "\\(y = 8x + C\\)",
+        "why": "You cannot just \"cancel\" dy/dx \u2014 separate the variables and integrate each side."
+      }
+    ],
+    "vec": [
+      21,
+      3,
+      8
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 2656869133,
+    "key": "de_sep_general",
+    "q": "Solve the separable equation \\(y\\,\\frac{dy}{dx} = 6x\\). Give the general solution.",
+    "a": "\\(y^2 = 6x^2 + C\\)",
+    "steps": [
+      "Separate: \\(y\\,dy = 6x\\,dx\\).",
+      "Integrate both sides: \\(\\frac{y^2}{2} = \\frac{6x^2}{2} + C_1\\).",
+      "Multiply by 2 and absorb the constant: \\(y^2 = 6x^2 + C\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y^2 = 3x^2 + C\\)",
+        "why": "Both sides get divided by 2 when integrating \u2014 the 2s cancel, so the coefficient of x\u00b2 stays 6."
+      },
+      {
+        "ans": "\\(y = 6x + C\\)",
+        "why": "You cannot just \"cancel\" dy/dx \u2014 separate the variables and integrate each side."
+      }
+    ],
+    "vec": [
+      21,
+      3,
+      6
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 132143217,
+    "key": "de_sep_ivp",
+    "q": "Solve the initial value problem \\(\\frac{dy}{dx} = 3y\\), \\(y(0) = 3\\).",
+    "a": "\\(y = 3e^{3x}\\)",
+    "steps": [
+      "Separate: \\(\\frac{dy}{y} = 3\\,dx\\), integrate: \\(\\ln|y| = 3x + C_1\\).",
+      "Exponentiate: \\(y = Ce^{3x}\\).",
+      "Apply \\(y(0)=3\\): \\(C = 3\\). So \\(y = 3e^{3x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = e^{3x} + 2\\)",
+        "why": "The constant multiplies the exponential (y = Ce^{ax}); it is not added. Adding a constant does not satisfy y\u2032 = ay."
+      },
+      {
+        "ans": "\\(y = 3e^{-3x}\\)",
+        "why": "Sign of the growth rate a carries straight into the exponent \u2014 check by substituting back."
+      }
+    ],
+    "vec": [
+      21,
+      4,
+      3,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 115365598,
+    "key": "de_sep_ivp",
+    "q": "Solve the initial value problem \\(\\frac{dy}{dx} = 3y\\), \\(y(0) = 5\\).",
+    "a": "\\(y = 5e^{3x}\\)",
+    "steps": [
+      "Separate: \\(\\frac{dy}{y} = 3\\,dx\\), integrate: \\(\\ln|y| = 3x + C_1\\).",
+      "Exponentiate: \\(y = Ce^{3x}\\).",
+      "Apply \\(y(0)=5\\): \\(C = 5\\). So \\(y = 5e^{3x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = e^{3x} + 4\\)",
+        "why": "The constant multiplies the exponential (y = Ce^{ax}); it is not added. Adding a constant does not satisfy y\u2032 = ay."
+      },
+      {
+        "ans": "\\(y = 5e^{-3x}\\)",
+        "why": "Sign of the growth rate a carries straight into the exponent \u2014 check by substituting back."
+      }
+    ],
+    "vec": [
+      21,
+      4,
+      3,
+      5
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 98587979,
+    "key": "de_sep_ivp",
+    "q": "Solve the initial value problem \\(\\frac{dy}{dx} = 4y\\), \\(y(0) = 3\\).",
+    "a": "\\(y = 3e^{4x}\\)",
+    "steps": [
+      "Separate: \\(\\frac{dy}{y} = 4\\,dx\\), integrate: \\(\\ln|y| = 4x + C_1\\).",
+      "Exponentiate: \\(y = Ce^{4x}\\).",
+      "Apply \\(y(0)=3\\): \\(C = 3\\). So \\(y = 3e^{4x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = e^{4x} + 2\\)",
+        "why": "The constant multiplies the exponential (y = Ce^{ax}); it is not added. Adding a constant does not satisfy y\u2032 = ay."
+      },
+      {
+        "ans": "\\(y = 3e^{-4x}\\)",
+        "why": "Sign of the growth rate a carries straight into the exponent \u2014 check by substituting back."
+      }
+    ],
+    "vec": [
+      21,
+      4,
+      4,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 81810360,
+    "key": "de_sep_ivp",
+    "q": "Solve the initial value problem \\(\\frac{dy}{dx} = 4y\\), \\(y(0) = 5\\).",
+    "a": "\\(y = 5e^{4x}\\)",
+    "steps": [
+      "Separate: \\(\\frac{dy}{y} = 4\\,dx\\), integrate: \\(\\ln|y| = 4x + C_1\\).",
+      "Exponentiate: \\(y = Ce^{4x}\\).",
+      "Apply \\(y(0)=5\\): \\(C = 5\\). So \\(y = 5e^{4x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = e^{4x} + 4\\)",
+        "why": "The constant multiplies the exponential (y = Ce^{ax}); it is not added. Adding a constant does not satisfy y\u2032 = ay."
+      },
+      {
+        "ans": "\\(y = 5e^{-4x}\\)",
+        "why": "Sign of the growth rate a carries straight into the exponent \u2014 check by substituting back."
+      }
+    ],
+    "vec": [
+      21,
+      4,
+      4,
+      5
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 199253693,
+    "key": "de_sep_ivp",
+    "q": "Solve the initial value problem \\(\\frac{dy}{dx} = 2y\\), \\(y(0) = 3\\).",
+    "a": "\\(y = 3e^{2x}\\)",
+    "steps": [
+      "Separate: \\(\\frac{dy}{y} = 2\\,dx\\), integrate: \\(\\ln|y| = 2x + C_1\\).",
+      "Exponentiate: \\(y = Ce^{2x}\\).",
+      "Apply \\(y(0)=3\\): \\(C = 3\\). So \\(y = 3e^{2x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = e^{2x} + 2\\)",
+        "why": "The constant multiplies the exponential (y = Ce^{ax}); it is not added. Adding a constant does not satisfy y\u2032 = ay."
+      },
+      {
+        "ans": "\\(y = 3e^{-2x}\\)",
+        "why": "Sign of the growth rate a carries straight into the exponent \u2014 check by substituting back."
+      }
+    ],
+    "vec": [
+      21,
+      4,
+      2,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 182476074,
+    "key": "de_sep_ivp",
+    "q": "Solve the initial value problem \\(\\frac{dy}{dx} = 2y\\), \\(y(0) = 3\\).",
+    "a": "\\(y = 3e^{2x}\\)",
+    "steps": [
+      "Separate: \\(\\frac{dy}{y} = 2\\,dx\\), integrate: \\(\\ln|y| = 2x + C_1\\).",
+      "Exponentiate: \\(y = Ce^{2x}\\).",
+      "Apply \\(y(0)=3\\): \\(C = 3\\). So \\(y = 3e^{2x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = e^{2x} + 2\\)",
+        "why": "The constant multiplies the exponential (y = Ce^{ax}); it is not added. Adding a constant does not satisfy y\u2032 = ay."
+      },
+      {
+        "ans": "\\(y = 3e^{-2x}\\)",
+        "why": "Sign of the growth rate a carries straight into the exponent \u2014 check by substituting back."
+      }
+    ],
+    "vec": [
+      21,
+      4,
+      2,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 2889967552,
+    "key": "de_linear_if",
+    "q": "Find the integrating factor for the linear equation \\(y' + 4y = 3x\\).",
+    "a": "\\(\\mu(x) = e^{4x}\\)",
+    "steps": [
+      "For \\(y' + P(x)y = Q(x)\\), the integrating factor is \\(\\mu = e^{\\int P\\,dx}\\).",
+      "Here \\(P(x) = 4\\), so \\(\\mu = e^{\\int 4\\,dx} = e^{4x}\\).",
+      "Check: \\((\\mu y)' = \\mu y' + 4\\mu y = \\mu(y' + 4y)\\). \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\mu(x) = e^{3x}\\)",
+        "why": "\u03bc uses P (the coefficient of y), not Q (the right-hand side)."
+      },
+      {
+        "ans": "\\(\\mu(x) = 4x\\)",
+        "why": "\u03bc = e^{\u222bP dx} \u2014 the exponential of the integral, not the integral itself."
+      }
+    ],
+    "vec": [
+      21,
+      5,
+      4,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 2906745171,
+    "key": "de_linear_if",
+    "q": "Find the integrating factor for the linear equation \\(y' + 4y = 5x\\).",
+    "a": "\\(\\mu(x) = e^{4x}\\)",
+    "steps": [
+      "For \\(y' + P(x)y = Q(x)\\), the integrating factor is \\(\\mu = e^{\\int P\\,dx}\\).",
+      "Here \\(P(x) = 4\\), so \\(\\mu = e^{\\int 4\\,dx} = e^{4x}\\).",
+      "Check: \\((\\mu y)' = \\mu y' + 4\\mu y = \\mu(y' + 4y)\\). \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\mu(x) = e^{5x}\\)",
+        "why": "\u03bc uses P (the coefficient of y), not Q (the right-hand side)."
+      },
+      {
+        "ans": "\\(\\mu(x) = 4x\\)",
+        "why": "\u03bc = e^{\u222bP dx} \u2014 the exponential of the integral, not the integral itself."
+      }
+    ],
+    "vec": [
+      21,
+      5,
+      4,
+      5
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 2923522790,
+    "key": "de_linear_if",
+    "q": "Find the integrating factor for the linear equation \\(y' + 6y = 5x\\).",
+    "a": "\\(\\mu(x) = e^{6x}\\)",
+    "steps": [
+      "For \\(y' + P(x)y = Q(x)\\), the integrating factor is \\(\\mu = e^{\\int P\\,dx}\\).",
+      "Here \\(P(x) = 6\\), so \\(\\mu = e^{\\int 6\\,dx} = e^{6x}\\).",
+      "Check: \\((\\mu y)' = \\mu y' + 6\\mu y = \\mu(y' + 6y)\\). \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\mu(x) = e^{5x}\\)",
+        "why": "\u03bc uses P (the coefficient of y), not Q (the right-hand side)."
+      },
+      {
+        "ans": "\\(\\mu(x) = 6x\\)",
+        "why": "\u03bc = e^{\u222bP dx} \u2014 the exponential of the integral, not the integral itself."
+      }
+    ],
+    "vec": [
+      21,
+      5,
+      6,
+      5
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 2940300409,
+    "key": "de_linear_if",
+    "q": "Find the integrating factor for the linear equation \\(y' + 6y = 5x\\).",
+    "a": "\\(\\mu(x) = e^{6x}\\)",
+    "steps": [
+      "For \\(y' + P(x)y = Q(x)\\), the integrating factor is \\(\\mu = e^{\\int P\\,dx}\\).",
+      "Here \\(P(x) = 6\\), so \\(\\mu = e^{\\int 6\\,dx} = e^{6x}\\).",
+      "Check: \\((\\mu y)' = \\mu y' + 6\\mu y = \\mu(y' + 6y)\\). \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\mu(x) = e^{5x}\\)",
+        "why": "\u03bc uses P (the coefficient of y), not Q (the right-hand side)."
+      },
+      {
+        "ans": "\\(\\mu(x) = 6x\\)",
+        "why": "\u03bc = e^{\u222bP dx} \u2014 the exponential of the integral, not the integral itself."
+      }
+    ],
+    "vec": [
+      21,
+      5,
+      6,
+      5
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 2957078028,
+    "key": "de_linear_if",
+    "q": "Find the integrating factor for the linear equation \\(y' + 2y = 5x\\).",
+    "a": "\\(\\mu(x) = e^{2x}\\)",
+    "steps": [
+      "For \\(y' + P(x)y = Q(x)\\), the integrating factor is \\(\\mu = e^{\\int P\\,dx}\\).",
+      "Here \\(P(x) = 2\\), so \\(\\mu = e^{\\int 2\\,dx} = e^{2x}\\).",
+      "Check: \\((\\mu y)' = \\mu y' + 2\\mu y = \\mu(y' + 2y)\\). \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\mu(x) = e^{5x}\\)",
+        "why": "\u03bc uses P (the coefficient of y), not Q (the right-hand side)."
+      },
+      {
+        "ans": "\\(\\mu(x) = 2x\\)",
+        "why": "\u03bc = e^{\u222bP dx} \u2014 the exponential of the integral, not the integral itself."
+      }
+    ],
+    "vec": [
+      21,
+      5,
+      2,
+      5
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 2973855647,
+    "key": "de_linear_if",
+    "q": "Find the integrating factor for the linear equation \\(y' + 2y = 5x\\).",
+    "a": "\\(\\mu(x) = e^{2x}\\)",
+    "steps": [
+      "For \\(y' + P(x)y = Q(x)\\), the integrating factor is \\(\\mu = e^{\\int P\\,dx}\\).",
+      "Here \\(P(x) = 2\\), so \\(\\mu = e^{\\int 2\\,dx} = e^{2x}\\).",
+      "Check: \\((\\mu y)' = \\mu y' + 2\\mu y = \\mu(y' + 2y)\\). \u2713"
+    ],
+    "traps": [
+      {
+        "ans": "\\(\\mu(x) = e^{5x}\\)",
+        "why": "\u03bc uses P (the coefficient of y), not Q (the right-hand side)."
+      },
+      {
+        "ans": "\\(\\mu(x) = 2x\\)",
+        "why": "\u03bc = e^{\u222bP dx} \u2014 the exponential of the integral, not the integral itself."
+      }
+    ],
+    "vec": [
+      21,
+      5,
+      2,
+      5
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 3,
+    "sample": 0,
+    "seed": 718851563,
+    "key": "de_linear_solve",
+    "q": "Find the general solution of \\(y' + 3y = 3\\).",
+    "a": "\\(y = 1 + Ce^{-3x}\\)",
+    "steps": [
+      "Equilibrium (particular) solution: set \\(y' = 0\\): \\(y = 3/3 = 1\\).",
+      "Homogeneous part: \\(y' + 3y = 0\\) gives \\(Ce^{-3x}\\).",
+      "General solution = particular + homogeneous: \\(y = 1 + Ce^{-3x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 1 + Ce^{3x}\\)",
+        "why": "The homogeneous solution of y\u2032 + ay = 0 decays: y = Ce^{\u2212ax}. Positive exponent would blow up and fails substitution."
+      },
+      {
+        "ans": "\\(y = 3 + Ce^{-3x}\\)",
+        "why": "The equilibrium is b/a (set y\u2032 = 0 and solve), not b itself."
+      }
+    ],
+    "vec": [
+      21,
+      6,
+      3,
+      3,
+      1
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 3,
+    "sample": 1,
+    "seed": 702073944,
+    "key": "de_linear_solve",
+    "q": "Find the general solution of \\(y' + 2y = 2\\).",
+    "a": "\\(y = 1 + Ce^{-2x}\\)",
+    "steps": [
+      "Equilibrium (particular) solution: set \\(y' = 0\\): \\(y = 2/2 = 1\\).",
+      "Homogeneous part: \\(y' + 2y = 0\\) gives \\(Ce^{-2x}\\).",
+      "General solution = particular + homogeneous: \\(y = 1 + Ce^{-2x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 1 + Ce^{2x}\\)",
+        "why": "The homogeneous solution of y\u2032 + ay = 0 decays: y = Ce^{\u2212ax}. Positive exponent would blow up and fails substitution."
+      },
+      {
+        "ans": "\\(y = 2 + Ce^{-2x}\\)",
+        "why": "The equilibrium is b/a (set y\u2032 = 0 and solve), not b itself."
+      }
+    ],
+    "vec": [
+      21,
+      6,
+      2,
+      2,
+      1
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 3,
+    "sample": 2,
+    "seed": 752406801,
+    "key": "de_linear_solve",
+    "q": "Find the general solution of \\(y' + 5y = 15\\).",
+    "a": "\\(y = 3 + Ce^{-5x}\\)",
+    "steps": [
+      "Equilibrium (particular) solution: set \\(y' = 0\\): \\(y = 15/5 = 3\\).",
+      "Homogeneous part: \\(y' + 5y = 0\\) gives \\(Ce^{-5x}\\).",
+      "General solution = particular + homogeneous: \\(y = 3 + Ce^{-5x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 3 + Ce^{5x}\\)",
+        "why": "The homogeneous solution of y\u2032 + ay = 0 decays: y = Ce^{\u2212ax}. Positive exponent would blow up and fails substitution."
+      },
+      {
+        "ans": "\\(y = 15 + Ce^{-5x}\\)",
+        "why": "The equilibrium is b/a (set y\u2032 = 0 and solve), not b itself."
+      }
+    ],
+    "vec": [
+      21,
+      6,
+      5,
+      15,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 3,
+    "sample": 3,
+    "seed": 735629182,
+    "key": "de_linear_solve",
+    "q": "Find the general solution of \\(y' + 3y = 3\\).",
+    "a": "\\(y = 1 + Ce^{-3x}\\)",
+    "steps": [
+      "Equilibrium (particular) solution: set \\(y' = 0\\): \\(y = 3/3 = 1\\).",
+      "Homogeneous part: \\(y' + 3y = 0\\) gives \\(Ce^{-3x}\\).",
+      "General solution = particular + homogeneous: \\(y = 1 + Ce^{-3x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 1 + Ce^{3x}\\)",
+        "why": "The homogeneous solution of y\u2032 + ay = 0 decays: y = Ce^{\u2212ax}. Positive exponent would blow up and fails substitution."
+      },
+      {
+        "ans": "\\(y = 3 + Ce^{-3x}\\)",
+        "why": "The equilibrium is b/a (set y\u2032 = 0 and solve), not b itself."
+      }
+    ],
+    "vec": [
+      21,
+      6,
+      3,
+      3,
+      1
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 3,
+    "sample": 4,
+    "seed": 785962039,
+    "key": "de_linear_solve",
+    "q": "Find the general solution of \\(y' + 4y = 12\\).",
+    "a": "\\(y = 3 + Ce^{-4x}\\)",
+    "steps": [
+      "Equilibrium (particular) solution: set \\(y' = 0\\): \\(y = 12/4 = 3\\).",
+      "Homogeneous part: \\(y' + 4y = 0\\) gives \\(Ce^{-4x}\\).",
+      "General solution = particular + homogeneous: \\(y = 3 + Ce^{-4x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 3 + Ce^{4x}\\)",
+        "why": "The homogeneous solution of y\u2032 + ay = 0 decays: y = Ce^{\u2212ax}. Positive exponent would blow up and fails substitution."
+      },
+      {
+        "ans": "\\(y = 12 + Ce^{-4x}\\)",
+        "why": "The equilibrium is b/a (set y\u2032 = 0 and solve), not b itself."
+      }
+    ],
+    "vec": [
+      21,
+      6,
+      4,
+      12,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 3,
+    "sample": 5,
+    "seed": 769184420,
+    "key": "de_linear_solve",
+    "q": "Find the general solution of \\(y' + 5y = 5\\).",
+    "a": "\\(y = 1 + Ce^{-5x}\\)",
+    "steps": [
+      "Equilibrium (particular) solution: set \\(y' = 0\\): \\(y = 5/5 = 1\\).",
+      "Homogeneous part: \\(y' + 5y = 0\\) gives \\(Ce^{-5x}\\).",
+      "General solution = particular + homogeneous: \\(y = 1 + Ce^{-5x}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 1 + Ce^{5x}\\)",
+        "why": "The homogeneous solution of y\u2032 + ay = 0 decays: y = Ce^{\u2212ax}. Positive exponent would blow up and fails substitution."
+      },
+      {
+        "ans": "\\(y = 5 + Ce^{-5x}\\)",
+        "why": "The equilibrium is b/a (set y\u2032 = 0 and solve), not b itself."
+      }
+    ],
+    "vec": [
+      21,
+      6,
+      5,
+      5,
+      1
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 4,
+    "sample": 0,
+    "seed": 1866127642,
+    "key": "de_linear_ivp",
+    "q": "Solve \\(y' + 4y = 16\\) with \\(y(0) = 2\\).",
+    "a": "\\(y = 4 - 2e^{-4x}\\)",
+    "steps": [
+      "General solution: \\(y = 4 + Ce^{-4x}\\) (equilibrium 4 plus decaying homogeneous part).",
+      "Apply \\(y(0) = 2\\): \\(2 = 4 + C \\Rightarrow C = -2\\).",
+      "So \\(y = 4 + -2e^{-4x}\\); as \\(x \\to \\infty\\), \\(y \\to 4\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 4 + 2e^{-4x}\\)",
+        "why": "C is y(0) MINUS the equilibrium value, not y(0) itself \u2014 substitute x = 0 carefully."
+      },
+      {
+        "ans": "\\(y = 2 + -2e^{-4x}\\)",
+        "why": "The constant term of the solution is the equilibrium b/a; the initial condition only sets C."
+      }
+    ],
+    "vec": [
+      21,
+      7,
+      4,
+      16,
+      2,
+      4,
+      -2
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 4,
+    "sample": 1,
+    "seed": 1882905261,
+    "key": "de_linear_ivp",
+    "q": "Solve \\(y' + 2y = 8\\) with \\(y(0) = 6\\).",
+    "a": "\\(y = 4 + 2e^{-2x}\\)",
+    "steps": [
+      "General solution: \\(y = 4 + Ce^{-2x}\\) (equilibrium 4 plus decaying homogeneous part).",
+      "Apply \\(y(0) = 6\\): \\(6 = 4 + C \\Rightarrow C = 2\\).",
+      "So \\(y = 4 + 2e^{-2x}\\); as \\(x \\to \\infty\\), \\(y \\to 4\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 4 + 6e^{-2x}\\)",
+        "why": "C is y(0) MINUS the equilibrium value, not y(0) itself \u2014 substitute x = 0 carefully."
+      },
+      {
+        "ans": "\\(y = 6 + 2e^{-2x}\\)",
+        "why": "The constant term of the solution is the equilibrium b/a; the initial condition only sets C."
+      }
+    ],
+    "vec": [
+      21,
+      7,
+      2,
+      8,
+      6,
+      4,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 4,
+    "sample": 2,
+    "seed": 1832572404,
+    "key": "de_linear_ivp",
+    "q": "Solve \\(y' + 4y = 12\\) with \\(y(0) = 4\\).",
+    "a": "\\(y = 3 + e^{-4x}\\)",
+    "steps": [
+      "General solution: \\(y = 3 + Ce^{-4x}\\) (equilibrium 3 plus decaying homogeneous part).",
+      "Apply \\(y(0) = 4\\): \\(4 = 3 + C \\Rightarrow C = 1\\).",
+      "So \\(y = 3 + 1e^{-4x}\\); as \\(x \\to \\infty\\), \\(y \\to 3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 3 + 4e^{-4x}\\)",
+        "why": "C is y(0) MINUS the equilibrium value, not y(0) itself \u2014 substitute x = 0 carefully."
+      },
+      {
+        "ans": "\\(y = 4 + 1e^{-4x}\\)",
+        "why": "The constant term of the solution is the equilibrium b/a; the initial condition only sets C."
+      }
+    ],
+    "vec": [
+      21,
+      7,
+      4,
+      12,
+      4,
+      3,
+      1
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 4,
+    "sample": 3,
+    "seed": 1849350023,
+    "key": "de_linear_ivp",
+    "q": "Solve \\(y' + 4y = 12\\) with \\(y(0) = 6\\).",
+    "a": "\\(y = 3 + 3e^{-4x}\\)",
+    "steps": [
+      "General solution: \\(y = 3 + Ce^{-4x}\\) (equilibrium 3 plus decaying homogeneous part).",
+      "Apply \\(y(0) = 6\\): \\(6 = 3 + C \\Rightarrow C = 3\\).",
+      "So \\(y = 3 + 3e^{-4x}\\); as \\(x \\to \\infty\\), \\(y \\to 3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 3 + 6e^{-4x}\\)",
+        "why": "C is y(0) MINUS the equilibrium value, not y(0) itself \u2014 substitute x = 0 carefully."
+      },
+      {
+        "ans": "\\(y = 6 + 3e^{-4x}\\)",
+        "why": "The constant term of the solution is the equilibrium b/a; the initial condition only sets C."
+      }
+    ],
+    "vec": [
+      21,
+      7,
+      4,
+      12,
+      6,
+      3,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 4,
+    "sample": 4,
+    "seed": 1799017166,
+    "key": "de_linear_ivp",
+    "q": "Solve \\(y' + 2y = 8\\) with \\(y(0) = -3\\).",
+    "a": "\\(y = 4 - 7e^{-2x}\\)",
+    "steps": [
+      "General solution: \\(y = 4 + Ce^{-2x}\\) (equilibrium 4 plus decaying homogeneous part).",
+      "Apply \\(y(0) = -3\\): \\(-3 = 4 + C \\Rightarrow C = -7\\).",
+      "So \\(y = 4 + -7e^{-2x}\\); as \\(x \\to \\infty\\), \\(y \\to 4\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 4 + -3e^{-2x}\\)",
+        "why": "C is y(0) MINUS the equilibrium value, not y(0) itself \u2014 substitute x = 0 carefully."
+      },
+      {
+        "ans": "\\(y = -3 + -7e^{-2x}\\)",
+        "why": "The constant term of the solution is the equilibrium b/a; the initial condition only sets C."
+      }
+    ],
+    "vec": [
+      21,
+      7,
+      2,
+      8,
+      -3,
+      4,
+      -7
+    ]
+  },
+  {
+    "unitId": "DE_Methods",
+    "genIndex": 4,
+    "sample": 5,
+    "seed": 1815794785,
+    "key": "de_linear_ivp",
+    "q": "Solve \\(y' + 4y = 12\\) with \\(y(0) = 6\\).",
+    "a": "\\(y = 3 + 3e^{-4x}\\)",
+    "steps": [
+      "General solution: \\(y = 3 + Ce^{-4x}\\) (equilibrium 3 plus decaying homogeneous part).",
+      "Apply \\(y(0) = 6\\): \\(6 = 3 + C \\Rightarrow C = 3\\).",
+      "So \\(y = 3 + 3e^{-4x}\\); as \\(x \\to \\infty\\), \\(y \\to 3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y = 3 + 6e^{-4x}\\)",
+        "why": "C is y(0) MINUS the equilibrium value, not y(0) itself \u2014 substitute x = 0 carefully."
+      },
+      {
+        "ans": "\\(y = 6 + 3e^{-4x}\\)",
+        "why": "The constant term of the solution is the equilibrium b/a; the initial condition only sets C."
+      }
+    ],
+    "vec": [
+      21,
+      7,
+      4,
+      12,
+      6,
+      3,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_AppsNum",
+    "genIndex": 0,
+    "sample": 0,
+    "seed": 1883057632,
+    "key": "de_growth_double",
+    "q": "A population grows by \\(\\frac{dP}{dt} = \\frac{1}{25}P\\). How long until the population doubles?",
+    "a": "\\(t = 25\\ln 2\\)",
+    "steps": [
+      "Solution: \\(P = P_0 e^{t/25}\\).",
+      "Doubling: \\(2P_0 = P_0 e^{t/25} \\Rightarrow e^{t/25} = 2\\).",
+      "Take logs: \\(t/25 = \\ln 2 \\Rightarrow t = 25\\ln 2 \\approx 17.3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(t = \\dfrac{\\ln 2}{25}\\)",
+        "why": "k = 1/25, so t = ln2 / k = 25\u00b7ln2 \u2014 dividing by k means MULTIPLYING by 25."
+      },
+      {
+        "ans": "\\(t = 50\\)",
+        "why": "Doubling time involves ln 2 \u2248 0.693, not the factor 2 itself \u2014 exponential growth is not linear."
+      }
+    ],
+    "vec": [
+      22,
+      8,
+      25
+    ]
+  },
+  {
+    "unitId": "DE_AppsNum",
+    "genIndex": 0,
+    "sample": 1,
+    "seed": 1899835251,
+    "key": "de_growth_double",
+    "q": "A population grows by \\(\\frac{dP}{dt} = \\frac{1}{25}P\\). How long until the population doubles?",
+    "a": "\\(t = 25\\ln 2\\)",
+    "steps": [
+      "Solution: \\(P = P_0 e^{t/25}\\).",
+      "Doubling: \\(2P_0 = P_0 e^{t/25} \\Rightarrow e^{t/25} = 2\\).",
+      "Take logs: \\(t/25 = \\ln 2 \\Rightarrow t = 25\\ln 2 \\approx 17.3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(t = \\dfrac{\\ln 2}{25}\\)",
+        "why": "k = 1/25, so t = ln2 / k = 25\u00b7ln2 \u2014 dividing by k means MULTIPLYING by 25."
+      },
+      {
+        "ans": "\\(t = 50\\)",
+        "why": "Doubling time involves ln 2 \u2248 0.693, not the factor 2 itself \u2014 exponential growth is not linear."
+      }
+    ],
+    "vec": [
+      22,
+      8,
+      25
+    ]
+  },
+  {
+    "unitId": "DE_AppsNum",
+    "genIndex": 0,
+    "sample": 2,
+    "seed": 1916612870,
+    "key": "de_growth_double",
+    "q": "A population grows by \\(\\frac{dP}{dt} = \\frac{1}{25}P\\). How long until the population doubles?",
+    "a": "\\(t = 25\\ln 2\\)",
+    "steps": [
+      "Solution: \\(P = P_0 e^{t/25}\\).",
+      "Doubling: \\(2P_0 = P_0 e^{t/25} \\Rightarrow e^{t/25} = 2\\).",
+      "Take logs: \\(t/25 = \\ln 2 \\Rightarrow t = 25\\ln 2 \\approx 17.3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(t = \\dfrac{\\ln 2}{25}\\)",
+        "why": "k = 1/25, so t = ln2 / k = 25\u00b7ln2 \u2014 dividing by k means MULTIPLYING by 25."
+      },
+      {
+        "ans": "\\(t = 50\\)",
+        "why": "Doubling time involves ln 2 \u2248 0.693, not the factor 2 itself \u2014 exponential growth is not linear."
+      }
+    ],
+    "vec": [
+      22,
+      8,
+      25
+    ]
+  },
+  {
+    "unitId": "DE_AppsNum",
+    "genIndex": 0,
+    "sample": 3,
+    "seed": 1933390489,
+    "key": "de_growth_double",
+    "q": "A population grows by \\(\\frac{dP}{dt} = \\frac{1}{25}P\\). How long until the population doubles?",
+    "a": "\\(t = 25\\ln 2\\)",
+    "steps": [
+      "Solution: \\(P = P_0 e^{t/25}\\).",
+      "Doubling: \\(2P_0 = P_0 e^{t/25} \\Rightarrow e^{t/25} = 2\\).",
+      "Take logs: \\(t/25 = \\ln 2 \\Rightarrow t = 25\\ln 2 \\approx 17.3\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(t = \\dfrac{\\ln 2}{25}\\)",
+        "why": "k = 1/25, so t = ln2 / k = 25\u00b7ln2 \u2014 dividing by k means MULTIPLYING by 25."
+      },
+      {
+        "ans": "\\(t = 50\\)",
+        "why": "Doubling time involves ln 2 \u2248 0.693, not the factor 2 itself \u2014 exponential growth is not linear."
+      }
+    ],
+    "vec": [
+      22,
+      8,
+      25
+    ]
+  },
+  {
+    "unitId": "DE_AppsNum",
+    "genIndex": 0,
+    "sample": 4,
+    "seed": 1950168108,
+    "key": "de_growth_double",
+    "q": "A population grows by \\(\\frac{dP}{dt} = \\frac{1}{50}P\\). How long until the population doubles?",
+    "a": "\\(t = 50\\ln 2\\)",
+    "steps": [
+      "Solution: \\(P = P_0 e^{t/50}\\).",
+      "Doubling: \\(2P_0 = P_0 e^{t/50} \\Rightarrow e^{t/50} = 2\\).",
+      "Take logs: \\(t/50 = \\ln 2 \\Rightarrow t = 50\\ln 2 \\approx 34.6\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(t = \\dfrac{\\ln 2}{50}\\)",
+        "why": "k = 1/50, so t = ln2 / k = 50\u00b7ln2 \u2014 dividing by k means MULTIPLYING by 50."
+      },
+      {
+        "ans": "\\(t = 100\\)",
+        "why": "Doubling time involves ln 2 \u2248 0.693, not the factor 2 itself \u2014 exponential growth is not linear."
+      }
+    ],
+    "vec": [
+      22,
+      8,
+      50
+    ]
+  },
+  {
+    "unitId": "DE_AppsNum",
+    "genIndex": 0,
+    "sample": 5,
+    "seed": 1966945727,
+    "key": "de_growth_double",
+    "q": "A population grows by \\(\\frac{dP}{dt} = \\frac{1}{50}P\\). How long until the population doubles?",
+    "a": "\\(t = 50\\ln 2\\)",
+    "steps": [
+      "Solution: \\(P = P_0 e^{t/50}\\).",
+      "Doubling: \\(2P_0 = P_0 e^{t/50} \\Rightarrow e^{t/50} = 2\\).",
+      "Take logs: \\(t/50 = \\ln 2 \\Rightarrow t = 50\\ln 2 \\approx 34.6\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(t = \\dfrac{\\ln 2}{50}\\)",
+        "why": "k = 1/50, so t = ln2 / k = 50\u00b7ln2 \u2014 dividing by k means MULTIPLYING by 50."
+      },
+      {
+        "ans": "\\(t = 100\\)",
+        "why": "Doubling time involves ln 2 \u2248 0.693, not the factor 2 itself \u2014 exponential growth is not linear."
+      }
+    ],
+    "vec": [
+      22,
+      8,
+      50
+    ]
+  },
+  {
+    "unitId": "DE_AppsNum",
+    "genIndex": 1,
+    "sample": 0,
+    "seed": 4006908939,
+    "key": "de_decay_halflife",
+    "q": "A radioactive substance decays by \\(\\frac{dy}{dt} = -ky\\) and has half-life 50 years. Find \\(k\\).",
+    "a": "\\(k = \\dfrac{\\ln 2}{50}\\)",
+    "steps": [
+      "Solution: \\(y = y_0 e^{-kt}\\).",
+      "Half-life: \\(\\tfrac{1}{2}y_0 = y_0 e^{-k(50)} \\Rightarrow e^{-50k} = \\tfrac{1}{2}\\).",
+      "Logs: \\(-50k = \\ln\\tfrac{1}{2} = -\\ln 2 \\Rightarrow k = \\dfrac{\\ln 2}{50}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(k = 50\\ln 2\\)",
+        "why": "Solving \u2212Tk = \u2212ln2 gives k = ln2 / T \u2014 divide by the half-life, not multiply."
+      },
+      {
+        "ans": "\\(k = \\dfrac{1}{50}\\)",
+        "why": "Half-life relates to k through ln 2: k = ln2/T \u2248 0.693/T, not 1/T."
+      }
+    ],
+    "vec": [
+      22,
+      9,
+      50
+    ]
+  },
+  {
+    "unitId": "DE_AppsNum",
+    "genIndex": 1,
+    "sample": 1,
+    "seed": 3990131320,
+    "key": "de_decay_halflife",
+    "q": "A radioactive substance decays by \\(\\frac{dy}{dt} = -ky\\) and has half-life 30 years. Find \\(k\\).",
+    "a": "\\(k = \\dfrac{\\ln 2}{30}\\)",
+    "steps": [
+      "Solution: \\(y = y_0 e^{-kt}\\).",
+      "Half-life: \\(\\tfrac{1}{2}y_0 = y_0 e^{-k(30)} \\Rightarrow e^{-30k} = \\tfrac{1}{2}\\).",
+      "Logs: \\(-30k = \\ln\\tfrac{1}{2} = -\\ln 2 \\Rightarrow k = \\dfrac{\\ln 2}{30}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(k = 30\\ln 2\\)",
+        "why": "Solving \u2212Tk = \u2212ln2 gives k = ln2 / T \u2014 divide by the half-life, not multiply."
+      },
+      {
+        "ans": "\\(k = \\dfrac{1}{30}\\)",
+        "why": "Half-life relates to k through ln 2: k = ln2/T \u2248 0.693/T, not 1/T."
+      }
+    ],
+    "vec": [
+      22,
+      9,
+      30
+    ]
+  },
+  {
+    "unitId": "DE_AppsNum",
+    "genIndex": 1,
+    "sample": 2,
+    "seed": 4040464177,
+    "key": "de_decay_halflife",
+    "q": "A radioactive substance decays by \\(\\frac{dy}{dt} = -ky\\) and has half-life 10 years. Find \\(k\\).",
+    "a": "\\(k = \\dfrac{\\ln 2}{10}\\)",
+    "steps": [
+      "Solution: \\(y = y_0 e^{-kt}\\).",
+      "Half-life: \\(\\tfrac{1}{2}y_0 = y_0 e^{-k(10)} \\Rightarrow e^{-10k} = \\tfrac{1}{2}\\).",
+      "Logs: \\(-10k = \\ln\\tfrac{1}{2} = -\\ln 2 \\Rightarrow k = \\dfrac{\\ln 2}{10}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(k = 10\\ln 2\\)",
+        "why": "Solving \u2212Tk = \u2212ln2 gives k = ln2 / T \u2014 divide by the half-life, not multiply."
+      },
+      {
+        "ans": "\\(k = \\dfrac{1}{10}\\)",
+        "why": "Half-life relates to k through ln 2: k = ln2/T \u2248 0.693/T, not 1/T."
+      }
+    ],
+    "vec": [
+      22,
+      9,
+      10
+    ]
+  },
+  {
+    "unitId": "DE_AppsNum",
+    "genIndex": 1,
+    "sample": 3,
+    "seed": 4023686558,
+    "key": "de_decay_halflife",
+    "q": "A radioactive substance decays by \\(\\frac{dy}{dt} = -ky\\) and has half-life 50 years. Find \\(k\\).",
+    "a": "\\(k = \\dfrac{\\ln 2}{50}\\)",
+    "steps": [
+      "Solution: \\(y = y_0 e^{-kt}\\).",
+      "Half-life: \\(\\tfrac{1}{2}y_0 = y_0 e^{-k(50)} \\Rightarrow e^{-50k} = \\tfrac{1}{2}\\).",
+      "Logs: \\(-50k = \\ln\\tfrac{1}{2} = -\\ln 2 \\Rightarrow k = \\dfrac{\\ln 2}{50}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(k = 50\\ln 2\\)",
+        "why": "Solving \u2212Tk = \u2212ln2 gives k = ln2 / T \u2014 divide by the half-life, not multiply."
+      },
+      {
+        "ans": "\\(k = \\dfrac{1}{50}\\)",
+        "why": "Half-life relates to k through ln 2: k = ln2/T \u2248 0.693/T, not 1/T."
+      }
+    ],
+    "vec": [
+      22,
+      9,
+      50
+    ]
+  },
+  {
+    "unitId": "DE_AppsNum",
+    "genIndex": 1,
+    "sample": 4,
+    "seed": 4074019415,
+    "key": "de_decay_halflife",
+    "q": "A radioactive substance decays by \\(\\frac{dy}{dt} = -ky\\) and has half-life 20 years. Find \\(k\\).",
+    "a": "\\(k = \\dfrac{\\ln 2}{20}\\)",
+    "steps": [
+      "Solution: \\(y = y_0 e^{-kt}\\).",
+      "Half-life: \\(\\tfrac{1}{2}y_0 = y_0 e^{-k(20)} \\Rightarrow e^{-20k} = \\tfrac{1}{2}\\).",
+      "Logs: \\(-20k = \\ln\\tfrac{1}{2} = -\\ln 2 \\Rightarrow k = \\dfrac{\\ln 2}{20}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(k = 20\\ln 2\\)",
+        "why": "Solving \u2212Tk = \u2212ln2 gives k = ln2 / T \u2014 divide by the half-life, not multiply."
+      },
+      {
+        "ans": "\\(k = \\dfrac{1}{20}\\)",
+        "why": "Half-life relates to k through ln 2: k = ln2/T \u2248 0.693/T, not 1/T."
+      }
+    ],
+    "vec": [
+      22,
+      9,
+      20
+    ]
+  },
+  {
+    "unitId": "DE_AppsNum",
+    "genIndex": 1,
+    "sample": 5,
+    "seed": 4057241796,
+    "key": "de_decay_halflife",
+    "q": "A radioactive substance decays by \\(\\frac{dy}{dt} = -ky\\) and has half-life 10 years. Find \\(k\\).",
+    "a": "\\(k = \\dfrac{\\ln 2}{10}\\)",
+    "steps": [
+      "Solution: \\(y = y_0 e^{-kt}\\).",
+      "Half-life: \\(\\tfrac{1}{2}y_0 = y_0 e^{-k(10)} \\Rightarrow e^{-10k} = \\tfrac{1}{2}\\).",
+      "Logs: \\(-10k = \\ln\\tfrac{1}{2} = -\\ln 2 \\Rightarrow k = \\dfrac{\\ln 2}{10}\\)."
+    ],
+    "traps": [
+      {
+        "ans": "\\(k = 10\\ln 2\\)",
+        "why": "Solving \u2212Tk = \u2212ln2 gives k = ln2 / T \u2014 divide by the half-life, not multiply."
+      },
+      {
+        "ans": "\\(k = \\dfrac{1}{10}\\)",
+        "why": "Half-life relates to k through ln 2: k = ln2/T \u2248 0.693/T, not 1/T."
+      }
+    ],
+    "vec": [
+      22,
+      9,
+      10
+    ]
+  },
+  {
+    "unitId": "DE_AppsNum",
+    "genIndex": 2,
+    "sample": 0,
+    "seed": 1566071118,
+    "key": "de_euler_step",
+    "q": "Use Euler's method with step size \\(h = 0.5\\) to approximate \\(y(1)\\) for \\(y' = x + 2y\\), \\(y(0) = 3\\). (Two steps.)",
+    "a": "\\(y(1) \\approx 12.25\\)",
+    "steps": [
+      "Step 1: \\(y_1 = y_0 + h\\,f(x_0, y_0) = 3 + 0.5(0 + 2\\cdot3) = 6\\).",
+      "Step 2: \\(y_2 = y_1 + h\\,f(x_1, y_1) = 6 + 0.5(0.5 + 2\\cdot6) = 12.25\\).",
+      "Each step uses the CURRENT point \\((x_n, y_n)\\) \u2014 both coordinates advance."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y(1) \\approx 9\\)",
+        "why": "That is one step of size 1 \u2014 Euler with h = 0.5 needs two updates, recomputing the slope at each new point."
+      },
+      {
+        "ans": "\\(y(1) \\approx 12\\)",
+        "why": "x advances too: the second slope is f(0.5, y\u2081), not f(0, y\u2081)."
+      }
+    ],
+    "vec": [
+      22,
+      10,
+      3,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_AppsNum",
+    "genIndex": 2,
+    "sample": 1,
+    "seed": 1582848737,
+    "key": "de_euler_step",
+    "q": "Use Euler's method with step size \\(h = 0.5\\) to approximate \\(y(1)\\) for \\(y' = x + 3y\\), \\(y(0) = 4\\). (Two steps.)",
+    "a": "\\(y(1) \\approx 25.25\\)",
+    "steps": [
+      "Step 1: \\(y_1 = y_0 + h\\,f(x_0, y_0) = 4 + 0.5(0 + 3\\cdot4) = 10\\).",
+      "Step 2: \\(y_2 = y_1 + h\\,f(x_1, y_1) = 10 + 0.5(0.5 + 3\\cdot10) = 25.25\\).",
+      "Each step uses the CURRENT point \\((x_n, y_n)\\) \u2014 both coordinates advance."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y(1) \\approx 16\\)",
+        "why": "That is one step of size 1 \u2014 Euler with h = 0.5 needs two updates, recomputing the slope at each new point."
+      },
+      {
+        "ans": "\\(y(1) \\approx 25\\)",
+        "why": "x advances too: the second slope is f(0.5, y\u2081), not f(0, y\u2081)."
+      }
+    ],
+    "vec": [
+      22,
+      10,
+      4,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_AppsNum",
+    "genIndex": 2,
+    "sample": 2,
+    "seed": 1532515880,
+    "key": "de_euler_step",
+    "q": "Use Euler's method with step size \\(h = 0.5\\) to approximate \\(y(1)\\) for \\(y' = x + 3y\\), \\(y(0) = 2\\). (Two steps.)",
+    "a": "\\(y(1) \\approx 12.75\\)",
+    "steps": [
+      "Step 1: \\(y_1 = y_0 + h\\,f(x_0, y_0) = 2 + 0.5(0 + 3\\cdot2) = 5\\).",
+      "Step 2: \\(y_2 = y_1 + h\\,f(x_1, y_1) = 5 + 0.5(0.5 + 3\\cdot5) = 12.75\\).",
+      "Each step uses the CURRENT point \\((x_n, y_n)\\) \u2014 both coordinates advance."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y(1) \\approx 8\\)",
+        "why": "That is one step of size 1 \u2014 Euler with h = 0.5 needs two updates, recomputing the slope at each new point."
+      },
+      {
+        "ans": "\\(y(1) \\approx 12.5\\)",
+        "why": "x advances too: the second slope is f(0.5, y\u2081), not f(0, y\u2081)."
+      }
+    ],
+    "vec": [
+      22,
+      10,
+      2,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_AppsNum",
+    "genIndex": 2,
+    "sample": 3,
+    "seed": 1549293499,
+    "key": "de_euler_step",
+    "q": "Use Euler's method with step size \\(h = 0.5\\) to approximate \\(y(1)\\) for \\(y' = x + 2y\\), \\(y(0) = 3\\). (Two steps.)",
+    "a": "\\(y(1) \\approx 12.25\\)",
+    "steps": [
+      "Step 1: \\(y_1 = y_0 + h\\,f(x_0, y_0) = 3 + 0.5(0 + 2\\cdot3) = 6\\).",
+      "Step 2: \\(y_2 = y_1 + h\\,f(x_1, y_1) = 6 + 0.5(0.5 + 2\\cdot6) = 12.25\\).",
+      "Each step uses the CURRENT point \\((x_n, y_n)\\) \u2014 both coordinates advance."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y(1) \\approx 9\\)",
+        "why": "That is one step of size 1 \u2014 Euler with h = 0.5 needs two updates, recomputing the slope at each new point."
+      },
+      {
+        "ans": "\\(y(1) \\approx 12\\)",
+        "why": "x advances too: the second slope is f(0.5, y\u2081), not f(0, y\u2081)."
+      }
+    ],
+    "vec": [
+      22,
+      10,
+      3,
+      2
+    ]
+  },
+  {
+    "unitId": "DE_AppsNum",
+    "genIndex": 2,
+    "sample": 4,
+    "seed": 1633181594,
+    "key": "de_euler_step",
+    "q": "Use Euler's method with step size \\(h = 0.5\\) to approximate \\(y(1)\\) for \\(y' = x + 3y\\), \\(y(0) = 1\\). (Two steps.)",
+    "a": "\\(y(1) \\approx 6.5\\)",
+    "steps": [
+      "Step 1: \\(y_1 = y_0 + h\\,f(x_0, y_0) = 1 + 0.5(0 + 3\\cdot1) = 2.5\\).",
+      "Step 2: \\(y_2 = y_1 + h\\,f(x_1, y_1) = 2.5 + 0.5(0.5 + 3\\cdot2.5) = 6.5\\).",
+      "Each step uses the CURRENT point \\((x_n, y_n)\\) \u2014 both coordinates advance."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y(1) \\approx 4\\)",
+        "why": "That is one step of size 1 \u2014 Euler with h = 0.5 needs two updates, recomputing the slope at each new point."
+      },
+      {
+        "ans": "\\(y(1) \\approx 6.25\\)",
+        "why": "x advances too: the second slope is f(0.5, y\u2081), not f(0, y\u2081)."
+      }
+    ],
+    "vec": [
+      22,
+      10,
+      1,
+      3
+    ]
+  },
+  {
+    "unitId": "DE_AppsNum",
+    "genIndex": 2,
+    "sample": 5,
+    "seed": 1649959213,
+    "key": "de_euler_step",
+    "q": "Use Euler's method with step size \\(h = 0.5\\) to approximate \\(y(1)\\) for \\(y' = x + y\\), \\(y(0) = 3\\). (Two steps.)",
+    "a": "\\(y(1) \\approx 7\\)",
+    "steps": [
+      "Step 1: \\(y_1 = y_0 + h\\,f(x_0, y_0) = 3 + 0.5(0 + 1\\cdot3) = 4.5\\).",
+      "Step 2: \\(y_2 = y_1 + h\\,f(x_1, y_1) = 4.5 + 0.5(0.5 + 1\\cdot4.5) = 7\\).",
+      "Each step uses the CURRENT point \\((x_n, y_n)\\) \u2014 both coordinates advance."
+    ],
+    "traps": [
+      {
+        "ans": "\\(y(1) \\approx 6\\)",
+        "why": "That is one step of size 1 \u2014 Euler with h = 0.5 needs two updates, recomputing the slope at each new point."
+      },
+      {
+        "ans": "\\(y(1) \\approx 6.75\\)",
+        "why": "x advances too: the second slope is f(0.5, y\u2081), not f(0, y\u2081)."
+      }
+    ],
+    "vec": [
+      22,
+      10,
+      3,
+      1
+    ]
+  }
+]

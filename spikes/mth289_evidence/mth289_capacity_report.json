@@ -1,0 +1,352 @@
+{
+  "appVersion": "v7.0.0_full_catalog_mth289",
+  "samplesPerGenerator": 200,
+  "units": [
+    {
+      "id": "D289_FirstOrder",
+      "count": 2
+    },
+    {
+      "id": "D289_Systems",
+      "count": 6
+    },
+    {
+      "id": "D289_Series",
+      "count": 5
+    },
+    {
+      "id": "D289_Fourier",
+      "count": 6
+    },
+    {
+      "id": "D289_Transforms",
+      "count": 6
+    },
+    {
+      "id": "D289_PDE",
+      "count": 5
+    },
+    {
+      "id": "D289_BVP",
+      "count": 5
+    }
+  ],
+  "capacities": [
+    {
+      "unit": "D289_FirstOrder",
+      "gen": 1,
+      "key": "d289_firstorder_separable_power_ivp",
+      "distinct": 130,
+      "errors": 0
+    },
+    {
+      "unit": "D289_FirstOrder",
+      "gen": 2,
+      "key": "d289_firstorder_linear_constant_ivp",
+      "distinct": 167,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Systems",
+      "gen": 1,
+      "key": "d289_systems_eigenvalues_triangular",
+      "distinct": 16,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Systems",
+      "gen": 2,
+      "key": "d289_systems_eigenvector",
+      "distinct": 12,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Systems",
+      "gen": 3,
+      "key": "d289_systems_diagonal_general_solution",
+      "distinct": 56,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Systems",
+      "gen": 4,
+      "key": "d289_systems_equilibrium_classification",
+      "distinct": 3,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Systems",
+      "gen": 5,
+      "key": "d289_systems_diagonal_ivp",
+      "distinct": 197,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Systems",
+      "gen": 6,
+      "key": "d289_systems_complex_eigen_classification",
+      "distinct": 3,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Series",
+      "gen": 1,
+      "key": "d289_series_xy_recurrence",
+      "distinct": 8,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Series",
+      "gen": 2,
+      "key": "d289_series_xy_first_terms",
+      "distinct": 161,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Series",
+      "gen": 3,
+      "key": "d289_series_harmonic_recurrence",
+      "distinct": 6,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Series",
+      "gen": 4,
+      "key": "d289_series_harmonic_first_terms",
+      "distinct": 150,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Series",
+      "gen": 5,
+      "key": "d289_series_ordinary_singular",
+      "distinct": 2,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Fourier",
+      "gen": 1,
+      "key": "d289_fourier_parity",
+      "distinct": 2,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Fourier",
+      "gen": 2,
+      "key": "d289_fourier_square_bn",
+      "distinct": 21,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Fourier",
+      "gen": 3,
+      "key": "d289_fourier_square_first_coefficient",
+      "distinct": 6,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Fourier",
+      "gen": 4,
+      "key": "d289_fourier_sawtooth_bn",
+      "distinct": 8,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Fourier",
+      "gen": 5,
+      "key": "d289_fourier_constant_a0",
+      "distinct": 12,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Fourier",
+      "gen": 6,
+      "key": "d289_fourier_absx_an",
+      "distinct": 5,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Transforms",
+      "gen": 1,
+      "key": "d289_transforms_first_shift_forward",
+      "distinct": 10,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Transforms",
+      "gen": 2,
+      "key": "d289_transforms_first_shift_inverse",
+      "distinct": 47,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Transforms",
+      "gen": 3,
+      "key": "d289_transforms_unit_step",
+      "distinct": 6,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Transforms",
+      "gen": 4,
+      "key": "d289_transforms_delayed_sine",
+      "distinct": 25,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Transforms",
+      "gen": 5,
+      "key": "d289_transforms_delayed_sine_inverse",
+      "distinct": 25,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Transforms",
+      "gen": 6,
+      "key": "d289_transforms_rectangular_pulse",
+      "distinct": 16,
+      "errors": 0
+    },
+    {
+      "unit": "D289_PDE",
+      "gen": 1,
+      "key": "d289_pde_classify_1",
+      "distinct": 3,
+      "errors": 0
+    },
+    {
+      "unit": "D289_PDE",
+      "gen": 2,
+      "key": "d289_pde_classify_2",
+      "distinct": 3,
+      "errors": 0
+    },
+    {
+      "unit": "D289_PDE",
+      "gen": 3,
+      "key": "d289_pde_classify_3",
+      "distinct": 3,
+      "errors": 0
+    },
+    {
+      "unit": "D289_PDE",
+      "gen": 4,
+      "key": "d289_pde_heat_separation",
+      "distinct": 6,
+      "errors": 0
+    },
+    {
+      "unit": "D289_PDE",
+      "gen": 5,
+      "key": "d289_pde_wave_separation",
+      "distinct": 6,
+      "errors": 0
+    },
+    {
+      "unit": "D289_BVP",
+      "gen": 1,
+      "key": "d289_bvp_dirichlet_eigenvalues",
+      "distinct": 6,
+      "errors": 0
+    },
+    {
+      "unit": "D289_BVP",
+      "gen": 2,
+      "key": "d289_bvp_dirichlet_eigenfunction",
+      "distinct": 30,
+      "errors": 0
+    },
+    {
+      "unit": "D289_BVP",
+      "gen": 3,
+      "key": "d289_bvp_smallest_eigenvalue",
+      "distinct": 6,
+      "errors": 0
+    },
+    {
+      "unit": "D289_BVP",
+      "gen": 4,
+      "key": "d289_bvp_mixed_eigenvalues",
+      "distinct": 6,
+      "errors": 0
+    },
+    {
+      "unit": "D289_BVP",
+      "gen": 5,
+      "key": "d289_bvp_neumann_eigenpair",
+      "distinct": 36,
+      "errors": 0
+    }
+  ],
+  "exceptions": [
+    {
+      "unit": "D289_Systems",
+      "gen": 4,
+      "key": "d289_systems_equilibrium_classification",
+      "distinct": 3,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Systems",
+      "gen": 6,
+      "key": "d289_systems_complex_eigen_classification",
+      "distinct": 3,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Series",
+      "gen": 5,
+      "key": "d289_series_ordinary_singular",
+      "distinct": 2,
+      "errors": 0
+    },
+    {
+      "unit": "D289_Fourier",
+      "gen": 1,
+      "key": "d289_fourier_parity",
+      "distinct": 2,
+      "errors": 0
+    },
+    {
+      "unit": "D289_PDE",
+      "gen": 1,
+      "key": "d289_pde_classify_1",
+      "distinct": 3,
+      "errors": 0
+    },
+    {
+      "unit": "D289_PDE",
+      "gen": 2,
+      "key": "d289_pde_classify_2",
+      "distinct": 3,
+      "errors": 0
+    },
+    {
+      "unit": "D289_PDE",
+      "gen": 3,
+      "key": "d289_pde_classify_3",
+      "distinct": 3,
+      "errors": 0
+    }
+  ],
+  "errors": 0,
+  "quizSemanticChecks": [
+    {
+      "gen": 1,
+      "ok": true,
+      "choices": 4,
+      "correctIndex": 2,
+      "semanticValidated": true,
+      "unique": 4
+    },
+    {
+      "gen": 2,
+      "ok": true,
+      "choices": 4,
+      "correctIndex": 3,
+      "semanticValidated": true,
+      "unique": 4
+    }
+  ],
+  "mth289SelfTestFailures": []
+}

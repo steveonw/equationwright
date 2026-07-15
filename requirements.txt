@@ -1,0 +1,3 @@
+# Runtime requirements for the independent mathematics audit scripts.
+sympy>=1.12,<2
+antlr4-python3-runtime==4.11.*
