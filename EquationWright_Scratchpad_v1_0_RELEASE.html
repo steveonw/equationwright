@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>EquationWright Scratch Pad Prototype v4</title>
+<style>
+:root{--bg:#0b1020;--panel:#121a31;--panel2:#0f1730;--text:#e8eefc;--muted:rgba(232,238,252,.72);--line:rgba(232,238,252,.14);--accent:#60a5fa}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}.demo{max-width:980px;margin:0 auto;padding:24px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;margin-bottom:16px}.problem{font-size:22px;margin:18px 0}.choices{display:grid;gap:10px}.choices button,.demo button{border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--text);border-radius:10px;padding:11px 14px;cursor:pointer;font-weight:800}.note{color:var(--muted);font-size:14px;line-height:1.5}
+.scratch-launch{position:fixed;right:18px;bottom:18px;z-index:9998;background:var(--accent)!important;color:#08111f!important;border:0!important;box-shadow:0 8px 28px rgba(0,0,0,.35);min-height:44px;padding:10px 14px!important}
+#scratchPanel{position:fixed;right:18px;bottom:72px;width:min(560px,calc(100vw - 24px));z-index:9999;background:#f8fafc;color:#111827;border:1px solid #94a3b8;border-radius:14px;box-shadow:0 18px 50px rgba(0,0,0,.48);overflow:hidden;display:none;resize:both;min-width:320px;min-height:360px;max-width:90vw;max-height:82vh}
+#scratchPanel.minimized{width:260px!important;height:auto!important;min-height:0;resize:none}
+#scratchPanel.minimized .sp-mainbar,#scratchPanel.minimized .sp-quickbar,#scratchPanel.minimized .sp-more,#scratchPanel.minimized .sp-canvas-wrap,#scratchPanel.minimized .sp-pagebar,#scratchPanel.minimized .sp-status{display:none}
+.sp-head{display:flex;align-items:center;gap:6px;padding:8px 9px;background:#e2e8f0;border-bottom:1px solid #cbd5e1;cursor:move;user-select:none}.sp-title{font-weight:900;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.sp-head button,.sp-mainbar button,.sp-quickbar button,.sp-more button,.sp-more select{min-height:36px;border:1px solid #94a3b8;background:#fff;color:#0f172a;border-radius:8px;padding:6px 9px;cursor:pointer;font-weight:800}.sp-head button{min-width:38px}.sp-mainbar{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px;padding:7px 8px 5px;background:#f1f5f9}.sp-mainbar button{min-width:0;padding:6px 5px;font-size:12px}.sp-mainbar button.active{background:#dbeafe;border-color:#60a5fa}.sp-quickbar{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px;padding:5px 8px 7px;background:#f1f5f9;border-bottom:1px solid #cbd5e1}.sp-quickbar button{min-width:0;padding:5px;font-size:11px}.sp-quickbar .ink-dot{justify-self:center}.sp-quickbar .quick-paper,.sp-quickbar .quick-clear{font-size:12px}.sp-more{display:none;padding:9px;background:#eef2f7;border-bottom:1px solid #cbd5e1}.sp-more.open{display:block}.sp-more-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.sp-more-group{display:flex;align-items:center;gap:7px;min-width:0}.sp-more-group.full{grid-column:1/-1}.sp-more-label{font-size:11px;font-weight:900;color:#475569;min-width:54px}.sp-more select{width:100%;font-size:12px;min-width:0}.sp-more input[type=range]{width:100%;min-width:70px}.sp-more-actions{display:flex;gap:6px;flex-wrap:wrap}.ink-row{display:flex;gap:7px;align-items:center}.ink-dot{width:28px!important;height:28px!important;min-width:28px!important;min-height:28px!important;padding:0!important;border-radius:999px!important;position:relative}.ink-dot::after{content:"";position:absolute;inset:6px;border-radius:999px;background:var(--ink-color)}.ink-dot.active{outline:2px solid #60a5fa;outline-offset:1px}.sp-pagebar{display:flex;align-items:center;gap:5px;padding:6px 8px;background:#f1f5f9;border-top:1px solid #dbe3ec}.sp-pagebar button{min-height:32px;border:1px solid #cbd5e1;background:#fff;color:#0f172a;border-radius:7px;padding:4px 8px;cursor:pointer;font-weight:800}.sp-pagebar .page-label{font-size:12px;font-weight:900;min-width:64px;text-align:center}.sp-pagebar .page-spacer{flex:1}.sp-pagebar .page-hint{font-size:11px;color:#64748b}.sp-canvas-wrap{position:relative;height:430px;min-height:240px;background:#fff;overflow:hidden}.sp-canvas-wrap.grid{background-color:#fff;background-image:linear-gradient(#e5e7eb 1px,transparent 1px),linear-gradient(90deg,#e5e7eb 1px,transparent 1px);background-size:24px 24px}.sp-canvas-wrap.dots{background-color:#fff;background-image:radial-gradient(circle,#cbd5e1 1.2px,transparent 1.3px);background-size:24px 24px}.sp-canvas-wrap.coord{background-color:#fff;background-image:linear-gradient(#eef2f7 1px,transparent 1px),linear-gradient(90deg,#eef2f7 1px,transparent 1px);background-size:24px 24px}.sp-canvas-wrap.coord::before,.sp-canvas-wrap.coord::after{content:"";position:absolute;z-index:0;pointer-events:none;background:#64748b}.sp-canvas-wrap.coord::before{width:2px;top:0;bottom:0;left:50%}.sp-canvas-wrap.coord::after{height:2px;left:0;right:0;top:50%}#scratchCanvas{position:absolute;z-index:1;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair}.sp-status{padding:5px 9px;background:#f8fafc;border-top:1px solid #e2e8f0;color:#64748b;font-size:10px;display:flex;gap:8px;flex-wrap:wrap}.sp-status .grow{flex:1}.sp-kbd{white-space:nowrap}
+@media(max-width:600px){.demo{padding:14px}.problem{font-size:20px}#scratchPanel{left:8px;right:8px;bottom:68px;width:auto;max-width:none;max-height:calc(100dvh - 84px);resize:none;min-width:0}.sp-head{cursor:default}.sp-head button{min-height:40px}.sp-head #spPop{display:none}.sp-mainbar{grid-template-columns:repeat(3,minmax(0,1fr));padding:6px 6px 3px}.sp-mainbar button{min-height:42px;font-size:13px}.sp-quickbar{grid-template-columns:repeat(3,minmax(0,1fr));padding:3px 6px 6px}.sp-quickbar button{min-height:42px}.sp-quickbar .ink-dot{width:34px!important;height:34px!important;min-width:34px!important;min-height:34px!important}.sp-more-grid{grid-template-columns:1fr}.sp-more-group.full{grid-column:auto}.sp-more-label{min-width:62px}.sp-pagebar .page-hint{display:none}.sp-kbd{display:none}.scratch-launch{right:12px;bottom:12px}}
+@media print{#scratchPanel,.scratch-launch{display:none!important}}
+</style>
+</head>
+<body>
+<div class="demo">
+  <div class="card"><strong>EquationWright v7 Scratch Pad prototype v4</strong><div class="note">A math-focused scratch pad: lightweight, offline, touch friendly, and isolated from answers and grading.</div></div>
+  <div class="card"><div style="font-size:13px;color:var(--muted)">Example quiz question</div><div class="problem">Solve: 3x + 7 = 22</div><div class="choices"><button>3</button><button>5</button><button>7</button><button>15</button></div></div>
+</div>
+<button id="scratchLaunch" class="scratch-launch" type="button">✏ Scratch Pad</button>
+<section id="scratchPanel" aria-label="Scratch Pad" tabindex="-1">
+  <div class="sp-head" id="scratchHead">
+    <div class="sp-title" id="spTitle">Scratch Pad · Question 1</div>
+    <button id="spMin" type="button" title="Minimize scratch pad">—</button>
+    <button id="spPop" type="button" title="Open a separate scratch pad window">Pop out</button>
+    <button id="spClose" type="button" title="Close scratch pad">×</button>
+  </div>
+  <div class="sp-mainbar">
+    <button id="spPen" class="active" type="button" title="Pen (P)">Pen</button>
+    <button id="spErase" type="button" title="Eraser (E)">Eraser</button>
+    <button id="spLine" type="button" title="Straight line (L)">Line</button>
+    <button id="spUndo" type="button" title="Undo (Ctrl+Z)">Undo</button>
+    <button id="spRedo" type="button" title="Redo (Ctrl+Shift+Z)">Redo</button>
+    <button id="spMoreBtn" type="button" aria-expanded="false" title="More scratch pad options">More</button>
+  </div>
+  <div class="sp-quickbar" aria-label="Quick scratch pad options">
+    <button class="ink-dot active" data-color="#111827" style="--ink-color:#111827" type="button" aria-label="Black ink" title="Black ink"></button>
+    <button class="ink-dot" data-color="#2563eb" style="--ink-color:#2563eb" type="button" aria-label="Blue ink" title="Blue ink"></button>
+    <button class="ink-dot" data-color="#dc2626" style="--ink-color:#dc2626" type="button" aria-label="Red ink" title="Red ink"></button>
+    <button class="ink-dot" data-color="#15803d" style="--ink-color:#15803d" type="button" aria-label="Green ink" title="Green ink"></button>
+    <button id="spPaperQuick" class="quick-paper" type="button" title="Change paper: Plain, Graph, Coordinate, Dots">Paper: Plain</button>
+    <button id="spClear" class="quick-clear" type="button" title="Clear this page; Undo can restore it">Clear</button>
+  </div>
+  <div class="sp-more" id="spMore">
+    <div class="sp-more-grid">
+      <label class="sp-more-group"><span class="sp-more-label">Stroke</span><input id="spSize" type="range" min="1" max="18" value="3"></label>
+      <label class="sp-more-group"><span class="sp-more-label">Paper</span><select id="spPaper"><option value="plain">Plain</option><option value="grid">Graph</option><option value="coord">Coordinate</option><option value="dots">Dots</option></select></label>
+      <label class="sp-more-group"><span class="sp-more-label">Size</span><select id="spWorkspace" title="Choose scratch pad work area size"><option value="auto">Auto</option><option value="small">Small</option><option value="medium">Medium</option><option value="large">Large</option></select></label>
+      <div class="sp-more-group"><span class="sp-more-label">Actions</span><div class="sp-more-actions"><button id="spSave" type="button" title="Save this page as PNG">Save PNG</button><button id="spDelete" type="button" title="Delete current scratch page">Delete page</button></div></div>
+    </div>
+  </div>
+  <div class="sp-canvas-wrap" id="spWrap"><canvas id="scratchCanvas"></canvas></div>
+  <div class="sp-pagebar">
+    <button id="spPrev" type="button" title="Previous scratch page">◀</button>
+    <span class="page-label" id="spPageLabel">Page 1/1</span>
+    <button id="spNext" type="button" title="Next scratch page">▶</button>
+    <button id="spNew" type="button" title="Add scratch page">+ Page</button>
+    <span class="page-spacer"></span><span class="page-hint">Up to 5 pages</span>
+  </div>
+  <div class="sp-status"><span id="spSizeStatus" class="grow">Auto workspace</span><span class="sp-kbd">P pen · L line · E erase · Ctrl+Z undo</span></div>
+</section>
+<script>
+(()=>{
+'use strict';
+const $=id=>document.getElementById(id);
+const panel=$('scratchPanel'),launch=$('scratchLaunch'),canvas=$('scratchCanvas'),wrap=$('spWrap'),ctx=canvas.getContext('2d');
+const workspaceSelect=$('spWorkspace'),paperSelect=$('spPaper'),sizeStatus=$('spSizeStatus');
+let tool='pen',ink='#111827',drawing=false,start=null,last=null,lineBase=null,history=[],redo=[],drag=null,minimized=false;
+let pages=[null],pageIndex=0;
+const MAX_PAGES=5;
+function clamp(n,min,max){return Math.max(min,Math.min(max,n))}
+function currentSnapshot(){try{return canvas.toDataURL('image/png')}catch(_){return null}}
+function savePage(){pages[pageIndex]=currentSnapshot()}
+function updatePageUI(){
+  $('spPageLabel').textContent='Page '+(pageIndex+1)+'/'+pages.length;
+  $('spPrev').disabled=pageIndex===0;$('spNext').disabled=pageIndex===pages.length-1;
+  $('spNew').disabled=pages.length>=MAX_PAGES;$('spDelete').disabled=pages.length===1;
+}
+function applyWorkspaceSize(mode=workspaceSelect.value){
+  if(minimized)return;
+  const vw=Math.max(320,window.innerWidth),vh=Math.max(480,window.innerHeight),mobile=vw<=600;
+  const maxW=Math.max(300,vw-(mobile?16:36)),maxCanvasH=Math.max(240,Math.floor(vh*(mobile?.58:.66)));
+  let targetW,targetH,label;
+  if(mode==='small'){targetW=420;targetH=300;label='Small workspace'}
+  else if(mode==='medium'){targetW=560;targetH=430;label='Medium workspace'}
+  else if(mode==='large'){targetW=760;targetH=600;label='Large workspace'}
+  else{targetW=mobile?vw-16:Math.round(vw*.46);targetH=Math.round(vh*(mobile?.46:.48));label='Auto workspace'}
+  targetW=clamp(targetW,320,Math.min(760,maxW));targetH=clamp(targetH,240,Math.min(600,maxCanvasH));
+  if(mobile){panel.style.left='8px';panel.style.right='8px';panel.style.width='auto';panel.style.top='auto';panel.style.bottom='68px'}
+  else{panel.style.width=targetW+'px';panel.style.left='auto';panel.style.right='18px';panel.style.top='auto';panel.style.bottom='72px'}
+  wrap.style.height=targetH+'px';sizeStatus.textContent=label+' ('+Math.round(targetW)+'×'+Math.round(targetH)+')';requestAnimationFrame(()=>fit(true));
+}
+function fit(preserve=true){
+  const r=wrap.getBoundingClientRect();if(!r.width||!r.height)return;
+  const dpr=Math.max(1,window.devicePixelRatio||1),old=document.createElement('canvas');
+  old.width=canvas.width;old.height=canvas.height;if(preserve&&old.width&&old.height)old.getContext('2d').drawImage(canvas,0,0);
+  canvas.width=Math.max(1,Math.floor(r.width*dpr));canvas.height=Math.max(1,Math.floor(r.height*dpr));canvas.style.width=r.width+'px';canvas.style.height=r.height+'px';ctx.setTransform(dpr,0,0,dpr,0,0);ctx.lineCap='round';ctx.lineJoin='round';
+  if(preserve&&old.width&&old.height)ctx.drawImage(old,0,0,old.width,old.height,0,0,r.width,r.height);
+}
+function snap(){const s=currentSnapshot();if(s){history.push(s);if(history.length>40)history.shift()}redo=[]}
+function restore(url){
+  ctx.save();ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,canvas.width,canvas.height);ctx.restore();
+  if(!url)return;
+  const im=new Image();im.onload=()=>{const r=canvas.getBoundingClientRect();ctx.drawImage(im,0,0,r.width,r.height)};im.src=url;
+}
+function setTool(t){tool=t;['spPen','spLine','spErase'].forEach(id=>$(id).classList.remove('active'));$(t==='pen'?'spPen':t==='line'?'spLine':'spErase').classList.add('active');canvas.style.cursor=t==='erase'?'cell':'crosshair'}
+function point(e){const r=canvas.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top}}
+function drawSegment(a,b){ctx.globalCompositeOperation=tool==='erase'?'destination-out':'source-over';ctx.strokeStyle=ink;ctx.lineWidth=Number($('spSize').value)*(tool==='erase'?3:1);ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke()}
+canvas.addEventListener('pointerdown',e=>{canvas.setPointerCapture(e.pointerId);snap();drawing=true;start=last=point(e);if(tool==='line'){lineBase=document.createElement('canvas');lineBase.width=canvas.width;lineBase.height=canvas.height;lineBase.getContext('2d').drawImage(canvas,0,0)}e.preventDefault()});
+function restoreLineBase(){if(!lineBase)return;ctx.save();ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,canvas.width,canvas.height);ctx.drawImage(lineBase,0,0);ctx.restore()}
+canvas.addEventListener('pointermove',e=>{if(!drawing)return;const p=point(e);if(tool==='line'){restoreLineBase();ctx.globalCompositeOperation='source-over';ctx.strokeStyle=ink;ctx.lineWidth=Number($('spSize').value);ctx.beginPath();ctx.moveTo(start.x,start.y);ctx.lineTo(p.x,p.y);ctx.stroke()}else{drawSegment(last,p);last=p}e.preventDefault()});
+function stop(e){if(!drawing)return;if(tool==='line'&&e){const p=point(e);restoreLineBase();ctx.globalCompositeOperation='source-over';ctx.strokeStyle=ink;ctx.lineWidth=Number($('spSize').value);ctx.beginPath();ctx.moveTo(start.x,start.y);ctx.lineTo(p.x,p.y);ctx.stroke();savePage()}else savePage();drawing=false;start=last=lineBase=null;ctx.globalCompositeOperation='source-over'}
+canvas.addEventListener('pointerup',stop);canvas.addEventListener('pointercancel',()=>stop());
+function setPaper(mode){wrap.classList.remove('grid','coord','dots');if(mode!=='plain')wrap.classList.add(mode);const names={plain:'Plain',grid:'Graph',coord:'Coordinate',dots:'Dots'};const q=$('spPaperQuick');if(q)q.textContent='Paper: '+(names[mode]||'Plain')}
+function renderPaperTo(g,w,h,mode){
+  g.fillStyle='#fff';g.fillRect(0,0,w,h);g.lineWidth=1;
+  if(mode==='dots'){g.fillStyle='#cbd5e1';for(let y=0;y<h;y+=24)for(let x=0;x<w;x+=24){g.beginPath();g.arc(x,y,1.2,0,Math.PI*2);g.fill()}return}
+  if(mode==='grid'||mode==='coord'){g.strokeStyle=mode==='coord'?'#eef2f7':'#e5e7eb';g.beginPath();for(let x=0;x<w;x+=24){g.moveTo(x,0);g.lineTo(x,h)}for(let y=0;y<h;y+=24){g.moveTo(0,y);g.lineTo(w,y)}g.stroke();if(mode==='coord'){g.strokeStyle='#64748b';g.lineWidth=2;g.beginPath();g.moveTo(w/2,0);g.lineTo(w/2,h);g.moveTo(0,h/2);g.lineTo(w,h/2);g.stroke()}}
+}
+function exportPNG(){
+  const r=canvas.getBoundingClientRect(),out=document.createElement('canvas');out.width=Math.max(1,Math.round(r.width*2));out.height=Math.max(1,Math.round(r.height*2));const g=out.getContext('2d');g.scale(2,2);renderPaperTo(g,r.width,r.height,paperSelect.value);g.drawImage(canvas,0,0,canvas.width,canvas.height,0,0,r.width,r.height);const a=document.createElement('a');a.download='EquationWright-scratch-page-'+(pageIndex+1)+'.png';a.href=out.toDataURL('image/png');a.click();
+}
+function switchPage(next){if(next<0||next>=pages.length||next===pageIndex)return;savePage();pageIndex=next;history=[];redo=[];restore(pages[pageIndex]);updatePageUI()}
+function newPage(){if(pages.length>=MAX_PAGES)return;savePage();pages.splice(pageIndex+1,0,null);pageIndex++;history=[];redo=[];restore(null);updatePageUI()}
+function deletePage(){if(pages.length===1)return;pages.splice(pageIndex,1);if(pageIndex>=pages.length)pageIndex=pages.length-1;history=[];redo=[];restore(pages[pageIndex]);updatePageUI()}
+function toggleMin(){minimized=!minimized;panel.classList.toggle('minimized',minimized);$('spMin').textContent=minimized?'▢':'—';$('spMin').title=minimized?'Restore scratch pad':'Minimize scratch pad';if(!minimized)requestAnimationFrame(()=>applyWorkspaceSize(workspaceSelect.value))}
+function cyclePaper(){const vals=['plain','grid','coord','dots'];paperSelect.value=vals[(vals.indexOf(paperSelect.value)+1)%vals.length];setPaper(paperSelect.value)}
+launch.addEventListener('click',()=>{panel.style.display='block';minimized=false;panel.classList.remove('minimized');$('spMin').textContent='—';applyWorkspaceSize();panel.focus()});
+$('spClose').addEventListener('click',()=>{savePage();panel.style.display='none'});$('spMin').addEventListener('click',toggleMin);$('spMoreBtn').addEventListener('click',()=>{const more=$('spMore');const open=more.classList.toggle('open');$('spMoreBtn').classList.toggle('active',open);$('spMoreBtn').setAttribute('aria-expanded',open?'true':'false');$('spMoreBtn').textContent=open?'Less':'More';requestAnimationFrame(()=>fit(true))});$('spPen').addEventListener('click',()=>setTool('pen'));$('spLine').addEventListener('click',()=>setTool('line'));$('spErase').addEventListener('click',()=>setTool('erase'));
+$('spUndo').addEventListener('click',()=>{if(!history.length)return;redo.push(currentSnapshot());restore(history.pop());setTimeout(savePage,30)});$('spRedo').addEventListener('click',()=>{if(!redo.length)return;history.push(currentSnapshot());restore(redo.pop());setTimeout(savePage,30)});$('spClear').addEventListener('click',()=>{snap();restore(null);savePage()});$('spSave').addEventListener('click',exportPNG);
+document.querySelectorAll('.ink-dot').forEach(b=>b.addEventListener('click',()=>{ink=b.dataset.color;document.querySelectorAll('.ink-dot').forEach(x=>x.classList.toggle('active',x===b));if(tool==='erase')setTool('pen')}));
+$('spPaperQuick').addEventListener('click',cyclePaper);
+paperSelect.addEventListener('change',()=>setPaper(paperSelect.value));workspaceSelect.addEventListener('change',()=>applyWorkspaceSize(workspaceSelect.value));$('spPrev').addEventListener('click',()=>switchPage(pageIndex-1));$('spNext').addEventListener('click',()=>switchPage(pageIndex+1));$('spNew').addEventListener('click',newPage);$('spDelete').addEventListener('click',deletePage);
+const ro=new ResizeObserver(()=>{if(panel.style.display!=='none'&&!minimized)fit(true)});ro.observe(wrap);let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{if(panel.style.display!=='none'&&!minimized)applyWorkspaceSize(workspaceSelect.value)},80)});
+const head=$('scratchHead');head.addEventListener('pointerdown',e=>{if(e.target.tagName==='BUTTON'||innerWidth<601)return;const r=panel.getBoundingClientRect();drag={dx:e.clientX-r.left,dy:e.clientY-r.top};head.setPointerCapture(e.pointerId)});head.addEventListener('pointermove',e=>{if(!drag)return;panel.style.left=Math.max(4,Math.min(innerWidth-panel.offsetWidth-4,e.clientX-drag.dx))+'px';panel.style.top=Math.max(4,Math.min(innerHeight-panel.offsetHeight-4,e.clientY-drag.dy))+'px';panel.style.right='auto';panel.style.bottom='auto'});head.addEventListener('pointerup',()=>drag=null);head.addEventListener('pointercancel',()=>drag=null);
+window.addEventListener('keydown',e=>{if(panel.style.display==='none'||minimized)return;const tag=(e.target&&e.target.tagName)||'';if(tag==='INPUT'||tag==='SELECT'||tag==='TEXTAREA')return;if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'){e.preventDefault();if(e.shiftKey)$('spRedo').click();else $('spUndo').click();return}if(e.ctrlKey||e.metaKey||e.altKey)return;const k=e.key.toLowerCase();if(k==='p')setTool('pen');else if(k==='l')setTool('line');else if(k==='e')setTool('erase');else if(k==='g')cyclePaper();else if(k==='escape')toggleMin()});
+$('spPop').addEventListener('click',()=>{
+  savePage();const image=currentSnapshot(),paper=paperSelect.value;
+  const w=window.open('','EquationWrightScratchPad','width=760,height=780,resizable=yes');if(!w)return;
+  w.document.write(`<!doctype html><meta name="viewport" content="width=device-width,initial-scale=1"><title>EquationWright Scratch Pad</title><style>*{box-sizing:border-box}html,body{margin:0;height:100%;overflow:hidden;font-family:system-ui}body{display:flex;flex-direction:column;background:#f8fafc}.bar{padding:8px;background:#e2e8f0;display:flex;flex-wrap:wrap;gap:6px;align-items:center}.bar button{min-height:40px;padding:7px 10px;border:1px solid #94a3b8;border-radius:8px;background:#fff;font-weight:700}.bar input{width:90px}.stage{position:relative;flex:1;background:#fff}.stage.grid{background-image:linear-gradient(#e5e7eb 1px,transparent 1px),linear-gradient(90deg,#e5e7eb 1px,transparent 1px);background-size:24px 24px}.stage.dots{background-image:radial-gradient(circle,#cbd5e1 1.2px,transparent 1.3px);background-size:24px 24px}.stage.coord{background-image:linear-gradient(#eef2f7 1px,transparent 1px),linear-gradient(90deg,#eef2f7 1px,transparent 1px);background-size:24px 24px}.stage.coord:before,.stage.coord:after{content:"";position:absolute;background:#64748b;pointer-events:none}.stage.coord:before{width:2px;top:0;bottom:0;left:50%}.stage.coord:after{height:2px;left:0;right:0;top:50%}canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none}</style><div class="bar"><b style="margin-right:auto">Scratch Pad</b><button id="p">Pen</button><button id="l">Line</button><button id="e">Eraser</button><button id="u">Undo</button><button id="c">Clear</button><label>Size <input id="s" type="range" min="1" max="18" value="3"></label></div><div id="stage" class="stage ${paper}"><canvas id="x"></canvas></div><script>const c=x,g=c.getContext('2d');let t='p',d=0,a,b,h=[];function fit(){let old=document.createElement('canvas');old.width=c.width;old.height=c.height;if(old.width)old.getContext('2d').drawImage(c,0,0);let r=stage.getBoundingClientRect(),q=devicePixelRatio||1;c.width=r.width*q;c.height=r.height*q;g.setTransform(q,0,0,q,0,0);g.lineCap='round';if(old.width)g.drawImage(old,0,0,old.width,old.height,0,0,r.width,r.height)}fit();onresize=fit;function pt(v){let r=c.getBoundingClientRect();return{x:v.clientX-r.left,y:v.clientY-r.top}}function snap(){h.push(c.toDataURL());if(h.length>30)h.shift()}c.onpointerdown=v=>{snap();d=1;a=b=pt(v);c.setPointerCapture(v.pointerId)};c.onpointermove=v=>{if(!d)return;let n=pt(v);if(t==='l'){let i=new Image;i.onload=()=>{g.clearRect(0,0,c.width,c.height);g.drawImage(i,0,0,c.width/(devicePixelRatio||1),c.height/(devicePixelRatio||1));g.strokeStyle='#111827';g.lineWidth=+s.value;g.beginPath();g.moveTo(a.x,a.y);g.lineTo(n.x,n.y);g.stroke()};i.src=h[h.length-1]}else{g.globalCompositeOperation=t==='e'?'destination-out':'source-over';g.strokeStyle='#111827';g.lineWidth=+s.value*(t==='e'?3:1);g.beginPath();g.moveTo(b.x,b.y);g.lineTo(n.x,n.y);g.stroke();b=n}};c.onpointerup=()=>{d=0;g.globalCompositeOperation='source-over'};p.onclick=()=>t='p';l.onclick=()=>t='l';e.onclick=()=>t='e';u.onclick=()=>{if(!h.length)return;let i=new Image;i.onload=()=>{g.clearRect(0,0,c.width,c.height);g.drawImage(i,0,0,c.width/(devicePixelRatio||1),c.height/(devicePixelRatio||1))};i.src=h.pop()};document.getElementById('c').onclick=()=>{snap();g.clearRect(0,0,c.width,c.height)};<\/script>`);w.document.close();setTimeout(()=>{try{const pc=w.document.getElementById('x'),pg=pc.getContext('2d'),im=new w.Image();im.onload=()=>{const r=pc.getBoundingClientRect();pg.drawImage(im,0,0,r.width,r.height)};im.src=image}catch(_){}},120)
+});
+setPaper('plain');updatePageUI();
+})();
+</script>
+</body>
+</html>
