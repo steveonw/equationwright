@@ -2,10 +2,35 @@
 
 **A single-file math practice system for the full 18-course NVCC mathematics catalog represented by the project.**
 
-One HTML file. No accounts, no server, no installation. It generates worksheets and interactive quizzes from 424 deterministic problem generators across 81 units, diagnoses *why* you got questions wrong (not just *that* you did), and can close the loop with an AI tutor using **your own** API key — while the app itself does all the math, so the AI can never hallucinate an answer.
+One HTML file. No accounts, no server, no installation. It generates worksheets and interactive quizzes from **424 deterministic problem generators across 81 units**, diagnoses *why* you got questions wrong, and provides worked solutions and exportable results for classroom use.
 
-**v7.0 release app:** `Math_Worksheet_Builder_v7_0_0_FULL_CATALOG.html`  
-**Offline edition:** `Math_Worksheet_Builder_v7_0_0_FULL_CATALOG_OFFLINE.html`
+**v7.1 release app:** `Math_Worksheet_Builder_v7_1_0_FULL_CATALOG.html`  
+**Offline edition:** `Math_Worksheet_Builder_v7_1_0_FULL_CATALOG_OFFLINE.html`
+
+---
+
+## What's new in v7.1 — Floating Math Scratchpad
+
+v7.1 adds a built-in **floating scratchpad** for working problems directly beside the worksheet or quiz.
+
+Tap **✏ Scratch Pad** and the pad stays available while you scroll through the app. It is one app-wide workspace rather than a separate pad for every problem, so you can move it out of the way, resize or pop it out on larger screens, and keep multiple pages of scratch work.
+
+The scratchpad includes:
+
+- **Pen, eraser, and straight-line tools**
+- **Undo / redo**
+- **Four quick ink colors**
+- **Adjustable pen thickness**
+- **Plain, graph, coordinate, and dot paper**
+- **Clear page** with undo protection
+- **Multiple scratch pages** (up to five)
+- **Responsive workspace sizes**: Auto, Small, Medium, and Large
+- **Save as PNG** for keeping your work
+- **Pop-out mode** on larger screens
+- **Mouse, touch, and stylus support**
+- **Keyboard shortcuts** on desktop
+
+The scratchpad is intentionally just **digital scrap paper**. It does **not** solve equations, recognize handwriting, call AI, reveal answers, or affect grading. Scratch work stays separate from questions, seeds, and results.
 
 ---
 
@@ -13,8 +38,9 @@ One HTML file. No accounts, no server, no installation. It generates worksheets 
 
 1. Open the app (link above, or ask your teacher for an assignment link).
 2. Tap **Student** at the top. Tap **Quick Quiz (5)**.
-3. Answer. Wrong answers show a 💡 hint explaining the *specific mistake* you likely made, and unlock the full worked solution.
-4. When you finish, use the buttons under your score:
+3. Open **✏ Scratch Pad** whenever you want room to work the problem by hand. Your scratch work stays available while you scroll.
+4. Answer. Wrong answers show a 💡 hint explaining the *specific mistake* you likely made, and unlock the full worked solution.
+5. When you finish, use the buttons under your score:
    - **Review missed questions** — hides what you got right, shows solutions for what you missed
    - **Retake this quiz** — the exact same questions (same seed = same quiz)
    - **Try similar questions** — a fresh quiz built only from the units you missed
@@ -29,7 +55,7 @@ On a phone: open the link, browser menu → **Add to Home Screen**, and it behav
 2. Pick a course mode, set per-unit question counts (or hit a preset), type a **seed** (e.g. `MTH263-Quiz3`), click **Generate**.
 3. **Same seed always regenerates the same worksheet** — that's the core trick. Print it, or:
 4. Turn on **Quiz Mode** and click **Copy share link**. Anyone opening that link gets that exact quiz on their device. Paste it into Canvas, email, or a group chat.
-5. Collect results: students click **Submit results** (see *Class tools* below), or they export JSON files and send them to you. Import either way, get a class dashboard, and export or AI-analyze the class summary.
+5. Collect results: students click **Submit results** (see *Class tools* below), or they export JSON files and send them to you. Import either way, get a class dashboard, and export or AI-analyze the aggregated data.
 
 ---
 
@@ -59,7 +85,7 @@ On a phone: open the link, browser menu → **Add to Home Screen**, and it behav
 | D289 | MTH 289 Differential Equations of Mathematical Physics | 7 units |
 | MIX | All courses | all 81 units |
 
-Every question comes from a **seeded generator**: same seed + same settings + same app version = byte-identical worksheet. Different seed = fresh numbers, same skills. Coverage tracks the official VCCS course outlines.
+Every question comes from a **seeded generator**: same seed + same settings + same app version = byte-identical worksheet. Different seed = fresh numbers, same skills. Coverage tracks the official NVCC/VCCS course outlines.
 
 ### Seeds (the most important concept)
 
@@ -69,16 +95,16 @@ The seed box controls everything. Conventions that work well:
 - `MTH263-Quiz3-MakeupB` — a makeup with different numbers, same skill mix
 - `Jordan-SignDrill-2` — a personal drill (name–focus–number)
 
-⚠️ **Seeds are version-locked.** The same seed produces the same questions only on the same app version (adding generators to the bank shifts the selection). The filename carries the version for exactly this reason — **archive the HTML file alongside any assessment you may need to reproduce.** Settings, blueprints, and saved state all carry across versions fine; exact question sets do not.
+⚠️ **Seeds are version-locked.** The same seed produces the same questions only on the same app version (adding generators to the bank shifts the selection). The filename carries the version for reproducibility.
 
 ### Worksheets vs. Quiz Mode
 
-- **Worksheet mode**: printable pages. Toggle **Answer Key** and **Worked Solutions** to append them. **Print / Save PDF** uses print-optimized styling. **Export LaTeX** produces a compilable `.tex` (options for exact fractions, diagram handling, etc.).
-- **Quiz Mode**: interactive multiple choice. Distractors aren't random — most encode *specific real mistakes* (sign errors, forgotten chain rule, domain-vs-range confusion), so a wrong click tells the app *which* mistake you made. That labeled mistake is what powers the hints, the results analytics, and the AI diagnosis.
+- **Worksheet mode**: printable pages. Toggle **Answer Key** and **Worked Solutions** to append them. **Print / Save PDF** uses print-optimized styling.
+- **Quiz Mode**: interactive multiple choice. Distractors aren't random — most encode *specific real mistakes* (sign errors, forgotten chain rule, domain-vs-range confusion), so a wrong click tells you something useful.
 
 ### Presets
 
-**Quick Quiz (5)** · **Homework Practice (15)** (worksheet + solutions) · **Unit Review (20)** (worksheet + key) · **Teacher Copy** (key + solutions on) · **Student Copy** (both off). Each distributes the total across the current mode's units and generates immediately.
+**Quick Quiz (5)** · **Homework Practice (15)** (worksheet + solutions) · **Unit Review (20)** (worksheet + key) · **Teacher Copy** (key + solutions on) · **Student Copy** (both off).
 
 ### Topics filter
 
@@ -90,37 +116,35 @@ A **blueprint** is a small JSON file capturing seed + mode + counts + topics + t
 
 - **Export / Import Blueprint** — file-based save/load
 - **Saved blueprints** — a named library stored in your browser
-- **Copy share link** — the blueprint encoded into the URL (`#bp=...`). Opening the link recreates the quiz/worksheet; links also apply live if the app is already open. Share links deliberately exclude the per-question data — they're ~1 KB and regenerate from the seed.
+- **Copy share link** — the blueprint encoded into the URL (`#bp=...`). Opening the link recreates the quiz/worksheet; links also apply live if the app is already open. Share links deliberately avoid embedding scratchpad content.
 
 ### Teacher / Student mode
 
-**Student** mode forces quiz-on/keys-off, hides all teacher tooling (LaTeX, blueprints, class settings, self-test), shows a banner, and persists. It is a *focus* mode, **not** security — answers exist in the page source, so treat everything here as practice/homework, never proctored testing.
+**Student** mode forces quiz-on/keys-off, hides all teacher tooling (LaTeX, blueprints, class settings, self-test), shows a banner, and persists. It is a *focus* mode, **not** security — answers remain in the page source and savable by a determined user.
 
 ### Results: the data your practice produces
 
 After answering quiz questions:
 
 - **Export results (CSV)** — human/spreadsheet-readable log
-- **Export results (JSON)** — machine-readable `mw-quiz-results-v1`: per-question topic, generator, your answer, the correct answer, and — when you fell for a labeled trap — the **mistakeType** explaining the error. Plus rollups: `missedByUnit`, `missedByTopic`, `mistakePatterns`.
+- **Export results (JSON)** — machine-readable `mw-quiz-results-v1`: per-question topic, generator, your answer, the correct answer, and — when you fell for a labeled trap — the **mistakeType** and label.
 
-That JSON is the input to everything intelligent below. Paste it into any AI chatbot with the bundled tutor prompt (`SKILL.md`), or use the built-in tutor:
+That JSON is the input to everything intelligent below. Paste it into any AI chatbot with the bundled tutor prompt (`SKILL.md`), or use the built-in tutor.
 
 ### AI tutor (bring your own key)
 
 Open **AI tutor (bring your own key)** in the controls:
 
-- **Provider**: Anthropic (Claude), Google (Gemini), and **OpenRouter** (one key, hundreds of models — including free ones — with built-in spend limits; the easiest throwaway-key option) all work directly from the browser. **OpenAI-compatible (custom URL)** covers local models (Ollama, LM Studio) and teacher-run proxies.
-- **API key**: use a **spend-capped, throwaway key** — never your main one. OpenRouter makes this easiest: you set a hard dollar limit when creating the key, so a "$1 key" is literally one click. Default storage is this-tab-only; "Remember on this device" opts into localStorage (private devices only).
-- **Model IDs rotate.** Providers retire models every few months; if you get *"HTTP 404: No endpoints found"*, your model name is stale — check your provider's current model list (openrouter.ai/models) and paste a fresh ID. The app ships with a sensible default but any hardcoded ID ages.
+- **Provider**: Anthropic (Claude), Google (Gemini), and **OpenRouter** (one key, hundreds of models — including free ones — with built-in spend limits) are supported. Local llama.cpp-style servers are also usable.
+- **API key**: use a **spend-capped, throwaway key** — never your main one. OpenRouter makes this easiest: you set a hard dollar limit when creating the key.
+- **Model IDs rotate.** Providers retire models every few months; if you get *"HTTP 404: No endpoints found"*, your model name is stale — check your provider's current model list.
 - Then after any quiz: **Ask AI tutor** → diagnosis appears in the page → **Start this drill** loads the AI's prescribed practice quiz.
-- Under the diagnosis, a **More help** row gives one-tap follow-ups — *How do I fix this? / Explain my top mistake / What to review for a test / Make a study plan* — each a bounded ask about your results (no free chat, no new-math drift).
-- **Fully local option:** any llama.cpp-based server works. Run `llama-server -m model.gguf --port 8080 --api-key mykey` (or use [LocalChatBox](https://github.com/steveonw/LocalChatBox)), pick *OpenAI-compatible*, endpoint `http://127.0.0.1:8080/v1/chat/completions`, and your tutoring never touches the internet. The app tolerates small-model JSON quirks (LaTeX backslashes, chatty wrappers) and falls back to showing plain-text advice. Models 7B+ give noticeably better diagnoses than tiny ones.
 
-Design guarantees, enforced in code (not by asking the AI nicely):
+Design guarantees, enforced in code:
 
-1. **The AI never does math.** It reads your labeled mistakes and prescribes; the app generates and grades. It cannot produce a wrong answer key because it never produces answers.
-2. **The AI cannot rewire the app.** Any blueprint it returns passes a whitelist: invented unit IDs are dropped, answer pages are forced off, submit URLs are stripped, question counts are clamped. Its text is rendered inert (no scripts).
-3. **Costs almost nothing — measured, not estimated.** In live testing, a full student diagnosis plus a full class analysis on Gemini Flash (via OpenRouter) registered **$0.00 of a $1.00 key** on the provider's own meter — the calls were too cheap for the accounting to see. Budget a dollar; expect it to last a semester.
+1. **The AI never does math.** It reads your labeled mistakes and prescribes; the app generates and grades.
+2. **The AI cannot rewire the app.** Any blueprint it returns passes a whitelist: invented unit IDs are dropped, answer pages are forced off, submit URLs are stripped, and counts are clamped.
+3. **Costs almost nothing — measured, not estimated.** In live testing, a full student diagnosis plus a full class analysis on Gemini Flash (via OpenRouter) registered **$0.00 of a $1.00 key** in our test runs.
 4. **Privacy**: analysis sends your quiz results (aliases only) directly from your browser to *your chosen* provider. This app has no server and never sees your key or data.
 
 ### Class tools (collection & federation)
@@ -130,12 +154,12 @@ Open **Class tools** in Teacher mode:
 - **Class ID / Assignment ID / Results submit URL** — these travel inside share links. Students who open your link get a working **Submit results** button pointed at *your* storage.
 - **Import class results (JSON files)** — drag in student exports, or re-open a saved **class summary** for a read-only dashboard (works fully offline)
 - **Load results from URL** — pull everything from your storage node in one click
-- **Student-lock PIN**: *Copy locked student link* opens in Student mode and requires your PIN to switch to Teacher — deters casual answer-peeking (not exam security; only the PIN's hash travels in the link).
-- The **dashboard** shows count, average, misses by unit/topic, top mistake patterns, and flags blank answers per student — so "missed 6" (needs review) and "left 6 blank" (needs pacing) are never confused; then **Export class summary (JSON)**, **Copy summary for AI**, or **Analyze class with AI** (one warm-up drill for the whole class, one click).
+- **Student-lock PIN**: *Copy locked student link* opens in Student mode and requires your PIN to switch to Teacher — deters casual answer-peeking (not exam security)
+- The **dashboard** shows count, average, misses by unit/topic, top mistake patterns, and flags blank answers per student.
 
-**The trust model — two URLs, two powers.** The *submit* (write) URL travels with assignments; holding it only lets you deposit results. The *read* URL you give only to whoever should see the results — just yourself, or a whole study group. A study group is simply a "class" where everyone holds both links. No accounts anywhere; the links *are* the permissions.
+**The trust model — two URLs, two powers.** The *submit* (write) URL travels with assignments; holding it only lets you deposit results. The *read* URL you give only to whoever should see the read-only dashboard.
 
-**Privacy rules (please keep them):** students submit under an **alias** (`Student-17`, `Pi-Ana`) — never real names, emails, or IDs. The storage belongs to the teacher or the group, never to this app or its author. Anyone with a write URL could post fake results — this is homework-trust collection, not secure assessment.
+**Privacy rules (please keep them):** students submit under an **alias** (`Student-17`, `Pi-Ana`) — never real names, emails, or IDs. The storage belongs to the teacher or the group, never to the app project.
 
 ### Your own storage node in 10 minutes (Google Apps Script)
 
@@ -162,11 +186,11 @@ function doGet(e) {
 2. **Deploy → New deployment → Web app** → execute as *Me*, access *Anyone with the link*.
 3. The deployment URL is both your **submit URL** (paste into Class tools) and your **read URL** (paste into *Load results from URL*). Delete the deployment to revoke everything.
 
-Note: Apps Script sometimes rejects the browser's confirmation handshake — the app automatically falls back to fire-and-forget and tells you "sent (unconfirmed)." The data still lands.
+---
 
-### Self-test (for the curious / contributors)
+## Self-test (for the curious / contributors)
 
-The **Self-test** panel fuzzes every generator (10,600 deterministic runs in v7.0), validating structure, LaTeX, choice uniqueness, and HTML safety. If you add generators, run it. Green means *structurally* sound — it does not prove the mathematics of a generator; that's on the author of each generator.
+The **Self-test** panel fuzzes every generator. v7.0 structural self-test completed **10,600 deterministic runs with zero failures**. v7.0 independent course audits covered **10,752 verified records with zero mismatches**. v7.1 is a UI-only release (scratchpad) and does not change generators.
 
 ---
 
@@ -174,41 +198,30 @@ The **Self-test** panel fuzzes every generator (10,600 deterministic runs in v7.
 
 - **Makeup exams**: same counts + topics, new seed suffix (`-MakeupB`). Same skills, different numbers, zero effort.
 - **MIX mode defaults to a very large worksheet.** Hit a preset first unless you enjoy 40-page printouts.
-- **Struggling with a topic?** Take a quiz, miss honestly, then *Try similar questions* — it rebuilds practice from exactly your misses. With an API key, *Ask AI tutor* is smarter still: it spots when misses in different units share one habit (e.g., sign errors everywhere = algebra hygiene, not calculus).
-- **Study groups**: one member makes an Apps Script node, everyone bookmarks one share link with the submit URL baked in, everyone can *Load results from URL* to see the group. Friendly competition included.
-- **Phone use**: the interface is fully responsive; long equations scroll sideways inside their box rather than breaking the page.
-- **Two editions, one app**: the regular file (~0.4 MB) loads its math engine from a CDN — right choice for the hosted site. The **OFFLINE edition** (~2.5 MB, `..._OFFLINE.html`) has the engine *embedded inside the file*: one file, no folders, no internet, ever. Same generators, same seeds → the same seed produces the same quiz in both editions. (The regular file also auto-detects a local `mathjax/tex-svg.js` folder and has a custom-path setting — but if you want offline, just take the OFFLINE file.) Pair it with the local tutor-gateway and the entire stack runs with the wifi off. Regenerate offline editions of any future version with `make_offline_build.py`.
+- **Struggling with a topic?** Take a quiz, miss honestly, then *Try similar questions* — it rebuilds practice from exactly your misses. With an API key, *Ask AI tutor* is smarter still.
+- **Phone use**: the interface is fully responsive; long equations scroll inside their container rather than widening the page.
+- **Two editions, one app**: the regular file (~0.8 MB) loads its math engine from a CDN — right choice for the hosted site. The **OFFLINE edition** (~2.9 MB, `..._OFFLINE.html`) has the engine embedded for fully offline use.
 - **Keep old versions.** Each release keeps its version in the filename. Old links keep working against old files forever — that's a feature.
 
 ## Troubleshooting
 
 - **A share link "does nothing"** → you're on an old app build; reload the page with the link in the address bar, or use the current version's URL.
 - **Submit fails from a local file** → use the hosted link; browsers restrict local pages from calling local network addresses. Or just *Export results (JSON)* and send the file.
-- **AI tutor error** → check the key, check the provider (OpenAI's API blocks direct browser calls — use Anthropic, Gemini, OpenRouter, a local model, or a proxy). The manual export/paste path always works.
-- **AI tutor says "not a valid model ID" / HTTP 400** → on OpenRouter the app auto-converts common names ("Gemini 3.5 Flash" → `google/gemini-3.5-flash`), but the safest inputs are the exact ID from openrouter.ai/models — or leave the Model box blank for the default.
-- **AI tutor says "No endpoints found" / HTTP 404** → the model ID is outdated (models rotate). Look up a current cheap model at your provider (e.g., openrouter.ai/models) and put its exact ID in the Model box.
-- **Math renders as raw `\frac{...}`** → first load needs internet for MathJax; reload once connected.
+- **AI tutor error** → check the key, check the provider (OpenAI's API blocks direct browser calls — use Anthropic, Gemini, OpenRouter, a local model, or a proxy).
+- **Math renders as raw `\\frac{...}`** → first load needs internet for MathJax; reload once connected or use the offline build.
 
 ## What's been verified (and what hasn't)
 
-The v7.0 release contains **81 units and 424 generators**. Its full structural
-self-test completed **10,600 deterministic runs with zero failures**. Independent
-course audits cover **10,752 verified records with zero mismatches**, including
-9,200 MTH 288 records and 700 MTH 289 records. The MTH 289 typed-solution kernel
-also passed mutation testing: valid models were accepted and 2,448 deliberately
-corrupted answers were rejected.
+The v7.x releases contain **81 units and 424 generators**. The v7.0 baseline completed **10,600 deterministic runs with zero failures**. Independent course audits covered **10,752 verified records with zero mismatches**.
 
-The remaining release checks are deliberately human: open the regular and offline
-editions in a real browser, print or save one worksheet as PDF, inspect the phone
-layout, and personally answer five MTH 289 questions. Structural and mathematical
-automation cannot substitute for those interface checks.
+v7.1 is a UI feature release (floating scratchpad) and does **not** add or change generators, seed logic, grading, or result formats. Keep v7.1 and older files alongside any assessment you may need to reproduce later — seeds are version-locked.
 
 ## Data formats (for AI/tool builders)
 
 - `UMWB_BLUEPRINT` — quiz/worksheet recipe (seed, mode, counts, topics, toggles)
 - `mw-quiz-results-v1` — one student's attempt with labeled mistakes
 - `mw-class-results-v1` — aggregated class/group summary
-- `SKILL.md` — the tutor protocol: teaches any LLM to read results, diagnose patterns, and emit valid blueprints. Works as a Claude skill, a custom GPT instruction, or a plain system prompt.
+- `SKILL.md` — the tutor protocol: teaches any LLM to read results, diagnose patterns, and emit valid blueprints.
 
 ---
 
