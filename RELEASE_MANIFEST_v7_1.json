@@ -1,0 +1,36 @@
+{
+  "version": "v7.1.0",
+  "tag": "v7.1.0",
+  "title": "v7.1 — Floating Scratchpad",
+  "date": "2026-08-22T02:50:00Z",
+  "summary": "v7.1 introduces a built-in Floating Scratchpad (pen/eraser/line tools, multiple pages, save PNG, pop-out mode) — UI-only feature; no generator changes.",
+  "files": [
+    {
+      "path": "Math_Worksheet_Builder_v7_1_0_FULL_CATALOG.html",
+      "sha": "0d1fcf4c5e9424802d9d6c405075c795c84b44c8",
+      "size_bytes": 775826
+    },
+    {
+      "path": "Math_Worksheet_Builder_v7_1_0_FULL_CATALOG_OFFLINE.html",
+      "sha": "b76099da0cafbb2cf0b175782c33f9c1b7040448",
+      "size_bytes": 2882067
+    },
+    {
+      "path": "index.html",
+      "sha": "f6cfca7009f4fb585affdd1010d74c191c372b4d",
+      "note": "Updated landing page to v7.1"
+    },
+    {
+      "path": "README.md",
+      "sha": "f5325343e705cd77407518c74ab5b37827d0f93c",
+      "note": "Merged README (2) content and updated for v7.1"
+    }
+  ],
+  "verification": {
+    "generators": 424,
+    "units": 81,
+    "audit_records_verified": 10752,
+    "structural_self_test_runs": 10600
+  },
+  "notes": "v7.1 is a UI-only release. It adds a floating scratchpad and does not change generators, seed logic, grading, or result formats."
+}
