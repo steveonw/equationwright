@@ -36,6 +36,7 @@ REQUIRED = [
     "la_audit.py", "la2_audit.py", "qr_audit.py", "st2_audit.py",
     "hp_audit.py", "s155_audit.py", "s245_audit.py", "p283_audit.py",
     "dm288_audit.py", "de3_audit.py",
+    "gateway/tutor-gateway.exe",
     "gateway/tutor-gateway-main.go",
     "gateway/tutor_gateway.py",
     "gateway/localchat.html",
