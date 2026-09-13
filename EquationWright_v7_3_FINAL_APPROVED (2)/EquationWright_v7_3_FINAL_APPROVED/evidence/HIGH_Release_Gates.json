@@ -1,0 +1,111 @@
+{
+  "format": "equationwright-pass4c-high-return-release-gates-v1",
+  "focusedPass4C": {
+    "passed": 9,
+    "failed": 0,
+    "checks": {
+      "P4C-D1": true,
+      "P4C-D2": true,
+      "P4C-D3": true,
+      "P4C-D4": true,
+      "P4C-D5": true,
+      "P4C-D6": true,
+      "P4C-D7": true,
+      "P4C-D8": true,
+      "P4C-D9": true
+    }
+  },
+  "stage4": {
+    "passed": 72,
+    "failed": 0
+  },
+  "stage3": {
+    "format": "equationwright-pass4b-stage3-62-regression-v1",
+    "passed": 62,
+    "failed": 0,
+    "policy56": {
+      "passed": 56,
+      "failed": 0
+    },
+    "d1d6": {
+      "D1": true,
+      "D2": true,
+      "D3": true,
+      "D4": true,
+      "D5": true,
+      "D6": true
+    }
+  },
+  "math": {
+    "sweep": {
+      "candidate": {
+        "runs": 10600,
+        "errors": [],
+        "hash": 2446488217,
+        "units": 81,
+        "generators": 424
+      },
+      "baseline": {
+        "runs": 10600,
+        "errors": [],
+        "hash": 2446488217,
+        "units": 81,
+        "generators": 424
+      },
+      "same": true
+    },
+    "mc": {
+      "tested": 21200,
+      "nulls": 0,
+      "dups": 0,
+      "badCorrect": 0,
+      "targetMismatch": 0,
+      "provMismatch": 0,
+      "semanticDup": 0,
+      "throws": 0,
+      "genErrors": 0,
+      "errorSamples": []
+    },
+    "suites": {
+      "stats": {
+        "passed": 19,
+        "failed": 0
+      },
+      "logic": {
+        "passed": 15,
+        "failed": 0
+      },
+      "de": {
+        "passed": 17,
+        "failed": 0
+      }
+    },
+    "replay": {
+      "expected": "d289_bvp_dirichlet_eigenvalues",
+      "replay": "d289_bvp_dirichlet_eigenvalues",
+      "issues": [],
+      "runSeed": 987654321
+    },
+    "matrix": {
+      "cases": 38,
+      "bad": []
+    },
+    "pageErrors": {
+      "candidate": [],
+      "baseline": [],
+      "fresh": []
+    }
+  },
+  "offlineParity": {
+    "passed": true,
+    "cases": 38,
+    "badCount": 0
+  },
+  "crossVariantReplay": true,
+  "uiSmoke": true,
+  "reproducible": true,
+  "schemasAndDigests": true,
+  "onlineSha256": "7f8972109d74a7cf4b1f88ca076c84e3d2a118de2e9ce0ef3e4c00a8b56f9f50",
+  "offlineSha256": "3de91648eb8a25959e959edbbe7f60e095a36056138ce0769ca11e954b396a4c",
+  "passed": true
+}

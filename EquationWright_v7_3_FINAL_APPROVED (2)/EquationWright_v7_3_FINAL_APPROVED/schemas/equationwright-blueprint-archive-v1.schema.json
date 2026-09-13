@@ -1,0 +1,659 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://equationwright.org/schemas/equationwright-blueprint-archive-v1.schema.json",
+  "title": "EquationWright Archival Blueprint v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schemaRevision",
+    "blueprint",
+    "source",
+    "archive"
+  ],
+  "properties": {
+    "format": {
+      "const": "equationwright-blueprint-archive-v1"
+    },
+    "schemaRevision": {
+      "const": 1
+    },
+    "blueprint": {
+      "$ref": "#/$defs/slimBlueprint"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "engine",
+        "buildVariant"
+      ],
+      "properties": {
+        "engine": {
+          "$ref": "#/$defs/engineFingerprint"
+        },
+        "buildVariant": {
+          "enum": [
+            "online",
+            "offline"
+          ]
+        },
+        "artifactSha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "sourceRevision": {
+          "type": "string",
+          "maxLength": 240
+        }
+      }
+    },
+    "archive": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "createdAt",
+        "assessmentDigest",
+        "archiveDigest",
+        "items",
+        "presentation"
+      ],
+      "properties": {
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "assessmentDigest": {
+          "$ref": "#/$defs/digest"
+        },
+        "archiveDigest": {
+          "$ref": "#/$defs/digest"
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 250,
+          "items": {
+            "$ref": "#/$defs/archiveItem"
+          }
+        },
+        "presentation": {
+          "$ref": "#/$defs/presentation"
+        }
+      }
+    },
+    "requiresExtensions": {
+      "$ref": "#/$defs/requiresExtensions"
+    },
+    "extensions": {
+      "$ref": "#/$defs/extensions"
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "lowerId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._:-]{0,127}$"
+    },
+    "digest": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "compatibilityId": {
+      "type": "string",
+      "pattern": "^ewac:sha256:[0-9a-f]{64}$"
+    },
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "shortText": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 240
+    },
+    "identifierMapString": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/$defs/id"
+      },
+      "additionalProperties": {
+        "type": "string",
+        "maxLength": 240
+      }
+    },
+    "engineFingerprint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "appVersion",
+        "assessmentCompatibilityId",
+        "determinismProtocol",
+        "catalogDigest"
+      ],
+      "properties": {
+        "appVersion": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "assessmentCompatibilityId": {
+          "$ref": "#/$defs/compatibilityId"
+        },
+        "determinismProtocol": {
+          "const": "equationwright-determinism-v1"
+        },
+        "catalogDigest": {
+          "$ref": "#/$defs/digest"
+        }
+      }
+    },
+    "extensions": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+      },
+      "additionalProperties": true
+    },
+    "requiresExtensions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/id"
+      },
+      "uniqueItems": true
+    },
+    "curriculumRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "profileId",
+        "profileVersion",
+        "profileDigest",
+        "courseId"
+      ],
+      "properties": {
+        "profileId": {
+          "$ref": "#/$defs/lowerId"
+        },
+        "profileVersion": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "profileDigest": {
+          "$ref": "#/$defs/digest"
+        },
+        "courseId": {
+          "$ref": "#/$defs/lowerId"
+        },
+        "legacyMode": {
+          "$ref": "#/$defs/id"
+        }
+      }
+    },
+    "pages": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "answers",
+        "workedSolutions"
+      ],
+      "properties": {
+        "answers": {
+          "type": "boolean"
+        },
+        "workedSolutions": {
+          "type": "boolean"
+        }
+      }
+    },
+    "assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "seed",
+        "quizMode",
+        "variety",
+        "unitOrder",
+        "counts",
+        "topicFilters",
+        "pages"
+      ],
+      "properties": {
+        "seed": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "quizMode": {
+          "type": "boolean"
+        },
+        "variety": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "unitOrder": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 500,
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "counts": {
+          "type": "object",
+          "minProperties": 1,
+          "maxProperties": 500,
+          "propertyNames": {
+            "$ref": "#/$defs/id"
+          },
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100
+          }
+        },
+        "topicFilters": {
+          "type": "object",
+          "propertyNames": {
+            "$ref": "#/$defs/id"
+          },
+          "additionalProperties": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 200,
+            "items": {
+              "$ref": "#/$defs/id"
+            },
+            "uniqueItems": true
+          }
+        },
+        "pages": {
+          "$ref": "#/$defs/pages"
+        }
+      }
+    },
+    "delivery": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "classId": {
+          "type": "string",
+          "maxLength": 240
+        },
+        "assignmentId": {
+          "type": "string",
+          "maxLength": 240
+        },
+        "submitUrl": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2048
+        },
+        "studentLock": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "algorithm",
+            "hash"
+          ],
+          "properties": {
+            "algorithm": {
+              "const": "fnv1a-32-v1"
+            },
+            "hash": {
+              "type": "string",
+              "pattern": "^\\d{1,10}$"
+            }
+          }
+        }
+      }
+    },
+    "slimBlueprint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "format",
+        "schemaRevision",
+        "engine",
+        "curriculum",
+        "assessment"
+      ],
+      "properties": {
+        "format": {
+          "const": "equationwright-blueprint-slim-v1"
+        },
+        "schemaRevision": {
+          "const": 1
+        },
+        "engine": {
+          "$ref": "#/$defs/engineFingerprint"
+        },
+        "curriculum": {
+          "$ref": "#/$defs/curriculumRef"
+        },
+        "assessment": {
+          "$ref": "#/$defs/assessment"
+        },
+        "delivery": {
+          "$ref": "#/$defs/delivery"
+        },
+        "requiresExtensions": {
+          "$ref": "#/$defs/requiresExtensions"
+        },
+        "extensions": {
+          "$ref": "#/$defs/extensions"
+        }
+      }
+    },
+    "expected": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "question",
+        "answer",
+        "steps"
+      ],
+      "properties": {
+        "question": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "answer": {
+          "type": "string",
+          "maxLength": 20000
+        },
+        "steps": {
+          "type": "array",
+          "maxItems": 100,
+          "items": {
+            "type": "string",
+            "maxLength": 20000
+          }
+        },
+        "choices": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 4,
+          "items": {
+            "type": "string",
+            "maxLength": 20000
+          }
+        },
+        "correctIndex": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "semanticSnapshot": {
+          "type": [
+            "object",
+            "null"
+          ]
+        }
+      }
+    },
+    "choiceReplay": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "position",
+        "role",
+        "origin"
+      ],
+      "properties": {
+        "position": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "role": {
+          "enum": [
+            "correct",
+            "distractor"
+          ]
+        },
+        "origin": {
+          "enum": [
+            "correct",
+            "authored-trap",
+            "generator"
+          ]
+        },
+        "sourceGeneratorId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/lowerId"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sourceRuntimeIndex": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "sourceProblemKey": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 240
+        },
+        "sourceSeed": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 1024
+        },
+        "trapIndex": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "semanticKey": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "maxLength": 2048
+        }
+      }
+    },
+    "mcReplay": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "choicePolicy",
+        "initialTargetChoiceCount",
+        "targetChoiceCount",
+        "actualChoiceCount",
+        "correctIndex",
+        "shuffleOrder",
+        "choices"
+      ],
+      "properties": {
+        "choicePolicy": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "initialTargetChoiceCount": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 4
+        },
+        "targetChoiceCount": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 4
+        },
+        "actualChoiceCount": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 4
+        },
+        "correctIndex": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "shuffleOrder": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 4,
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 3
+          },
+          "uniqueItems": true
+        },
+        "semanticValidated": {
+          "type": "boolean"
+        },
+        "choices": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 4,
+          "items": {
+            "$ref": "#/$defs/choiceReplay"
+          }
+        }
+      }
+    },
+    "archiveItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "n",
+        "unitId",
+        "generatorId",
+        "runtimeIndex",
+        "problemKey",
+        "itemSeed",
+        "vector",
+        "topicId",
+        "type",
+        "expected"
+      ],
+      "properties": {
+        "n": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 250
+        },
+        "unitId": {
+          "$ref": "#/$defs/id"
+        },
+        "generatorId": {
+          "$ref": "#/$defs/lowerId"
+        },
+        "runtimeIndex": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "problemKey": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "itemSeed": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1024
+        },
+        "vector": {
+          "type": "array",
+          "maxItems": 256,
+          "items": {
+            "anyOf": [
+              {
+                "type": [
+                  "string",
+                  "number",
+                  "integer",
+                  "boolean",
+                  "null"
+                ]
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": [
+                    "string",
+                    "number",
+                    "integer",
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "maxItems": 256
+              }
+            ]
+          }
+        },
+        "topicId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "type": {
+          "enum": [
+            "fr",
+            "mc"
+          ]
+        },
+        "expected": {
+          "$ref": "#/$defs/expected"
+        },
+        "mc": {
+          "$ref": "#/$defs/mcReplay"
+        }
+      }
+    },
+    "presentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "courseLabel",
+        "unitLabels",
+        "topicLabels"
+      ],
+      "properties": {
+        "courseLabel": {
+          "type": "string",
+          "maxLength": 240
+        },
+        "unitLabels": {
+          "$ref": "#/$defs/identifierMapString"
+        },
+        "topicLabels": {
+          "type": "object",
+          "propertyNames": {
+            "$ref": "#/$defs/id"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/identifierMapString"
+          }
+        }
+      }
+    }
+  }
+}

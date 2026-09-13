@@ -1,0 +1,110 @@
+{
+  "format": "equationwright-blueprint-archive-v1",
+  "schemaRevision": 1,
+  "blueprint": {
+    "format": "equationwright-blueprint-slim-v1",
+    "schemaRevision": 1,
+    "engine": {
+      "appVersion": "v7.2_full_catalog_scratchpad",
+      "assessmentCompatibilityId": "ewac:sha256:e4ae4d1eb025c567effa7c4c242e2f4f0b4cfff93cba5fa66de8c51d379a55af",
+      "determinismProtocol": "equationwright-determinism-v1",
+      "catalogDigest": "sha256:4cb338d5f4c2acb69fc9ec12cc6404e845180cc21264c12d8f1453ceccd3c1c2"
+    },
+    "curriculum": {
+      "profileId": "org.equationwright.generic",
+      "profileVersion": "1.0.0",
+      "profileDigest": "sha256:3801744e2f6c4e9b314f0d96a36c732450f3a66880616fbf4f1cfe1b0023f7eb",
+      "courseId": "precalculus-1",
+      "legacyMode": "CA"
+    },
+    "assessment": {
+      "seed": "Protocol-Example-42",
+      "quizMode": false,
+      "variety": 2,
+      "unitOrder": [
+        "CA_Linear",
+        "CA_Quadratics"
+      ],
+      "counts": {
+        "CA_Linear": 1,
+        "CA_Quadratics": 1
+      },
+      "topicFilters": {},
+      "pages": {
+        "answers": true,
+        "workedSolutions": true
+      }
+    }
+  },
+  "source": {
+    "engine": {
+      "appVersion": "v7.2_full_catalog_scratchpad",
+      "assessmentCompatibilityId": "ewac:sha256:e4ae4d1eb025c567effa7c4c242e2f4f0b4cfff93cba5fa66de8c51d379a55af",
+      "determinismProtocol": "equationwright-determinism-v1",
+      "catalogDigest": "sha256:4cb338d5f4c2acb69fc9ec12cc6404e845180cc21264c12d8f1453ceccd3c1c2"
+    },
+    "buildVariant": "online",
+    "artifactSha256": "sha256:12161672ade93adfadbd0393a37b47b28b595fc1f788bfae42d75f0ffda2a1d3",
+    "sourceRevision": "approved-v7.2-design-baseline"
+  },
+  "archive": {
+    "createdAt": "2026-09-02T00:00:00Z",
+    "assessmentDigest": "sha256:ea5b6b4c277b3a85df23e93bede3f59cedc2d3ea6185fe64d2ccaf1c31e9ffff",
+    "archiveDigest": "sha256:ede380a100cf20e65f8bee1241a013c4c657eb1065d37f329282c50b71b7ba97",
+    "items": [
+      {
+        "n": 1,
+        "unitId": "CA_Linear",
+        "generatorId": "ewg.ca_linear.001",
+        "runtimeIndex": 0,
+        "problemKey": "ca_linear_solve",
+        "itemSeed": "Protocol-Archive|CA_Linear|slot0|try0",
+        "vector": [
+          51,
+          1,
+          2,
+          -4,
+          1,
+          10
+        ],
+        "topicId": "solve",
+        "type": "fr",
+        "expected": {
+          "question": "Solve for \\(x\\): \\(2x + -4 = 1x + 10\\).",
+          "answer": "\\(x = 14\\)",
+          "steps": []
+        }
+      },
+      {
+        "n": 2,
+        "unitId": "CA_Quadratics",
+        "generatorId": "ewg.ca_quadratics.001",
+        "runtimeIndex": 0,
+        "problemKey": "ca_quad_graph_identify",
+        "itemSeed": "Protocol-Archive|CA_Quadratics|slot0|try0",
+        "vector": [
+          52,
+          9,
+          2,
+          -3,
+          3
+        ],
+        "topicId": "graph",
+        "type": "fr",
+        "expected": {
+          "question": "Which function matches this graph? (vertex marked, gridlines every 1 unit)<br><br><svg width=\"180\" height=\"180\" viewBox=",
+          "answer": "\\(y=2(x+3)^2+3\\)",
+          "steps": []
+        }
+      }
+    ],
+    "presentation": {
+      "courseLabel": "Precalculus I",
+      "unitLabels": {
+        "CA_Linear": "Linear Equations & Inequalities",
+        "CA_Quadratics": "Quadratic Functions"
+      },
+      "topicLabels": {}
+    }
+  }
+}

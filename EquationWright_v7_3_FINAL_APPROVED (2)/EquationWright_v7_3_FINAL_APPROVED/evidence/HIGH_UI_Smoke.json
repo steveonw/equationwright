@@ -1,0 +1,38 @@
+{
+  "teacherInitial": true,
+  "student": true,
+  "teacherReturn": true,
+  "quiz": {
+    "count": 3,
+    "mc": true,
+    "actions": true,
+    "score": true
+  },
+  "scratchOpen": true,
+  "scratchClosed": true,
+  "print": {
+    "called": true,
+    "questions": true
+  },
+  "printCss": true,
+  "localAI": {
+    "seen": {
+      "url": "http://127.0.0.1:11434/v1/chat/completions",
+      "auth": null
+    },
+    "reply": {
+      "diagnosis": "Local smoke ok",
+      "blueprint": null
+    },
+    "err": null
+  },
+  "aiUI": true,
+  "mobile": {
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scratchLaunch": true,
+    "genVisible": true
+  },
+  "pageErrors": [],
+  "passed": true
+}

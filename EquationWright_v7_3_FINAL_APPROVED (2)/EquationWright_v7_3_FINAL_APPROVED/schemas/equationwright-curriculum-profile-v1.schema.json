@@ -1,0 +1,311 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://equationwright.org/schemas/equationwright-curriculum-profile-v1.schema.json",
+  "title": "EquationWright Curriculum Profile v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schemaRevision",
+    "profileId",
+    "profileVersion",
+    "profileDigest",
+    "label",
+    "locale",
+    "catalogDigest",
+    "courses",
+    "crosswalks"
+  ],
+  "properties": {
+    "format": {
+      "const": "equationwright-curriculum-profile-v1"
+    },
+    "schemaRevision": {
+      "const": 1
+    },
+    "profileId": {
+      "$ref": "#/$defs/lowerId"
+    },
+    "profileVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "profileDigest": {
+      "$ref": "#/$defs/digest"
+    },
+    "label": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 240
+    },
+    "locale": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 35
+    },
+    "catalogDigest": {
+      "$ref": "#/$defs/digest"
+    },
+    "institution": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "system": {
+          "type": "string",
+          "maxLength": 240
+        },
+        "institution": {
+          "type": "string",
+          "maxLength": 240
+        },
+        "country": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        }
+      }
+    },
+    "courses": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 200,
+      "items": {
+        "$ref": "#/$defs/course"
+      }
+    },
+    "crosswalks": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "$ref": "#/$defs/crosswalk"
+      }
+    },
+    "requiresExtensions": {
+      "$ref": "#/$defs/requiresExtensions"
+    },
+    "extensions": {
+      "$ref": "#/$defs/extensions"
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "lowerId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._:-]{0,127}$"
+    },
+    "digest": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "compatibilityId": {
+      "type": "string",
+      "pattern": "^ewac:sha256:[0-9a-f]{64}$"
+    },
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "shortText": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 240
+    },
+    "identifierMapString": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/$defs/id"
+      },
+      "additionalProperties": {
+        "type": "string",
+        "maxLength": 240
+      }
+    },
+    "engineFingerprint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "appVersion",
+        "assessmentCompatibilityId",
+        "determinismProtocol",
+        "catalogDigest"
+      ],
+      "properties": {
+        "appVersion": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "assessmentCompatibilityId": {
+          "$ref": "#/$defs/compatibilityId"
+        },
+        "determinismProtocol": {
+          "const": "equationwright-determinism-v1"
+        },
+        "catalogDigest": {
+          "$ref": "#/$defs/digest"
+        }
+      }
+    },
+    "extensions": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+      },
+      "additionalProperties": true
+    },
+    "requiresExtensions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/id"
+      },
+      "uniqueItems": true
+    },
+    "course": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "courseId",
+        "title",
+        "legacyModeAliases",
+        "unitOrder",
+        "defaultCounts"
+      ],
+      "properties": {
+        "courseId": {
+          "$ref": "#/$defs/lowerId"
+        },
+        "code": {
+          "type": "string",
+          "maxLength": 80
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 2000
+        },
+        "legacyModeAliases": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "unitOrder": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 500,
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "defaultCounts": {
+          "type": "object",
+          "propertyNames": {
+            "$ref": "#/$defs/id"
+          },
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          }
+        },
+        "unitLabelOverrides": {
+          "$ref": "#/$defs/identifierMapString"
+        },
+        "topicLabelOverrides": {
+          "type": "object",
+          "propertyNames": {
+            "$ref": "#/$defs/id"
+          },
+          "additionalProperties": {
+            "$ref": "#/$defs/identifierMapString"
+          }
+        }
+      }
+    },
+    "crosswalk": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frameworkId",
+        "frameworkVersion",
+        "entries"
+      ],
+      "properties": {
+        "frameworkId": {
+          "$ref": "#/$defs/lowerId"
+        },
+        "frameworkVersion": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "entries": {
+          "type": "array",
+          "maxItems": 2000,
+          "items": {
+            "$ref": "#/$defs/crosswalkEntry"
+          }
+        }
+      }
+    },
+    "crosswalkEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceCourseId",
+        "targetCourseId",
+        "coverage",
+        "unitIds"
+      ],
+      "properties": {
+        "sourceCourseId": {
+          "$ref": "#/$defs/lowerId"
+        },
+        "targetCourseId": {
+          "$ref": "#/$defs/lowerId"
+        },
+        "coverage": {
+          "enum": [
+            "equivalent",
+            "primary",
+            "supporting",
+            "reference"
+          ]
+        },
+        "unitIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "unitTopics": {
+          "type": "object",
+          "propertyNames": {
+            "$ref": "#/$defs/id"
+          },
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/id"
+            },
+            "uniqueItems": true
+          }
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 2000
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://equationwright.org/schemas/equationwright-blueprint-slim-v1.schema.json",
+  "title": "EquationWright Slim Blueprint v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schemaRevision",
+    "engine",
+    "curriculum",
+    "assessment"
+  ],
+  "properties": {
+    "format": {
+      "const": "equationwright-blueprint-slim-v1"
+    },
+    "schemaRevision": {
+      "const": 1
+    },
+    "engine": {
+      "$ref": "#/$defs/engineFingerprint"
+    },
+    "curriculum": {
+      "$ref": "#/$defs/curriculumRef"
+    },
+    "assessment": {
+      "$ref": "#/$defs/assessment"
+    },
+    "delivery": {
+      "$ref": "#/$defs/delivery"
+    },
+    "requiresExtensions": {
+      "$ref": "#/$defs/requiresExtensions"
+    },
+    "extensions": {
+      "$ref": "#/$defs/extensions"
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "lowerId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._:-]{0,127}$"
+    },
+    "digest": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "compatibilityId": {
+      "type": "string",
+      "pattern": "^ewac:sha256:[0-9a-f]{64}$"
+    },
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "shortText": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 240
+    },
+    "identifierMapString": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/$defs/id"
+      },
+      "additionalProperties": {
+        "type": "string",
+        "maxLength": 240
+      }
+    },
+    "engineFingerprint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "appVersion",
+        "assessmentCompatibilityId",
+        "determinismProtocol",
+        "catalogDigest"
+      ],
+      "properties": {
+        "appVersion": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "assessmentCompatibilityId": {
+          "$ref": "#/$defs/compatibilityId"
+        },
+        "determinismProtocol": {
+          "const": "equationwright-determinism-v1"
+        },
+        "catalogDigest": {
+          "$ref": "#/$defs/digest"
+        }
+      }
+    },
+    "extensions": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+      },
+      "additionalProperties": true
+    },
+    "requiresExtensions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/id"
+      },
+      "uniqueItems": true
+    },
+    "curriculumRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "profileId",
+        "profileVersion",
+        "profileDigest",
+        "courseId"
+      ],
+      "properties": {
+        "profileId": {
+          "$ref": "#/$defs/lowerId"
+        },
+        "profileVersion": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "profileDigest": {
+          "$ref": "#/$defs/digest"
+        },
+        "courseId": {
+          "$ref": "#/$defs/lowerId"
+        },
+        "legacyMode": {
+          "$ref": "#/$defs/id"
+        }
+      }
+    },
+    "pages": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "answers",
+        "workedSolutions"
+      ],
+      "properties": {
+        "answers": {
+          "type": "boolean"
+        },
+        "workedSolutions": {
+          "type": "boolean"
+        }
+      }
+    },
+    "assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "seed",
+        "quizMode",
+        "variety",
+        "unitOrder",
+        "counts",
+        "topicFilters",
+        "pages"
+      ],
+      "properties": {
+        "seed": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "quizMode": {
+          "type": "boolean"
+        },
+        "variety": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3
+        },
+        "unitOrder": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 500,
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "counts": {
+          "type": "object",
+          "minProperties": 1,
+          "maxProperties": 500,
+          "propertyNames": {
+            "$ref": "#/$defs/id"
+          },
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100
+          }
+        },
+        "topicFilters": {
+          "type": "object",
+          "propertyNames": {
+            "$ref": "#/$defs/id"
+          },
+          "additionalProperties": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 200,
+            "items": {
+              "$ref": "#/$defs/id"
+            },
+            "uniqueItems": true
+          }
+        },
+        "pages": {
+          "$ref": "#/$defs/pages"
+        }
+      }
+    },
+    "delivery": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "classId": {
+          "type": "string",
+          "maxLength": 240
+        },
+        "assignmentId": {
+          "type": "string",
+          "maxLength": 240
+        },
+        "submitUrl": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2048
+        },
+        "studentLock": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "algorithm",
+            "hash"
+          ],
+          "properties": {
+            "algorithm": {
+              "const": "fnv1a-32-v1"
+            },
+            "hash": {
+              "type": "string",
+              "pattern": "^\\d{1,10}$"
+            }
+          }
+        }
+      }
+    }
+  }
+}

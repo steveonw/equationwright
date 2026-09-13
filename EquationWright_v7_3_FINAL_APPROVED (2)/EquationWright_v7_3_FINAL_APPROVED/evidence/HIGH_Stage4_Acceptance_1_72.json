@@ -1,0 +1,870 @@
+{
+  "format": "equationwright-pass4b-high-stage4-acceptance-v1",
+  "candidate": "Math_Worksheet_Builder_v7_3_0_FULL_CATALOG.html",
+  "candidateSha256": "7f8972109d74a7cf4b1f88ca076c84e3d2a118de2e9ce0ef3e4c00a8b56f9f50",
+  "passed": 72,
+  "failed": 0,
+  "cases": [
+    {
+      "n": 1,
+      "area": "capabilities",
+      "severity": "P0",
+      "name": "Manifest schema validates",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "n": 2,
+      "area": "capabilities",
+      "severity": "P0",
+      "name": "Live counts match",
+      "pass": true,
+      "detail": {
+        "unitCount": 81,
+        "generatorFamilyCount": 424,
+        "topicCount": 317
+      }
+    },
+    {
+      "n": 3,
+      "area": "capabilities",
+      "severity": "P0",
+      "name": "Generator IDs are complete and unique",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 4,
+      "area": "capabilities",
+      "severity": "P0",
+      "name": "Unit/runtime mapping is truthful",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 5,
+      "area": "capabilities",
+      "severity": "P1",
+      "name": "Variable problem keys are represented honestly",
+      "pass": true,
+      "detail": [
+        [
+          "ewg.ca_rational.004",
+          [
+            "ca_rational_horiz_higher",
+            "ca_rational_horiz_lower",
+            "ca_rational_horiz_same"
+          ]
+        ],
+        [
+          "ewg.ca_systems.001",
+          [
+            "ca_gauss_infinite_clean",
+            "ca_gauss_none_clean",
+            "ca_gauss_unique"
+          ]
+        ],
+        [
+          "ewg.trig_identities.004",
+          [
+            "trig_pythag_cos_to_sin",
+            "trig_pythag_sin_to_cos"
+          ]
+        ],
+        [
+          "ewg.pc_conics.005",
+          [
+            "pc_hyperbola_horiz",
+            "pc_hyperbola_vert"
+          ]
+        ],
+        [
+          "ewg.c1_apps.001",
+          [
+            "c1_linearization_exp",
+            "c1_linearization_poly",
+            "c1_linearization_sqrt",
+            "c1_linearization_trig"
+          ]
+        ],
+        [
+          "ewg.c2_improper.001",
+          [
+            "c2_p_integral",
+            "c2_p_integral_val"
+          ]
+        ],
+        [
+          "ewg.c2_series.001",
+          [
+            "c2_limit_comparison_clean",
+            "c2_ratio_cn_over_fact",
+            "c2_ratio_fact_over_cn",
+            "c2_root_npqn"
+          ]
+        ],
+        [
+          "ewg.c2_series.010",
+          [
+            "c2_maclaurin_cos_4terms",
+            "c2_maclaurin_sin_4terms"
+          ]
+        ],
+        [
+          "ewg.c2_appsint.001",
+          [
+            "c2_volume_disk_fallback_from_washer",
+            "c2_volume_disk_poly",
+            "c2_volume_shell_poly",
+            "c2_volume_washer_poly"
+          ]
+        ],
+        [
+          "ewg.c3_multint.001",
+          [
+            "c3_polar_jacobian_area_disk",
+            "c3_polar_jacobian_r2_disk"
+          ]
+        ]
+      ]
+    },
+    {
+      "n": 6,
+      "area": "capabilities",
+      "severity": "P1",
+      "name": "Unit-scoped topics are preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 7,
+      "area": "capabilities",
+      "severity": "P1",
+      "name": "Trap support is discoverable",
+      "pass": true,
+      "detail": {
+        "observedTrapFamilies": 271
+      }
+    },
+    {
+      "n": 8,
+      "area": "capabilities",
+      "severity": "P1",
+      "name": "Semantic contracts are discoverable",
+      "pass": true,
+      "detail": [
+        "ewg.dm_logic.001",
+        "ewg.dm_logic.002",
+        "ewg.d289_firstorder.001",
+        "ewg.d289_firstorder.002"
+      ]
+    },
+    {
+      "n": 9,
+      "area": "capabilities",
+      "severity": "P1",
+      "name": "Capacity metadata is labeled observed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 10,
+      "area": "capabilities",
+      "severity": "P0",
+      "name": "Determinism algorithms are named",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 11,
+      "area": "capabilities",
+      "severity": "P0",
+      "name": "Assessment compatibility is build-variant independent",
+      "pass": true,
+      "detail": {
+        "id": "equationwright",
+        "appVersion": "v7.3_full_catalog_protocols",
+        "assessmentCompatibilityId": "ewac:sha256:2606c2ac96fc8ac65e9705e46f68a1ae5d757d6a5454ca2ace74aee7b8f9dbe7",
+        "buildVariant": "online",
+        "catalogDigest": "sha256:4cb338d5f4c2acb69fc9ec12cc6404e845180cc21264c12d8f1453ceccd3c1c2"
+      }
+    },
+    {
+      "n": 12,
+      "area": "capabilities",
+      "severity": "P1",
+      "name": "Supported formats are explicit",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 13,
+      "area": "capabilities",
+      "severity": "P1",
+      "name": "Feature and limit discovery is complete",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 14,
+      "area": "capabilities",
+      "severity": "P1",
+      "name": "Manifest output is deterministic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 15,
+      "area": "diagnostics",
+      "severity": "P0",
+      "name": "Normal result export stays lean",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 16,
+      "area": "diagnostics",
+      "severity": "P1",
+      "name": "Diagnostics require explicit opt-in",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 17,
+      "area": "diagnostics",
+      "severity": "P0",
+      "name": "Every item has exact generator provenance",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 18,
+      "area": "diagnostics",
+      "severity": "P1",
+      "name": "Output digests are reproducible",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 19,
+      "area": "diagnostics",
+      "severity": "P0",
+      "name": "MC provenance follows final order",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 20,
+      "area": "diagnostics",
+      "severity": "P1",
+      "name": "Authored trap provenance is explicit",
+      "pass": true,
+      "detail": {
+        "unitId": "HP_Conversion",
+        "generatorId": "ewg.hp_conversion.001",
+        "hit": {
+          "position": 2,
+          "role": "distractor",
+          "origin": "authored-trap",
+          "sourceGeneratorId": "ewg.hp_conversion.001",
+          "sourceRuntimeIndex": 0,
+          "sourceProblemKey": "hp_metric_convert",
+          "sourceSeed": "P4B-TRAP-0|HP_Conversion|slot0|try0|mc|trap1",
+          "trapIndex": 0,
+          "semanticKey": null
+        },
+        "choices": [
+          "8000 mcg",
+          "2.5 L",
+          "0.008 mcg",
+          "800 mcg"
+        ],
+        "correctIndex": 0
+      }
+    },
+    {
+      "n": 21,
+      "area": "diagnostics",
+      "severity": "P1",
+      "name": "Semantic provenance is optional and valid",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 22,
+      "area": "diagnostics",
+      "severity": "P0",
+      "name": "Diagnostics contain no credentials or routing secrets",
+      "pass": true,
+      "detail": {
+        "class": false,
+        "assign": false,
+        "submit": false,
+        "auth": false,
+        "api": false
+      }
+    },
+    {
+      "n": 23,
+      "area": "diagnostics",
+      "severity": "P1",
+      "name": "Old result readers remain compatible",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 24,
+      "area": "diagnostics",
+      "severity": "P0",
+      "name": "Diagnostic replay path reproduces item and distractors",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "format": "equationwright-diagnostic-replay-result-v1",
+        "items": 3,
+        "mismatches": []
+      }
+    },
+    {
+      "n": 25,
+      "area": "diagnostics",
+      "severity": "P1",
+      "name": "Class summaries stay aggregate-only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 26,
+      "area": "blueprints",
+      "severity": "P0",
+      "name": "Slim blueprint schema validates",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "n": 27,
+      "area": "blueprints",
+      "severity": "P0",
+      "name": "Slim assessment is authoritative",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 28,
+      "area": "blueprints",
+      "severity": "P1",
+      "name": "Slim blueprint is canonical and small",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 29,
+      "area": "blueprints",
+      "severity": "P0",
+      "name": "Delivery metadata is separated",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 30,
+      "area": "blueprints",
+      "severity": "P0",
+      "name": "External submit URL still requires consent",
+      "pass": true,
+      "detail": {
+        "external": "blueprint",
+        "confirmed": null
+      }
+    },
+    {
+      "n": 31,
+      "area": "blueprints",
+      "severity": "P1",
+      "name": "Saved library uses slim format",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 32,
+      "area": "blueprints",
+      "severity": "P1",
+      "name": "Share and locked links use slim format",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 33,
+      "area": "blueprints",
+      "severity": "P1",
+      "name": "Legacy UMWB_BLUEPRINT remains readable",
+      "pass": true,
+      "detail": {
+        "applyReturn": null,
+        "equal": true
+      }
+    },
+    {
+      "n": 34,
+      "area": "blueprints",
+      "severity": "P0",
+      "name": "Archive schema validates",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "n": 35,
+      "area": "blueprints",
+      "severity": "P0",
+      "name": "Archive embeds one slim blueprint",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 36,
+      "area": "blueprints",
+      "severity": "P0",
+      "name": "Archive item snapshots are complete",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 37,
+      "area": "blueprints",
+      "severity": "P1",
+      "name": "Archive presentation is separable",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 38,
+      "area": "blueprints",
+      "severity": "P0",
+      "name": "Archive and assessment digests are canonical",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 39,
+      "area": "blueprints",
+      "severity": "P1",
+      "name": "Archive routing is safe by default",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 40,
+      "area": "replay",
+      "severity": "P0",
+      "name": "Strict replay report schema validates",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "n": 41,
+      "area": "replay",
+      "severity": "P0",
+      "name": "Compatible archive replays exactly",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 42,
+      "area": "replay",
+      "severity": "P0",
+      "name": "Online/offline strict replay is equivalent",
+      "pass": true,
+      "detail": "deferred to online/offline build parity case 69"
+    },
+    {
+      "n": 43,
+      "area": "replay",
+      "severity": "P0",
+      "name": "Strict mode refuses incompatible engine silently changing math",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 44,
+      "area": "replay",
+      "severity": "P1",
+      "name": "Verify-current is explicit and honest",
+      "pass": true,
+      "detail": {
+        "format": "equationwright-replay-report-v1",
+        "schemaRevision": 1,
+        "mode": "verify-current",
+        "status": "verified-exact",
+        "guarantee": "verified",
+        "assessmentExact": true,
+        "presentationExact": true,
+        "sourceEngine": {
+          "appVersion": "v7.3_full_catalog_protocols",
+          "assessmentCompatibilityId": "ewac:sha256:0000000000000000000000000000000000000000000000000000000000000000",
+          "determinismProtocol": "equationwright-determinism-v1",
+          "catalogDigest": "sha256:4cb338d5f4c2acb69fc9ec12cc6404e845180cc21264c12d8f1453ceccd3c1c2"
+        },
+        "runtimeEngine": {
+          "appVersion": "v7.3_full_catalog_protocols",
+          "assessmentCompatibilityId": "ewac:sha256:2606c2ac96fc8ac65e9705e46f68a1ae5d757d6a5454ca2ace74aee7b8f9dbe7",
+          "determinismProtocol": "equationwright-determinism-v1",
+          "catalogDigest": "sha256:4cb338d5f4c2acb69fc9ec12cc6404e845180cc21264c12d8f1453ceccd3c1c2"
+        },
+        "replayedItemCount": 3,
+        "mismatches": [],
+        "warnings": []
+      }
+    },
+    {
+      "n": 45,
+      "area": "replay",
+      "severity": "P0",
+      "name": "No silent seed-only fallback",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 46,
+      "area": "replay",
+      "severity": "P0",
+      "name": "Generator lookup uses stable ID",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 47,
+      "area": "replay",
+      "severity": "P0",
+      "name": "Missing generator reports exact cause",
+      "pass": true,
+      "detail": {
+        "format": "equationwright-replay-report-v1",
+        "schemaRevision": 1,
+        "mode": "strict",
+        "status": "mismatch",
+        "guarantee": "none",
+        "assessmentExact": false,
+        "presentationExact": true,
+        "sourceEngine": {
+          "appVersion": "v7.3_full_catalog_protocols",
+          "assessmentCompatibilityId": "ewac:sha256:2606c2ac96fc8ac65e9705e46f68a1ae5d757d6a5454ca2ace74aee7b8f9dbe7",
+          "determinismProtocol": "equationwright-determinism-v1",
+          "catalogDigest": "sha256:4cb338d5f4c2acb69fc9ec12cc6404e845180cc21264c12d8f1453ceccd3c1c2"
+        },
+        "runtimeEngine": {
+          "appVersion": "v7.3_full_catalog_protocols",
+          "assessmentCompatibilityId": "ewac:sha256:2606c2ac96fc8ac65e9705e46f68a1ae5d757d6a5454ca2ace74aee7b8f9dbe7",
+          "determinismProtocol": "equationwright-determinism-v1",
+          "catalogDigest": "sha256:4cb338d5f4c2acb69fc9ec12cc6404e845180cc21264c12d8f1453ceccd3c1c2"
+        },
+        "replayedItemCount": 3,
+        "mismatches": [
+          {
+            "code": "generator-missing",
+            "path": "$.archive.items[0].generatorId",
+            "message": "Generator ewg.missing.999 is not present.",
+            "itemNumber": 1,
+            "expected": "ewg.missing.999",
+            "actual": null
+          }
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "n": 48,
+      "area": "replay",
+      "severity": "P1",
+      "name": "Index and problem-key mismatches are distinguished",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 49,
+      "area": "replay",
+      "severity": "P0",
+      "name": "Item output mismatches are field-specific",
+      "pass": true,
+      "detail": {
+        "seed": [
+          "item-seed-mismatch",
+          "vector-mismatch",
+          "question-mismatch",
+          "answer-mismatch",
+          "steps-mismatch",
+          "choice-text-mismatch",
+          "shuffle-order-mismatch",
+          "distractor-provenance-mismatch"
+        ],
+        "vector": [
+          "vector-mismatch"
+        ],
+        "topic": [
+          "topic-mismatch"
+        ],
+        "question": [
+          "question-mismatch"
+        ],
+        "answer": [
+          "answer-mismatch"
+        ],
+        "steps": [
+          "steps-mismatch"
+        ],
+        "semantic": [
+          "semantic-snapshot-mismatch"
+        ]
+      }
+    },
+    {
+      "n": 50,
+      "area": "replay",
+      "severity": "P0",
+      "name": "MC mismatch reporting is complete",
+      "pass": true,
+      "detail": {
+        "choiceCount": [
+          "choice-count-mismatch",
+          "distractor-provenance-mismatch"
+        ],
+        "choiceText": [
+          "choice-text-mismatch",
+          "distractor-provenance-mismatch"
+        ],
+        "correct": [
+          "correct-index-mismatch"
+        ],
+        "shuffle": [
+          "shuffle-order-mismatch"
+        ],
+        "prov": [
+          "distractor-provenance-mismatch"
+        ]
+      }
+    },
+    {
+      "n": 51,
+      "area": "replay",
+      "severity": "P1",
+      "name": "Assessment and presentation exactness are separate",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 52,
+      "area": "replay",
+      "severity": "P1",
+      "name": "Archived snapshot may be viewed read-only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 53,
+      "area": "replay",
+      "severity": "P0",
+      "name": "Same-fingerprint mismatch is a release blocker",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 54,
+      "area": "replay",
+      "severity": "P1",
+      "name": "Legacy picks get bounded compatibility",
+      "pass": true,
+      "detail": {
+        "applyReturn": null,
+        "equal": true,
+        "note": "legacy works through normal adapter; no strict v1 report is produced"
+      }
+    },
+    {
+      "n": 55,
+      "area": "profiles",
+      "severity": "P0",
+      "name": "Generic profile validates",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 56,
+      "area": "profiles",
+      "severity": "P0",
+      "name": "VCCS/NVCC profile validates",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 57,
+      "area": "profiles",
+      "severity": "P0",
+      "name": "Profile is presentation/selection only",
+      "pass": true,
+      "detail": "validator rejects executable/math behavior fields; tested below"
+    },
+    {
+      "n": 58,
+      "area": "profiles",
+      "severity": "P1",
+      "name": "Existing mode codes remain aliases",
+      "pass": true,
+      "detail": [
+        "HP",
+        "QR",
+        "CA",
+        "TRIG",
+        "PC",
+        "C1",
+        "C2",
+        "C3",
+        "LA",
+        "AC1",
+        "AC2",
+        "S155",
+        "S245",
+        "P283",
+        "ST2",
+        "DE",
+        "DM",
+        "D289",
+        "MIX"
+      ]
+    },
+    {
+      "n": 59,
+      "area": "profiles",
+      "severity": "P0",
+      "name": "Blueprint captures positive unit order",
+      "pass": true,
+      "detail": {
+        "order": [
+          "CA_Linear",
+          "CA_Quadratics"
+        ],
+        "mathSame": true
+      }
+    },
+    {
+      "n": 60,
+      "area": "profiles",
+      "severity": "P1",
+      "name": "Custom profiles are local and validated",
+      "pass": true,
+      "detail": {
+        "unknown": "unknown-unit",
+        "markup": "profile-markup-forbidden",
+        "dup": "duplicate-course-id",
+        "forbidden": "profile-schema-invalid"
+      }
+    },
+    {
+      "n": 61,
+      "area": "profiles",
+      "severity": "P1",
+      "name": "Built-in profile collisions are safe",
+      "pass": true,
+      "detail": {
+        "ok": false,
+        "code": "builtin-profile-collision",
+        "message": "A custom profile cannot replace a built-in profile ID/version."
+      }
+    },
+    {
+      "n": 62,
+      "area": "profiles",
+      "severity": "P1",
+      "name": "Profile version semantics are enforced",
+      "pass": true,
+      "detail": {
+        "patch": "patch",
+        "minor": "minor",
+        "major": "major"
+      }
+    },
+    {
+      "n": 63,
+      "area": "profiles",
+      "severity": "P1",
+      "name": "Crosswalk is non-generative metadata",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "n": 64,
+      "area": "profiles",
+      "severity": "P1",
+      "name": "Profile digest and import order are deterministic",
+      "pass": true,
+      "detail": [
+        "local.aa",
+        "local.zz"
+      ]
+    },
+    {
+      "n": 65,
+      "area": "build",
+      "severity": "P0",
+      "name": "Source-of-truth boundary is enforced",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 66,
+      "area": "build",
+      "severity": "P0",
+      "name": "Classic-script single-file output remains",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 67,
+      "area": "build",
+      "severity": "P0",
+      "name": "Generator order is frozen",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 68,
+      "area": "build",
+      "severity": "P0",
+      "name": "Build is byte-reproducible",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 69,
+      "area": "build",
+      "severity": "P0",
+      "name": "Offline remains derived",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 70,
+      "area": "build",
+      "severity": "P0",
+      "name": "Refactor preserves assessed output",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 71,
+      "area": "build",
+      "severity": "P1",
+      "name": "Schemas/examples/build manifest validate in CI",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "n": 72,
+      "area": "build",
+      "severity": "P1",
+      "name": "Release packaging stays one command",
+      "pass": true,
+      "detail": {
+        "command": "python build_release.py --release-gates"
+      }
+    }
+  ],
+  "pageErrors": []
+}

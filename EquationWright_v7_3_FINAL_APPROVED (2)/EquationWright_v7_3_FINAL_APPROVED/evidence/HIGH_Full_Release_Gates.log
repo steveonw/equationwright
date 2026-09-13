@@ -1,0 +1,320 @@
++ /opt/pyvenv/bin/python /mnt/data/equationwright_pass_4c_high/tests/stage4_acceptance.py
+{
+  "passed": 64,
+  "failed": 8,
+  "failedCases": [
+    [
+      65,
+      "Source-of-truth boundary is enforced",
+      "build evidence not available yet"
+    ],
+    [
+      66,
+      "Classic-script single-file output remains",
+      "build evidence not available yet"
+    ],
+    [
+      67,
+      "Generator order is frozen",
+      "build evidence not available yet"
+    ],
+    [
+      68,
+      "Build is byte-reproducible",
+      "build evidence not available yet"
+    ],
+    [
+      69,
+      "Offline remains derived",
+      "build evidence not available yet"
+    ],
+    [
+      70,
+      "Refactor preserves assessed output",
+      "build evidence not available yet"
+    ],
+    [
+      71,
+      "Schemas/examples/build manifest validate in CI",
+      "build evidence not available yet"
+    ],
+    [
+      72,
+      "Release packaging stays one command",
+      "build evidence not available yet"
+    ]
+  ],
+  "pageErrors": []
+}
++ /opt/pyvenv/bin/python /mnt/data/equationwright_pass_4c_high/tests/pass4c_focused_regressions.py
+{
+  "passed": 9,
+  "failed": 0,
+  "checks": {
+    "P4C-D1": true,
+    "P4C-D2": true,
+    "P4C-D3": true,
+    "P4C-D4": true,
+    "P4C-D5": true,
+    "P4C-D6": true,
+    "P4C-D7": true,
+    "P4C-D8": true,
+    "P4C-D9": true
+  },
+  "pageErrors": [],
+  "d1": {
+    "baselineCompatibilityId": "ewac:sha256:2606c2ac96fc8ac65e9705e46f68a1ae5d757d6a5454ca2ace74aee7b8f9dbe7",
+    "mutatedCompatibilityId": "ewac:sha256:1170d7aeb6e8e5e8d95409dca8a5cc67d3562bb05624ae56693700afab1c9ec3",
+    "criticalMutationChangesId": true,
+    "generatorReorderRejected": true,
+    "reorderError": "generator source-family/order binding mismatch HP_Conversion[0] (ewg.hp_conversion.001)\ngenerator source-family/order binding mismatch HP_Conversion[1] (ewg.hp_conversion.002)",
+    "manifestInputHashes": true,
+    "rawDigest": "sha256:2606c2ac96fc8ac65e9705e46f68a1ae5d757d6a5454ca2ace74aee7b8f9dbe7"
+  }
+}
++ /opt/pyvenv/bin/python /mnt/data/equationwright_pass_4c_high/tests/stage3_policy_56.py
+{
+  "passed": 56,
+  "failed": 0,
+  "failures": [],
+  "pageErrors": []
+}
++ /opt/pyvenv/bin/python /mnt/data/equationwright_pass_4c_high/tests/stage3_d1_d6.py
+{
+  "checks": {
+    "D1": true,
+    "D2": true,
+    "D3": true,
+    "D4": true,
+    "D5": true,
+    "D6": true
+  },
+  "pageErrors": [],
+  "provider": {
+    "storedAnth": "HOSTED-SECRET",
+    "blankCustomKey": "",
+    "blankCustomAuth": null,
+    "customAuth": "Bearer CUSTOM-SECRET",
+    "storedCustom": "CUSTOM-SECRET",
+    "openrouterKey": "",
+    "anthropicKey": "HOSTED-SECRET",
+    "legacyGeneric": null
+  },
+  "exit": {
+    "timeout": {
+      "state": "local-review",
+      "reason": "timeout",
+      "seed": "SmartReview-280113201"
+    },
+    "http": {
+      "state": "local-review",
+      "reason": "http-error",
+      "seed": "SmartReview-280113201"
+    },
+    "cancel": {
+      "state": "failure-only",
+      "reason": "user-cancelled"
+    },
+    "invalid": {
+      "state": "local-review",
+      "reason": "sanitizer-rejection",
+      "text": "AI tutorUseful diagnosisThe AI drill did not pass EquationWright's safety checks.Smart Review · 6 questions · Confidence: High · Target: Linear Equations & Inequalities — Ineq.Start Local Smart Review (6 questions, seed SmartReview-280113201)",
+      "rawCodeVisible": false
+    },
+    "constant": 180000,
+    "qaHasTimer": true,
+    "qaClears": true
+  },
+  "history": {
+    "hasDates": true,
+    "hasVersions": true,
+    "hasDeltas": true,
+    "hasTopic": true,
+    "hasMistake": true,
+    "hasDifferentMix": true,
+    "hasSkipped": true
+  },
+  "class": {
+    "attempts": {
+      "studentCount": 2,
+      "attemptCount": 4,
+      "uniqueAliasCount": 2,
+      "unaliasedAttemptCount": 1,
+      "countedRecordCount": 4,
+      "learnerAliases": 2,
+      "students": 2
+    },
+    "unique": {
+      "studentCount": 2,
+      "attemptCount": 4,
+      "uniqueAliasCount": 2,
+      "unaliasedAttemptCount": 1,
+      "countedRecordCount": 2
+    },
+    "prompt": {
+      "attempt": true,
+      "unique": true,
+      "view": true,
+      "noStudents": true
+    },
+    "dashA": "Class snapshot — Attempts view — 4 counted · 4 attempts · 2 unique aliases · Unaliased attempts: 1 · average 50%Missed by unitLinear Equations & Inequalities2Missed by topicLinear Equations & Inequalities — ineq2Top mistake patternsA2Student A: 2 attempts · latest 2026-02-01T00:00:00.000Z · 1/1 · accuracy 100.0% · completion 100.0%Student B: 1 attempt · latest 2026-01-15T00:00:00.000Z · 0/1 · accuracy 0.0% · completion 100.0%",
+    "dashU": "Class snapshot — Unique aliases view — 2 counted · 4 attempts · 2 unique aliases · Unaliased attempts: 1 · average 50%Missed by unitLinear Equations & Inequalities1Missed by topicLinear Equations & Inequalities — ineq1Top mistake patternsA1Student A: 2 attempts · latest 2026-02-01T00:00:00.000Z · 1/1 · accuracy 100.0% · completion 100.0%Student B: 1 attempt · latest 2026-01-15T00:00:00.000Z · 0/1 · accuracy 0.0% · completion 100.0%"
+  }
+}
++ /opt/pyvenv/bin/python /mnt/data/equationwright_pass_4c_high/tests/math_gates.py
+SWEEP {"seconds": 0.43056511878967285, "cand": {"runs": 10600, "errors": [], "hash": 2446488217, "units": 81, "generators": 424}, "base": {"runs": 10600, "errors": [], "hash": 2446488217, "units": 81, "generators": 424}, "same": true}
+MC {"seconds": 2.295172691345215, "result": {"tested": 21200, "nulls": 0, "dups": 0, "badCorrect": 0, "targetMismatch": 0, "provMismatch": 0, "semanticDup": 0, "throws": 0, "genErrors": 0, "errorSamples": []}}
+SUITES {"stats": {"passed": 19, "failed": 0}, "logic": {"passed": 15, "failed": 0}, "de": {"passed": 17, "failed": 0}}
+REPLAY {"expected": "d289_bvp_dirichlet_eigenvalues", "replay": "d289_bvp_dirichlet_eigenvalues", "issues": [], "runSeed": 987654321}
+MATRIX {"cases": 38, "badCount": 0, "bad": []}
+ERRORS {"cand": [], "base": [], "fresh": []}
++ /opt/pyvenv/bin/python /mnt/data/equationwright_pass_4c_high/tests/offline_parity.py
+{
+  "passed": true,
+  "onlineRuntime": {
+    "title": "Ultimate Math Worksheet Builder v7.3 — Full Math Catalog",
+    "appVersion": "v7.3_full_catalog_protocols",
+    "units": 81,
+    "generators": 424,
+    "buildVariant": "online"
+  },
+  "offlineRuntime": {
+    "title": "Ultimate Math Worksheet Builder v7.3 — Full Math Catalog — Offline",
+    "appVersion": "v7.3_full_catalog_protocols",
+    "units": 81,
+    "generators": 424,
+    "buildVariant": "offline"
+  },
+  "mathJaxSmoke": {
+    "version": "3.2.2",
+    "svg": true,
+    "jax": "SVG",
+    "text": "x2+1"
+  },
+  "parity": {
+    "cases": 38,
+    "expectedCases": 38,
+    "badCount": 0,
+    "bad": [],
+    "passed": true
+  },
+  "static": {
+    "onlineSha256": "7f8972109d74a7cf4b1f88ca076c84e3d2a118de2e9ce0ef3e4c00a8b56f9f50",
+    "offlineSha256": "3de91648eb8a25959e959edbbe7f60e095a36056138ce0769ca11e954b396a4c",
+    "onlineBytes": 1382572,
+    "offlineBytes": 3487981,
+    "offlineLoaderMarkers": 0,
+    "offlineCdnMathJaxRefs": 0,
+    "offlineBuildVariantMarkers": 2,
+    "sameAppVersionLiteral": true
+  },
+  "results": "/mnt/data/equationwright_pass_4c_high/dist/test-evidence/EquationWright_v7_3_Offline_Packaging_Smoke_Results.json"
+}
++ /opt/pyvenv/bin/python /mnt/data/equationwright_pass_4c_high/tests/cross_variant_replay.py
+{
+  "passed": true,
+  "onlineToOffline": {
+    "status": "exact",
+    "guarantee": "guaranteed",
+    "assessmentExact": true,
+    "presentationExact": true,
+    "replayedItemCount": 4
+  },
+  "offlineToOnline": {
+    "status": "exact",
+    "guarantee": "guaranteed",
+    "assessmentExact": true,
+    "presentationExact": true,
+    "replayedItemCount": 4
+  },
+  "pageErrors": {
+    "online": [],
+    "offline": []
+  }
+}
++ /opt/pyvenv/bin/python /mnt/data/equationwright_pass_4c_high/tests/ui_smoke.py
+{
+  "passed": true,
+  "teacherStudent": {
+    "teacherInitial": true,
+    "student": true,
+    "teacherReturn": true
+  },
+  "quiz": {
+    "count": 3,
+    "mc": true,
+    "actions": true,
+    "score": true
+  },
+  "scratch": {
+    "open": true,
+    "closed": true
+  },
+  "print": {
+    "called": true,
+    "questions": true
+  },
+  "printCss": true,
+  "localAI": {
+    "seen": {
+      "url": "http://127.0.0.1:11434/v1/chat/completions",
+      "auth": null
+    },
+    "reply": {
+      "diagnosis": "Local smoke ok",
+      "blueprint": null
+    },
+    "err": null
+  },
+  "mobile": {
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scratchLaunch": true,
+    "genVisible": true
+  },
+  "pageErrors": []
+}
+{
+  "passed": true,
+  "focusedPass4C": {
+    "passed": 9,
+    "failed": 0,
+    "checks": {
+      "P4C-D1": true,
+      "P4C-D2": true,
+      "P4C-D3": true,
+      "P4C-D4": true,
+      "P4C-D5": true,
+      "P4C-D6": true,
+      "P4C-D7": true,
+      "P4C-D8": true,
+      "P4C-D9": true
+    }
+  },
+  "stage4": {
+    "passed": 72,
+    "failed": 0
+  },
+  "stage3": {
+    "passed": 62,
+    "failed": 0
+  },
+  "reproducible": true,
+  "offlineParity": {
+    "passed": true,
+    "cases": 38,
+    "badCount": 0
+  },
+  "crossVariantReplay": true,
+  "uiSmoke": true,
+  "onlineSha256": "7f8972109d74a7cf4b1f88ca076c84e3d2a118de2e9ce0ef3e4c00a8b56f9f50",
+  "offlineSha256": "3de91648eb8a25959e959edbbe7f60e095a36056138ce0769ca11e954b396a4c"
+}
+{
+  "online": "/mnt/data/equationwright_pass_4c_high/dist/Math_Worksheet_Builder_v7_3_0_FULL_CATALOG.html",
+  "offline": "/mnt/data/equationwright_pass_4c_high/dist/Math_Worksheet_Builder_v7_3_0_FULL_CATALOG_OFFLINE.html",
+  "onlineSha256": "7f8972109d74a7cf4b1f88ca076c84e3d2a118de2e9ce0ef3e4c00a8b56f9f50",
+  "offlineSha256": "3de91648eb8a25959e959edbbe7f60e095a36056138ce0769ca11e954b396a4c",
+  "assessmentCompatibilityId": "ewac:sha256:2606c2ac96fc8ac65e9705e46f68a1ae5d757d6a5454ca2ace74aee7b8f9dbe7",
+  "reproducible": true
+}

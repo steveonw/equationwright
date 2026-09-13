@@ -1,0 +1,56 @@
+{
+  "format": "equationwright-pass4b-cross-variant-strict-replay-v1",
+  "onlineToOffline": {
+    "format": "equationwright-replay-report-v1",
+    "schemaRevision": 1,
+    "mode": "strict",
+    "status": "exact",
+    "guarantee": "guaranteed",
+    "assessmentExact": true,
+    "presentationExact": true,
+    "sourceEngine": {
+      "appVersion": "v7.3_full_catalog_protocols",
+      "assessmentCompatibilityId": "ewac:sha256:2606c2ac96fc8ac65e9705e46f68a1ae5d757d6a5454ca2ace74aee7b8f9dbe7",
+      "determinismProtocol": "equationwright-determinism-v1",
+      "catalogDigest": "sha256:4cb338d5f4c2acb69fc9ec12cc6404e845180cc21264c12d8f1453ceccd3c1c2"
+    },
+    "runtimeEngine": {
+      "appVersion": "v7.3_full_catalog_protocols",
+      "assessmentCompatibilityId": "ewac:sha256:2606c2ac96fc8ac65e9705e46f68a1ae5d757d6a5454ca2ace74aee7b8f9dbe7",
+      "determinismProtocol": "equationwright-determinism-v1",
+      "catalogDigest": "sha256:4cb338d5f4c2acb69fc9ec12cc6404e845180cc21264c12d8f1453ceccd3c1c2"
+    },
+    "replayedItemCount": 4,
+    "mismatches": [],
+    "warnings": []
+  },
+  "offlineToOnline": {
+    "format": "equationwright-replay-report-v1",
+    "schemaRevision": 1,
+    "mode": "strict",
+    "status": "exact",
+    "guarantee": "guaranteed",
+    "assessmentExact": true,
+    "presentationExact": true,
+    "sourceEngine": {
+      "appVersion": "v7.3_full_catalog_protocols",
+      "assessmentCompatibilityId": "ewac:sha256:2606c2ac96fc8ac65e9705e46f68a1ae5d757d6a5454ca2ace74aee7b8f9dbe7",
+      "determinismProtocol": "equationwright-determinism-v1",
+      "catalogDigest": "sha256:4cb338d5f4c2acb69fc9ec12cc6404e845180cc21264c12d8f1453ceccd3c1c2"
+    },
+    "runtimeEngine": {
+      "appVersion": "v7.3_full_catalog_protocols",
+      "assessmentCompatibilityId": "ewac:sha256:2606c2ac96fc8ac65e9705e46f68a1ae5d757d6a5454ca2ace74aee7b8f9dbe7",
+      "determinismProtocol": "equationwright-determinism-v1",
+      "catalogDigest": "sha256:4cb338d5f4c2acb69fc9ec12cc6404e845180cc21264c12d8f1453ceccd3c1c2"
+    },
+    "replayedItemCount": 4,
+    "mismatches": [],
+    "warnings": []
+  },
+  "pageErrors": {
+    "online": [],
+    "offline": []
+  },
+  "passed": true
+}

@@ -1,0 +1,232 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://equationwright.org/schemas/equationwright-replay-report-v1.schema.json",
+  "title": "EquationWright Strict Replay Report v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schemaRevision",
+    "mode",
+    "status",
+    "guarantee",
+    "assessmentExact",
+    "presentationExact",
+    "sourceEngine",
+    "runtimeEngine",
+    "replayedItemCount",
+    "mismatches",
+    "warnings"
+  ],
+  "properties": {
+    "format": {
+      "const": "equationwright-replay-report-v1"
+    },
+    "schemaRevision": {
+      "const": 1
+    },
+    "mode": {
+      "enum": [
+        "strict",
+        "verify-current"
+      ]
+    },
+    "status": {
+      "enum": [
+        "exact",
+        "verified-exact",
+        "mismatch",
+        "incompatible",
+        "invalid-archive"
+      ]
+    },
+    "guarantee": {
+      "enum": [
+        "guaranteed",
+        "verified",
+        "none"
+      ]
+    },
+    "assessmentExact": {
+      "type": "boolean"
+    },
+    "presentationExact": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "sourceEngine": {
+      "$ref": "#/$defs/engineFingerprint"
+    },
+    "runtimeEngine": {
+      "$ref": "#/$defs/engineFingerprint"
+    },
+    "replayedItemCount": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 250
+    },
+    "mismatches": {
+      "type": "array",
+      "maxItems": 1000,
+      "items": {
+        "$ref": "#/$defs/mismatch"
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "maxItems": 200,
+      "items": {
+        "type": "string",
+        "maxLength": 2000
+      }
+    },
+    "requiresExtensions": {
+      "$ref": "#/$defs/requiresExtensions"
+    },
+    "extensions": {
+      "$ref": "#/$defs/extensions"
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "lowerId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._:-]{0,127}$"
+    },
+    "digest": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "compatibilityId": {
+      "type": "string",
+      "pattern": "^ewac:sha256:[0-9a-f]{64}$"
+    },
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "shortText": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 240
+    },
+    "identifierMapString": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/$defs/id"
+      },
+      "additionalProperties": {
+        "type": "string",
+        "maxLength": 240
+      }
+    },
+    "engineFingerprint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "appVersion",
+        "assessmentCompatibilityId",
+        "determinismProtocol",
+        "catalogDigest"
+      ],
+      "properties": {
+        "appVersion": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "assessmentCompatibilityId": {
+          "$ref": "#/$defs/compatibilityId"
+        },
+        "determinismProtocol": {
+          "const": "equationwright-determinism-v1"
+        },
+        "catalogDigest": {
+          "$ref": "#/$defs/digest"
+        }
+      }
+    },
+    "extensions": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+      },
+      "additionalProperties": true
+    },
+    "requiresExtensions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/id"
+      },
+      "uniqueItems": true
+    },
+    "mismatch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "code",
+        "path",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "enum": [
+            "invalid-archive",
+            "unsupported-format",
+            "required-extension-unsupported",
+            "assessment-compatibility-mismatch",
+            "catalog-digest-mismatch",
+            "profile-unavailable",
+            "profile-digest-mismatch",
+            "unit-missing",
+            "unit-order-mismatch",
+            "generator-missing",
+            "generator-index-mismatch",
+            "generator-key-mismatch",
+            "item-seed-mismatch",
+            "vector-mismatch",
+            "topic-mismatch",
+            "question-mismatch",
+            "answer-mismatch",
+            "steps-mismatch",
+            "semantic-snapshot-mismatch",
+            "choice-count-mismatch",
+            "choice-text-mismatch",
+            "correct-index-mismatch",
+            "shuffle-order-mismatch",
+            "distractor-provenance-mismatch",
+            "assessment-digest-mismatch",
+            "presentation-mismatch",
+            "generator-threw"
+          ]
+        },
+        "itemNumber": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 250
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "message": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 2000
+        },
+        "expected": true,
+        "actual": true
+      }
+    }
+  }
+}

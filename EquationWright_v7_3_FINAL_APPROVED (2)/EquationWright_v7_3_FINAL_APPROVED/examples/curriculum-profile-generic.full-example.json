@@ -1,0 +1,574 @@
+{
+  "format": "equationwright-curriculum-profile-v1",
+  "schemaRevision": 1,
+  "profileId": "org.equationwright.generic",
+  "profileVersion": "1.0.0",
+  "label": "EquationWright Generic Mathematics",
+  "locale": "en-US",
+  "catalogDigest": "sha256:4cb338d5f4c2acb69fc9ec12cc6404e845180cc21264c12d8f1453ceccd3c1c2",
+  "courses": [
+    {
+      "courseId": "health-mathematics",
+      "title": "Health Mathematics",
+      "legacyModeAliases": [
+        "HP"
+      ],
+      "unitOrder": [
+        "HP_Conversion",
+        "HP_Dosage",
+        "HP_IVRates"
+      ],
+      "defaultCounts": {
+        "HP_Conversion": 2,
+        "HP_Dosage": 2,
+        "HP_IVRates": 2
+      }
+    },
+    {
+      "courseId": "quantitative-reasoning",
+      "title": "Quantitative Reasoning",
+      "legacyModeAliases": [
+        "QR"
+      ],
+      "unitOrder": [
+        "QR_Proportion",
+        "QR_Finance",
+        "QR_Logic",
+        "QR_Modeling"
+      ],
+      "defaultCounts": {
+        "QR_Proportion": 2,
+        "QR_Finance": 2,
+        "QR_Logic": 2,
+        "QR_Modeling": 2
+      }
+    },
+    {
+      "courseId": "precalculus-1",
+      "title": "Precalculus I",
+      "legacyModeAliases": [
+        "CA"
+      ],
+      "unitOrder": [
+        "CA_Linear",
+        "CA_Quadratics",
+        "CA_Polynomials",
+        "CA_Rational",
+        "CA_ExpLog",
+        "CA_Systems",
+        "CA_Functions"
+      ],
+      "defaultCounts": {
+        "CA_Linear": 2,
+        "CA_Quadratics": 3,
+        "CA_Polynomials": 2,
+        "CA_Rational": 2,
+        "CA_ExpLog": 3,
+        "CA_Systems": 2,
+        "CA_Functions": 2
+      }
+    },
+    {
+      "courseId": "precalculus-2-trigonometry",
+      "title": "Precalculus II: Trigonometry",
+      "legacyModeAliases": [
+        "TRIG"
+      ],
+      "unitOrder": [
+        "TRIG_Angles",
+        "TRIG_UnitCircle",
+        "TRIG_Identities",
+        "TRIG_Equations",
+        "TRIG_Triangle",
+        "TRIG_Polar",
+        "PC_Conics"
+      ],
+      "defaultCounts": {
+        "TRIG_Angles": 2,
+        "TRIG_UnitCircle": 3,
+        "TRIG_Identities": 3,
+        "TRIG_Equations": 2,
+        "TRIG_Triangle": 2,
+        "TRIG_Polar": 2,
+        "PC_Conics": 2
+      }
+    },
+    {
+      "courseId": "precalculus-with-trigonometry",
+      "title": "Precalculus with Trigonometry",
+      "legacyModeAliases": [
+        "PC"
+      ],
+      "unitOrder": [
+        "CA_Linear",
+        "CA_Quadratics",
+        "CA_Polynomials",
+        "CA_Rational",
+        "CA_ExpLog",
+        "CA_Systems",
+        "CA_Functions",
+        "TRIG_Angles",
+        "TRIG_UnitCircle",
+        "TRIG_Identities",
+        "TRIG_Equations",
+        "TRIG_Triangle",
+        "TRIG_Polar",
+        "PC_Conics",
+        "PC_Sequences",
+        "PC_Vectors"
+      ],
+      "defaultCounts": {
+        "CA_Linear": 2,
+        "CA_Quadratics": 3,
+        "CA_Polynomials": 2,
+        "CA_Rational": 2,
+        "CA_ExpLog": 3,
+        "CA_Systems": 2,
+        "CA_Functions": 2,
+        "TRIG_Angles": 2,
+        "TRIG_UnitCircle": 3,
+        "TRIG_Identities": 3,
+        "TRIG_Equations": 2,
+        "TRIG_Triangle": 2,
+        "TRIG_Polar": 2,
+        "PC_Conics": 2,
+        "PC_Sequences": 2,
+        "PC_Vectors": 2
+      }
+    },
+    {
+      "courseId": "calculus-1",
+      "title": "Calculus I",
+      "legacyModeAliases": [
+        "C1"
+      ],
+      "unitOrder": [
+        "C1_Limits",
+        "C1_Continuity",
+        "C1_Derivatives",
+        "C1_Apps",
+        "C1_Integrals"
+      ],
+      "defaultCounts": {
+        "C1_Limits": 2,
+        "C1_Continuity": 1,
+        "C1_Derivatives": 3,
+        "C1_Apps": 2,
+        "C1_Integrals": 3
+      }
+    },
+    {
+      "courseId": "calculus-2",
+      "title": "Calculus II",
+      "legacyModeAliases": [
+        "C2"
+      ],
+      "unitOrder": [
+        "C2_Tech",
+        "C2_Improper",
+        "C2_Series",
+        "C2_ParamPolar",
+        "C2_AppsInt"
+      ],
+      "defaultCounts": {
+        "C2_Tech": 3,
+        "C2_Improper": 2,
+        "C2_Series": 3,
+        "C2_ParamPolar": 2,
+        "C2_AppsInt": 2
+      }
+    },
+    {
+      "courseId": "calculus-3",
+      "title": "Calculus III",
+      "legacyModeAliases": [
+        "C3"
+      ],
+      "unitOrder": [
+        "C3_Vectors",
+        "C3_Partials",
+        "C3_MultInt",
+        "C3_VecCalc"
+      ],
+      "defaultCounts": {
+        "C3_Vectors": 3,
+        "C3_Partials": 3,
+        "C3_MultInt": 2,
+        "C3_VecCalc": 2
+      }
+    },
+    {
+      "courseId": "linear-algebra",
+      "title": "Linear Algebra",
+      "legacyModeAliases": [
+        "LA"
+      ],
+      "unitOrder": [
+        "LA_Systems",
+        "LA_RowRed",
+        "LA_SolutionSets",
+        "LA_MatrixAlg",
+        "LA_Eigen"
+      ],
+      "defaultCounts": {
+        "LA_Systems": 2,
+        "LA_RowRed": 2,
+        "LA_SolutionSets": 2,
+        "LA_MatrixAlg": 2,
+        "LA_Eigen": 2
+      }
+    },
+    {
+      "courseId": "applied-calculus-1",
+      "title": "Applied Calculus I",
+      "legacyModeAliases": [
+        "AC1"
+      ],
+      "unitOrder": [
+        "AC1_Marginal",
+        "AC1_Elasticity",
+        "AC1_Finance"
+      ],
+      "defaultCounts": {
+        "AC1_Marginal": 2,
+        "AC1_Elasticity": 2,
+        "AC1_Finance": 2
+      }
+    },
+    {
+      "courseId": "applied-calculus-2",
+      "title": "Applied Calculus II",
+      "legacyModeAliases": [
+        "AC2"
+      ],
+      "unitOrder": [
+        "AC2_IntApps",
+        "AC2_Multivar"
+      ],
+      "defaultCounts": {
+        "AC2_IntApps": 2,
+        "AC2_Multivar": 2
+      }
+    },
+    {
+      "courseId": "statistical-reasoning",
+      "title": "Statistical Reasoning",
+      "legacyModeAliases": [
+        "S155"
+      ],
+      "unitOrder": [
+        "S155_Descriptive",
+        "S155_Normal",
+        "S155_Correlation",
+        "S155_Inference"
+      ],
+      "defaultCounts": {
+        "S155_Descriptive": 2,
+        "S155_Normal": 3,
+        "S155_Correlation": 2,
+        "S155_Inference": 2
+      }
+    },
+    {
+      "courseId": "statistics-1",
+      "title": "Statistics I",
+      "legacyModeAliases": [
+        "S245"
+      ],
+      "unitOrder": [
+        "S245_Probability",
+        "S245_Binomial",
+        "S245_Sampling",
+        "S245_Inference"
+      ],
+      "defaultCounts": {
+        "S245_Probability": 2,
+        "S245_Binomial": 2,
+        "S245_Sampling": 2,
+        "S245_Inference": 2
+      }
+    },
+    {
+      "courseId": "probability-and-statistics",
+      "title": "Probability and Statistics",
+      "legacyModeAliases": [
+        "P283"
+      ],
+      "unitOrder": [
+        "P283_Continuous",
+        "P283_ExpNormal",
+        "P283_CLT_Est",
+        "P283_LSQ"
+      ],
+      "defaultCounts": {
+        "P283_Continuous": 2,
+        "P283_ExpNormal": 2,
+        "P283_CLT_Est": 2,
+        "P283_LSQ": 2
+      }
+    },
+    {
+      "courseId": "statistics-2",
+      "title": "Statistics II",
+      "legacyModeAliases": [
+        "ST2"
+      ],
+      "unitOrder": [
+        "ST2_ChiSquare",
+        "ST2_ANOVA",
+        "ST2_Regression",
+        "ST2_Design"
+      ],
+      "defaultCounts": {
+        "ST2_ChiSquare": 2,
+        "ST2_ANOVA": 2,
+        "ST2_Regression": 2,
+        "ST2_Design": 2
+      }
+    },
+    {
+      "courseId": "differential-equations",
+      "title": "Differential Equations",
+      "legacyModeAliases": [
+        "DE"
+      ],
+      "unitOrder": [
+        "DE_Basics",
+        "DE_Methods",
+        "DE_AppsNum",
+        "DE_SecondOrder",
+        "DE_Laplace"
+      ],
+      "defaultCounts": {
+        "DE_Basics": 2,
+        "DE_Methods": 3,
+        "DE_AppsNum": 2,
+        "DE_SecondOrder": 2,
+        "DE_Laplace": 2
+      }
+    },
+    {
+      "courseId": "discrete-mathematics",
+      "title": "Discrete Mathematics",
+      "legacyModeAliases": [
+        "DM"
+      ],
+      "unitOrder": [
+        "DM_Logic",
+        "DM_Sets",
+        "DM_Counting",
+        "DM_RelFunc",
+        "DM_Graphs",
+        "DM_ProofRec"
+      ],
+      "defaultCounts": {
+        "DM_Logic": 2,
+        "DM_Sets": 2,
+        "DM_Counting": 2,
+        "DM_RelFunc": 2,
+        "DM_Graphs": 2,
+        "DM_ProofRec": 2
+      }
+    },
+    {
+      "courseId": "differential-equations-mathematical-physics",
+      "title": "Differential Equations of Mathematical Physics",
+      "legacyModeAliases": [
+        "D289"
+      ],
+      "unitOrder": [
+        "D289_FirstOrder",
+        "D289_Systems",
+        "D289_Series",
+        "D289_Fourier",
+        "D289_Transforms",
+        "D289_PDE",
+        "D289_BVP"
+      ],
+      "defaultCounts": {
+        "D289_FirstOrder": 2,
+        "D289_Systems": 2,
+        "D289_Series": 2,
+        "D289_Fourier": 2,
+        "D289_Transforms": 2,
+        "D289_PDE": 2,
+        "D289_BVP": 2
+      }
+    },
+    {
+      "courseId": "mixed-all",
+      "title": "Mixed Mathematics",
+      "legacyModeAliases": [
+        "MIX"
+      ],
+      "unitOrder": [
+        "HP_Conversion",
+        "HP_Dosage",
+        "HP_IVRates",
+        "P283_Continuous",
+        "P283_ExpNormal",
+        "P283_CLT_Est",
+        "P283_LSQ",
+        "S245_Probability",
+        "S245_Binomial",
+        "S245_Sampling",
+        "S245_Inference",
+        "S155_Descriptive",
+        "S155_Normal",
+        "S155_Correlation",
+        "S155_Inference",
+        "ST2_ChiSquare",
+        "ST2_ANOVA",
+        "ST2_Regression",
+        "ST2_Design",
+        "QR_Proportion",
+        "QR_Finance",
+        "QR_Logic",
+        "QR_Modeling",
+        "AC1_Marginal",
+        "AC1_Elasticity",
+        "AC1_Finance",
+        "AC2_IntApps",
+        "AC2_Multivar",
+        "DE_Basics",
+        "DE_Methods",
+        "DE_AppsNum",
+        "DE_SecondOrder",
+        "DE_Laplace",
+        "DM_Logic",
+        "DM_Sets",
+        "DM_Counting",
+        "DM_RelFunc",
+        "DM_Graphs",
+        "DM_ProofRec",
+        "D289_FirstOrder",
+        "D289_Systems",
+        "D289_Series",
+        "D289_Fourier",
+        "D289_Transforms",
+        "D289_PDE",
+        "D289_BVP",
+        "LA_Systems",
+        "LA_RowRed",
+        "LA_SolutionSets",
+        "LA_MatrixAlg",
+        "LA_Eigen",
+        "CA_Linear",
+        "CA_Quadratics",
+        "CA_Polynomials",
+        "CA_Rational",
+        "CA_ExpLog",
+        "CA_Systems",
+        "CA_Functions",
+        "TRIG_Angles",
+        "TRIG_UnitCircle",
+        "TRIG_Identities",
+        "TRIG_Equations",
+        "TRIG_Triangle",
+        "TRIG_Polar",
+        "PC_Conics",
+        "PC_Sequences",
+        "PC_Vectors",
+        "C1_Limits",
+        "C1_Continuity",
+        "C1_Derivatives",
+        "C1_Apps",
+        "C1_Integrals",
+        "C2_Tech",
+        "C2_Improper",
+        "C2_Series",
+        "C2_ParamPolar",
+        "C2_AppsInt",
+        "C3_Vectors",
+        "C3_Partials",
+        "C3_MultInt",
+        "C3_VecCalc"
+      ],
+      "defaultCounts": {
+        "HP_Conversion": 2,
+        "HP_Dosage": 2,
+        "HP_IVRates": 2,
+        "P283_Continuous": 2,
+        "P283_ExpNormal": 2,
+        "P283_CLT_Est": 2,
+        "P283_LSQ": 2,
+        "S245_Probability": 2,
+        "S245_Binomial": 2,
+        "S245_Sampling": 2,
+        "S245_Inference": 2,
+        "S155_Descriptive": 2,
+        "S155_Normal": 3,
+        "S155_Correlation": 2,
+        "S155_Inference": 2,
+        "ST2_ChiSquare": 2,
+        "ST2_ANOVA": 2,
+        "ST2_Regression": 2,
+        "ST2_Design": 2,
+        "QR_Proportion": 2,
+        "QR_Finance": 2,
+        "QR_Logic": 2,
+        "QR_Modeling": 2,
+        "AC1_Marginal": 2,
+        "AC1_Elasticity": 2,
+        "AC1_Finance": 2,
+        "AC2_IntApps": 2,
+        "AC2_Multivar": 2,
+        "DE_Basics": 2,
+        "DE_Methods": 3,
+        "DE_AppsNum": 2,
+        "DE_SecondOrder": 2,
+        "DE_Laplace": 2,
+        "DM_Logic": 2,
+        "DM_Sets": 2,
+        "DM_Counting": 2,
+        "DM_RelFunc": 2,
+        "DM_Graphs": 2,
+        "DM_ProofRec": 2,
+        "D289_FirstOrder": 2,
+        "D289_Systems": 2,
+        "D289_Series": 2,
+        "D289_Fourier": 2,
+        "D289_Transforms": 2,
+        "D289_PDE": 2,
+        "D289_BVP": 2,
+        "LA_Systems": 2,
+        "LA_RowRed": 2,
+        "LA_SolutionSets": 2,
+        "LA_MatrixAlg": 2,
+        "LA_Eigen": 2,
+        "CA_Linear": 2,
+        "CA_Quadratics": 3,
+        "CA_Polynomials": 2,
+        "CA_Rational": 2,
+        "CA_ExpLog": 3,
+        "CA_Systems": 2,
+        "CA_Functions": 2,
+        "TRIG_Angles": 2,
+        "TRIG_UnitCircle": 3,
+        "TRIG_Identities": 3,
+        "TRIG_Equations": 2,
+        "TRIG_Triangle": 2,
+        "TRIG_Polar": 2,
+        "PC_Conics": 2,
+        "PC_Sequences": 2,
+        "PC_Vectors": 2,
+        "C1_Limits": 2,
+        "C1_Continuity": 1,
+        "C1_Derivatives": 3,
+        "C1_Apps": 2,
+        "C1_Integrals": 3,
+        "C2_Tech": 3,
+        "C2_Improper": 2,
+        "C2_Series": 3,
+        "C2_ParamPolar": 2,
+        "C2_AppsInt": 2,
+        "C3_Vectors": 3,
+        "C3_Partials": 3,
+        "C3_MultInt": 2,
+        "C3_VecCalc": 2
+      }
+    }
+  ],
+  "crosswalks": [],
+  "profileDigest": "sha256:3801744e2f6c4e9b314f0d96a36c732450f3a66880616fbf4f1cfe1b0023f7eb"
+}

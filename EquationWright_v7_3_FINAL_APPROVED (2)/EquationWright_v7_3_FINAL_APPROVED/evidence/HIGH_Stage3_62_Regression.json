@@ -1,0 +1,17 @@
+{
+  "format": "equationwright-pass4b-stage3-62-regression-v1",
+  "passed": 62,
+  "failed": 0,
+  "policy56": {
+    "passed": 56,
+    "failed": 0
+  },
+  "d1d6": {
+    "D1": true,
+    "D2": true,
+    "D3": true,
+    "D4": true,
+    "D5": true,
+    "D6": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "format": "equationwright-replay-report-v1",
+  "schemaRevision": 1,
+  "mode": "strict",
+  "status": "exact",
+  "guarantee": "guaranteed",
+  "assessmentExact": true,
+  "presentationExact": true,
+  "sourceEngine": {
+    "appVersion": "v7.2_full_catalog_scratchpad",
+    "assessmentCompatibilityId": "ewac:sha256:e4ae4d1eb025c567effa7c4c242e2f4f0b4cfff93cba5fa66de8c51d379a55af",
+    "determinismProtocol": "equationwright-determinism-v1",
+    "catalogDigest": "sha256:4cb338d5f4c2acb69fc9ec12cc6404e845180cc21264c12d8f1453ceccd3c1c2"
+  },
+  "runtimeEngine": {
+    "appVersion": "v7.2_full_catalog_scratchpad",
+    "assessmentCompatibilityId": "ewac:sha256:e4ae4d1eb025c567effa7c4c242e2f4f0b4cfff93cba5fa66de8c51d379a55af",
+    "determinismProtocol": "equationwright-determinism-v1",
+    "catalogDigest": "sha256:4cb338d5f4c2acb69fc9ec12cc6404e845180cc21264c12d8f1453ceccd3c1c2"
+  },
+  "replayedItemCount": 2,
+  "mismatches": [],
+  "warnings": []
+}

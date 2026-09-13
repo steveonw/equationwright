@@ -1,0 +1,408 @@
+{
+  "format": "equationwright-build-manifest-v1",
+  "schemaRevision": 1,
+  "buildToolVersion": "1.0.0",
+  "sourceRevision": "example-source-revision",
+  "encoding": "utf-8",
+  "lineEndings": "lf",
+  "moduleOrder": [
+    {
+      "order": 1,
+      "path": "src/shell/document.html",
+      "role": "html-shell",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": false
+    },
+    {
+      "order": 2,
+      "path": "src/styles/base.css",
+      "role": "style",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": false
+    },
+    {
+      "order": 3,
+      "path": "src/styles/mobile.css",
+      "role": "style",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": false
+    },
+    {
+      "order": 4,
+      "path": "src/styles/scratchpad.css",
+      "role": "style",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": false
+    },
+    {
+      "order": 5,
+      "path": "src/core/version.js",
+      "role": "core",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 6,
+      "path": "src/core/determinism.js",
+      "role": "core",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 7,
+      "path": "src/core/math-text.js",
+      "role": "core",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 8,
+      "path": "src/catalog/units.js",
+      "role": "catalog",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 9,
+      "path": "src/catalog/generator-registry.js",
+      "role": "catalog",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 10,
+      "path": "src/catalog/topics.js",
+      "role": "catalog",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 11,
+      "path": "src/semantics/stats.js",
+      "role": "semantic",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 12,
+      "path": "src/semantics/logic.js",
+      "role": "semantic",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 13,
+      "path": "src/semantics/differential-equations.js",
+      "role": "semantic",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 14,
+      "path": "src/generators/hp.js",
+      "role": "generator",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 15,
+      "path": "src/generators/p283.js",
+      "role": "generator",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 16,
+      "path": "src/generators/s245.js",
+      "role": "generator",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 17,
+      "path": "src/generators/s155.js",
+      "role": "generator",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 18,
+      "path": "src/generators/st2.js",
+      "role": "generator",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 19,
+      "path": "src/generators/qr.js",
+      "role": "generator",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 20,
+      "path": "src/generators/ac1.js",
+      "role": "generator",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 21,
+      "path": "src/generators/ac2.js",
+      "role": "generator",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 22,
+      "path": "src/generators/de.js",
+      "role": "generator",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 23,
+      "path": "src/generators/dm.js",
+      "role": "generator",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 24,
+      "path": "src/generators/d289.js",
+      "role": "generator",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 25,
+      "path": "src/generators/la.js",
+      "role": "generator",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 26,
+      "path": "src/generators/ca.js",
+      "role": "generator",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 27,
+      "path": "src/generators/trig.js",
+      "role": "generator",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 28,
+      "path": "src/generators/pc.js",
+      "role": "generator",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 29,
+      "path": "src/generators/c1.js",
+      "role": "generator",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 30,
+      "path": "src/generators/c2.js",
+      "role": "generator",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 31,
+      "path": "src/generators/c3.js",
+      "role": "generator",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 32,
+      "path": "src/engine/selection.js",
+      "role": "engine",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 33,
+      "path": "src/engine/multiple-choice.js",
+      "role": "engine",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 34,
+      "path": "src/engine/render.js",
+      "role": "engine",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 35,
+      "path": "src/protocols/capabilities.js",
+      "role": "protocol",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": false
+    },
+    {
+      "order": 36,
+      "path": "src/protocols/blueprints.js",
+      "role": "protocol",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 37,
+      "path": "src/protocols/diagnostics.js",
+      "role": "protocol",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": false
+    },
+    {
+      "order": 38,
+      "path": "src/protocols/replay.js",
+      "role": "protocol",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 39,
+      "path": "src/protocols/profiles.js",
+      "role": "protocol",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 40,
+      "path": "src/adaptive/smart-review.js",
+      "role": "adaptive",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": true
+    },
+    {
+      "order": 41,
+      "path": "src/adaptive/history.js",
+      "role": "adaptive",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": false
+    },
+    {
+      "order": 42,
+      "path": "src/adaptive/ai-boundary.js",
+      "role": "adaptive",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": false
+    },
+    {
+      "order": 43,
+      "path": "src/ui/controls.js",
+      "role": "ui",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": false
+    },
+    {
+      "order": 44,
+      "path": "src/ui/quiz.js",
+      "role": "ui",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": false
+    },
+    {
+      "order": 45,
+      "path": "src/ui/history-class.js",
+      "role": "ui",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": false
+    },
+    {
+      "order": 46,
+      "path": "src/ui/exports.js",
+      "role": "ui",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": false
+    },
+    {
+      "order": 47,
+      "path": "src/ui/scratchpad.js",
+      "role": "ui",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": false
+    },
+    {
+      "order": 48,
+      "path": "src/app/bootstrap.js",
+      "role": "bootstrap",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "determinismCritical": false
+    }
+  ],
+  "profiles": [
+    {
+      "path": "profiles/generic.json",
+      "sha256": "sha256:3801744e2f6c4e9b314f0d96a36c732450f3a66880616fbf4f1cfe1b0023f7eb"
+    },
+    {
+      "path": "profiles/vccs-nvcc.json",
+      "sha256": "sha256:bed3d2aad64d10b00505142d3f52554b63e95f9b77318881397892b502ea62c3"
+    }
+  ],
+  "schemas": [
+    {
+      "path": "schemas/equationwright-blueprint-archive-v1.schema.json",
+      "sha256": "sha256:c22b8d5330c55f7a8b59d2ed18fd1efa62298b556e34eef10ccf26e8691e769b"
+    },
+    {
+      "path": "schemas/equationwright-blueprint-slim-v1.schema.json",
+      "sha256": "sha256:6764ea86188b36a99471a018566f6131713f4b7a4084531e809faf039cc5b1e1"
+    },
+    {
+      "path": "schemas/equationwright-build-manifest-v1.schema.json",
+      "sha256": "sha256:436d0326dbf9712d1f8ab60f54ce954894e3ec25c34d977f4799ec1ecf3fcf30"
+    },
+    {
+      "path": "schemas/equationwright-capabilities-v1.schema.json",
+      "sha256": "sha256:6c56e820caff275f5d8287f2c0d65a2540e5735433dd14c45844e1b8fd884eb6"
+    },
+    {
+      "path": "schemas/equationwright-curriculum-profile-v1.schema.json",
+      "sha256": "sha256:3b316ee8251c751d3d6d9891c7fa9128b1ae7b6349230ff20c5283d7e37f8b06"
+    },
+    {
+      "path": "schemas/equationwright-diagnostic-provenance-v1.schema.json",
+      "sha256": "sha256:c2e646508ea0bfab4366706b99bfba8f32bf6091c86e22d606cc50575841ede0"
+    },
+    {
+      "path": "schemas/equationwright-replay-report-v1.schema.json",
+      "sha256": "sha256:fcd263f556cef3da2d642608c24653dbbec00fd3d896de61a68941a42e59b987"
+    }
+  ],
+  "vendor": [
+    {
+      "path": "vendor/mathjax/tex-svg.js",
+      "sha256": "sha256:d4295dc33744836935c1399feece5159577b34c5c8ffb9f1c6324cd82e03a882"
+    }
+  ],
+  "outputs": {
+    "online": {
+      "path": "dist/Math_Worksheet_Builder_v7_3_0_FULL_CATALOG.html",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "buildVariant": "online",
+      "appVersion": "v7.3_full_catalog",
+      "assessmentCompatibilityId": "ewac:sha256:e4ae4d1eb025c567effa7c4c242e2f4f0b4cfff93cba5fa66de8c51d379a55af"
+    },
+    "offline": {
+      "path": "dist/Math_Worksheet_Builder_v7_3_0_FULL_CATALOG_OFFLINE.html",
+      "sha256": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+      "buildVariant": "offline",
+      "appVersion": "v7.3_full_catalog",
+      "assessmentCompatibilityId": "ewac:sha256:e4ae4d1eb025c567effa7c4c242e2f4f0b4cfff93cba5fa66de8c51d379a55af"
+    }
+  }
+}

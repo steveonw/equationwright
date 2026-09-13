@@ -1,0 +1,43 @@
+{
+  "format": "equationwright-blueprint-slim-v1",
+  "schemaRevision": 1,
+  "engine": {
+    "appVersion": "v7.2_full_catalog_scratchpad",
+    "assessmentCompatibilityId": "ewac:sha256:e4ae4d1eb025c567effa7c4c242e2f4f0b4cfff93cba5fa66de8c51d379a55af",
+    "determinismProtocol": "equationwright-determinism-v1",
+    "catalogDigest": "sha256:4cb338d5f4c2acb69fc9ec12cc6404e845180cc21264c12d8f1453ceccd3c1c2"
+  },
+  "curriculum": {
+    "profileId": "org.equationwright.generic",
+    "profileVersion": "1.0.0",
+    "profileDigest": "sha256:3801744e2f6c4e9b314f0d96a36c732450f3a66880616fbf4f1cfe1b0023f7eb",
+    "courseId": "precalculus-1",
+    "legacyMode": "CA"
+  },
+  "assessment": {
+    "seed": "Protocol-Example-42",
+    "quizMode": true,
+    "variety": 2,
+    "unitOrder": [
+      "CA_Linear",
+      "CA_Quadratics"
+    ],
+    "counts": {
+      "CA_Linear": 3,
+      "CA_Quadratics": 2
+    },
+    "topicFilters": {
+      "CA_Linear": [
+        "ineq"
+      ]
+    },
+    "pages": {
+      "answers": false,
+      "workedSolutions": false
+    }
+  },
+  "delivery": {
+    "classId": "MATH-EXAMPLE",
+    "assignmentId": "Protocol-1"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "format": "equationwright-v7.3-offline-packaging-smoke-v1",
+  "static": {
+    "onlineSha256": "7f8972109d74a7cf4b1f88ca076c84e3d2a118de2e9ce0ef3e4c00a8b56f9f50",
+    "offlineSha256": "3de91648eb8a25959e959edbbe7f60e095a36056138ce0769ca11e954b396a4c",
+    "onlineBytes": 1382572,
+    "offlineBytes": 3487981,
+    "offlineLoaderMarkers": 0,
+    "offlineCdnMathJaxRefs": 0,
+    "offlineBuildVariantMarkers": 2,
+    "sameAppVersionLiteral": true
+  },
+  "onlineRuntime": {
+    "title": "Ultimate Math Worksheet Builder v7.3 — Full Math Catalog",
+    "appVersion": "v7.3_full_catalog_protocols",
+    "units": 81,
+    "generators": 424,
+    "buildVariant": "online"
+  },
+  "offlineRuntime": {
+    "title": "Ultimate Math Worksheet Builder v7.3 — Full Math Catalog — Offline",
+    "appVersion": "v7.3_full_catalog_protocols",
+    "units": 81,
+    "generators": 424,
+    "buildVariant": "offline"
+  },
+  "mathJaxSmoke": {
+    "version": "3.2.2",
+    "svg": true,
+    "jax": "SVG",
+    "text": "x2+1"
+  },
+  "parity": {
+    "cases": 38,
+    "expectedCases": 38,
+    "badCount": 0,
+    "bad": [],
+    "passed": true
+  },
+  "passed": true
+}

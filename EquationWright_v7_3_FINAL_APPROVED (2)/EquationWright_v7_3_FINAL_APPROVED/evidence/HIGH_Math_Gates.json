@@ -1,0 +1,60 @@
+{
+  "sweep": {
+    "candidate": {
+      "runs": 10600,
+      "errors": [],
+      "hash": 2446488217,
+      "units": 81,
+      "generators": 424
+    },
+    "baseline": {
+      "runs": 10600,
+      "errors": [],
+      "hash": 2446488217,
+      "units": 81,
+      "generators": 424
+    },
+    "same": true
+  },
+  "mc": {
+    "tested": 21200,
+    "nulls": 0,
+    "dups": 0,
+    "badCorrect": 0,
+    "targetMismatch": 0,
+    "provMismatch": 0,
+    "semanticDup": 0,
+    "throws": 0,
+    "genErrors": 0,
+    "errorSamples": []
+  },
+  "suites": {
+    "stats": {
+      "passed": 19,
+      "failed": 0
+    },
+    "logic": {
+      "passed": 15,
+      "failed": 0
+    },
+    "de": {
+      "passed": 17,
+      "failed": 0
+    }
+  },
+  "replay": {
+    "expected": "d289_bvp_dirichlet_eigenvalues",
+    "replay": "d289_bvp_dirichlet_eigenvalues",
+    "issues": [],
+    "runSeed": 987654321
+  },
+  "matrix": {
+    "cases": 38,
+    "bad": []
+  },
+  "pageErrors": {
+    "candidate": [],
+    "baseline": [],
+    "fresh": []
+  }
+}

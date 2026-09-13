@@ -1,0 +1,100 @@
+{
+  "format": "equationwright-diagnostic-provenance-v1",
+  "schemaRevision": 1,
+  "level": "replay",
+  "engine": {
+    "appVersion": "v7.2_full_catalog_scratchpad",
+    "assessmentCompatibilityId": "ewac:sha256:e4ae4d1eb025c567effa7c4c242e2f4f0b4cfff93cba5fa66de8c51d379a55af",
+    "determinismProtocol": "equationwright-determinism-v1",
+    "catalogDigest": "sha256:4cb338d5f4c2acb69fc9ec12cc6404e845180cc21264c12d8f1453ceccd3c1c2"
+  },
+  "assessmentDigest": "sha256:121a31ab9371ab43b8dbe377f4522dd7f4328b0b7a4ebcb667f5a9decb80e5b7",
+  "items": [
+    {
+      "n": 1,
+      "unitId": "CA_Linear",
+      "generatorId": "ewg.ca_linear.001",
+      "runtimeIndex": 0,
+      "problemKey": "ca_linear_solve",
+      "itemSeed": "Protocol-Diagnostic|CA_Linear|slot0|try0",
+      "vector": [
+        52,
+        1,
+        2
+      ],
+      "topicId": "solve",
+      "type": "mc",
+      "outputDigests": {
+        "question": "sha256:ae6d131c5ed0942cb9ca5adc6225bccfab7ec6993064f248fb4b806a2ef496bb",
+        "answer": "sha256:cc11310c456c3690d5a74c23aa31cc25b4e74cdae146c71e54ad9dbc1d109fde",
+        "steps": "sha256:ad61a290c7076eda1082be4666040657f3dd61ced112a119d5d4af48dcc82ccc",
+        "choices": "sha256:d11f7ec0e2744b85734b90159d708836b1b1ad54b8867faba94a9d1283f2dc54"
+      },
+      "semanticSnapshot": null,
+      "mc": {
+        "choicePolicy": "legacy-four-choice",
+        "initialTargetChoiceCount": 4,
+        "targetChoiceCount": 4,
+        "actualChoiceCount": 4,
+        "correctIndex": 0,
+        "shuffleOrder": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "semanticValidated": false,
+        "choices": [
+          {
+            "position": 0,
+            "role": "correct",
+            "origin": "correct",
+            "sourceGeneratorId": "ewg.ca_linear.001",
+            "sourceRuntimeIndex": 0,
+            "sourceProblemKey": "ca_linear_solve",
+            "sourceSeed": "Protocol-Diagnostic|CA_Linear|slot0|try0",
+            "trapIndex": null,
+            "semanticKey": null,
+            "displayDigest": "sha256:cc11310c456c3690d5a74c23aa31cc25b4e74cdae146c71e54ad9dbc1d109fde"
+          },
+          {
+            "position": 1,
+            "role": "distractor",
+            "origin": "authored-trap",
+            "sourceGeneratorId": "ewg.ca_linear.001",
+            "sourceRuntimeIndex": 0,
+            "sourceProblemKey": "ca_linear_solve",
+            "sourceSeed": "Protocol-Diagnostic|CA_Linear|slot0|try0|mc|trap1",
+            "trapIndex": 0,
+            "semanticKey": null,
+            "displayDigest": "sha256:a4aab3f1f08004e907d2357fafe74cab56359bcb32e23f52e7eb1d3a9c0a2ad3"
+          },
+          {
+            "position": 2,
+            "role": "distractor",
+            "origin": "generator",
+            "sourceGeneratorId": "ewg.ca_linear.001",
+            "sourceRuntimeIndex": 0,
+            "sourceProblemKey": "ca_linear_solve",
+            "sourceSeed": "Protocol-Diagnostic|CA_Linear|slot0|try0|mc|g0|d2|r0",
+            "trapIndex": null,
+            "semanticKey": null,
+            "displayDigest": "sha256:f5b482b6880c0e22d43532f5e6cf442839f9469acc7f373b7c45c82c183a9b9d"
+          },
+          {
+            "position": 3,
+            "role": "distractor",
+            "origin": "generator",
+            "sourceGeneratorId": "ewg.ca_linear.002",
+            "sourceRuntimeIndex": 1,
+            "sourceProblemKey": "ca_abs_value",
+            "sourceSeed": "Protocol-Diagnostic|CA_Linear|slot0|try0|mc|g1|d3|r0",
+            "trapIndex": null,
+            "semanticKey": null,
+            "displayDigest": "sha256:391552c099c101b131feaf24c5795a6a15bc8ec82015424e0d2b4274a369a0bf"
+          }
+        ]
+      }
+    }
+  ]
+}

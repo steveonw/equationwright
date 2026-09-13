@@ -1,0 +1,626 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://equationwright.org/schemas/equationwright-capabilities-v1.schema.json",
+  "title": "EquationWright Capability Manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "schemaRevision",
+    "engine",
+    "determinism",
+    "catalog",
+    "formats",
+    "features",
+    "limits",
+    "curriculumProfiles"
+  ],
+  "properties": {
+    "format": {
+      "const": "equationwright-capabilities-v1"
+    },
+    "schemaRevision": {
+      "const": 1
+    },
+    "engine": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "appVersion",
+        "assessmentCompatibilityId",
+        "buildVariant",
+        "catalogDigest"
+      ],
+      "properties": {
+        "id": {
+          "const": "equationwright"
+        },
+        "appVersion": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "assessmentCompatibilityId": {
+          "$ref": "#/$defs/compatibilityId"
+        },
+        "buildVariant": {
+          "enum": [
+            "online",
+            "offline"
+          ]
+        },
+        "catalogDigest": {
+          "$ref": "#/$defs/digest"
+        },
+        "artifactSha256": {
+          "$ref": "#/$defs/digest"
+        },
+        "sourceRevision": {
+          "type": "string",
+          "maxLength": 240
+        }
+      }
+    },
+    "determinism": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "protocol",
+        "seedNormalization",
+        "seedHash",
+        "rng",
+        "selection",
+        "multipleChoice",
+        "canonicalJson"
+      ],
+      "properties": {
+        "protocol": {
+          "const": "equationwright-determinism-v1"
+        },
+        "seedNormalization": {
+          "const": "trim-empty-to-Ultimate-v1"
+        },
+        "seedHash": {
+          "const": "fnv1a-32-js-utf16-v1"
+        },
+        "rng": {
+          "const": "xorshift32-v1"
+        },
+        "selection": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "multipleChoice": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160
+        },
+        "canonicalJson": {
+          "const": "equationwright-canonical-json-v1"
+        }
+      }
+    },
+    "catalog": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "catalogId",
+        "catalogVersion",
+        "catalogDigest",
+        "unitCount",
+        "generatorFamilyCount",
+        "topicCount",
+        "units",
+        "generators"
+      ],
+      "properties": {
+        "catalogId": {
+          "$ref": "#/$defs/lowerId"
+        },
+        "catalogVersion": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "catalogDigest": {
+          "$ref": "#/$defs/digest"
+        },
+        "unitCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "generatorFamilyCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "topicCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "units": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/unit"
+          }
+        },
+        "generators": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/generator"
+          }
+        }
+      }
+    },
+    "formats": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/formatSupport"
+      }
+    },
+    "features": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/feature"
+      }
+    },
+    "limits": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "blueprintPerUnitMax",
+        "blueprintTotalMax",
+        "aiDrillMin",
+        "aiDrillMax",
+        "smartReviewMin",
+        "smartReviewMax",
+        "mcChoiceMin",
+        "mcChoiceMax"
+      ],
+      "properties": {
+        "blueprintPerUnitMax": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "blueprintTotalMax": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "aiDrillMin": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "aiDrillMax": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "smartReviewMin": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "smartReviewMax": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "mcChoiceMin": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 4
+        },
+        "mcChoiceMax": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 4
+        }
+      }
+    },
+    "curriculumProfiles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/profileRef"
+      }
+    },
+    "requiresExtensions": {
+      "$ref": "#/$defs/requiresExtensions"
+    },
+    "extensions": {
+      "$ref": "#/$defs/extensions"
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"
+    },
+    "lowerId": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._:-]{0,127}$"
+    },
+    "digest": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "compatibilityId": {
+      "type": "string",
+      "pattern": "^ewac:sha256:[0-9a-f]{64}$"
+    },
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 4096
+    },
+    "shortText": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 240
+    },
+    "identifierMapString": {
+      "type": "object",
+      "propertyNames": {
+        "$ref": "#/$defs/id"
+      },
+      "additionalProperties": {
+        "type": "string",
+        "maxLength": 240
+      }
+    },
+    "engineFingerprint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "appVersion",
+        "assessmentCompatibilityId",
+        "determinismProtocol",
+        "catalogDigest"
+      ],
+      "properties": {
+        "appVersion": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "assessmentCompatibilityId": {
+          "$ref": "#/$defs/compatibilityId"
+        },
+        "determinismProtocol": {
+          "const": "equationwright-determinism-v1"
+        },
+        "catalogDigest": {
+          "$ref": "#/$defs/digest"
+        }
+      }
+    },
+    "extensions": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+      },
+      "additionalProperties": true
+    },
+    "requiresExtensions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/id"
+      },
+      "uniqueItems": true
+    },
+    "topic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "label"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        }
+      }
+    },
+    "unit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "defaultLabel",
+        "defaultCount",
+        "topics",
+        "generatorIds"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "defaultLabel": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "defaultCount": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "topics": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/topic"
+          }
+        },
+        "generatorIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/lowerId"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "semantic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "validatorId",
+        "choiceFamily"
+      ],
+      "properties": {
+        "validatorId": {
+          "$ref": "#/$defs/lowerId"
+        },
+        "choiceFamily": {
+          "$ref": "#/$defs/lowerId"
+        },
+        "choiceCapacity": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 4
+        }
+      }
+    },
+    "generator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "unitId",
+        "runtimeIndex",
+        "topicId",
+        "metadataSource",
+        "problemKeys",
+        "problemKeyStability",
+        "outputs",
+        "traps",
+        "semantics",
+        "mc",
+        "observed"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/lowerId"
+        },
+        "unitId": {
+          "$ref": "#/$defs/id"
+        },
+        "runtimeIndex": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "topicId": {
+          "$ref": "#/$defs/id"
+        },
+        "metadataSource": {
+          "enum": [
+            "explicit",
+            "derived",
+            "mixed"
+          ]
+        },
+        "problemKeys": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "uniqueItems": true
+        },
+        "problemKeyStability": {
+          "enum": [
+            "stable",
+            "variant"
+          ]
+        },
+        "outputs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "worksheet",
+              "quiz"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "traps": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "support",
+            "maxObservedCount",
+            "hasExplanations"
+          ],
+          "properties": {
+            "support": {
+              "enum": [
+                "none",
+                "authored",
+                "dynamic"
+              ]
+            },
+            "maxObservedCount": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 20
+            },
+            "hasExplanations": {
+              "type": "boolean"
+            }
+          }
+        },
+        "semantics": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/semantic"
+          }
+        },
+        "mc": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "supported",
+            "observedAnswerCapacity",
+            "capacityErrorCount",
+            "possibleChoiceCounts"
+          ],
+          "properties": {
+            "supported": {
+              "type": "boolean"
+            },
+            "observedAnswerCapacity": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "capacityErrorCount": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "possibleChoiceCounts": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 2,
+                "maximum": 4
+              },
+              "uniqueItems": true
+            }
+          }
+        },
+        "observed": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "probeProtocol",
+            "answerCapacitySamples",
+            "exampleCount"
+          ],
+          "properties": {
+            "probeProtocol": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160
+            },
+            "answerCapacitySamples": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "exampleCount": {
+              "type": "integer",
+              "minimum": 0
+            }
+          }
+        }
+      }
+    },
+    "formatSupport": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "format",
+        "read",
+        "write",
+        "status"
+      ],
+      "properties": {
+        "format": {
+          "$ref": "#/$defs/id"
+        },
+        "read": {
+          "type": "boolean"
+        },
+        "write": {
+          "type": "boolean"
+        },
+        "status": {
+          "enum": [
+            "current",
+            "legacy",
+            "experimental"
+          ]
+        }
+      }
+    },
+    "feature": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/lowerId"
+        },
+        "status": {
+          "enum": [
+            "available",
+            "unavailable",
+            "experimental"
+          ]
+        },
+        "details": {
+          "type": "object"
+        }
+      }
+    },
+    "profileRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "profileId",
+        "profileVersion",
+        "profileDigest",
+        "label",
+        "builtIn"
+      ],
+      "properties": {
+        "profileId": {
+          "$ref": "#/$defs/lowerId"
+        },
+        "profileVersion": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "profileDigest": {
+          "$ref": "#/$defs/digest"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 240
+        },
+        "builtIn": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "format": "equationwright-pass4c-pro-final-recheck-v1",
+  "decision": "APPROVED",
+  "release": "v7.3",
+  "appVersion": "v7.3_full_catalog_protocols",
+  "assessmentCompatibilityId": "ewac:sha256:2606c2ac96fc8ac65e9705e46f68a1ae5d757d6a5454ca2ace74aee7b8f9dbe7",
+  "catalogDigest": "sha256:4cb338d5f4c2acb69fc9ec12cc6404e845180cc21264c12d8f1453ceccd3c1c2",
+  "artifactHashes": {
+    "online": "sha256:7f8972109d74a7cf4b1f88ca076c84e3d2a118de2e9ce0ef3e4c00a8b56f9f50",
+    "offline": "sha256:3de91648eb8a25959e959edbbe7f60e095a36056138ce0769ca11e954b396a4c",
+    "buildManifest": "sha256:8666317d5673fc0698278bd690df16f2d15bbab673f078c353571df0ee0cee79",
+    "modularSourceZip": "sha256:9ca7912eeb2aa2a937bc0b91a5135cd103950fafb9d06db7c5da98af64cc1b70"
+  },
+  "independentRecheck": {
+    "cleanBuildMatchesHandoff": true,
+    "twoBuildByteReproducible": true,
+    "focusedPass4C": {
+      "passed": 9,
+      "failed": 0
+    },
+    "stage4RuntimeCases": {
+      "passed": 64,
+      "failed": 0
+    },
+    "stage4BuildCases65to72": {
+      "passed": 8,
+      "failed": 0
+    },
+    "stage4Total": {
+      "passed": 72,
+      "failed": 0
+    },
+    "stage3Policy": {
+      "passed": 56,
+      "failed": 0
+    },
+    "stage3D1toD6": {
+      "passed": 6,
+      "failed": 0
+    },
+    "stage3Total": {
+      "passed": 62,
+      "failed": 0
+    },
+    "generatorSweep": {
+      "candidateRuns": 10600,
+      "baselineRuns": 10600,
+      "candidateErrors": 0,
+      "baselineErrors": 0,
+      "hash": 2446488217,
+      "same": true
+    },
+    "multipleChoiceStress": {
+      "tested": 21200,
+      "nulls": 0,
+      "duplicates": 0,
+      "badCorrect": 0,
+      "targetMismatch": 0,
+      "provenanceMismatch": 0,
+      "semanticDuplicates": 0,
+      "throws": 0,
+      "generatorErrors": 0
+    },
+    "specializedSuites": {
+      "statistics": "19/19",
+      "logic": "15/15",
+      "differentialEquations": "17/17"
+    },
+    "repeatFreshBaselineMatrix": {
+      "cases": 38,
+      "badCount": 0
+    },
+    "crossVariantStrictReplay": {
+      "onlineToOffline": "exact / guaranteed",
+      "offlineToOnline": "exact / guaranteed"
+    },
+    "uiSmoke": true,
+    "offlineParityPlaywright": {
+      "cases": 38,
+      "badCount": 0,
+      "mathJax": "3.2.2 SVG",
+      "networkBlocked": true
+    },
+    "schemaValidation": {
+      "capabilitiesOnline": true,
+      "capabilitiesOffline": true,
+      "profiles": true,
+      "buildManifest": true
+    },
+    "pageScriptErrors": 0
+  },
+  "environmentNote": "The bundled offline_parity.py raw-CDP harness crashes this sandbox's Chromium GPU process before WebSocket attach. The same final artifacts passed an independent Playwright 38/38 online/offline parity check with network blocked and MathJax 3.2.2 SVG, while the supplied HIGH full release-gate log records the original raw-CDP harness passing 38/38. This is an execution-environment limitation, not an observed EquationWright runtime failure.",
+  "supersededArtifactNote": "The separately uploaded pre-D1 equationwright_capabilities_v7_3.json carries the earlier e4ae... compatibility ID and is intentionally excluded. The final generated capability manifests in this package carry the approved 2606... compatibility ID.",
+  "scope": "Final Pass 4C recheck of P4C-D1 through P4C-D9 plus preservation of release/determinism gates. No optional UI-polish pass and no new generator content."
+}
