@@ -17,7 +17,7 @@ def run(cmd: list[str], cwd: Path) -> None:
 def main() -> int:
     p = argparse.ArgumentParser()
     p.add_argument("--root", default=".")
-    p.add_argument("--app", default="Math_Worksheet_Builder_v7_0_0_FULL_CATALOG.html")
+    p.add_argument("--app", default="Math_Worksheet_Builder_v7_3_0_FULL_CATALOG.html")
     p.add_argument("--skip-gateway", action="store_true")
     args = p.parse_args()
 

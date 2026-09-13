@@ -9,9 +9,10 @@ venv/
 *_audit_report.json
 audit_summary.json
 
-# Local gateway configuration and logs
+# Local gateway configuration, logs, and compiled binaries
 gateway/gateway.json
 gateway/*.log
+gateway/*.exe
 
 # Local model files
 *.gguf
