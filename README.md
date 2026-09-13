@@ -1,15 +1,20 @@
 # EquationWright / Math Worksheet Builder
 
+## 🌐 [Open EquationWright Website](https://steveonw.github.io/equationwright/)
+
+**No GitHub account is required.** Open the link above to use EquationWright as a normal website in your browser.
+
 A self-contained math worksheet and quiz generator covering the project’s 18 NVCC mathematics modes with deterministic generation, worked solutions, result export, independent audit tooling, and online/offline distributions.
 
 ## Current release: v7.3
 
-Public GitHub Pages entry point: `index.html`
+Public website: https://steveonw.github.io/equationwright/
 
 Current hosted artifacts:
 
 - Online app: `Math_Worksheet_Builder_v7_3_0_FULL_CATALOG.html`
 - Offline app: `Math_Worksheet_Builder_v7_3_0_FULL_CATALOG_OFFLINE.html`
+- Complete package: `releases/v7.3/EquationWright_v7_3_FINAL_APPROVED.zip`
 - User manual: `EquationWright_v7_3_Complete_User_Manual_with_Developer_Notes.pdf`
 - Release notes: `README_v7_3.md`
 - Audit report: `AUDIT_REPORT.md`
