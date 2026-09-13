@@ -1,0 +1,59 @@
+name: package-v7.3-release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'releases/v7.3/**'
+      - '!releases/v7.3/EquationWright_v7_3_FINAL_APPROVED.zip'
+      - '!releases/v7.3/SHA256SUMS.txt'
+      - 'scripts/package_release.py'
+      - '.github/workflows/package-release.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+
+      - name: Build approved v7.3 package
+        run: >-
+          python scripts/package_release.py releases/v7.3
+          --package-name EquationWright_v7_3_FINAL_APPROVED.zip
+
+      - name: Verify user manual is packaged
+        shell: bash
+        run: |
+          python - <<'PY'
+          import zipfile
+          package = 'releases/v7.3/EquationWright_v7_3_FINAL_APPROVED.zip'
+          expected = 'EquationWright_v7_3_FINAL_APPROVED/EquationWright_v7_3_Complete_User_Manual_with_Developer_Notes.pdf'
+          with zipfile.ZipFile(package) as zf:
+              if expected not in zf.namelist():
+                  raise SystemExit(f'missing packaged manual: {expected}')
+          print('manual packaged:', expected)
+          PY
+
+      - name: Commit refreshed package
+        shell: bash
+        run: |
+          if git diff --quiet -- releases/v7.3/SHA256SUMS.txt releases/v7.3/EquationWright_v7_3_FINAL_APPROVED.zip; then
+            echo 'Release package already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add releases/v7.3/SHA256SUMS.txt releases/v7.3/EquationWright_v7_3_FINAL_APPROVED.zip
+          git commit -m 'Repack v7.3 release with user manual'
+          git push
