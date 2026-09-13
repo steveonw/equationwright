@@ -1,0 +1,75 @@
+<!doctype html>
+<!-- GENERATED DISTRIBUTION: do not hand-edit; rebuild from src/ + profiles/ + schemas/ + registry/. -->
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Ultimate Math Worksheet Builder v7.3 — Full Math Catalog</title>
+
+<style>
+/*<!--
+  Ultimate Math Worksheet Builder
+  Copyright (c) 2026 Steveon William Walker
+  All rights reserved.
+-->*/
+
+
+:root{
+  --ink: var(--text);
+  --bg:#0b1020;
+  --panel:#121a31;
+  --panel2:#0f1730;
+  --text:#e8eefc;
+  --muted:rgba(232,238,252,0.72);
+  --line:rgba(232,238,252,0.14);
+  --accent:rgba(96,165,250,0.95);
+
+  --stamp-ink: rgba(255,255,255,0.86);
+  --stamp-line: rgba(255,255,255,0.35);
+}
+</style>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] },
+  chtml: {
+    scale: 1,
+  },
+  options: { enableMenu: false },
+  startup: { typeset: false }
+};
+</script>
+<script>
+(function(){
+  var CDN = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js';
+  var custom = null;
+  try{ custom = (localStorage.getItem('MW_MATHJAX_SRC')||'').trim() || null; }catch(e){}
+  var order = [];
+  if(custom) order.push(custom);
+  if(location.protocol === 'file:') order.push('mathjax/tex-svg.js');
+  order.push(CDN);
+  function mjReady(){
+    var M = window.MathJax;
+    return !!(M && (typeof M.version === 'string' || typeof M.typesetPromise === 'function'));
+  }
+  function load(i){
+    if(i >= order.length) return;
+    var s = document.createElement('script');
+    s.defer = true;
+    s.src = order[i];
+    s.onerror = function(){ load(i+1); };
+    s.onload = function(){
+      setTimeout(function(){ if(!mjReady()) load(i+1); }, 1500);
+    };
+    setTimeout(function(){ load(i+1); }, 9000);
+    document.head.appendChild(s);
+  }
+  load(0);
+})();
+</script>
+<meta name="equationwright-build-variant" content="online">
+</head>
+<body>
+<!-- This is v7.3 online edition -->
+<div id="output"></div>
+</body>
+</html>
