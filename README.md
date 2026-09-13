@@ -34,7 +34,7 @@ archive/                 Legacy packages and historical documentation
 chat/                    Local chat UI
 
 docs/development/        Development planning documents
-gateway/                 Optional local/Go tutor gateway source
+gateway/                 Local-AI tutor gateway, Windows executable, source, and chat UI
 releases/v7.3/           Approved v7.3 release bundle, evidence, schemas, manifests
 samples/                  Example result/blueprint data
 scripts/                  Repository, build, and audit orchestration scripts
@@ -52,6 +52,12 @@ SKILL.md                  quiz-tutor protocol
 ```
 
 Older versioned HTML files remain at the repository root intentionally so previously shared assessment links can continue to resolve. Large historical ZIP packages are stored under `archive/releases/` instead of cluttering the root.
+
+## Local AI gateway
+
+The `gateway/` directory is an intentional end-user feature, not just build output. It includes the prebuilt Windows `tutor-gateway.exe` plus Go/Python source and the local chat UI.
+
+The gateway can sit between EquationWright and a local OpenAI-compatible model backend such as Ollama, LM Studio, or llama-server. On Windows, `gateway/tutor-gateway.exe` is the no-install launcher; see `gateway/GATEWAY_HOWTO.md` for setup and LAN-use guidance.
 
 ## Development checks
 
@@ -99,7 +105,7 @@ For assessment reproducibility, keep the app version/compatibility information t
 - `EquationWright_v7_3_Complete_User_Manual_with_Developer_Notes.pdf` — full v7.3 manual
 - `README_v7_3.md` — v7.3 protocol and release notes
 - `AUDIT_REPORT.md` — audit summary
-- `gateway/GATEWAY_HOWTO.md` — optional gateway setup
+- `gateway/GATEWAY_HOWTO.md` — local AI gateway setup
 - `CONTRIBUTING.md` — contributor guidance
 - `SECURITY.md` — security notes
 
