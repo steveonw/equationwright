@@ -45,15 +45,39 @@ jobs:
           print('manual packaged:', expected)
           PY
 
+      - name: Ensure landing page links complete package
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('index.html')
+          text = path.read_text(encoding='utf-8')
+          package_href = 'releases/v7.3/EquationWright_v7_3_FINAL_APPROVED.zip'
+          if package_href not in text:
+              needle = '                📖 <a href="EquationWright_v7_3_Complete_User_Manual_with_Developer_Notes.pdf" target="_blank" rel="noopener">Full User Manual (PDF)</a> • '
+              replacement = (
+                  '                📦 <a href="' + package_href + '" download>Download Complete v7.3 Package (ZIP)</a> • \n'
+                  + needle
+              )
+              if needle not in text:
+                  raise SystemExit('could not find Resources & Documentation insertion point in index.html')
+              text = text.replace(needle, replacement, 1)
+              path.write_text(text, encoding='utf-8')
+              print('added package download link to index.html')
+          else:
+              print('package download link already present')
+          PY
+
       - name: Commit refreshed package
         shell: bash
         run: |
-          if git diff --quiet -- releases/v7.3/SHA256SUMS.txt releases/v7.3/EquationWright_v7_3_FINAL_APPROVED.zip; then
-            echo 'Release package already current.'
+          if git diff --quiet -- index.html releases/v7.3/SHA256SUMS.txt releases/v7.3/EquationWright_v7_3_FINAL_APPROVED.zip; then
+            echo 'Release package and landing page already current.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add releases/v7.3/SHA256SUMS.txt releases/v7.3/EquationWright_v7_3_FINAL_APPROVED.zip
-          git commit -m 'Repack v7.3 release with user manual'
+          git add index.html releases/v7.3/SHA256SUMS.txt releases/v7.3/EquationWright_v7_3_FINAL_APPROVED.zip
+          git commit -m 'Publish v7.3 package with user manual'
           git push
