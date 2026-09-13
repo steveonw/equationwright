@@ -1,0 +1,58 @@
+name: publish-v7.3-release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/publish-v7.3-release.yml'
+      - 'releases/v7.3/GITHUB_RELEASE_v7_3.md'
+      - 'releases/v7.3/EquationWright_v7_3_FINAL_APPROVED.zip'
+      - 'releases/v7.3/EquationWright_v7_3_Complete_User_Manual_with_Developer_Notes.pdf'
+      - 'releases/v7.3/app/EquationWright_v7_3_ONLINE.html'
+      - 'releases/v7.3/app/EquationWright_v7_3_OFFLINE.html'
+      - 'releases/v7.3/SHA256SUMS.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Publish website-first v7.3 release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          tag='v7.3'
+          title='EquationWright v7.3 — Website & Complete Package'
+          notes='releases/v7.3/GITHUB_RELEASE_v7_3.md'
+          assets=(
+            'releases/v7.3/EquationWright_v7_3_FINAL_APPROVED.zip'
+            'releases/v7.3/EquationWright_v7_3_Complete_User_Manual_with_Developer_Notes.pdf'
+            'releases/v7.3/app/EquationWright_v7_3_ONLINE.html'
+            'releases/v7.3/app/EquationWright_v7_3_OFFLINE.html'
+            'releases/v7.3/SHA256SUMS.txt'
+          )
+
+          if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release edit "$tag" \
+              --repo "$GITHUB_REPOSITORY" \
+              --title "$title" \
+              --notes-file "$notes"
+            gh release upload "$tag" "${assets[@]}" \
+              --repo "$GITHUB_REPOSITORY" \
+              --clobber
+          else
+            gh release create "$tag" "${assets[@]}" \
+              --repo "$GITHUB_REPOSITORY" \
+              --target "$GITHUB_SHA" \
+              --title "$title" \
+              --notes-file "$notes"
+          fi
