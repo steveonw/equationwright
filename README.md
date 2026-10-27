@@ -116,6 +116,8 @@ For assessment reproducibility, keep the app version/compatibility information t
 
 ## License
 
+The app, course content, and gateway are all released under the **MIT License** (changed from "All rights reserved" in October 2026; this covers earlier versions too). Third-party components keep their own licenses.
+
 See `LICENSE.md`, `LICENSE-APP.txt`, `LICENSE-GATEWAY.txt`, and `THIRD_PARTY_NOTICES.md`.
 
 Copyright © 2026 Steveon William Walker.
